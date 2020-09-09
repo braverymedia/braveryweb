@@ -1,0 +1,46 @@
+<!doctype html>
+<html {% if section %} class="layout-{{ section }}"{% endif %} lang="en">
+    {% include "components/head.njk" %}
+</html>
+<body>
+{% if page.url == '/contact/' %}
+      {% include "components/nav-minimal.njk" %}
+{% else %}
+  <header class="toolbar">
+    {% if page.url == "/" %}
+        <h1 class="branding">
+    {% else %}
+        <div class="branding">
+    {% endif %}
+      <a href="/" title="Bravery Media" class="nav-link logo">
+        <span class="screen-reader-text">Bravery Media</span>
+        <svg viewBox="0 0 90 34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          class="bravery-logo--bird">
+          <title>Bravery Media</title>
+          <g stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+            <path
+              d="M59.5789231,10.0419735 L88.4468478,10.0419735 L90,7.05964655 L57.7358493,7.05964655 L55.4578924,7.05964655 L45,27.1804124 L34.5421077,7 L32.2641509,7 L0,7.05964655 L1.55315232,10.0419735 L30.4210768,10.0419735 C31.8640887,10.1369913 33.1364597,10.9844684 33.7344685,12.2488954 L34.8941556,14.4756995 L17.2710538,14.4756995 L20.3980672,17.517673 L34.2936033,17.517673 C35.7350619,17.6169298 37.0053944,18.4630492 37.6069949,19.724595 L38.766682,21.9315169 L27.3768983,21.9315169 L30.5246203,24.9536082 L38.1661298,24.9536082 C39.5877205,25.0815613 40.828702,25.9315142 41.4173953,27.1804124 L44.9585826,34 L48.4997699,27.1804124 C49.0977672,25.9334372 50.3471058,25.0907678 51.7717443,24.9734904 L59.4132538,24.9734904 L62.5609759,21.9513991 L51.1711919,21.9513991 L52.3308791,19.7444772 C52.9324795,18.4829314 54.2028119,17.636812 55.6442705,17.5375553 L69.5398066,17.5375553 L72.7289462,14.4756995 L55.1058445,14.4756995 L56.2655317,12.2488954 C56.8635403,10.9844684 58.1359112,10.1369913 59.5789231,10.0419735 Z"
+              class="bird-wings"></path>
+            <path
+              d="M44.9500908,9.89208635 C46.6507705,9.9077202 48.3371452,10.2018531 49.9410163,10.76259 L50.5,10.9802159 L44.9500908,0 L39.5,11 L40.0589837,10.7823741 C41.6300647,10.2255212 43.281876,9.9248556 44.9500908,9.89208635 Z"
+              class="bird-head"></path>
+          </g>
+        </svg>
+      </a>
+    {% if page.url == "/" %}
+    </h1>
+    {% else %}
+    </div>
+    {% endif %}
+    {% include "components/nav-menu.njk" %}
+
+  </header>
+  {% endif %}
+  <main>
+    {{ layoutContent | safe }}
+  </main>
+
+	{% if page.url != "/contact/" %}
+    {% include "components/footer.njk" %}
+  {% endif %}
+</body>

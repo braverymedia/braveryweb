@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720px" height="1050px" viewBox="0 0 720 1050" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Oval + Oval + Oval Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0.5" width="720" height="1050"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-720.000000, -4183.000000)">
+            <g id="Oval-+-Oval-+-Oval-Mask" transform="translate(720.000000, 4182.500000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#B39758" xlink:href="#path-1"></use>
+                <circle id="Oval" stroke="#B39758" stroke-width="111" opacity="0.300000012" style="mix-blend-mode: multiply;" mask="url(#mask-2)" cx="764.5" cy="525" r="261.5"></circle>
+                <circle id="Oval" stroke="#B39758" stroke-width="111" opacity="0.300000012" style="mix-blend-mode: multiply;" mask="url(#mask-2)" cx="761.5" cy="525" r="450.5"></circle>
+                <circle id="Oval" stroke="#B39758" stroke-width="111" opacity="0.300000012" style="mix-blend-mode: multiply;" mask="url(#mask-2)" cx="735.5" cy="525" r="616.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
