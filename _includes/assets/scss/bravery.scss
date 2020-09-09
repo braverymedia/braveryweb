@@ -1,0 +1,108 @@
+@import 'webfont',
+'config',
+'reset',
+'typography',
+'buttons',
+'nav',
+'cover',
+'panels',
+'work',
+'contact',
+'tables',
+'articles',
+'footer';
+
+html {
+    font-size: 112.5%;
+    font-size: clamp(112.5%, 2vw, 24px);
+}
+
+body {
+    background-color: var(--color-black);
+    font-family: var(--font-body);
+    font-optical-sizing: auto;
+    font-weight: 300;
+    width: 100vw;
+    font-variation-settings: 'opsz'12;
+    line-height: 1.65;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    transform: translate3d(0, 0, 0);
+
+    >* {
+        transform: translate3d(0, 0, 0); // fix a flicker?
+    }
+
+    .layout-services &,
+    .layout-contact & {
+        margin-top: auto;
+    }
+
+    .layout-contact & {
+        color: var(--color-white);
+        min-height: 100vh;
+        padding: 10vh calc(var(--grid-unit) * 2);
+
+        a {
+            color: currentColor;
+            text-decoration: none;
+            margin-left: 1em;
+            font-weight: $weight-medium;
+        }
+
+        .toolbar {
+            background: var(--color-black);
+            mix-blend-mode: normal;
+
+            button {
+                grid-column: 3;
+                margin: 0;
+                font-size: 2em;
+                padding: 0;
+                text-align: right;
+                cursor: pointer;
+            }
+        }
+
+        @include mq(md) {
+            header {
+                grid-column: 1 / 7;
+                position: sticky;
+                top: 10vh;
+
+                p {
+                    font-size: .75em;
+                }
+
+                a {
+                    &:hover {
+                        border-bottom: 2px solid;
+                    }
+                }
+            }
+        }
+    }
+
+    .layout-services &,
+    .layout-insight & {
+        @include mq(md) {
+            h1 {
+                grid-column: 1 / 7;
+                position: sticky;
+            }
+        }
+    }
+
+}
+
+img {
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+
+    &.lazy-loaded {
+        opacity: 1;
+    }
+}

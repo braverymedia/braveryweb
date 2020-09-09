@@ -1,0 +1,56 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+
+    {# {% set criticalCss %}
+        {% include "assets/css/critical.css" %}
+    {% endset %} #}
+
+    {% if siteTools.env == 'development' %}
+        <link rel="stylesheet" href="/_includes/assets/css/critical.css">
+        <link rel="stylesheet" href="/_includes/assets/css/bravery.css">
+    {% else %}
+        <style>
+        {{ criticalCSS | safe }}
+        </style>
+        <link rel="stylesheet" href="/_includes/assets/css/bravery.css" defer="defer">
+    {% endif %}
+    <script src="/_includes/assets/js/min/bravery.min.js" defer="defer"></script>
+    <link rel="preconnect" href="https://script.hotjar.com">
+    <link rel="preconnect" href="https://vars.hotjar.com">
+    <link rel="preconnect" href="https://cdn.amplitude.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    {# <script>  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=1;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+    analytics.load("hEqHWLn3jDMmVKxVZZ8VdscfiRKGjUb1");
+    analytics.page();  }}();</script> #}
+    <link rel="icon" type="image/svg+xml" href="/_includes/assets/icons/favicon.svg">
+    <link rel="alternate icon" href="/_includes/assets/icons/favicon.ico">
+    <link rel="mask-icon" href="/_includes/assets/icons/favicon.svg" color="#6b4de0">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="apple-mobile-web-app-title" content="Bravery">
+    <meta name="application-name" content="Bravery">
+    <meta name="msapplication-TileColor" content="#6b4de0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" defer="defer">
+    <link rel=preconnect href="https://www.googletagmanager.com">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:image:height" content="1257">
+    <meta property="og:image:width" content="2400">
+    <meta property="og:title" content="{{ social.fb.title or metadata.social.fb.title }}">
+    <meta property="og:description" content="{{ social.fb.description or metadata.social.fb.description }}">
+    <meta property="og:url" content="{{ page.url }}">
+    <meta property="og:image" content="{{ social.fb.image or metadata.social.fb.image }}">
+    <meta property="og:site_name" content="{{ metadata.title }}">
+    {% if metadata.social.fb.app_id %}
+    <meta property="fb:app_id" content="{{ metadata.social.fb.app_id }}">
+    {% endif %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ social.tw.title or metadata.social.tw.title }}">
+    <meta name="twitter:description" content="{{ social.tw.description or metadata.social.tw.description }}">
+    <meta name="twitter:site" content="{{ metadata.social.tw.site }}">
+    <meta name="twitter:creator" content="{{ social.tw.creator or metadata.social.tw.creator }}">
+    <meta name="twitter:image" content="{{ metadata.social.tw.image }}">
+</head>

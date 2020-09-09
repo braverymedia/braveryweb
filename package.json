@@ -1,0 +1,35 @@
+{
+  "name": "braver11ty",
+  "version": "1.0.0",
+  "description": "Bravery Media Site on 11ty",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "ELEVENTY_ENV=development eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Joel G Goodman",
+    "email": "joel@bravery.co",
+    "url": "http://bravery.co"
+  },
+  "license": "MIT",
+  "homepage": "https://bravery.co",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "luxon": "^1.25.0",
+    "markdown-it": "^11.0.0",
+    "markdown-it-anchor": "^5.3.0"
+  },
+  "dependencies": {
+    "clean-css": "^4.2.3",
+    "eleventy-plugin-embed-tweet": "^0.3.0",
+    "eleventy-plugin-lazyimages": "^2.0.1",
+    "eleventy-plugin-reading-time": "0.0.1",
+    "html-minifier": "^4.0.0",
+    "markdown-it-container": "^3.0.0",
+    "terser": "^5.3.0",
+    "uglify-es": "^3.3.9"
+  }
+}
