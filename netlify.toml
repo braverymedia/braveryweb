@@ -8,9 +8,10 @@
   status = 301
 
 [[redirects]]
-  from = "https://insight.bravery.co*"
-  to = "/insight/:splat"
-  status = 301
+  from = "https://insight.bravery.co/*"
+  to = "https://bravery.co/insight/:splat"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/contented18"
