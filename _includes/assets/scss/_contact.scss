@@ -1,0 +1,116 @@
+// Forms
+form {
+    p {
+        margin-bottom: 1em;
+    }
+
+    label {
+        position: relative;
+        font-family: var(--font-body);
+        letter-spacing: 0.08em;
+        font-variation-settings: 'opsz'24;
+
+        span {
+            display: block;
+            font-size: 0.778em;
+            font-variation-settings: 'wght'700, 'opsz'24;
+        }
+    }
+
+    input,
+    textarea {
+        background: transparent;
+        appearance: none;
+        border: 1px solid var(--color-neon);
+        border-radius: 0;
+        color: inherit;
+        font-size: 1em;
+        font-family: var(--font-body);
+        padding: calc(var(--grid-unit) * 2) var(--grid-unit);
+        width: 100%;
+        transition: all 150ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+
+        @include mq(md) {
+            font-size: .75em;
+        }
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+.rfi,
+.layout-contact {
+    h2 {
+        font-size: 1.556em;
+    }
+
+    @include mq(md) {
+        h2 {
+            font-size: 2em
+        }
+
+        .rfi-form {
+            grid-column: 7 / end;
+            margin-top: 0;
+
+            button {
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+
+.layout-contact {
+    color: var(--color-white);
+
+    main {
+        min-height: 100vh;
+        padding: 10vh calc(var(--grid-unit) * 2);
+
+        a {
+            color: currentColor;
+            text-decoration: none;
+            margin-left: 1em;
+            font-weight: $weight-medium;
+        }
+
+        @include mq(md) {
+            header {
+                grid-column: 1 / 7;
+                position: sticky;
+                top: 10vh;
+
+                p {
+                    font-size: .75em;
+                    margin: 1em 0;
+                }
+
+                a {
+                    &:hover {
+                        border-bottom: 2px solid;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .toolbar {
+        background: transparent;
+        mix-blend-mode: normal;
+
+        button {
+            grid-column: 3;
+            margin: 0;
+            font-size: 2em;
+            padding: 0;
+            text-align: right;
+            cursor: pointer;
+        }
+    }
+}
