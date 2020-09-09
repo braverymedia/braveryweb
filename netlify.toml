@@ -3,14 +3,9 @@
   command = "eleventy"
 
 [[redirects]]
-  from = "/*"
-  to = "/:splat"
-  status = 301
-
-[[redirects]]
   from = "https://insight.bravery.co/*"
   to = "https://bravery.co/insight/:splat"
-  status = 200
+  status = 301
   force = true
 
 [[redirects]]
