@@ -3,16 +3,6 @@
   command = "eleventy"
 
 [[redirects]]
-  from = "https://bravery2020.netlify.com/*"
-  to = "https://bravery.co/:splat"
-  status = 301
-
-[[redirects]]
-  from = "/*"
-  to = "/:splat"
-  status = 301
-
-[[redirects]]
   from = "https://insight.bravery.co/*"
   to = "https://bravery.co/insight/:splat"
   status = 301
@@ -20,11 +10,6 @@
 [[redirects]]
   from = "/contented18"
   to = "https://speakerdeck.com/joelgoodman/content-first-design-what-does-it-really-mean-and-how-can-it-enhance-the-audience-experience"
-  status = 200
-
-[[redirects]]
-  from = "/about"
-  to = "https://bravery.co"
   status = 200
 
 [[headers]]
