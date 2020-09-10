@@ -18,7 +18,7 @@ The main problem I see with an attempt by these startups to shake stuff up, is t
 
 And that’s where we differ. Everyone in the Bravery network has a college degree, some have master’s degrees, and most of us have worked in higher education, on the inside. We all value the time we have spent at school on both sides of the fence.
 
-### Why higher education
+## Why higher education
 
 That time in higher ed is what inspired Bravery’s creation. When I managed web marketing, design, development, and strategy (way too many things, I know) for a university in the Chicago area, I found the rough edges in our processes and worked to make them smoother. Being a part of the fantastic higher education web professionals community since my first college web job reassured me that I wasn’t alone facing the challenges I found each day. In fact, every other institution faced similar challenges.
 
@@ -28,7 +28,7 @@ We’ve been there, and we want to help.
 
 When people ask me what I do and I tell them about Bravery, I often hear myself telling them that I started this group to be able to use my skills and experience to help lots of colleges and universities instead of just one. We all need help and I remember that feeling after we hired an agency with folks that wanted to back up my ideas and help sell my bosses on them. And that’s what I want Bravery to do.
 
-We are here to help, and [our method is designed to help in the best, most effective ways](https://bravery.co) for your workplace. That’s why our approach is to partner with colleges and universities on their projects. We know real people have to manage this stuff when our work is finished.
+We are here to help, and [our method is designed to help in the best, most effective ways](/services/?utm_source=insight) for your workplace. That’s why our approach is to partner with colleges and universities on their projects. We know real people have to manage this stuff when our work is finished.
 
 ### Giving back
 
@@ -36,6 +36,6 @@ The other way we try to help is by supporting professional conferences. We've be
 
 We have been inspired and supported by this community so well as individuals over the past decade+ and we are grateful. So we are compelled to reinvest in you however we can.
 
-### Meet us
+## Meet us
 
-We hit most of the major higher education web conferences including  [HighEdWeb](http://highedweb.org/), [Content Ed](https://contentedlive.com), and AMA. We’d love to buy you coffee, a drink, or a meal and talk about what cool things you’re working on at your institution. Just [get in touch](https://bravery.co)!
+We hit most of the major higher education web conferences including  [HighEdWeb](http://highedweb.org/), [Content Ed](https://contentedlive.com), and AMA. We’d love to buy you coffee, a drink, or a meal and talk about what cool things you’re working on at your institution. Just [get in touch](/contact/?utm_source=insight)!

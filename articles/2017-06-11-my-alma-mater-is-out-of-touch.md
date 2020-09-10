@@ -17,7 +17,7 @@ excerpt: I want to engage with the university I graduated from, but it seems all
 
 Do you ever think the alumni relations folks at your alma mater just don’t get it? Universities dump loads of time and money into fundraising efforts a couple days or weeks out of the year, but it’s become apparent the majority don’t know how development works today.
 
-I spent six years in advancement offices working with alumni relations teams, trying and make our website work for their requests, before striking out on my own to start [Bravery Media](https://bravery.co). They have the same shiny object syndrome everyone else does—they see a new web app or service that promises to connect their alumni and increase their donations and scrape together the money to buy the thing.
+I spent six years in advancement offices working with alumni relations teams, trying and make our website work for their requests, before striking out on my own to start Bravery Media. They have the same shiny object syndrome everyone else does—they see a new web app or service that promises to connect their alumni and increase their donations and scrape together the money to buy the thing.
 
 **No thinking. No planning. No questioning.**
 
@@ -81,4 +81,6 @@ I know I would respond so much better to both of the universities I hold degrees
 
 ---
 
-*[Bravery](https://bravery.co/) creates daring solutions to the core challenges facing institutions of higher learning. We also do a bit of big-thinking. We would love to talk to you about your upcoming projects.*
+*[Bravery](/services/?utm_source=insight) creates daring solutions to the core challenges facing institutions of higher learning. We also do a bit of big-thinking. We would love to talk to you about your upcoming projects.*
+
+[Get in touch](/contact/?utm_source=insight)!

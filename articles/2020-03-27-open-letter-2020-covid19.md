@@ -24,7 +24,7 @@ There's a lot going on and a lot to try and figure out. But one thing is crystal
 
 *You don't have enough time to do everything that needs to be done.*
 
-[Bravery](https://bravery.co/services/?utm_source=braveryblog) can and wants to help. I'd list all the challenges you have coming this year, but stress levels are high enough. Here's how we can help:
+[Bravery](/services/?utm_source=insight) can and wants to help. I'd list all the challenges you have coming this year, but stress levels are high enough. Here's how we can help:
 
 - Give us **three weeks** and we'll give you a strategy for making your website suitable and effective for this new phase of higher ed marketing.
 - Give us **two months** and we'll design it.
@@ -33,7 +33,7 @@ There's a lot going on and a lot to try and figure out. But one thing is crystal
 
 Institutions of all sizes are going to need to pivot their web strategies to shore up recruitment losses from these social changes. Bravery's team specializes in conversion rate optimization. We practice human-centric UX design that includes accessibility and inclusivity, usability studies, multivariate testing, and content strategy. The work we've been doing is tailor-made for the, now, forced demands of everything being digital.
 
-And even in these overextended times, we aim to be the best value solution for higher education digital strategy + design. We're ready to help you. [Let's get to work](https://bravery.co/services/).
+And even in these overextended times, we aim to be the best value solution for higher education digital strategy + design. We're ready to help you. [Let's get to work](/services/?utm_source=insight).
 
 Here for your benefit,
 

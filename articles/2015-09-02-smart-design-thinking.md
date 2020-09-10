@@ -44,10 +44,17 @@ Though the magazine chose just a photo of a young man, that photo communicates a
 
 Of course a military-focused image is an extreme in the case of what we do with our client partners. Still, knowing who your target audience is can make the difference between a good logo or web design and great ones.
 
-### Goals before anything
+### Goals before change
 
 We often try to repeat the mantra “Goals before tools” to remind ourselves and our coworkers that if we are going to do anything, we need to have a goal for it. Don’t do Snapchat unless you can actually do Snapchat and it helps you reach a goal.
 
 Bravery takes that exact approach to its design work. Whether we are developing a new logo or a full design language system, we want to make sure that there are goals to be met and exceeded by our final designs. And we think that makes all the difference.
 
+---
+
+## Want to hear more?
+
+We'd love to have a conversation with you about your institutional goals. Perhaps [Bravery's research-driven approach can help you](/services/?utm_source=insight). Get in touch below or message us on [Twitter](https://twitter.com/braverymedia), [LinkedIn](https://www.linkedin.com/company/bravery-media), or [Facebook](https://www.facebook.com/braverymedia/).
+
+Call: [(512) 593-8094](tel:+15125938094)‬ / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
 Sound like an approach that would work for your project? [Get in touch](https://bravery.co).
