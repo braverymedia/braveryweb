@@ -60,7 +60,7 @@ Institutions that are increasing their enrollment start with research, and make 
 
 ---
 
-**Speaking of which,**[Bravery](https://bravery.co) can help you setup a strategy, or train your staff on how to conduct this research. We'd love to help. [Please get in touch](mailto:inquiries@braverymedia.co).
+**Speaking of which,**[Bravery](/services/?utm_source=insight) can help you setup a strategy, or train your staff on how to conduct this research. We'd love to help. [Please get in touch](mailto:inquiries@braverymedia.co).
 
 ---
 
@@ -86,13 +86,13 @@ If you want to do a major project in-house, ask yourself some questions. What ot
 
 Higher ed goes through cycles. When I left Trinity International University, we were coming out of recession, and universities were flattening out. Mark Greenfield [started talking about this](http://www.markgr.com/essay-on-higher-education-getting-flattened/) in 2008, and his predictions came true. Today, in 2019, the US is flirting with recession again. As a result, universities are starting to verticalize once more. However, with salaries that rarely compete with what the mainstream job market offers, a lot of times, institutions fill positions with rough talent, rather than seasoned professionals. That's admirable, but it rarely results in the sort of new hires that can hit the ground running and immediately make significant changes.
 
-So, maybe you can do the work in-house. But [Bravery](https://bravery.co/) is staffed with professionals that do strategy work every day. We do it quickly, and our recommendations produce results. We have over 60 years of combined experience doing this specific type of work. Very few institutions in the country have that kind of experience on staff.
+So, maybe you can do the work in-house. But [Bravery](https://bravery.co/?utm_source=insight) is staffed with professionals that do strategy work every day. We do it quickly, and our recommendations produce results. We have over 60 years of combined experience doing this specific type of work. Very few institutions in the country have that kind of experience on staff.
 
 Our strategy work helps web teams make better decisions, focusing on the reality of what's happening outside the university bubble. If you're confident that your staff has the expertise and bandwidth to research and make decisions that are disengaged from the myriad voices inside the university that think they know what's best, excellent. You should *maybe* do the work in-house. But it'll still take longer than if Bravery does it.
 
 ---
 
-**Want to work with the best?**[Send us an email](mailto:inquiries@braverymedia.co). I'm positive [Bravery Media](https://bravery.co) can help you improve your university's web results.
+**Want to work with the best?**[Send us an email](/contact/?utm_source=insight). I'm positive [Bravery Media](/services/?utm_source=insight) can help you improve your university's web results.
 
 ---
 

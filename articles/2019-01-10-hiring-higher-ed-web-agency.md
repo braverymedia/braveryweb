@@ -31,7 +31,7 @@ So many institutions have marketing teams that are made up of very nice people w
 
 But the institutions that excel don't rely on luck. Their marketing organizations are intentionally built with people who understand and live in the digital marketing world at large. They understand what a website needs to accomplish for the institution and for the user. They make decisions based on information they have painstakingly and purposefully gathered.
 
-The best thing an institution can do for its externally facing goals is [to build a better creative](https://bravery.blog/building-the-right-creative-team-in-higher-education/) and technical marketing team.
+The best thing an institution can do for its externally facing goals is [to build a better creative](/insight/building-the-right-creative-team-in-higher-education/) and technical marketing team.
 
 ## My one piece of advice
 
@@ -39,11 +39,15 @@ As our call was wrapping up, this VP was faced with a conundrum. Most of their t
 
 I realized there was only one piece of advice to give.
 
+::: callout
 > Ignore the client list; pay attention to the work.
+:::
 
 That's it. When someone doesn't know digital (or food, or drinks, or cars, or... anything really), they're naturally going to be drawn to what's familiar. If all you've known is Domino's pizza, that's going to be your default delivery instead of that great local pizza place a few blocks away. If you're uninformed about politics you're most likely going to vote for whatever party you've voted for in the past—the familiar issues and faces.
 
+::: callout
 > This mentality not only perpetuates stagnation in our industry, it all but guarantees disappointment with your final product.
+:::
 
 The size of the agency doesn't matter. It doesn't matter if they claim to be full-service (they're probably not). If they're bad at (or farm out) the technical side, don't hire them for that piece of your project. If branding isn't an agency's strongsuit, pay them to design your website after you work with a real branding agency.
 
@@ -52,3 +56,8 @@ Ignore the clients they've worked with. Disregard how flashy their portfolio loo
 **Is the work good? Do they get results? Will they make your institution better?**
 
 Higher Education can always do better, and usually all we need to do is get out of our own way.
+
+---
+## Bravery's work is beautiful and performant
+
+When our clients say the [work Bravery did](/services/?utm_source=insight) paid for itself in **8 days**, they aren't exaggerating. Ready to stop wasting money and begin generating actual results? [Start a conversation](/contact/?utm_source=insight).

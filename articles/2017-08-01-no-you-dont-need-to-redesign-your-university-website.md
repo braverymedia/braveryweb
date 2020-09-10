@@ -19,9 +19,9 @@ Despite what you may have heard, hiring an agency to redesign your institutional
 
 Your concerns about how much time it takes, and how much money it will cost, are valid. It’s expensive, hard work. And if your institution is like most, you’ll have no idea if it paid off.
 
-Your redesign will probably [fail to live up to expectations](https://bravery.blog/your-university-website-is-useless-66af95c95953). And here are a few common causes.
+Your redesign will probably [fail to live up to expectations](/insight/your-university-website-is-useless/). And here are a few common causes.
 
-#### Too many cooks in the kitchen
+## Too many cooks in the kitchen
 
 When an institution hires an agency to do a redesign, there are invariably too many people involved in the process. Your “stakeholders” are nothing more than liabilities. The very reason you think you need to redesign is due to those folks and the fact that they don’t work in web marketing.
 
@@ -29,21 +29,21 @@ When an institution hires an agency to do a redesign, there are invariably too m
 
 ****Bonus:**** Anyone you involve from the university side will think they know better than your agency partner. That means instead of getting the best of a very expensive team of strategists, designers, and web developers, you’re going to get the best of your internal committee… which—and let’s be honest here—is not very good.
 
-#### Limited vision
+## Limited vision
 
 Along these same lines, it isn’t uncommon to find a reluctance to try new things in higher ed. The scourge of homepage carousel sliders and campus drone videos are testament to the copycat nature of our industry. Homogeneous design, navigation, and features are perpetuated by many web agencies, though just as much blame is shared with the clients (see above).
 
 Those institutions that brave into unknown waters stand out. They win awards. They’re usually achieving their goals and are able to prove it. And that brings me to the next point.
 
-#### A “set it and forget it” mentality
+## A “set it and forget it” mentality
 
 Normally, web design agencies are hired for a one-off project and then sent packing. To a large extent, that’s the agency’s fault. Many of us have gotten into the services business because we were tired of maintaining the same set of web properties at our old institutions. We don’t want to stick around on your project any more than we wanted to stick around at our last university.
 
-But that’s where hiring the right agency comes in, and where drafting the right kind of RFP can change the rules. The [best higher ed web agencies](https://braverymedia.co/) are the ones that partner with you after the website is launched. They help you define your goals and go the extra step of measuring data against them, improving the deliverables they originally gave you.
+But that’s where hiring the right agency comes in, and where drafting the right kind of RFP can change the rules. The [best higher ed web agencies](/services/?utm_source=insight) are the ones that partner with you after the website is launched. They help you define your goals and go the extra step of measuring data against them, improving the deliverables they originally gave you.
 
 Unless your institution has data analysts on staff working with your web folks, you should plan for and include a data measurement and reaction phase in your RFP. Nothing is 100% optimal right off the bat, and if you’re doing things right, your website will be attracting new types of people you haven’t surveyed yet. You’ll need to adapt and grow with them.
 
-### So when should you redesign?
+## So when should you redesign?
 
 This [article on Inside Higher Education](https://www.insidehighered.com/blogs/call-action-marketing-and-communications-higher-education/it-time-redesign-your-website) that floated around last year gave four indicators of when you should redesign. Only two of them were right:
 
@@ -58,18 +58,20 @@ But if your institution is spending dozens of thousands of dollars with an agenc
 
 Maybe just do a content audit or work with an agency partner to develop a better content strategy, especially if “you aren’t telling the story of your institution effectively” (source). It will cost you far less and bring you far more along than redesigning the entire institutional website.
 
-### What to do instead
+## What to do instead
 
 There are a number of smaller, cheaper, probably more effective things you can do to support the website you already have.
 
 First, go focus on your content. Rewrite it. Take better photos. Produce some videos. Your content is what tells your story, not the design. Do some information architecture work internally without a complete overhaul of your site. Even a basic content strategy is better than none.
 
-****Next,**** see what you can do outside of your website. Things like landing pages and microsites can be great ways to tell a focused story and drive traffic back to your most important pages and content. We’ve done this and seen incredible results.
+**Next,** see what you can do outside of your website. Things like landing pages and microsites can be great ways to tell a focused story and drive traffic back to your most important pages and content. We’ve done this and seen incredible results.
 
-****Also,****[get in touch with Bravery](https://bravery.co). Most folks don’t realize it, but we really do like just having conversations about what you can do to hit your goals. Free of charge, no strings. Our reputation in the higher ed space is built on relationships because we’ve been in your spot before.
+**Also,** [get in touch with Bravery](/contact/?utm_source=insight). Most folks don’t realize it, but we really do like just having conversations about what you can do to hit your goals. Free of charge, no strings. Our reputation in the higher ed space is built on relationships because we’ve been in your spot before.
 
 In the end, you probably don’t need to do a redesign right now.
 
 ---
 
-*[Bravery](https://bravery.co/) creates daring solutions to the core challenges facing institutions of higher learning. We also do a bit of big-thinking. We would love to talk to you about your upcoming projects.*
+## Let's lead with Bravery
+
+Are you ready to explore how to get the most out of your university website? Bravery Media [specializes in optimizing what you currently have](/services/?utm_source=insight), milking every bit of ROI from your existing web properties. It all starts with a conversation to see if we're a good fit. [Message us](/contact/?utm_source=insight) today.
