@@ -59,8 +59,9 @@
 
 .layout-single {
     .cover {
-        height: 45vh;
+        height: 65vh;
         padding-bottom: 2.5vh;
+        overflow: hidden;
 
         >img {
             position: absolute;
