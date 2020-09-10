@@ -40,7 +40,9 @@ Small teams can do amazing things when not bogged down with the political BS tha
 - The school’s homepage wouldn’t be bogged down with minutiae. The site’s IA would be streamlined and simplified. Applications and other crucial flows would be dead-simple and lightning fast. They’d design these things for acquisition, not for decreasing bounce rates.
 - The internal student experience would be given just as much, if not more, attention and care as the acquisition experience.
 
+::: callout
 > **A web team that’s given responsibility is one that can do amazing things. An interested, devoted, and talented team coupled with the freedom to meet goals however they want to can yield incredible results.**
+:::
 
 But safety’s primary ally is insecurity. The vast majority of our institutions are systemically insecure and this reveals itself in every public and private decision made. We choose Blackboard despite knowing our students and faculty hate it. We choose CMSes based on sales pitches or prejudices rather than its fit for the job at hand. We design a website to look like that other school’s because their’s went over so well last year. We slink behind instead of blazing trails.
 
@@ -53,3 +55,11 @@ It’s our own fault. The ones who choose to stick with higher ed are brave. But
 > **Doubt can be swept away only by deeds**
 
 When we give up on ourselves we are giving up on our students, our faculty, and our coworkers. When we lose interest in our field’s trappings, we lose the respect and goodwill of our colleagues. And when we choose assuaging our insecurities over doing something world-changing, we have hammered the final nail.
+
+---
+
+## *Do you dare to lead?*
+
+Bravery uses research to help drive the right decisions at the right time. While change can feel risky, [Bravery specializes in making](/services/?utm_source=insight) low-risk, high-reward improvements. Get in touch below or message us on [Twitter](https://twitter.com/braverymedia), [LinkedIn](https://www.linkedin.com/company/bravery-media), or [Facebook](https://www.facebook.com/braverymedia/).
+
+Call: [(512) 593-8094](tel:+15125938094)‬ / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)

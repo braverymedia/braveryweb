@@ -32,7 +32,7 @@ End-to-end this miserable project took up close to a year, maybe more, of your h
 
 Now, the metrics that matter just aren’t performing.
 
-#### So here’s a thought
+## So here’s a thought
 
 Maybe your premiere recruitment piece shouldn’t be that all-important institutional website.
 
@@ -42,7 +42,7 @@ Eventually, these issues culminate in one solution:
 
 > *We must redesign our website!*
 
-#### Bringing old school back
+## Bringing old school back
 
 Back before we had the web universities didn’t redesign their curriculum or design a new logo every time something didn’t work. That’s because marketers, in general, are pretty smart people and didn’t put all their eggs in one basket. Today the institutional website is the biggest of all baskets, where all eggs must be stored.
 
@@ -55,10 +55,10 @@ The viewbook is low-hanging fruit, too. Its sole purpose is to sell and it tradi
 I guarantee you have trouble doing that effectively with your institutional website.
 
 The viewbook is crying out to be turned into a focused, web-based feature. Two years ago, Bravery had the great pleasure of working with [Loyola Marymount University](http://lmu.edu/) in Los Angeles to turn their PDF viewbook into a digital piece. That first year was a stepping stone to re-envisioning their traditional viewbook as a [digital-first narrative experience](http://viewbook.lmu.edu/), with a companion print piece.
-![](/content/images/2018/09/lmu-viewbook.jpeg)
+
 Oh, and it worked.
 
-#### Focused and effective
+## Focused and effective
 
 A viewbook is just one example of the sorts of focused, media-driven concepts that can be used to actually hit the metrics you need. Think of your institutional website as the reference guide. If your content strategy was done right, you already have a narrative thread running through that content. Start your story with a digital viewbook — -or an outcomes piece, or a specific campaign-related landing page–and transition it onto your more detail-packed program page. The plot should keep just fine.
 
@@ -66,7 +66,7 @@ You benefit from being able to tell a more dynamic and impressive story up-front
 
 ****Bonus:**** if you [work with Bravery](https://braverymedia.co/contact) we’ll help you get results in a few months instead of half a year.
 
-#### What to do if this is you
+## What to do if this is you
 
 Redesigned in the last year or two? The next time someone brings up wanting to think about a refresh or redesign maybe steer them toward a more focused and strategic option. In fact, [shoot me an email](mailto:joel@braverymedia.co). I’d love to have a conversation about what opportunities could pay off big for your institution.
 
@@ -76,4 +76,6 @@ In any case, if your website has become useless, remember that there are ways to
 
 ---
 
-*Need an extra hand pleading your case for a more focused interim project? Anyone at Bravery would love to chat about it // *[*bravery.co*](https://braverymedia.co/)
+## Explore with Bravery
+
+Need an extra hand pleading your case for a more focused interim project? We're great at maximizing your ideas. [Just get in touch](/contact/?utm_source=insight)

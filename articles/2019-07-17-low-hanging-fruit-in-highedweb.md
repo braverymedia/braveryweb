@@ -29,7 +29,9 @@ When [Bravery](https://bravery.co) does web work for an institution, we usually 
 
 How about another example? In a recent RFP, we were working through a third-party agency made a strategy recommendation to "tell more student stories" on the university website. They were right. This particular school does need to represent their students more, but this recommendation went on to suggest telling stories and selling the institution were mutually exclusive endeavors.
 
+::: callout
 > What good are stories if they don't lead to the content and actions your prospective students expect to find?
+:::
 
 I know, I know. Content strategy has been the big buzzword in this industry for the past seven years. However, no content strategist I know will tell you storytelling comes at the expense of providing your website visitors the information they need. Institutions saying they need to tell more stories is a cop-out. Rather than provide content design training for staff or hire a professional content designer, they think writing more student stories will fix everything.
 
