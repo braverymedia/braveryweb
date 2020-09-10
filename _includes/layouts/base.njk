@@ -1,7 +1,6 @@
 <!doctype html>
 <html {% if section %} class="layout-{{ section }}"{% endif %} lang="en">
     {% include "components/head.njk" %}
-</html>
 <body>
 {% if page.url == '/contact/' %}
       {% include "components/nav-minimal.njk" %}
@@ -44,3 +43,4 @@
     {% include "components/footer.njk" %}
   {% endif %}
 </body>
+</html>
