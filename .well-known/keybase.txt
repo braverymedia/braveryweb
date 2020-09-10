@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/joelgoodman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://bravery.co
+  * I am joelgoodman (https://keybase.io/joelgoodman) on keybase.
+  * I have a public key with fingerprint 4DB3 CF00 C005 0D8F 56BC  3F3F 6745 5A81 72D0 4CB2
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010106ba880d896aa948424d09870e533e22f94fc0e99efd43748fabb21359bc8ea30a",
+      "fingerprint": "4db3cf00c0050d8f56bc3f3f67455a8172d04cb2",
+      "host": "keybase.io",
+      "key_id": "67455a8172d04cb2",
+      "kid": "010106ba880d896aa948424d09870e533e22f94fc0e99efd43748fabb21359bc8ea30a",
+      "uid": "7eed7f1811e257e044b36f678c1e8300",
+      "username": "joelgoodman"
+    },
+    "service": {
+      "hostname": "bravery.co",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1545438115,
+  "expire_in": 157680000,
+  "prev": "64a15c34766787bfc61fa4fb73f1efaf084d14a59b7e855da6007b0f0b9b0da1",
+  "seqno": 36,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMIoAnicrVJLSFVBGL5WGmmSuYiE3BxMF5rN3DPndfHRA0wQorAoRbrMnDNzPWn3
+XO+5vjJDsTJpkUGBokYloS4SxIW5UDSjFIsegkaZlBq9NkloBqXNEdu1bGYxzD/f
+9833/fwPoze6IsO2tkyZ008ue8LGh5tLXQXxde1VArGMSsFTJRTRtYMWG9QOeYtM
+Q/AIAPItE6yqwFA1GWMNqciNDKCpCqCSKFK3m2mI6YBqGmUGEhWkMkyIG4qSRnSV
+YhFgIUVgpt9Hg4Gg6Q9xWWQQUWcA6ABIXJhJMtFFJjJZQZKEVai4DYB04ubEQst2
+GNwcwTZNNS1e4xfvmr1/4P+z79I1OYVSQ2FQhZC6JYUChIgoc7eqDqkqAuAAbRr0
+4zOUo09btNhnWcYZ7BeqUwT+UGbq1OmtE2YdRIK4jAYrU3UnUCBohSzdKub1wlAo
+YHscXqgy4ADLKfGuS3iJ6Td4IzmDc23T8gseyJF6yHQ0oYQkJHKTUopAKwJmkHpN
+ByEpsgr4cv6hZU7bEIaSLiJF5hEUwnQZMowYUUQGKcMMqMiACPNGKFSVJAPLACgE
+MEA0AgwMBSdUid8SPKLMfWIf17RNnx+HSoNUqH4wVLDJFRbpigjf4EyYK3JLzN+5
+CyxvXi3pREvkXUN/72xu5szK4mjTXGJNbHdj62R/98RMepd57dQq7l+6Hx+TWxC+
+dDwjc8+bbfmH8i6O7F6e+nHv487kp+3GQmsPW87t2bfy7udwymLWQC2K7s1pfL2j
+oiMN1l56dng/qXO1b/+a1Ciu9r24EF37xR68pcz1rcxW5hS8/fRraLTh2Mu9u5KG
+67O8H84eq2+LuBn1vfnK5/zIzuxPA3eTYd5QrO+RbC203RlL7pmv/daSXRMfF17e
+s6/r91TC+VfzWkdd0+OZ7/kdH05mFOcss+tHEtJq4IlBmjEeNZkxXfLlPUw/Wt4x
+nXjuYNXtA8/HzLhG+0ZXX+7VlYnykT/iQEzj
+=dg5u
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/joelgoodman
+
+==================================================================
