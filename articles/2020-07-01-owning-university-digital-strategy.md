@@ -18,13 +18,13 @@ When Bravery Media redesigns a university’s website, we always start out by as
 
 ## There’s Just One Problem
 
-Bravery has proven time and again that our process works. Whether through virtually eliminating summer melt for Loyola Marymount University or [driving millions of dollars](/higher-ed-website-redesign-small-team/) in additional year-one revenue for National University, our track record can be put up there with the best higher ed agencies.
+Bravery has proven time and again that our process works. Whether through virtually eliminating summer melt for Loyola Marymount University or [driving millions of dollars](/insight/higher-ed-website-redesign-small-team/) in additional year-one revenue for National University, our track record can be put up there with the best higher ed agencies.
 
 But the more websites we see in higher ed, old and new, the more we see the same common problem. Brendan Pittman, Bravery’s head of design, made the observation that most university websites bombard their visitors with way too many things to the point where “they all end up feeling like pawnshops.”
 
 There are so many features, stories, videos, calls to action, social grids, and event feeds vying for a person’s attention that they get disoriented. It’s like walking into a store with high-pressure salespeople that pull you in multiple directions to get you to do *something*.
 
-[Jon-Stephen Stansel](https://jsstansel.com/?utm_source=braveryblog) said it like this:
+[Jon-Stephen Stansel](https://jsstansel.com/?utm_source=bravery) said it like this:
 
 ::: callout
 > "Higher ed websites: it’s ALL junk drawer."
@@ -69,7 +69,7 @@ The fix is actually pretty simple, at least for the problem of compromised digit
 
 When clear boundaries are set, work gets done more quickly and effectively while paying dividends down the line.
 
-In 2018 [Bravery worked with National University](/higher-ed-website-redesign-small-team/) to redesign the university system website. We worked directly with two NU marketing pros to push a full set of designs out in three months. While we took input from a wide range of other people during Immersion and Strategy, these two gatekeepers made the final calls.
+In 2018 [Bravery worked with National University](/insight/higher-ed-website-redesign-small-team/) to redesign the university system website. We worked directly with two NU marketing pros to push a full set of designs out in three months. While we took input from a wide range of other people during Immersion and Strategy, these two gatekeepers made the final calls.
 
 The result is a website that had paid for itself eight days after launch, generated around $10 million in *additional* revenue in the first year, and [continues to support the university’s marketing initiatives](https://nu.edu/) today in 2020. This was no coincidence. Instead, that success came from Marketing leadership prepared to lead with bravery. They owned the project, and as a result, we were able to do our best work for them.
 
