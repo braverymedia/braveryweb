@@ -1,0 +1,39 @@
+---json
+{
+  "permalink": "feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "Bravery Insight",
+    "subtitle": "Insights on higher education marketing from a higher ed web design agency.",
+    "url": "https://bravery.co/insight/",
+    "feedUrl": "https://bravery.co/feed.xml",
+    "author": {
+      "name": "Joel G Goodman",
+      "email": "joel@bravery.co"
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.articles | rssLastUpdatedDate }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for article in collections.articles %}
+  {% set absoluteArticleUrl %}{{ article.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ article.data.title }}</title>
+    <link href="{{ absoluteArticleUrl }}"/>
+    <updated>{{ article.date | rssDate }}</updated>
+    <id>{{ absoluteArticleUrl }}</id>
+    <content type="html">{{ article.templateContent | htmlToAbsoluteUrls(absoluteArticleUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>
