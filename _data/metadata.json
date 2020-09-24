@@ -24,8 +24,8 @@
         "id": "https://bravery.co/"
     },
     "jsonfeed": {
-        "path": "/feed/feed.json",
-        "url": "https://bravery.co/feed/feed.json"
+        "path": "/feed/feed.xml",
+        "url": "https://bravery.co/feed/feed.xml"
     },
     "author": {
         "name": "Joel G Goodman",
