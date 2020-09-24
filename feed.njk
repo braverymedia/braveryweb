@@ -16,9 +16,9 @@
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ metadata.title }}</title>
+  <title>{{ metadata.title }} Insight</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.feed.url }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
   <updated>{{ collections.articles | rssLastUpdatedDate }}</updated>
   <id>{{ metadata.url }}</id>
@@ -33,6 +33,7 @@
     <link href="{{ absoluteArticleUrl }}"/>
     <updated>{{ article.date | rssDate }}</updated>
     <id>{{ absoluteArticleUrl }}</id>
+    <summary>{{ article.description }}</summary>
     <content type="html">{{ article.templateContent | htmlToAbsoluteUrls(absoluteArticleUrl) }}</content>
   </entry>
   {%- endfor %}
