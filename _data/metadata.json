@@ -21,11 +21,12 @@
         "subtitle": "Bravery Media is a world-class higher education digital strategy and design agency. Lead with Bravery.",
         "filename": "feed.xml",
         "path": "/feed.xml",
-        "id": "https://bravery.co/"
+        "id": "https://bravery.co/",
+        "url": "https://bravery.co/feed/feed.xml"
     },
     "jsonfeed": {
-        "path": "/feed/feed.json",
-        "url": "https://bravery.co/feed/feed.json"
+        "path": "/feed/feed.xml",
+        "url": "https://bravery.co/feed/feed.xml"
     },
     "author": {
         "name": "Joel G Goodman",
