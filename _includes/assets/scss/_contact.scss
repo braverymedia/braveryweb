@@ -2,6 +2,10 @@
 form {
     p {
         margin-bottom: 1em;
+
+        &.honey {
+            display: none; // honeypot for spam
+        }
     }
 
     label {
