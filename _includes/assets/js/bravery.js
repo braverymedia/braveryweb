@@ -37,7 +37,7 @@ if (closeContact) {
 // Lazy loading images
 const images = document.querySelectorAll('[data-src]');
 const config = {
-    rootMargin: '0px 0px 50px 0px',
+    rootMargin: '50px',
     threshold: 0
 };
 let observer = new IntersectionObserver(function (entries, self) {
@@ -72,3 +72,30 @@ triggerMenu.addEventListener('click', e => {
         triggerMenu.setAttribute('aria-expanded', "true");
     }
 });
+
+// scroll faux browser image
+const fakeBrowser = document.querySelector('.faux-browser');
+// Intersection Observer Configuration
+const observerOptions = {
+    root: null,
+    rootMargin: '10px 0px 0px 0px', // important: needs units on all values
+    threshold: 0
+};
+// Intersection Observer Constructor.
+const fbObserver = new IntersectionObserver(
+    handleIntersect,
+    observerOptions
+);
+
+
+// Intersection Observer Callback Function
+function handleIntersect(entry) {
+    // If intersecting.
+    if (entry[0].intersectionRatio > 0) {
+        fakeBrowser.classList.add('in-view');
+    } else {
+        fakeBrowser.classList.remove('in-view');
+    }
+};
+
+fbObserver.observe(fakeBrowser);
