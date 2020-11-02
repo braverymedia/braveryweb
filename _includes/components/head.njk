@@ -12,11 +12,11 @@
         <link rel="stylesheet" href="/assets/css/critical.css">
         <link rel="stylesheet" href="/assets/css/bravery.css">
     {% else %}
-        <link rel="stylesheet" href="/assets/css/bravery.css?v=1.0.2" defer="defer">
+        <link rel="stylesheet" href="/assets/css/bravery.css?v=1.0.3" defer="defer">
     {% endif %}
 
     {% set js %}
-        {% include "_includes/assets/js/min/bravery.min.js" %}
+        {% include "_includes/assets/js/bravery-inline.js" %}
     {% endset %}
 
     <script>{{ js | jsmin | safe }}</script>
