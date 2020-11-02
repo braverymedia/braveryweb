@@ -1241,6 +1241,8 @@ table td:first-child {
   right: 0;
   width: 100%;
   height: 40px;
+  border-top-left-radius: 6px;
+  background-clip: border-box;
 }
 .faux-browser figcaption:after, .faux-browser figcaption:before {
   content: "";

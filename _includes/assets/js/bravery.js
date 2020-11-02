@@ -78,7 +78,7 @@ const fakeBrowser = document.querySelector('.faux-browser');
 // Intersection Observer Configuration
 const observerOptions = {
     root: null,
-    rootMargin: '-50px 0px -50px 0', // important: needs units on all values
+    rootMargin: '10px 0px 0px 0px', // important: needs units on all values
     threshold: 0
 };
 // Intersection Observer Constructor.
@@ -86,22 +86,16 @@ const fbObserver = new IntersectionObserver(
     handleIntersect,
     observerOptions
 );
+
+
 // Intersection Observer Callback Function
 function handleIntersect(entry) {
     // If intersecting.
     if (entry[0].intersectionRatio > 0) {
-        simulateScroll(fakeBrowser);
-        console.log('Element is Intersecting');
+        fakeBrowser.classList.add('in-view');
     } else {
-        console.log('Element is NOT Intersecting');
+        fakeBrowser.classList.remove('in-view');
     }
 };
-function simulateScroll( target ) {
-    let img = target.querySelector('img');
-    window.addEventListener("scroll", function () {
-        img.style.transform = `translateY(${2 *
-            -1}px)`;
-    });
-}
 
 fbObserver.observe(fakeBrowser);

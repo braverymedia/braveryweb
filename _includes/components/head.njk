@@ -16,13 +16,13 @@
     {% endif %}
 
     {% set js %}
-        {% include "_includes/assets/js/bravery.js" %}
+        {% include "_includes/assets/js/min/bravery.min.js" %}
     {% endset %}
 
     <script>{{ js | jsmin | safe }}</script>
 
     <link rel="alternate" type="application/rss+xml" href="{{ metadata.feed.url }}" />
-    <script src="/assets/js/bravery.js" defer="defer"></script>
+    <script src="/assets/js/min/bravery.min.js" defer="defer"></script>
     <link rel="preconnect" href="https://script.hotjar.com">
     <link rel="preconnect" href="https://vars.hotjar.com">
     <link rel="preconnect" href="https://cdn.amplitude.com">
