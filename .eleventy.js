@@ -1,6 +1,6 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
-const Terser = require("terser");
+const { minify } = require("terser");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
@@ -30,13 +30,18 @@ module.exports = function (eleventyConfig) {
     });
 
     // Minify JS
-    eleventyConfig.addFilter("jsmin", function (code) {
-        let minified = Terser.minify(code);
-        if (minified.error) {
-            console.log("Terser JS error: ", minified.error);
-            return code;
+    eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
+        code,
+        callback
+    ) {
+        try {
+            const minified = await minify(code);
+            callback(null, minified.code);
+        } catch (err) {
+            console.error("Terser error: ", err);
+            // Fail gracefully.
+            callback(null, code);
         }
-        return minified.code;
     });
 
     // Minify HTML output
@@ -58,9 +63,15 @@ module.exports = function (eleventyConfig) {
             return item.inputPath.match(/^\.\/articles\//) !== null;
         });
     });
+    // Sass
+    eleventyConfig.addWatchTarget("_includes/assets/scss");
 
     // Don't process files and folders with static assets e.g. images
-    eleventyConfig.addPassthroughCopy("_includes/assets/");
+    eleventyConfig.addPassthroughCopy({"_includes/assets/css":"assets/css"});
+    eleventyConfig.addPassthroughCopy({"_includes/assets/icons":"assets/icons"});
+    eleventyConfig.addPassthroughCopy({"_includes/assets/img":"assets/img"});
+    eleventyConfig.addPassthroughCopy({"_includes/assets/js":"assets/js"});
+    eleventyConfig.addPassthroughCopy({"_includes/assets/webfonts":"assets/webfonts"});
     eleventyConfig.addPassthroughCopy(".well-known/");
     eleventyConfig.addPassthroughCopy("manifest.json");
     eleventyConfig.addPassthroughCopy("site.webmanifest");
