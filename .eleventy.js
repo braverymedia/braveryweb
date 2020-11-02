@@ -1,6 +1,6 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
-const Terser = require("terser");
+const { minify } = require("terser");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
@@ -30,13 +30,18 @@ module.exports = function (eleventyConfig) {
     });
 
     // Minify JS
-    eleventyConfig.addFilter("jsmin", function (code) {
-        let minified = Terser.minify(code);
-        if (minified.error) {
-            console.log("Terser JS error: ", minified.error);
-            return code;
+    eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
+        code,
+        callback
+    ) {
+        try {
+            const minified = await minify(code);
+            callback(null, minified.code);
+        } catch (err) {
+            console.error("Terser error: ", err);
+            // Fail gracefully.
+            callback(null, code);
         }
-        return minified.code;
     });
 
     // Minify HTML output
