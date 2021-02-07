@@ -29,6 +29,9 @@
     {% if page.url == "/" %}
     </h1>
     {% else %}
+      {% if title %}
+        <h1>{{ title }}</h1>
+      {% endif %}
     </div>
     {% endif %}
     {% include "components/nav-menu.njk" %}
@@ -42,5 +45,6 @@
 	{% if page.url != "/contact/" %}
     {% include "components/footer.njk" %}
   {% endif %}
+  {% include "components/footjs.njk" %}
 </body>
 </html>

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Name Sans";
-  src: url("../webfonts/name_sans-variable.woff2") format("woff2-variations");
+  font-family: NameSansVF;
+  src: url("https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable.woff2") format("woff2-variations");
   font-display: swap;
 }
 :root {
@@ -10,8 +10,8 @@
   --color-rich: #5171A5;
   --color-neon: #EEFC57;
   --color-nav: #ffffff;
-  --font-heading: "Name Sans", sans-serif;
-  --font-body: "Name Sans", sans-serif;
+  --font-heading: NameSansVF, sans-serif;
+  --font-body: NameSansVF, sans-serif;
   --grid-unit: 8px;
 }
 
@@ -357,6 +357,9 @@ nav {
   align-items: center;
   justify-content: flex-start;
 }
+.toolbar h1 {
+  font-size: 0.75em;
+}
 .toolbar .logo {
   position: relative;
   z-index: 2;
@@ -530,15 +533,6 @@ nav {
 }
 .layout-legal .cover h1 {
   grid-column: 1/end;
-}
-.layout-insight .cover {
-  height: 50vh;
-  padding-bottom: 2.5vh;
-}
-@media only screen and (min-width: 1024px) {
-  .layout-insight .cover {
-    margin-bottom: 5vh;
-  }
 }
 
 .panel {
@@ -1662,6 +1656,11 @@ body {
   line-height: 1.65;
 }
 
+figure > img {
+  width: 100%;
+  height: auto;
+}
+
 main {
   position: relative;
   z-index: 1;
@@ -1710,9 +1709,31 @@ main > * {
   }
 }
 @media only screen and (min-width: 1024px) {
-  .layout-services main h1, .layout-insight main h1 {
+  .layout-services main h1 {
     grid-column: 1/7;
     position: sticky;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .layout-insight main {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: start;
+  }
+  .layout-insight main #target-cover {
+    height: 100vh;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 1360px) {
+  .layout-insight main {
+    grid-template-columns: 70% 30%;
   }
 }
 
@@ -1723,5 +1744,3 @@ img {
 img.lazy-loaded {
   opacity: 1;
 }
-
-/*# sourceMappingURL=bravery.css.map */

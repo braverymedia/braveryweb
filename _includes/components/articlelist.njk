@@ -1,5 +1,5 @@
 {% for article in articlesList | reverse %}
-    <article{% if article.url == url %} data-current="current item"{% endif %}>
+    <article{% if article.url == url %} data-current="current item"{% endif %} data-cover="{{ article.data.cover }}">
         <a href="{{ article.url | url }}">
             <header>
                 <h2>

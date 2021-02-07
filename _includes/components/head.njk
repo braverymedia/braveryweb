@@ -15,19 +15,15 @@
         <link rel="stylesheet" href="/assets/css/bravery.css?v=1.0.3" defer="defer">
     {% endif %}
 
-    {% set js %}
-        {% include "_includes/assets/js/bravery-inline.js" %}
-    {% endset %}
-
-    <script>{{ js | jsmin | safe }}</script>
-
     <link rel="alternate" type="application/rss+xml" href="{{ metadata.feed.url }}" />
     <script src="/assets/js/min/bravery.min.js" defer="defer"></script>
-    <link rel="preconnect" href="https://script.hotjar.com">
-    <link rel="preconnect" href="https://vars.hotjar.com">
-    <link rel="preconnect" href="https://cdn.amplitude.com">
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
+    {% if sitetools.env != 'development' %}
+        <link rel="preconnect" href="https://script.hotjar.com">
+        <link rel="preconnect" href="https://vars.hotjar.com">
+        <link rel="preconnect" href="https://cdn.amplitude.com">
+        <link rel="preconnect" href="https://www.google-analytics.com">
+        <link rel="preconnect" href="https://www.googletagmanager.com">
+    {% endif %}
     <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
     <link rel="alternate icon" href="/assets/icons/favicon.ico">
     <link rel="mask-icon" href="/assets/icons/favicon.svg" color="#6b4de0">
