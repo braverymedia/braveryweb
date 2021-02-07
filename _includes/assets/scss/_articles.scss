@@ -1,6 +1,5 @@
 .article-list {
     padding: calc(var(--grid-unit) * 8) calc(var(--grid-unit) * 2);
-
     @include mq(md) {
         padding: calc(var(--grid-unit) * 15) calc(var(--grid-unit) * 2);
     }

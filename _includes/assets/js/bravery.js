@@ -35,7 +35,7 @@ if (closeContact) {
 }
 
 // Lazy loading images
-const images = document.querySelectorAll('[data-src]');
+const images = document.querySelectorAll('img[data-src]');
 const config = {
     rootMargin: '50px',
     threshold: 0
@@ -49,7 +49,10 @@ let observer = new IntersectionObserver(function (entries, self) {
     });
 }, config);
 
-images.forEach(image => { observer.observe(image); });
+if ( images ) {
+    images.forEach(image => { observer.observe(image); });
+}
+
 
 function preloadImage(img) {
     const src = img.getAttribute('data-src');

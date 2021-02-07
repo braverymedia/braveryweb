@@ -71,13 +71,4 @@
             grid-column: 1 / end;
         }
     }
-
-    .layout-insight & {
-        height: 50vh;
-        padding-bottom: 2.5vh;
-
-        @include mq(md) {
-            margin-bottom: 5vh;
-        }
-    }
 }

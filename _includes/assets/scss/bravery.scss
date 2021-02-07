@@ -28,7 +28,10 @@ body {
     font-variation-settings: 'opsz'12;
     line-height: 1.65;
 }
-
+figure > img {
+    width: 100%;
+    height: auto;
+}
 main {
     position: relative;
     z-index: 1;
@@ -88,8 +91,7 @@ main {
         }
     }
 
-    .layout-services &,
-    .layout-insight & {
+    .layout-services & {
         @include mq(md) {
             h1 {
                 grid-column: 1 / 7;
@@ -99,7 +101,25 @@ main {
     }
 
 }
-
+.layout-insight main {
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        align-items: start;
+        #target-cover {
+            height: 100vh;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    @include mq(lg) {
+        grid-template-columns: 70% 30%;
+    }
+}
 img {
     opacity: 0;
     transition: opacity .25s ease-in-out;
