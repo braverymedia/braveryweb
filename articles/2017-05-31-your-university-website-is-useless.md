@@ -2,7 +2,7 @@
 title: Your university website may be useless
 slug: your-university-website-is-useless
 description: Stop wasting money on your higher ed website design. Here's how to do it.
-cover: https://res.cloudinary.com/bravery/image/upload/f_auto,q_70,w_auto,dpr_auto/maarten-van-den-heuvel-risZYPun2ao-unsplash_b6q4sh.jpg
+cover: maarten-van-den-heuvel-risZYPun2ao-unsplash_b6q4sh.jpg
 cover_alt: A wall of payphones.
 date_published: 2017-05-31T18:43:00.000Z
 date_updated: 2019-06-27T20:36:58.000Z

@@ -102,3 +102,15 @@ function handleIntersect(entry) {
 };
 
 fbObserver.observe(fakeBrowser);
+
+const articles = document.querySelectorAll('.article-list article');
+if ( articles ) {
+    articles.forEach( article => {
+        const id = article.getAttribute('data-cover');
+        if (!src) { return; }
+        article.addEventListener('mouseover', (e) => {
+            article.classList.add('active');
+            document.querySelector("#" + id).classList.add('active');
+        });
+    });
+}

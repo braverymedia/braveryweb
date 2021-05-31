@@ -5,7 +5,7 @@
 {% endif %}
 <header class="cover">
     {% if cover %}
-        <img data-src="{{ cover }}" alt="{{ cover_alt }}" loading="lazy" />
+        <img data-src="{{ cover | cover }}" alt="{{ cover_alt }}" loading="lazy" />
         {% set coverClass = " has-cover-image" %}
     {% endif %}
     <div class="article-title{{ coverClass }}">

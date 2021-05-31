@@ -1,56 +1,69 @@
 .article-list {
-    padding: calc(var(--grid-unit) * 8) calc(var(--grid-unit) * 2);
-    @include mq(md) {
-        padding: calc(var(--grid-unit) * 15) calc(var(--grid-unit) * 2);
-    }
-
-    >* {
-        background-color: transparent;
-        width: 100%;
-        max-width: 825px;
-        margin: 0 auto;
-        border-bottom: 1px solid var(--color-bright);
-        font-size: .75em;
-        transition: background-color .15s ease-in-out;
-
-        &:hover {
-            background-color: #fafafa;
+    background-color: transparent;
+    display: block;
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+    .article {
+        border-top: 1px solid var(--color-bright);
+        color: var(--color-white);
+        text-decoration: none;
+        display: block;
+        position: relative;
+        padding: calc(var(--grid-unit) * 3) calc( var(--grid-unit) * 2 );
+        font-variation-settings: 'wght'700, 'opsz'24;
+        font-size: 1.25em;
+        &-cover {
+            display: none;
         }
-
-        a {
+        &-title {
             display: block;
-            text-decoration: none;
-            color: currentColor;
-            padding: calc(var(--grid-unit) * 8) calc(var(--grid-unit) * 3);
+            width: 100%;
+            position: relative;
+            z-index: 2;
         }
-
-        h2 {
-            font-size: 1.856em;
-            font-variation-settings: 'wght'600;
-            margin-bottom: 0;
-        }
-
-        p {
-            font-size: 1em;
-            font-variation-settings: 'wght'300;
-        }
-
-        header {
-            >p {
-                font-size: .9em;
-                opacity: .7;
+        @include mq(md) {
+            padding-left: calc( var(--grid-unit) * 6 );
+            padding-right: 0;
+            font-size: 3em;
+            &-title {
+                text-overflow: clip;
+                white-space: nowrap;
+                overflow: hidden;
             }
         }
-    }
-
-    // in dark mode;
-    @media (prefers-color-scheme: dark) {
-        background: #060311;
-        color: var(--color-white);
-
-        >* {
+        @include mq(lg) {
+            &-cover {
+                display: flex;
+                box-shadow: 24px 32px 40px 0 rgba(0, 0, 0, 0.50);
+                position: absolute;
+                z-index: 1;
+                right: 0;
+                top: 50%;
+                width: 20vw;
+                transform: translateY(-50%);
+                overflow: hidden;
+                opacity: 0;
+                transition: opacity .15s ease-in-out;
+                &:before {
+                    content: "";
+                    display:block;
+                    width: 100%;
+                    height: 0;
+                    padding-top: 133%;
+                }
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                }
+            }
             &:hover {
-                background-color: #120934;
+                .article-cover {
+                    opacity: 1;
+                }
             }
         }
     }
@@ -181,26 +194,23 @@
 }
 
 .callout {
-    padding: calc(var(--grid-unit) * 2.5);
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background-color: var(--color-rich);
-    color: var(--color-white);
-
-    >blockquote {
-
-        p {
-            margin-bottom: 0;
+    padding-top: calc(var(--grid-unit) *3);
+    blockquote {
+        position: relative;
+        &:before {
+            content: "\201C";
+            font-variation-settings: 'wght'850;
+            font-size: 1.75em;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translateX(-200%);
+            line-height:1;
         }
     }
-
-    @include mq(md) {
-        padding: calc(var(--grid-unit) * 5);
-
-        >blockquote {
-            font-size: 1.2em;
-        }
+    p {
+        margin-bottom: 0;
+        font-size: 2em;
+        font-variation-settings: 'wght'750,'opsz'24 !important;
     }
-
-
 }
