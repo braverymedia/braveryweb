@@ -25,16 +25,3 @@
         });
     </script>
 {% endif %}
-<script>
-const articles = document.querySelectorAll('.article-list article');
-const coverTarget = document.querySelector('#target-cover');
-if ( articles ) {
-    articles.forEach( article => {
-        const src = article.getAttribute('data-cover');
-        if (!src) { return; }
-        article.addEventListener('mouseover', (e) => {
-            coverTarget.style.backgroundImage = `url(${src})`;
-        });
-    });
-}
-</script>

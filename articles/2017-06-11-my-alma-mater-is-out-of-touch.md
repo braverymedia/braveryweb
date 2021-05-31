@@ -2,7 +2,7 @@
 title: My alma mater doesn't understand me
 slug: my-alma-mater-is-out-of-touch
 description: Alumni relations succeeds best when relationships are put before money asks.
-cover: https://res.cloudinary.com/bravery/image/upload/f_auto,q_70,w_auto,dpr_auto/exit.jpg
+cover: exit.jpg
 cover_alt: Exit sign on the floor of an abandoned building.
 date_published: 2017-06-11T18:49:00.000Z
 date_updated: 2019-02-08T17:00:50.000Z

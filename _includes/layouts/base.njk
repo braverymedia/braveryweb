@@ -29,9 +29,7 @@
     {% if page.url == "/" %}
     </h1>
     {% else %}
-      {% if title %}
-        <h1>{{ title }}</h1>
-      {% endif %}
+      <h1>{{ title if title and section != 'single' }}</h1>
     </div>
     {% endif %}
     {% include "components/nav-menu.njk" %}

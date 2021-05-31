@@ -1,7 +1,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>{{ title or metadata.title }}</title>
+    <title>{{ title or metadata.title }}{% if page.url != '/' %} / {{ metadata.sitename }}{% endif %}</title>
     <meta name="description" content="{{ description or metadata.description }}">
 
     {# {% set criticalCss %}

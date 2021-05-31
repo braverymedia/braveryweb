@@ -1,8 +1,8 @@
 ---
-title: Smart Design Thinking
+title: Smart design thinking
 slug: smart-design-thinking
 description: The best higher education web designs put real people at the foundation.
-cover: https://res.cloudinary.com/bravery/image/upload/f_auto,q_70,w_auto,dpr_auto/carbide-and-carbon.jpg
+cover: carbide-and-carbon.jpg
 cover_alt: Tops of skyscrapers in downtown Chicago.
 date_published: 2015-09-02T17:43:00.000Z
 date_updated: 2018-09-10T18:15:38.000Z

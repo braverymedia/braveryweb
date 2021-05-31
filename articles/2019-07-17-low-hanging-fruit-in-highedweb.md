@@ -1,8 +1,8 @@
 ---
-title: Higher Ed Web Design's Low-hanging Fruit
+title: Higher ed web design's low-hanging fruit
 slug: low-hanging-fruit-in-highedweb
 description: Three simple optimizations for improving your prospective students' website experience.
-cover: https://res.cloudinary.com/bravery/image/upload/f_auto,q_80,w_auto,dpr_auto/apple-tree.jpg
+cover: apple-tree.jpg
 cover_alt: Apples growing in a tree with blue skies above
 date_published: 2019-07-17T15:32:14.000Z
 date_updated: 2020-06-10T16:27:57.000Z

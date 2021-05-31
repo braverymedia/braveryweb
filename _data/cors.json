@@ -8,6 +8,8 @@
             "https://bravery.co",
             "https://*.bravery.dev",
             "https://bravery.dev",
+            "https://*.bravery.host",
+            "https://bravery.host",
             "https://shoreditch.local:5757"
         ],
         "allowedHeaders": [

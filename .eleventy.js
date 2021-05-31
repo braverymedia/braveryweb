@@ -24,6 +24,17 @@ module.exports = function (eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
     });
 
+    // Cloudinary presets
+    eleventyConfig.addFilter("coverTall", cover => {
+        const cloudinaryRoot = 'https://res.cloudinary.com/bravery/image/upload/t_cover_tall/';
+        return cloudinaryRoot + cover;
+    });
+
+    eleventyConfig.addFilter("cover", cover => {
+        const cloudinaryRoot = 'https://res.cloudinary.com/bravery/image/upload/f_auto,q_80,w_auto,dpr_auto/';
+        return cloudinaryRoot + cover;
+    });
+
     // Minify CSS
     eleventyConfig.addFilter("cssmin", function (code) {
         return new CleanCSS({}).minify(code).styles;
