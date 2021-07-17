@@ -4,11 +4,11 @@
   "description": "Bravery Media Site on 11ty",
   "scripts": {
     "watch:eleventy": "ELEVENTY_ENV=development eleventy --serve",
-    "watch:sass": "sass --watch _includes/assets/scss:_includes/assets/css",
-    "build:sass": "sass _includes/assets/scss:_includes/assets/css",
+    "watch:sass": "sass _includes/assets/scss:_site/assets/css --watch --update --color",
+    "build:sass": "sass _includes/assets/scss:_site/assets/css",
     "build:eleventy": "eleventy",
     "postbuild": "postcss --no-map _site/assets/css/*.css -u autoprefixer cssnano -r",
-    "start": "npm-run-all build:sass --parallel watch:*",
+    "start": "npm-run-all watch:*",
     "build": "npm-run-all build:sass build:eleventy",
     "debug": "DEBUG=* npx eleventy"
   },
