@@ -8,7 +8,7 @@
     "build:sass": "sass _includes/assets/scss:_site/assets/css",
     "build:eleventy": "eleventy",
     "postbuild": "postcss --no-map _site/assets/css/*.css -u autoprefixer cssnano -r",
-    "start": "npm-run-all watch:*",
+    "start": "npm-run-all --parallel watch:*",
     "build": "npm-run-all build:sass build:eleventy",
     "debug": "DEBUG=* npx eleventy"
   },
