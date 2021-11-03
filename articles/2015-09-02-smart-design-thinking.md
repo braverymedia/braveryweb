@@ -6,7 +6,7 @@ cover: carbide-and-carbon.jpg
 cover_alt: Tops of skyscrapers in downtown Chicago.
 date_published: 2015-09-02T17:43:00.000Z
 date_updated: 2018-09-10T18:15:38.000Z
-tags:
+topics:
     - "Product Design"
     - "Digital Strategy"
     - "Design Thinking"

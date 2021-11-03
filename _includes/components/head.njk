@@ -1,52 +1,57 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>{{ title or metadata.title }}{% if page.url != '/' %} / {{ metadata.sitename }}{% endif %}</title>
-    <meta name="description" content="{{ description or metadata.description }}">
-
-    {# {% set criticalCss %}
-        {% include "assets/css/critical.css" %}
-    {% endset %} #}
-
-    {% if sitetools.env == 'development' %}
-        <link rel="stylesheet" href="/assets/css/critical.css">
-        <link rel="stylesheet" href="/assets/css/bravery.css">
-    {% else %}
-        <link rel="stylesheet" href="/assets/css/bravery.css?v=1.0.3" defer="defer">
-    {% endif %}
-
-    <link rel="alternate" type="application/rss+xml" href="{{ metadata.feed.url }}" />
-    <script src="/assets/js/min/bravery.min.js" defer="defer"></script>
-    {% if sitetools.env != 'development' %}
-        <link rel="preconnect" href="https://script.hotjar.com">
-        <link rel="preconnect" href="https://vars.hotjar.com">
-        <link rel="preconnect" href="https://cdn.amplitude.com">
-        <link rel="preconnect" href="https://www.google-analytics.com">
-        <link rel="preconnect" href="https://www.googletagmanager.com">
-    {% endif %}
-    <link rel="icon" type="image/svg+xml" href="/assets/icons/logo/BRAVERY_favicon_081621-05.svg">
-    <link rel="mask-icon" href="/assets/icons/logo/BRAVERY_favicon_081621-02.svg" color="#6b4de0">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="apple-mobile-web-app-title" content="Bravery">
-    <meta name="application-name" content="Bravery">
-    <meta name="msapplication-TileColor" content="#6b4de0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" defer="defer">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:image:height" content="1257">
-    <meta property="og:image:width" content="2400">
-    <meta property="og:title" content="{{ social.fb.title or metadata.social.fb.title }}">
-    <meta property="og:description" content="{{ social.fb.description or metadata.social.fb.description }}">
-    <meta property="og:url" content="{{ page.url }}">
-    <meta property="og:image" content="{{ social.fb.image or metadata.social.fb.image }}">
-    <meta property="og:site_name" content="{{ metadata.title }}">
-    {% if metadata.social.fb.app_id %}
-    <meta property="fb:app_id" content="{{ metadata.social.fb.app_id }}">
-    {% endif %}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ social.tw.title or metadata.social.tw.title }}">
-    <meta name="twitter:description" content="{{ social.tw.description or metadata.social.tw.description }}">
-    <meta name="twitter:site" content="{{ metadata.social.tw.site }}">
-    <meta name="twitter:creator" content="{{ social.tw.creator or metadata.social.tw.creator }}">
-    <meta name="twitter:image" content="{{ social.tw.image or metadata.social.tw.image }}">
-</head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <title>{{ title or metadata.title }}
+                {% if page.url != '/' %}
+                    / {{ metadata.sitename }}
+                {% endif %}
+            </title>
+            <meta
+                name="description" content="{{ description or metadata.description }}">
+                {# {% set criticalCss %}
+                            {% include "assets/css/critical.css" %}
+                        {% endset %} #}
+                {% if sitetools.env == 'development' %}
+                    <link rel="stylesheet" href="/assets/css/critical.css">
+                        <link rel="stylesheet" href="/assets/css/bravery.css">
+                        {% else %}
+                            <link rel="stylesheet" href="/assets/css/bravery.css?v=1.0.3" defer="defer">
+                            {% endif %}
+                            <link rel="alternate" type="application/rss+xml" href="{{ metadata.feed.url }}"/>
+                            <script src="/assets/js/min/bravery.min.js" defer="defer"></script>
+                            {% if sitetools.env != 'development' %}
+                                <link
+                                    rel="preload"
+                                    href="https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable-subset.woff2"
+                                    as="font"
+                                    type="font/woff2"
+                                    crossorigin>
+                                    <link rel="preconnect" href="https://script.hotjar.com">
+                                        <link rel="preconnect" href="https://vars.hotjar.com">
+                                            <link rel="preconnect" href="https://www.google-analytics.com">
+                                                <link rel="preconnect" href="https://www.googletagmanager.com">
+                                                {% endif %}
+                                                <link rel="icon" type="image/svg+xml" href="/assets/icons/logo/BRAVERY_favicon_081621-05.svg">
+                                                    <link rel="mask-icon" href="/assets/icons/logo/BRAVERY_favicon_081621-02.svg" color="#6b4de0">
+                                                        <link rel="manifest" href="/site.webmanifest">
+                                                            <meta name="apple-mobile-web-app-title" content="Bravery">
+                                                                <meta name="application-name" content="Bravery">
+                                                                    <meta name="msapplication-TileColor" content="#6b4de0">
+                                                                        <meta property="og:locale" content="en_US">
+                                                                            <meta property="og:type" content="website">
+                                                                                <meta property="og:image:height" content="1257">
+                                                                                    <meta property="og:image:width" content="2400">
+                                                                                        <meta property="og:title" content="{{ social.fb.title or metadata.social.fb.title }}">
+                                                                                            <meta property="og:description" content="{{ social.fb.description or metadata.social.fb.description }}">
+                                                                                                <meta property="og:url" content="{{ page.url }}">
+                                                                                                    <meta property="og:image" content="{{ social.fb.image or metadata.social.fb.image }}">
+                                                                                                        <meta property="og:site_name" content="{{ metadata.title }}">
+                                                                                                            {% if metadata.social.fb.app_id %}
+                                                                                                                <meta property="fb:app_id" content="{{ metadata.social.fb.app_id }}">
+                                                                                                                {% endif %}
+                                                                                                                <meta name="twitter:card" content="summary_large_image">
+                                                                                                                    <meta name="twitter:title" content="{{ social.tw.title or metadata.social.tw.title }}">
+                                                                                                                        <meta name="twitter:description" content="{{ social.tw.description or metadata.social.tw.description }}">
+                                                                                                                            <meta name="twitter:site" content="{{ metadata.social.tw.site }}">
+                                                                                                                                <meta name="twitter:creator" content="{{ social.tw.creator or metadata.social.tw.creator }}">
+                                                                                                                                    <meta name="twitter:image" content="{{ social.tw.image or metadata.social.tw.image }}"></head>

@@ -6,7 +6,7 @@ cover: alamo.jpg
 cover_alt: The top of the Alamo in the sunlight
 date_published: 2015-02-05T18:34:00.000Z
 date_updated: 2018-10-04T16:54:09.000Z
-tags:
+topics:
     - "Product Design"
     - "Digital Strategy"
     - "Innovation"

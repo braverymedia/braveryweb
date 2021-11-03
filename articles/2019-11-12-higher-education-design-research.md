@@ -6,7 +6,7 @@ cover: lightbulbs.jpg
 cover_alt: Lightbulbs hanging in a room.
 date_published: 2019-11-12T16:46:48.000Z
 date_updated: 2020-06-10T16:24:56.000Z
-tags:
+topics:
     - "Design Thinking"
     - "Digital Strategy"
     - "Product Design"
