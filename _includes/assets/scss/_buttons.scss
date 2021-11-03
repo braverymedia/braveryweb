@@ -12,7 +12,7 @@ button,
     opacity: 1;
     cursor: pointer;
     letter-spacing: .063em;
-    font-variation-settings: 'wght'800, 'opsz'96;
+    font-variation-settings: 'wght'600, 'opsz'96;
     text-transform: uppercase;
 
     &.nondescript {
@@ -51,7 +51,7 @@ button,
         width: auto;
         padding-left: calc(var(--grid-unit) * 6);
         padding-right: calc(var(--grid-unit) * 6);
-        font-size: 0.75em;
+        font-size: var(--type-sm);
     }
 }
 

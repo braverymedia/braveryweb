@@ -1,16 +1,3 @@
-// CSS Variables
-:root {
-    --color-white: #fff;
-    --color-black: #060312;
-    --color-bright: #6b4de0;
-    --color-rich: #5171A5;
-    --color-neon: #EEFC57;
-    --color-nav: #ffffff;
-    --font-heading: "Name Sans", sans-serif;
-    --font-body: "Name Sans", sans-serif;
-    --grid-unit: 8px;
-}
-
 // Sass variables
 $weight-normal: 400;
 $weight-medium: 500;
@@ -60,6 +47,39 @@ $mq: ("sm": 768px,
             @content;
         }
     }
+}
+
+// CSS Variables
+:root {
+    --color-white: #fff;
+    --color-black: #060312;
+    --color-bright: #6b4de0;
+    --color-rich: #5171A5;
+    --color-neon: #EEFC57;
+    --color-nav: #ffffff;
+    --font-heading: NameSansVF, sans-serif;
+    --font-body: NameSansVF, sans-serif;
+    --grid-unit: 8px;
+
+    --type-super: 3.157em;
+	--type-xl: 2.369em;
+	--type-lg: 1.777em;
+	--type-md: 1.333em;
+	--type-base: 1em;
+	--type-sm: 0.75em;
+	--type-xs: 0.563em;
+}
+
+@include mq(md) {
+   :root {
+    --type-super: 3.998em;
+	--type-xl: 2.827em;
+	--type-lg: 1.999em;
+	--type-md: 1.414em;
+	--type-base: 1em;
+	--type-sm: 0.707em;
+	--type-xs: 0.5em;
+   }
 }
 
 %theme-bright {

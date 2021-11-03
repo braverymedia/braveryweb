@@ -2,11 +2,11 @@
 title: Hiring a new web agency? Ignore their client list.
 slug: hiring-higher-ed-web-agency
 description: Look at a higher ed design agency's results before their client list.
-cover: https://res.cloudinary.com/bravery/image/upload/f_auto,q_70,w_auto,dpr_auto/DSCF1434_lqvazo.jpg
+cover: DSCF1434_lqvazo.jpg
 cover_alt: Black cobblestone streets with road paint.
 date_published: 2019-01-10T18:43:00.000Z
 date_updated: 2019-07-17T15:32:38.000Z
-tags:
+topics:
     - "Digital Strategy"
     - Marketing
     - Innovation

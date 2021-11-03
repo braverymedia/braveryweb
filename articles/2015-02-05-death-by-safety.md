@@ -1,12 +1,12 @@
 ---
-title: The Illusion of Safety
+title: The illusion of safety
 slug: death-by-safety
 description: What higher ed web strategy needs is a little more courage and a lot more action.
-cover: https://res.cloudinary.com/bravery/image/upload/f_auto,q_80,w_auto,dpr_auto/alamo.jpg
+cover: alamo.jpg
 cover_alt: The top of the Alamo in the sunlight
 date_published: 2015-02-05T18:34:00.000Z
 date_updated: 2018-10-04T16:54:09.000Z
-tags:
+topics:
     - "Product Design"
     - "Digital Strategy"
     - "Innovation"

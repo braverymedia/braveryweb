@@ -5,58 +5,43 @@ h4,
 h5 {
     font-family: var(--font-body);
     font-weight: normal;
-    line-height: 1.2;
-    font-variation-settings: 'opsz'24;
+    line-height: 1.1;
+    font-variation-settings: 'opsz'96, 'wght'275;
 }
 
 h1 {
-    font-size: 2.05em;
-    letter-spacing: -.0145;
+    font-size: var(--type-xl);
     font-variation-settings: 'wght'800, 'opsz'96;
 
     span {
         color: var(--color-bright);
     }
 
-    @include mq(sm) {
-        &.super {
-            font-size: 2.87em;
-        }
-    }
-
     @include mq(md) {
-        font-size: 2.7em;
-
         &.super {
-            font-size: 3.317rem;
+            font-size: var(--type-super);
         }
     }
 }
 
 h2 {
-    font-size: 1.778em;
-    letter-spacing: -0.0068em;
-    font-variation-settings: 'wght'200;
+    font-size: var(--type-xl);
     margin-bottom: calc(var(--grid-unit) * 5);
 
     >span {
         color: var(--color-bright);
-        font-variation-settings: 'wght'700;
-    }
-
-    @include mq(md) {
-        font-size: 2.917em;
+        font-variation-settings: 'opsz'96,'wght'700;
     }
 }
 
 h3 {
-    font-size: 1.556em;
+    font-size: var(--type-md);
 }
 
 p {
     line-height: 1.65;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1.35em;
 }
 
 ul,
@@ -72,21 +57,19 @@ ol {
 }
 
 strong {
-    font-variation-settings: 'wght'600;
+    font-variation-settings: 'opsz'96,'wght'600;
 }
 
 blockquote {
     margin: 0;
 
     >p {
-        font-family: var(--font-body);
-        font-family: var(--font-heading);
-        font-size: 1.333em;
+        font-size: var(--type-md);
         letter-spacing: -.0051em;
         margin-top: 0;
         line-height: 1.4;
         margin-bottom: calc(var(--grid-unit) * 4);
-        font-variation-settings: 'wght'800, 'opsz'24;
+        font-variation-settings: 'wght'800, 'opsz'96;
 
         @include mq(md) {
             font-size: 1.667em;

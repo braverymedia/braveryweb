@@ -1,12 +1,12 @@
 ---
-title: Which Universities Will Thrive Post-COVID-19
+title: Which universities will thrive post-COVID-19
 slug: how-universities-will-survive-covid19
 description: Higher ed's digital strategy decisions in 2020 will decide which institutions stay open for another 50 years.
-cover: https://res.cloudinary.com/bravery/image/upload/f_auto,q_70,w_auto,dpr_auto/80710008_yldq0d.jpg
+cover: 80710008_yldq0d.jpg
 cover_alt: Abstract blue background
 date_published: 2020-04-20T16:35:41.000Z
 date_updated: 2020-06-10T16:22:47.000Z
-tags:
+topics:
   - Digital Strategy
   - UX
 excerpt: The digital strategy decisions made in higher ed this year will be the deciding factor in who is still open in 50 years. Here's what you can do.

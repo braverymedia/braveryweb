@@ -2,11 +2,11 @@
 title: Your university website may be useless
 slug: your-university-website-is-useless
 description: Stop wasting money on your higher ed website design. Here's how to do it.
-cover: https://res.cloudinary.com/bravery/image/upload/f_auto,q_70,w_auto,dpr_auto/maarten-van-den-heuvel-risZYPun2ao-unsplash_b6q4sh.jpg
+cover: maarten-van-den-heuvel-risZYPun2ao-unsplash_b6q4sh.jpg
 cover_alt: A wall of payphones.
 date_published: 2017-05-31T18:43:00.000Z
 date_updated: 2019-06-27T20:36:58.000Z
-tags:
+topics:
     - UX
     - "Product Design"
     - Marketing
@@ -54,7 +54,7 @@ The viewbook is low-hanging fruit, too. Its sole purpose is to sell and it tradi
 
 I guarantee you have trouble doing that effectively with your institutional website.
 
-The viewbook is crying out to be turned into a focused, web-based feature. Two years ago, Bravery had the great pleasure of working with [Loyola Marymount University](http://lmu.edu/) in Los Angeles to turn their PDF viewbook into a digital piece. That first year was a stepping stone to re-envisioning their traditional viewbook as a [digital-first narrative experience](http://viewbook.lmu.edu/), with a companion print piece.
+The viewbook is crying out to be turned into a focused, web-based feature. Two years ago, Bravery had the great pleasure of working with [Loyola Marymount University](http://lmu.edu/) in Los Angeles to turn their PDF viewbook into a digital piece. That first year was a stepping stone to re-envisioning their traditional viewbook as a [digital-first narrative experience](https://viewbook.lmu.edu/), with a companion print piece.
 
 Oh, and it worked.
 
@@ -64,7 +64,7 @@ A viewbook is just one example of the sorts of focused, media-driven concepts th
 
 You benefit from being able to tell a more dynamic and impressive story up-front and you’ll save a load of money over redesigning the institutional website.
 
-****Bonus:**** if you [work with Bravery](https://braverymedia.co/contact) we’ll help you get results in a few months instead of half a year.
+****Bonus:**** if you [work with Bravery](/contact/) we’ll help you get results in a few months instead of half a year.
 
 ## What to do if this is you
 
