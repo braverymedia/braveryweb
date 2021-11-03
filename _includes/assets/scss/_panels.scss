@@ -36,18 +36,18 @@
             margin-left: auto;
             margin-right: auto;
 
-            >article {
+            >*:first-child {
                 grid-column: 1 / 7;
                 position: sticky;
                 top: calc(var(--grid-unit) * 15);
 
                 &.page-intro {
-                    grid-column: 7 / end;
+                    grid-column: 7 / -1;
                 }
             }
 
-            >aside {
-                grid-column: 7 / end;
+            >*:last-child {
+                grid-column: 7 / -1;
             }
 
             &.breakout {
@@ -56,30 +56,45 @@
                 margin-left: calc(var(--grid-unit) * -2);
                 margin-right: calc(var(--grid-unit) * -2);
             }
+            .services & {
+                > *:first-child {
+                    grid-column: 1 / 7;
+                }
+                >*:last-child {
+                    grid-column: 7 / -1;
+                    margin-top: 115px;
+                    font-size: var(--type-sm);
+                }
+            }
         }
     }
 
 
     &.company {
         .people--grid {
-            display: grid;
-            grid: auto / 1fr 1fr 1fr;
-            grid-column-gap: calc(var(--grid-unit) * 2);
+            display: flex;
+            gap: calc(var(--grid-unit) * 2);
+            justify-content: space-between;
             width: 100vw;
             margin-left: calc(var(--grid-unit) * -1);
             margin-right: calc(var(--grid-unit) * -1);
             margin-top: calc(var(--grid-unit) * 9);
+            > figure {
+                flex: 0 150px;
+            }
         }
 
-        .headshot-joel {
+        figure:nth-child(even) {
             transform: translatey(-30%);
         }
 
         @include mq(sm) {
             .people--grid {
-                grid-column-gap: calc(var(--grid-unit) * 6);
-
-                .headshot-joel {
+                gap: calc(var(--grid-unit) * 4);
+                > figure {
+                    flex: 0 1 300px;
+                }
+                figure:nth-child(even) {
                     transform: translatey(-15%);
                 }
             }
@@ -93,7 +108,7 @@
 
             .people--grid {
                 grid-row: 2;
-                grid-column-gap: 10vw;
+                gap: 2.5vw;
                 margin-top: calc(var(--grid-unit) * 15);
             }
         }

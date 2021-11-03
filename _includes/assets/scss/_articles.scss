@@ -146,10 +146,12 @@
             max-width: 790px;
             margin: 0 auto;
             letter-spacing: 0.042em;
+            font-size: var(--type-base);
         }
 
         h2 {
-            font-size: var(--type-lg);
+            font-size: var(--type-md);
+            font-variation-settings: 'wght'550;
             margin-top: 1.5em;
             margin-bottom: .7em;
         }
@@ -175,6 +177,11 @@
             height: 65vh;
             padding: 0 calc(var(--grid-unit) * 4) calc(var(--grid-unit) * 6);
         }
+        ul,
+        ol {
+            margin: calc(var(--grid-unit) * 4) 0;
+            padding-left: 2em;
+        }
     }
 
     @media (prefers-color-scheme: dark) {
@@ -193,6 +200,7 @@
 
 .callout {
     padding-top: calc(var(--grid-unit) *3);
+    margin-bottom: calc(var(--grid-unit) *6);
     blockquote {
         position: relative;
         &:before {
@@ -212,4 +220,8 @@
         font-size: var(--type-lg);
         font-variation-settings: 'wght'750,'opsz'96 !important;
     }
+}
+.eleventy-plugin-embed-twitter {
+    display: flex;
+    justify-content: center;
 }

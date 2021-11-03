@@ -1,19 +1,20 @@
-{% if tags %}
-    {% set primaryTag %}
-        {{ tags | first}}
-    {% endset %}
-{% endif %}
 <header class="cover">
     {% if cover %}
-        <img data-src="{{ cover | cover }}" alt="{{ cover_alt }}" loading="lazy" />
-        {% set coverClass = " has-cover-image" %}
+        <img data-src="{{ cover | cover }}" alt="{{ cover_alt }}" loading="lazy"/> {% set coverClass = " has-cover-image" %}
     {% endif %}
     <div class="article-title{{ coverClass }}">
-        <span class="taxonomy"><a href="{{ '/insight/' | url }}" title="All Articles">Article</a>{% if primaryTag %} / {{ primaryTag }}{% endif %}</span>
+        <span class="taxonomy">
+            <a href="{{ '/insight/' | url }}" title="All Articles">Article</a>
+            {% if topics %}
+                / {{ topics | first }}
+            {% endif %}
+        </span>
         <h1>{{ title }}</h1>
-        <p><span class="author">{{ name or metadata.author.name }}</span><br>
-        <time datetime="{{ date_published | machineDate }}">{{ date_published | readableDate }}</time> / {{ content | readingTime }} read</p>
-    </div>
-</header>
-
-
+        <p>
+            <span class="author">{{ name or metadata.author.name }}</span>
+            <br>
+                <time datetime="{{ date_published | machineDate }}">{{ date_published | readableDate }}</time>
+                / {{ content | readingTime }} read
+            </p>
+        </div>
+    </header>

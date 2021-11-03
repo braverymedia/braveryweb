@@ -6,7 +6,7 @@ cover: DSCF1434_lqvazo.jpg
 cover_alt: Black cobblestone streets with road paint.
 date_published: 2019-01-10T18:43:00.000Z
 date_updated: 2019-07-17T15:32:38.000Z
-tags:
+topics:
     - "Digital Strategy"
     - Marketing
     - Innovation
