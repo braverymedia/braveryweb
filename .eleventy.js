@@ -4,10 +4,12 @@ const { minify } = require("terser");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
-const pluginEmbedTweet = require("eleventy-plugin-embed-tweet");
+const pluginEmbedTweet = require("eleventy-plugin-embed-twitter");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addPlugin(UpgradeHelper);
     eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(readingTime);
