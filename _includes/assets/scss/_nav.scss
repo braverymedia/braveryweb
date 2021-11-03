@@ -1,5 +1,5 @@
 nav {
-    font-variation-settings: 'opsz'24, 'wght'800;
+    font-variation-settings: 'opsz'24, 'wght'600;
 }
 
 #icon-menu {
@@ -60,7 +60,9 @@ nav {
         justify-content: flex-start;
     }
 
-
+    h1 {
+        font-size: 0.75em;
+    }
 
     .logo {
         position: relative;

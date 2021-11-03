@@ -2,11 +2,11 @@
 title: Design research? In higher ed? Yeah, you should be doing that.
 slug: higher-education-design-research
 description: Higher ed's best chance of illuminating what their web visitors expect is design research.
-cover: https://res.cloudinary.com/bravery/image/upload/f_auto,q_70,w_auto,dpr_auto/lightbulbs.jpg
+cover: lightbulbs.jpg
 cover_alt: Lightbulbs hanging in a room.
 date_published: 2019-11-12T16:46:48.000Z
 date_updated: 2020-06-10T16:24:56.000Z
-tags:
+topics:
     - "Design Thinking"
     - "Digital Strategy"
     - "Product Design"

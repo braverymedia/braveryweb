@@ -360,7 +360,7 @@ nav {
 .toolbar .logo {
   position: relative;
   z-index: 2;
-  padding: 0 calc(var(--grid-unit)*2);
+  padding: 0 calc(var(--grid-unit) * 2);
   color: currentColor;
 }
 .toolbar .logo > svg {
@@ -386,7 +386,7 @@ nav {
   margin: 0;
   height: 60px;
   width: 60px;
-  padding: calc(var(--grid-unit)*2.4);
+  padding: calc(var(--grid-unit) * 2.4);
 }
 @media only screen and (min-width: 1024px) {
   .toolbar button.menu-trigger {

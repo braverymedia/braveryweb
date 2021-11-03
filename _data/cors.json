@@ -1,0 +1,26 @@
+[
+    {
+        "corsRuleName": "loadFromBravery",
+        "allowedOrigins": [
+            "http://localhost:8080",
+            "https://localhost:8080",
+            "https://*.bravery.co",
+            "https://bravery.co",
+            "https://*.bravery.dev",
+            "https://bravery.dev",
+            "https://*.bravery.host",
+            "https://bravery.host",
+            "https://shoreditch.local:5757"
+        ],
+        "allowedHeaders": [
+            "*"
+        ],
+        "allowedOperations": [
+            "b2_download_file_by_id",
+            "b2_download_file_by_name",
+            "s3_get",
+            "s3_head"
+        ],
+        "maxAgeSeconds": 3600
+    }
+]

@@ -4,7 +4,7 @@ slug: open-letter-2020-covid19
 description: How can Bravery Media help your higher ed institutions during the COVID-19 pandemic?
 date_published: 2020-03-27T15:03:00.000Z
 date_updated: 2020-04-20T16:35:53.000Z
-tags:
+topics:
     - Community
     - "Digital Strategy"
 excerpt: Bravery exists to serve higher ed. Let us lighten the load and get your institution on the right track, *fast*.
