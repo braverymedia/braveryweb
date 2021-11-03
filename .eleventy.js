@@ -7,8 +7,10 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
 const pluginEmbedTweet = require("eleventy-plugin-embed-twitter");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addPlugin(UpgradeHelper);
     eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(readingTime);
@@ -110,7 +112,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("_includes/assets/scss");
 
     // Don't process files and folders with static assets e.g. images
-    eleventyConfig.addPassthroughCopy({"_includes/assets/css":"assets/css"});
     eleventyConfig.addPassthroughCopy({"_includes/assets/icons":"assets/icons"});
     eleventyConfig.addPassthroughCopy({"_includes/assets/img":"assets/img"});
     eleventyConfig.addPassthroughCopy({"_includes/assets/js":"assets/js"});
