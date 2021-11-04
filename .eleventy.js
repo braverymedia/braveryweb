@@ -75,20 +75,7 @@ module.exports = function (eleventyConfig) {
         keyframes: true
         });
 
-        return content.replace('<style INLINE_CSS>', '<style>' + purgeCSSResults[0].css + '</style>');
-    });
-
-    eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-        if( outputPath.endsWith(".html") ) {
-        let minified = htmlmin.minify(content, {
-            useShortDoctype: true,
-            removeComments: true,
-            collapseWhitespace: true
-        });
-        return minified;
-        }
-
-        return content;
+        return content.replace('<!-- INLINE CSS-->', '<style>' + purgeCSSResults[0].css + '</style>');
     });
 
     // only content in the `articles/` directory
