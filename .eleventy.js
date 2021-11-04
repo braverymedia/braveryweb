@@ -74,7 +74,7 @@ module.exports = function (eleventyConfig) {
 
         const purgeCSSResults = await new PurgeCSS().purge({
             content: [{ raw: content }],
-            css: ['_site/assets/css/bravery.css'],
+            css: ['_includes/assets/css/bravery.css'],
             keyframes: true
         });
 
