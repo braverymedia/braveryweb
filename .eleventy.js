@@ -1,21 +1,18 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const { minify } = require("terser");
-const { PurgeCSS } = require('purgecss');
-const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
 const pluginEmbedTweet = require("eleventy-plugin-embed-twitter");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addPlugin(UpgradeHelper);
     eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(readingTime);
     eleventyConfig.addPlugin(pluginEmbedTweet);
     eleventyConfig.addPlugin(pluginRss);
+    eleventyConfig.addPlugin(require("./_11ty/minify.js"));
 
     // Date formatting (human readable)
     eleventyConfig.addFilter("readableDate", dateObj => {
@@ -56,39 +53,6 @@ module.exports = function (eleventyConfig) {
             // Fail gracefully.
             callback(null, code);
         }
-    });
-
-    /**
-     * Remove any CSS not used on the page and inline the remaining CSS in the
-     * <head>.
-     *
-     * @see {@link https://github.com/FullHuman/purgecss}
-     */
-    eleventyConfig.addTransform('purgeInline', async (content, outputPath) => {
-        if (process.env.ELEVENTY_ENV !== 'production' || !outputPath.endsWith('.html')) {
-        return content;
-        }
-
-        const purgeCSSResults = await new PurgeCSS().purge({
-            content: [{ raw: content }],
-            css: ['_includes/assets/css/bravery.css'],
-            keyframes: true
-        });
-
-        return content.replace('<!-- INLINE CSS-->', '<style>' + purgeCSSResults[0].css + '</style>');
-    });
-
-    eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-        if( outputPath.endsWith(".html") ) {
-            let minified = htmlmin.minify(content, {
-                useShortDoctype: true,
-                removeComments: false,
-                collapseWhitespace: true
-            });
-            return minified;
-        }
-
-        return content;
     });
 
     // only content in the `articles/` directory
