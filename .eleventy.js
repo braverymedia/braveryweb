@@ -57,6 +57,25 @@ module.exports = function (eleventyConfig) {
         }
     });
 
+      /**
+     * Remove any CSS not used on the page and inline the remaining CSS in the
+     * <head>.
+     *
+     * @see {@link https://github.com/FullHuman/purgecss}
+     */
+    eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
+        if (process.env.ELEVENTY_ENV !== 'production' || !outputPath.endsWith('.html')) {
+        return content;
+        }
+
+        const purgeCSSResults = await new PurgeCSS().purge({
+        content: [{ raw: content }],
+        css: ['_site/assets/css/bravery.css'],
+        keyframes: true
+        });
+
+        return content.replace('<!-- INLINE CSS-->', '<style>' + purgeCSSResults[0].css + '</style>');
+    });
     // Minify HTML output
     eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
         if (outputPath.indexOf(".html") > -1) {
@@ -76,14 +95,11 @@ module.exports = function (eleventyConfig) {
             return item.inputPath.match(/^\.\/articles\//) !== null;
         });
     });
-    // Sass
-    eleventyConfig.addWatchTarget("_includes/assets/scss");
 
     // Don't process files and folders with static assets e.g. images
+    eleventyConfig.addPassthroughCopy({ "_includes/assets/css": "assets/css" });
     eleventyConfig.addPassthroughCopy({"_includes/assets/icons":"assets/icons"});
     eleventyConfig.addPassthroughCopy({"_includes/assets/img":"assets/img"});
-    eleventyConfig.addPassthroughCopy({"_includes/assets/js":"assets/js"});
-    eleventyConfig.addPassthroughCopy({"_includes/assets/webfonts":"assets/webfonts"});
     eleventyConfig.addPassthroughCopy(".well-known/");
     eleventyConfig.addPassthroughCopy("manifest.json");
     eleventyConfig.addPassthroughCopy("site.webmanifest");
