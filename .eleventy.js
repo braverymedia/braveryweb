@@ -73,9 +73,9 @@ module.exports = function (eleventyConfig) {
         }
 
         const purgeCSSResults = await new PurgeCSS().purge({
-        content: [{ raw: content }],
-        css: ['_includes/assets/css/bravery.css'],
-        keyframes: true
+            content: [{ raw: content }],
+            css: ['_includes/assets/css/bravery.css'],
+            keyframes: true
         });
 
         return content.replace('<style INLINE_CSS>', '<style>' + purgeCSSResults[0].css + '</style>');
