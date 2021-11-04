@@ -64,7 +64,7 @@ module.exports = function (eleventyConfig) {
      *
      * @see {@link https://github.com/FullHuman/purgecss}
      */
-    eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
+    eleventyConfig.addTransform('purgeInline', async (content, outputPath) => {
         if (process.env.ELEVENTY_ENV !== 'production' || !outputPath.endsWith('.html')) {
         return content;
         }
