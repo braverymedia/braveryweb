@@ -66,12 +66,12 @@ module.exports = function (eleventyConfig) {
      */
     eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
         if (process.env.ELEVENTY_ENV !== 'production' || !outputPath.endsWith('.html')) {
-        return content;
+            return content;
         }
 
         const purgeCSSResults = await new PurgeCSS().purge({
         content: [{ raw: content }],
-        css: ['_site/assets/css/bravery.css'],
+        css: ['_includes/assets/css/bravery.css'],
         keyframes: true
         });
 
