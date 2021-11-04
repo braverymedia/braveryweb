@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const { minify } = require("terser");
+const { PurgeCSS } = require('purgecss')
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
@@ -57,7 +58,7 @@ module.exports = function (eleventyConfig) {
         }
     });
 
-      /**
+    /**
      * Remove any CSS not used on the page and inline the remaining CSS in the
      * <head>.
      *
