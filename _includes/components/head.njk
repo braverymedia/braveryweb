@@ -7,16 +7,12 @@
                 {% endif %}
             </title>
             <meta name="description" content="{{ description or metadata.description }}">
+                <link rel="alternate" type="application/rss+xml" href="{{ metadata.feed.url }}"/>
                 {% if sitetools.env == 'development' %}
-                    {# <link rel="stylesheet" href="/assets/css/critical.css">
-                                            <link rel="stylesheet" href="/assets/css/bravery.css"> #}
                     <script src="/assets/js/bravery.bundle.js" defer="defer"></script>
                     <!-- INLINE CSS-->
-                    {% else %}
+                {% else %}
                     <!-- INLINE CSS-->
-                {% endif %}
-                <link rel="alternate" type="application/rss+xml" href="{{ metadata.feed.url }}"/>
-                {% if sitetools.env != 'development' %}
                     <link
                         rel="preload"
                         href="https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable-subset.woff2"
