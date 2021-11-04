@@ -66,27 +66,28 @@ module.exports = function (eleventyConfig) {
      */
     eleventyConfig.addTransform('purge-and-inline-css', async (content, outputPath) => {
         if (process.env.ELEVENTY_ENV !== 'production' || !outputPath.endsWith('.html')) {
-            return content;
+        return content;
         }
 
         const purgeCSSResults = await new PurgeCSS().purge({
-            content: [{ raw: content }],
-            css: ['_includes/assets/css/bravery.css'],
-            keyframes: true
+        content: [{ raw: content }],
+        css: ['_includes/assets/css/bravery.css'],
+        keyframes: true
         });
 
         return content.replace('<!-- INLINE CSS-->', '<style>' + purgeCSSResults[0].css + '</style>');
     });
-    // Minify HTML output
-    eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-        if (outputPath.indexOf(".html") > -1) {
-            let minified = htmlmin.minify(content, {
-                useShortDoctype: true,
-                removeComments: true,
-                collapseWhitespace: true
-            });
-            return minified;
+
+    eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+        if( outputPath.endsWith(".html") ) {
+        let minified = htmlmin.minify(content, {
+            useShortDoctype: true,
+            removeComments: true,
+            collapseWhitespace: true
+        });
+        return minified;
         }
+
         return content;
     });
 
