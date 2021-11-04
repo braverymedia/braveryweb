@@ -78,7 +78,7 @@ module.exports = function (eleventyConfig) {
         keyframes: true
         });
 
-        return content.replace('<!-- INLINE CSS-->', '<style>' + purgeCSSResults[0].css + '</style>');
+        return content.replace('<style INLINE_CSS>', '<style>' + purgeCSSResults[0].css + '</style>');
     });
 
     eleventyConfig.addTransform("htmlmin", function(content) {
