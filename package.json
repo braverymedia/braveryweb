@@ -13,7 +13,7 @@
     "watch:eleventy": "ELEVENTY_ENV=development eleventy --serve",
     "start": "cross-env NODE_ENV=development npm-run-all build:sass --sequential build:js --parallel watch:*",
     "debug:start": "DEBUG=Eleventy* npm start",
-    "build": "cross-env NODE_ENV=production npm-run-all build:sass --sequential --style=compressed build:js --parallel postcss build:eleventy",
+    "build": "cross-env NODE_ENV=production npm-run-all build:sass --sequential --style=compressed postcss build:js --parallel build:eleventy",
     "debug:build": "DEBUG=Eleventy* npm run build"
   },
   "repository": {
