@@ -1,24 +1,25 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-            <title>{{ title or metadata.title }}
-                {% if page.url != '/' %}
-                    / {{ metadata.sitename }}
-                {% endif %}
-            </title>
-            <meta name="description" content="{{ description or metadata.description }}">
-                <link rel="alternate" type="application/rss+xml" href="{{ metadata.feed.url }}"/>
-                {% if sitetools.env === 'development' %}
-                    <script src="/assets/js/bravery.bundle.js" defer="defer"></script>
+            <link
+                rel="preload"
+                href="https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable-subset.woff2"
+                as="font"
+                type="font/woff2"
+                crossorigin>
+                <title>{{ title or metadata.title }}
+                    {% if page.url != '/' %}
+                        / {{ metadata.sitename }}
+                    {% endif %}
+                </title>
+                <meta name="description" content="{{ description or metadata.description }}">
+                    <link rel="alternate" type="application/rss+xml" href="{{ metadata.feed.url }}"/>
+                    {% if sitetools.env === 'development' %}
+                        <script src="/assets/js/bravery.bundle.js" defer="defer"></script>
+                        <!-- INLINE CSS-->
+                    {% endif %}
                     <!-- INLINE CSS-->
-                {% endif %}
-                <!-- INLINE CSS-->
-                <link
-                    rel="preload"
-                    href="https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable-subset.woff2"
-                    as="font"
-                    type="font/woff2"
-                    crossorigin>
+                    <!-- css should be here -->
                     <link rel="preconnect" href="https://script.hotjar.com">
                         <link rel="preconnect" href="https://vars.hotjar.com">
                             <script async defer data-website-id="c0fdbf44-2fd2-4703-8c39-ac180ad60151" src="https://stats.bravery.co/umami.js"></script>
