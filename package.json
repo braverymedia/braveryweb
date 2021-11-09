@@ -29,7 +29,7 @@
   "license": "MIT",
   "homepage": "https://bravery.co",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0-beta.3",
+    "@11ty/eleventy": "^1.0.0-canary.44",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@fullhuman/postcss-purgecss": "^4.0.3",
