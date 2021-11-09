@@ -1,5 +1,5 @@
 {
     "layout": "layouts/article.njk",
-    "permalink": "insight/{{ slug }}/index.html",
+    "permalink": "insight/{%- if slug -%}{{- slug -}}{%- else -%}{{- title | slugify-}}{%- endif -%}/index.html",
     "tags": "article"
 }
