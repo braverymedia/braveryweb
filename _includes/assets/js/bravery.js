@@ -18,6 +18,8 @@ if (contactForm) {
     contactForm.addEventListener('submit', e => {
         e.preventDefault();
         processForm(contactForm);
+        // track form submission
+        umami.trackEvent('Contact Submission', 'submission');
     })
 }
 
@@ -112,3 +114,14 @@ if ( articles ) {
         });
     });
 }
+
+document.body.addEventListener( 'click', (e) => {
+    if ( ! e.target.dataset.umamiEvent )
+        return;
+
+    eventLabel = e.target.dataset.umamiEvent;
+
+    // push event
+    umami.trackEvent(eventLabel, 'cta-click' );
+
+} );
