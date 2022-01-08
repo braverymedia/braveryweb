@@ -23,8 +23,9 @@ When [Bravery](https://bravery.co) does web work for an institution, we usually 
 How about another example? In a recent RFP we were working through, a third-party agency made a strategy recommendation to "tell more student stories" on the university website. They were right. This particular school does need to represent their students more, but this recommendation went on to suggest telling stories and selling the institution were mutually exclusive endeavors.
 
 ::: callout
+
 > What good are stories if they don't lead to the content and actions your prospective students expect to find?
-:::
+> :::
 
 I know, I know. Content strategy has been the big buzzword in this industry for the past seven years. However, no content strategist I know will tell you storytelling comes at the expense of providing your website visitors the information they need. Institutions saying they need to tell more stories is a cop-out. Rather than provide content design training for staff or hire a professional content designer, they think writing more student stories will fix everything.
 
@@ -64,6 +65,6 @@ Be creative.
 
 ### Need a helping hand to get started?
 
-This is work Bravery Media's team members have been doing for over a decade. [We've implemented these very changes](/insight/higher-ed-web-design-s-low-hanging-fruit/) for our clients and seen massive growth take off immediately. We would love to talk to you to help identify these and other opportunities to improve your users' experience.Get in touch below or message us on [Twitter](https://twitter.com/braverymedia), [LinkedIn](https://www.linkedin.com/company/bravery-media), or [Facebook](https://www.facebook.com/braverymedia/).
+This is work Bravery Media's team members have been doing for over a decade. We've implemented these very changes for our clients and seen massive growth take off immediately. We would love to talk to you to help identify these and other opportunities to improve your users' experience.Get in touch below or message us on [Twitter](https://twitter.com/braverymedia), [LinkedIn](https://www.linkedin.com/company/bravery-media), or [Facebook](https://www.facebook.com/braverymedia/).
 
-Call: [(512) 593-8094](tel:+15125938094‬)‬ / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
+Call: [(512) 593-8094](tel:+15125938094) / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
