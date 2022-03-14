@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
+const htmlmin = require("html-minifier");
 const { minify } = require("terser");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
@@ -12,7 +13,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(readingTime);
     eleventyConfig.addPlugin(pluginEmbedTweet);
     eleventyConfig.addPlugin(pluginRss);
-    eleventyConfig.addPlugin(require("./_11ty/minify.js"));
 
     // Date formatting (human readable)
     eleventyConfig.addFilter("readableDate", dateObj => {
@@ -37,25 +37,37 @@ module.exports = function (eleventyConfig) {
         return cloudinaryRoot + cover;
     });
 
-    // Minify CSS
-    eleventyConfig.addFilter("cssmin", function (code) {
+    /* Minification filters */
+    eleventyConfig.addFilter("cssmin", function(code) {
         return new CleanCSS({}).minify(code).styles;
     });
 
-    // Minify JS
     eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
         code,
         callback
     ) {
         try {
-            const minified = await minify(code);
-            callback(null, minified.code);
+        const minified = await minify(code);
+        callback(null, minified.code);
         } catch (err) {
-            console.error("Terser error: ", err);
-            // Fail gracefully.
-            callback(null, code);
+        console.error("Terser error: ", err);
+        // Fail gracefully.
+        callback(null, code);
         }
     });
+
+    eleventyConfig.addTransform("htmlmin", function(content) {
+    if( this.outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
+  });
 
     // only content in the `articles/` directory
     eleventyConfig.addCollection("articles", function (collection) {

@@ -1,5 +1,5 @@
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="preload" href="https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable-subset.woff2" as="font" type="font/woff2" crossorigin>
     <title>{{ title or metadata.title }}
@@ -24,6 +24,7 @@
     <meta name="application-name" content="Bravery">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#050312">
+    {%- block seo -%}
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
     <meta property="og:image:height" content="1257">
@@ -42,4 +43,5 @@
     <meta name="twitter:site" content="{{ metadata.social.tw.site }}">
     <meta name="twitter:creator" content="{{ social.tw.creator or metadata.social.tw.creator }}">
     <meta name="twitter:image" content="{{ social.tw.image or metadata.social.tw.image }}">
+    {%- endblock -%}
 </head>
