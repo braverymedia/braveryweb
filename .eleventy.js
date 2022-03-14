@@ -14,7 +14,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(readingTime);
     eleventyConfig.addPlugin(pluginEmbedTweet);
     eleventyConfig.addPlugin(pluginRss);
-    eleventyConfig.addPlugin(require("./_11ty/minify.js"));
 
     // Date formatting (human readable)
     eleventyConfig.addFilter("readableDate", dateObj => {
@@ -40,23 +39,22 @@ module.exports = function (eleventyConfig) {
         return cloudinaryRoot + cover;
     });
 
-    // Minify CSS
-    eleventyConfig.addFilter("cssmin", function (code) {
+    /* Minification filters */
+    eleventyConfig.addFilter("cssmin", function(code) {
         return new CleanCSS({}).minify(code).styles;
     });
 
-    // Minify JS
     eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
         code,
         callback
     ) {
         try {
-            const minified = await minify(code);
-            callback(null, minified.code);
+        const minified = await minify(code);
+        callback(null, minified.code);
         } catch (err) {
-            console.error("Terser error: ", err);
-            // Fail gracefully.
-            callback(null, code);
+        console.error("Terser error: ", err);
+        // Fail gracefully.
+        callback(null, code);
         }
     });
 
