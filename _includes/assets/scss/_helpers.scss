@@ -1,0 +1,46 @@
+$mq: (
+	"xs": 320px,
+	"sm": 768px,
+	"md": 1024px,
+	"lg": 1360px,
+	"xl": 1600px,
+	"huge": 1980px,
+);
+
+@mixin mq($res) {
+	@if tiny==$res {
+		@media only screen and (max-width: #{ map-get($mq, "sm") - 1 }) {
+			@content;
+		}
+	}
+
+	@if sm==$res {
+		@media only screen and (min-width: #{map-get($mq, "sm")}) {
+			@content;
+		}
+	}
+
+	@if md==$res {
+		@media only screen and (min-width: #{map-get($mq, "md")}) {
+			@content;
+		}
+	}
+
+	@if lg==$res {
+		@media only screen and (min-width: #{map-get($mq, "lg")}) {
+			@content;
+		}
+	}
+
+	@if xl==$res {
+		@media only screen and (min-width: #{map-get($mq, "xl")}) {
+			@content;
+		}
+	}
+
+	@if huge==$res {
+		@media only screen and (min-width: #{map-get($mq, "huge")}) {
+			@content;
+		}
+	}
+}
