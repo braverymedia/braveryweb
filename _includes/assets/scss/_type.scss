@@ -1,9 +1,11 @@
+html * {
+	font-family: var(--font-family);
+}
 h1,
 h2,
 h3,
 h4,
 h5 {
-	font-family: var(--font-body);
 	font-weight: normal;
 	line-height: 1.1;
 	font-variation-settings: "opsz" 96, "wght" 275;
@@ -12,10 +14,10 @@ h5 {
 h1 {
 	font-size: var(--type-xl);
 	font-variation-settings: "wght" 800, "opsz" 96;
-	font-feature-settings: var(--feature-simple-y);
 
 	span {
 		color: var(--color-bright);
+		font-feature-settings: var(--feature-simple-y);
 	}
 
 	@include mq(md) {
@@ -92,7 +94,7 @@ blockquote {
 	}
 
 	footer {
-		font-weight: $weight-medium;
+		font-weight: var(--font-weight-bold);
 		transform: translate3d(0, 0, 0);
 
 		p {

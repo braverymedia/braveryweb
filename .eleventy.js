@@ -57,20 +57,6 @@ module.exports = function (eleventyConfig) {
         }
     });
 
-<<<<<<< Updated upstream
-    // Minify HTML output
-    eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-        if (outputPath.indexOf(".html") > -1) {
-            let minified = htmlmin.minify(content, {
-                useShortDoctype: true,
-                removeComments: true,
-                collapseWhitespace: true
-            });
-            return minified;
-        }
-        return content;
-    });
-=======
     /**
      * Remove any CSS not used on the page and inline the remaining CSS in the
      * <head>.
@@ -103,7 +89,6 @@ module.exports = function (eleventyConfig) {
 
     return content;
   });
->>>>>>> Stashed changes
 
     // only content in the `articles/` directory
     eleventyConfig.addCollection("articles", function (collection) {
