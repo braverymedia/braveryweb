@@ -529,10 +529,10 @@ nav {
     font-size: var(--type-base);
   }
 }
-.layout-legal .cover {
+.layout-legal .cover, .layout-jobs .cover {
   height: 60vh;
 }
-.layout-legal .cover h1 {
+.layout-legal .cover h1, .layout-jobs .cover h1 {
   grid-column: 1/end;
 }
 
@@ -1130,37 +1130,6 @@ table td:first-child {
 .layout-single .cover .article-title h1 {
   margin-bottom: 0.75rem;
 }
-.layout-single .article-content {
-  background: var(--color-white);
-  width: 100vw;
-  padding: calc(var(--grid-unit) * 8) calc(var(--grid-unit) * 2);
-  position: sticky;
-  top: 88px;
-}
-.layout-single .article-content .entry {
-  width: 100%;
-  max-width: 790px;
-  margin: 0 auto;
-  letter-spacing: 0.042em;
-  font-size: var(--type-base);
-}
-.layout-single .article-content h2 {
-  font-size: var(--type-md);
-  font-variation-settings: "wght" 550;
-  margin-top: 1.5em;
-  margin-bottom: 0.7em;
-}
-.layout-single .article-content a {
-  color: var(--color-bright);
-}
-.layout-single .article-content a:hover {
-  opacity: 0.8;
-  text-decoration: none;
-}
-.layout-single .article-content p,
-.layout-single .article-content li {
-  font-variation-settings: "wght" 250;
-}
 @media only screen and (min-width: 1024px) {
   .layout-single .cover {
     height: 65vh;
@@ -1183,6 +1152,66 @@ table td:first-child {
   .layout-single .article-content a {
     color: var(--color-neon);
   }
+}
+
+.article-content {
+  background: var(--color-white);
+  width: 100vw;
+  padding: calc(var(--grid-unit) * 8) calc(var(--grid-unit) * 2);
+  position: sticky;
+  top: 88px;
+}
+.article-content .entry {
+  width: 100%;
+  max-width: 790px;
+  margin: 0 auto;
+  letter-spacing: 0.042em;
+  font-size: var(--type-base);
+}
+.article-content h2 {
+  font-size: var(--type-md);
+  font-variation-settings: "wght" 550;
+  margin-top: 1.5em;
+  margin-bottom: 0.7em;
+}
+.article-content h3 {
+  font-size: var(--type-base);
+  font-variation-settings: "wght" 550;
+}
+.article-content a {
+  color: var(--color-bright);
+}
+.article-content a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+.article-content p,
+.article-content li {
+  font-variation-settings: "wght" 400;
+}
+.article-content ul {
+  margin-top: calc(var(--grid-unit) * 3);
+}
+@media only screen and (min-width: 1024px) {
+  .jobs .article-content {
+    padding-left: 15vw;
+    padding-right: 15vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 5vw;
+    align-items: start;
+  }
+  .jobs .article-content .entry {
+    margin: 0;
+  }
+  .jobs .article-content aside {
+    position: sticky;
+    top: 88px;
+  }
+}
+.jobs .article-content aside,
+.jobs .article-content .small {
+  font-size: var(--type-sm);
 }
 
 .callout {
