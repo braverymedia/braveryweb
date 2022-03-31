@@ -57,6 +57,7 @@ module.exports = function (eleventyConfig) {
         }
     });
 
+<<<<<<< Updated upstream
     // Minify HTML output
     eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
         if (outputPath.indexOf(".html") > -1) {
@@ -69,6 +70,40 @@ module.exports = function (eleventyConfig) {
         }
         return content;
     });
+=======
+    /**
+     * Remove any CSS not used on the page and inline the remaining CSS in the
+     * <head>.
+     *
+     * @see {@link https://github.com/FullHuman/purgecss}
+     */
+    eleventyConfig.addTransform('purge-and-inline-css', async function(content) {
+        if (process.env.ELEVENTY_ENV !== 'production' || !this.outputPath.endsWith('.html')) {
+            return content;
+        }
+
+        const purgeCSSResults = await new PurgeCSS().purge({
+            content: [{ raw: content }],
+            css: ['_site/assets/css/bravery.css'],
+            keyframes: true
+        });
+
+        return content.replace('<!-- INLINE CSS-->', '<style>' + purgeCSSResults[0].css + '</style>');
+    });
+
+    eleventyConfig.addTransform("htmlmin", function(content) {
+    if( this.outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
+  });
+>>>>>>> Stashed changes
 
     // only content in the `articles/` directory
     eleventyConfig.addCollection("articles", function (collection) {
@@ -114,7 +149,6 @@ module.exports = function (eleventyConfig) {
     return {
         templateFormats: ["md", "njk", "html"],
         pathPrefix: "/",
-
         markdownTemplateEngine: "liquid",
         htmlTemplateEngine: "njk",
         dataTemplateEngine: "njk",

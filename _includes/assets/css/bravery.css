@@ -7,12 +7,23 @@
   --color-white: #fff;
   --color-black: #060312;
   --color-bright: #6b4de0;
-  --color-rich: #5171A5;
-  --color-neon: #EEFC57;
+  --color-rich: #5171a5;
+  --color-neon: #eefc57;
   --color-nav: #ffffff;
   --font-heading: "Name Sans", sans-serif;
   --font-body: "Name Sans", sans-serif;
   --grid-unit: 8px;
+<<<<<<< Updated upstream
+=======
+  --type-super: clamp(3.157rem, calc(1.125rem + 5vw), 3.998rem);
+  --type-xl: clamp(1.3rem, calc(1.125rem + 3.3vw), 2.827rem);
+  --type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 1.999rem);
+  --type-md: clamp(1.333rem, calc(1.125rem + 5vw), 1.414rem);
+  --type-base: 1.124rem;
+  --type-sm: clamp(0.75rem, calc(1.125rem + 2vw), 0.707rem);
+  --type-xs: clamp(0.563rem, calc(1.125rem + 2vw), 0.5rem);
+  --feature-simple-y: "ss08";
+>>>>>>> Stashed changes
 }
 
 /* Box sizing rules */
@@ -122,6 +133,7 @@ h1 {
   font-size: 2.05em;
   letter-spacing: -0.0145;
   font-variation-settings: "wght" 800, "opsz" 96;
+  font-feature-settings: var(--feature-simple-y);
 }
 h1 span {
   color: var(--color-bright);
@@ -339,7 +351,7 @@ nav {
 }
 
 .toolbar {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: stretch;
   position: fixed;
@@ -1649,7 +1661,11 @@ table td:first-child {
 
 html {
   font-size: 112.5%;
+<<<<<<< Updated upstream
   font-size: clamp(112.5%, 2vw, 24px);
+=======
+  font-size: var(--type-base);
+>>>>>>> Stashed changes
 }
 
 body {
@@ -1659,7 +1675,7 @@ body {
   font-weight: 300;
   width: 100vw;
   font-variation-settings: "opsz" 12;
-  line-height: 1.65;
+  line-height: 1.45;
 }
 
 main {
