@@ -1,9 +1,10 @@
 @import "helpers";
 
 @font-face {
-    font-family: NameSansVF;
-    src: url("https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable-subset-0.6.woff2") format("woff2-variations");
-    font-display: swap;
+	font-family: NameSansVF;
+	src: url("https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable-subset-0.6.woff2")
+		format("woff2-variations");
+	font-display: swap;
 }
 
 // CSS Variables
@@ -20,15 +21,17 @@
 	--type-super: clamp(3.157rem, calc(1.125rem + 5vw), 4.998rem);
 	--type-xl: clamp(1.3rem, calc(1.125rem + 3.3vw), 3.827rem);
 	--type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 2.999rem);
-	--type-md: clamp(1.333rem, calc(1.125rem + 5vw), 2.414rem);
+	--type-md: clamp(1.333rem, calc(1.125rem + 2vw), 2.414rem);
 	--type-base: 1.125rem;
 	--type-sm: clamp(0.75rem, calc(1.125rem + 2vw), 0.707rem);
 	--type-xs: clamp(0.563rem, calc(1.125rem + 2vw), 0.5rem);
 
 	--font-weight-normal: 400;
 	--font-weight-md: 500;
-	--font-weight-bold: 700
+	--font-weight-bold: 700;
 	--feature-simple-y: "ss08";
+
+	--global-transition: all 0.3s ease-in-out;
 }
 
 %theme-bright {

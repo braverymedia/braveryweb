@@ -22,13 +22,19 @@ main {
 	}
 }
 
-figure > img {
-	width: 100%;
-	height: auto;
+figure {
+	line-height: 0;
+	border-radius: calc(var(--grid-unit) * 3);
+	overflow: hidden;
+	> img {
+		width: 100%;
+		height: auto;
+	}
 }
+
 img {
 	opacity: 0;
-	transition: opacity 0.25s ease-in-out;
+	transition: var(--global-transition);
 
 	&.lazy-loaded {
 		opacity: 1;

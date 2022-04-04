@@ -1,4 +1,10 @@
-    <button class="menu-trigger nondescript" aria-expanded="false">
+  <nav class="site-menu" role="navigation">
+      {% set navPages = collections.all | eleventyNavigation %}
+      {%- for entry in navPages %}
+        <a href="{{ entry.url | url }}" class="nav-link" {% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
+      {%- endfor -%}
+  </nav>
+  <button class="menu-trigger nondescript" aria-expanded="false">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" id="icon-menu">
         <title>menu</title>
         <g>
@@ -15,10 +21,4 @@
         </g>
       </svg>
       <span class="screen-reader-text">Site Menu</span>
-    </button>
-    <nav class="site-menu" role="navigation">
-        {% set navPages = collections.all | eleventyNavigation %}
-        {%- for entry in navPages %}
-          <a href="{{ entry.url | url }}" class="nav-link" {% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
-        {%- endfor -%}
-    </nav>
+  </button>
