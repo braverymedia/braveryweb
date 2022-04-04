@@ -92,7 +92,6 @@ button,
 	letter-spacing: 0.063em;
 	font-variation-settings: "wght" 600, "opsz" 96;
 	text-transform: uppercase;
-
 	&.nondescript {
 		padding: 0;
 		background: transparent;
@@ -161,7 +160,7 @@ figure {
 .site-footer {
 	background-color: var(--color-black);
 	color: var(--color-white);
-	font-size: 0.889em;
+	font-size: var(--type-sm);
 	padding: calc(var(--grid-unit) * 9) calc(var(--grid-unit) * 2);
 
 	p {
@@ -197,7 +196,7 @@ figure {
 	}
 
 	@media (min-width: 960px) {
-		font-size: 0.75em;
+		font-size: var(--type-sm);
 		align-items: start;
 		justify-content: start;
 
