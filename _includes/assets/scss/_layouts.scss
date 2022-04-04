@@ -1,0 +1,224 @@
+.cover {
+	background-color: var(--color-black);
+	color: var(--color-white);
+	height: 55vh;
+	display: flex;
+	position: sticky;
+	top: 0;
+	align-items: flex-end;
+	z-index: -1;
+	padding: 0 calc(var(--grid-unit) * 2) 10vh;
+	@include mq(md) {
+		height: 98vh;
+		padding: 0 calc(var(--grid-unit) * 5) 20vh;
+	}
+	.hero {
+		max-width: 1280px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.panel {
+	background: var(--color-white);
+	color: var(--color-black);
+	min-height: 100vh;
+	padding: calc(var(--grid-unit) * 15) calc(var(--grid-unit) * 2);
+	display: flex;
+	align-items: center;
+	&--grid {
+		width: 100%;
+		@include mq(sm) {
+			display: grid;
+			align-items: start;
+			gap: 4vw;
+			max-width: 1280px;
+			margin-left: auto;
+			margin-right: auto;
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	article {
+		@include mq(sm) {
+			position: sticky;
+			top: 10vh;
+		}
+		@include mq(lg) {
+			position: sticky;
+			top: 20vh;
+		}
+	}
+	// Sections
+	&.about {
+		aside {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 10vw;
+			margin-top: calc(var(--grid-unit) * 14);
+			figure {
+				box-shadow: 24px 32px 40px 0 rgba(0, 0, 0, 0.1);
+				width: 70%;
+				line-height: 0;
+			}
+			figure:nth-child(odd) {
+				margin-left: auto;
+			}
+			figure:nth-child(even) {
+				margin-right: auto;
+			}
+			@include mq(md) {
+				gap: 5vw;
+				margin-top: calc(var(--grid-unit) * 50);
+				margin-bottom: calc(var(--grid-unit) * 50);
+			}
+		}
+	}
+	&.services {
+		ul {
+			max-width: none;
+			columns: 2;
+			column-gap: 5.5vw;
+		}
+	}
+	&.company {
+		flex-direction: column;
+		gap: 5vw;
+		article {
+			position: relative;
+			max-width: 615px;
+			margin: 0 auto;
+			top: auto;
+		}
+	}
+	&.testimonial {
+		@include mq(md) {
+			padding-left: 0;
+			padding-right: 0;
+			blockquote {
+				grid-column: 2;
+			}
+			figure {
+				grid-column: 4;
+			}
+		}
+	}
+	&.theme--invert {
+		background-color: var(--color-black);
+		color: var(--color-white);
+	}
+	&.theme--rich {
+		background-color: var(--color-rich);
+		color: var(--color-white);
+	}
+}
+.people--grid {
+	display: flex;
+	gap: calc(var(--grid-unit) * 2);
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	padding-left: calc(var(--grid-unit) * 2);
+	padding-right: calc(var(--grid-unit) * 2);
+	margin-top: calc(var(--grid-unit) * 9);
+	> figure {
+		flex: 0 1 25%;
+		border-radius: calc(var(--grid-unit) * 2);
+		box-shadow: 24px 32px 40px 0 rgba(0, 0, 0, 0.1);
+		&:nth-child(even) {
+			transform: translateY(-15%);
+		}
+		@include mq(md) {
+			flex: 0 1 300px;
+			border-radius: calc(var(--grid-unit) * 3);
+		}
+	}
+	@include mq(md) {
+		padding-left: calc(var(--grid-unit) * 4);
+		padding-right: calc(var(--grid-unit) * 4);
+	}
+}
+.panel--grid.breakout {
+	@include mq(md) {
+		display: grid;
+		grid-template-columns: 2fr 5fr 1fr 4fr;
+		align-items: center;
+		gap: 3vw;
+		max-width: 100vw;
+	}
+}
+
+// Blog
+.article-list {
+	background-color: transparent;
+	display: block;
+	width: 100vw;
+	padding-left: 0;
+	padding-right: 0;
+	.article {
+		border-top: 1px solid var(--color-bright);
+		color: var(--color-white);
+		text-decoration: none;
+		display: block;
+		position: relative;
+		padding: calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 2);
+		font-variation-settings: "wght" 700, "opsz" 96;
+		font-size: var(--type-md);
+		&-cover {
+			display: none;
+		}
+		&-title {
+			display: block;
+			width: 100%;
+			position: relative;
+			z-index: 2;
+		}
+		@include mq(md) {
+			padding-left: calc(var(--grid-unit) * 6);
+			padding-right: 0;
+			font-size: calc(var(--type-super) * 1.15);
+			&-title {
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+		}
+		@include mq(lg) {
+			&-cover {
+				display: flex;
+				box-shadow: 24px 32px 40px 0 rgba(0, 0, 0, 0.5);
+				position: absolute;
+				z-index: 1;
+				right: 1vw;
+				top: 50%;
+				width: 20vw;
+				transform: translateY(-50%);
+				overflow: hidden;
+				opacity: 0;
+				transition: opacity 0.15s ease-in-out;
+				&:before {
+					content: "";
+					display: block;
+					width: 100%;
+					height: 0;
+					padding-top: 133%;
+				}
+				img {
+					object-fit: cover;
+					height: 100%;
+					width: 100%;
+					position: absolute;
+					top: 0;
+				}
+			}
+			&:hover {
+				.article-title {
+					mix-blend-mode: difference;
+				}
+				.article-cover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

@@ -9,6 +9,9 @@ h5 {
 	font-weight: normal;
 	line-height: 1.1;
 	font-variation-settings: "opsz" 96, "wght" 275;
+	> span {
+		font-feature-settings: var(--feature-simple-y);
+	}
 }
 
 h1 {
@@ -17,13 +20,6 @@ h1 {
 
 	span {
 		color: var(--color-bright);
-		font-feature-settings: var(--feature-simple-y);
-	}
-
-	@include mq(md) {
-		&.super {
-			font-size: var(--type-super);
-		}
 	}
 }
 
@@ -45,6 +41,18 @@ p {
 	line-height: 1.65;
 	margin-top: 1em;
 	margin-bottom: 1.35em;
+	&.hero {
+		font-size: var(--type-xl);
+		font-variation-settings: "wght" 800, "opsz" 96;
+		line-height: 1.1;
+		margin-bottom: 0;
+		span {
+			color: var(--color-bright);
+		}
+		@include mq(md) {
+			font-size: var(--type-super);
+		}
+	}
 }
 
 ul,
@@ -65,7 +73,7 @@ strong {
 
 blockquote {
 	margin: 0;
-
+	position: relative;
 	> p {
 		font-size: var(--type-md);
 		letter-spacing: -0.0051em;
@@ -75,7 +83,7 @@ blockquote {
 		font-variation-settings: "wght" 800, "opsz" 96;
 
 		@include mq(md) {
-			font-size: 1.667em;
+			font-size: calc(var(--type-lg) * 0.8);
 		}
 	}
 
@@ -86,22 +94,21 @@ blockquote {
 
 	cite {
 		font-style: normal;
-		font-size: 1.333em;
+		font-size: var(--type-sm);
 
 		@include mq(md) {
-			font-size: 1rem;
+			font-size: var(--type-base);
 		}
 	}
 
 	footer {
 		font-weight: var(--font-weight-bold);
 		transform: translate3d(0, 0, 0);
-
 		p {
 			text-transform: uppercase;
-			font-size: 0.667em;
+			font-size: var(--type-xs);
 			letter-spacing: 0.1em;
-			margin-bottom: calc(var(--grid-unit) * 8);
+			margin-bottom: var(--grid-unit);
 			font-variation-settings: "opsz" 24;
 		}
 
