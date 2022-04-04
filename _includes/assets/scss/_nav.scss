@@ -11,13 +11,19 @@
 	height: 60px;
 	z-index: 10;
 	mix-blend-mode: difference;
-	svg,
 	a {
 		color: inherit;
+		opacity: 1;
+		transition: opacity 200ms ease-in-out;
+		display: flex;
+		align-items: center;
 	}
 	@include mq(sm) {
 		height: 88px;
 		padding: 0 calc(var(--grid-unit) * 4);
+		a:hover {
+			opacity: 0.6;
+		}
 	}
 }
 .branding {
@@ -71,12 +77,13 @@ button.menu-trigger {
 		background-color: transparent;
 		opacity: 1;
 		visibility: visible;
-		font-size: var(--type-sm);
+		font-size: calc(var(--type-base) * 0.8);
 		flex-direction: row;
 		justify-content: flex-end;
 		position: relative;
 		height: auto;
-		flex: 0 1 30vw;
+		gap: calc(var(--grid-unit) * 2);
+		flex: 0 1 50vw;
 	}
 }
 

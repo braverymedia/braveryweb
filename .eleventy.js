@@ -26,6 +26,9 @@ module.exports = function (eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
     });
 
+    // Simple year shortcode
+    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
     // Cloudinary presets
     eleventyConfig.addFilter("coverTall", cover => {
         const cloudinaryRoot = 'https://res.cloudinary.com/bravery/image/upload/t_cover_tall/';
