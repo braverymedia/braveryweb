@@ -11,10 +11,10 @@
         </span>
         <h1>{{ title }}</h1>
         <p>
-            <span class="author">{{ name or metadata.author.name }}</span>
-            <br>
-                <time datetime="{{ date_published | machineDate }}">{{ date_published | readableDate }}</time>
-                / {{ content | readingTime }} read
-            </p>
-        </div>
-    </header>
+        <span class="author">{{ name or metadata.author.name }}</span>
+        <br>
+            <time datetime="{{ date_published | machineDate }}">{{ date_published | readableDate }}</time>
+            / {{ content | readingTime }} read
+        </p>
+    </div>
+</header>

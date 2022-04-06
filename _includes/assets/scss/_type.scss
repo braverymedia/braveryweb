@@ -38,12 +38,13 @@ h2 {
 
 h3 {
 	font-size: var(--type-md);
+	font-variation-settings: "wght" 800;
+	margin-top: 1.5rem;
 }
 
 p {
 	line-height: 1.65;
-	margin-top: 1em;
-	margin-bottom: 1.35em;
+	margin-top: 1.35em;
 	&.hero {
 		font-size: var(--type-xl);
 		font-variation-settings: "wght" 800, "opsz" 96;
@@ -60,7 +61,7 @@ p {
 
 ul,
 ol {
-	margin: calc(var(--grid-unit) * 8) 0;
+	margin: calc(var(--grid-unit) * 2) 0 calc(var(--grid-unit) * 4);
 	padding-left: 1.25em;
 
 	> li {
@@ -97,26 +98,28 @@ blockquote {
 
 	cite {
 		font-style: normal;
-		font-size: var(--type-sm);
-
+		font-size: var(--type-md);
 		@include mq(md) {
-			font-size: var(--type-base);
+			font-size: var(--type-sm);
 		}
 	}
 
 	footer {
 		font-weight: var(--font-weight-bold);
 		transform: translate3d(0, 0, 0);
+		font-size: var(--type-sm);
 		p {
-			text-transform: uppercase;
-			font-size: var(--type-xs);
-			letter-spacing: 0.1em;
 			margin-bottom: var(--grid-unit);
-			font-variation-settings: "opsz" 24;
+			// font-variation-settings: "opsz" 24;
+			line-height: 1.2;
 		}
 
 		@include mq(md) {
 			margin-top: calc(var(--grid-unit) * 6);
+			font-size: var(--type-base);
+			p {
+				font-size: var(--type-sm);
+			}
 		}
 	}
 }
@@ -132,5 +135,16 @@ hr {
 @media (prefers-color-scheme: dark) {
 	hr {
 		background: var(--color-neon);
+	}
+}
+
+span.brand {
+	font-feature-settings: var(--feature-simple-y);
+}
+:not(.layout-home) ul {
+	margin-top: 0;
+	li {
+		list-style-type: "› ";
+		margin-bottom: 0;
 	}
 }

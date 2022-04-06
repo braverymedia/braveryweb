@@ -1,0 +1,5 @@
+{% for job in jobsList | reverse %}
+    <a href="{{ job.url | url }}" class="job">
+        <div class="job-title">{{ job.data.title }}</div>
+    </a>
+{% endfor %}

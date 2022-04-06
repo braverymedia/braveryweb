@@ -9,7 +9,6 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addPlugin(UpgradeHelper);
     eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(readingTime);
@@ -18,7 +17,7 @@ module.exports = function (eleventyConfig) {
 
     // Date formatting (human readable)
     eleventyConfig.addFilter("readableDate", dateObj => {
-        return DateTime.fromJSDate(dateObj).toFormat("LLL dd, yyyy");
+        return DateTime.fromJSDate(dateObj, { zone: 'local' }).toFormat("LLL dd, yyyy");
     });
 
     // Date formatting (machine readable)
@@ -99,6 +98,14 @@ module.exports = function (eleventyConfig) {
             return item.inputPath.match(/^\.\/articles\//) !== null;
         });
     });
+
+    // only content in the `jobs/` directory
+    eleventyConfig.addCollection("jobs", function (collection) {
+        return collection.getAllSorted().filter(function (item) {
+            return item.inputPath.match(/^\.\/jobs\//) !== null;
+        });
+    });
+
     // Sass
     eleventyConfig.addWatchTarget("_includes/assets/scss");
 
@@ -126,7 +133,12 @@ module.exports = function (eleventyConfig) {
     };
 
     let markdownLib = markdownIt(options).use(markdownItContainer, 'callout');
+
     eleventyConfig.setLibrary("md", markdownLib);
+
+    eleventyConfig.addFilter("markdown", (content) => {
+        return md.render(content);
+    });
 
     let opts = {
         permalink: true,
