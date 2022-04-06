@@ -3,7 +3,7 @@
         <div class="article-title">{{ article.data.title }}</div>
         {% if article.data.cover %}
         <figure class="article-cover">
-            <img data-src="{{ article.data.cover | coverTall }}" alt="{{ article.data.cover_alt }}" loading="lazy" />
+            <img data-src="{{ article.data.cover | coverTall }}" alt="{{ article.data.cover_alt }}" loading="lazy" decoding="async" />
         </figure>
         {% endif %}
     </a>

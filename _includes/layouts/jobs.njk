@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+section: insight
+title: Open job opportunities at Bravery.
+---
+<header class="cover">
+    <h1>Job Opportunities</h1>
+    <p>Bravery is experiencing rapid growth and we're looking for passionate, talented people who want to share our vision. This agency is built on respect for every human, so if you think you are a great fit for a role, we want to hear from you.</p>
+</header>
+<section class="panel job-list">
+    {% set jobsList = collections.jobs %}
+    {% if jobsList.length > 1 %}
+        {% include "components/job-list.njk" %}
+    {% else %}
+        {% for job in jobsList %}
+            <article class="article-content">
+                <h2>Marketing Director (Part-time)</h2>
+                {{ job.data.content | safe }}
+            </article>
+            {% include "components/job-apply.njk" %}
+        {% endfor %}
+    {% endif %}
+</section>

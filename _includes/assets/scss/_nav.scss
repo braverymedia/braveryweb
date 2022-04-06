@@ -39,8 +39,13 @@
 	align-items: center;
 	justify-content: flex-start;
 	gap: calc(var(--grid-unit) * 2);
-	h1 {
+	p {
 		font-size: var(--type-sm);
+		margin: 0;
+		line-height: 1;
+	}
+	@include mq(sm) {
+		padding-left: unset;
 	}
 }
 button.menu-trigger {
