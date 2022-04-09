@@ -1,55 +1,57 @@
 {
-  "name": "braveryweb",
-  "version": "1.3.0",
-  "description": "Bravery Media Site on 11ty",
-  "scripts": {
-    "watch:eleventy": "ELEVENTY_ENV=development eleventy --serve",
-    "watch:sass": "sass _includes/assets/scss:_site/assets/css --watch --update --color",
-    "build:sass": "sass _includes/assets/scss:_site/assets/css",
-    "build:eleventy": "eleventy",
-    "postbuild": "postcss --no-map _site/assets/css/*.css -u autoprefixer cssnano -r",
-    "start": "npm-run-all --parallel watch:*",
-    "build": "npm-run-all build:sass build:eleventy",
-    "debug": "DEBUG=* npx eleventy"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/braverymedia/braveryweb"
-  },
-  "keywords": [],
-  "author": {
-    "name": "Joel G Goodman",
-    "email": "joel@bravery.co",
-    "url": "https://bravery.co"
-  },
-  "license": "MIT",
-  "homepage": "https://bravery.co",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-navigation": "^0.1.6",
-    "@11ty/eleventy-plugin-rss": "^1.0.9",
-    "autoprefixer": "^10.0.1",
-    "cssnano": "^4.1.10",
-    "luxon": "^1.25.0",
-    "markdown-it": "^11.0.1",
-    "markdown-it-anchor": "^5.3.0",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^8.2.0"
-  },
-  "dependencies": {
-    "@11ty/eleventy-upgrade-help": "^1.0.1",
-    "clean-css": "^4.2.3",
-    "eleventy-plugin-embed-twitter": "^1.3.3",
-    "eleventy-plugin-lazyimages": "^2.1.0",
-    "eleventy-plugin-reading-time": "0.0.1",
-    "html-minifier": "^4.0.0",
-    "markdown-it-container": "^3.0.0",
-    "postcss": "^8.1.4",
-    "sass": "^1.28.0",
-    "terser": "^5.3.8",
-    "uglify-es": "^3.3.9"
-  },
-  "browserslist": [
-    "last 2 versions"
-  ]
+	"name": "braveryweb",
+	"version": "1.3.0",
+	"description": "Bravery Media Site on 11ty",
+	"scripts": {
+		"watch:eleventy": "ELEVENTY_ENV=development eleventy --serve",
+		"watch:sass": "sass _includes/assets/scss:_site/assets/css --watch --update --color",
+		"build:sass": "sass _includes/assets/scss:_site/assets/css",
+		"build:js": "rollup -c",
+		"watch:js": "rollup -c --watch",
+		"build:eleventy": "eleventy",
+		"postbuild": "postcss --no-map _site/assets/css/*.css -u autoprefixer cssnano -r",
+		"start": "npm-run-all --parallel watch:*",
+		"build": "npm-run-all build:sass build:js --parallel build:eleventy postbuild",
+		"debug": "DEBUG=* npx eleventy"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/braverymedia/braveryweb"
+	},
+	"keywords": [],
+	"author": {
+		"name": "Joel G Goodman",
+		"email": "joel@bravery.co",
+		"url": "https://bravery.co"
+	},
+	"license": "MIT",
+	"homepage": "https://bravery.co",
+	"devDependencies": {
+		"@11ty/eleventy": "^1.0.0",
+		"@11ty/eleventy-navigation": "^0.1.6",
+		"@11ty/eleventy-plugin-rss": "^1.0.9",
+		"autoprefixer": "^10.0.1",
+		"cssnano": "^4.1.10",
+		"luxon": "^1.25.0",
+		"markdown-it": "^11.0.1",
+		"markdown-it-anchor": "^5.3.0",
+		"npm-run-all": "^4.1.5",
+		"postcss-cli": "^8.2.0"
+	},
+	"dependencies": {
+		"@11ty/eleventy-upgrade-help": "^1.0.1",
+		"clean-css": "^4.2.3",
+		"eleventy-plugin-embed-twitter": "^1.3.3",
+		"eleventy-plugin-lazyimages": "^2.1.0",
+		"eleventy-plugin-reading-time": "0.0.1",
+		"html-minifier": "^4.0.0",
+		"markdown-it-container": "^3.0.0",
+		"postcss": "^8.1.4",
+		"sass": "^1.28.0",
+		"terser": "^5.3.8",
+		"uglify-es": "^3.3.9"
+	},
+	"browserslist": [
+		"last 2 versions"
+	]
 }

@@ -45,15 +45,31 @@
 			}
 		}
 	}
+	.layout-jobs & {
+		height: auto;
+		min-height: 55vh;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-start;
+		padding-bottom: 10vh;
+		padding-top: 90px;
+		p {
+			font-size: var(--type-base);
+			max-width: 720px;
+		}
+	}
 }
 
 .panel {
 	background: var(--color-white);
 	color: var(--color-black);
 	min-height: 100vh;
-	padding: calc(var(--grid-unit) * 15) calc(var(--grid-unit) * 2);
+	padding: calc(var(--grid-unit) * 8) calc(var(--grid-unit) * 2);
 	display: flex;
 	align-items: center;
+	@include mq(sm) {
+		padding: calc(var(--grid-unit) * 15) calc(var(--grid-unit) * 2);
+	}
 	&--grid {
 		width: 100%;
 		@include mq(sm) {
@@ -428,9 +444,6 @@
 			font-size: var(--type-sm);
 		}
 	}
-	.article--content {
-		font-size: var(--type-sm);
-	}
 	main {
 		padding: 80px calc(var(--grid-unit) * 2) 5vh;
 		display: grid;
@@ -497,6 +510,69 @@
 			display: block;
 			font-size: var(--type-sm);
 			margin-top: -5vh;
+		}
+	}
+}
+.layout-jobs {
+	.job-post {
+		padding: 10vh calc(var(--grid-unit) * 2);
+		display: block;
+		@include mq(md) {
+			display: grid;
+			grid-template-columns: 70fr 30fr;
+			gap: calc(var(--grid-unit) * 5);
+			align-items: start;
+			padding: 15vh 20vw;
+		}
+	}
+	.apply-action {
+		p {
+			font-size: var(--type-sm);
+		}
+	}
+}
+@include mq(md) {
+	.apply-action {
+		position: sticky;
+		top: 10vh;
+		padding-top: 11.5vh;
+		p {
+			margin: 0;
+		}
+	}
+}
+
+.layout-contact {
+	color: var(--color-white);
+	main {
+		padding: 10vh calc(var(--grid-unit) * 2);
+		p {
+			font-size: var(--type-sm);
+			@include mq(md) {
+				font-size: var(--type-base);
+			}
+		}
+	}
+	button.trigger-navback {
+		display: flex;
+		justify-content: flex-end;
+		font-size: var(--type-super);
+		@include mq(md) {
+			width: auto;
+			font-size: var(--type-lg);
+			margin: 0;
+			padding-left: calc(var(--grid-unit) * 4);
+			padding-right: calc(var(--grid-unit) * 4);
+		}
+	}
+	@include mq(md) {
+		.toolbar {
+			padding: 0;
+			justify-content: flex-end;
+		}
+		header {
+			position: sticky;
+			top: 11vh;
 		}
 	}
 }

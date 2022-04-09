@@ -80,7 +80,7 @@ button,
 .button {
 	appearance: none;
 	display: block;
-	padding: calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 3);
+	padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 3);
 	text-align: center;
 	color: var(--color-white);
 	width: 100%;
