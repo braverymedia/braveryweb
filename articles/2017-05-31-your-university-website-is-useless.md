@@ -40,8 +40,9 @@ Think about it. Your website, even after a thorough spring cleaning last year, s
 
 Eventually, these issues culminate in one solution:
 
-> *We must redesign our website!*
-
+::: callout
+> We must redesign our website!
+:::
 ## Bringing old school back
 
 Back before we had the web universities didn’t redesign their curriculum or design a new logo every time something didn’t work. That’s because marketers, in general, are pretty smart people and didn’t put all their eggs in one basket. Today the institutional website is the biggest of all baskets, where all eggs must be stored.

@@ -13,16 +13,16 @@
 	--color-black: #060312;
 	--color-bright: #6b4de0;
 	--color-rich: #5171a5;
-	--color-neon: #eefc57;
+	--color-neon: #ff20ce;
 	--color-nav: #ffffff;
 	--font-family: NameSansVF, sans-serif;
 	--grid-unit: 8px;
 
-	--type-super: clamp(3.157rem, calc(1.125rem + 5vw), 4.998rem);
-	--type-xl: clamp(2.5rem, calc(1.125rem + 3.3vw), 3.827rem);
-	--type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 2.999rem);
-	--type-md: clamp(1.333rem, calc(1.125rem + 2vw), 2.414rem);
-	--type-base: clamp(1.125rem, calc(1.125rem + 5vw), 1.31rem);
+	--type-super: clamp(3.157rem, calc(1.125rem + 5vw), 5.398rem);
+	--type-xl: clamp(2.5rem, calc(1.125rem + 3.3vw), 4rem);
+	--type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 3rem);
+	--type-md: clamp(1.333rem, calc(1.125rem + 2vw), 2.2rem);
+	--type-base: clamp(1.125rem, calc(1.125rem + 5vw), 1.35rem);
 	--type-sm: clamp(0.75rem, calc(1.125rem + 2vw), 1rem);
 	--type-xs: clamp(0.563rem, calc(1.125rem + 2vw), 0.5rem);
 
@@ -47,4 +47,10 @@
 %theme-rich {
 	background-color: var(--color-rich);
 	color: var(--color-white);
+}
+
+@keyframes gradientMove {
+	from {
+		background-position: 200% center;
+	}
 }

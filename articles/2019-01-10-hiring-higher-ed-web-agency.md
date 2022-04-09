@@ -18,7 +18,7 @@ I recently took a call with a vice president for marketing at a university just 
 This VP pointed something out that got me thinking. As the group was looking over the finalists a majority went toward the agency that had done work for institutions they were familiar with.
 
 ::: callout
-Doesn't that sound familiar?
+> Doesn't that sound familiar?
 :::
 
 I've seen this approach so many times in higher ed. Bravery has even been a victim of it in the past. I think it's kind of a hallmark of higher education marketing. And we can see the results in the myriad university websites that look the same, the messaging that's a rehash of somebody else's, and the small set of "elite" agencies that operate in this space.

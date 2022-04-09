@@ -30,7 +30,7 @@ module.exports = function (eleventyConfig) {
 
     // Cloudinary presets
     eleventyConfig.addFilter("coverTall", cover => {
-        const cloudinaryRoot = 'https://res.cloudinary.com/bravery/image/upload/t_cover_tall/';
+        const cloudinaryRoot = 'https://res.cloudinary.com/bravery/image/upload/t_cover_tall_new/';
         return cloudinaryRoot + cover;
     });
 
