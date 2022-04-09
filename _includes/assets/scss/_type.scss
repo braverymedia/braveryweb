@@ -253,3 +253,15 @@ span.brand {
 		font-variation-settings: "opsz" 96, "wght" 610;
 	}
 }
+.layout-legal {
+	main {
+		p,
+		li {
+			font-size: var(--type-sm);
+		}
+		h2 {
+			font-size: var(--type-md);
+			margin-top: 1em;
+		}
+	}
+}
