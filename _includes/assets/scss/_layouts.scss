@@ -45,7 +45,8 @@
 			}
 		}
 	}
-	.layout-jobs & {
+	.layout-jobs &,
+	.layout-legal & {
 		height: auto;
 		min-height: 55vh;
 		flex-direction: column;
@@ -573,6 +574,25 @@
 		header {
 			position: sticky;
 			top: 11vh;
+		}
+	}
+}
+.layout-legal {
+	#policy {
+		max-width: 100%;
+		height: auto;
+	}
+	.panel.legal article {
+		display: block;
+		position: static;
+		top: unset;
+	}
+}
+@include mq(md) {
+	.panel.legal .panel--grid {
+		grid-template-columns: repeat(8, 1fr);
+		#policy {
+			grid-column: 2 / span 6;
 		}
 	}
 }

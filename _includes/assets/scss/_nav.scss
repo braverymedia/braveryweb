@@ -126,3 +126,45 @@ button.menu-trigger {
 		opacity: 1;
 	}
 }
+.nav-link {
+	transition: opacity 300ms ease-in-out;
+	opacity: 1;
+	position: relative;
+
+	&[aria-current="page"] {
+		&:after {
+			content: "";
+			width: 10%;
+			background: var(--color-bright);
+			position: absolute;
+			bottom: 0;
+			left: 0.45em;
+			height: 4px;
+			transition: width 0.3s ease-in-out;
+		}
+
+		&:hover {
+			opacity: 1;
+
+			&:after {
+				width: calc(100% - 0.75em);
+			}
+		}
+	}
+
+	&:first-child {
+		justify-self: start;
+	}
+
+	&:last-child {
+		justify-self: end;
+	}
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.9;
+	}
+}
