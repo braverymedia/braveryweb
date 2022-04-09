@@ -17,7 +17,9 @@ excerpt: Solid tips for building a successful team of creative people in higher 
 
 Let’s say you work in higher education. And let’s say you’ve been planning for a university-wide web redesign and you’re asked what sort of resources you need to get this done. A lot of our friends and colleagues over the years have fallen into this enviable position and found that they don’t know the answer. It’s such a rare question to be asked and the chance to put together a team for a new web project is probably even rarer.
 
-> *Where do you start when trying to build the right creative team for digital products?*
+::: callout
+> Where do you start when trying to build the right creative team for digital products?
+:::
 
 When I worked at Trinity International University the Communications & Marketing team I was a part of went through a reorganization as we were wrapping up the redesign of our 6 major public-facing sites. The next big project I had pitched was a complete redo of our internal portal. Because we had done the legwork to show our campus leaders why internal communication was just as important as recruitment communication, we were given the opportunity to suggest an internal organization structure as things were in flux.
 

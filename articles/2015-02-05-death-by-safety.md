@@ -18,11 +18,13 @@ Higher education as an industry is not known for its speed or innovation. Despit
 
 We see the overarching mentality going something like this:
 
-*My entire career has been based on choosing technology packages with mass adoption, a novel’s-worth of whitepapers and documentation, and a high cost (because it must be good if it is that expensive). Relying on technology that hasn’t been around for at least a decade is foolish, obviously. Basically, let’s play it safe.*
+> My entire career has been based on choosing technology packages with mass adoption, a novel’s-worth of whitepapers and documentation, and a high cost (because it must be good if it is that expensive). Relying on technology that hasn’t been around for at least a decade is foolish, obviously. Basically, let’s play it safe.
 
 While the rest of us digital hustlers are creating, using, and refining tools that speed up our processes, these quasi-luddites ignore or, worse, relegate our bespoke methods to even less-meaningful categories like *hipster.*
 
-> *****It’s 2015. *******CSS preprocessors are not new technology. Things like package managers and task runners aren’t new either. The darling technologies of two years ago are already being supplanted. You’re still using Node? Psh. Check out Angular.js.**
+::: callout
+> It’s 2015. CSS preprocessors are not new technology. Things like package managers and task runners aren’t new either. The darling technologies of two years ago are already being supplanted. You’re still using Node? Psh. Check out Angular.js.
+:::
 
 Higher education’s failure to recognize the speed at which web technologies progress is what scares me the most. When a higher ed web generalist refuses to look forward at new methods, they have already committed their work to irrelevance. In any industry or field, if you are not interested in the new methods, tools, and skills your colleagues are developing, you don’t deserve whatever job you have.
 
@@ -41,7 +43,7 @@ Small teams can do amazing things when not bogged down with the political BS tha
 - The internal student experience would be given just as much, if not more, attention and care as the acquisition experience.
 
 ::: callout
-> **A web team that’s given responsibility is one that can do amazing things. An interested, devoted, and talented team coupled with the freedom to meet goals however they want to can yield incredible results.**
+> A web team that’s given responsibility is one that can do amazing things. An interested, devoted, and talented team coupled with the freedom to meet goals however they want to can yield incredible results.
 :::
 
 But safety’s primary ally is insecurity. The vast majority of our institutions are systemically insecure and this reveals itself in every public and private decision made. We choose Blackboard despite knowing our students and faculty hate it. We choose CMSes based on sales pitches or prejudices rather than its fit for the job at hand. We design a website to look like that other school’s because their’s went over so well last year. We slink behind instead of blazing trails.
@@ -52,7 +54,9 @@ You see, the university was always where the rest of the world found exciting id
 
 It’s our own fault. The ones who choose to stick with higher ed are brave. But bravery is just a starting point. The follow through is what matters. As Winston Churchill once said,
 
-> **Doubt can be swept away only by deeds**
+::: callout
+> Doubt can be swept away only by deeds.
+:::
 
 When we give up on ourselves we are giving up on our students, our faculty, and our coworkers. When we lose interest in our field’s trappings, we lose the respect and goodwill of our colleagues. And when we choose assuaging our insecurities over doing something world-changing, we have hammered the final nail.
 

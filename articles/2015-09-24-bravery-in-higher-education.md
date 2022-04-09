@@ -24,7 +24,9 @@ That time in higher ed is what inspired Bravery’s creation. When I managed web
 
 The people at Bravery have gone through the processes of hiring consultants, of selecting a new CMS, of migrating thousands of pages of content, of fighting for a new hire, of working long hours and over weekends to launch that last-minute microsite the president asked for.
 
-We’ve been there, and we want to help.
+::: callout
+> We’ve been there, and we want to help.
+:::
 
 When people ask me what I do and I tell them about Bravery, I often hear myself telling them that I started this group to be able to use my skills and experience to help lots of colleges and universities instead of just one. We all need help and I remember that feeling after we hired an agency with folks that wanted to back up my ideas and help sell my bosses on them. And that’s what I want Bravery to do.
 
