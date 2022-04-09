@@ -181,8 +181,16 @@ span.brand {
 	list-style-type: none;
 }
 // Article type
-.layout-single {
+.layout-single,
+.layout-jobs {
 	.article--content {
+		p,
+		li {
+			font-size: var(--type-sm);
+		}
+		li {
+			margin-bottom: 0.6em;
+		}
 		blockquote {
 			margin: calc(var(--grid-unit) * 4) auto;
 			padding-right: 2.5vh;

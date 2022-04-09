@@ -1,7 +1,7 @@
 <!doctype html>
 <html {% if section %} class="layout-{{ section }}" {% endif %} lang="en">
   {% include "components/head.njk" %}
-  <body>
+  <body data-menu="closed">
     {% if page.url == '/contact/' %}
       {% include "components/nav-minimal.njk" %}
     {% else %}
@@ -70,7 +70,7 @@
             {% if page.url == "/" %}
             </h1>
           {% else %}
-            <p>{{ title if title and section != 'single' }}<p>
+            <p>{{ heading if heading and section != 'single' }}<p>
           </div>
         {% endif %}
         {% include "components/nav-menu.njk" %}

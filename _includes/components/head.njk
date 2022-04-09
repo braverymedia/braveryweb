@@ -42,4 +42,10 @@
     <meta name="twitter:creator" content="{{ social.tw.creator or metadata.social.tw.creator }}">
     <meta name="twitter:image" content="{{ social.tw.image or metadata.social.tw.image }}">
     {%- endblock -%}
+    {% set js %}
+        {% include "_includes/assets/js/bravery.js" %}
+    {% endset %}
+    {% if site.environment === 'production' %}
+        <script>{{ js | jsmin | safe }}</script>
+    {% endif %}
 </head>
