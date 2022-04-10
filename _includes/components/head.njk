@@ -41,7 +41,7 @@
     {% set js %}
         {% include "_includes/assets/js/bravery.js" %}
     {% endset %}
-    {% if site.environment === 'production' %}
+    {% if site.env === 'production' %}
         <script>{{ js | jsmin | safe }}</script>
     {% endif %}
 </head>
