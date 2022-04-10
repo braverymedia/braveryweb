@@ -17,6 +17,7 @@
 		transition: opacity 200ms ease-in-out;
 		display: flex;
 		align-items: center;
+		text-decoration: none;
 	}
 	@include mq(sm) {
 		height: 88px;

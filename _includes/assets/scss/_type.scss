@@ -75,6 +75,7 @@ p {
 }
 main {
 	a {
+		color: inherit;
 		text-decoration: underline 2px solid var(--color-neon);
 		text-underline-offset: 4px;
 		-webkit-text-underline-offset: 4px;
