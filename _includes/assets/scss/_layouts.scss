@@ -34,7 +34,7 @@
 		display: block;
 		position: static;
 		height: auto;
-		@include mq(md) {
+		@include mq(sm) {
 			h1 {
 				margin-top: 0;
 				position: sticky;
@@ -362,13 +362,10 @@
 		> p {
 			font-size: var(--type-base);
 		}
-		@include mq(md) {
+		@include mq(sm) {
 			padding: calc(var(--grid-unit) * 8);
 			> p {
 				font-size: var(--type-md);
-			}
-			footer {
-				margin-bottom: -25%;
 			}
 		}
 	}
@@ -476,31 +473,31 @@
 			grid-auto-flow: row;
 			align-items: start;
 			padding: 0;
-		}
-		article {
-			padding-top: 20vh;
-			grid-column: 3;
-		}
-		aside {
-			grid-column: 2;
-			grid-row: -1 / span 3;
-			display: grid;
-			align-items: start;
-			gap: inherit;
-			grid-template-columns: auto repeat(5, 1fr);
-			position: sticky;
-			min-height: 100vh;
-			padding-top: 15vh;
-			padding-bottom: 15vh;
-			top: 0;
-			&:after {
-				content: "";
-				position: absolute;
-				right: 0;
-				height: 90vh;
-				top: 10vh;
-				background-color: var(--color-rich);
-				width: 1px;
+			article {
+				padding-top: 20vh;
+				grid-column: 3;
+			}
+			aside {
+				grid-column: 2;
+				grid-row: -1 / span 3;
+				display: grid;
+				align-items: start;
+				gap: inherit;
+				grid-template-columns: auto repeat(5, 1fr);
+				position: sticky;
+				min-height: 100vh;
+				padding-top: 15vh;
+				padding-bottom: 15vh;
+				top: 0;
+				&:after {
+					content: "";
+					position: absolute;
+					right: 0;
+					height: 90vh;
+					top: 10vh;
+					background-color: var(--color-rich);
+					width: 1px;
+				}
 			}
 		}
 		.article--cover {
@@ -518,12 +515,15 @@
 	.job-post {
 		padding: 10vh calc(var(--grid-unit) * 2);
 		display: block;
-		@include mq(md) {
+		@include mq(sm) {
 			display: grid;
-			grid-template-columns: 70fr 30fr;
+			grid-template-columns: 65fr 35fr;
 			gap: calc(var(--grid-unit) * 5);
 			align-items: start;
+		}
+		@include mq(md) {
 			padding: 15vh 20vw;
+			grid-template-columns: 70fr 30fr;
 		}
 	}
 	.apply-action {
@@ -532,7 +532,7 @@
 		}
 	}
 }
-@include mq(md) {
+@include mq(sm) {
 	.apply-action {
 		position: sticky;
 		top: 10vh;

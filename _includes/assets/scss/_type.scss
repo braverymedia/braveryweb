@@ -46,7 +46,7 @@ p {
 	line-height: 1.65;
 	margin-top: 1.35em;
 	&.hero {
-		font-size: var(--type-xl);
+		font-size: var(--type-lg);
 		font-variation-settings: "wght" 800, "opsz" 96;
 		line-height: 1.1;
 		margin-bottom: 0;
@@ -75,12 +75,16 @@ p {
 }
 main {
 	a {
-		text-decoration: underline solid var(--color-neon);
+		text-decoration: underline 2px solid var(--color-neon);
 		text-underline-offset: 4px;
-		text-decoration-thickness: 2px;
+		-webkit-text-underline-offset: 4px;
+		-webkit-text-decoration-line: underline;
+		-webkit-text-decoration-thickness: 2px;
+		-webkit-text-decoration-color: var(--color-neon);
 		transition: var(--global-transition);
 		&:hover {
 			text-decoration-color: var(--color-bright);
+			-webkit-text-decoration-color: var(--color-bright);
 		}
 	}
 }
