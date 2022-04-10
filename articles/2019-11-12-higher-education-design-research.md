@@ -19,7 +19,9 @@ Let's start with the obvious. Redesigning a university website, or any website f
 
 Where I've seen many organizations go wrong, though, is where they start. We've all heard the familiar refrain, "Goals before tools," but how do we formulate attainable goals? In many institutions, goals are dreamt up by an eager president or chancellor. Maybe a vice president or director-level staff member throws in their two cents. But here's a little secret:
 
+::: callout
 > Organizations that are thriving do lots of research before they do anything else.
+:::
 
 If you've ever looked at hiring a consultant to help with ... well, anything really... you've no doubt been presented with a proposal that includes a "discovery" phase of work. That's marketing-speak for *research*. Consultants know research is the first step, but have you ever wondered why that's the case?
 
@@ -42,7 +44,9 @@ And why is that? Well, starting up a new program is expensive. If they want a ne
 
 That's just a start, but the same applies to a web redesign. The institutions that see little to no result from a web project do so because they don't start with data-driven, business-centric goals. Data should always come first. So it's more like goals before tools, but data before goals. Or at least data alongside goals.
 
+::: callout
 > Goals before tools, but data before goals.
+:::
 
 If you redesign and then research, you will end up either doubling work (which is expensive) or sitting on a redesigned website that doesn't reach its potential. Even more horrifying, your new site could perform worse than your current site does. And fixing that is even more expensive.
 
@@ -60,7 +64,7 @@ Institutions that are increasing their enrollment start with research, and make 
 
 ---
 
-**Speaking of which,**[Bravery](/services/?utm_source=insight) can help you setup a strategy, or train your staff on how to conduct this research. We'd love to help. [Please get in touch](mailto:inquiries@braverymedia.co).
+**Speaking of which,** [Bravery](/services/?utm_source=insight) can help you setup a strategy, or train your staff on how to conduct this research. We'd love to help. [Please get in touch](mailto:inquiries@braverymedia.co).
 
 ---
 
@@ -92,7 +96,7 @@ Our strategy work helps web teams make better decisions, focusing on the reality
 
 ---
 
-**Want to work with the best?**[Send us an email](/contact/?utm_source=insight). I'm positive [Bravery Media](/services/?utm_source=insight) can help you improve your university's web results.
+**Want to work with the best?** [Send us an email](/contact/?utm_source=insight). I'm positive [Bravery Media](/services/?utm_source=insight) can help you improve your university's web results.
 
 ---
 

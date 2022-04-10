@@ -4,7 +4,6 @@ import { terser } from 'rollup-plugin-terser';
 import path from 'path';
 const config = require('./bravery.config.js');
 
-const SRC_DIR = config.dir.src;
 const ASSETS_DIR = config.dir.assets;
 const DIST_DIR = config.dir.dist;
 
