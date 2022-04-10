@@ -33,7 +33,7 @@
     <meta name="twitter:image" content="{{ social.tw.image or metadata.social.tw.image }}">
     {%- endblock -%}
     {% if site.env === 'production' %}
-        <!-- INLINE CSS-->
+        <link rel="stylesheet" href="/assets/css/bravery.css">
     {% endif %}
     {% if site.env === 'development' %}
         <link rel="stylesheet" href="/assets/css/bravery.css">
