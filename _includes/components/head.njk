@@ -5,12 +5,6 @@
     <title>{{ title or metadata.title }}{% if page.url != '/' %} / {{ metadata.sitename }} {% endif %}</title>
     <meta name="description" content="{{ description or metadata.description }}">
     <link rel="alternate" type="application/atom+xml" title="Bravery Media Insights" href="{{ metadata.feed.url }}"/>
-    {% if site.env === 'production' %}
-        <!-- INLINE CSS-->
-    {% else %}
-        <link rel="stylesheet" href="/assets/css/bravery.css">
-        <script src="/assets/js/bravery.bundle.js" defer="defer"></script>
-    {% endif %}
     <link rel="preconnect" href="https://script.hotjar.com">
     <link rel="preconnect" href="https://vars.hotjar.com">
     {# Favicons #}
@@ -38,10 +32,17 @@
     <meta name="twitter:creator" content="{{ social.tw.creator or metadata.social.tw.creator }}">
     <meta name="twitter:image" content="{{ social.tw.image or metadata.social.tw.image }}">
     {%- endblock -%}
+    {% if site.env === 'production' %}
+        <!-- INLINE CSS-->
+    {% endif %}
     {% set js %}
         {% include "_includes/assets/js/bravery.js" %}
     {% endset %}
     {% if site.env === 'production' %}
         <script>{{ js | jsmin | safe }}</script>
+    {% endif %}
+    {% if site.env === 'development' %}
+        <link rel="stylesheet" href="/assets/css/bravery.css">
+        <script src="/assets/js/bravery.bundle.js" defer="defer"></script>
     {% endif %}
 </head>
