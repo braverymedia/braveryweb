@@ -1,5 +1,6 @@
 body {
 	background-color: var(--color-black);
+	font-size: 1rem;
 }
 
 .faux-browser {
@@ -195,7 +196,7 @@ figure {
 		margin-bottom: 1em;
 	}
 
-	@media (min-width: 960px) {
+	@include mq(sm) {
 		font-size: var(--type-sm);
 		align-items: start;
 		justify-content: start;

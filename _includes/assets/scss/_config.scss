@@ -4,6 +4,8 @@
 	font-family: NameSansVF;
 	src: url("https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable-subset-0.6.woff2")
 		format("woff2-variations");
+	font-weight: normal;
+	font-style: normal;
 	font-display: swap;
 }
 
@@ -20,7 +22,7 @@
 
 	--type-super: clamp(3.157rem, calc(1.125rem + 5vw), 5.398rem);
 	--type-xl: clamp(2.5rem, calc(1.125rem + 3.3vw), 4rem);
-	--type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 3rem);
+	--type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 3.25rem);
 	--type-md: clamp(1.333rem, calc(1.125rem + 2vw), 2.2rem);
 	--type-base: clamp(1.125rem, calc(1.125rem + 5vw), 1.35rem);
 	--type-sm: clamp(0.75rem, calc(1.125rem + 2vw), 1rem);

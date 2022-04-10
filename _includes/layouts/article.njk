@@ -18,7 +18,7 @@ section: single
     {% if cover %}
     <picture class="article--cover">
         <source srcset="{{ cover | coverTall }}" media="(min-width: 1024px)">
-        <img data-src="{{ cover | cover }}" alt="{{ cover_alt }}" loading="lazy" />
+        <img src="{{ cover | cover }}" alt="{{ cover_alt }}" />
     </picture>
     {% endif %}
 </aside>
