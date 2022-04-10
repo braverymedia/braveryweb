@@ -67,14 +67,12 @@ function preloadImage(img) {
 const triggerMenu = document.querySelector('.menu-trigger');
 
 triggerMenu.addEventListener('click', e => {
-    if (document.body.classList.contains('menu-open')) {
-        document.body.classList.remove('menu-open');
-
-        triggerMenu.setAttribute('aria-expanded', "false");
-    }
-    else {
-        document.body.classList.add('menu-open');
-        triggerMenu.setAttribute('aria-expanded', "true");
+    if ( document.body.dataset.menu === 'closed' ) {
+        document.body.dataset.menu = 'open';
+        e.currentTarget.setAttribute('aria-expanded', true);
+    } else {
+        document.body.dataset.menu = 'closed';
+        e.currentTarget.setAttribute('aria-expanded', false);
     }
 });
 
@@ -116,14 +114,3 @@ if ( articles ) {
         });
     });
 }
-
-document.body.addEventListener( 'click', (e) => {
-    if ( ! e.target.dataset.umamiEvent )
-        return;
-
-    eventLabel = e.target.dataset.umamiEvent;
-
-    // push event
-    umami.trackEvent(eventLabel, 'cta-click' );
-
-} );

@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+@import "helpers";
+=======
 // Sass variables
 $weight-normal: 400;
 $weight-medium: 500;
@@ -23,30 +26,40 @@ $mq: ("sm": 768px,
             @content;
         }
     }
+>>>>>>> main
 
-    @if md==$res {
-        @media only screen and (min-width: #{map-get($mq, "md")}) {
-            @content;
-        }
-    }
+@font-face {
+	font-family: NameSansVF;
+	src: url("https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable-subset-0.6.woff2")
+		format("woff2-variations");
+	font-display: swap;
+}
 
-    @if lg==$res {
-        @media only screen and (min-width: #{map-get($mq, "lg")}) {
-            @content;
-        }
-    }
+// CSS Variables
+:root {
+	--color-white: #fff;
+	--color-black: #060312;
+	--color-bright: #6b4de0;
+	--color-rich: #5171a5;
+	--color-neon: #ff20ce;
+	--color-nav: #ffffff;
+	--font-family: NameSansVF, sans-serif;
+	--grid-unit: 8px;
 
-    @if xl==$res {
-        @media only screen and (min-width: #{map-get($mq, "xl")}) {
-            @content;
-        }
-    }
+	--type-super: clamp(3.157rem, calc(1.125rem + 5vw), 5.398rem);
+	--type-xl: clamp(2.5rem, calc(1.125rem + 3.3vw), 4rem);
+	--type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 3rem);
+	--type-md: clamp(1.333rem, calc(1.125rem + 2vw), 2.2rem);
+	--type-base: clamp(1.125rem, calc(1.125rem + 5vw), 1.35rem);
+	--type-sm: clamp(0.75rem, calc(1.125rem + 2vw), 1rem);
+	--type-xs: clamp(0.563rem, calc(1.125rem + 2vw), 0.5rem);
 
-    @if huge==$res {
-        @media only screen and (min-width: #{map-get($mq, "huge")}) {
-            @content;
-        }
-    }
+	--font-weight-normal: 400;
+	--font-weight-md: 500;
+	--font-weight-bold: 700;
+	--feature-simple-y: "ss08";
+
+	--global-transition: all 0.3s ease-in-out;
 }
 
 // CSS Variables
@@ -83,16 +96,22 @@ $mq: ("sm": 768px,
 }
 
 %theme-bright {
-    background-color: var(--color-bright);
-    color: var(--color-white);
+	background-color: var(--color-bright);
+	color: var(--color-white);
 }
 
 %theme-invert {
-    background-color: var(--color-black);
-    color: var(--color-white);
+	background-color: var(--color-black);
+	color: var(--color-white);
 }
 
 %theme-rich {
-    background-color: var(--color-rich);
-    color: var(--color-white);
+	background-color: var(--color-rich);
+	color: var(--color-white);
+}
+
+@keyframes gradientMove {
+	from {
+		background-position: 200% center;
+	}
 }

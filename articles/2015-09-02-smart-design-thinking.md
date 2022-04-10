@@ -37,8 +37,9 @@ If practicing semiological thought and applying it to design allows us to pack i
 
 See, we’ve all got baggage, and that baggage flies open when we least expect it. Roland Barthes, one of the great theorists in semiology, analyzes a magazine cover in his *Mythologies *collection. The cover of this magazine shows a young black soldier in a French uniform saluting. And while the reader can’t know about the young man’s life or his ambitions or any of his back story, the magazine chose the image for a specific reason and to communicate very specific things.
 
-> **“I am at the barber’s, and a copy of *Paris-Match* is offered to me. On the cover, a young [black man] in a French uniform is saluting, with his eyes uplifted, probably fixed on a fold of the tricolour. All this is the meaning of the picture. But whether naively or not, I see very well what it signifies to me: that France is a great Empire, that all her sons, without any colour discrimination, faithfully serve under the flag, and that there is no better answer to the detractors of an alleged colonialism than the zeal shown by this [black man] in serving his so-called oppressors …”**
-> ****Barthes 1972, *Mythologies*, p. 116****
+> “I am at the barber’s, and a copy of *Paris-Match* is offered to me. On the cover, a young [black man] in a French uniform is saluting, with his eyes uplifted, probably fixed on a fold of the tricolour. All this is the meaning of the picture. But whether naively or not, I see very well what it signifies to me: that France is a great Empire, that all her sons, without any colour discrimination, faithfully serve under the flag, and that there is no better answer to the detractors of an alleged colonialism than the zeal shown by this [black man] in serving his so-called oppressors …”
+
+<cite>**Barthes 1972, *Mythologies*, p. 116**</cite>
 
 Though the magazine chose just a photo of a young man, that photo communicates a whole lot more than just the literal scene, depending on the person viewing it. Depending on the baggage brought to the experience, the viewers reaction could be good or very, very bad.
 

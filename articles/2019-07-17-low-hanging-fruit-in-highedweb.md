@@ -65,6 +65,6 @@ Be creative.
 
 ### Need a helping hand to get started?
 
-This is work Bravery Media's team members have been doing for over a decade. We've implemented these very changes for our clients and seen massive growth take off immediately. We would love to talk to you to help identify these and other opportunities to improve your users' experience.Get in touch below or message us on [Twitter](https://twitter.com/braverymedia), [LinkedIn](https://www.linkedin.com/company/bravery-media), or [Facebook](https://www.facebook.com/braverymedia/).
+This is work Bravery Media's team members have been doing for over a decade. [We've implemented these very changes](/insight/higher-ed-web-design-s-low-hanging-fruit/) for our clients and seen massive growth take off immediately. We would love to talk to you to help identify these and other opportunities to improve your users' experience.Get in touch below or message us on [Twitter](https://twitter.com/braverymedia), [LinkedIn](https://www.linkedin.com/company/bravery-media), or [Facebook](https://www.facebook.com/braverymedia/).
 
 Call: [(512) 593-8094](tel:+15125938094) / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)

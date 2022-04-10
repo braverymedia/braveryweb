@@ -1,4 +1,6 @@
 const { DateTime } = require("luxon");
+const { minify } = require("terser");
+const { PurgeCSS } = require('purgecss');
 const CleanCSS = require("clean-css");
 const htmlmin = require("html-minifier");
 const { minify } = require("terser");
@@ -16,7 +18,7 @@ module.exports = function (eleventyConfig) {
 
     // Date formatting (human readable)
     eleventyConfig.addFilter("readableDate", dateObj => {
-        return DateTime.fromJSDate(dateObj).toFormat("LLL dd, yyyy");
+        return DateTime.fromJSDate(dateObj, { zone: 'local' }).toFormat("LLL dd, yyyy");
     });
 
     // Date formatting (machine readable)
@@ -24,11 +26,12 @@ module.exports = function (eleventyConfig) {
         return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
     });
 
+    // Simple year shortcode
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
     // Cloudinary presets
     eleventyConfig.addFilter("coverTall", cover => {
-        const cloudinaryRoot = 'https://res.cloudinary.com/bravery/image/upload/t_cover_tall/';
+        const cloudinaryRoot = 'https://res.cloudinary.com/bravery/image/upload/t_cover_tall_new/';
         return cloudinaryRoot + cover;
     });
 
@@ -37,8 +40,8 @@ module.exports = function (eleventyConfig) {
         return cloudinaryRoot + cover;
     });
 
-    /* Minification filters */
-    eleventyConfig.addFilter("cssmin", function(code) {
+    // Minify CSS
+    eleventyConfig.addFilter("cssmin", function (code) {
         return new CleanCSS({}).minify(code).styles;
     });
 
@@ -54,6 +57,26 @@ module.exports = function (eleventyConfig) {
         // Fail gracefully.
         callback(null, code);
         }
+    });
+
+    /**
+     * Remove any CSS not used on the page and inline the remaining CSS in the
+     * <head>.
+     *
+     * @see {@link https://github.com/FullHuman/purgecss}
+     */
+    eleventyConfig.addTransform('purge-and-inline-css', async function(content) {
+        if (process.env.ELEVENTY_ENV !== 'production' || !this.outputPath.endsWith('.html')) {
+            return content;
+        }
+
+        const purgeCSSResults = await new PurgeCSS().purge({
+            content: [{ raw: content }],
+            css: ['_site/assets/css/bravery.css'],
+            keyframes: true
+        });
+
+        return content.replace('<!-- INLINE CSS-->', '<style>' + purgeCSSResults[0].css + '</style>');
     });
 
     eleventyConfig.addTransform("htmlmin", function(content) {
@@ -76,10 +99,21 @@ module.exports = function (eleventyConfig) {
         });
     });
 
+    // only content in the `jobs/` directory
+    eleventyConfig.addCollection("jobs", function (collection) {
+        return collection.getAllSorted().filter(function (item) {
+            return item.inputPath.match(/^\.\/jobs\//) !== null;
+        });
+    });
+
+    // Sass
+    eleventyConfig.addWatchTarget("_includes/assets/scss");
+
     // Don't process files and folders with static assets e.g. images
     eleventyConfig.addPassthroughCopy({ "_includes/assets/css": "assets/css" });
     eleventyConfig.addPassthroughCopy({"_includes/assets/icons":"assets/icons"});
     eleventyConfig.addPassthroughCopy({"_includes/assets/img":"assets/img"});
+    eleventyConfig.addPassthroughCopy({"_includes/assets/js":"assets/js"});
     eleventyConfig.addPassthroughCopy(".well-known/");
     eleventyConfig.addPassthroughCopy("manifest.json");
     eleventyConfig.addPassthroughCopy("site.webmanifest");
@@ -99,7 +133,12 @@ module.exports = function (eleventyConfig) {
     };
 
     let markdownLib = markdownIt(options).use(markdownItContainer, 'callout');
+
     eleventyConfig.setLibrary("md", markdownLib);
+
+    eleventyConfig.addFilter("markdown", (content) => {
+        return md.render(content);
+    });
 
     let opts = {
         permalink: true,
@@ -110,7 +149,6 @@ module.exports = function (eleventyConfig) {
     return {
         templateFormats: ["md", "njk", "html"],
         pathPrefix: "/",
-
         markdownTemplateEngine: "liquid",
         htmlTemplateEngine: "njk",
         dataTemplateEngine: "njk",

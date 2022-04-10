@@ -1,26 +1,3 @@
-{% set js %}
-{% include "_includes/assets/js/bravery.js" %}
-{% endset %}
-<script>{{ js | jsmin | safe }}</script>
 {% if section == "legal" %}
     <script src="https://app.termageddon.com/js/termageddon.js"></script>
-{% endif %}
-{% if sitetools.env != 'development' %}
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-    <script>
-        window.cookieconsent.initialise({
-            "palette": {
-                "popup": {
-                    "background": "#000000"
-                },
-                "button": {
-                    "background": "#6b4de0"
-                }
-            },
-            "position": "bottom-right",
-            "content": {
-                "href": "/privacy-policy/"
-            }
-        });
-    </script>
 {% endif %}

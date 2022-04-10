@@ -23,7 +23,9 @@ I spent six years in advancement offices working with alumni relations teams, tr
 
 A couple of days ago I found an email in my inbox from my undergraduate alma mater. I haven’t heard from their alumni office in ages and the last few times I have it’s been for a giving ask. This email, though, was an invitation join their new online alumni community site and not asking for money…
 
-> *I would give them cash to not have to use this thing.*
+::: callout
+> I would give them cash to not have to use this thing.
+:::
 
 The shockingly bad design of this product hurts and makes me want to run away. Because I have no relationship with the alumni office at this point, I have every reason to hot foot it out of there and never engage.
 
@@ -33,7 +35,9 @@ Because I like to be helpful, here is my attempt at explaining what’s currentl
 
 At most universities, major gift officers (MGOs) are given the most professional investment because they bring in the big money. The cycle they follow is lengthy and focused on cultivating a relationship with a donor over months and years until that donor is ready to pull the trigger and make that gift. It’s an intentional, applied process.
 
-> *It’s a process that is rarely applied to the most obvious target group: current students.*
+::: callout
+> It’s a process that is rarely applied to the most obvious target group: current students.
+:::
 
 The early cultivation stage of major gift development should start while a student is on campus. If institutions want young alumni to give at all, it is vital to understand that the motivations of the current youth generations are much different than those of their parents and grandparents. A big part of those motivations is based on **relational value**.
 
@@ -59,7 +63,9 @@ Digital tools can be beneficial when executed correctly, but this isn’t about 
 
 Honestly, I’ve been talking about this issue forever…
 
-> *Don’t treat the digital and physical worlds as different things. They already coexist and overlap.*
+::: callout
+> Don’t treat the digital and physical worlds as different things. They already coexist and overlap.
+:::
 
 When you run a university, the temporal or IRL experiences you provide affect your students’ digital experiences and vice versa. They are both important and if you neglect one you undermine the other.
 
@@ -71,7 +77,9 @@ Well, the easy way to say it is: recognize the **important potential** current s
 
 Administrators and leadership at so many institutions have demonstrated over the years that they primarily value new enrollment numbers; the time has come to reevaluate and change that strategy. And if you go to any higher education conference that doesn't cater to the executive level, you’ll hear how hard it is for administrative staff to break through the “silos” at their institutions. So here’s my hard and somewhat radical idea…
 
-> *Put student affairs and alumni affairs together.*
+::: callout
+> Put student affairs and alumni affairs together.
+:::
 
 Yeah, that sounds crazy. But the thought exercise is an interesting one. If those responsible for the student experience thought like MGOs, a lot of things would change for the better — and not just on the fundraising side. MGOs take a lot of care in developing relationships with their donors; what if current students were cared for just as well? How would that change retention, graduation rates, and learning outcomes?
 

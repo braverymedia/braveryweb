@@ -25,7 +25,9 @@ Your redesign will probably [fail to live up to expectations](/insight/your-univ
 
 When an institution hires an agency to do a redesign, there are invariably too many people involved in the process. Your “stakeholders” are nothing more than liabilities. The very reason you think you need to redesign is due to those folks and the fact that they don’t work in web marketing.
 
-> *You know how every university website looks the same? This is why.*
+::: callout
+> You know how every university website looks the same? This is why.
+:::
 
 ****Bonus:**** Anyone you involve from the university side will think they know better than your agency partner. That means instead of getting the best of a very expensive team of strategists, designers, and web developers, you’re going to get the best of your internal committee… which—and let’s be honest here—is not very good.
 
@@ -54,7 +56,9 @@ Otherwise? There’s no hard-and-fast rule. If you have design and development s
 
 But if your institution is spending dozens of thousands of dollars with an agency on a web redesign, you should milk it for all it’s worth. If *“your academic program pages aren’t clearly communicating the value and outcomes of a major or a degree”* ([source](https://www.insidehighered.com/blogs/call-action-marketing-and-communications-higher-education/it-time-redesign-your-website)), then rewrite them, don’t redesign your whole website. That’s crazy talk.
 
-> *Redesign that one page template, or make better use of the content that’s there.*
+::: callout
+> Redesign that one page template, or make better use of the content that’s there.
+:::
 
 Maybe just do a content audit or work with an agency partner to develop a better content strategy, especially if “you aren’t telling the story of your institution effectively” (source). It will cost you far less and bring you far more along than redesigning the entire institutional website.
 
