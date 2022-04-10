@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .toolbar {
 	display: flex;
 	justify-content: space-between;
@@ -91,6 +92,10 @@ button.menu-trigger {
 		gap: calc(var(--grid-unit) * 2);
 		flex: 0 1 50vw;
 	}
+=======
+nav {
+    font-variation-settings: 'opsz'24, 'wght'600;
+>>>>>>> main
 }
 
 #icon-menu {
@@ -168,3 +173,152 @@ button.menu-trigger {
 		opacity: 0.9;
 	}
 }
+<<<<<<< HEAD
+=======
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+    color: var(--color-nav);
+    mix-blend-mode: difference;
+
+    .branding {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    h1 {
+        font-size: 0.75em;
+    }
+
+    .logo {
+        position: relative;
+        z-index: 2;
+        padding: 0 calc(var(--grid-unit)*2);
+        color: currentColor;
+
+        >svg {
+            height: 22px;
+        }
+    }
+
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 88px;
+        padding: 0 calc(var(--grid-unit) * 4);
+
+        .nav-link {
+            font-size: 0.75em;
+        }
+
+        .logo>svg {
+            height: 32px;
+        }
+    }
+
+    button.menu-trigger {
+        color: currentColor;
+        z-index: 2;
+        margin: 0;
+        height: 60px;
+        width: 60px;
+        padding: calc(var(--grid-unit)*2.4);
+
+        @include mq(md) {
+            display: none;
+        }
+    }
+
+    .site-menu {
+        background-color: var(--color-bright);
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        font-size: 15vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .35s ease-in-out;
+
+        @include mq(md) {
+            opacity: 1;
+            visibility: visible;
+            background-color: transparent;
+            font-size: 1em;
+            position: relative;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: stretch;
+
+            .nav-link {
+                padding: 0.75em;
+            }
+        }
+    }
+
+    .nav-link {
+        transition: opacity 300ms ease-in-out;
+        opacity: 1;
+        position: relative;
+
+        &[aria-current='page'] {
+            &:after {
+                content: "";
+                width: 10%;
+                background: var(--color-bright);
+                position: absolute;
+                bottom: 1.25em;
+                left: .75em;
+                height: 4px;
+                transition: width .3s ease-in-out;
+            }
+
+            &:hover {
+                opacity: 1;
+
+                &:after {
+                    width: calc(100% - 1.5em);
+                }
+            }
+        }
+
+        &:first-child {
+            justify-self: start;
+        }
+
+        &:last-child {
+            justify-self: end;
+        }
+
+        &:hover {
+            opacity: .6;
+        }
+
+        &:active {
+            opacity: .9;
+        }
+    }
+
+    a {
+        color: currentColor;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+}
+>>>>>>> main
