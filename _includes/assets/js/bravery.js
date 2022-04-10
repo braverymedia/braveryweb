@@ -114,6 +114,7 @@ if ( articles ) {
         });
     });
 }
+<<<<<<< HEAD
 
 document.body.addEventListener( 'click', (e) => {
     if ( ! e.target.dataset.umamiEvent )
@@ -125,3 +126,5 @@ document.body.addEventListener( 'click', (e) => {
     umami.trackEvent(eventLabel, 'cta-click' );
 
 } );
+=======
+>>>>>>> 1cc03844af4051431e0eaf566f70df6c07665995
