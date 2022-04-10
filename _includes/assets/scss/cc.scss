@@ -55,7 +55,7 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	font-family: var(--font-body);
-	font-size: 0.65rem;
+	font-size: var(--type-sm);
 	line-height: 1.5em;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -96,7 +96,7 @@
 }
 
 .cc-header {
-	font-size: 18px;
+	font-size: var(--type-sm);
 	font-weight: 700;
 }
 
@@ -126,7 +126,7 @@
 .cc-btn {
 	display: block;
 	padding: 0.4em 0.8em;
-	font-size: 0.9em;
+	font-size: 1rem;
 	font-weight: 700;
 	border-width: 2px;
 	border-style: solid;
@@ -150,7 +150,7 @@
 	position: absolute;
 	top: 0.5em;
 	right: 0.5em;
-	font-size: 1.6em;
+	font-size: var(--type-base);
 	opacity: 0.9;
 	line-height: 0.75;
 }
