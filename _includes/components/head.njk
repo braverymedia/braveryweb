@@ -35,12 +35,6 @@
     {% if site.env === 'production' %}
         <!-- INLINE CSS-->
     {% endif %}
-    {% set js %}
-        {% include "_includes/assets/js/bravery.js" %}
-    {% endset %}
-    {% if site.env === 'production' %}
-        <script>{{ js | jsmin | safe }}</script>
-    {% endif %}
     {% if site.env === 'development' %}
         <link rel="stylesheet" href="/assets/css/bravery.css">
         <script src="/assets/js/bravery.bundle.js" defer="defer"></script>

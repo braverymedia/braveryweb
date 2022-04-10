@@ -1,3 +1,9 @@
+{% set js %}
+    {% include "_includes/assets/js/bravery.js" %}
+{% endset %}
+{% if site.env === 'production' %}
+    <script>{{ js | jsmin | safe }}</script>
+{% endif %}
 {% if section == "legal" %}
     <script src="https://app.termageddon.com/js/termageddon.js"></script>
 {% endif %}
