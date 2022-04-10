@@ -18,8 +18,6 @@ if (contactForm) {
     contactForm.addEventListener('submit', e => {
         e.preventDefault();
         processForm(contactForm);
-        // track form submission
-        umami.trackEvent('Contact Submission', 'submission');
     })
 }
 
@@ -100,8 +98,10 @@ function handleIntersect(entry) {
         fakeBrowser.classList.remove('in-view');
     }
 };
+if ( fakeBrowser ) {
+    fbObserver.observe(fakeBrowser);
+}
 
-fbObserver.observe(fakeBrowser);
 
 const articles = document.querySelectorAll('.article-list article');
 if ( articles ) {
@@ -114,17 +114,3 @@ if ( articles ) {
         });
     });
 }
-<<<<<<< HEAD
-
-document.body.addEventListener( 'click', (e) => {
-    if ( ! e.target.dataset.umamiEvent )
-        return;
-
-    eventLabel = e.target.dataset.umamiEvent;
-
-    // push event
-    umami.trackEvent(eventLabel, 'cta-click' );
-
-} );
-=======
->>>>>>> 1cc03844af4051431e0eaf566f70df6c07665995

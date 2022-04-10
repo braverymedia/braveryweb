@@ -1,39 +1,9 @@
-<<<<<<< HEAD
 @import "helpers";
-=======
-// Sass variables
-$weight-normal: 400;
-$weight-medium: 500;
-$weight-bold: 700;
-
-$mq: ("sm": 768px,
-    "md": 1024px,
-    "lg": 1360px,
-    "xl": 1600px,
-    "huge": 1980px,
-);
-
-@mixin mq($res) {
-
-    @if tiny==$res {
-        @media only screen and (max-width: #{ map-get($mq, "sm") - 1 }) {
-            @content;
-        }
-    }
-
-    @if sm==$res {
-        @media only screen and (min-width: #{map-get($mq, "sm")}) {
-            @content;
-        }
-    }
->>>>>>> main
 
 @font-face {
 	font-family: NameSansVF;
 	src: url("https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable-subset-0.6.woff2")
 		format("woff2-variations");
-	font-weight: normal;
-	font-style: normal;
 	font-display: swap;
 }
 
@@ -50,7 +20,7 @@ $mq: ("sm": 768px,
 
 	--type-super: clamp(3.157rem, calc(1.125rem + 5vw), 5.398rem);
 	--type-xl: clamp(2.5rem, calc(1.125rem + 3.3vw), 4rem);
-	--type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 3.25rem);
+	--type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 3rem);
 	--type-md: clamp(1.333rem, calc(1.125rem + 2vw), 2.2rem);
 	--type-base: clamp(1.125rem, calc(1.125rem + 5vw), 1.35rem);
 	--type-sm: clamp(0.75rem, calc(1.125rem + 2vw), 1rem);
@@ -62,39 +32,6 @@ $mq: ("sm": 768px,
 	--feature-simple-y: "ss08";
 
 	--global-transition: all 0.3s ease-in-out;
-}
-
-// CSS Variables
-:root {
-    --color-white: #fff;
-    --color-black: #060312;
-    --color-bright: #6b4de0;
-    --color-rich: #5171A5;
-    --color-neon: #EEFC57;
-    --color-nav: #ffffff;
-    --font-heading: NameSansVF, sans-serif;
-    --font-body: NameSansVF, sans-serif;
-    --grid-unit: 8px;
-
-    --type-super: 3.157em;
-	--type-xl: 2.369em;
-	--type-lg: 1.777em;
-	--type-md: 1.333em;
-	--type-base: 1em;
-	--type-sm: 0.75em;
-	--type-xs: 0.563em;
-}
-
-@include mq(md) {
-   :root {
-    --type-super: 3.998em;
-	--type-xl: 2.827em;
-	--type-lg: 1.999em;
-	--type-md: 1.414em;
-	--type-base: 1em;
-	--type-sm: 0.707em;
-	--type-xs: 0.5em;
-   }
 }
 
 %theme-bright {
