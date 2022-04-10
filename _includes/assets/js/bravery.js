@@ -18,6 +18,8 @@ if (contactForm) {
     contactForm.addEventListener('submit', e => {
         e.preventDefault();
         processForm(contactForm);
+        // track form submission
+        umami.trackEvent('Contact Submission', 'submission');
     })
 }
 
