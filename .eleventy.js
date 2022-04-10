@@ -3,7 +3,6 @@ const { minify } = require("terser");
 const { PurgeCSS } = require('purgecss');
 const CleanCSS = require("clean-css");
 const htmlmin = require("html-minifier");
-const { minify } = require("terser");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
 const pluginEmbedTweet = require("eleventy-plugin-embed-twitter");
@@ -40,22 +39,23 @@ module.exports = function (eleventyConfig) {
         return cloudinaryRoot + cover;
     });
 
-    /* Minification filters */
-    eleventyConfig.addFilter("cssmin", function(code) {
+    // Minify CSS
+    eleventyConfig.addFilter("cssmin", function (code) {
         return new CleanCSS({}).minify(code).styles;
     });
 
+    // Minify JS
     eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
         code,
         callback
     ) {
         try {
-        const minified = await minify(code);
-        callback(null, minified.code);
+            const minified = await minify(code);
+            callback(null, minified.code);
         } catch (err) {
-        console.error("Terser error: ", err);
-        // Fail gracefully.
-        callback(null, code);
+            console.error("Terser error: ", err);
+            // Fail gracefully.
+            callback(null, code);
         }
     });
 
@@ -72,11 +72,11 @@ module.exports = function (eleventyConfig) {
 
         const purgeCSSResults = await new PurgeCSS().purge({
             content: [{ raw: content }],
-            css: ['_includes/assets/css/bravery.css'],
+            css: ['_site/assets/css/bravery.css'],
             keyframes: true
         });
 
-        return content.replace('<style INLINE_CSS>', '<style>' + purgeCSSResults[0].css + '</style>');
+        return content.replace('<!-- INLINE CSS-->', '<style>' + purgeCSSResults[0].css + '</style>');
     });
 
     eleventyConfig.addTransform("htmlmin", function(content) {
@@ -110,7 +110,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("_includes/assets/scss");
 
     // Don't process files and folders with static assets e.g. images
-    eleventyConfig.addPassthroughCopy({ "_includes/assets/css": "assets/css" });
+    eleventyConfig.addPassthroughCopy({"_includes/assets/css":"assets/css"});
     eleventyConfig.addPassthroughCopy({"_includes/assets/icons":"assets/icons"});
     eleventyConfig.addPassthroughCopy({"_includes/assets/img":"assets/img"});
     eleventyConfig.addPassthroughCopy({"_includes/assets/js":"assets/js"});
