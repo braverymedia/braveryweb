@@ -269,15 +269,13 @@
 				white-space: nowrap;
 				overflow: hidden;
 			}
-		}
-		@include mq(lg) {
 			&-cover {
 				display: flex;
 				box-shadow: 24px 32px 40px 0 rgba(0, 0, 0, 0.5);
 				position: absolute;
 				z-index: 1;
 				right: 1vw;
-				top: 0;
+				top: 50%;
 				width: 20vw;
 				transform: translateY(-50%);
 				overflow: hidden;
