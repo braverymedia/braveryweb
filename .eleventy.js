@@ -35,7 +35,7 @@ module.exports = function (eleventyConfig) {
     });
 
     eleventyConfig.addFilter("cover", cover => {
-        const cloudinaryRoot = 'https://res.cloudinary.com/bravery/image/upload/f_auto,q_80,w_auto,dpr_auto/';
+        const cloudinaryRoot = 'https://res.cloudinary.com/bravery/image/upload/ar_68:45,f_auto,q_80,w_340,h_225,dpr_2.0/';
         return cloudinaryRoot + cover;
     });
 

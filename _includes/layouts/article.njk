@@ -17,8 +17,8 @@ section: single
     <a href="{{ '/insight/' | url }}" class="all-articles">&larr; All Articles</a>
     {% if cover %}
     <picture class="article--cover">
-        <source srcset="{{ cover | coverTall }}" media="(min-width: 1024px)">
-        <img src="{{ cover | cover }}" alt="{{ cover_alt }}" />
+        <source srcset="{{ cover | coverTall }}" media="(min-width: 1024px)" width="410" height="575">
+        <img src="{{ cover | cover }}" alt="{{ cover_alt }}" width="340" height="225" />
     </picture>
     {% endif %}
 </aside>
