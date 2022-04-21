@@ -24,7 +24,7 @@ Now, calling out places by name or badmouthing people isn't a good look. Bravery
 
 After analyzing three competitors to the university we were helping, I kind of fell into looking at close to 160 different small-to-medium-sized institutions across the country. I started in Pennsylvania and worked my way west and north. I covered a lot of ground, but there are still over 5,000 institutions in the U.S. alone.
 
-These small community colleges, private liberal arts universities, and regional state school satellites looked remarkably similar. The most current-looking sites all used the usual conference presentation suspects: hero drone videos of campus, carousel sliders with a lack of relevant information to prospective students, and *no clearly defined user paths to get into the admission flow*.
+These small community colleges, private liberal arts universities, and regional state school satellites looked remarkably similar. The most current-looking sites all used the usual conference presentation suspects: hero drone videos of campus, carousel sliders with a lack of relevant information to prospective students, and ***no clearly defined user paths to get into the admission flow***.
 
 Worse, they all looked the same — like they all worked with the same WordPress chop-shop agency from 2013 to get their new websites live. So to recap, these websites were: slow, dated, lacking clear user paths, and generic-looking.
 
@@ -40,7 +40,7 @@ During the 12+ years I've been attending higher education marketing conferences 
 
 ## Why are we not better yet?
 
-If we take an objective look at the industry, our stagnation is due to *digital marketing decisions in higher ed catering to egos, leadership that doesn't understand digital, and agencies that templated their processes and "strategy" 5+ years ago.*
+If we take an objective look at the industry, our stagnation is due to ***digital marketing decisions in higher ed catering to egos, leadership that doesn't understand digital, and agencies that templated their processes and "strategy" 5+ years ago.***
 
 The writing has not only been on the wall, but university marketing staff everywhere have been waving their arms and screaming as loud as they can for years about what needs to happen. For those of you in this position and reading this post, let me commiserate. If you are in leadership at a university, I cannot emphasize this enough:
 
@@ -58,7 +58,7 @@ Going back to the start of this post, the institutions that will be around for a
 
 I do conversion rate optimization (CRO) all day for clients who already get this. What you need to understand is that your university website is no longer just your primary marketing piece — it's pretty much your only marketing piece. Your campus can't sell itself because you're no longer able to bring prospects there. Virtual tour products are just a glorified Google Street View and don't serve to extend any sense of energy or culture that a real visit does.
 
-Your admission reps can no longer host a booth at recruitment events, your student ambassadors aren't giving campus tours. And yet so many university websites *still* have information about on-campus visits, a dozen homepage news stories that your prospects don't care about, and spotlight stories that lead to dead ends.
+Your admission reps can no longer host a booth at recruitment events, your student ambassadors aren't giving campus tours. And yet so many university websites ***still*** have information about on-campus visits, a dozen homepage news stories that your prospects don't care about, and spotlight stories that lead to dead ends.
 
 ### Do these things next:
 
