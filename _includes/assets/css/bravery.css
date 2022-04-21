@@ -1,8 +1,17 @@
 @charset "UTF-8";
 @font-face {
   font-family: NameSansVF;
-  src: url("https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable-subset-0.6.woff2") format("woff2-variations");
+  src: url("https://f002.backblazeb2.com/file/bravery/webfont/name_sans-variable-subset-0.7.woff2") format("woff2-variations");
+  font-weight: 1 1000;
   font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: NameSansVF;
+  src: url("https://f002.backblazeb2.com/file/bravery/webfont/name_sans_italic-variable-subset-0.7.woff2") format("woff2-variations");
+  font-display: swap;
+  font-weight: 1 1000;
+  font-style: italic;
 }
 :root {
   --color-white: #fff;
@@ -153,6 +162,11 @@ figure {
   position: absolute;
   width: 1px;
   word-wrap: normal !important;
+}
+
+i,
+em {
+  font-style: italic;
 }
 
 html {
