@@ -46,7 +46,7 @@ p {
 	line-height: 1.65;
 	margin-top: 1.35em;
 	&.hero {
-		font-size: var(--type-lg);
+		font-size: var(--type-super);
 		font-variation-settings: "wght" 800, "opsz" 96;
 		line-height: 1.1;
 		margin-bottom: 0;
@@ -67,9 +67,6 @@ p {
 			background-clip: text;
 			text-fill-color: transparent;
 			animation: gradientMove 25s linear infinite;
-		}
-		@include mq(md) {
-			font-size: var(--type-super);
 		}
 	}
 }
