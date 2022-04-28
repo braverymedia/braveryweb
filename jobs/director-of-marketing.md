@@ -2,10 +2,12 @@
 title: "Director of Marketing (Full-Time)"
 slug: "/{{ title | slugify }}/"
 description: Lead Bravery's marketing to grow the brand.
-status: Pending
+status: Filled
 posted: 2022-03-31
-updated: 2022-04-21
+updated: 2022-04-28
 ---
+
+***This position has been filled!***
 
 Bravery Media is a human-first digital strategy and design agency in the higher education space. The company has been in business for ten years. To keep things nimble and responsive to market and client needs, staffing has been contractor-based since the company’s founding. But things are changing.
 
