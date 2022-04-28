@@ -2,6 +2,8 @@
     <p><strong>Posted:</strong> {{ job.data.posted | readableDate }}<br/>
     <strong>Updated:</strong> {{ job.data.updated | readableDate }}<br />
     <strong>Status:</strong> {{ job.data.status }} </p>
+    {% if job.data.status !== "Filled" %}
     <h3>Want to apply?</h3>
     <p>Send an email to <a href="mailto:joel@bravery.co?subject=I'm interested in the {{ job.data.title }} role">joel@bravery.co</a> with a brief work history (or résumé), link to your portfolio, and some words on why you're interested. Then, we'll follow up to schedule an interview.</p>
+    {% endif %}
 </aside>
