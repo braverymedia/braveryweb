@@ -96,4 +96,4 @@ This article, I guess, is as much about how to work better with a contracted age
 
 We'd love to have a conversation with you about your institution's marketing governance, where you might need a few extra hands, or [how Bravery can help you](/services/?utm_source=insight). Get in touch below or message us on [Twitter](https://twitter.com/braverymedia), [LinkedIn](https://www.linkedin.com/company/bravery-media), or [Facebook](https://www.facebook.com/braverymedia/).
 
-Call: [(512) 593-8094](tel:+15125938094)‬ / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
+Call: [(512) 593-8094](tel:+15125938094) / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
