@@ -4,8 +4,8 @@ slug: hospitable-design-framework
 description: A framework for user case by designing hospitable experiences."
 cover: hotel-room.jpg
 cover_alt: View of a hotel window
-date_published: 2022-07-20
-date_updated: 2022-07-20
+date_published: 2022-07-19
+date_updated: 2022-07-19
 topics: ['Digital Strategy', 'Experience Design']
 excerpt: "Empathy without action — empathy devoid of kindness — isn't worth much at all."
 ---
