@@ -4,6 +4,11 @@ slug: hospitable-design-framework
 description: A framework for user case by designing hospitable experiences."
 cover: hotel-room.jpg
 cover_alt: View of a hotel window
+social:
+    tw:
+        title: "Hospitable Design / Bravery Insight"
+        description: "Empathy without action — empathy devoid of kindness — isn't worth much at all."
+        image: "https://bravery.co/assets/img/hosp-design-twitter.jpg"
 date_published: 2022-07-19
 date_updated: 2022-07-19
 topics: ['Digital Strategy', 'Experience Design']
