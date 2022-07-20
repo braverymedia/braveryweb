@@ -5,14 +5,14 @@ const CleanCSS = require("clean-css");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
-const pluginEmbedTweet = require("eleventy-plugin-embed-twitter");
+const embedEverything = require("eleventy-plugin-embed-everything");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(readingTime);
-    eleventyConfig.addPlugin(pluginEmbedTweet);
+    eleventyConfig.addPlugin(embedEverything);
     eleventyConfig.addPlugin(pluginRss);
 
     // Date formatting (human readable)
