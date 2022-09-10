@@ -114,7 +114,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({"_includes/assets/icons":"assets/icons"});
     eleventyConfig.addPassthroughCopy({"_includes/assets/img":"assets/img"});
     eleventyConfig.addPassthroughCopy({"_includes/assets/js":"assets/js"});
-    eleventyConfig.addPassthroughCopy(".well-known/");
     eleventyConfig.addPassthroughCopy("manifest.json");
     eleventyConfig.addPassthroughCopy("site.webmanifest");
     eleventyConfig.addPassthroughCopy("browserconfig.xml");
