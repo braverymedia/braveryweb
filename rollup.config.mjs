@@ -1,4 +1,4 @@
-import { terser } from 'rollup-plugin-terser';
+import terser from "@rollup/plugin-terser";
 import path from 'path';
 
 const ASSETS_DIR = "_includes/assets";
