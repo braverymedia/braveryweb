@@ -158,13 +158,22 @@ figure {
 	line-height: 0;
 	border-radius: calc(var(--grid-unit) * 3);
 	overflow: hidden;
+	background-clip: border-box;
 	> img {
 		width: 100%;
 		height: 100%;
 		object-fit: fill;
 	}
 }
-
+.video-embed {
+	width: 90vw;
+	max-width: 60rem;
+	margin: 0 auto;
+	box-shadow: 24px 32px 40px 0 rgba(0, 0, 0, 0.3);
+}
+.wistia_responsive_wrapper {
+	border-radius: calc(var(--grid-unit) * 3);
+}
 .site-footer {
 	background-color: var(--color-black);
 	color: var(--color-white);
