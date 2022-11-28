@@ -14,6 +14,6 @@ export default {
         format: 'iife'
     },
     plugins: [
-		  terser()
+		terser()
     ]
 }
