@@ -276,8 +276,8 @@
 	}
 }
 
-@media screen and (max-width: 414px) and(orientation: portrait),
-	screen and(max-width: 736px) and(orientation: landscape) {
+@media screen and (max-width: 414px) and (orientation: portrait),
+	screen and (max-width: 736px) and (orientation: landscape) {
 	.cc-window.cc-top {
 		top: 0;
 	}
