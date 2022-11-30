@@ -267,3 +267,21 @@ span.brand {
 		}
 	}
 }
+.hilite {
+	color: var(--color-bright);
+	background: linear-gradient(
+		91.95deg,
+		#ff5c00 -15%,
+		#ff00c7 22%,
+		#6b4de0 55%,
+		#6b4de0 70%,
+		#ff00c7 85%,
+		#ff5c00 105%
+	);
+	background-size: 200% auto;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	animation: gradientMove 25s linear infinite;
+}
