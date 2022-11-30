@@ -16,7 +16,7 @@ title: Open job opportunities at Bravery.
 <section class="panel {{ jobsLayout }}">
     {% if jobsList.length > 1 %}
         {% include "components/job-list.njk" %}
-    {% else %}
+    {% elseif jobsList.length === 1 %}
         {% for job in jobsList %}
             <article class="article--content">
                 <h2>{{job.data.title}}</h2>
@@ -24,5 +24,10 @@ title: Open job opportunities at Bravery.
             </article>
             {% include "components/job-apply.njk" %}
         {% endfor %}
+    {% else %}
+        <article class="article--content">
+            <h2>We don't have any job postings.</h2>
+            <p>We're probably hiring soon, so feel free to reach out to us via <a href="/contact/?utm_source=no-jobs">the contact form</a>.</p>
+        </article>
     {% endif %}
 </section>
