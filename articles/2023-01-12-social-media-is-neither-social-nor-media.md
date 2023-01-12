@@ -4,6 +4,11 @@ slug: social-media-is-neither-social-nor-media
 description: Remember when social media was “social?” Yeah, let’s get back to that.
 video_title: Social Media is Neither Social Nor Media
 video_url: https://www.youtube.com/watch?v=H7C8PQWzOTA
+social:
+    tw:
+        image: https://bravery.co/assets/img/hosp-design-twitter.jpg
+    fb:
+        image: https://bravery.co/assets/img/hosp-design-twitter.jpg
 date_published: 2023-01-12
 topics:
     - "Social Media"
@@ -20,11 +25,11 @@ But eventually, brands and companies wanted a piece of those conversations. And 
 
 Please watch the video below to learn how you can be more authentic with your institutional communication.
 
-**Video Transcript** 
+**Video Transcript**
 
 Today we're going to talk about social media, its place in higher education, how we've used it for marketing and where things are going, especially in light of the [turmoil happening with Twitter.](https://twitterisgoinggreat.com/)
 
-Every day it seems like we see new things happening with Twitter and not things for the best. And the thing is that we've come to rely on social media as our primary means of marketing, and that's okay. Marketing has to happen. 
+Every day it seems like we see new things happening with Twitter and not things for the best. And the thing is that we've come to rely on social media as our primary means of marketing, and that's okay. Marketing has to happen.
 
 ::: callout
 > One of the issues that I see, though, is that social media did not originally start as a marketing practice.
@@ -42,7 +47,7 @@ When it's a nameless company or someone we have just come in contact with, we ha
 
 Look at any number of stories that have come out over the last several years showing just how awkward influencer marketing can be for your brand. And just look at the studies that have come out over the years that show the detriment to mental health, that social media and being always on has on people from the bias and content algorithms that further marginalize those people that we really need to hear from while amplifying those that we really do not need to hear any more from.
 
-All the way to the effects on political discourse that we have seen disrupt our democracies all over the world. Social media, marketing capitalism on top of that has not done us many favors. And now at this point, with Twitter going in, who knows what direction and a whole slew of other social media platforms out there? 
+All the way to the effects on political discourse that we have seen disrupt our democracies all over the world. Social media, marketing capitalism on top of that has not done us many favors. And now at this point, with Twitter going in, who knows what direction and a whole slew of other social media platforms out there?
 
 ::: callout
 > What do we actually do?
@@ -60,4 +65,4 @@ Consider how to support your people, where they're actually at with content that
 
 We're investing a lot of time in the future on creating content for our new [YouTube channel.](https://youtube.com/@BraveryMedia) We'll be sharing our hot takes there each week. Get in touch below or message us on [linkedIn](https://www.linkedin.com/company/bravery-media) or [instagram](https://www.instagram.com/braverymedia/).
 
-Call: [(512) 593-8094](tel:+15125938094)‬ / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
+Call: [(512) 593-8094](tel:+15125938094) / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
