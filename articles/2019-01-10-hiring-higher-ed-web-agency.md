@@ -5,7 +5,7 @@ description: Look at a higher ed design agency's results before their client lis
 cover: DSCF1434_lqvazo.jpg
 cover_alt: Black cobblestone streets with road paint.
 date_published: 2019-01-10T18:43:00.000Z
-date_updated: 2019-07-17T15:32:38.000Z
+date_updated: 2023-01-12T13:37:00.000Z
 topics:
     - "Digital Strategy"
     - Marketing
@@ -13,9 +13,11 @@ topics:
 excerpt: One piece of advice for university marketing teams hiring an agency to redesign their website.
 ---
 
-I recently took a call with a vice president for marketing at a university just to lend an ear and to help them think through a decision we run into a lot in higher education. This institution is down to finalists after a very thorough RFP process and trying to choose the right agency partner for their institution.
+**Originally published Jan 2019.**
 
-This VP pointed something out that got me thinking. As the group was looking over the finalists a majority went toward the agency that had done work for institutions they were familiar with.
+A few years ago, I took a call with a vice president for marketing at a university just to lend an ear and to help them think through a decision we run into a lot in higher education. This institution is down to finalists after a very thorough RFP process and trying to choose the right agency partner for their institution.
+
+This VP pointed something out that got me thinking. As the group was looking over the finalists, a majority went toward the agency that had done work for institutions they were familiar with.
 
 ::: callout
 > Doesn't that sound familiar?
