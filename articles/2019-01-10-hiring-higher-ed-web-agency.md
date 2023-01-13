@@ -5,7 +5,7 @@ description: Look at a higher ed design agency's results before their client lis
 cover: DSCF1434_lqvazo.jpg
 cover_alt: Black cobblestone streets with road paint.
 date_published: 2019-01-10T18:43:00.000Z
-date_updated: 2023-01-12T13:37:00.000Z
+date: 2023-01-12T13:37:00.000Z
 topics:
     - "Digital Strategy"
     - Marketing

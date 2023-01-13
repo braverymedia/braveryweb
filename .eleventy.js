@@ -28,6 +28,12 @@ module.exports = function (eleventyConfig) {
     // Simple year shortcode
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
+    eleventyConfig.addShortcode("youtube", (videoURL, title) => {
+        const url = new URL(videoURL);
+        const id = url.searchParams.get("v");
+        return `<iframe class="yt-embed" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player${title ? ` for ${title}` : ""}" frameborder="0" allowfullscreen></iframe>`;
+	});
+
     // Cloudinary presets
     eleventyConfig.addFilter("coverTall", cover => {
         const cloudinaryRoot = 'https://res.cloudinary.com/bravery/image/upload/t_cover_tall_new/';

@@ -5,7 +5,7 @@ description: Proper governance and ownership is vital to successful higher ed di
 cover: DSCF0665_gcp7qr.jpg
 cover_alt: A bird flying above cathedral spires
 date_published: 2020-07-01T20:28:26.000Z
-date_updated: 2020-07-01T20:31:02.000Z
+date: 2020-07-01T20:31:02.000Z
 topics: ['Digital Strategy', 'Governance']
 excerpt: Why proper governance and ownership is vital to successful university digital strategy. Who owns your process?
 ---

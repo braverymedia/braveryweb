@@ -14,7 +14,7 @@ social:
         description: "Empathy without action — empathy devoid of kindness — isn't worth much at all."
         image: https://bravery.co/assets/img/hosp-design-twitter.jpg
 date_published: 2022-07-19
-date_updated: 2022-07-19
+date: 2022-07-19
 topics: ['Digital Strategy', 'Experience Design']
 excerpt: "Empathy without action — empathy devoid of kindness — isn't worth much at all."
 ---

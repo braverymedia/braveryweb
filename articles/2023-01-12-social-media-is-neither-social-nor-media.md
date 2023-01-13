@@ -2,8 +2,8 @@
 title: Social Media is Neither Social Nor Media
 slug: social-media-is-neither-social-nor-media
 description: Remember when social media was “social?” Yeah, let’s get back to that.
+video: https://www.youtube.com/watch?v=H7C8PQWzOTA
 video_title: Social Media is Neither Social Nor Media
-video_url: https://www.youtube.com/watch?v=H7C8PQWzOTA
 social:
     tw:
         image: https://bravery.co/assets/img/hosp-design-twitter.jpg
@@ -17,11 +17,11 @@ topics:
 excerpt: Remember when social media was “social?” Yeah, let’s get back to that.
 ---
 
-**Social Media wasn’t always like this.** 
+## Social Media wasn’t always like this
 
 Back in the early aughts, people didn’t use it for marketing. They used it for one-to-one communication with their friends, peers, and community members.
 
-But eventually, brands and companies wanted a piece of those conversations. And they’ve never looked back. 
+But eventually, brands and companies wanted a piece of those conversations. And they’ve never looked back.
 
 Please watch the video below to learn how you can be more authentic with your institutional communication.
 
@@ -61,8 +61,8 @@ Consider how to support your people, where they're actually at with content that
 
 ---
 
-## *Check us out on YouTube!*
+## Check us out on YouTube!
 
-We're investing a lot of time in the future on creating content for our new [YouTube channel.](https://youtube.com/@BraveryMedia) We'll be sharing our hot takes there each week. Get in touch below or message us on [linkedIn](https://www.linkedin.com/company/bravery-media) or [instagram](https://www.instagram.com/braverymedia/).
+We're investing a lot of time in the future on creating content for our new [YouTube channel](https://youtube.com/@BraveryMedia). We'll be sharing our hot takes there each week. Get in touch below or message us on [linkedIn](https://www.linkedin.com/company/bravery-media) or [instagram](https://www.instagram.com/braverymedia/).
 
 Call: [(512) 593-8094](tel:+15125938094) / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
