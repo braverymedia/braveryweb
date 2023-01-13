@@ -5,7 +5,7 @@ description: Think your higher ed website needs a redesign? Bravery recommends a
 cover: hype.jpg
 cover_alt: lights that spell the word hype.
 date_published: 2017-08-01T19:55:00.000Z
-date_updated: 2019-06-27T20:37:49.000Z
+date: 2019-06-27T20:37:49.000Z
 topics:
     - "Product Design"
     - "Digital Strategy"

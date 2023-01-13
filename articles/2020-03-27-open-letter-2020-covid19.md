@@ -3,7 +3,7 @@ title: How can Bravery help?
 slug: open-letter-2020-covid19
 description: How can Bravery Media help your higher ed institutions during the COVID-19 pandemic?
 date_published: 2020-03-27T15:03:00.000Z
-date_updated: 2020-04-20T16:35:53.000Z
+date: 2020-04-20T16:35:53.000Z
 topics:
     - Community
     - "Digital Strategy"
