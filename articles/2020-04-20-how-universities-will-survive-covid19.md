@@ -5,7 +5,7 @@ description: Higher ed's digital strategy decisions in 2020 will decide which in
 cover: 80710008_yldq0d.jpg
 cover_alt: Abstract blue background
 date_published: 2020-04-20T16:35:41.000Z
-date_updated: 2020-06-10T16:22:47.000Z
+date: 2020-06-10T16:22:47.000Z
 topics:
   - Digital Strategy
   - UX

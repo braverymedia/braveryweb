@@ -5,7 +5,7 @@ description: Three simple optimizations for improving your prospective students'
 cover: apple-tree.jpg
 cover_alt: Apples growing in a tree with blue skies above
 date_published: 2019-07-17T15:32:14.000Z
-date_updated: 2020-06-10T16:27:57.000Z
+date: 2020-06-10T16:27:57.000Z
 topics: ["Content Design"]
 excerpt: Check these three things to improve your prospective students' web experience.
 ---

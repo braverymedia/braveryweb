@@ -5,7 +5,7 @@ cover: soul.jpg
 cover_alt: A painted tapestry that reads "soul"
 description: How to hire the right team of creatives in higher ed.
 date_published: 2015-09-11T18:08:00.000Z
-date_updated: 2018-09-12T20:11:30.000Z
+date: 2018-09-12T20:11:30.000Z
 topics:
     - Hiring
     - Management

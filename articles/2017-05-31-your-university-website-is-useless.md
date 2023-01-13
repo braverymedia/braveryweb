@@ -5,7 +5,7 @@ description: Stop wasting money on your higher ed website design. Here's how to 
 cover: maarten-van-den-heuvel-risZYPun2ao-unsplash_b6q4sh.jpg
 cover_alt: A wall of payphones.
 date_published: 2017-05-31T18:43:00.000Z
-date_updated: 2019-06-27T20:36:58.000Z
+date: 2019-06-27T20:36:58.000Z
 topics:
     - UX
     - "Product Design"
