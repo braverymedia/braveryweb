@@ -6,7 +6,7 @@ section: single
     <header class="article--title">
         <h1>{{title}}</h1>
         <p><span class="author">{{ name or metadata.author.name }}</span><br/>
-        <span class="time"><time datetime="{{ date_published | machineDate }}">{{ date_published | readableDate }}</time>
+        <span class="time"><time datetime="{{ date_published | machineDate }}">{{ date | readableDate }}</time>
                 / {{ content | readingTime }} read</span></p>
     </header>
     <section class="article--content">
@@ -15,7 +15,11 @@ section: single
 </article>
 <aside>
     <a href="{{ '/insight/' | url }}" class="all-articles">&larr; All Articles</a>
-    {% if cover %}
+    {% if video %}
+    <figure class="video-embed article--cover">
+        {% youtube video, video_title %}
+    </figure>
+    {% elif cover %}
     <picture class="article--cover">
         <source srcset="{{ cover | coverTall }}" media="(min-width: 1024px)" width="410" height="575">
         <img src="{{ cover | cover }}" alt="{{ cover_alt }}" width="340" height="225" />

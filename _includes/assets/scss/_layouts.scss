@@ -435,6 +435,11 @@
 			border-radius: calc(var(--grid-unit) * 3);
 			box-shadow: 24px 32px 40px 0 rgba(0, 0, 0, 0.1);
 		}
+		&.video-embed {
+			width: auto;
+			aspect-ratio: 16 / 9;
+			margin-bottom: calc(var(--grid-unit) * 5);
+		}
 	}
 	.all-articles {
 		display: none;
@@ -487,6 +492,7 @@
 			align-items: start;
 			gap: inherit;
 			grid-template-columns: auto repeat(5, 1fr);
+			grid-template-rows: 0 auto;
 			position: sticky;
 			min-height: 100vh;
 			padding-top: 15vh;
@@ -504,7 +510,11 @@
 		}
 		.article--cover {
 			grid-column: 2 / span 4;
-			align-self: center;
+			&.video-embed {
+				grid-column: 1 / span 5;
+				margin: 0;
+				aspect-ratio: 16 / 9;
+			}
 		}
 		.all-articles {
 			display: block;
