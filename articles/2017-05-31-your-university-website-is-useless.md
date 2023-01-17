@@ -2,15 +2,14 @@
 title: Your university website may be useless
 slug: your-university-website-is-useless
 description: Stop wasting money on your higher ed website design. Here's how to do it.
-cover: maarten-van-den-heuvel-risZYPun2ao-unsplash_b6q4sh.jpg
-cover_alt: A wall of payphones.
-date_published: 2017-05-31T18:43:00.000Z
-date: 2019-06-27T20:36:58.000Z
+video: https://www.youtube.com/watch?v=YtdB_Z0CX8w
+video_title: Your University's website might be useless
+date_published: 2023-01-17
+date: 2023-01-17
 topics:
-    - UX
+    - Website Redesign
     - "Product Design"
     - Marketing
-    - Recruitment
 excerpt: Every university redesigns their website at some point. Some more than others. But I kind of think it's a waste of money.
 ---
 
@@ -34,38 +33,36 @@ Now, the metrics that matter just aren’t performing.
 
 ## So here’s a thought
 
-Maybe your premiere recruitment piece shouldn’t be that all-important institutional website.
-
-Think about it. Your website, even after a thorough spring cleaning last year, still has at least a few hundred pages. The homepage is still unfocused, catering to at least three different audiences. If you have any sort of graduate or post-graduate school your struggles multiply. Your ad campaigns are landing people on specific program pages that are disconnected from your wider online narrative.
-
-Eventually, these issues culminate in one solution:
+On the agency side, what we often see is a lack of formalized organizational ownership when it comes to the website. You've probably heard this called governance in other circles, and really, it's still a problem today in higher education. The fact of the matter is competing priorities, always, and I mean, every time produce a website that doesn't live up to its potential.
 
 ::: callout
-> We must redesign our website!
+> So what do you do about it? 
 :::
-## Bringing old school back
+## Who is your primary audience?
 
-Back before we had the web universities didn’t redesign their curriculum or design a new logo every time something didn’t work. That’s because marketers, in general, are pretty smart people and didn’t put all their eggs in one basket. Today the institutional website is the biggest of all baskets, where all eggs must be stored.
+Your first step is to define your primary audience, and no it's not everyone, as much as you want it to be. Any website that tries to cater to everyone ends up catering to all of them poorly. 
 
-While this may be good for organization and ease of *something*, it may not be the best way to communicate a focused message. This is the very reason why pre-digital universities developed longstanding marketing pieces like viewbooks and prospectuses to augment existing materials like postcards and brochures. Sure, your website looks and navigates a lot better than that vintage printed college catalog, but it’s certainly just as inclusive.
+Next, complete a total audit of your website. If you can do that in-house, and you have the expertise on staff, great! That is amazing. It doesn't happen very often in higher education. Use those people.
 
-Bravery started addressing this trend in 2015. Universities still create more traditional viewbooks (at least here in the states), but rather than translating the concept of a highly-visual, rich in media, focused marketing piece to the web, many are happy to just provide a downloadable PDF — or worse, a digital flipbook.
+Otherwise, look at hiring a third party agency, maybe bravery media, maybe somebody else, to really comb through your website and give you the insights that you need. A thorough audit is going to include UX recommendations for conversion rate optimization, maybe some design improvements, content updates, and definitely accessibility improvements.
 
-The viewbook is low-hanging fruit, too. Its sole purpose is to sell and it traditionally harnesses the charisma of a campus culture to great result. When I worked at Trinity International University near Chicago, the viewbook was *the* piece that pushed a prospect or their parents over the edge. That one booklet communicated the values of our undergraduate culture, showcased the best parts of TIU’s campus, and sought to put that prospective student in the center of the community, even if just for a few minutes.
+You should also be getting insights on search engine optimization, what people are doing on your website, and finally, how to speed up page load times after you have all the insights from your audit. 
 
-I guarantee you have trouble doing that effectively with your institutional website.
+The most important step is that leadership, whether that's you or whether that's your boss, needs to empower marketing staff to own the website as much as they want to.
 
-The viewbook is crying out to be turned into a focused, web-based feature. Two years ago, Bravery had the great pleasure of working with [Loyola Marymount University](http://lmu.edu/) in Los Angeles to turn their PDF viewbook into a digital piece. That first year was a stepping stone to re-envisioning their traditional viewbook as a [digital-first narrative experience](https://viewbook.lmu.edu/), with a companion print piece.
+Faculty should not be making decisions on how their programs are marketed. 
 
-Oh, and it worked.
+The financial aid office should be fact-checking the content that you’re putting on the website, but not deciding how it's organized and presented to your audiences. 
 
-## Focused and effective
+And academic department microsites only lead to brand fragmentation if marketing has no ownership over them.
 
-A viewbook is just one example of the sorts of focused, media-driven concepts that can be used to actually hit the metrics you need. Think of your institutional website as the reference guide. If your content strategy was done right, you already have a narrative thread running through that content. Start your story with a digital viewbook — -or an outcomes piece, or a specific campaign-related landing page–and transition it onto your more detail-packed program page. The plot should keep just fine.
+What this all comes down to is recognizing the core competencies in your institution. You're the web professional; you are the expert when it comes to web marketing. 
 
-You benefit from being able to tell a more dynamic and impressive story up-front and you’ll save a load of money over redesigning the institutional website.
+Faculty are experts in pedagogy. Financial aid offices are experts in getting that right fit financial aid package for a prospective student.
 
-****Bonus:**** if you [work with Bravery](/contact/) we’ll help you get results in a few months instead of half a year.
+And your admissions staff are experts in guiding those prospects through the admissions process. 
+
+In higher ed, everyone wants to do everyone else's job, and when that happens, all we end up doing is wasting time and money.
 
 ## What to do if this is you
 
@@ -77,6 +74,9 @@ In any case, if your website has become useless, remember that there are ways to
 
 ---
 
-## Explore with Bravery
+## Check us out on YouTube!
 
-Need an extra hand pleading your case for a more focused interim project? We're great at maximizing your ideas. [Just get in touch](/contact/?utm_source=insight)
+We're investing a lot of time in the future on creating content for our new [YouTube channel](https://youtube.com/@BraveryMedia). We'll be sharing our hot takes there each week. Get in touch below or message us on [linkedIn](https://www.linkedin.com/company/bravery-media) or [instagram](https://www.instagram.com/braverymedia/)
+
+Call: [(512) 593-8094](tel:+15125938094) / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
+
