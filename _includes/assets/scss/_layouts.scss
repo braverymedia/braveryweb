@@ -481,11 +481,11 @@
 			align-items: start;
 			padding: 0;
 		}
-		article {
+		main article {
 			padding-top: 20vh;
 			grid-column: 3;
 		}
-		aside {
+		main aside {
 			grid-column: 2;
 			grid-row: -1 / span 3;
 			display: grid;
