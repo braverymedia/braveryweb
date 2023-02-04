@@ -1,0 +1,111 @@
+site_url: https://bravery.co
+display_url: https://localhost:8080
+search: false
+backend:
+  name: git-gateway
+  branch: main
+  open_authoring: false
+local_backend: true
+publish_mode: editorial_workflow
+media_folder: "_includes/assets/img"
+public_folder: "/assets/img"
+collections:
+  - name: "article"
+    label: "Article"
+    identifier_field: name
+    extension: md
+    format: frontmatter
+    folder: "articles"
+    create: true
+    slug: "{{fields.slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Date Published", name: "date_published", widget: "date"}
+      - {label: "Date Updated", name: "date", widget: "date"}
+      - label: "Video"
+        name: "video"
+        widget: "object"
+        fields:
+          - {label: "Video Title", name: "video_title", widget: "string"}
+          - {label: "Video URL", name: "video_url", widget: "string"}
+      - label: "Cover Image"
+        name: "cover"
+        widget: "object"
+        fields:
+          - label: "Cover Image"
+            name: "image"
+            widget: "image"
+            choose_url: false
+            media_library:
+              config:
+                multiple: false
+          - {label: "Alt Text", name: "alt", widget: "string"}
+      - label: "Social Meta"
+        name: "social"
+        widget: "object"
+        fields:
+          - {label: "Twitter Card", name: "tw", widget: "image"}
+          - {label: "Facebook Card", name: "fb", widget: "image"}
+      - {label: "Topics", name: "topics", widget: "list"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Content", name: "content", widget: "markdown"}
+  - name: "podcast"
+    label: "Podcast"
+    identifier_field: name
+    extension: md
+    format: frontmatter
+    folder: "podcast"
+    create: true
+    slug: "{{fields.slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Episode Number", name: "episode", widget: "number"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Release Date", name: "date", widget: "date", format: "MMM M, YYYY"}
+      - label: "Episode Art"
+        name: "cover"
+        widget: "object"
+        fields:
+          - {label: "Cover", name: "image", widget: "image"}
+          - {label: "Alt Text", name: "alt", widget: "string"}
+      - {label: "Audio File (MP3)", name: "mp3", widget: "file"}
+      - {label: "Episode Summary", name: "description", widget: "markdown", "minimal": true}
+  - name: "issue"
+    label: "Newsletter"
+    identifier_field: name
+    extension: md
+    format: frontmatter
+    folder: "./newsletter"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Issue Number", name: "issue_number", widget: "number"}
+      - {label: "Issue Date", name: "date", widget: "date", format: "MMM M, YYYY"}
+      - {label: "Canonical URL", name: "canonical", widget: "string"}
+      - {label: "Content", name: "content", widget: "markdown"}
+  - name: "jobs"
+    label: "Job Openings"
+    identifier_field: name
+    extension: md
+    format: frontmatter
+    folder: "jobs"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Date Posted", name: "posted", widget: "date", format: "MMM M, YYYY"}
+      - {label: "Date Updated", name: "updated", widget: "date", format: "MMM M, YYYY"}
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        options:
+          - { label: "Open", value: "Open" }
+          - { label: "Pending", value: "Pending" }
+          - { label: "Filled", value: "Filled" }
+      - label: "Job Description"
+        name: "content"
+        widget: "markdown"

@@ -116,6 +116,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("_includes/assets/scss");
 
     // Don't process files and folders with static assets e.g. images
+    eleventyConfig.addPassthroughCopy("control");
     eleventyConfig.addPassthroughCopy({"_includes/assets/css":"assets/css"});
     eleventyConfig.addPassthroughCopy({"_includes/assets/icons":"assets/icons"});
     eleventyConfig.addPassthroughCopy({"_includes/assets/img":"assets/img"});
