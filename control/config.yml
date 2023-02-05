@@ -1,15 +1,45 @@
 site_url: https://bravery.co
-display_url: https://localhost:8080
+display_url: https://bravery.co
+logo_url: https://bravery.co/assets/img/bravery-lockup-dark.svg
 search: false
 backend:
   name: git-gateway
   branch: main
   open_authoring: false
-local_backend: true
 publish_mode: editorial_workflow
 media_folder: "_includes/assets/img"
 public_folder: "/assets/img"
 collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "_data/homepage.yml"
+      - label: "Services"
+        name: "services"
+        file: "_data/services.yml"
+      - label: "Posts"
+        name: "insight"
+        file: "_data/insight.yml"
+      - label: "Job Postings"
+        name: "jobs"
+        file: "_data/jobs.yml"
+      - label: "Podcast"
+        name: "podcast"
+        file: "_data/podcast.yml"
+      - label: "Services"
+        name: "services"
+        file: "_data/services.yml"
+      - label: "Contact"
+        name: "contact"
+        file: "_data/contact.yml"
+      - label: "Terms & Conditions"
+        name: "terms"
+        file: "_data/services.yml"
+      - label: "Privacy Policy"
+        name: "privacy"
+        file: "_data/privacy.yml"
   - name: "article"
     label: "Article"
     identifier_field: name
