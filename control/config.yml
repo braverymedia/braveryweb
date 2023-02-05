@@ -59,7 +59,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string"}
   - name: "article"
-    label: "Article"
+    label: "Articles"
     identifier_field: name
     extension: md
     format: frontmatter
@@ -98,9 +98,9 @@ collections:
           - {label: "Facebook Card", name: "fb", widget: "image"}
       - {label: "Topics", name: "topics", widget: "list"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
-      - {label: "Content", name: "content", widget: "markdown"}
+      - {label: "Content", name: "body", widget: "markdown"}
   - name: "podcast"
-    label: "Podcast"
+    label: "Podcast Episodes"
     identifier_field: name
     extension: md
     format: frontmatter
@@ -120,6 +120,7 @@ collections:
           - {label: "Alt Text", name: "alt", widget: "string"}
       - {label: "Audio File (MP3)", name: "mp3", widget: "file"}
       - {label: "Episode Summary", name: "description", widget: "markdown", "minimal": true}
+      - {label: "Transcript", name: "body", widget: "markdown"}
   - name: "issue"
     label: "Newsletter"
     identifier_field: name
@@ -133,7 +134,7 @@ collections:
       - {label: "Issue Number", name: "issue_number", widget: "number"}
       - {label: "Issue Date", name: "date", widget: "date", format: "MMM M, YYYY"}
       - {label: "Canonical URL", name: "canonical", widget: "string"}
-      - {label: "Content", name: "content", widget: "markdown"}
+      - {label: "Content", name: "body", widget: "markdown"}
   - name: "jobs"
     label: "Job Openings"
     identifier_field: name
@@ -155,5 +156,5 @@ collections:
           - { label: "Pending", value: "Pending" }
           - { label: "Filled", value: "Filled" }
       - label: "Job Description"
-        name: "content"
+        name: "body"
         widget: "markdown"
