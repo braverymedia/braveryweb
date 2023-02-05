@@ -25,13 +25,40 @@
 		"id": "https://bravery.co/",
 		"url": "https://bravery.co/feed/feed.xml"
 	},
+	"podcast": {
+		"title": "Appendix B",
+		"subtitle": "",
+		"description": "",
+		"filename": "podcast.xml",
+		"path": "/feed/podcast.xml",
+		"id": "https://bravery.co/podcast/",
+		"feed": "https://bravery.co/feed/podcast.xml",
+		"author": "Joel Goodman and Kristin Van Dorn",
+		"owner": "Bravery Media",
+		"explicit": "clean",
+		"cover": {
+			"large": "",
+			"small": ""
+		},
+		"chartable": "",
+		"subscribe": {
+			"apple": "",
+			"google": "",
+			"overcast": "",
+			"spotify": ""
+		}
+	},
 	"jsonfeed": {
 		"path": "/feed/feed.xml",
 		"url": "https://bravery.co/feed/feed.xml"
 	},
 	"author": {
 		"name": "Joel G Goodman",
-		"email": "joel@bravery.co",
+		"email": "joel@braverymedia.co",
 		"url": "https://joelgoodman.co"
+	},
+	"cdn": {
+
 	}
+	"copyright": "Bravery Media"
 }
