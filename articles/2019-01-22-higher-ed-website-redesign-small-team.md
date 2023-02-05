@@ -1,8 +1,9 @@
 ---
 title: "Case study: Redesigning a university website for performance"
 slug: higher-ed-website-redesign-small-team
-cover: turn-to-clear-vision.jpg
-cover_alt: binoculars that read turn to clear vision
+cover:
+    image: turn-to-clear-vision.jpg
+    alt: binoculars that read turn to clear vision
 description: A Bravery Media higher ed website design generated millions of dollars in new revenue. A case study.
 date_published: 2019-01-22T15:09:23.000Z
 date: 2019-10-15T17:33:43.000Z

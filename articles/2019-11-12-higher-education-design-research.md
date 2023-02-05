@@ -2,8 +2,9 @@
 title: Design research? In higher ed? Yeah, you should be doing that.
 slug: higher-education-design-research
 description: Higher ed's best chance of illuminating what their web visitors expect is design research.
-cover: lightbulbs.jpg
-cover_alt: Lightbulbs hanging in a room.
+cover:
+    image: lightbulbs.jpg
+    alt: Lightbulbs hanging in a room.
 date_published: 2019-11-12T16:46:48.000Z
 date: 2020-06-10T16:24:56.000Z
 topics:

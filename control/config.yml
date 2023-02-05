@@ -62,7 +62,6 @@ collections:
     label: "Articles"
     identifier_field: name
     extension: md
-    format: frontmatter
     folder: "articles"
     create: true
     slug: "{{fields.slug}}"
@@ -75,12 +74,14 @@ collections:
       - label: "Video"
         name: "video"
         widget: "object"
+        collapsed: true
         fields:
           - {label: "Video Title", name: "video_title", widget: "string"}
           - {label: "Video URL", name: "video_url", widget: "string"}
       - label: "Cover Image"
         name: "cover"
         widget: "object"
+        collapsed: true
         fields:
           - label: "Cover Image"
             name: "image"
@@ -93,6 +94,7 @@ collections:
       - label: "Social Meta"
         name: "social"
         widget: "object"
+        collapsed: true
         fields:
           - {label: "Twitter Card", name: "tw", widget: "image"}
           - {label: "Facebook Card", name: "fb", widget: "image"}
@@ -103,7 +105,6 @@ collections:
     label: "Podcast Episodes"
     identifier_field: name
     extension: md
-    format: frontmatter
     folder: "podcast"
     create: true
     slug: "{{fields.slug}}"
@@ -125,7 +126,6 @@ collections:
     label: "Newsletter"
     identifier_field: name
     extension: md
-    format: frontmatter
     folder: "./newsletter"
     create: true
     slug: "{{slug}}"
@@ -139,7 +139,6 @@ collections:
     label: "Job Openings"
     identifier_field: name
     extension: md
-    format: frontmatter
     folder: "jobs"
     create: true
     slug: "{{title}}"

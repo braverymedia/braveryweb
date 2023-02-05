@@ -2,8 +2,9 @@
 title: "Hospitable Design"
 slug: hospitable-design-framework
 description: A framework for user case by designing hospitable experiences."
-cover: hotel-room.jpg
-cover_alt: View of a hotel window
+cover:
+    image: hotel-room.jpg
+    alt: View of a hotel window
 social:
     tw:
         title: "Hospitable Design / Bravery Insight"
