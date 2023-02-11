@@ -41,10 +41,7 @@ collections:
             name: "image"
             widget: "image"
             required: false
-            choose_url: false
-            media_library:
-              config:
-                multiple: false
+            choose_url: true
           - {label: "Alt Text", name: "alt", widget: "string"}
       - label: "Social Meta"
         name: "social"
