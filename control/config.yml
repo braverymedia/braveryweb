@@ -75,11 +75,13 @@ collections:
       - {label: "Duration", name: "duration", widget: "string"}
       - label: "Explicit?"
         name: "explicit"
-        widget: "select"
-        options:
-          - {label: "Clean", name: "clean"}
-          - {label: "Explicit", name: "explicit"}
-      - {label: "Episode Summary", name: "description", widget: "markdown", "minimal": true}
+        widget: "boolean"
+        required: false
+      - label: "Episode Summary"
+        name: "description"
+        widget: "markdown"
+        minimal: true
+        buttons: [ "bold", "italic", "link" ]
       - {label: "Transcript", name: "body", widget: "markdown"}
   - name: "issue"
     label: "Newsletter"
