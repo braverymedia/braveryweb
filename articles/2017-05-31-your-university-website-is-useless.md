@@ -2,9 +2,12 @@
 title: Your university website may be useless
 slug: your-university-website-is-useless
 description: Stop wasting money on your higher ed website design. Here's how to do it.
-video: https://www.youtube.com/watch?v=YtdB_Z0CX8w
-video_title: Your University's website might be useless
-cover: 02---HEHT-Thumbnail--Is-Your-University-Website-Useless--Bravery-Media-Joel-Goodman_eimtdz.jpg
+video:
+    video_url: https://www.youtube.com/watch?v=YtdB_Z0CX8w
+    video_title: Your University's website might be useless
+cover:
+    image: 02---HEHT-Thumbnail--Is-Your-University-Website-Useless--Bravery-Media-Joel-Goodman_eimtdz.jpg
+    alt: Is your university website useless?
 social:
     tw:
         image: https://bravery.co/assets/img/heht-02.jpg

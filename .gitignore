@@ -5,3 +5,5 @@ yarn-error.log
 .env
 config.codekit3
 .DS_Store
+# Local Netlify folder
+.netlify

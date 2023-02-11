@@ -15,11 +15,13 @@
 }
 :root {
   --color-white: #fff;
-  --color-black: #060312;
+  --color-black: #150635;
   --color-bright: #6b4de0;
   --color-rich: #5171a5;
-  --color-neon: #ff20ce;
+  --color-neon: #FF00C7;
+  --color-blue: #5BCEFF;
   --color-nav: #ffffff;
+  --gradient--primary: linear-gradient(91.95deg, #ff5c00 -15%, #ff00c7 22%, #6b4de0 55%, #6b4de0 70%, #ff00c7 85%, #ff5c00 105%);
   --font-family: NameSansVF, sans-serif;
   --grid-unit: 8px;
   --type-super: clamp(1.777rem, calc(1.125em + 4.15vw), 5.398rem);
@@ -219,7 +221,18 @@ p.hero {
 }
 p.hero span {
   color: var(--color-bright);
-  background: linear-gradient(91.95deg, #ff5c00 -15%, #ff00c7 22%, #6b4de0 55%, #6b4de0 70%, #ff00c7 85%, #ff5c00 105%);
+  background: var(--gradient--primary);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: gradientMove 25s linear infinite;
+}
+
+.loud {
+  color: var(--color-bright);
+  background: var(--gradient--primary);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -566,6 +579,7 @@ body {
   width: 100%;
   height: auto;
   padding-top: 40px;
+  max-block-size: none;
 }
 @media only screen and (min-width: 768px) {
   .testimonial .faux-browser {
@@ -582,21 +596,26 @@ body {
 button,
 .button {
   appearance: none;
-  display: block;
-  padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 3);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--grid-unit) * 2);
+  padding: calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 8);
   color: var(--color-white);
   width: 100%;
   margin: calc(var(--grid-unit) * 5) auto;
   border: 0px;
-  border-radius: var(--grid-unit);
+  border-radius: calc(var(--grid-unit) * 2);
   transition: var(--global-transition);
   font-family: inherit;
-  opacity: 1;
   cursor: pointer;
-  letter-spacing: 0.063em;
-  font-variation-settings: "wght" 600, "opsz" 96;
-  text-transform: uppercase;
+  font-variation-settings: "opsz" 24;
+  font-weight: 600;
+}
+button svg,
+.button svg {
+  height: 20px;
+  width: 20px;
 }
 button.nondescript,
 .button.nondescript {
@@ -608,26 +627,56 @@ button.primary, button.bright,
 .button.bright {
   background-color: var(--color-bright);
 }
+button.primary:hover, button.bright:hover,
+.button.primary:hover,
+.button.bright:hover {
+  background: var(--color-black);
+}
 button.pale,
 .button.pale {
   background-color: var(--color-white);
   color: var(--color-black);
 }
+button.pale:hover,
+.button.pale:hover {
+  background-color: var(--color-blue);
+}
 button.dark,
 .button.dark {
   background-color: var(--color-black);
+}
+button.dark:hover,
+.button.dark:hover {
+  opacity: 0.8;
 }
 button.rich,
 .button.rich {
   background-color: var(--color-rich);
 }
-button:hover,
-.button:hover {
-  opacity: 0.6;
+button.synthwave,
+.button.synthwave {
+  background: linear-gradient(var(--color-black), var(--color-black)) padding-box, linear-gradient(160deg, var(--color-neon) 20.87%, var(--color-black) 73.36%) border-box, var(--color-black);
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
-button:active,
-.button:active {
-  opacity: 0.9;
+button.synthwave:after,
+.button.synthwave:after {
+  background: radial-gradient(50% 50% at 50% 75.5%, var(--color-neon) 45%, transparent 100%), transparent;
+  content: "";
+  padding-top: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scale(0.7) translateY(80%);
+  transition: all 0.6s ease-in-out;
+  z-index: -1;
+}
+button.synthwave:hover:after,
+.button.synthwave:hover:after {
+  transform: scale(0.9) translateY(55%);
 }
 @media only screen and (min-width: 1024px) {
   button,
@@ -778,8 +827,14 @@ table td:first-child {
   left: 0;
 }
 
+.theme--invert .button.primary:hover,
+.theme--invert .button.bright:hover {
+  background-color: var(--color-neon);
+}
+
 .cover {
-  background-color: var(--color-black);
+  background: linear-gradient(180deg, rgba(21, 6, 54, 0) 0%, rgba(0, 0, 0, 0.37) 100%), #150636;
+  background-blend-mode: multiply, normal;
   color: var(--color-white);
   height: 55vh;
   display: flex;
@@ -793,6 +848,14 @@ table td:first-child {
 .cover h2 {
   font-size: var(--type-md);
   margin-top: calc(var(--grid-unit) * 8);
+}
+.layout-home .cover #bg-grid {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: var(--color-blue);
+  opacity: 43%;
 }
 @media only screen and (min-width: 768px) {
   .cover p:not(.hero) {
@@ -812,6 +875,9 @@ table td:first-child {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+}
+.cover .hero .brand {
+  text-shadow: 0px 0px 8px rgba(255, 0, 199, 0.54);
 }
 .layout-services .cover {
   padding-top: 25vh;
@@ -1397,7 +1463,8 @@ table td:first-child {
   justify-content: space-between;
   align-items: center;
   color: var(--color-white);
-  font-variation-settings: "opsz" 24, "wght" 600;
+  font-variation-settings: "opsz" 24;
+  font-weight: 500;
   position: fixed;
   top: 0;
   left: 0;
@@ -1446,6 +1513,10 @@ table td:first-child {
 @media only screen and (min-width: 768px) {
   .branding {
     padding-left: unset;
+  }
+  .branding svg {
+    height: 38px;
+    width: 38px;
   }
 }
 
@@ -1558,6 +1629,44 @@ button.menu-trigger {
 }
 .nav-link:active {
   opacity: 0.9;
+}
+
+.amplitude-song-played-progress {
+  appearance: none;
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  width: calc(100% + 10px);
+  height: calc(100% + 40px);
+  z-index: 0;
+}
+.amplitude-song-played-progress:-webkit-progress-bar {
+  background: var(--color-black);
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out;
+}
+.amplitude-song-played-progress[value]:-webkit-progress-bar {
+  opacity: 1;
+}
+.amplitude-song-played-progress[value]:-webkit-progress-value {
+  background: var(--color-neon);
+  filter: blur(1px);
+}
+.amplitude-play-pause .pause,
+.amplitude-play-pause .play {
+  align-items: center;
+}
+.amplitude-play-pause[data-status=paused] .pause, .amplitude-play-pause[data-status=paused] .current-time {
+  display: none;
+  opacity: 0;
+}
+.amplitude-play-pause[data-status=playing] .pause {
+  display: flex;
+  opacity: 1;
+}
+.amplitude-play-pause[data-status=playing] .play {
+  display: none;
+  opacity: 0;
 }
 
 /*# sourceMappingURL=bravery.css.map */

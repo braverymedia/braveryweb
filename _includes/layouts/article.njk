@@ -17,12 +17,12 @@ section: single
     <a href="{{ '/insight/' | url }}" class="all-articles">&larr; All Articles</a>
     {% if video %}
     <figure class="video-embed article--cover">
-        {% youtube video, video_title %}
+        {% youtube video.video_url, video.video_title %}
     </figure>
-    {% elif cover %}
+    {% elif cover.image %}
     <picture class="article--cover">
-        <source srcset="{{ cover | coverTall }}" media="(min-width: 1024px)" width="410" height="575">
-        <img src="{{ cover | cover }}" alt="{{ cover_alt }}" width="340" height="225" />
+        <source srcset="{{ cover.image | coverTall }}" media="(min-width: 1024px)" width="410" height="575">
+        <img src="{{ cover | cover }}" alt="{{ cover.alt }}" width="340" height="225" />
     </picture>
     {% endif %}
 </aside>

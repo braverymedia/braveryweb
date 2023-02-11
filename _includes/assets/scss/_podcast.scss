@@ -1,0 +1,48 @@
+.amplitude {
+    &-song-played-progress {
+        appearance: none;
+        position: absolute;
+        left: -10px;
+        top: -20px;
+        width: calc(100% + 10px);
+        height: calc(100% + 40px);
+        z-index: 0;
+        &:-webkit-progress-bar {
+            background: var(--color-black);
+            opacity: 0;
+            transition: opacity .35s ease-in-out;
+        }
+        &[value] {
+            &:-webkit-progress-bar {
+                opacity: 1;
+            }
+            &:-webkit-progress-value {
+                background: var(--color-neon);
+                filter: blur(1px);
+            }
+        }
+    }
+    &-play-pause {
+        .pause,
+        .play {
+            align-items: center;
+        }
+        &[data-status="paused"] {
+            & .pause,
+            & .current-time {
+                display: none;
+                opacity: 0;
+            }
+        }
+        &[data-status="playing"] {
+            .pause {
+                display: flex;
+                opacity: 1;
+            }
+            .play {
+                display: none;
+                opacity: 0;
+            }
+        }
+    }
+}

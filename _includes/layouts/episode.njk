@@ -1,0 +1,13 @@
+---
+layout: layouts/podcast.njk
+section: podcast
+---
+<article data-audio="{{ ep.data.mp3 }}" class="episode--transcript">
+    <header class="episode--title">
+        <div class="meta">Episode {{ ep.data.episode }} &bull; <time datetime="{{ ep.data.date | machineDate}}">{{ ep.data.date }}</time></div>
+        <h1>{{title}}</h1>
+    </header>
+    <section class="episode--content">
+        {{ layoutContent | safe }}
+    </section>
+</article>

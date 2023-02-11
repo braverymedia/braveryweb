@@ -2,8 +2,9 @@
 title: You may not need to redesign your university website
 slug: no-you-dont-need-to-redesign-your-university-website
 description: Think your higher ed website needs a redesign? Bravery recommends a different approach, first.
-cover: hype.jpg
-cover_alt: lights that spell the word hype.
+cover:
+    image: hype.jpg
+    alt: lights that spell the word hype.
 date_published: 2017-08-01T19:55:00.000Z
 date: 2019-06-27T20:37:49.000Z
 topics:
