@@ -19,25 +19,28 @@ collections:
     slug: "{{fields.slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Date Published", name: "date_published", widget: "date"}
-      - {label: "Date Updated", name: "date", widget: "date"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Slug", name: "slug", widget: "string", required: false}
+      - {label: "Date Published", name: "date_published", widget: "date", required: false}
+      - {label: "Date Updated", name: "date", widget: "date", required: false}
       - label: "Video"
         name: "video"
         widget: "object"
+        required: false
         collapsed: true
         fields:
-          - {label: "Video Title", name: "video_title", widget: "string"}
-          - {label: "Video URL", name: "video_url", widget: "string"}
+          - {label: "Video Title", name: "video_title", widget: "string", required: false}
+          - {label: "Video URL", name: "video_url", widget: "string", required: false}
       - label: "Cover Image"
         name: "cover"
         widget: "object"
+        required: false
         collapsed: true
         fields:
           - label: "Cover Image"
             name: "image"
             widget: "image"
+            required: false
             choose_url: false
             media_library:
               config:
@@ -47,12 +50,13 @@ collections:
         name: "social"
         widget: "object"
         collapsed: true
+        required: false
         fields:
-          - {label: "Twitter Card", name: "tw", widget: "image"}
-          - {label: "Facebook Card", name: "fb", widget: "image"}
-      - {label: "Topics", name: "topics", widget: "list"}
-      - {label: "Excerpt", name: "excerpt", widget: "text"}
-      - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Twitter Card", name: "tw", widget: "image", required: false}
+          - {label: "Facebook Card", name: "fb", widget: "image", required: false}
+      - {label: "Topics", name: "topics", widget: "list", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
+      - {label: "Content", name: "body", widget: "markdown", required: false}
   - name: "podcast"
     label: "Podcast Episodes"
     identifier_field: name
@@ -63,16 +67,18 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Episode Number", name: "episode", widget: "number"}
-      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string", required: false}
       - {label: "Release Date", name: "date", widget: "date", format: "MMM D, YYYY"}
+      - {label: "Recording Date", name: "record_date", widget: "date", format: "MMM D, YYYY", required: false}
       - label: "Episode Art"
         name: "cover"
         widget: "object"
+        required: false
         fields:
           - {label: "Cover", name: "image", widget: "image"}
           - {label: "Alt Text", name: "alt", widget: "string"}
-      - {label: "Audio File (MP3)", name: "mp3", widget: "file"}
-      - {label: "Duration", name: "duration", widget: "string"}
+      - {label: "Audio File (MP3)", name: "mp3", widget: "file", required: false}
+      - {label: "Duration", name: "duration", widget: "string", required: false}
       - label: "Explicit?"
         name: "explicit"
         widget: "boolean"
@@ -81,6 +87,7 @@ collections:
         name: "description"
         widget: "markdown"
         minimal: true
+        required: false
         buttons: [ "bold", "italic", "link" ]
       - {label: "Transcript", name: "body", widget: "markdown"}
   - name: "issue"
@@ -91,11 +98,11 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Issue Number", name: "issue_number", widget: "number"}
-      - {label: "Issue Date", name: "date", widget: "date", format: "MMM M, YYYY"}
-      - {label: "Canonical URL", name: "canonical", widget: "string"}
-      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Issue Number", name: "issue_number", widget: "number", required: false}
+      - {label: "Issue Date", name: "date", widget: "date", format: "MMM M, YYYY", required: false}
+      - {label: "Canonical URL", name: "canonical", widget: "string", required: false}
+      - {label: "Content", name: "body", widget: "markdown", required: false}
   - name: "jobs"
     label: "Job Openings"
     identifier_field: name
@@ -104,13 +111,14 @@ collections:
     create: true
     slug: "{{title}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Date Posted", name: "posted", widget: "date", format: "MMM M, YYYY"}
-      - {label: "Date Updated", name: "updated", widget: "date", format: "MMM M, YYYY"}
+      - {label: "Title", name: "title", widget: "string", required: false}
+
+      - {label: "Date Posted", name: "posted", widget: "date", format: "MMM M, YYYY", required: false}
+      - {label: "Date Updated", name: "updated", widget: "date", format: "MMM M, YYYY", required: false}
       - label: "Status"
         name: "status"
         widget: "select"
+        required: false
         options:
           - { label: "Open", value: "Open" }
           - { label: "Pending", value: "Pending" }
