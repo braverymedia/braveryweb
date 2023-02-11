@@ -2,9 +2,12 @@
 title: Social Media is Neither Social Nor Media
 slug: social-media-is-neither-social-nor-media
 description: Remember when social media was “social?” Yeah, let’s get back to that.
-video: https://www.youtube.com/watch?v=H7C8PQWzOTA
-video_title: Social Media is Neither Social Nor Media
-cover: heht-01_f5evt4.jpg
+video:
+    video_url: https://www.youtube.com/watch?v=H7C8PQWzOTA
+    video_title: Social Media is Neither Social Nor Media
+cover:
+    image: heht-01_f5evt4.jpg
+    alt: Social Media is Neither Social Nor Media
 social:
     tw:
         image: https://bravery.co/assets/img/heht-01.jpg

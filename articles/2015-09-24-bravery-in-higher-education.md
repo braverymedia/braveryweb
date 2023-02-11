@@ -2,8 +2,9 @@
 title: Bravery in higher education
 slug: bravery-in-higher-education
 description: Bravery exists to improve the reputations, business functions, and efficacy of higher ed institutions. We propel higher ed toward its potential.
-cover: terminal-entrance.jpg
-cover_alt: looking through an airport terminal window at an empty tarmac
+cover:
+    image: terminal-entrance.jpg
+    alt: looking through an airport terminal window at an empty tarmac
 date_published: 2015-09-24T18:15:00.000Z
 date: 2019-02-01T16:38:56.000Z
 topics:

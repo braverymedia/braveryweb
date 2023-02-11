@@ -20,11 +20,13 @@
 // CSS Variables
 :root {
 	--color-white: #fff;
-	--color-black: #060312;
+	--color-black: #150635;
 	--color-bright: #6b4de0;
 	--color-rich: #5171a5;
-	--color-neon: #ff20ce;
+	--color-neon: #FF00C7;
+	--color-blue: #5BCEFF;
 	--color-nav: #ffffff;
+	--gradient--primary:  linear-gradient(91.95deg, #ff5c00 -15%, #ff00c7 22%, #6b4de0 55%, #6b4de0 70%, #ff00c7 85%, #ff5c00 105%);
 	--font-family: NameSansVF, sans-serif;
 	--grid-unit: 8px;
 
@@ -42,21 +44,6 @@
 	--feature-simple-y: "ss08";
 
 	--global-transition: all 0.3s ease-in-out;
-}
-
-%theme-bright {
-	background-color: var(--color-bright);
-	color: var(--color-white);
-}
-
-%theme-invert {
-	background-color: var(--color-black);
-	color: var(--color-white);
-}
-
-%theme-rich {
-	background-color: var(--color-rich);
-	color: var(--color-white);
 }
 
 @keyframes gradientMove {
