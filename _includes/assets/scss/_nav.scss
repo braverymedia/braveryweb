@@ -3,7 +3,8 @@
 	justify-content: space-between;
 	align-items: center;
 	color: var(--color-white);
-	font-variation-settings: "opsz" 24, "wght" 600;
+	font-variation-settings: "opsz" 24;
+	font-weight: 500;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -47,6 +48,10 @@
 	}
 	@include mq(sm) {
 		padding-left: unset;
+		svg {
+			height: 38px;
+			width: 38px;
+		}
 	}
 }
 button.menu-trigger {
