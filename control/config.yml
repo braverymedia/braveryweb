@@ -73,7 +73,7 @@ collections:
         fields:
           - {label: "Cover", name: "image", widget: "image", required: false}
           - {label: "Alt Text", name: "alt", widget: "string", required: false}
-      - {label: "Audio File (MP3)", name: "mp3", widget: "file", required: false", media_folder: "_includes/assets/appendix-b"}
+      - {label: "Audio File (MP3)", name: "mp3", widget: "file", required: false, media_folder: "_includes/assets/appendix-b"}
       - {label: "Duration", name: "duration", widget: "string", required: false}
       - label: "Explicit?"
         name: "explicit"
