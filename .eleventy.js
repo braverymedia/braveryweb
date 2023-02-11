@@ -160,7 +160,8 @@ module.exports = function (eleventyConfig) {
 
 	// Don't process files and folders with static assets e.g. images
 	eleventyConfig.addPassthroughCopy("control");
-	eleventyConfig.addPassthroughCopy({ "_includes/assets/css": "assets/css" });
+	eleventyConfig.addPassthroughCopy({"_includes/assets/uploads" : "assets/uploads"});
+	eleventyConfig.addPassthroughCopy({ "_includes/assets/css" : "assets/css" });
 	eleventyConfig.addPassthroughCopy({
 		"_includes/assets/icons": "assets/icons",
 	});

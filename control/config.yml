@@ -7,8 +7,8 @@ backend:
   branch: main
   open_authoring: false
 publish_mode: editorial_workflow
-media_folder: "_includes/assets/img"
-public_folder: "/assets/img"
+media_folder: "_includes/assets/uploads"
+public_folder: "/assets/uploads"
 collections:
   - name: "article"
     label: "Articles"
