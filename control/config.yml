@@ -73,10 +73,9 @@ collections:
       - label: "Episode Art"
         name: "cover"
         widget: "object"
-        required: false
         fields:
-          - {label: "Cover", name: "image", widget: "image"}
-          - {label: "Alt Text", name: "alt", widget: "string"}
+          - {label: "Cover", name: "image", widget: "image", required: false}
+          - {label: "Alt Text", name: "alt", widget: "string", required: false}
       - {label: "Audio File (MP3)", name: "mp3", widget: "file", required: false}
       - {label: "Duration", name: "duration", widget: "string", required: false}
       - label: "Explicit?"
