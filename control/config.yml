@@ -65,15 +65,15 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Episode Number", name: "episode", widget: "number"}
       - {label: "Slug", name: "slug", widget: "string", required: false}
-      - {label: "Release Date", name: "date", widget: "date", format: "MMM D, YYYY"}
-      - {label: "Recording Date", name: "record_date", widget: "date", format: "MMM D, YYYY", required: false}
+      - {label: "Release Date", name: "date", widget: "date"}
+      - {label: "Recording Date", name: "record_date", widget: "date", required: false}
       - label: "Episode Art"
         name: "cover"
         widget: "object"
         fields:
           - {label: "Cover", name: "image", widget: "image", required: false}
           - {label: "Alt Text", name: "alt", widget: "string", required: false}
-      - {label: "Audio File (MP3)", name: "mp3", widget: "file", required: false, media_folder: "/_includes/assets/appendix-b"}
+      - {label: "Audio File (MP3)", name: "mp3", widget: "file", required: false, media_folder: "/_includes/assets/appendix-b", public_folder: "/assets/appendix-b"}
       - {label: "Duration", name: "duration", widget: "string", required: false}
       - label: "Explicit?"
         name: "explicit"
@@ -96,7 +96,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string", required: false}
       - {label: "Issue Number", name: "issue_number", widget: "number", required: false}
-      - {label: "Issue Date", name: "date", widget: "date", format: "MMM M, YYYY", required: false}
+      - {label: "Issue Date", name: "date", widget: "date", required: false}
       - {label: "Canonical URL", name: "canonical", widget: "string", required: false}
       - {label: "Content", name: "body", widget: "markdown", required: false}
   - name: "jobs"
@@ -109,8 +109,8 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string", required: false}
 
-      - {label: "Date Posted", name: "posted", widget: "date", format: "MMM M, YYYY", required: false}
-      - {label: "Date Updated", name: "updated", widget: "date", format: "MMM M, YYYY", required: false}
+      - {label: "Date Posted", name: "posted", widget: "date", required: false}
+      - {label: "Date Updated", name: "updated", widget: "date", required: false}
       - label: "Status"
         name: "status"
         widget: "select"
