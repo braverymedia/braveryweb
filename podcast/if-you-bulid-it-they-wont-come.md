@@ -7,7 +7,7 @@ record_date: Jan 30, 2023
 cover:
   image: /assets/uploads/appx-b-ep01-cover.png
   alt: Appendix B - If you build it, they won't come. From Bravery Media.
-mp3: ""
+mp3: /assets/appendix-b/appendix-b-001-if-you-build-it-they-wont-come-test-bounce.mp3
 duration: 11:57
 description: Test
 ---
