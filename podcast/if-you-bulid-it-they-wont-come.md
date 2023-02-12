@@ -2,7 +2,7 @@
 title: If you build it, they won't come
 episode: 1
 slug: if-you-bulid-it-they-wont-come
-date: Feb 15, 2023
+date: 2023-02-15
 record_date: Jan 30, 2023
 cover:
   image: /assets/uploads/appx-b-ep01-cover.png
