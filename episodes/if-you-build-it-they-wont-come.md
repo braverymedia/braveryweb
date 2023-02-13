@@ -1,5 +1,6 @@
 ---
 title: If you build it, they won't come
+description: Test
 episode: 1
 slug: if-you-build-it-they-wont-come
 date: 2023-02-15
@@ -9,7 +10,7 @@ cover:
   alt: Appendix B - If you build it, they won't come. From Bravery Media.
 mp3: /assets/appendix-b/appendix-b-001-if-you-build-it-they-wont-come-test-bounce.mp3
 duration: 11:57
-description: Test
+summary: This is a sample summary.
 ---
 Dolor sit amet, consectetur adipiscing elit. Nunc vitae laoreet mauris. Curabitur consequat dictum sapien. Vivamus at ante id turpis commodo lobortis nec vitae diam. Phasellus quis orci in ante convallis aliquet vel non urna. Fusce facilisis purus dui, et molestie ipsum bibendum id. In scelerisque justo a dolor porttitor, eget congue lacus facilisis. Sed gravida tortor nisl, nec molestie nibh tincidunt vel.\
 \
