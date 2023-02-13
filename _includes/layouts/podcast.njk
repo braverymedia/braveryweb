@@ -3,9 +3,11 @@ layout: layouts/base.njk
 section: podcast
 ---
 <header>
-    <h1>{{ title }}</h1>
+    {% if page.url == "/podcast/" %}
+    <h1 class="pod-title">Appendix B</h1>
+    {% else %}
+    <div class="pod-title">Appendix B</div>
+    {% endif %}
+    <p class="pod-description">Candid conversations about higher ed in 10 minutes or less.</p>
 </header>
-<section class="episode-list">
-    {% set episodeList = collections.episodes %}
-    {% include "components/episodelist.njk" %}
-</section>
+{{ layoutContent | safe}}

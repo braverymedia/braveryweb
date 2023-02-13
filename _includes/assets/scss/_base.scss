@@ -90,7 +90,7 @@ button,
 	justify-content: center;
 	align-items: center;
 	gap: calc(var(--grid-unit) * 2);
-	padding: calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 8);
+	padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 8);
 	color: var(--color-white);
 	width: 100%;
 	margin: calc(var(--grid-unit) * 5) auto;
@@ -102,8 +102,8 @@ button,
 	font-variation-settings: "opsz" 24;
 	font-weight: 600;
 	svg {
-		height: 20px;
-		width: 20px;
+		height: 16px;
+		width: 16px;
 	}
 	&.nondescript {
 		padding: 0;
@@ -162,7 +162,6 @@ button,
 	}
 
 	@include mq(md) {
-		display: inline-block;
 		width: auto;
 		padding-left: calc(var(--grid-unit) * 6);
 		padding-right: calc(var(--grid-unit) * 6);

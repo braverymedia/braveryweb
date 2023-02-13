@@ -37,11 +37,10 @@ collections:
         required: false
         collapsed: true
         fields:
-          - label: "Cover Image"
+          - label: "Cover Image (Cloudinary)"
             name: "image"
-            widget: "image"
+            widget: "string"
             required: false
-            choose_url: true
           - {label: "Alt Text", name: "alt", widget: "string"}
       - label: "Social Meta"
         name: "social"
@@ -63,6 +62,7 @@ collections:
     slug: "{{fields.slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "SEO Description", name: "description", widget: "text"}
       - {label: "Episode Number", name: "episode", widget: "number"}
       - {label: "Slug", name: "slug", widget: "string", required: false}
       - {label: "Release Date", name: "date", widget: "date"}
@@ -71,7 +71,7 @@ collections:
         name: "cover"
         widget: "object"
         fields:
-          - {label: "Cover", name: "image", widget: "image", required: false}
+          - {label: "Cover (Cloudinary)", name: "image", widget: "string", required: false}
           - {label: "Alt Text", name: "alt", widget: "string", required: false}
       - {label: "Audio File (MP3)", name: "mp3", widget: "file", required: false, media_folder: "/_includes/assets/appendix-b", public_folder: "/assets/appendix-b"}
       - {label: "Duration", name: "duration", widget: "string", required: false}
@@ -80,7 +80,7 @@ collections:
         widget: "boolean"
         required: false
       - label: "Episode Summary"
-        name: "description"
+        name: "summary"
         widget: "markdown"
         minimal: true
         required: false

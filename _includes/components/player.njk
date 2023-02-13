@@ -1,20 +1,24 @@
 <section class="episode--media">
-    <a href="{{ '/podcast/' | url }}" class="all-episodes">&larr; All Episodes</a>
     <div class="episode--player">
-        <img src="{{ ep.data.cover.image }}" alt="{{ title }} cover art" height="500" width="500" />
+      <figure class="cover-art">
+        <img src="{% src cover.image %}"
+                srcset="{% srcset cover.image %}" alt="{{cover.alt}}" width="500" height="500" loading="lazy" decoding="async" />
+      </figure>
         <footer class="player-controls">
-        <button aria-label="play || pause episode" amplitude-main-play-pause="true" id="play-pause" class="amplitude-play-pause button synthwave">
-            <span class="play"><svg viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8167 7.19995L2.13164 0.199947C1.45368 -0.300053 0.582031 0.199947 0.582031 0.999947V14.9999C0.582031 15.7999 1.45368 16.2999 2.13164 15.7999L11.8167 8.79995C12.3009 8.39995 12.3009 7.59995 11.8167 7.19995Z" fill="currentColor"/></svg> Play Episode</span>
-            <span class="pause"><svg viewBox="0 0 16 16"><title>button-pause</title><g fill="currentColor"><path d="M5,1H2C1.4,1,1,1.4,1,2v12c0,0.6,0.4,1,1,1h3c0.6,0,1-0.4,1-1V2C6,1.4,5.6,1,5,1z"></path> <path d="M14,1h-3c-0.6,0-1,0.4-1,1v12c0,0.6,0.4,1,1,1h3c0.6,0,1-0.4,1-1V2C15,1.4,14.6,1,14,1z"></path></g></svg> <span class="current-time">
-            <span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>
-          </span>/
-          <span class="duration">
-            <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
-          </span></span>
-            <progress class="amplitude-song-played-progress" id="song-played-progress" aria-label="Episode progress"></progress>
+        <button aria-label="play || pause episode" id="play-pause" class="play-pause button synthwave" data-playing="false" role="switch" aria-checked="false" data-duration="{{duration}}">
+          <span class="play"><svg viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8167 7.19995L2.13164 0.199947C1.45368 -0.300053 0.582031 0.199947 0.582031 0.999947V14.9999C0.582031 15.7999 1.45368 16.2999 2.13164 15.7999L11.8167 8.79995C12.3009 8.39995 12.3009 7.59995 11.8167 7.19995Z" fill="currentColor"/></svg> Play Episode</span>
+          <span class="pause">
+            <svg viewBox="0 0 16 16"><title>button-pause</title><g fill="currentColor"><path d="M5,1H2C1.4,1,1,1.4,1,2v12c0,0.6,0.4,1,1,1h3c0.6,0,1-0.4,1-1V2C6,1.4,5.6,1,5,1z"></path> <path d="M14,1h-3c-0.6,0-1,0.4-1,1v12c0,0.6,0.4,1,1,1h3c0.6,0,1-0.4,1-1V2C15,1.4,14.6,1,14,1z"></path></g></svg>
+            <span class="audio-time">
+              <span class="audio-current-time"></span>/
+              <span class="audio-duration"></span>
+            </span>
+          </span>
+          <progress class="audio-song-played-progress" id="song-played-progress" aria-label="Episode progress" max="100"></progress>
         </button>
 
-        <a href="#" class="button--bright subscribe">Subscribe ↗</a>
+        <a href="#" class="button bright subscribe">Subscribe ↗</a>
         </footer>
+        <audio src="{{ mp3 }}" crossorigin></audio>
     </div>
 </section>

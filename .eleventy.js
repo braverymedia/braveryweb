@@ -1,12 +1,14 @@
 const { DateTime } = require("luxon");
 const { minify } = require("terser");
 const { PurgeCSS } = require('purgecss');
+const { srcset, src } = require("./_11ty/images");
 const CleanCSS = require("clean-css");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require('eleventy-plugin-reading-time');
 const embedEverything = require("eleventy-plugin-embed-everything");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
@@ -15,6 +17,10 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(readingTime);
 	eleventyConfig.addPlugin(embedEverything);
 	eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+
+	eleventyConfig.addShortcode("src", src);
+	eleventyConfig.addShortcode("srcset", srcset);
 
 	// Date formatting (human readable)
 	eleventyConfig.addFilter("readableDate", (dateObj) => {
@@ -31,6 +37,10 @@ module.exports = function (eleventyConfig) {
 	// Date formatting (RSS)
 	eleventyConfig.addFilter("podPublishDate", (dateObj) => {
 		return DateTime.fromJSDate(dateObj).toFormat("ccc, d LLL yyyy TTT");
+	});
+
+	eleventyConfig.addFilter("toSeconds", (time) => {
+		return time;
 	});
 
 	// Simple year shortcode
@@ -76,7 +86,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	// Minify CSS
-	eleventyConfig.addFilter("cssmin", function (code) {
+	eleventyConfig.addFilter("cssmin", (code) => {
 		return new CleanCSS({}).minify(code).styles;
 	});
 
@@ -144,7 +154,7 @@ module.exports = function (eleventyConfig) {
 	// only content in the `articles/` directory
 	eleventyConfig.addCollection("episodes", function (collection) {
 		return collection.getAllSorted().filter(function (item) {
-			return item.inputPath.match(/^\.\/podcast\//) !== null;
+			return item.inputPath.match(/^\.\/episodes\//) !== null;
 		});
 	});
 
@@ -155,12 +165,48 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
+
+	eleventyConfig.setServerOptions({
+		// Default values are shown:
+
+		// Whether the live reload snippet is used
+		liveReload: true,
+
+		// Whether DOM diffing updates are applied where possible instead of page reloads
+		domDiff: true,
+
+		// The starting port number
+		// Will increment up to (configurable) 10 times if a port is already in use.
+		port: 8080,
+
+		// Additional files to watch that will trigger server updates
+		// Accepts an Array of file paths or globs (passed to `chokidar.watch`).
+		// Works great with a separate bundler writing files to your output folder.
+		// e.g. `watch: ["_site/**/*.css"]`
+		watch: ["_site/**/*.css"],
+
+		// Show local network IP addresses for device testing
+		showAllHosts: false,
+
+		// Use a local key/certificate to opt-in to local HTTP/2 with https
+		https: {
+			// key: "./localhost.key",
+			// cert: "./localhost.cert",
+		},
+
+		// Change the default file encoding for reading/serving files
+		encoding: "utf-8",
+	});
+
 	// Sass
 	eleventyConfig.addWatchTarget("_includes/assets/scss");
 
 	// Don't process files and folders with static assets e.g. images
 	eleventyConfig.addPassthroughCopy("control");
 	eleventyConfig.addPassthroughCopy({"_includes/assets/uploads" : "assets/uploads"});
+	eleventyConfig.addPassthroughCopy({
+		"_includes/assets/appendix-b": "assets/appendix-b",
+	});
 	eleventyConfig.addPassthroughCopy({ "_includes/assets/css" : "assets/css" });
 	eleventyConfig.addPassthroughCopy({
 		"_includes/assets/icons": "assets/icons",
