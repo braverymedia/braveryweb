@@ -57,7 +57,7 @@ collections:
     label: "Podcast Episodes"
     identifier_field: name
     extension: md
-    folder: "podcast"
+    folder: "episodes"
     create: true
     slug: "{{fields.slug}}"
     fields:
