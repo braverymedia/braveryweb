@@ -2,12 +2,14 @@
 layout: layouts/podcast.njk
 section: podcast
 ---
-<article data-audio="{{ ep.data.mp3 }}" class="episode--transcript">
+<a href="{{ '/podcast/' | url }}" class="all-episodes">&larr; All Episodes</a>
+<article class="episode full">
+    {% include "components/player.njk" %}
     <header class="episode--title">
-        <div class="meta">Episode {{ ep.data.episode }} &bull; <time datetime="{{ ep.data.date | machineDate}}">{{ ep.data.date }}</time></div>
+        <div class="meta"><span class="episode-number">Episode {{ episode }} - <time datetime="{{ date | machineDate}}">{{ date | readableDate }}</time></span></div>
         <h1>{{title}}</h1>
     </header>
-    <section class="episode--content">
+    <section class="episode--transcript">
         {{ layoutContent | safe }}
     </section>
 </article>

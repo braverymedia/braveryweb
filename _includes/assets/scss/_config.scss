@@ -17,6 +17,22 @@
 	font-style: italic;
 }
 
+@font-face {
+	font-family: EightiesComeback;
+	font-display: swap;
+	font-weight: 500;
+	font-stretch: condensed;
+	src: url("https://bravery.s3.us-west-002.backblazeb2.com/webfont/EightiesComeback-MedCond-subset.woff2");
+}
+
+@font-face {
+	font-family: EightiesComeback;
+	font-display: swap;
+	font-weight: 200;
+	font-stretch: condensed;
+	src: url("https://bravery.s3.us-west-002.backblazeb2.com/webfont/EightiesComeback-LtXCn-subset.woff2");
+}
+
 // CSS Variables
 :root {
 	--color-white: #fff;
@@ -26,10 +42,12 @@
 	--color-neon: #FF00C7;
 	--color-blue: #5BCEFF;
 	--color-nav: #ffffff;
+	--color-grey: #d5d5d5;
 	--gradient--primary:  linear-gradient(91.95deg, #ff5c00 -15%, #ff00c7 22%, #6b4de0 55%, #6b4de0 70%, #ff00c7 85%, #ff5c00 105%);
 	--font-family: NameSansVF, sans-serif;
 	--grid-unit: 8px;
 
+	--type-mega: clamp(1.777rem, calc(1.125em + 8.15vw), 8.398rem);
 	--type-super: clamp(1.777rem, calc(1.125em + 4.15vw), 5.398rem);
 	--type-xl: clamp(2.5rem, calc(1.125rem + 3.3vw), 4rem);
 	--type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 3rem);

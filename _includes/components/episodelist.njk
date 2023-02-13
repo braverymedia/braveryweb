@@ -1,15 +1,19 @@
 {% for ep in episodeList | reverse %}
-    <article class="episode" data-audio="{{ ep.data.mp3 }}">
+    <article class="episode mini" data-audio="{{ ep.data.mp3 }}">
         <a href="{{ ep.url | url }}" title="Read the full transcript">
             <figure class="cover-art">
-                <img data-src="{{ ep.data.cover.image }}" alt="{{ ep.data.cover.alt }}" loading="lazy" decoding="async" width="650" height="650" />
+                <img src="{% src ep.data.cover.image %}"
+                srcset="{% srcset ep.data.cover.image %}" alt="{{ep.data.cover.alt}}" width="315" height="315" loading="lazy" decoding="async" />
             </figure>
         </a>
         <section class="episode--detail">
-            <div class="meta">Episode {{ ep.data.episode }} &bull; <time datetime="{{ ep.data.date | machineDate}}">{{ ep.data.date }}</time></div>
-            <h2 class="episode--title"><a href="{{ ep.url | url }}" title="Read the full transcript">{{ title }}</a></h2>
-            {{ ep.data.summary }}
-            <audio controls src="{{ep.mp3}}" crossorigin preload="metadata"></audio>
+            <div class="meta">Episode {{ ep.data.episode }} &mdash; <time datetime="{{ ep.data.date | machineDate}}">{{ ep.data.date | readableDate }}</time></div>
+            <h2 class="episode--title"><a href="{{ ep.url | url }}" title="Read the full transcript">{{ ep.data.title }}</a></h2>
+            <div class="episode--summary">
+                {{ ep.data.description }}
+            </div>
+            {% set mp3Link %} {{ ep.data.mp3 | htmlBaseUrl("https://bravery.co") }} {% endset %}
+            <audio controls src="{{ mp3Link }}" crossorigin preload="metadata"></audio>
         </section>
     </article>
 {% endfor %}
