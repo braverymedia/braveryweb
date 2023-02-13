@@ -1,0 +1,5 @@
+{
+	"layout": "layouts/episode.njk",
+	"permalink": "podcast/{%- if slug -%}{{- slug -}}{%- else -%}{{- title | slugify-}}{%- endif -%}/index.html",
+	"tags": "podcast"
+}
