@@ -39,10 +39,6 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat("ccc, d LLL yyyy TTT");
 	});
 
-	eleventyConfig.addFilter("toSeconds", (time) => {
-		return time;
-	});
-
 	// Simple year shortcode
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
