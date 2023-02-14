@@ -1,9 +1,9 @@
 .audio-song-played-progress {
   appearance: none;
   position: absolute;
-  left: -10px;
+  left: -5px;
   top: -20px;
-  width: calc(100% + 10px);
+  width: calc(100% + 5px);
   height: calc(100% + 40px);
   z-index: -1;
 }
@@ -14,8 +14,9 @@
   transition: opacity .35s ease-in-out;
 }
 .audio-song-played-progress::-moz-progress-bar {
-  background: var(--color-black);
-  opacity: 1;
+  background: var(--color-neon);
+  filter: blur(1px);
+  opacity: 0;
   transition: opacity .35s ease-in-out;
 }
 .audio-song-played-progress[value]::-webkit-progress-bar {
@@ -25,10 +26,6 @@
   opacity: 1;
 }
 .audio-song-played-progress[value]::-webkit-progress-value {
-  background: var(--color-neon);
-  filter: blur(1px);
-}
-.audio-song-played-progress[value]::-moz-progress-value {
   background: var(--color-neon);
   filter: blur(1px);
 }

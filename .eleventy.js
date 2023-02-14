@@ -39,6 +39,11 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat("ccc, d LLL yyyy TTT");
 	});
 
+	// Copyright announcement
+	eleventyConfig.addFilter("copyright", (dateObj) => {
+		return DateTime.fromJSDate(dateObj).toFormat("yyyy");
+	});
+
 	// Simple year shortcode
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
@@ -72,6 +77,15 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("duration", (epDuration) => {
 		let duration = epDuration.replace(":", "m ");
 		return duration + "s";
+	});
+
+	eleventyConfig.addFilter("typography", (content) => {
+		content = content.replace(/"(?=\w|$)/g, "&#8220;");
+		content = content.replace(/(?<=\w|^)"/g, "&#8221;");
+		content = content.replace(/'(?=\w|$)/g, "&#8217;");
+		content = content.replace(/(?<=\w|^)'/g, "&#8216;");
+
+		return content;
 	});
 
 	// Set Podcast URL for tracking
@@ -161,7 +175,6 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
-
 	eleventyConfig.setServerOptions({
 		// Default values are shown:
 
@@ -199,11 +212,13 @@ module.exports = function (eleventyConfig) {
 
 	// Don't process files and folders with static assets e.g. images
 	eleventyConfig.addPassthroughCopy("control");
-	eleventyConfig.addPassthroughCopy({"_includes/assets/uploads" : "assets/uploads"});
+	eleventyConfig.addPassthroughCopy({
+		"_includes/assets/uploads": "assets/uploads",
+	});
 	eleventyConfig.addPassthroughCopy({
 		"_includes/assets/appendix-b": "assets/appendix-b",
 	});
-	eleventyConfig.addPassthroughCopy({ "_includes/assets/css" : "assets/css" });
+	eleventyConfig.addPassthroughCopy({ "_includes/assets/css": "assets/css" });
 	eleventyConfig.addPassthroughCopy({
 		"_includes/assets/icons": "assets/icons",
 	});
@@ -226,9 +241,9 @@ module.exports = function (eleventyConfig) {
 		typographer: true,
 	};
 
-	let markdownLib = markdownIt(options).use(markdownItContainer, "callout");
+	let md = markdownIt(options).use(markdownItContainer, "callout");
 
-	eleventyConfig.setLibrary("md", markdownLib);
+	eleventyConfig.setLibrary("md", md);
 
 	eleventyConfig.addFilter("markdown", (content) => {
 		return md.render(content);

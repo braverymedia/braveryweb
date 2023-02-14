@@ -70,7 +70,8 @@
             {% if page.url == "/" %}
             </h1>
           {% else %}
-            <p>{{ heading if heading and section != 'single' }}<p>
+            <p>{{ heading if heading and section != 'single' }}
+            {% if '/podcast' in page.url and page.url != '/podcast/' %}<a href="{{ '/podcast/' | url }}" class="all-episodes">&larr; All Episodes</a>{% endif %}<p>
           </div>
         {% endif %}
         {% include "components/nav-menu.njk" %}
