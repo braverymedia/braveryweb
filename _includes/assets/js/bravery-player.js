@@ -10,6 +10,9 @@ const trackDuration = document.querySelector(".audio-duration");
 const totalTime = playPause.dataset.duration;
 
 window.addEventListener("DOMContentLoaded", () => {
+	track.addEventListener("loadedmetadata", (_event) => {
+
+	})
 	track.connect(audioContext.destination);
 
 	const setTimes = () => {
@@ -42,7 +45,7 @@ window.addEventListener("DOMContentLoaded", () => {
 		false
 	);
 	const progressUpdate = (e) => {
-		const percent = (audioElement.currentTime / trackDuration) * 100;
+		const percent = (audioElement.currentTime / totalTime) * 100;
 		progress.value = percent;
 	};
 	// Update progress bar and time values as audio plays
@@ -51,12 +54,10 @@ window.addEventListener("DOMContentLoaded", () => {
 		setTimes();
 	});
     audioElement.addEventListener("ended", () => {
-        playButton.dataset.playing = "false";
-        pauseIcon.classList.add("hidden");
-        playIcon.classList.remove("hidden");
+        playPause.dataset.playing = "false";
         progress.value = 0;
         audioElement.currentTime = 0;
-        audioElement.duration = trackDuration;
+        audioElement.duration = totalTime;
     });
 	audioElement.addEventListener("timeupdate", progressUpdate);
 });

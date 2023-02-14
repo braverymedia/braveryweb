@@ -50,11 +50,11 @@ permalink: podcast/podcast.xml
             <width>32</width>
             <height>32</height>
         </image>
-        {% set episodes = collections.episodes %}
+        {% set ep = collections.episodes %}
         {%- for ep in episodes | reverse %}
             {% set permalink -%}{{ ep.url | absoluteUrl }}{%- endset %}
             {% set audioURL -%}{{ ep.data.mp3 | chartableURL }}{%- endset %}
-            {% set content %}{% ep.data.description %}{% endset %}
+            {% set content %}{{ ep.data.summary | markdown | safe}}{% endset %}
             {% set comma = joiner(",") %}
             <item>
                 <title>{{ ep.data.title }}</title>

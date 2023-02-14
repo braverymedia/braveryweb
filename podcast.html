@@ -1,0 +1,25 @@
+---
+layout: layouts/podcast.njk
+title: Appendix B
+heading:
+description: "Candid conversations about higher ed in 10 minutes or less."
+section: podcast
+permalink: /podcast/
+social:
+  tw:
+    title: Appendix B from Bravery Media
+    description: Bravery's podcast featuring candid conversations about higher ed in 10 minutes or less.
+    image: https://bravery.co/assets/img/services-card.png
+  fb:
+    title: Appendix B from Bravery Media
+    description: Bravery's podcast featuring candid conversations about higher ed in 10 minutes or less.
+    image: https://bravery.co/assets/img/services-card.png
+eleventyNavigation:
+  key: Podcasat
+  order: 2
+  title: Podcast
+---
+<section class="episode-list">
+  {% set episodeList = collections.episodes %}
+  {% include "components/episodelist.njk" %}
+</section>

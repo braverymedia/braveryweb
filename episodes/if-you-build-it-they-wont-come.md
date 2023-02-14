@@ -1,10 +1,7 @@
 ---
 title: If you build it, they won't come
 description: >-
-  W﻿elcome to Appendix B from Bravery Media! 
-
-
-  In our first episode, Joel and Kristin discuss the missteps that institutions can sometimes take with their websites. Just because YOU really like that homepage carousel doesn’t mean it helps prospective students in their journeys. Do better!
+  In our first episode, Joel and Kristin discuss the missteps that institutions can sometimes take with their websites. Do better!
 episode: 1
 slug: if-you-build-it-they-wont-come
 date: 2023-02-15
@@ -15,7 +12,7 @@ cover:
 mp3: /assets/appendix-b/appendix-b-001-if-you-build-it-they-wont-come-final-v2.mp3
 duration: 11:57
 summary: >-
-  W﻿elcome to Appendix B from Bravery Media!
+  Welcome to Appendix B from Bravery Media!
 
 
   In our first episode, Joel and Kristin discuss the missteps that institutions can sometimes take with their websites. Just because YOU really like that homepage carousel doesn't mean it helps prospective students in their journeys. Do better!
