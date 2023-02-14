@@ -1,7 +1,8 @@
 ---
 title: If you build it, they won't come
-description: >-
-  In our first episode, Joel and Kristin discuss the missteps that institutions can sometimes take with their websites. Do better!
+description: Why do so many institutions want website features that don’t
+  actually provide value to prospective students? Can we, as higher ed
+  professionals, just all agree to do better?
 episode: 1
 slug: if-you-build-it-they-wont-come
 date: 2023-02-15
@@ -12,10 +13,10 @@ cover:
 mp3: /assets/appendix-b/appendix-b-001-if-you-build-it-they-wont-come-final-v2.mp3
 duration: 11:57
 summary: >-
-  Welcome to Appendix B from Bravery Media!
+  W﻿elcome to Appendix B from Bravery Media!
 
 
-  In our first episode, Joel and Kristin discuss the missteps that institutions can sometimes take with their websites. Just because YOU really like that homepage carousel doesn't mean it helps prospective students in their journeys. Do better!
+  In our first episode, Joel and Kristin discuss the missteps that institutions can sometimes take with their websites. Just because YOU really like that homepage carousel or giant social media feed, doesn’t mean it actually helps prospective students in their journeys. Do better!
 ---
 **Carl Gratiot:** From Bravery Media, this is Appendix B. Candid conversations about higher ed in 10 minutes or less. And now, here are your hosts, Kristin Van Dorn and Joel Goodman. 
 
@@ -77,4 +78,4 @@ And it's really confusing because you're there to see a specific thing and find 
 
 **Kristin Van Dorn:** Yeah. I think that overall when we're planning these things, these new engagement activities that are gonna take place on a higher education website, we're not thinking about who's actually coming to that website or planning for the people that we hope will come to the website, but oftentimes it includes everyone from prospective students to current students to families and parents to alumni, to donors, and that blanket over, like that blanket umbrella of people that are supposed to come and interact with these tools. Those tools no longer make sense for connecting to a specific call to action because they're meant for anyone to enjoy. They're meant to inspire, delight, but they don't quite get there because all they're doing is interrupting what the person actually came to the website to do.
 
-**Carl Gratiot:** Thanks for listening to Appendix B. If you’ve got thoughts, we'd love for you to share them on Apple Podcasts or here in the comments section. For more information, please consider subscribing to our newsletter. It comes out once a week and we will be back in about a week. Thank you.
+**Carl Gratiot:** Thanks for listening to Appendix B. If you’ve got thoughts, we'd love for you to share them on Apple Podcasts or here in the comments section. For more information, please consider subscribing to [our newsletter](https://bravery.fyi). It comes out once a week and we will be back in about a week. Thank you.
