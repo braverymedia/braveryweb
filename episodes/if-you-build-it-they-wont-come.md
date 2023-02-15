@@ -8,7 +8,7 @@ slug: if-you-build-it-they-wont-come
 date: 2023-02-15
 record_date: 2023-01-30
 cover:
-  image: Appendix_B_-_001_-_If_you_build_it_they_won_t_come_-_Episode_Art_gx4ser.png
+  image: appxb-ep001-cover_pjztny.png
   alt: Appendix B - If you build it, they won't come. From Bravery Media.
 mp3: /assets/appendix-b/appendix-b-episode-1-if-you-build-it-they-won-t-come.mp3
 duration: 11:57
