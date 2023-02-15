@@ -1865,8 +1865,9 @@ button.menu-trigger {
 
 .audio-song-played-progress {
   appearance: none;
+  background-color: var(--color-black);
   position: absolute;
-  left: -5px;
+  left: -3px;
   top: -20px;
   width: calc(100% + 5px);
   height: calc(100% + 40px);
