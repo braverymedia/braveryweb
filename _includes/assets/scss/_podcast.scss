@@ -4,6 +4,8 @@
     .pod-title {
         font-family: EightiesComeback, "Times New Roman", serif;
         font-weight: 200;
+        margin-block-start: 0;
+        margin-block-end: 0;
     }
     h2 {
         font-family: EightiesComeback, "Times New Roman", serif;
@@ -52,6 +54,7 @@
         text-align: left;
         font-family: EightiesComeback, "Times New Roman", serif;
         font-weight: 500;
+        margin-bottom: 0;
     }
 }
 .episode--media {
