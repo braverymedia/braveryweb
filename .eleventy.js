@@ -1,4 +1,4 @@
-const { DateTime } = require("luxon");
+const { DateTime, Duration } = require("luxon");
 const { minify } = require("terser");
 const { PurgeCSS } = require('purgecss');
 const { srcset, src } = require("./_11ty/images");
@@ -74,9 +74,8 @@ module.exports = function (eleventyConfig) {
 		return cloudinaryRoot + cover;
 	});
 
-	eleventyConfig.addFilter("duration", (epDuration) => {
-		let duration = epDuration.replace(":", "m ");
-		return duration + "s";
+	eleventyConfig.addFilter("toMinutes", (epDuration) => {
+		return Duration.fromObject({seconds: epDuration}).toFormat('mm:ss')
 	});
 
 	eleventyConfig.addFilter("typography", (content) => {
