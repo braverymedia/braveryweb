@@ -6,6 +6,7 @@
     <title>{{ title or metadata.title }}{% if page.url != '/' %} / {{ metadata.sitename }} {% endif %}</title>
     <meta name="description" content="{{ description or metadata.description }}">
     <link rel="alternate" type="application/atom+xml" title="Bravery Media Insights" href="{{ metadata.feed.url }}"/>
+    <link rel="alternate" type="application/atom+xml" title="Appendix B Podcast" href="{{ metadata.podcast.feed }}"/>
     <link rel="preconnect" href="https://script.hotjar.com">
     <link rel="preconnect" href="https://vars.hotjar.com">
     {# Favicons #}
