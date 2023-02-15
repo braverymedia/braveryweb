@@ -15,10 +15,10 @@ mp3: /assets/appendix-b/appendix-b-episode-3-dealing-with-content-and-technical-
 duration: 9:40
 summary: >-
   J﻿oel's most terrifying recurring dream isn't about zombies or falling, it's
-  about the mountains of techincal debt on college campuses everywhere.
+  about the mountains of technical debt on college campuses everywhere.
 
 
-  A﻿nd Kristin is constantly horrified by content debt, and the role it plays in slowing down efficiencies throughout the MarComm office.
+  A﻿nd Kristin is constantly horrified by content debt and its role in slowing down efficiencies throughout the MarComm office.
 
 
   W﻿hat can be done?
