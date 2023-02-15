@@ -62,7 +62,7 @@ permalink: podcast/feed.xml
             <itunes:subtitle><![CDATA[{{ ep.data.description }}]]></itunes:subtitle>
             <itunes:keywords>{% for tag in ep.data.tags -%} {{ comma() }} {{- tag -}} {%- endfor %}</itunes:keywords>
             <content:encoded><![CDATA[{{ content | markdown | safe }}]]></content:encoded>
-            <enclosure url="{{ audioURL }}" length="{{ ep.data.duration }}" type="audio/mpeg"></enclosure>
+            <enclosure url="{{ audioURL | chartable }}" length="{{ ep.data.duration }}" type="audio/mpeg"></enclosure>
             <itunes:summary><![CDATA[{{ ep.data.summary | markdown | safe }}]]></itunes:summary>
             <itunes:image href="https://res.cloudinary.com/bravery/image/upload/{{ep.data.cover.image}}"></itunes:image>
             <image>

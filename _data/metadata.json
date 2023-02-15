@@ -39,12 +39,12 @@
 		"cover": {
 			"large": "https://bravery.co/assets/img/appendix-b-cover.png"
 		},
-		"chartable": "",
+		"chartable": "6E943F",
 		"subscribe": {
 			"apple": "",
 			"google": "",
 			"overcast": "",
-			"spotify": ""
+			"spotify": "https://open.spotify.com/show/65VUFm5sPGx81fmEltCsrr"
 		}
 	},
 	"jsonfeed": {

@@ -9,6 +9,7 @@ const readingTime = require('eleventy-plugin-reading-time');
 const embedEverything = require("eleventy-plugin-embed-everything");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const metadata = require("./_data/metadata.json");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
@@ -88,10 +89,10 @@ module.exports = function (eleventyConfig) {
 	});
 
 	// Set Podcast URL for tracking
-	eleventyConfig.addFilter("chartableURL", (audioURL) => {
-		let chartable = "https://chtbl.com/track/" + metadata.chartable + "/";
+	eleventyConfig.addFilter("chartable", (audioURL) => {
+		let chartable = "https://chrt.fm/track/" + metadata.podcast.chartable + "/";
 
-		return audioURL.replace("https://", chartable);
+		return chartable + audioURL;
 	});
 
 	// Minify CSS
