@@ -5,26 +5,22 @@ const track = audioContext.createMediaElementSource(audioElement);
 // Select our play button
 const playPause = document.querySelector("#play-pause");
 const progress = document.querySelector("progress");
-const playerCurrentTime = document.querySelector(".audio-current-time");
+const elapsed = document.querySelector(".audio-current-time");
 const trackDuration = document.querySelector(".audio-duration");
 const totalTime = playPause.dataset.duration;
 
 window.addEventListener("DOMContentLoaded", () => {
-	track.addEventListener("loadedmetadata", (_event) => {
-
-	})
 	track.connect(audioContext.destination);
+	console.log(audioElement);
 
 	const setTimes = () => {
-		playerCurrentTime.textContent = new Date(audioElement.currentTime * 1000)
-			.toISOString()
-			.substring(11, 8)
-		trackDuration.textContent = new Date(totalTime * 1000)
-			.toISOString()
-			.substring(11, 8)
+		let currentMin = Math.floor(audioElement.currentTime / 60);
+		let currentSec = Math.floor(audioElement.currentTime % 60);
+		if ( currentSec < 10 ) {
+			currentSec = `0${currentSec}`;
+		}
+		elapsed.textContent = `${currentMin}:${currentSec}`;
 	}
-
-	setTimes();
 	playPause.addEventListener(
 		"click",
 		() => {
