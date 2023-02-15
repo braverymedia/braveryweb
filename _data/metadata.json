@@ -32,7 +32,7 @@
 		"filename": "podcast.xml",
 		"path": "/feed/podcast.xml",
 		"id": "https://bravery.co/podcast/",
-		"feed": "https://bravery.co/feed/podcast.xml",
+		"feed": "https://bravery.co/podcast/feed.xml",
 		"author": "Joel Goodman and Kristin Van Dorn",
 		"owner": "Bravery Media",
 		"explicit": "clean",
