@@ -36,7 +36,7 @@
                 padding: 0;
             }
             @include mq(sm) {
-                padding: calc(var(--grid-unit) * 6) 0 calc(var(--grid-unit) * 15);
+                padding: calc(var(--grid-unit) * 6) 0 calc(var(--grid-unit) * 10);
             }
         }
     }
@@ -189,5 +189,21 @@
         .cover-art {
             display: flex;
         }
+    }
+}
+
+#subscribe-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--grid-unit) * 2);
+    color: var(--color-black);
+    margin-top: calc(var(--grid-unit) * 4);
+    .subscribe-icon {
+        height: calc(var(--grid-unit) * 3);
+        width: calc(var(--grid-unit) * 3);
+    }
+    a:hover {
+        color: var(--color-neon)
     }
 }
