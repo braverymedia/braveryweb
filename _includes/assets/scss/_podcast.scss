@@ -125,6 +125,12 @@
             grid-row: 1;
             grid-column: 2;
         }
+        .episode--summary {
+            font-size: var(--type-sm);
+            p {
+                margin-top: 1em;
+            }
+        }
         h2 {
             font-size: var(--type-md);
             margin-bottom: 0;
