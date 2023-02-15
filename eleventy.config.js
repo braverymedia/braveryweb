@@ -132,6 +132,7 @@ module.exports = function (eleventyConfig) {
 		const purgeCSSResults = await new PurgeCSS().purge({
 			content: [{ raw: content }],
 			css: ["_includes/assets/css/bravery.css"],
+			dynamicAttributes: ["aria-selected", "value", ],
 			keyframes: true,
 		});
 
