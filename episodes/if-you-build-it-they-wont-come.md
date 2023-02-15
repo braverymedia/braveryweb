@@ -17,6 +17,9 @@ summary: >-
 
 
   In our first episode, Joel and Kristin discuss the missteps that institutions can sometimes take with their websites. Just because YOU really like that homepage carousel or giant social media feed, doesn’t mean it actually helps prospective students in their journeys. Do better!
+
+
+  S﻿ubscribe to Bravery's Newsletter: https://bravery.fyi
 ---
 **Carl Gratiot:** From Bravery Media, this is Appendix B. Candid conversations about higher ed in 10 minutes or less. And now, here are your hosts, Kristin Van Dorn and Joel Goodman. 
 
