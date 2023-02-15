@@ -8,7 +8,7 @@ slug: dealing-with-content-technical-debt
 date: 2023-02-15T12:06:14.677Z
 record_date: 2023-02-13T12:06:14.682Z
 cover:
-  image: Appendix_B_-_003_-_Dealing_with_Content_and_Technical_Debt_-_Episode_Art_c15ifx.png
+  image: appx-b-003_cover-art_rwoaex.png
   alt: Appendix B Episode 3, text is present that reads, "Dealing with Content and
     Technical Debt."
 mp3: /assets/appendix-b/appendix-b-episode-3-dealing-with-content-and-technical-debt.mp3
