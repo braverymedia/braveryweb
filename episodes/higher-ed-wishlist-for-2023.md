@@ -8,7 +8,7 @@ slug: higher-ed-wishlist-for-2023
 date: 2023-02-15T12:00:21.379Z
 record_date: 2023-02-06T12:00:21.385Z
 cover:
-  image: Appendix_B_-_002_-_Higher_Ed_Wishlist_for_2023_-_Episode_Art_hr7eij.png
+  image: appxb-ep002_cover-art_nohpow.png
   alt: Appendix B Episode 2, text says "Higher Ed Wishlist for 2023."
 mp3: /assets/appendix-b/appendix-b-episode-2-higher-ed-wishlist-for-2023.mp3
 duration: 12:22
