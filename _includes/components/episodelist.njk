@@ -12,8 +12,8 @@
             <div class="episode--summary">
                 {{ ep.data.summary | markdown | safe }}
             </div>
-            {% set mp3Link %} {{ ep.data.mp3 | htmlBaseUrl("https://bravery.co") }} {% endset %}
+            {% set mp3Link -%}{{ ep.data.mp3 | htmlBaseUrl("https://bravery.co") }}{%- endset %}
         </section>
-        <audio controls src="{{ mp3Link }}" crossorigin preload="metadata"></audio>
+        <audio controls src="{{ mp3Link | chartable }}" crossorigin preload="none"></audio>
     </article>
 {% endfor %}
