@@ -1,10 +1,8 @@
 ---
 title: Avoiding the Procurement Blues
-description: >-
-  Question: How can you help your institution avoid the procurement blues? 
-
-
-  Answer: Be sure to evaluate the user experience for any new tools, software, or CMS's, so your staff won't stumble after implementation.
+description: Help your institution avoid the procurement blues by first
+  evaluating the UX for any potential tools, software, or CMSs, so your staff
+  won't stumble after implementation.
 episode: 4
 slug: avoiding-procurement-blues
 date: 2023-02-22T16:16:50.339Z
