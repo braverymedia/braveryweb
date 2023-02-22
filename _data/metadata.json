@@ -42,9 +42,11 @@
 		"chartable": "6E943F",
 		"subscribe": {
 			"apple": "https://podcasts.apple.com/us/podcast/appendix-b/id1672064420",
-			"google": "",
+			"google": "https://podcasts.google.com/feed/aHR0cHM6Ly9icmF2ZXJ5LmNvL3BvZGNhc3QvZmVlZC54bWw?sa=X&ved=0CAcQrrcFahcKEwiw-qDYo6n9AhUAAAAAHQAAAAAQLA",
 			"overcast": "https://overcast.fm/itunes1672064420",
-			"spotify": "https://open.spotify.com/show/65VUFm5sPGx81fmEltCsrr"
+			"pandora": "https://www.pandora.com/podcast/appendix-b/PC:1001058767",
+			"spotify": "https://open.spotify.com/show/65VUFm5sPGx81fmEltCsrr",
+			"stitcher": "https://www.stitcher.com/show/1058767"
 		}
 	},
 	"jsonfeed": {
