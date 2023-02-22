@@ -41,12 +41,16 @@
 		},
 		"chartable": "6E943F",
 		"subscribe": {
+			"amazon": "https://music.amazon.com/podcasts/b826f2ec-ce5a-4280-b8d6-e26134217992/appendix-b",
 			"apple": "https://podcasts.apple.com/us/podcast/appendix-b/id1672064420",
 			"google": "https://podcasts.google.com/feed/aHR0cHM6Ly9icmF2ZXJ5LmNvL3BvZGNhc3QvZmVlZC54bWw?sa=X&ved=0CAcQrrcFahcKEwiw-qDYo6n9AhUAAAAAHQAAAAAQLA",
+			"iheartradio": "https://iheart.com/podcast/109394033/",
 			"overcast": "https://overcast.fm/itunes1672064420",
 			"pandora": "https://www.pandora.com/podcast/appendix-b/PC:1001058767",
+			"podchaser": "https://www.podchaser.com/AppendixB",
 			"spotify": "https://open.spotify.com/show/65VUFm5sPGx81fmEltCsrr",
-			"stitcher": "https://www.stitcher.com/show/1058767"
+			"stitcher": "https://www.stitcher.com/show/1058767",
+			"tunein": "https://tunein.com/radio/Appendix-B-p3508994/"
 		}
 	},
 	"jsonfeed": {
