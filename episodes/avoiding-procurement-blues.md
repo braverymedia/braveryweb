@@ -1,7 +1,7 @@
 ---
 title: Avoiding the Procurement Blues
 description: Help your institution avoid the procurement blues by first
-  evaluating the UX for any potential tools, software, or CMSs, so your staff
+  evaluating the UX of any potential tools, software, or CMSs, so your staff
   won't stumble after implementation.
 episode: 4
 slug: avoiding-procurement-blues
