@@ -14,7 +14,8 @@ mp3: /assets/appendix-b/appendix-b-episode-5-higher-ed-s-differentiation-problem
 duration: 11:00
 summary: >-
   Why is it so difficult for Higher Education institutions to differentiate
-  themselves from each other?\
+  themselves from each other?
+
 
   Some institutions push their MBA programs as being new, different, and innovative, but the perceived product of education remains the same.
 
@@ -25,16 +26,16 @@ summary: >-
   Then there are all of the various structures in place that limit institutional flexibility.
 
 
-  S﻿ubscribe to Bravery's Newsletter: <https://bravery.fyi>
+  S﻿ubscribe to [Bravery's Newsletter](https://bravery.fyi)
 
 
-  Follow Joel: <https://www.linkedin.com/in/joelgoodman/> 
+  [Follow Joel](https://www.linkedin.com/in/joelgoodman/)
 
 
-  Follow Kristin: <https://www.linkedin.com/in/kristinvandorn/> 
+  [Follow Kristin](https://www.linkedin.com/in/kristinvandorn/)
 
 
-  Check out our YouTube Channel: <https://youtube.com/@BraveryMedia>
+  Check out the [Bravery YouTube Channel](https://www.youtube.com/@BraveryMedia)
 ---
 **Carl Gratiot:** From Bravery Media, this is Appendix B, candid conversations about Higher Ed in 10 minutes or less. On today's episode, “Higher Ed's Differentiation Problem.” Here’s Kristin Van Dorn and Joel Goodman.
 
