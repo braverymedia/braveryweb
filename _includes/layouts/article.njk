@@ -21,8 +21,8 @@ section: single
     </figure>
     {% elif cover.image %}
     <picture class="article--cover">
-        <source srcset="{{ cover.image | coverTall }}" media="(min-width: 1024px)" width="410" height="575">
-        <img src="{{ cover.image | cover }}" alt="{{ cover.alt }}" width="340" height="225" />
+        <source srcset="{{ cover.image | coverTall }} 1024w" media="(min-width: 1024px)" width="410" height="575">
+        <img src="{{ cover.image | cover }}" alt="{{ cover.alt }}" width="340" height="225" decoding="async" />
     </picture>
     {% endif %}
 </aside>
