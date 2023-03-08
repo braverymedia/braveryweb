@@ -11,7 +11,7 @@ cover:
   alt: Appendix B Episode 6, text is present that reads, "Responsible Website
     Stewardship."
 mp3: /assets/appendix-b/appendix-b-episode-6-responsible-website-stewardship.mp3
-duration: 09:03
+duration: 9:03
 summary: >-
   College and University websites need responsible stewardship in order to be
   successful.\
