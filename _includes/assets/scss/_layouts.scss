@@ -448,6 +448,8 @@
 			height: auto;
 			border-radius: calc(var(--grid-unit) * 3);
 			box-shadow: 24px 32px 40px 0 rgba(0, 0, 0, 0.1);
+			max-block-size: none;
+
 		}
 		&.video-embed {
 			width: auto;
