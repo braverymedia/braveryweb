@@ -1,6 +1,6 @@
 {
 	"extends": [
-		"stylelint-config-wordpress/scss"
+		"stylelint-config-recommended"
 	],
 	"rules": {
 		"selector-class-pattern": null,
@@ -10,6 +10,7 @@
 		"at-rule-empty-line-before": null,
 		"selector-pseudo-element-colon-notation": null,
 		"number-leading-zero": null,
-		"no-descending-specificity": null
+		"no-descending-specificity": null,
+		"selector-nested-pattern": "^&"
 	}
 }

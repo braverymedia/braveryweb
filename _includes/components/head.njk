@@ -35,11 +35,9 @@
     <meta name="twitter:creator" content="{{ social.tw.creator or metadata.social.tw.creator }}">
     <meta name="twitter:image" content="{{ social.tw.image or metadata.social.tw.image }}">
     {%- endblock -%}
-    {% if site.env === 'production' %}
-        <!-- INLINE CSS-->
-    {% endif %}
+    <!-- STYLES -->
     {% if site.env === 'development' %}
-        <link rel="stylesheet" href="/assets/css/bravery.css">
+        <link href="/assets/css/bravery.css" type="style/css" />
         <script src="/assets/js/bravery.bundle.js" defer="defer"></script>
     {% endif %}
     <link rel="stylesheet" href="/assets/css/cc.css">

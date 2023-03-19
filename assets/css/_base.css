@@ -3,7 +3,7 @@ body {
 	font-size: 1rem;
 	margin: 0;
 	padding: 0;
-	@include mq(sm) {
+	@media ( min-width: 768px ) {
 		font-size: var(--type-base);
 	}
 }
@@ -24,7 +24,7 @@ body {
 	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
 	overflow: hidden;
 	height: 425px;
-	@include mq(md) {
+	@media ( min-width: 1024px ) {
 		height: 545px;
 	}
 	figcaption {
@@ -72,7 +72,7 @@ body {
 	}
 
 	.testimonial & {
-		@include mq(sm) {
+		@media ( min-width: 768px ) {
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
 			border-right: 0;
@@ -161,7 +161,7 @@ button,
 		}
 	}
 
-	@include mq(md) {
+	@media ( min-width: 1024px ) {
 		width: auto;
 		padding-left: calc(var(--grid-unit) * 6);
 		padding-right: calc(var(--grid-unit) * 6);
@@ -173,7 +173,7 @@ a.button {
 	text-decoration: none;
 }
 
-@include mq(sm) {
+@media ( min-width: 768px ) {
 	.panel.testimonial .quotemark {
 		position: absolute;
 		width: 104px;

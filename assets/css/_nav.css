@@ -20,7 +20,7 @@
 		align-items: center;
 		text-decoration: none;
 	}
-	@include mq(sm) {
+	@media ( min-width: 768px ) {
 		height: 88px;
 		padding: 0 calc(var(--grid-unit) * 4);
 		a:hover {
@@ -46,7 +46,7 @@
 		margin: 0;
 		line-height: 1;
 	}
-	@include mq(sm) {
+	@media ( min-width: 768px ) {
 		padding-left: unset;
 		svg {
 			height: 38px;
@@ -61,7 +61,7 @@ button.menu-trigger {
 	width: 70px;
 	padding: calc(var(--grid-unit) * 3);
 	margin: 0;
-	@include mq(sm) {
+	@media ( min-width: 768px ) {
 		display: none;
 	}
 }
@@ -85,7 +85,7 @@ button.menu-trigger {
 	a {
 		padding: var(--grid-unit);
 	}
-	@include mq(sm) {
+	@media ( min-width: 768px ) {
 		background-color: transparent;
 		opacity: 1;
 		visibility: visible;

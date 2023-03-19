@@ -107,7 +107,7 @@ strong {
 blockquote {
 	margin: 0;
 	position: relative;
-	> p {
+	& > p {
 		font-size: var(--type-md);
 		letter-spacing: -0.0051em;
 		margin-top: 0;
@@ -115,7 +115,7 @@ blockquote {
 		margin-bottom: calc(var(--grid-unit) * 4);
 		font-variation-settings: "wght" 800, "opsz" 96;
 
-		@include mq(md) {
+		@media ( min-width: 1024px ) {
 			font-size: calc(var(--type-lg) * 0.8);
 		}
 	}
@@ -128,10 +128,10 @@ blockquote {
 	cite {
 		font-style: normal;
 		font-size: var(--type-md);
-		@include mq(sm) {
+		@media ( min-width: 768px ) {
 			font-size: var(--type-sm);
 		}
-		@include mq(md) {
+		@media ( min-width: 1024px ) {
 			font-size: var(--type-base);
 			font-weight: 450;
 		}
@@ -143,10 +143,9 @@ blockquote {
 		font-size: var(--type-sm);
 		p {
 			margin-bottom: var(--grid-unit);
-			// font-variation-settings: "opsz" 24;
 			line-height: 1.2;
 		}
-		@include mq(md) {
+		@media ( min-width: 1024px ) {
 			margin-top: calc(var(--grid-unit) * 6);
 			font-size: var(--type-base);
 			p {
@@ -212,7 +211,7 @@ span.brand {
 			padding-right: 2.5vh;
 			padding-left: 2.5vh;
 		}
-		@include mq(md) {
+		@media ( min-width: 1024px ) {
 			blockquote,
 			blockquote + cite {
 				padding-right: 5vh;
@@ -240,7 +239,7 @@ span.brand {
 			text-fill-color: transparent;
 			animation: gradientMove 25s linear infinite;
 			line-height: 1.1;
-			@include mq(sm) {
+			@media ( min-width: 768px ) {
 				font-size: calc(var(--type-lg) * 0.8);
 			}
 		}
