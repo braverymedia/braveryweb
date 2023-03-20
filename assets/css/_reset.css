@@ -1,5 +1,5 @@
 /***
-    The new CSS reset - version 1.8.2 (last updated 23.12.2022)
+    The new CSS reset - version 1.8.4 (last updated 14.2.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -57,7 +57,7 @@ meter {
 }
 
 /* preformatted text - use only for this feature */
-pre {
+:where(pre) {
     all: revert;
 }
 
@@ -68,7 +68,7 @@ pre {
 
 /* remove default dot (•) sign */
 ::marker {
-    content: "";
+    content: initial;
 }
 
 /* fix the feature of 'hidden' attribute.
@@ -96,23 +96,4 @@ pre {
 /* Revert Modal native behavior */
 :where(dialog:modal) {
     all: revert;
-}
-
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	word-wrap: normal !important;
-}
-i,
-em {
-	font-style: italic;
 }

@@ -21,7 +21,7 @@ h1 {
 	font-size: var(--type-xl);
 	font-variation-settings: "wght" 800, "opsz" 96;
 
-	span {
+	& span {
 		color: var(--color-bright);
 	}
 }
@@ -50,7 +50,7 @@ p {
 		font-variation-settings: "wght" 800, "opsz" 96;
 		line-height: 1.1;
 		margin-bottom: 0;
-		span {
+		& span {
 			color: var(--color-bright);
 			background: var(--gradient--primary);
 			background-size: 200% auto;
@@ -73,7 +73,7 @@ p {
 	animation: gradientMove 25s linear infinite;
 }
 main {
-	a {
+	& a {
 		color: inherit;
 		text-decoration: underline 2px solid var(--color-neon);
 		text-underline-offset: 4px;
@@ -125,7 +125,7 @@ blockquote {
 		opacity: 0.2;
 	}
 
-	cite {
+	& cite {
 		font-style: normal;
 		font-size: var(--type-md);
 		@media ( min-width: 768px ) {
@@ -137,18 +137,18 @@ blockquote {
 		}
 	}
 
-	footer {
+	& footer {
 		font-weight: var(--font-weight-bold);
 		transform: translate3d(0, 0, 0);
 		font-size: var(--type-sm);
-		p {
+		& p {
 			margin-bottom: var(--grid-unit);
 			line-height: 1.2;
 		}
 		@media ( min-width: 1024px ) {
 			margin-top: calc(var(--grid-unit) * 6);
 			font-size: var(--type-base);
-			p {
+			& p {
 				font-size: var(--type-sm);
 			}
 		}
@@ -173,7 +173,7 @@ span.brand {
 	font-feature-settings: var(--feature-simple-y);
 }
 :not(.layout-home) main ul {
-	li {
+	& li {
 		list-style-type: "› ";
 		margin-bottom: 0;
 	}
@@ -187,22 +187,22 @@ span.brand {
 .layout-single,
 .layout-jobs {
 	.article--content {
-		p,
-		li {
+		& p,
+		& li {
 			font-size: var(--type-sm);
 		}
-		li {
+		& li {
 			margin-bottom: 0.6em;
 		}
-		blockquote {
+		& blockquote {
 			margin: calc(var(--grid-unit) * 4) auto;
 			padding-right: 2.5vh;
 			padding-left: 2.5vh;
-			p {
+			& p {
 				font-size: var(--type-base);
 			}
 		}
-		blockquote + cite {
+		& blockquote + cite {
 			background: none;
 			-webkit-text-fill-color: unset;
 			text-fill-color: unset;
@@ -212,15 +212,15 @@ span.brand {
 			padding-left: 2.5vh;
 		}
 		@media ( min-width: 1024px ) {
-			blockquote,
-			blockquote + cite {
+			& blockquote,
+			& blockquote + cite {
 				padding-right: 5vh;
 				padding-left: 5vh;
 			}
 		}
 	}
 	.callout {
-		blockquote > p {
+		& blockquote > p {
 			margin: 0;
 			color: var(--color-bright);
 			background: linear-gradient(
@@ -244,25 +244,25 @@ span.brand {
 			}
 		}
 	}
-	h2 {
+	& h2 {
 		font-size: var(--type-md);
 		margin-bottom: 0;
 		margin-top: 1.5em;
 		font-variation-settings: "opsz" 96, "wght" 610;
 		max-width: 500px;
 	}
-	h3 {
+	& h3 {
 		font-size: var(--type-base);
 		font-variation-settings: "opsz" 96, "wght" 610;
 	}
 }
 .layout-legal {
-	main {
-		p,
-		li {
+	& main {
+		& p,
+		& li {
 			font-size: var(--type-sm);
 		}
-		h2 {
+		& h2 {
 			font-size: var(--type-md);
 			margin-top: 1em;
 		}

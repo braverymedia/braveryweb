@@ -1,29 +1,24 @@
 const { DateTime, Duration } = require("luxon");
 const { URL } = require("url");
-const path = require("path");
+
 const metadata = require("./_data/metadata.json");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-
-const postcss = require("postcss");
-const autoprefixer = require("autoprefixer");
-const atImport = require("postcss-import");
-const parser = require("postcss-comment");
-const postcssNesting = require("postcss-nesting");
-const postcssNestedCalc = require("@csstools/postcss-nested-calc");
-const cssnano = require("cssnano");
 const { PurgeCSS } = require("purgecss");
 const purgeCssFromHtml = require("purgecss-from-html");
 const htmlmin = require("html-minifier");
 const { minify } = require("terser");
-const { srcset, src } = require("./_11ty/images");
 const readingTime = require('eleventy-plugin-reading-time');
 const embedEverything = require("eleventy-plugin-embed-everything");
+
+const { srcset, src } = require("./_11ty/images");
+const pluginPostCSS = require("./_11ty/postcssPlugin.js");
 
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+	eleventyConfig.addWatchTarget("assets/**/*.css");
 
 	eleventyConfig.setUseGitIgnore(false);
 	eleventyConfig.setDataDeepMerge(true);
@@ -33,6 +28,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addTemplateFormats("css");
 
 	/* Plugins */
+	eleventyConfig.addPlugin(pluginPostCSS);
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(readingTime);
 	eleventyConfig.addPlugin(embedEverything);
@@ -55,7 +51,13 @@ module.exports = function (eleventyConfig) {
 	// Don't process files and folders with static assets e.g. images
 	eleventyConfig
 		.addPassthroughCopy("control")
-		.addPassthroughCopy("assets")
+		.addPassthroughCopy("assets/appendix-b")
+		.addPassthroughCopy("assets/css/bravery.css")
+		.addPassthroughCopy("assets/css/cc.css")
+		.addPassthroughCopy("assets/css/critical.css")
+		.addPassthroughCopy("assets/icons")
+		.addPassthroughCopy("assets/img")
+		.addPassthroughCopy("assets/uploads")
 		.addPassthroughCopy("manifest.json")
 		.addPassthroughCopy("site.webmanifest")
 		.addPassthroughCopy("browserconfig.xml")
@@ -155,64 +157,19 @@ module.exports = function (eleventyConfig) {
 		}
 	);
 
-	// Creates the extension for use
-	eleventyConfig.addExtension("css", {
-		outputFileExtension: "css", // optional, default: "html"
-		compile: async function (inputContent, inputPath) {
-			let parsed = path.parse(inputPath);
-			if (parsed.name.startsWith("_")) {
-				return;
-			}
-			let output = await postcss([
-				atImport,
-				postcssNesting(),
-				postcssNestedCalc(),
-				autoprefixer,
-				cssnano,
-			]).process(inputContent, { from: inputPath, parser: parser });
-
-			return async () => {
-				return output.css;
-			};
-		},
-	});
-	/**
-	 * Remove any CSS not used on the page and inline the remaining CSS in the
-	 * <head>.
-	 *
-	 * @see {@link https://github.com/FullHuman/purgecss}
-	 */
-	// eleventyConfig.addTransform(
-	// 	"purge-and-inline-css",
-	// 	async function (content) {
-	// 		if ( this.page.outputPath.endsWith(".html") ) {
-	// 			const purgeCssResult = await new PurgeCSS().purge({
-	// 				content: [{ raw: content }],
-	// 				css: ["_site/assets/css/bravery.css"],
-	// 				dynamicAttributes: ["aria-selected", "value"],
-	// 				keyframes: true,
-	// 			});
-	// 			console.log(purgeCssResult[0].css);
-	// 			return content.replace(
-	// 				"<!-- STYLES -->",
-	// 				`<style>${purgeCssResult[0].css}</style>`
-	// 			);
-	// 		}
-	// 		return content;
-	// 	}
-	// );
-
-	eleventyConfig.addTransform("htmlmin", function (content) {
-		if (this.outputPath.endsWith(".html")) {
-			let minified = htmlmin.minify(content, {
-				useShortDoctype: true,
-				removeComments: true,
-				collapseWhitespace: true,
-			});
-			return minified;
-		}
-
-		return content;
+	eleventyConfig.addNunjucksAsyncFilter("postcss", function (content, done) {
+		postcss([
+			atImport,
+			postcssNesting(),
+			postcssNestedCalc(),
+			autoprefixer,
+			cssnano,
+		])
+			.process(content)
+			.then(
+				(r) => done(null, r.css),
+				(e) => done(e, null)
+			);
 	});
 
 	/* Collections */
@@ -261,6 +218,49 @@ module.exports = function (eleventyConfig) {
 		permalinkClass: "direct-link",
 		permalinkSymbol: "#",
 	};
+
+	/**
+	 * Remove any CSS not used on the page and inline the remaining CSS in the
+	 * <head>.
+	 *
+	 * @see {@link https://github.com/FullHuman/purgecss}
+	 */
+	eleventyConfig.addTransform("purge-and-inline-css", async function (content) {
+		if (!this.outputPath.endsWith(".html")) {
+			return content;
+		}
+		// this is HTML!
+		const purgeCssResult = await new PurgeCSS().purge({
+			content: [{ raw: content, extension: "html" }],
+			css: ["_site/assets/css/bravery.css"],
+			extractors: [
+				{
+					extractor: purgeCssFromHtml,
+					extensions: ["html"],
+				},
+			],
+			dynamicAttributes: ["aria-selected", "value"],
+			keyframes: true,
+		});
+		console.log(purgeCssResult[0].css);
+		return content.replace(
+			"<!-- STYLES -->",
+			`<style>${purgeCssResult[0].css}</style>`
+		);
+	});
+
+	// eleventyConfig.addTransform("htmlmin", function (content) {
+	// 	if (this.outputPath.endsWith(".html")) {
+	// 		let minified = htmlmin.minify(content, {
+	// 			useShortDoctype: true,
+	// 			removeComments: true,
+	// 			collapseWhitespace: true,
+	// 		});
+	// 		return minified;
+	// 	}
+
+	// 	return content;
+	// });
 
 	return {
 		templateFormats: ["md", "njk", "html"],

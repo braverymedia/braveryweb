@@ -1,12 +1,12 @@
 {
 	"name": "braveryweb",
-	"version": "1.5.0",
+	"version": "1.7.0",
 	"description": "Bravery Media Site on 11ty",
 	"private": true,
 	"scripts": {
 		"clean": "rm -rf _site && rm -rf .cache",
 		"build": "npx @11ty/eleventy",
-		"start": "npx @11ty/eleventy --serve --port=8080 --incremental"
+		"start": "NODE_ENV=development npx @11ty/eleventy --serve"
 	},
 	"repository": {
 		"type": "git",

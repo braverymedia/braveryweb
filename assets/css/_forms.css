@@ -1,6 +1,6 @@
 // Forms
 form {
-	p {
+	& p {
 		margin-bottom: 1em;
 
 		&.honey {
@@ -8,12 +8,12 @@ form {
 		}
 	}
 
-	label {
+	& label {
 		position: relative;
 		font-family: var(--font-body);
 		font-variation-settings: "opsz" 36;
 
-		span {
+		& span {
 			display: block;
 			font-size: var(--type-sm);
 			font-variation-settings: "wght" 600, "opsz" 36;
@@ -23,7 +23,7 @@ form {
 		display: grid;
 		grid-template-columns: 1em auto;
 		gap: calc(var(--grid-unit) * 3);
-		span {
+		& span {
 			font-size: 1.5rem;
 		}
 	}
@@ -69,7 +69,7 @@ form {
 			transform: rotate(0) translateY(0);
 		}
 	}
-	button.button {
+	& button.button {
 		margin-top: 0 !important;
 	}
 }
