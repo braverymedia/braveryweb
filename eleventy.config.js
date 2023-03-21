@@ -1,86 +1,28 @@
 const { DateTime, Duration } = require("luxon");
-const { URL } = require("url");
-
-const metadata = require("./_data/metadata.json");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const { PurgeCSS } = require("purgecss");
-const purgeCssFromHtml = require("purgecss-from-html");
-const htmlmin = require("html-minifier");
 const { minify } = require("terser");
-const readingTime = require('eleventy-plugin-reading-time');
-const embedEverything = require("eleventy-plugin-embed-everything");
-
+const { PurgeCSS } = require("purgecss");
 const { srcset, src } = require("./_11ty/images");
-const pluginPostCSS = require("./_11ty/postcssPlugin.js");
-
+const CleanCSS = require("clean-css");
+const htmlmin = require("html-minifier");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const readingTime = require("eleventy-plugin-reading-time");
+const embedEverything = require("eleventy-plugin-embed-everything");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const metadata = require("./_data/metadata.json");
 
 module.exports = function (eleventyConfig) {
-	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
-	eleventyConfig.addWatchTarget("assets/**/*.css");
-
-	eleventyConfig.setUseGitIgnore(false);
-	eleventyConfig.setDataDeepMerge(true);
-	// eleventyConfig.setQuietMode(true);
-
-	/* Template Formats */
-	eleventyConfig.addTemplateFormats("css");
-
-	/* Plugins */
-	eleventyConfig.addPlugin(pluginPostCSS);
+	eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
+	eleventyConfig.addLayoutAlias("episode", "layouts/episode.njk");
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(readingTime);
 	eleventyConfig.addPlugin(embedEverything);
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
-	/* Shortcodes */
-	eleventyConfig.addShortcode("src", src); // Cloudinary src
-	eleventyConfig.addShortcode("srcset", srcset); // Cloudinary srcset
-	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`); // Simple Year
-	eleventyConfig.addShortcode("youtube", (videoURL, title) => {
-		const url = new URL(videoURL);
-		const id = url.searchParams.get("v");
-		return `<iframe class="yt-embed" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player${
-			title ? ` for ${title}` : ""
-		}" frameborder="0" allowfullscreen></iframe>`;
-	}); // YouTube Embed
+	eleventyConfig.addShortcode("src", src);
+	eleventyConfig.addShortcode("srcset", srcset);
 
-	/*  These */
-	// Don't process files and folders with static assets e.g. images
-	eleventyConfig
-		.addPassthroughCopy("control")
-		.addPassthroughCopy("assets/appendix-b")
-		.addPassthroughCopy("assets/css/bravery.css")
-		.addPassthroughCopy("assets/css/cc.css")
-		.addPassthroughCopy("assets/css/critical.css")
-		.addPassthroughCopy("assets/icons")
-		.addPassthroughCopy("assets/img")
-		.addPassthroughCopy("assets/uploads")
-		.addPassthroughCopy("manifest.json")
-		.addPassthroughCopy("site.webmanifest")
-		.addPassthroughCopy("browserconfig.xml")
-		.addPassthroughCopy("robots.txt");
-
-	/* Layouts */
-	eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
-	eleventyConfig.addLayoutAlias("episode", "layouts/episode.njk");
-
-	/* Filters */
-	eleventyConfig.addFilter("absoluteUrl", (url, base) => {
-		if (!base) {
-			base = siteData.url;
-		}
-		try {
-			return new URL(url, base).toString();
-		} catch (e) {
-			console.log(
-				`Trying to convert ${url} to be an absolute url with base ${base} and failed.`
-			);
-			return url;
-		}
-	});
 	// Date formatting (human readable)
 	eleventyConfig.addFilter("readableDate", (dateObj) => {
 		return DateTime.fromJSDate(dateObj, { zone: "local" }).toFormat(
@@ -101,6 +43,17 @@ module.exports = function (eleventyConfig) {
 	// Copyright announcement
 	eleventyConfig.addFilter("copyright", (dateObj) => {
 		return DateTime.fromJSDate(dateObj).toFormat("yyyy");
+	});
+
+	// Simple year shortcode
+	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+	eleventyConfig.addShortcode("youtube", (videoURL, title) => {
+		const url = new URL(videoURL);
+		const id = url.searchParams.get("v");
+		return `<iframe class="yt-embed" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player${
+			title ? ` for ${title}` : ""
+		}" frameborder="0" allowfullscreen></iframe>`;
 	});
 
 	// Cloudinary presets
@@ -133,13 +86,18 @@ module.exports = function (eleventyConfig) {
 		content = content.replace(/(?<=\w|^)'/g, "&#8216;");
 
 		return content;
-	}); // smart quotes outside of markdown
+	});
 
 	// Set Podcast URL for tracking
 	eleventyConfig.addFilter("chartable", (audioURL) => {
 		let chartable = "https://chrt.fm/track/" + metadata.podcast.chartable + "/";
 
 		return chartable + audioURL;
+	});
+
+	// Minify CSS
+	eleventyConfig.addFilter("cssmin", (code) => {
+		return new CleanCSS({}).minify(code).styles;
 	});
 
 	// Minify JS
@@ -157,22 +115,43 @@ module.exports = function (eleventyConfig) {
 		}
 	);
 
-	eleventyConfig.addNunjucksAsyncFilter("postcss", function (content, done) {
-		postcss([
-			atImport,
-			postcssNesting(),
-			postcssNestedCalc(),
-			autoprefixer,
-			cssnano,
-		])
-			.process(content)
-			.then(
-				(r) => done(null, r.css),
-				(e) => done(e, null)
-			);
+	/**
+	 * Remove any CSS not used on the page and inline the remaining CSS in the
+	 * <head>.
+	 *
+	 * @see {@link https://github.com/FullHuman/purgecss}
+	 */
+	eleventyConfig.addTransform("purge-and-inline-css", async function (content) {
+		if ( !this.page.outputPath.endsWith(".html") ) {
+			return content;
+		}
+
+		const purgeCSSResults = await new PurgeCSS().purge({
+			content: [{ raw: content }],
+			css: ["_includes/assets/css/bravery.css"],
+			dynamicAttributes: ["aria-selected", "value"],
+			keyframes: true,
+		});
+
+		return content.replace(
+			"<!-- STYLES -->",
+			"<style>" + purgeCSSResults[0].css + "</style>"
+		);
 	});
 
-	/* Collections */
+	eleventyConfig.addTransform("htmlmin", function (content) {
+		if (this.page.outputPath.endsWith(".html")) {
+			let minified = htmlmin.minify(content, {
+				useShortDoctype: true,
+				removeComments: true,
+				collapseWhitespace: true,
+			});
+			return minified;
+		}
+
+		return content;
+	});
+
 	// only content in the `articles/` directory
 	eleventyConfig.addCollection("articles", function (collection) {
 		return collection.getAllSorted().filter(function (item) {
@@ -193,6 +172,64 @@ module.exports = function (eleventyConfig) {
 			return item.inputPath.match(/^\.\/jobs\//) !== null;
 		});
 	});
+
+	eleventyConfig.setServerOptions({
+		// Default values are shown:
+
+		// Whether the live reload snippet is used
+		liveReload: true,
+
+		// Whether DOM diffing updates are applied where possible instead of page reloads
+		domDiff: true,
+
+		// The starting port number
+		// Will increment up to (configurable) 10 times if a port is already in use.
+		port: 8080,
+
+		// Additional files to watch that will trigger server updates
+		// Accepts an Array of file paths or globs (passed to `chokidar.watch`).
+		// Works great with a separate bundler writing files to your output folder.
+		// e.g. `watch: ["_site/**/*.css"]`
+		watch: ["_site/**/*.css"],
+
+		// Show local network IP addresses for device testing
+		showAllHosts: false,
+
+		// Use a local key/certificate to opt-in to local HTTP/2 with https
+		https: {
+			// key: "./localhost.key",
+			// cert: "./localhost.cert",
+		},
+
+		// Change the default file encoding for reading/serving files
+		encoding: "utf-8",
+	});
+
+	// Sass
+	eleventyConfig.addWatchTarget("_includes/assets/scss");
+
+	// Don't process files and folders with static assets e.g. images
+	eleventyConfig.addPassthroughCopy("control");
+	eleventyConfig.addPassthroughCopy({
+		"_includes/assets/uploads": "assets/uploads",
+	});
+	eleventyConfig.addPassthroughCopy({
+		"_includes/assets/appendix-b": "assets/appendix-b",
+	});
+	eleventyConfig.addPassthroughCopy({ "_includes/assets/css": "assets/css" });
+	eleventyConfig.addPassthroughCopy({
+		"_includes/assets/icons": "assets/icons",
+	});
+	eleventyConfig.addPassthroughCopy({
+		"_includes/svg": "assets/svg",
+	});
+	eleventyConfig.addPassthroughCopy({ "_includes/assets/img": "assets/img" });
+	eleventyConfig.addPassthroughCopy({ "_includes/assets/js": "assets/js" });
+	eleventyConfig.addPassthroughCopy("manifest.json");
+	eleventyConfig.addPassthroughCopy("site.webmanifest");
+	eleventyConfig.addPassthroughCopy("browserconfig.xml");
+	eleventyConfig.addPassthroughCopy("robots.txt");
+	eleventyConfig.addPassthroughCopy("sw.js");
 
 	/* Markdown Plugins */
 	let markdownIt = require("markdown-it");
@@ -218,49 +255,6 @@ module.exports = function (eleventyConfig) {
 		permalinkClass: "direct-link",
 		permalinkSymbol: "#",
 	};
-
-	/**
-	 * Remove any CSS not used on the page and inline the remaining CSS in the
-	 * <head>.
-	 *
-	 * @see {@link https://github.com/FullHuman/purgecss}
-	 */
-	eleventyConfig.addTransform("purge-and-inline-css", async function (content) {
-		if (!this.outputPath.endsWith(".html")) {
-			return content;
-		}
-		// this is HTML!
-		const purgeCssResult = await new PurgeCSS().purge({
-			content: [{ raw: content, extension: "html" }],
-			css: ["_site/assets/css/bravery.css"],
-			extractors: [
-				{
-					extractor: purgeCssFromHtml,
-					extensions: ["html"],
-				},
-			],
-			dynamicAttributes: ["aria-selected", "value"],
-			keyframes: true,
-		});
-		console.log(purgeCssResult[0].css);
-		return content.replace(
-			"<!-- STYLES -->",
-			`<style>${purgeCssResult[0].css}</style>`
-		);
-	});
-
-	// eleventyConfig.addTransform("htmlmin", function (content) {
-	// 	if (this.outputPath.endsWith(".html")) {
-	// 		let minified = htmlmin.minify(content, {
-	// 			useShortDoctype: true,
-	// 			removeComments: true,
-	// 			collapseWhitespace: true,
-	// 		});
-	// 		return minified;
-	// 	}
-
-	// 	return content;
-	// });
 
 	return {
 		templateFormats: ["md", "njk", "html"],

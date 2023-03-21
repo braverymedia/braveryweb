@@ -1,0 +1,73 @@
+.cover {
+	background: linear-gradient(180deg, rgba(21, 6, 54, 0) 0%, rgba(0, 0, 0, 0.37) 100%), #150636;
+	background-blend-mode: multiply, normal;
+	color: var(--color-white);
+	height: 55vh;
+	display: flex;
+	position: sticky;
+	top: 0;
+	align-items: flex-end;
+	z-index: -1;
+	padding: 0 calc(var(--grid-unit) * 2) 10vh;
+	min-height: 375px;
+	h2 {
+		font-size: var(--type-md);
+		margin-top: calc(var(--grid-unit) * 8);
+	}
+	.layout-home & {
+		#bg-grid {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			color: var(--color-blue);
+			opacity: 43%;
+		}
+	}
+	@include mq(sm) {
+		p:not(.hero) {
+			font-size: var(--type-sm);
+			&.is-large {
+				font-size: var(--type-base);
+			}
+		}
+	}
+	@include mq(md) {
+		height: 98vh;
+		padding: 0 calc(var(--grid-unit) * 5) 20vh;
+	}
+	.hero {
+		max-width: 1280px;
+		margin-left: auto;
+		margin-right: auto;
+		.brand {
+			text-shadow: 0px 0px 8px rgba(255, 0, 199, 0.54);
+		}
+	}
+	.layout-services & {
+        background: var(--color-white);
+        color: var(--color-black);
+		h1 span:before {
+			content: "\a";
+			white-space: pre;
+		}
+        @include mq(md) {
+            height: 40vh;
+            padding-bottom: 90px;
+        }
+	}
+	.layout-jobs &,
+	.layout-legal & {
+		height: auto;
+		min-height: 55vh;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-start;
+		padding-bottom: 10vh;
+		padding-top: 90px;
+		p {
+			font-size: var(--type-base);
+			max-width: 720px;
+		}
+	}
+}

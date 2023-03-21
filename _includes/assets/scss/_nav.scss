@@ -12,7 +12,7 @@
 	height: 60px;
 	z-index: 10;
 	mix-blend-mode: difference;
-	& a {
+	a {
 		color: inherit;
 		opacity: 1;
 		transition: opacity 200ms ease-in-out;
@@ -20,10 +20,10 @@
 		align-items: center;
 		text-decoration: none;
 	}
-	@media ( min-width: 768px ) {
+	@include mq(sm) {
 		height: 88px;
 		padding: 0 calc(var(--grid-unit) * 4);
-		& a:hover {
+		a:hover {
 			opacity: 0.6;
 		}
 	}
@@ -33,7 +33,7 @@
 	z-index: 9;
 	padding: calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 2);
 	flex: 1 auto;
-	& svg {
+	svg {
 		height: 24px;
 		width: 24px;
 	}
@@ -41,14 +41,14 @@
 	align-items: center;
 	justify-content: flex-start;
 	gap: calc(var(--grid-unit) * 2);
-	& p {
+	p {
 		font-size: var(--type-sm);
 		margin: 0;
 		line-height: 1;
 	}
-	@media ( min-width: 768px ) {
+	@include mq(sm) {
 		padding-left: unset;
-		& svg {
+		svg {
 			height: 38px;
 			width: 38px;
 		}
@@ -61,7 +61,7 @@ button.menu-trigger {
 	width: 70px;
 	padding: calc(var(--grid-unit) * 3);
 	margin: 0;
-	@media ( min-width: 768px ) {
+	@include mq(sm) {
 		display: none;
 	}
 }
@@ -82,10 +82,10 @@ button.menu-trigger {
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.2s ease-in-out;
-	& a {
+	a {
 		padding: var(--grid-unit);
 	}
-	@media ( min-width: 768px ) {
+	@include mq(sm) {
 		background-color: transparent;
 		opacity: 1;
 		visibility: visible;
@@ -100,7 +100,7 @@ button.menu-trigger {
 }
 
 #icon-menu {
-	& path {
+	path {
 		transition: var(--global-transition);
 	}
 
