@@ -10,6 +10,7 @@
 	z-index: -1;
 	padding: 0 calc(var(--grid-unit) * 2) 10vh;
 	min-height: 375px;
+
 	h2 {
 		font-size: var(--type-md);
 		margin-top: calc(var(--grid-unit) * 8);
@@ -47,13 +48,16 @@
 	.layout-services & {
         background: var(--color-white);
         color: var(--color-black);
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: start;
 		h1 span:before {
 			content: "\a";
 			white-space: pre;
 		}
         @include mq(md) {
-            height: 40vh;
-            padding-bottom: 90px;
+            height: 45vh;
+            padding-bottom: 96px;
         }
 	}
 	.layout-jobs &,
@@ -70,4 +74,9 @@
 			max-width: 720px;
 		}
 	}
+}
+
+.cover ~ *,
+.cover ~ .panel {
+    z-index: 2;
 }
