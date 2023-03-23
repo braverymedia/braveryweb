@@ -8,7 +8,8 @@
 	top: 0;
 	align-items: flex-end;
 	z-index: -1;
-	padding: 0 calc(var(--grid-unit) * 2) 10vh;
+	padding-top: 0;
+	padding-bottom: 10vh;
 	min-height: 375px;
 
 	h2 {
@@ -35,10 +36,10 @@
 	}
 	@include mq(md) {
 		height: 98vh;
-		padding: 0 calc(var(--grid-unit) * 5) 20vh;
+		padding-bottom: 20vh;
 	}
 	.hero {
-		max-width: 1280px;
+		max-width: 1330px;
 		margin-left: auto;
 		margin-right: auto;
 		.brand {
@@ -51,12 +52,18 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		align-items: start;
-		h1 span:before {
-			content: "\a";
-			white-space: pre;
+		position: relative;
+		z-index: 1;
+		h1 {
+			font-size: var(--type-super);
+			span:before {
+				content: "\a";
+				white-space: pre;
+			}
 		}
         @include mq(md) {
-            height: 45vh;
+            height: 42vh;
+			min-height: 640px;
             padding-bottom: 96px;
         }
 	}

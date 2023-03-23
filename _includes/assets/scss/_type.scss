@@ -22,21 +22,11 @@ h1 {
 	font-size: var(--type-xl);
 	font-variation-settings: "opsz" 96;
 	font-weight: 800;
-
-	span {
-		color: var(--color-bright);
-	}
 }
 
 h2 {
 	font-size: var(--type-xl);
 	margin-bottom: calc(var(--grid-unit) * 5);
-
-	> span {
-		color: var(--color-bright);
-		font-variation-settings: "opsz" 96;
-		font-weight: 700;
-	}
 }
 
 h3 {
@@ -146,6 +136,53 @@ blockquote {
 			p {
 				font-size: var(--type-sm);
 			}
+		}
+	}
+	&.synthwave {
+		position: relative;
+		padding: calc(var(--grid-unit) * 5) calc(var(--grid-unit) * 7);
+		width: 90vw;
+		max-width: 724px;
+		border-radius: calc(var(--grid-unit) * 2);
+		& > p {
+			text-align: justify;
+
+			@include mq(md) {
+				font-size: calc(var(--type-md) * 0.85);
+			}
+		}
+		p, cite {
+			filter: drop-shadow(12px 0px 20px rgba(255, 0, 199, 0.5)) drop-shadow(3px 0px 8px rgba(255, 92, 0, 0.5)) drop-shadow(-8px 0px 20px rgba(255, 245, 0, 0.5));
+		}
+		&:after {
+			content:"\201C";
+			font-size: 120px;
+			filter: drop-shadow(12px 0px 20px rgba(255, 0, 199, 0.5)) drop-shadow(3px 0px 8px rgba(255, 92, 0, 0.5)) drop-shadow(-8px 0px 20px rgba(255, 245, 0, 0.5));
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translate(-30%, -20%);
+			font-weight: 1000;
+			font-variation-settings: "opsz" 96;
+		}
+		&:before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			border-radius: calc(var(--grid-unit) * 2);
+			border: 0px solid transparent;
+			background: linear-gradient(299.69deg, #5BCEFF 73.49%, rgba(91, 206, 255, 0) 98.84%);
+			background-repeat: no-repeat;
+			-webkit-mask:
+				linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			mask:
+				linear-gradient(#fff 0 0) content-box,
+				linear-gradient(#fff 0 0);
+			-webkit-mask-composite: xor;
+			mask-composite: exclude;
+			z-index: -1;
+			padding: 3px;
 		}
 	}
 }

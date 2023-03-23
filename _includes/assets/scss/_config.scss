@@ -50,8 +50,8 @@
 	--font-family: NameSansVF, sans-serif;
 	--grid-unit: 8px;
 
-	--type-mega: clamp(1.777rem, calc(1.125em + 8.15vw), 8.398rem);
-	--type-super: clamp(1.777rem, calc(1.125em + 4.15vw), 5.398rem);
+	--type-mega: clamp(2.5rem, calc(1.125em + 8.15vw), 8.398rem);
+	--type-super: clamp(2.5rem, calc(1.125em + 4.15vw), 5.398rem);
 	--type-xl: clamp(2.5rem, calc(1.125rem + 3.3vw), 4rem);
 	--type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 3rem);
 	--type-md: clamp(1.333rem, calc(1.125rem + 2vw), 2.2rem);
@@ -65,6 +65,15 @@
 	--feature-simple-y: "ss08";
 
 	--global-transition: all 0.3s ease-in-out;
+
+	--mq--sm: 800px;
+	--mq--md: 1024px;
+	--mq--lg: 1440px;
+	--mq--xl: 1600px;
+	--mq--huge: 1980px;
+	// --break: 300px;
+
+	--wrapper: clamp(800px, 85vw, 96rem);
 }
 
 @keyframes gradientMove {

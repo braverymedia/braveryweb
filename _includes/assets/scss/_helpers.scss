@@ -2,7 +2,7 @@ $mq: (
 	"xs": 320px,
 	"sm": 768px,
 	"md": 1024px,
-	"lg": 1360px,
+	"lg": 1400px,
 	"xl": 1600px,
 	"huge": 1980px,
 );
@@ -42,5 +42,19 @@ $mq: (
 		@media only screen and (min-width: #{map-get($mq, "huge")}) {
 			@content;
 		}
+	}
+}
+
+.constrain,
+.panel--grid {
+	padding-left: calc(var(--grid-unit) * 2);
+	padding-right: calc(var(--grid-unit) * 2);
+	@include mq(md) {
+		padding-left: calc(var(--grid-unit) * 10.75);
+		padding-right: calc(var(--grid-unit) * 10.75);
+	}
+	@include mq(xl) {
+		padding-left: calc(0.5 * (100vw - 1550px));
+		padding-right: calc(0.5 * (100vw - 1550px));
 	}
 }

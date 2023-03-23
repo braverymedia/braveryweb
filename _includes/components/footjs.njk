@@ -14,4 +14,12 @@
 {% if section == "legal" %}
     <script src="https://app.termageddon.com/js/termageddon.js"></script>
 {% endif %}
+{% if section == "ui" %}
+<script>
+Cal("inline", {
+  elementOrSelector:"#bravery-cal-inline",
+  calLink: "team/bravery/ui-info"
+});
+</script>
+{% endif %}
 <script>{{ netlifyid | jsmin | safe }}</script>
