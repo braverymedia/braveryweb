@@ -422,8 +422,12 @@ span.brand {
 }
 
 :not(.layout-home) main ul li {
-  list-style-type: "› ";
-  margin-bottom: 0;
+  list-style-type: "›";
+  margin-bottom: 0.5em;
+  padding-left: var(--grid-unit);
+}
+:not(.layout-home) main ul li::marker {
+  content: "›";
 }
 
 .site-footer li {
