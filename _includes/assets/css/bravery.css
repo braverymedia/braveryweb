@@ -1427,9 +1427,12 @@ section.university-insight .logo--ui {
 }
 
 figure.synthwave {
-  margin-top: 1.35em;
   overflow: visible;
   max-width: 80vw;
+  transform: translateZ(0);
+  margin: 2.5rem auto 0;
+  position: relative;
+  z-index: 1;
 }
 figure.synthwave img {
   border: 2px solid #B0FCEA;
@@ -1445,6 +1448,7 @@ figure.synthwave:hover img {
   figure.synthwave {
     position: sticky;
     top: 30vh;
+    margin: 1.35rem 0 0;
   }
 }
 

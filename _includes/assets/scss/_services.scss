@@ -378,9 +378,12 @@ section.university-insight {
 }
 
 figure.synthwave {
-    margin-top: 1.35em;
     overflow: visible;
     max-width: 80vw;
+    transform: translateZ(0); // safari fix
+    margin: 2.5rem auto 0;
+    position: relative;
+    z-index: 1;
     img {
         border: 2px solid #B0FCEA;
         box-shadow: 0px 0px 16px #5BCEFF, 0px 0px 9px #5BCEFF, 0px 0px 55px -4px #5BCEFF;
@@ -396,5 +399,6 @@ figure.synthwave {
     @include mq(md) {
         position: sticky;
         top: 30vh;
+        margin: 1.35rem 0 0;
     }
 }
