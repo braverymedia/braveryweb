@@ -98,9 +98,8 @@ pre {
     all: revert;
 }
 
-
 /* Text meant only for screen readers. */
-.screen-reader-text {
+.screen-reader-text, .sr {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);

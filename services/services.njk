@@ -1,0 +1,50 @@
+---
+layout: layouts/base.njk
+title: Higher Ed Digital Strategy + Design Services
+heading: Higher ed digital strategy + design services
+description: Bravery Media is the best value for world-class higher education digital strategy + design.
+section: services
+permalink: /services/
+social:
+  tw:
+    title: Strategy Services from Bravery Media
+    description: The best value higher education design agency.
+    image: https://bravery.co/assets/img/services-card.png
+  fb:
+    title: Strategy Services from Bravery Media
+    description: The best value higher education design agency.
+    image: https://bravery.co/assets/img/services-card.png
+eleventyNavigation:
+  key: Services
+  order: 1
+  title: Services
+---
+<header class="cover constrain">
+    <h1>Say goodbye to guesswork. <span class="brand shout">Choose Bravery.</span></h1>
+</header>
+<article class="services has-divider-top">
+  <header class="intro panel--grid">
+    <h2>Digital strategy + design proven for success.</h2>
+    <p>Bravery's unique research-forward strategies help colleges and universities improve their digital marketing at every stage. Our offerings build on each other and are designed to address your institution's specific needs. No padding, no filler, no side quests.</p>
+  </header>
+  <section class="offerings constrain">
+    <div class="divider-grid invert">{% include "svg/gridplane.svg" %}</div>
+    <section class="core-offerings">
+      <article class="level custom-reports" itemscope itemtype="https://schema.org/Product">
+        <h3 itemprop="name"><a href="{{ '/services/custom-insights/' | url }}">Custom Insights Reports ↘︎</a></h3>
+        <p>Sometimes you need targeted insights to bolster the strategy you already have in place. <a href="{{ '/services/custom-insights/' | url }}" title="Learn about Bravery's Custom Insight Reports">Bravery can help</a>.</p>
+      </article>
+      <article class="level web-strategy" itemscope itemtype="https://schema.org/Product">
+        <h3 itemprop="name"><a href="{{ '/services/website-strategy/' | url }}">Website Strategy Guide ↘︎</a></h3>
+        <p>Bravery will tell you all about the site you have and the most effective ways to improve it. <a href="{{ '/services/website-strategy/' | url }}" title="Learn about Bravery's Website Strategy Guide">Get the details</a>.</p>
+      </article>
+      <article class="level level-up" itemscope itemtype="https://schema.org/Product">
+        <h3 itemprop="name"><a href="{{ '/services/level-up/' | url }}">Level Up ↘︎</a></h3>
+        <p>Unlock exactly what your website and marketing operations need to exceed your goals. <a href="{{ '/services/level-up/' | url }}" title="Learn about Bravery's Level Up services">Time to level up</a>.</p>
+      </article>
+    </section>
+    {% include 'components/powerpacks.njk' %}
+    <div class="divider-grid">{% include "svg/gridplane.svg" %}</div>
+  </section>
+  {% include 'components/cta-ui.njk' %}
+</article>

@@ -1,0 +1,21 @@
+<svg viewBox="0 0 52 64" fill="none" class="bolt-icon" role="graphics-symbol">
+<title>Lightning Bolt</title>
+<g filter="url(#filter0_d_1753_1083)">
+<path d="M27.2727 14.3477L12 35.7824H26L24.7273 49.652L40 28.2172H26L27.2727 14.3477Z" stroke="url(#paint0_linear_1753_1083)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
+</g>
+<defs>
+<filter id="filter0_d_1753_1083" x="0.0595703" y="0.751953" width="51.8809" height="62.4956" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.96 0 0 0 0 0 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1753_1083"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1753_1083" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_1753_1083" x1="26" y1="14.3477" x2="26" y2="49.652" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFF500"/>
+<stop offset="1" stop-color="#FF5C00"/>
+</linearGradient>
+</defs>
+</svg>

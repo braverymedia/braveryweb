@@ -1,11 +1,11 @@
 const { DateTime, Duration } = require("luxon");
 const { minify } = require("terser");
-const { PurgeCSS } = require('purgecss');
+const { PurgeCSS } = require("purgecss");
 const { srcset, src } = require("./_11ty/images");
 const CleanCSS = require("clean-css");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const readingTime = require('eleventy-plugin-reading-time');
+const readingTime = require("eleventy-plugin-reading-time");
 const embedEverything = require("eleventy-plugin-embed-everything");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
@@ -76,7 +76,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("toMinutes", (epDuration) => {
-		return Duration.fromObject({seconds: epDuration}).toFormat('mm:ss')
+		return Duration.fromObject({ seconds: epDuration }).toFormat("mm:ss");
 	});
 
 	eleventyConfig.addFilter("typography", (content) => {
@@ -122,28 +122,25 @@ module.exports = function (eleventyConfig) {
 	 * @see {@link https://github.com/FullHuman/purgecss}
 	 */
 	eleventyConfig.addTransform("purge-and-inline-css", async function (content) {
-		if (
-			process.env.ELEVENTY_ENV !== "production" ||
-			!this.outputPath.endsWith(".html")
-		) {
+		if ( !this.page.outputPath.endsWith(".html") ) {
 			return content;
 		}
 
 		const purgeCSSResults = await new PurgeCSS().purge({
 			content: [{ raw: content }],
 			css: ["_includes/assets/css/bravery.css"],
-			dynamicAttributes: ["aria-selected", "value", ],
+			dynamicAttributes: ["aria-selected", "value"],
 			keyframes: true,
 		});
 
 		return content.replace(
-			"<!-- INLINE CSS-->",
+			"<!-- STYLES -->",
 			"<style>" + purgeCSSResults[0].css + "</style>"
 		);
 	});
 
 	eleventyConfig.addTransform("htmlmin", function (content) {
-		if (this.outputPath.endsWith(".html")) {
+		if (this.page.outputPath.endsWith(".html")) {
 			let minified = htmlmin.minify(content, {
 				useShortDoctype: true,
 				removeComments: true,
@@ -222,6 +219,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ "_includes/assets/css": "assets/css" });
 	eleventyConfig.addPassthroughCopy({
 		"_includes/assets/icons": "assets/icons",
+	});
+	eleventyConfig.addPassthroughCopy({
+		"_includes/svg": "assets/svg",
 	});
 	eleventyConfig.addPassthroughCopy({ "_includes/assets/img": "assets/img" });
 	eleventyConfig.addPassthroughCopy({ "_includes/assets/js": "assets/js" });

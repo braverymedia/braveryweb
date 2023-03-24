@@ -16,7 +16,8 @@ form {
 		span {
 			display: block;
 			font-size: var(--type-sm);
-			font-variation-settings: "wght" 600, "opsz" 36;
+			font-variation-settings: "opsz" 36;
+			font-weight: 600;
 		}
 	}
 	.checkbox label {
