@@ -50,7 +50,7 @@ button,
 			border-radius: 34px;
 			filter: blur(10px);
 			transform: scale(1.2) translateX(100%);
-            transition: all .2s ease-in-out;
+            transition: all .35s ease-in-out;
 		}
 		&:hover:after {
 			transform: scale(1.2) translateX(0);

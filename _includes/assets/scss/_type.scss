@@ -27,6 +27,9 @@ h1 {
 h2 {
 	font-size: var(--type-xl);
 	margin-bottom: calc(var(--grid-unit) * 5);
+	.loud {
+		font-weight: 700;
+	}
 }
 
 h3 {

@@ -56,6 +56,10 @@
 		}
 	}
 	&.services {
+		position: relative;
+		.divider-grid {
+			color: var(--color-neon);
+		}
 		ul {
 			max-width: none;
 			columns: 2;
@@ -94,6 +98,7 @@
 				ul {
 					grid-column: 2;
 					grid-row: 1 / span 2;
+					align-items: start;
 				}
 			}
 		}
