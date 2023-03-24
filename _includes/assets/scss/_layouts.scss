@@ -577,14 +577,17 @@
 		overflow: hidden;
 		line-height: 0;
 		position: absolute;
-		transform: translateY(-100%);
 		-webkit-mask-image: url('/assets/svg/mask-wave.svg');
 		-webkit-mask-repeat: no-repeat;
 		-webkit-mask-size: contain;
 		mask-image: url('/assets/svg/mask-wave.svg');
 		mask-repeat: no-repeat;
 		mask-size: cover;
+		mask-position: -5px center;
 		transform: translateY(-58px);
+		@include mq(md) {
+			mask-position: unset;
+		}
 	}
 }
 
