@@ -14,6 +14,7 @@ const metadata = require("./_data/metadata.json");
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
 	eleventyConfig.addLayoutAlias("episode", "layouts/episode.njk");
+	eleventyConfig.addLayoutAlias("issue", "layouts/issue.njk");
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(readingTime);
 	eleventyConfig.addPlugin(embedEverything);
@@ -170,6 +171,12 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection("jobs", function (collection) {
 		return collection.getAllSorted().filter(function (item) {
 			return item.inputPath.match(/^\.\/jobs\//) !== null;
+		});
+	});
+
+	eleventyConfig.addCollection( "issues", function(collection) {
+		return collection.getAllSorted().filter( function (item) {
+			return item.inputPath.match(/^\.\/newsletter\//) !== null;
 		});
 	});
 

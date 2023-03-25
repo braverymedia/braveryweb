@@ -1,0 +1,5 @@
+{
+	"layout": "layouts/issue.njk",
+	"permalink": "newsletter/{{- title | slugify -}}/index.html",
+	"tags": "newsletter"
+}

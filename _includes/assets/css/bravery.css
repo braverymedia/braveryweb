@@ -60,6 +60,7 @@
   --color-grey: #d5d5d5;
   --gradient--primary: linear-gradient(91.95deg, #ff5c00 -15%, #ff00c7 22%, #6b4de0 55%, #6b4de0 70%, #ff00c7 85%, #ff5c00 105%);
   --gradient--shout: linear-gradient(124.97deg, #FFF500 -29.83%, #FF00C7 82.12%, #6B4DE0 142.13%);
+  --gradient--neon: linear-gradient(124.97deg, #FF5C00 -29.83%, #FF00C7 61.51%, #6B4DE0 142.13%);
   --font-family: NameSansVF, sans-serif;
   --grid-unit: 8px;
   --type-mega: clamp(2.5rem, calc(1.125em + 8.15vw), 8.398rem);
@@ -990,12 +991,6 @@ a.button {
 }
 .cover .hero .brand {
   text-shadow: 0px 0px 8px rgba(255, 0, 199, 0.54);
-}
-@media only screen and (min-width: 1600px) {
-  .cover .hero.constrain {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 .layout-services .cover {
   background: var(--color-white);
@@ -2367,6 +2362,10 @@ button.menu-trigger {
   max-width: 760px;
 }
 
+.episode--transcript {
+  padding-bottom: calc(var(--grid-unit) * 8);
+}
+
 .episode--title h1 {
   text-align: left;
   font-family: EightiesComeback, "Times New Roman", serif;
@@ -2605,6 +2604,36 @@ button.menu-trigger {
 
 .play-pause .pause {
   gap: var(--grid-unit);
+}
+
+.newsletter--subscribe {
+  background-color: var(--color--neon);
+  color: var(--color-white);
+  font-family: var(--font-family);
+  width: 100vw;
+  margin-left: calc(var(--grid-unit) * -2);
+  padding: calc(var(--grid-unit) * 6) calc(var(--grid-unit) * 2);
+}
+.newsletter--subscribe.neon {
+  background: var(--gradient--neon);
+}
+.newsletter--subscribe h2 {
+  font-family: var(--font-family) !important;
+  text-transform: uppercase;
+  font-weight: 1000 !important;
+  font-size: 12.5vw;
+  text-align: left;
+  font-variation-settings: "opsz" 24;
+  flex: 1 auto;
+  line-height: 0.85;
+  margin: 0;
+}
+.newsletter--subscribe header {
+  display: flex;
+  gap: var(--grid-unit);
+}
+.newsletter--subscribe header svg {
+  width: 40vw;
 }
 
 /*# sourceMappingURL=bravery.css.map */

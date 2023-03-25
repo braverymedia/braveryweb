@@ -95,9 +95,16 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Short Description", name: "description", widget: "text", required: false}
       - {label: "Issue Number", name: "issue_number", widget: "number", required: false}
       - {label: "Issue Date", name: "date", widget: "date", required: false}
       - {label: "Canonical URL", name: "canonical", widget: "string", required: false}
+      - label: "Cover Image"
+        name: "cover"
+        widget: "object"
+        fields:
+          - {label: "Cover (Cloudinary)", name: "image", widget: "string", required: false}
+          - {label: "Alt Text", name: "alt", widget: "string", required: false}
       - {label: "Content", name: "body", widget: "markdown", required: false}
   - name: "jobs"
     label: "Job Openings"

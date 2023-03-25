@@ -1,14 +1,8 @@
-<section class="newsletter--subscribe neon">
-    <header>
-        {% include "svg/fire-letter.njk" %}
-        <h2>Higher Ed Hot Takes</h2>
-    </header>
-    <div>
-        <p>One part newsletter, and two parts us just needing to say the quiet part out loud every seven days. Subscribe to get us in your inbox.</p>
-    </div>
+<div class="heht-form">
+    <p>One part newsletter, and two parts us just needing to say the quiet part out loud every seven days. Subscribe to get us in your inbox.</p>
     <form name="newsletter" method="POST" data-netlify="true" id="heht-subscribe">
-        <label for="email">Email Address</label>
-        <input type="email" name="email" id="subsribe-email" placeholder="Your best email" />
-        <button type="submit" class="button bright">Sign me up</button>
+        <label for="email" class="sr">Email Address</label>
+        <input type="email" name="email" id="subscribe-email" placeholder="Your best email" />
+        <button type="submit" class="button bright">{% include "svg/fire-letter.svg"%}<span class="sr">Subscribe</span></button>
     </form>
-</section>
+</div>

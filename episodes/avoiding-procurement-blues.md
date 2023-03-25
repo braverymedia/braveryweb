@@ -15,13 +15,11 @@ mp3: /assets/appendix-b/appendix-b-episode-4-avoiding-the-procurement-blues.mp3
 duration: 9:46
 summary: >-
   When your department is purchasing new software, tools, or maybe even a CMS,
-  are you thinking about what the user experience will be like for your staff? 
-
+  are you thinking about what the user experience will be like for your staff?
 
   Help them help YOU avoid the procurement blues.
 
-
-  S﻿ubscribe to Bravery's Newsletter: https://bravery.fyi
+  Subscribe to Bravery's Newsletter: https://bravery.fyi
 ---
 **Carl Gratiot:** From Bravery Media, this is Appendix B, candid conversations about Higher Ed in 10 minutes or less. And now here are your hosts, [Kristin Van Dorn](https://www.linkedin.com/in/kristinvandorn/) and [Joel Goodman](https://www.linkedin.com/in/joelgoodman/). 
 
