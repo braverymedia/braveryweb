@@ -30,3 +30,15 @@ permalink: /newsletter/
     <cite>Sarah Cummings, University of Delaware</cite>
   </blockquote>
 </section>
+<section id="archives" class="heht-archives">
+  <header>
+    {% include "svg/fire-letter.svg" %}
+    <h2>What People Are Saying</h2>
+  </header>
+  <section class="heht-grid">
+    {% set issueList = collections.newsletter %}
+    {% for issue in issueList | reverse %}
+      {% include "components/card-issue.njk" %}
+    {% endfor %}
+  </section>
+</section>
