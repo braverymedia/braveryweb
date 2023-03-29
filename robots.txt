@@ -1,4 +1,4 @@
 Sitemap: https://bravery.co/sitemap.xml
 
 User-agent: *
-Disallow:
+Disallow: /control/
