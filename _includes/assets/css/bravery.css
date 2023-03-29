@@ -991,6 +991,12 @@ a.button {
 .cover .hero .brand {
   text-shadow: 0px 0px 8px rgba(255, 0, 199, 0.54);
 }
+@media only screen and (min-width: 1600px) {
+  .cover .hero.constrain {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .layout-services .cover {
   background: var(--color-white);
   color: var(--color-black);
