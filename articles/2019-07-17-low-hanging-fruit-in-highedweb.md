@@ -1,13 +1,15 @@
 ---
 title: Higher ed web design's low-hanging fruit
+description: Three simple optimizations for improving your prospective students'
+  website experience.
 slug: low-hanging-fruit-in-highedweb
-description: Three simple optimizations for improving your prospective students' website experience.
-cover:
-    image: apple-tree.jpg
-    alt: Apples growing in a tree with blue skies above
 date_published: 2019-07-17T15:32:14.000Z
 date: 2020-06-10T16:27:57.000Z
-topics: ["Content Design"]
+cover:
+  image: apple-tree.jpg
+  alt: Apples growing in a tree with blue skies above
+topics:
+  - Content Design
 excerpt: Check these three things to improve your prospective students' web experience.
 ---
 
@@ -66,6 +68,6 @@ Be creative.
 
 ### Need a helping hand to get started?
 
-This is work Bravery Media's team members have been doing for over a decade. We've implemented these very changes for our clients and seen massive growth take off immediately. We would love to talk to you to help identify these and other opportunities to improve your users' experience.Get in touch below or message us on [Twitter](https://twitter.com/braverymedia), [LinkedIn](https://www.linkedin.com/company/bravery-media), or [Facebook](https://www.facebook.com/braverymedia/).
+This is work Bravery Media's team members have been doing for over a decade. We've implemented these very changes for our clients and seen massive growth take off immediately. We would love to talk to you to help identify these and other opportunities to improve your users' experience. Get in touch below or message us on [LinkedIn](https://www.linkedin.com/company/bravery-media).
 
 Call: [(512) 593-8094](tel:+15125938094) / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
