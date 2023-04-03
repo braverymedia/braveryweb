@@ -95,7 +95,7 @@ You know, like that's not gonna happen. They're a baseball team. They're gonna l
 
 That's the kind of marketing and branding style that Higher Education needs to move towards in order to be effective.
 
-**Carl Gratiot:** Thanks for listening to Appendix B. If you enjoyed this theme music, please let Joel Goodman know, he made it. If you've got thoughts, we'd love for you to share them with us. You can do so at [Apple Podcasts](https://podcasts.apple.com/us/podcast/appendix-b/id1672064420) in the form of a review, or you can leave a comment on our [YouTube channel](youtube.com/@BraveryMedia), or if you just want to email us or [hit us up on social](https://linkedin.com/company/bravery-media), that's fine too.
+**Carl Gratiot:** Thanks for listening to Appendix B. If you enjoyed this theme music, please let Joel Goodman know, he made it. If you've got thoughts, we'd love for you to share them with us. You can do so at [Apple Podcasts](https://podcasts.apple.com/us/podcast/appendix-b/id1672064420) in the form of a review, or you can leave a comment on our [YouTube channel](https://youtube.com/@BraveryMedia), or if you just want to email us or [hit us up on social](https://linkedin.com/company/bravery-media), that's fine too.
 
 Thank you so much and be sure to check out our newsletter at [bravery.fyi](http://bravery.fyi/). 
 
