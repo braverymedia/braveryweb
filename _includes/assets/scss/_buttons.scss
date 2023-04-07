@@ -99,6 +99,13 @@ button,
 			transform: scale(0.9) translateY(55%);
 		}
 	}
+	&.hilite {
+		background: var(--color-hilite);
+		color: var(--color-black);
+		background-clip: unset;
+		text-fill-color: unset;
+		-webkit-text-fill-color: unset;
+	}
 
 	@include mq(md) {
 		width: auto;

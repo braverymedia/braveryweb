@@ -40,6 +40,7 @@
 	--color-bright: #6b4de0;
 	--color-rich: #5171a5;
 	--color-neon: #FF00C7;
+	--color-dark-neon: #FF2578;
 	--color-hilite: #FFF500;
 	--color-orange: #FF5C00;
 	--color-blue: #5BCEFF;
@@ -51,13 +52,13 @@
 	--font-family: NameSansVF, sans-serif;
 	--grid-unit: 8px;
 
-	--type-mega: clamp(2.5rem, calc(1.125em + 8.15vw), 8.398rem);
-	--type-super: clamp(2.5rem, calc(1.125em + 4.15vw), 5.398rem);
+	--type-mega: clamp(2.5rem, calc(1.125em + 8.15vw), 6.598rem);
+	--type-super: clamp(3.25rem, calc(1.125em + 4.15vw), 5.398rem);
 	--type-xl: clamp(2.5rem, calc(1.125rem + 3.3vw), 4rem);
 	--type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 3rem);
-	--type-md: clamp(1.333rem, calc(1.125rem + 2vw), 2.2rem);
+	--type-md: clamp(1.333rem, calc(1.125rem + 2vw), 1.85rem);
 	--type-base: clamp(1.125rem, calc(1.125rem + 5vw), 1.35rem);
-	--type-sm: clamp(0.75rem, calc(1.125rem + 2vw), 1.125rem);
+	--type-sm: clamp(0.75rem, calc(1rem + 2vw), 1rem);
 	--type-xs: clamp(0.563rem, calc(1.125rem + 2vw), 0.5rem);
 
 	--font-weight-normal: 400;
