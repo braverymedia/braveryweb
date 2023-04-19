@@ -12,7 +12,7 @@ cover:
   alt: Appendix B Episode 12, text is present that reads, "Whoops! Campus leaders
     made the wrong hiring decision. Now what?"
 mp3: /assets/appendix-b/appendix-b-episode-12-whoops-campus-leaders-made-the-wrong-hiring-decision-now-what-.mp3
-duration: 09:53
+duration: 9:53
 summary: >-
   Campus leadership doesn’t always know how to hire the right people for
   technical roles, but they need to figure it out. Understanding where knowledge
