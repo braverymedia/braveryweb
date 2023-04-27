@@ -450,6 +450,7 @@
 		}
 		.article--cover {
 			grid-column: 2 / span 4;
+			grid-row: 2;
 			&.video-embed {
 				grid-column: 1 / span 5;
 				margin: 0;

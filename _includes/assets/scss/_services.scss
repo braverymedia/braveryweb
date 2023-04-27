@@ -276,6 +276,10 @@ section.university-insight {
             color: var(--color-hilite);
             text-decoration-color: currentColor;
         }
+        @include mq(lg) {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
     .power-packs {
         max-width: 948px;
