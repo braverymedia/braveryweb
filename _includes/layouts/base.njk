@@ -2,10 +2,7 @@
 <html {% if section %}class="layout-{{ section }}" {% endif %} lang="en">
   {% include "components/head.njk" %}
   <body data-menu="closed">
-    {% if page.url == '/contact/' %}
-      {% include "components/nav-minimal.njk" %}
-    {% else %}
-      <header class="toolbar">
+      <header class="primary">
         {% if page.url == "/" %}
           <h1 class="branding">
           {% else %}
@@ -74,9 +71,11 @@
             {% if '/podcast' in page.url and page.url != '/podcast/' %}<a href="{{ '/podcast/' | url }}" class="all-episodes">&larr; All Episodes</a>{% endif %}<p>
           </div>
         {% endif %}
-        {% include "components/nav-menu.njk" %}
       </header>
-    {% endif %}
+      <button class="menu-trigger nondescript" aria-expanded="false">
+        {% include "svg/icon-power.svg" %}
+        <span class="screen-reader-text">Site Menu</span>
+      </button>
     <main>
       {{ layoutContent | safe }}
     </main>

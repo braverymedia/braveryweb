@@ -1,24 +1,6 @@
-  <nav class="site-menu" role="navigation">
-      {% set navPages = collections.all | eleventyNavigation %}
-      {%- for entry in navPages %}
-        <a href="{{ entry.url | url }}" class="nav-link" {% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
-      {%- endfor -%}
-  </nav>
-  <button class="menu-trigger nondescript" aria-expanded="false">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" id="icon-menu">
-        <title>menu</title>
-        <g>
-          <path d="M8,14H1c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h7c0.552,0,1,0.448,1,1v0 C9,13.552,8.552,14,8,14z"
-            class="icon-menu--bottom">
-          </path>
-          <path
-            d="M15,4.019H8c-0.552,0-1-0.448-1-1v0c0-0.552,0.448-1,1-1h7c0.552,0,1,0.448,1,1v0 C16,3.572,15.552,4.019,15,4.019z"
-            class="icon-menu--top">
-          </path>
-          <path d="M15,9H1C0.448,9,0,8.552,0,8v0c0-0.552,0.448-1,1-1h14c0.552,0,1,0.448,1,1v0C16,8.552,15.552,9,15,9z"
-            class="icon-menu--middle">
-          </path>
-        </g>
-      </svg>
-      <span class="screen-reader-text">Site Menu</span>
-  </button>
+<nav class="site-links" role="navigation">
+    {% set navPages = collections.all | eleventyNavigation %}
+    {%- for entry in navPages %}
+      <a href="{{ entry.url | url }}" class="nav-link" {% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
+    {%- endfor -%}
+</nav>
