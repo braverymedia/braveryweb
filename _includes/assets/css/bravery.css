@@ -1328,6 +1328,12 @@ section.university-insight .logo--ui {
   color: var(--color-hilite);
   text-decoration-color: currentColor;
 }
+@media only screen and (min-width: 1400px) {
+  #needs article {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 #needs .power-packs {
   max-width: 948px;
   width: 95vw;
@@ -1920,6 +1926,7 @@ figure.synthwave:hover img {
   }
   .layout-single .article--cover {
     grid-column: 2/span 4;
+    grid-row: 2;
   }
   .layout-single .article--cover.video-embed {
     grid-column: 1/span 5;
