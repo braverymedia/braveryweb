@@ -20,10 +20,10 @@
     <meta property="og:type" content="website">
     <meta property="og:image:height" content="1257">
     <meta property="og:image:width" content="2400">
-    <meta property="og:title" content="{{ social.fb.title or title or metadata.social.fb.title }}">
+    <meta property="og:title" content="{{ title or metadata.social.fb.title }}">
     <meta property="og:description" content="{{ social.fb.description or description or metadata.social.fb.description }}">
     <meta property="og:url" content="{{ page.url }}">
-    <meta property="og:image" content="{{ social.tw.image or metadata.social.tw.image }}">
+    <meta property="og:image" content="{{ social.tw.image or social.fb or metadata.social.tw.image }}">
     <meta property="og:site_name" content="{{ metadata.title }}">
     {% if metadata.social.fb.app_id %}
     <meta property="fb:app_id" content="{{ metadata.social.fb.app_id }}">
@@ -33,7 +33,7 @@
     <meta name="twitter:description" content="{{ social.tw.description or description or metadata.social.tw.description }}">
     <meta name="twitter:site" content="{{ metadata.social.tw.site }}">
     <meta name="twitter:creator" content="{{ social.tw.creator or metadata.social.tw.creator }}">
-    <meta name="twitter:image" content="{{ social.tw.image or metadata.social.tw.image }}">
+    <meta name="twitter:image" content="{{ social.tw.image or social.tw or metadata.social.tw.image }}">
     {%- endblock -%}
     <!-- STYLES -->
     {% if site.env === 'development' %}
