@@ -16,8 +16,6 @@ social:
 topics:
   - redesign
 ---
-# When is it time to redesign?
-
 When is it time to redesign your college or university website? Probably not when your new president or VP says something. And not because it’s been four years since the last project, and you feel like the time is right.
 
 I mean, either of those might overlap with the better signs that it’s time to redesign. But getting the reasons for doing so right is at least as important as the end result. 
