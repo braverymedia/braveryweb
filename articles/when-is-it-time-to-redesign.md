@@ -11,8 +11,8 @@ cover:
   alt: The London Eye captured in the right third of the frame, a clear sky behind
     it.
 social:
-  tw: /assets/uploads/social-time-to-redesign.jpg
-  fb: /assets/uploads/social-time-to-redesign.jpg
+  tw: https://bravery.co/assets/uploads/social-time-to-redesign.jpg
+  fb: https://bravery.co/assets/uploads/social-time-to-redesign.jpg
 topics:
   - redesign
 ---
