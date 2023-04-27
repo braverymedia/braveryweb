@@ -49,6 +49,9 @@
 .episode--title h1 {
    max-width: 760px;
 }
+.episode--transcript {
+    padding-bottom: calc(var(--grid-unit) * 8);
+}
 .episode--title {
     h1 {
         text-align: left;

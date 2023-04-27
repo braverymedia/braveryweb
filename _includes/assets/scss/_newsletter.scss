@@ -1,0 +1,31 @@
+.newsletter {
+    &--subscribe {
+        background-color: var(--color--neon);
+        color: var(--color-white);
+        font-family: var(--font-family);
+        width: 100vw;
+        margin-left: calc(var(--grid-unit) * -2);
+        padding: calc(var(--grid-unit) * 6) calc(var(--grid-unit) * 2);
+        &.neon {
+            background: var(--gradient--neon);
+        }
+        h2 {
+            font-family: var(--font-family) !important;
+            text-transform: uppercase;
+            font-weight: 1000 !important;
+            font-size: 12.5vw;
+            text-align: left;
+            font-variation-settings: "opsz" 24;
+            flex: 1 auto;
+            line-height: 0.85;
+            margin: 0;
+        }
+        header {
+            display: flex;
+            gap: var(--grid-unit);
+            svg {
+                width: 40vw;
+            }
+        }
+    }
+}
