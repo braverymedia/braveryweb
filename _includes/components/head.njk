@@ -36,9 +36,6 @@
     <meta name="twitter:image" content="{{ social.tw.image or social.tw or metadata.social.tw.image }}">
     {%- endblock -%}
     <!-- STYLES -->
-    {% if site.env === 'development' %}
-        <link rel="stylesheet" href="/assets/css/bravery.css">
-    {% endif %}
     <link rel="stylesheet" href="/assets/css/cc.css">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>

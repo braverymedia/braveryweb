@@ -58,3 +58,11 @@ $mq: (
 		padding-right: calc(0.5 * (100vw - 1550px));
 	}
 }
+
+@keyframes tilt-shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
