@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+section: single-issue
+heading: Higher Ed Hot Takes
+---
+<header class="newsletter-brand"></header>
+<main>
+    <article>
+        <header class="issue--title">
+            <nav><a href="{{ '/newsletter/#archives' | url }}" class="all-articles all-link">&larr; All Issues</a></nav>
+            <time datetime="{{ date_published | machineDate }}">{{ date | readableDate }}</time>
+            <h1>{{title}}</h1>
+        </header>
+        <section class="article--content">
+            <figure class="issue--cover">
+                <img src="{{ cover.image | cover }}" alt="{{ cover.alt }}" width="503" height="280" />
+            </figure>
+            {{ layoutContent | safe }}
+        </section>
+    </article>
+</main>

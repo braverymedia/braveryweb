@@ -51,14 +51,6 @@ p {
 		font-weight: 800;
 		line-height: 1.1;
 		margin-bottom: 0;
-		span {
-			color: var(--color-bright);
-			background: var(--gradient--primary);
-			background-size: 200% auto;
-			background-clip: text;
-			text-fill-color: transparent;
-			animation: gradientMove 25s linear infinite;
-		}
 	}
 }
 main {

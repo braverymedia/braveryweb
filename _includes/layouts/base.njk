@@ -2,27 +2,27 @@
 <html {% if section %}class="layout-{{ section }}" {% endif %} lang="en">
   {% include "components/head.njk" %}
   <body data-menu="closed">
-      <header class="homelink">
-        <a href="/" title="Bravery Media" class="nav-link logo">
-          {% include "svg/bravery-mark.svg" %}
-        </a>
+    <nav class="homelink">
+      <a href="/" title="Bravery Media" class="nav-link logo">
+        {% include "svg/bravery-mark.svg" %}
+      </a>
+    </nav>
+      <header class="section-title">
         {% if page.url == "/" %}
           <h1 class="sitename sr">Bravery Media</h1>
         {% else %}
           <div class="page-description">{{ heading if heading and section != 'single' }}</div>
         {% endif %}
-        {% if '/podcast' in page.url and page.url != '/podcast/' %}<a href="{{ '/podcast/' | url }}" class="all-episodes">&larr; All Episodes</a>{% endif %}
       </header>
       <button class="menu-trigger nondescript" aria-expanded="false">
         {% include "svg/icon-power.svg" %}
         <span class="screen-reader-text">Site Menu</span>
       </button>
-    <main>
       {{ layoutContent | safe }}
-    </main>
     {% if page.url != "/contact/" %}
       {% include "components/footer.njk" %}
     {% endif %}
+    {% include "components/nav-menu.njk" %}
     {% include "components/footjs.njk" %}
   </body>
 </html>

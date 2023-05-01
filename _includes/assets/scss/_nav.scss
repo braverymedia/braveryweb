@@ -12,7 +12,7 @@
 	justify-content: stretch;
 	&:before {
 		content: "";
-		background: rgba(21, 6, 53, 0.22);
+		background: rgba(21, 6, 53, 0.25);
 		backdrop-filter: blur(20px);
 		border-radius: var(--grid-unit);
 		width: 100%;
@@ -62,12 +62,12 @@
 	z-index: 500;
 	transition: all .3s ease-in-out;
 	svg {
-		width: 25px;
-		height: 25px;
+		width: 22px;
+		height: 22px;
 	}
 	&:before {
 		content: "";
-		background: rgba(21, 6, 53, 0.75);
+		background: rgba(21, 6, 53, 0.25);
 		backdrop-filter: blur(20px);
 		border-radius: var(--grid-unit);
 		width: 100%;
@@ -89,10 +89,129 @@
 			border-color: var(--color-hilite);
 		}
 	}
+	&[aria-expanded="true"] {
+		color: var(--color-hilite);
+	}
 }
 [data-menu="open"] {
-	.site-menu {
+	overflow: hidden;
+	#site-nav {
 		visibility: visible;
 		opacity: 1;
+		transition: opacity 0.25s ease-in-out;
+		.page-links {
+			transition: opacity 0.5s ease-in-out 1.75s;
+			opacity: 1;
+		}
 	}
+	.nav-bg {
+		animation: poweron 3s linear 0s 1 forwards;
+	}
+	.menu-trigger:before {
+		background: rgba(21, 6, 53, 0.85);
+	}
+}
+
+#site-nav {
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100vh;
+	width: 100vw;
+	background: rgba(0, 0, 0, 0.01);
+	backdrop-filter: blur(25px);
+	z-index: 400;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.25s ease-in-out 1s;
+	.page-links {
+		filter: drop-shadow(12px 0px 30px #FF00C7) drop-shadow(3px 0px 8px #FF5C00);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		color: var(--color-hilite);
+		font-size: var(--type-md);
+		z-index: 1;
+		font-weight: 500;
+		font-variation-settings: "opsz" 96;
+		margin: 0;
+		padding: 0;
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out 0s;
+		@include mq(sm) {
+			flex-direction: row;
+			gap: calc(var(--grid-unit) * 6);
+		}
+	}
+}
+.nav-bg {
+	background: rgba(15, 10, 36, 0.95);
+	border: 8px solid var(--color-black);
+	box-shadow: 0px 4px 100px -15px rgba(0, 0, 0, 0.93);
+	width: 95vw;
+	height: 80vh;
+	border-radius: 35px;
+	position: absolute;
+	z-index: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	animation: poweroff 2s linear 0s 1 forwards;
+	@include mq(sm) {
+		aspect-ratio: 16 / 9;
+		border-radius: 175px;
+		border-width: 19px;
+		max-width: calc(100vw - 272px);
+		height: unset;
+	}
+	.sunrise {
+		height: 50%;
+		overflow: hidden;
+		position: relative;
+		svg {
+			height: 50%;
+			width: auto;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-48%);
+		}
+	}
+	.grid {
+		height: 50%;
+		color: var(--color-blue);
+		overflow: hidden;
+		position: relative;
+		svg {
+			width: auto;
+			height: 102%;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	@include mq(sm) {
+		.sunrise {
+			height: 65%;
+			svg {
+				height: 90%;
+				transform: translateY(3px) translateX(-48%);
+			}
+		}
+		.grid {
+			height: 35%;
+		}
+	}
+}
+
+.grid-blur {
+	filter: blur(7px);
 }

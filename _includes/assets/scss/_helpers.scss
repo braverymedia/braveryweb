@@ -66,3 +66,15 @@ $mq: (
   75% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); }
 }
+
+@keyframes poweroff {
+    0%, 36%   { transform: scale(1, 1); }
+    46%       { transform: scale(1, 0.02); opacity: 0.8; }
+    50%, 100% { transform: scale(0, 0); opacity: 0.3; }
+}
+
+@keyframes poweron {
+    0%, 46%   { transform: scale(0, 0); opacity: 0.3; }
+    50%       { transform: scale(1, 0); opacity: 1; }
+    55%, 100% { transform: scale(1, 1); opacity: 1; }
+}
