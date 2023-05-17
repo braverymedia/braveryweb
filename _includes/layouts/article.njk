@@ -3,28 +3,28 @@ layout: layouts/base.njk
 section: single
 ---
 <main>
-<article>
-    <header class="article--title">
-        <h1>{{title}}</h1>
-        <p><span class="author">{{ name or metadata.author.name }}</span><br/>
-        <span class="time"><time datetime="{{ date_published | machineDate }}">{{ date | readableDate }}</time>
-                / {{ content | readingTime }} read</span></p>
-    </header>
-    <section class="article--content">
-        {{ layoutContent | safe }}
-    </section>
-</article>
-<aside>
-    <a href="{{ '/insight/' | url }}" class="all-articles">&larr; All Articles</a>
-    {% if video %}
-    <figure class="video-embed article--cover">
-        {% youtube video.video_url, video.video_title %}
-    </figure>
-    {% elif cover.image %}
-    <picture class="article--cover">
-        <source srcset="{{ cover.image | coverTall }} 1024w" media="(min-width: 1024px)" width="410" height="575">
-        <img src="{{ cover.image | cover }}" alt="{{ cover.alt }}" width="340" height="225" decoding="async" />
-    </picture>
-    {% endif %}
-</aside>
+    <article>
+        <header class="article--title">
+            <h1>{{title}}</h1>
+            <p><span class="author">{{ name or metadata.author.name }}</span><br/>
+            <span class="time"><time datetime="{{ date_published | machineDate }}">{{ date | readableDate }}</time>
+                    / {{ content | readingTime }} read</span></p>
+        </header>
+        <section class="article--content">
+            {{ layoutContent | safe }}
+        </section>
+    </article>
+    <aside>
+        <a href="{{ '/insight/' | url }}" class="all-articles">&larr; All Articles</a>
+        {% if video %}
+        <figure class="video-embed article--cover">
+            {% youtube video.video_url, video.video_title %}
+        </figure>
+        {% elif cover.image %}
+        <picture class="article--cover">
+            <source srcset="{{ cover.image | coverTall }} 1024w" media="(min-width: 1024px)" width="410" height="575">
+            <img src="{{ cover.image | cover }}" alt="{{ cover.alt }}" width="340" height="225" decoding="async" />
+        </picture>
+        {% endif %}
+    </aside>
 </main>

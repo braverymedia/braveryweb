@@ -241,3 +241,8 @@
 		top: calc(2 * var(--grid-unit));
 	}
 }
+
+.layout-single-issue .page-description {
+	font-weight: 1000;
+	text-transform: uppercase;
+}

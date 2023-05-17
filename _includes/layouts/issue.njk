@@ -3,7 +3,6 @@ layout: layouts/base.njk
 section: single-issue
 heading: Higher Ed Hot Takes
 ---
-<header class="newsletter-brand"></header>
 <main>
     <article>
         <header class="issue--title">
@@ -20,4 +19,8 @@ heading: Higher Ed Hot Takes
             {{ layoutContent | safe }}
         </section>
     </article>
+    <aside class="heht-mini">
+        <h3>Subscribe!</h3>
+        {% include "components/newsletter-form.njk" %}
+    </aside>
 </main>

@@ -11,6 +11,7 @@ social:
         description: Bravery's podcast featuring candid conversations about higher ed in 10 minutes or less.
         image: https://bravery.co/assets/img/appendix-b-share.png
 ---
+<main>
 <header>
     {% if page.url == "/podcast/" %}
     <h1 class="pod-title">Appendix B</h1>
@@ -21,3 +22,4 @@ social:
     {% include "components/subscribe-bar.njk" %}
 </header>
 {{ layoutContent | safe}}
+</main>

@@ -2,10 +2,11 @@
 layout: layouts/base.njk
 section: single
 ---
-
-<section class="article-content">
-    <div class="entry">
-    {{ layoutContent | safe }}
-    </div>
-    {% include "components/job-apply.njk" %}
-</section>
+<main>
+    <section class="article-content">
+        <div class="entry">
+        {{ layoutContent | safe }}
+        </div>
+        {% include "components/job-apply.njk" %}
+    </section>
+</main>
