@@ -757,11 +757,19 @@ figure > img {
 }
 .site-footer a {
   color: var(--color-white);
-  transition: opacity 300ms ease;
-  opacity: 1;
+  position: relative;
+  width: auto;
 }
-.site-footer a:hover {
-  opacity: 0.6;
+.site-footer a:after {
+  background: var(--gradient--shout);
+  content: "";
+  display: block;
+  transition: width 300ms ease;
+  height: 1px;
+  width: 0%;
+}
+.site-footer a:hover:after {
+  width: 100%;
 }
 .site-footer nav {
   margin-top: calc(var(--grid-unit) * 8);
@@ -2220,7 +2228,7 @@ figure.synthwave:hover img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0;
+  z-index: -1;
   opacity: 0;
 }
 .homelink .logo {
@@ -2413,6 +2421,34 @@ figure.synthwave:hover img {
 
 .grid-blur {
   filter: blur(7px);
+}
+
+.section-title {
+  color: var(--color-white);
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: fit-content;
+  max-width: 450px;
+  font-size: var(--type-sm);
+  position: absolute;
+  text-align: center;
+  top: var(--grid-unit);
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+}
+.section-title .page-description {
+  background: rgba(21, 6, 53, 0.5);
+  backdrop-filter: blur(20px);
+  padding: var(--grid-unit);
+  border-radius: var(--grid-unit);
+}
+@media (min-width: 1024px) {
+  .section-title {
+    top: calc(2 * var(--grid-unit));
+  }
 }
 
 .layout-podcast body {
@@ -3035,16 +3071,37 @@ form.heht-subscribe button:hover svg {
   background: var(--gradient--neon);
 }
 .layout-single-issue main {
+  width: 96%;
   max-width: 896px;
   background: #FFFFFF;
   box-shadow: 0px 8px 24px 1px rgba(0, 0, 0, 0.25);
-  margin: 0 auto;
+  margin: 80px auto;
   padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 2);
+}
+.layout-single-issue main h2 {
+  font-size: var(--type-md);
+  margin-top: calc(4 * var(--grid-unit));
+  margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) {
   .layout-single-issue main {
     padding: calc(var(--grid-unit) * 6) calc(var(--grid-unit) * 9);
   }
+}
+.layout-single-issue .issue--cover {
+  max-width: 500px;
+}
+.layout-single-issue .issue--title {
+  display: flex;
+  flex-direction: column;
+  gap: calc(2 * var(--grid-unit));
+  margin-bottom: calc(5 * var(--grid-unit));
+}
+.layout-single-issue .issue--title .issue--meta {
+  font-size: var(--type-sm);
+}
+.layout-single-issue .issue--title nav {
+  margin-bottom: calc(8 * var(--grid-unit));
 }
 
 /*# sourceMappingURL=bravery.css.map */

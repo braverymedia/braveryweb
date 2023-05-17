@@ -322,13 +322,34 @@ form.heht-subscribe {
         background: var(--gradient--neon);
     }
     main {
+        width: 96%;
         max-width: 896px;
         background: #FFFFFF;
         box-shadow: 0px 8px 24px 1px rgba(0, 0, 0, 0.25);
-        margin: 0 auto;
+        margin: 80px auto;
         padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 2);
+        h2 {
+            font-size: var(--type-md);
+            margin-top: calc(4 * var(--grid-unit));
+            margin-bottom: 0;
+        }
         @include mq(sm) {
             padding: calc(var(--grid-unit) * 6) calc(var(--grid-unit) * 9);
         }
+    }
+    .issue--cover {
+        max-width: 500px;
+    }
+    .issue--title {
+        display: flex;
+        flex-direction: column;
+        gap: calc(2 * var(--grid-unit));
+        .issue--meta {
+            font-size: var(--type-sm);
+        }
+        nav {
+            margin-bottom: calc(8 * var(--grid-unit));
+        }
+        margin-bottom: calc(5 * var(--grid-unit));
     }
 }

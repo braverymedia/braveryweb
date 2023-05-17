@@ -10,7 +10,7 @@
       <header class="section-title">
         {% if page.url == "/" %}
           <h1 class="sitename sr">Bravery Media</h1>
-        {% else %}
+        {% elif heading %}
           <div class="page-description">{{ heading if heading and section != 'single' }}</div>
         {% endif %}
       </header>
