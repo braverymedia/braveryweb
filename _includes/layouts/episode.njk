@@ -1,6 +1,6 @@
 ---
 layout: layouts/podcast.njk
-section: podcast
+section: podcast-episode
 ---
 <article class="episode full">
     {% include "components/player.njk" %}
@@ -10,6 +10,6 @@ section: podcast
     </header>
     <section class="episode--transcript">
         {{ layoutContent | safe }}
+        <footer class="subscribe">{% include "components/newsletter-subscribe.njk" %}</footer>
     </section>
 </article>
-{% include "components/newsletter-subscribe.njk" %}

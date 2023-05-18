@@ -246,3 +246,13 @@
 	font-weight: 1000;
 	text-transform: uppercase;
 }
+
+.layout-podcast-episode {
+	.section-title {
+		position: fixed;
+		z-index: 100;
+	}
+	.page-description {
+		background-color: rgba(255,255,255,0.1);
+	}
+}

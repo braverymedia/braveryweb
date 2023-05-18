@@ -14,7 +14,10 @@ heading: Higher Ed Hot Takes
         </header>
         <section class="article--content">
             <figure class="issue--cover">
-                <img src="{{ cover.image | cover }}" alt="{{ cover.alt }}" width="503" height="280" />
+                <img
+                    src="{% src cover.image %}"
+                    srcset="{% srcset cover.image %}" alt="{{cover.alt}}" width="388" height="216" loading="lazy" decoding="async"
+                />
             </figure>
             {{ layoutContent | safe }}
         </section>

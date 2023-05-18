@@ -353,3 +353,15 @@ form.heht-subscribe {
         margin-bottom: calc(5 * var(--grid-unit));
     }
 }
+
+.layout-podcast footer.subscribe {
+    padding-bottom: calc(var(--grid-unit) * 4);
+    &:before {
+        content: "";
+        display: block;
+        height: 5px;
+        width: 100%;
+        background: var(--gradient--neon);
+        margin: calc(var(--grid-unit) * 4) 0;
+    }
+}

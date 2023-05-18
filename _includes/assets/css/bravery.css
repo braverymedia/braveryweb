@@ -109,7 +109,7 @@
   --font-family: NameSansVF, sans-serif;
   --grid-unit: 8px;
   --type-mega: clamp(2.5rem, calc(1.125em + 8.15vw), 6.598rem);
-  --type-super: clamp(3.25rem, calc(1.125em + 4.15vw), 5.398rem);
+  --type-super: clamp(2.25rem, calc(1.125em + 4.15vw), 5.398rem);
   --type-xl: clamp(2.5rem, calc(1.125rem + 3.3vw), 4rem);
   --type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 3rem);
   --type-md: clamp(1.333rem, calc(1.125rem + 2vw), 1.85rem);
@@ -565,6 +565,10 @@ span.brand {
   animation: gradientMove 25s linear infinite;
 }
 
+.all-link {
+  font-size: var(--type-sm);
+}
+
 form p {
   margin-bottom: 1em;
 }
@@ -586,20 +590,18 @@ form .checkbox label {
   display: grid;
   grid-template-columns: 1em auto;
   gap: calc(var(--grid-unit) * 3);
-}
-form .checkbox label span {
-  font-size: 1.5rem;
+  align-items: center;
 }
 form input,
 form textarea {
   background: transparent;
   appearance: none;
-  border: 2px solid var(--color-bright);
+  border: 1px solid var(--color-neon);
   border-radius: 0;
   color: inherit;
-  font-size: 1em;
+  font-size: 1rem;
   font-family: var(--font-body);
-  padding: calc(var(--grid-unit) * 2) var(--grid-unit);
+  padding: var(--grid-unit);
   width: 100%;
   transition: all 150ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   border-radius: var(--grid-unit);
@@ -609,6 +611,11 @@ form textarea {
   form textarea {
     font-size: var(--type-sm);
   }
+}
+form input:focus, form input:active,
+form textarea:focus,
+form textarea:active {
+  border-color: var(--color-blue);
 }
 form input[type=checkbox] {
   padding: 0;
@@ -623,6 +630,7 @@ form input[type=checkbox] {
 form input[type=checkbox]::before {
   content: "";
   background-color: var(--color-neon);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Ctitle%3Elike%3C/title%3E%3Cg fill='currentColor'%3E%3Cpath d='M9.956,4.5H6.731v-3A1.314,1.314,0,0,0,5.231,0a.5.5,0,0,0-.45.375L3,6v6H9.431a2.009,2.009,0,0,0,1.95-1.725l.6-3.45a1.9,1.9,0,0,0-.45-1.575A1.884,1.884,0,0,0,9.956,4.5Z'%3E%3C/path%3E%3Crect y='6' width='2' height='6'%3E%3C/rect%3E%3C/g%3E%3C/svg%3E");
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Ctitle%3Elike%3C/title%3E%3Cg fill='currentColor'%3E%3Cpath d='M9.956,4.5H6.731v-3A1.314,1.314,0,0,0,5.231,0a.5.5,0,0,0-.45.375L3,6v6H9.431a2.009,2.009,0,0,0,1.95-1.725l.6-3.45a1.9,1.9,0,0,0-.45-1.575A1.884,1.884,0,0,0,9.956,4.5Z'%3E%3C/path%3E%3Crect y='6' width='2' height='6'%3E%3C/rect%3E%3C/g%3E%3C/svg%3E");
   width: calc(var(--grid-unit) * 2.5);
   height: calc(var(--grid-unit) * 2.5);
@@ -872,11 +880,11 @@ small {
 button,
 .button {
   appearance: none;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: calc(var(--grid-unit));
-  padding: calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 5);
+  padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 5);
   color: var(--color-white);
   width: 100%;
   margin-top: calc(var(--grid-unit) * 5);
@@ -1019,13 +1027,23 @@ a.button {
   font-size: var(--type-md);
   margin-top: calc(var(--grid-unit) * 8);
 }
-.layout-home .cover #bg-grid {
+.layout-home .cover .bg-grid {
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 0;
   color: var(--color-blue);
-  opacity: 43%;
+  opacity: 83%;
+  height: 23%;
+  z-index: -1;
+  overflow: hidden;
+}
+.layout-home .cover .bg-grid svg {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 @media only screen and (min-width: 768px) {
   .cover p:not(.hero) {
@@ -1643,9 +1661,11 @@ figure.synthwave:hover img {
 }
 .panel.company article {
   position: relative;
-  max-width: 615px;
+  max-width: 631px;
   margin: 0 auto;
   top: unset;
+  padding-left: calc(var(--grid-unit) * 2);
+  padding-right: calc(var(--grid-unit) * 2);
 }
 @media only screen and (min-width: 1024px) {
   .panel.testimonial {
@@ -2456,50 +2476,58 @@ figure.synthwave:hover img {
   text-transform: uppercase;
 }
 
-.layout-podcast body {
+.layout-podcast-episode .section-title {
+  position: fixed;
+  z-index: 100;
+}
+.layout-podcast-episode .page-description {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+[class^=layout-podcast] body {
   background-color: var(--color-white);
   color: #000;
 }
-.layout-podcast body .pod-title {
+[class^=layout-podcast] body .pod-title {
   font-family: EightiesComeback, "Times New Roman", serif;
   font-weight: 200;
   margin-block-start: 0;
   margin-block-end: 0;
 }
-.layout-podcast body h2 {
+[class^=layout-podcast] body h2 {
   font-family: EightiesComeback, "Times New Roman", serif;
   font-weight: 500;
 }
-.layout-podcast body .pod-title {
+[class^=layout-podcast] body .pod-title {
   font-size: var(--type-mega);
   line-height: inherit;
 }
-.layout-podcast body .all-episodes {
+[class^=layout-podcast] body .all-episodes {
   display: flex;
   align-items: center;
   font-size: var(--type-sm);
 }
-.layout-podcast body main {
+[class^=layout-podcast] body main {
   width: 100%;
   margin-top: calc(var(--grid-unit) * 6);
   padding: 0 calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 6);
 }
 @media only screen and (min-width: 768px) {
-  .layout-podcast body main {
+  [class^=layout-podcast] body main {
     margin-top: calc(var(--grid-unit) * 9);
     padding: 0 calc(var(--grid-unit) * 4) calc(var(--grid-unit) * 9);
   }
 }
-.layout-podcast body main header {
+[class^=layout-podcast] body main header {
   text-align: center;
   padding: calc(var(--grid-unit) * 3) 0 0;
 }
-.layout-podcast body main header.episode--title {
+[class^=layout-podcast] body main header.episode--title {
   text-align: left;
   padding: 0;
 }
 @media only screen and (min-width: 768px) {
-  .layout-podcast body main header {
+  [class^=layout-podcast] body main header {
     padding: calc(var(--grid-unit) * 6) 0 calc(var(--grid-unit) * 10);
   }
 }
@@ -2682,8 +2710,6 @@ figure.synthwave:hover img {
   align-items: center;
   gap: calc(var(--grid-unit) * 2);
   color: var(--color-black);
-  margin-top: calc(var(--grid-unit) * 4);
-  margin-bottom: calc(var(--grid-unit) * 4);
 }
 #subscribe-links .subscribe-icon {
   height: calc(var(--grid-unit) * 3);
@@ -3107,6 +3133,18 @@ form.heht-subscribe button:hover svg {
 }
 .layout-single-issue .issue--title nav {
   margin-bottom: calc(8 * var(--grid-unit));
+}
+
+.layout-podcast footer.subscribe {
+  padding-bottom: calc(var(--grid-unit) * 4);
+}
+.layout-podcast footer.subscribe:before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background: var(--gradient--neon);
+  margin: calc(var(--grid-unit) * 4) 0;
 }
 
 /*# sourceMappingURL=bravery.css.map */

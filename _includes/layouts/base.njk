@@ -10,7 +10,11 @@
       <header class="section-title">
         {% if page.url == "/" %}
           <h1 class="sitename sr">Bravery Media</h1>
-        {% elif heading %}
+        {% elif section == 'podcast-episode' %}
+          <div class="page-description">
+            {% include "components/subscribe-bar.njk" %}
+          </div>
+        {% elif heading and section != 'single' %}
           <div class="page-description">{{ heading if heading and section != 'single' }}</div>
         {% endif %}
       </header>
