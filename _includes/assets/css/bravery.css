@@ -489,6 +489,15 @@ span.brand {
 [class^=layout-single] .article--content li,
 .layout-jobs .article--content li {
   margin-bottom: 0.6em;
+  list-style-type: inherit;
+}
+[class^=layout-single] .article--content li::marker,
+.layout-jobs .article--content li::marker {
+  content: unset;
+}
+[class^=layout-single] .article--content ol,
+.layout-jobs .article--content ol {
+  list-style-type: decimal;
 }
 [class^=layout-single] .article--content blockquote,
 .layout-jobs .article--content blockquote {
@@ -1957,9 +1966,6 @@ figure.synthwave:hover img {
 }
 .layout-single main aside {
   grid-row: 1;
-}
-.layout-single main ol li {
-  list-style: decimal;
 }
 @media only screen and (min-width: 768px) {
   .layout-single main {

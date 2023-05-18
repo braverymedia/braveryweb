@@ -230,6 +230,13 @@ span.brand {
 		}
 		li {
 			margin-bottom: 0.6em;
+			list-style-type: inherit;
+			&::marker {
+				content: unset;
+			}
+		}
+		ol {
+			list-style-type: decimal;
 		}
 		blockquote {
 			margin: calc(var(--grid-unit) * 4) auto;

@@ -402,9 +402,6 @@
 		aside {
 			grid-row: 1;
 		}
-		ol li {
-			list-style: decimal;
-		}
 	}
 	@include mq(sm) {
 		main {
