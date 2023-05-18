@@ -314,8 +314,11 @@ p.hero {
   margin-bottom: 0;
 }
 
-main a {
+a {
   color: inherit;
+}
+
+main a {
   text-decoration: underline 2px solid var(--color-neon);
   text-underline-offset: 4px;
   -webkit-text-underline-offset: 4px;
@@ -477,27 +480,27 @@ span.brand {
   list-style-type: none;
 }
 
-.layout-single .article--content p,
-.layout-single .article--content li,
+[class^=layout-single] .article--content p,
+[class^=layout-single] .article--content li,
 .layout-jobs .article--content p,
 .layout-jobs .article--content li {
   font-size: var(--type-sm);
 }
-.layout-single .article--content li,
+[class^=layout-single] .article--content li,
 .layout-jobs .article--content li {
   margin-bottom: 0.6em;
 }
-.layout-single .article--content blockquote,
+[class^=layout-single] .article--content blockquote,
 .layout-jobs .article--content blockquote {
   margin: calc(var(--grid-unit) * 4) auto;
   padding-right: 2.5vh;
   padding-left: 2.5vh;
 }
-.layout-single .article--content blockquote p,
+[class^=layout-single] .article--content blockquote p,
 .layout-jobs .article--content blockquote p {
   font-size: var(--type-base);
 }
-.layout-single .article--content blockquote + cite,
+[class^=layout-single] .article--content blockquote + cite,
 .layout-jobs .article--content blockquote + cite {
   background: none;
   -webkit-text-fill-color: unset;
@@ -508,15 +511,15 @@ span.brand {
   padding-left: 2.5vh;
 }
 @media only screen and (min-width: 1024px) {
-  .layout-single .article--content blockquote,
-  .layout-single .article--content blockquote + cite,
+  [class^=layout-single] .article--content blockquote,
+  [class^=layout-single] .article--content blockquote + cite,
   .layout-jobs .article--content blockquote,
   .layout-jobs .article--content blockquote + cite {
     padding-right: 5vh;
     padding-left: 5vh;
   }
 }
-.layout-single h2,
+[class^=layout-single] h2,
 .layout-jobs h2 {
   font-size: var(--type-md);
   margin-bottom: 0;
@@ -525,7 +528,7 @@ span.brand {
   font-weight: 610;
   max-width: 500px;
 }
-.layout-single h3,
+[class^=layout-single] h3,
 .layout-jobs h3 {
   font-size: var(--type-base);
   font-variation-settings: "opsz" 96;
@@ -2826,6 +2829,7 @@ figure.synthwave:hover img {
 .cover.newsletter h1 {
   display: block;
   width: 100%;
+  margin: 0;
 }
 .cover.newsletter h1 svg {
   height: auto;

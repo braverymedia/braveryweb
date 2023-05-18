@@ -17,7 +17,6 @@ function getSrcset(file, preset, widths) {
 // Generate the src attribute using the fallback width or a width supplied
 // by the shortcode params
 function getSrc(file, preset, width) {
-	console.log(preset);
   return `${BASE_URL}/${preset ? preset + '/' : ''}${TRANSFORMS},w_${width ? width : FALLBACK_WIDTH}/${FOLDER}${file}`
 }
 

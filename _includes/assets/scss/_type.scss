@@ -53,9 +53,11 @@ p {
 		margin-bottom: 0;
 	}
 }
+a {
+	color: inherit;
+}
 main {
 	a {
-		color: inherit;
 		text-decoration: underline 2px solid var(--color-neon);
 		text-underline-offset: 4px;
 		-webkit-text-underline-offset: 4px;
@@ -219,7 +221,7 @@ span.brand {
 	list-style-type: none;
 }
 // Article type
-.layout-single,
+[class^="layout-single"],
 .layout-jobs {
 	.article--content {
 		p,
