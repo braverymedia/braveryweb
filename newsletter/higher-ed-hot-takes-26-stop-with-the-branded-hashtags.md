@@ -5,8 +5,7 @@ issue: 26
 date: 2023-03-14
 ---
 
-Why they’ll never use your damn hashtag
-=======================================
+## Why they’ll never use your damn hashtag
 
 ![A basketball is hitting the hoop, and it's not quite clear if it's gonna go in or not. White text is centered in the frame that says, "#NotToday."](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/4098e506-b5e5-4788-9a7e-0653b1e9b214.png)
 
@@ -40,11 +39,8 @@ Here’s the bitter truth about social media and the Customer-Based Brand Equity
 It is only _after_ a target:
 
 1. knows about you,
-
 2. knows about your performance and image,
-
 3. understands how she feels about you when she compares you to other brands, and
-
 4. knows she wants others to see her as a person affiliated with your brand
 
 that she will want to use your branded hashtags. Why would you use a brand’s hashtag at any other level of the equity pyramid?
@@ -89,8 +85,7 @@ So, this is to say that if building your higher ed brand on social content with 
 
 **///**
 
-Institutional websites need responsible stewardship
-===================================================
+## Institutional websites need responsible stewardship
 
 ![Episode artwork for Appendix B #6, a short-form podcast about higher ed. This episode is called, "Responsible Website Stewardship."](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/973686e8-8978-469c-a41e-bf3ad4e87096.png)
 

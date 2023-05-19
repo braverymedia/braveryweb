@@ -5,8 +5,7 @@ issue: 25
 date: 2023-03-07
 ---
 
-How I learned to stop worrying and love the ambiguity
-=====================================================
+## How I learned to stop worrying and love the ambiguity
 
 ![A 3d triangle pattern with multiple blue and pink colors, that is ambiguous in its meaning. ](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/9515f3af-0749-4bfa-9293-f2ec6348d8f9.png)
 
@@ -17,11 +16,8 @@ The idea is that business management is pretty straightforward. You make decisio
 There are a lot of ways this opening can splinter off topic-wise:
 
 * Of course, people want [higher education institutions to be run like businesses](https://www.forbes.com/sites/davidrosowsky/2020/05/10/if-colleges-are-businesses-why-not-run-them-that-way/?sh=be5d89256026).
-
 * Who says these [organizations](https://thephagroup.com/commercialisation-of-charity/), [government institutions](https://newsletter.cseas.kyoto-u.ac.jp/nl76/images/pdf/76_07_kevin.pdf), and agencies (including [higher education](https://fredsoda.medium.com/higher-education-is-the-new-big-business-287bbad95afb)) aren’t run like businesses already?
-
 * Is it working or not, and how would we know? Are there acting-like-a-business markers or thresholds?
-
 * What about the arguments against it?
 
 I’m not going to dive into those, though; this is a hot-take newsletter. So, we need to get a little deeper and a little spicier.
@@ -33,23 +29,14 @@ I don’t know all of you, and I certainly don’t know your hearts and minds in
 Here are some others:
 
 * Doing work that is not yours because you understand how to do it (e.g., writing, copyediting, developing promotional materials)
-
 * Hoarding work instead of delegating.
-
 * Micromanaging others’ work because, again, their work is straightforward.
-
 * Insisting on perfection. Maximizing instead of satisficing.
-
 * Experiencing reactivity and intense emotions even in relatively low-stakes conversations.  
-
 * Feeling exhausted, frustrated, and like nothing gets accomplished because you’re in too many meetings.
-
 * Wanting fewer voices weighing in.
-
 * Wanting fewer committees, less governance, and faster decision-making.
-
 * Suffering in your own self-criticism because you feel like you’re procrastinating too much.
-
 * Giving vague feedback or unclear directives.
 
 I bet you can see yourself in at least one of these. And it’s because our work defies simple rules and obvious steps forward. Our work is political and philosophical.
@@ -70,8 +57,7 @@ The process of learning, teaching, and creating communities for populations of p
 
 **///**
 
-Listen to Appendix B
-====================
+## Listen to Appendix B
 
 ![Cover image for episode 5 of Appendix B, a podcast from Bravery Media. The episode is called "higher ed's differentiation problem."](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/06cabd44-43cb-4241-9e8a-c62a987bfce6.png)
 

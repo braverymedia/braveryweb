@@ -5,8 +5,7 @@ issue: 24
 date: 2023-02-21
 ---
 
-Are you live-action role-playing your content strategy?
-=======================================================
+## Are you live-action role-playing your content strategy?
 
 ![Medieval armor sitting on top of a stone table. It's unclear if the armor is for LARPing or for a museum.](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/5fa5c91c-81ab-427c-814e-8c2131382a85.png)
 

@@ -276,6 +276,11 @@ span.brand {
 		font-variation-settings: "opsz" 96;
 		font-weight: 610;
 	}
+	figure,
+	.eleventy-plugin-youtube-embed {
+		border-radius: calc(var(--grid-unit) * 3);
+		margin: calc(var(--grid-unit) * 3) 0 calc(var(--grid-unit) * 5);
+	}
 }
 .layout-legal {
 	main {

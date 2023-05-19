@@ -24,7 +24,7 @@ And that’s hard work. Bravery is a small company with only three employees, in
 
 And on a superficial level, we are hosting HigherEd.Pizza events at conferences this year. So if you’ll be at HighEdWeb in Little Rock, keep an eye on our Twitter for the Pizza Party RSVP.
 
-\- [Joel Goodman](https://twitter.com/joelgoodman?utm_campaign=Higher%20Ed%20Hot%20Takes&utm_medium=email&utm_source=Revue%20newsletter)
+\- [Joel Goodman](https://joelgoodman.co/?utm_source=HEHT)
 
 UX Research: Collecting Data that Answers a Question
 ----------------------------------------------------

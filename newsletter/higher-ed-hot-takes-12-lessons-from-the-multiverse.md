@@ -51,7 +51,7 @@ Unsurprisingly, lots of folks are worried about other potential changes lurking 
 
 **But what should your institution do?**
 
-Join [Joel](https://twitter.com/joelgoodman?utm_campaign=Higher%20Ed%20Hot%20Takes&utm_medium=email&utm_source=Revue%20newsletter) and [Jon-Stephen](https://twitter.com/jsstansel?utm_campaign=Higher%20Ed%20Hot%20Takes&utm_medium=email&utm_source=Revue%20newsletter) for a special bonus episode of [Thought Feeder](https://thoughtfeederpod.com/?utm_campaign=Higher%20Ed%20Hot%20Takes&utm_medium=email&utm_source=Revue%20newsletter) where they’ll discuss what to consider before making that decision.
+Join [Joel](https://joelgoodman.co/?utm_source=HEHT) and [Jon-Stephen](https://twitter.com/jsstansel?utm_campaign=Higher%20Ed%20Hot%20Takes&utm_medium=email&utm_source=Revue%20newsletter) for a special bonus episode of [Thought Feeder](https://thoughtfeederpod.com/?utm_campaign=Higher%20Ed%20Hot%20Takes&utm_medium=email&utm_source=Revue%20newsletter) where they’ll discuss what to consider before making that decision.
 
 Arriving in your airwaves on Wednesday morning.
 

@@ -241,6 +241,7 @@ module.exports = function (eleventyConfig) {
 	/* Markdown Plugins */
 	let markdownIt = require("markdown-it");
 	let markdownItContainer = require("markdown-it-container");
+	let implicitFigures = require("markdown-it-image-figures");
 
 	let options = {
 		html: true,
@@ -249,7 +250,13 @@ module.exports = function (eleventyConfig) {
 		typographer: true,
 	};
 
-	let md = markdownIt(options).use(markdownItContainer, "callout");
+	let md = markdownIt(options).use(markdownItContainer, "callout").use(implicitFigures, {
+			lazy: true,
+			removeSrc: true,
+			async: true,
+			classes: "lazy",
+			dataType: true
+		});
 
 	eleventyConfig.setLibrary("md", md);
 

@@ -38,7 +38,7 @@ I’d love to know what you think.
 
 Check out [my video on the subject](https://twitter.com/joelgoodman/status/1556399397981880321?utm_campaign=Higher%20Ed%20Hot%20Takes&utm_medium=email&utm_source=Revue%20newsletter) and join the conversation happening on Twitter.
 
-\- [Joel Goodman](https://twitter.com/joelgoodman?utm_campaign=Higher%20Ed%20Hot%20Takes&utm_medium=email&utm_source=Revue%20newsletter)
+\- [Joel Goodman](https://joelgoodman.co/?utm_source=HEHT)
 
 To "Free" or Not to Free?
 -------------------------

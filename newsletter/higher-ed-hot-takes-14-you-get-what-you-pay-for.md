@@ -34,7 +34,7 @@ But you know what? Most institutions don’t have websites optimized to qualify 
 
 Throwing cash at ad buys before you’ve done what needs to be done for organic reach is a lousy strategy. If you have enough money to spend meaningfully on advertising in the first place, you should assess what happens when someone finally hits your website. Make that spend work for you, even if that means halting your ad buys and shifting it to something else for a time.
 
-\- [Joel Goodman](https://twitter.com/joelgoodman?utm_campaign=Higher%20Ed%20Hot%20Takes&utm_medium=email&utm_source=Revue%20newsletter)
+\- [Joel Goodman](https://joelgoodman.co/?utm_source=HEHT)
 
 How Colleges Work at the Edge of Chaos
 --------------------------------------
@@ -69,7 +69,7 @@ Today, the higher education industry is facing some serious external turbulence.
 
 I could keep going. Our financial and technical landscapes are shifting right underneath our feet at this very moment. In this uncertain time, how should industry players respond? How can we shepherd our institutions through the wave of chaos?
 
-Here’s what I recommend: get comfortable in the chaos. In the book, “[Surfing the Edge of Chaos](https://www.thriftbooks.com/w/surfing-the-edge-of-chaos-the-laws-of-nature-and-the-new-laws-of-business_richard-pascale_linda-gioja/395079/item/3767553/?gclid=Cj0KCQiAgribBhDkARIsAASA5buA9XR8CcBWoffYtE75gvtu3AZ4laUFcpCQvlTuyLXl2WAw3mpOiEcaAmbwEALw_wcB&utm_campaign=Higher%20Ed%20Hot%20Takes&utm_medium=email&utm_source=Revue%20newsletter#idiq=3767553&edition=3240105),” authors Richard Pascale, Mark Milleman, and Linda Gioja give us four principles for understanding complex adaptive systems:
+Here’s what I recommend: get comfortable in the chaos. In the book, “[Surfing the Edge of Chaos](https://www.thriftbooks.com/w/surfing-the-edge-of-chaos-the-laws-of-nature-and-the-new-laws-of-business_richard-pascale_linda-gioja/395079/item/3767553/),” authors Richard Pascale, Mark Milleman, and Linda Gioja give us four principles for understanding complex adaptive systems:
 
 1. Our industry is in a turbulent environment. It may be tempting to tame the uncertainty. **But, complex systems resist linear solutions.** They always have, but never more so than in an environment with as many hungry external variables.
 2. **In times of chaos, instability is a strength**. Systems that continue to rely on the status quo, utterly unresponsive to new environmental factors, risk becoming obsolete. If you’re feeling magnetic pulls away from threats or towards opportunity, you’re sensitive to what change requires.

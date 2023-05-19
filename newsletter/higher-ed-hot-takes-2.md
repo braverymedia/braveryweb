@@ -23,7 +23,7 @@ Imagine deciding you want to change the shape of a button or see how rounded cor
 
 Easy peasy.
 
-\- [Joel Goodman](https://twitter.com/joelgoodman?utm_campaign=Higher%20Ed%20Hot%20Takes&utm_medium=email&utm_source=Revue%20newsletter)
+\- [Joel Goodman](https://joelgoodman.co/?utm_source=HEHT)
 
 The State of Trust in Higher Education: Is it really time to panic?
 --------------------------------------------------------------------

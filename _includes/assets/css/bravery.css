@@ -543,6 +543,13 @@ span.brand {
   font-variation-settings: "opsz" 96;
   font-weight: 610;
 }
+[class^=layout-single] figure,
+[class^=layout-single] .eleventy-plugin-youtube-embed,
+.layout-jobs figure,
+.layout-jobs .eleventy-plugin-youtube-embed {
+  border-radius: calc(var(--grid-unit) * 3);
+  margin: calc(var(--grid-unit) * 3) 0 calc(var(--grid-unit) * 5);
+}
 
 .layout-legal main p,
 .layout-legal main li {

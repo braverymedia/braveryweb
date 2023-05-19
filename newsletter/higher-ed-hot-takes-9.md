@@ -49,7 +49,7 @@ So, here are a few I’m thinking about attending this week. If you see me, come
 
 I’m also excited to see Ashley Budd, Paul Gilzow, Josh Charles, Alaina Wiens, Josie Alquist, and many other intelligent folks.
 
-\- [Joel Goodman](https://twitter.com/joelgoodman?utm_campaign=Higher%20Ed%20Hot%20Takes&utm_medium=email&utm_source=Revue%20newsletter)
+\- [Joel Goodman](https://joelgoodman.co/?utm_source=HEHT)
 
 Carl
 ----

@@ -19,27 +19,17 @@ You see, back in 2019, the Financial Literacy and Education Commission published
 Here are the best practices they list:
 
 1. Itemize key direct and indirect costs (think tuition versus books and food).
-
 2. Provide a total cost of attendance (COA) that includes key costs.
-
 3. Estimate the net price (by subtracting only gift aid from key costs).
-
 4. Separate gift aid, loans, and work-study.
-
 5. Do not include a parent PLUS Loan or, if included, separate and differentiate it from student loans.
-
 6. Label types of aid.
-
 7. Label sources of aid.
-
 8. Include actionable next steps. (Students should be informed of their next steps to accept, decline, or adjust the aid in the offer and the college’s point of contact for additional assistance.)
-
 9. Highlight key details and distinctions about loans, grants, and work-study. (E.g., many grants come with stipulations attached.)
-
 10. Do not refer to the offer as an “award.”
 
-Now, let’s talk about managing data systems
---------------------------------------------
+## Now, let’s talk about managing data systems
 
 Colleges and Universities need to manage a ton of records for many years. We need to track the courses students take, the degree plans those students and coursework are tethered to, the credit hours students spend throughout their program, and how those programs articulate with state standards and licensing. We need to manage transfer and articulation agreements, assessments, tuition payments, and degree progress - it’s a bit mind-boggling.
 
@@ -49,8 +39,7 @@ You probably know there is a whole industry of student information systems to ad
 
 What you might not know is that these companies don’t make it easy or cheap for their clients to create clear user interfaces for students and their families. And they don’t even set up their products to default to the basic best practices set out by the federal government.
 
-Default settings and their costs
---------------------------------
+### Default settings and their costs
 
 Let’s just look at one best practice - #10. Do not refer to the offer as an “award.” - and how these student information systems market themselves. Here are a few screenshots:
 
@@ -70,8 +59,7 @@ All of them use “Awards.” You would think that making a global change to the
 
 This leaves institutions requesting changes to the core product and spending money on developers to change their institutions’ instances. This carries tech debt because each time one of these companies rolls out a new update, developers are called in to ensure none of their code breaks in the process.
 
-Who really cares about the word “award”?
-----------------------------------------
+### Who really cares about the word “award”?
 
 This best practice is optional. It’s only recommended. What are the risks, really?
 
@@ -89,10 +77,9 @@ Accountability is not just about what higher education institutions are doing, b
 
 ///
 
-Has Social Media felt less “social” recently?
-=============================================
+## Has Social Media felt less “social” recently?
 
-[![Thumbnail from Bravery's new youtube video that says Social marketing aint that social](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/0c88e751-7e68-4cd7-8eed-ea8cf24a0fb1.png)](https://youtu.be/H7C8PQWzOTA)
+<https://youtu.be/H7C8PQWzOTA>
 
 It didn’t use to be like this.
 
@@ -102,8 +89,7 @@ But eventually, brands and large companies were like, “hey, can we get in on t
 
 Despite efforts by brands to sound more “real,” most marketing always feels a little inauthentic because behind the messaging, there’s an action they’d like you to take. Buy a product, sign up for a service, enroll in a program, generate revenue, etc.
 
-So what do we do?
------------------
+### So what do we do?
 
 The most obvious solution is to focus less on being perceived as a “cool” brand and to seek out more opportunities for meaningful one-on-one conversations with your customers.
 
