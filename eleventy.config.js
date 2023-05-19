@@ -14,6 +14,7 @@ const metadata = require("./_data/metadata.json");
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
 	eleventyConfig.addLayoutAlias("episode", "layouts/episode.njk");
+	eleventyConfig.addLayoutAlias("issue", "layouts/issue.njk");
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(readingTime);
 	eleventyConfig.addPlugin(embedEverything);
@@ -173,6 +174,12 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
+	eleventyConfig.addCollection( "issues", function(collection) {
+		return collection.getAllSorted().filter( function (item) {
+			return item.inputPath.match(/^\.\/newsletter\//) !== null;
+		});
+	});
+
 	eleventyConfig.setServerOptions({
 		// Default values are shown:
 
@@ -190,7 +197,7 @@ module.exports = function (eleventyConfig) {
 		// Accepts an Array of file paths or globs (passed to `chokidar.watch`).
 		// Works great with a separate bundler writing files to your output folder.
 		// e.g. `watch: ["_site/**/*.css"]`
-		watch: ["_site/**/*.css"],
+		watch: ["_site/assets/**/*.css"],
 
 		// Show local network IP addresses for device testing
 		showAllHosts: false,
@@ -234,6 +241,7 @@ module.exports = function (eleventyConfig) {
 	/* Markdown Plugins */
 	let markdownIt = require("markdown-it");
 	let markdownItContainer = require("markdown-it-container");
+	let implicitFigures = require("markdown-it-image-figures");
 
 	let options = {
 		html: true,
@@ -242,7 +250,13 @@ module.exports = function (eleventyConfig) {
 		typographer: true,
 	};
 
-	let md = markdownIt(options).use(markdownItContainer, "callout");
+	let md = markdownIt(options).use(markdownItContainer, "callout").use(implicitFigures, {
+			lazy: true,
+			removeSrc: true,
+			async: true,
+			classes: "lazy",
+			dataType: true
+		});
 
 	eleventyConfig.setLibrary("md", md);
 

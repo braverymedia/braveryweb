@@ -1,11 +1,11 @@
 button,
 .button {
 	appearance: none;
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	gap: calc(var(--grid-unit));
-	padding: calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 5);
+	padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 5);
 	color: var(--color-white);
 	width: 100%;
 	margin-top: calc(var(--grid-unit) * 5);
@@ -30,7 +30,7 @@ button,
 	&.primary {
 		background-color: var(--color-bright);
 		&:hover {
-			background: var(--color-black);
+			background: var(--color-neon);
 		}
 	}
 
@@ -98,6 +98,13 @@ button,
 		&:hover:after {
 			transform: scale(0.9) translateY(55%);
 		}
+	}
+	&.hilite {
+		background: var(--color-hilite);
+		color: var(--color-black);
+		background-clip: unset;
+		text-fill-color: unset;
+		-webkit-text-fill-color: unset;
 	}
 
 	@include mq(md) {

@@ -6,9 +6,9 @@
       </figure>
         <footer class="player-controls">
         <button aria-label="play || pause episode" id="play-pause" class="play-pause button synthwave" data-playing="false" role="switch" aria-checked="false" data-duration="{{duration}}">
-          <span class="play"><svg viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8167 7.19995L2.13164 0.199947C1.45368 -0.300053 0.582031 0.199947 0.582031 0.999947V14.9999C0.582031 15.7999 1.45368 16.2999 2.13164 15.7999L11.8167 8.79995C12.3009 8.39995 12.3009 7.59995 11.8167 7.19995Z" fill="currentColor"/></svg> Play Episode</span>
+          <span class="play">{% include "svg/play.svg" %} Play Episode</span>
           <span class="pause">
-            <svg viewBox="0 0 16 16"><title>button-pause</title><g fill="currentColor"><path d="M5,1H2C1.4,1,1,1.4,1,2v12c0,0.6,0.4,1,1,1h3c0.6,0,1-0.4,1-1V2C6,1.4,5.6,1,5,1z"></path> <path d="M14,1h-3c-0.6,0-1,0.4-1,1v12c0,0.6,0.4,1,1,1h3c0.6,0,1-0.4,1-1V2C15,1.4,14.6,1,14,1z"></path></g></svg>
+            {% include "svg/pause.svg" %}
             <span class="audio-time">
               <span class="audio-current-time">0:00</span>/
               <span class="audio-duration">{{ duration | toMinutes }}</span>

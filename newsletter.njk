@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+title: Higher Ed Hot Takes Newsletter
+heading:
+description: "Candid conversations about higher ed in 10 minutes or less."
+section: newsletter
+permalink: /newsletter/
+eleventyNavigation:
+  key: Podcast
+  order: 4
+  title: Hot Takes
+---
+<header class="cover newsletter">
+  <h1>
+    <span class="sr">Higher Ed Hot Takes</span>
+    {% include "svg/heht-title.svg" %}
+  </h1>
+  {% include "components/newsletter-subscribe.njk" %}
+</header>
+<section class="heht-testimonials">
+  <header>
+    {% include "svg/fire-comment.svg" %}
+    <h2>What People Are Saying</h2>
+  </header>
+  <div class="the-quotes">
+  <blockquote>
+    <p>“Who is looking for the #HigherEd cliff notes? Subscribe to Higher Ed Hot Takes from Bravery Media and look forward to
+    an issue in your inbox each week.”</p>
+    <cite>Dr. Josie Alquist, Consultant</cite>
+  </blockquote>
+  <blockquote>
+    <p>“Fantastic insight!”</p>
+    <cite>Chris Lastovicka, Cornell University</cite>
+  </blockquote>
+  <blockquote>
+    <p>“Things seem to be changing really fast in higher ed right now, and I don’t always have the time to research the issues
+    or upcoming trends, and this newsletter helps me feel better prepared for what’s coming next.”</p>
+    <cite>Sarah Cummings, University of Delaware</cite>
+  </blockquote>
+  </div>
+</section>
+<section id="archives" class="heht-archives">
+  <header>
+    <span class="icon-lg">{% include "svg/fire-letter.svg" %}</span>
+    <h2><span class="sr">What People Are Saying</span>{% include "svg/heht-archives-title.svg" %}</h2>
+  </header>
+  <section class="heht-grid">
+    {% set issueList = collections.newsletter %}
+    {% for issue in issueList | reverse %}
+      {% include "components/card-issue.njk" %}
+    {% endfor %}
+  </section>
+  <div class="heht-mini">
+    <h3>Subscribe!</h3>
+    {% include "components/newsletter-form.njk" %}
+  </div>
+</section>

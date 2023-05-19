@@ -1,0 +1,15 @@
+<article class="card--heht">
+    {% if issue.data.cover.image %}
+    <figure class="card--cover">
+        <img
+            src="{% src issue.data.cover.image %}"
+            srcset="{% srcset issue.data.cover.image %}" alt="{{issue.data.cover.alt}}" width="388" height="216" loading="lazy" decoding="async"
+        />
+    </figure>
+    {% endif %}
+    <header class="card--title">
+        <time datetime="{{ issue.data.date | machineDate}}">{{ issue.data.date | readableDate }}</time>
+        <h3>{{ issue.data.title }}</h3>
+    </header>
+    <a href="{{ issue.url | url }}" class="button hilite">Read Issue #{{ issue.data.issue }}</a>
+</article>

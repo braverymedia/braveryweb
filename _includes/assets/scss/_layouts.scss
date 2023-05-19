@@ -108,9 +108,11 @@
 		gap: 5vw;
 		article {
 			position: relative;
-			max-width: 615px;
+			max-width: 631px;
 			margin: 0 auto;
 			top: unset;
+			padding-left: calc(var(--grid-unit) * 2);
+    		padding-right: calc(var(--grid-unit) * 2);
 		}
 	}
 	&.testimonial {
@@ -399,9 +401,6 @@
 		}
 		aside {
 			grid-row: 1;
-		}
-		ol li {
-			list-style: decimal;
 		}
 	}
 	@include mq(sm) {

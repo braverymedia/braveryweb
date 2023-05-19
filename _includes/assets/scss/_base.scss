@@ -127,11 +127,19 @@ figure {
 
 	a {
 		color: var(--color-white);
-		transition: opacity 300ms ease;
-		opacity: 1;
+		position: relative;
+		width: auto;
+		&:after {
+			background: var(--gradient--shout);
+			content: "";
+			display: block;
+			transition: width 300ms ease;
+			height: 1px;
+			width: 0%;
+		}
 
-		&:hover {
-			opacity: 0.6;
+		&:hover:after {
+			width: 100%;
 		}
 	}
 
