@@ -491,13 +491,13 @@ span.brand {
   margin-bottom: 0.6em;
   list-style-type: inherit;
 }
-[class^=layout-single] .article--content li::marker,
-.layout-jobs .article--content li::marker {
-  content: unset;
-}
 [class^=layout-single] .article--content ol,
 .layout-jobs .article--content ol {
   list-style-type: decimal;
+}
+[class^=layout-single] .article--content ol li::marker,
+.layout-jobs .article--content ol li::marker {
+  content: unset;
 }
 [class^=layout-single] .article--content blockquote,
 .layout-jobs .article--content blockquote {

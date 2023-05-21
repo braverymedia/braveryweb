@@ -1,37 +1,38 @@
-const processForm = form => {
+const processForm = (form, message, formName) => {
     const data = new FormData(form)
-    data.append('form-name', 'contact');
+    data.append('form-name', formName);
     fetch('/', {
         method: 'POST',
         body: data
     })
         .then(() => {
-            form.innerHTML = `<div class="confirmation"><p>Thanks for getting in touch. We'll reply to you shortly!</p></div>`;
+            form.innerHTML = `<div class="confirmation"><p>${message}</p></div>`;
         })
         .catch(error => {
             form.innerHTML = `<div class="form--error">Something went wrong, please email us! Error: ${error}</div>`;
         })
 }
-
+// Contact form
 const contactForm = document.querySelector('#bravery-contact')
 if (contactForm) {
     contactForm.addEventListener('submit', e => {
         e.preventDefault();
-        processForm(contactForm);
+        let formName = 'contact';
+        let message = `Thanks for getting in touch. We'll reply to you shortly!`;
+        processForm(contactForm, message, formName);
     })
 }
-
-// Nav back from contact form
-const closeContact = document.querySelector('.trigger-navback');
-let referrer = document.referrer;
-if (closeContact) {
-    closeContact.addEventListener('click', e => {
-        if (referrer.match(/^https?:\/\/([^\/]+\.)?bravery\.co(\/|$)/i)) {
-            window.location.replace(referrer)
-        } else {
-            window.location.replace('https://bravery.co?utm_source=contact_close')
-        }
-    })
+// Subscription forms
+const newsletterSubscribe = document.querySelector(".heht-subscribe");
+if (newsletterSubscribe) {
+    newsletterSubscribe.forEach(function (form) {
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let formName = "newsletter";
+            let message = `You're on the list!`;
+            processForm(contactForm, message, formName);
+        });
+    });
 }
 
 // Lazy loading images
