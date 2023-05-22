@@ -23,9 +23,9 @@ if (contactForm) {
     })
 }
 // Subscription forms
-const newsletterSubscribe = document.querySelector(".heht-subscribe");
+const newsletterSubscribe = document.querySelectorAll(".heht-subscribe");
 if (newsletterSubscribe) {
-    newsletterSubscribe.forEach(function (form) {
+    newsletterSubscribe.forEach(form => {
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             let formName = "newsletter";
