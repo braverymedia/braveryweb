@@ -1,8 +1,11 @@
 ---
-title: "Higher Ed Hot Takes #8"
+title: How Trustworthy is Your Institution?
 description: This week, how students develop institutional trust, and Instagram Notes.
 issue: 8
 date: 2022-10-03
+cover:
+  image: heht/HEHT-8-Light
+  alt: "A light hangs in the library. "
 ---
 
 Hi there.
