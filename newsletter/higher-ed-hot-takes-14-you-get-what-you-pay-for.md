@@ -1,8 +1,12 @@
 ---
-title: "Higher Ed Hot Takes #14 - You get what you pay for"
-description: This week, there’s no room for experimentation when you’re only focused on revenue.
+title: You get what you pay for
+description: This week, there’s no room for experimentation when you’re only
+  focused on revenue.
 issue: 14
 date: 2022-11-14
+cover:
+  image: heht/HEHT-14_Cliff
+  alt: A man stands on the edge of a tall, tall cliff, overlooking the ocean.
 ---
 
 There’s no room for experimentation when you’re only focused on revenue.
