@@ -1,8 +1,12 @@
 ---
-title: "Higher Ed Hot Takes #6"
-description: This week, spreading design research nerd wings, tools for more effective marketing, and news about an upcoming pizza party.
+title: "UX Research: Drawing the Right Kind of Inferences"
+description: This week, spreading design research nerd wings, tools for more
+  effective marketing, and news about an upcoming pizza party.
 issue: 6
 date: 2022-09-19
+cover:
+  image: heht/HEHT-6-UX-Research.png
+  alt: A person coloring cogs in a machine next to a cup of coffee.
 ---
 
 Hi there.
