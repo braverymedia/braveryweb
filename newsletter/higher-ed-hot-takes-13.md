@@ -1,8 +1,12 @@
 ---
-title: "Higher Ed Hot Takes #13"
-description: This week, tour campus leadership’s character can impact student well-being AND institutional reputation in the marketplace.
+title: The Role of Your Leader’s Character in Your Team’s Well Being
+description: This week, tour campus leadership’s character can impact student
+  well-being AND institutional reputation in the marketplace.
 issue: 13
 date: 2022-11-07
+cover:
+  alt: A hand tries to grab a light bulb.
+  image: heht/HEHT-13_Lightbulb_Leadership
 ---
 
 Your campus leadership’s character can impact student well-being _and_ institutional reputation in the marketplace.
