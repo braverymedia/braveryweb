@@ -1,8 +1,11 @@
 ---
-title: "Higher Ed Hot Takes #16 - Collaboration FTW"
+title: Collaboration FTW
 description: This week, part two of Kristin’s series on developing your institution’s voice.
 issue: 16
 date: 2022-11-28
+cover:
+  image: heht/HEHT-16-Collaboration
+  alt: A group of horses gathers around a fire in the woods.
 ---
 
 And now, here’s part two of Kristin’s series on developing your institution’s voice.
