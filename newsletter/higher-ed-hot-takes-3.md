@@ -1,5 +1,5 @@
 ---
-title: Marketing Budgets are Ballooning. Does your department need to keep up?
+title: Marketing Budgets are Ballooning
 description: This week, ballooning marketing costs and Meta frustrations.
 issue: 3
 issue_number: 3
