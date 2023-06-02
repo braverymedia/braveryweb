@@ -1,8 +1,12 @@
 ---
-title: "Higher Ed Hot Takes #10 - HighEdWeb in 10 Tweets"
-description: Here are ten tweets that best represent what I (and others) learned at HighEdWeb in Little Rock.
+title: HighEdWeb in 10 Tweets
+description: Here are ten tweets that best represent what I (and others) learned
+  at HighEdWeb in Little Rock.
 issue: 10
 date: 2022-10-18
+cover:
+  image: heht/HEHT-10-Sign.png
+  alt: A sign promoting HighEdWeb 2022 in Little Rock.
 ---
 
 Hi there.
