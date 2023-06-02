@@ -1,8 +1,12 @@
 ---
-title: "Higher Ed Hot Takes #11 - Let's talk about your funnel"
-description: This week, how to reduce funnel friction with hospitality and a potential game-changing announcement from Instagram.
+title: Let's talk about your funnel
+description: This week, how to reduce funnel friction with hospitality and a
+  potential game-changing announcement from Instagram.
 issue: 11
 date: 2022-10-24
+cover:
+  image: heht/HEHT-11-Snowmobile-Funnel
+  alt: A snowmobile glides along the snow on a sunny afternoon.
 ---
 
 Hi there. This week, how to reduce funnel friction with hospitality and a potential game-changing announcement from Instagram. Thanks for being here.
