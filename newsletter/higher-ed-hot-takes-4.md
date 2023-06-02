@@ -1,8 +1,12 @@
 ---
-title: "Higher Ed Hot Takes #4"
-description: This week, avoiding analysis paralysis in UX research and successful conference pitching 101.
+title: "UX Research: Biting Off Exactly What You Can Chew"
+description: This week, avoiding analysis paralysis in UX research and
+  successful conference pitching 101.
 issue: 4
 date: 2022-09-06
+cover:
+  image: heht/HEHT-4-Brains
+  alt: An AI-generated image a brain.
 ---
 
 Hi there.
