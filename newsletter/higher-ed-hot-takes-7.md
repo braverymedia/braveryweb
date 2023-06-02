@@ -1,8 +1,12 @@
 ---
-title: "Higher Ed Hot Takes #7"
-description: This week, avoiding red flags in job postings, a rant about accessible video, and info about our presence at HighEdWeb.
+title: Do You Include "Red Flags" In Your Job Postings?
+description: This week, avoiding red flags in job postings, a rant about
+  accessible video, and info about our presence at HighEdWeb.
 issue: 7
 date: 2022-09-26
+cover:
+  image: heht/HEHT-7-Red-Flag.png
+  alt: A red flag waves on the beach, which means "dangerous surf."
 ---
 
 Hi there.
