@@ -1,8 +1,11 @@
 ---
-title: "Higher Ed Hot Takes #15 - What's in a voice?"
+title: What's in a voice?
 description: This week, accurately describing your institution’s voice.
 issue: 15
 date: 2022-11-21
+cover:
+  image: heht/HEHT-15_Megaphone
+  alt: A megaphone sits unused on a wooden stool.
 ---
 
 How accurately could you describe your institution’s voice? Kristin explains.
