@@ -1,8 +1,11 @@
 ---
-title: "Higher Ed Hot Takes #9"
+title: We're all excited for HighEdWeb in Little Rock!
 description: This week, we’re all together in Little Rock for HighEdWeb!
 issue: 9
 date: 2022-10-10
+cover:
+  image: heht/HEHT-9-Celebration
+  alt: Fireworks of purple, pink, and orange, explode in the sky.
 ---
 
 Hi there.
