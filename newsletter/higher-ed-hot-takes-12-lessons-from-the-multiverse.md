@@ -1,8 +1,11 @@
 ---
-title: "Higher Ed Hot Takes #12 - Lessons from the multiverse"
+title: Lessons from the multiverse
 description: This week, learning things from the Multiverse.
 issue: 12
 date: 2022-10-31
+cover:
+  alt: A man floats along in a shattered universe.
+  image: heht/HEHT-12_Multiverse.png
 ---
 
 Stories featuring the Multiverse are everywhere these days.
