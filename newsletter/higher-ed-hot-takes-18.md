@@ -5,7 +5,7 @@ description: This week, holding higher ed-focused businesses accountable for the
 issue: 18
 date: 2022-12-16
 cover:
-  image: heht/HEHT 18 doge-with-bowtie.png
+  image: heht/HEHT-18-doge-with-bowtie.png
   alt: A confused dog
 ---
 
