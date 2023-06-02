@@ -1,8 +1,12 @@
 ---
-title: "Higher Ed Hot Takes #5"
-description: This week, hospitality at scale, answering questions with data, and a better option for bio links.
+title: Hospitality at Scale
+description: This week, hospitality at scale, answering questions with data, and
+  a better option for bio links.
 issue: 5
 date: 2022-09-12
+cover:
+  image: heht/HEHT-5-Escalator
+  alt: Image of an escalator looking down.
 ---
 
 Hi there.
