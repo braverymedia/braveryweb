@@ -1,8 +1,12 @@
 ---
-title: "Higher Ed Hot Takes #1"
-description: Where do we go from here?
+title: Where do we go from here?
+description: ""
 issue: 1
+issue_number: 1
 date: 2022-08-16
+cover:
+  image: heht/HEHT-1.png
+  alt: Metal-plated number 1 sign against a concrete background.
 ---
 
 Welcome to the first edition of Higher Ed Hot Takes!
