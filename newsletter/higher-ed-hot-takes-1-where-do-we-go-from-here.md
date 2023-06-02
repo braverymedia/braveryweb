@@ -2,7 +2,6 @@
 title: Where do we go from here?
 description: ""
 issue: 1
-issue_number: 1
 date: 2022-08-16
 cover:
   image: heht/HEHT-1.png

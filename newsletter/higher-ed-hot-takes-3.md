@@ -2,7 +2,6 @@
 title: Marketing Budgets are Ballooning
 description: This week, ballooning marketing costs and Meta frustrations.
 issue: 3
-issue_number: 3
 date: 2022-08-29
 cover:
   image: heht/HEHT-3-Balloons
