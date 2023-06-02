@@ -1,8 +1,11 @@
 ---
-title: "Higher Ed Hot Takes #17 - Death by a million moral paper cuts"
+title: Death by a million moral paper cuts
 description: This week, we consider the accumulation of moral paper cuts.
 issue: 17
 date: 2022-12-05
+cover:
+  image: heht/HEHT-17_paper-cuts.png
+  alt: A bunch of shredded purple paper in a pile.
 ---
 
 Death by a million moral paper cuts
