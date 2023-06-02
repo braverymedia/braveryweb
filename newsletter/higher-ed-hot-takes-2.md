@@ -1,8 +1,13 @@
 ---
-title: "Higher Ed Hot Takes #2"
-description: The benefits of moving to a Design System, the state of trust in Higher Ed, and thinking long-term about Shorts.
+title: "Efficiency Gains: Move to a Design System"
+description: The benefits of moving to a Design System, the state of trust in
+  Higher Ed, and thinking long-term about Shorts.
 issue: 2
+issue_number: 2
 date: 2022-08-22
+cover:
+  image: heht/HEHT-2-Gears.png
+  alt: A bunch of gears intermingled with each other.
 ---
 Good morning!
 
