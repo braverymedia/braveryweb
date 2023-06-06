@@ -116,6 +116,12 @@ form.heht-subscribe {
             }
         }
     }
+    .confirmation {
+        color: var(--color-black);
+        p {
+            margin: 0 !important;
+        }
+    }
 }
 
 .heht-testimonials {
