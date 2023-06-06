@@ -87,6 +87,8 @@ form.heht-subscribe {
     display: flex;
     padding: 4px 4px 4px 16px;
     margin-top: calc( var(--grid-unit) * 6);
+    transition: filter .45s ease-in-out;
+    position: relative;
     input[type="email"] {
         border: 0;
         padding: 0;
@@ -120,6 +122,30 @@ form.heht-subscribe {
         color: var(--color-black);
         p {
             margin: 0 !important;
+        }
+    }
+    &.error {
+        animation: tilt-shake 0.15s 5;
+        button {
+            filter: grayscale(100);
+        }
+        &:before {
+            content: "We need a real email address!";
+            display: flex;
+            background: var(--color-hilite);
+            color: var(--color-black);
+            font-family: inherit;
+            font-size: var(--type-sm);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translatey(-80%);
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding: calc(var(--grid-unit) * 2) 0 calc(var(--grid-unit) * 3);
+            z-index: -1;
+            border-radius: var(--grid-unit);
         }
     }
 }

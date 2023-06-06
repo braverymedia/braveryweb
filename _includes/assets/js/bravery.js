@@ -13,9 +13,25 @@ const processForm = (form, message, formName) => {
         })
 }
 
+const validateEmail = email => {
+	const re =
+		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(email.toLowerCase());
+}
+
 // Contact form
 const contactForm = document.querySelector('#bravery-contact')
 if (contactForm) {
+    let emailField = contactForm.querySelector('input[type="email"]');
+    emailField.addEventListener('blur', (e) => {
+        let emailVal = emailField.value;
+
+        if ( validateEmail(emailVal) ) {
+            contactForm.classList.remove('error');
+        } else {
+            contactForm.classList.add('error');
+        }
+    } );
     contactForm.addEventListener('submit', e => {
         e.preventDefault();
         let formName = 'contact';
@@ -27,7 +43,18 @@ if (contactForm) {
 const newsletterSubscribe = document.querySelectorAll("form.heht-subscribe");
 if (newsletterSubscribe) {
     newsletterSubscribe.forEach(form => {
-        console.log(form);
+        let emailField = form.querySelector('input[type="email"]');
+        let submitButton = form.querySelector(`button[type="submit"]`) ;
+        emailField.addEventListener("blur", (e) => {
+            let emailVal = emailField.value;
+            if (validateEmail(emailVal)) {
+                form.classList.remove("error");
+                submitButton.disabled = false;
+            } else {
+                form.classList.add("error");
+                submitButton.disabled = true;
+            }
+        });
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             let formName = "newsletter";

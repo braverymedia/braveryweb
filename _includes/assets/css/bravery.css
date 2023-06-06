@@ -2894,6 +2894,8 @@ form.heht-subscribe {
   display: flex;
   padding: 4px 4px 4px 16px;
   margin-top: calc(var(--grid-unit) * 6);
+  transition: filter 0.45s ease-in-out;
+  position: relative;
 }
 form.heht-subscribe input[type=email] {
   border: 0;
@@ -2921,6 +2923,36 @@ form.heht-subscribe button svg {
 }
 form.heht-subscribe button:hover svg {
   animation: tilt-shake 0.15s infinite;
+}
+form.heht-subscribe .confirmation {
+  color: var(--color-black);
+}
+form.heht-subscribe .confirmation p {
+  margin: 0 !important;
+}
+form.heht-subscribe.error {
+  animation: tilt-shake 0.15s 5;
+}
+form.heht-subscribe.error button {
+  filter: grayscale(100);
+}
+form.heht-subscribe.error:before {
+  content: "We need a real email address!";
+  display: flex;
+  background: var(--color-hilite);
+  color: var(--color-black);
+  font-family: inherit;
+  font-size: var(--type-sm);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translatey(-80%);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--grid-unit) * 2) 0 calc(var(--grid-unit) * 3);
+  z-index: -1;
+  border-radius: var(--grid-unit);
 }
 
 .heht-testimonials {
