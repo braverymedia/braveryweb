@@ -12,6 +12,7 @@ const processForm = (form, message, formName) => {
             form.innerHTML = `<div class="form--error">Something went wrong, please email us! Error: ${error}</div>`;
         })
 }
+
 // Contact form
 const contactForm = document.querySelector('#bravery-contact')
 if (contactForm) {
@@ -23,14 +24,15 @@ if (contactForm) {
     })
 }
 // Subscription forms
-const newsletterSubscribe = document.querySelectorAll(".heht-subscribe");
+const newsletterSubscribe = document.querySelectorAll("form.heht-subscribe");
 if (newsletterSubscribe) {
     newsletterSubscribe.forEach(form => {
+        console.log(form);
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             let formName = "newsletter";
             let message = `You're on the list!`;
-            processForm(contactForm, message, formName);
+            processForm(form, message, formName);
         });
     });
 }
