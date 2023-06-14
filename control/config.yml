@@ -79,6 +79,10 @@ collections:
         name: "explicit"
         widget: "boolean"
         required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: ["podcast"]
       - label: "Episode Summary"
         name: "summary"
         widget: "markdown"
