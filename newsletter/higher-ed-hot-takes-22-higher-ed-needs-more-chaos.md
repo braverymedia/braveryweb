@@ -1,8 +1,12 @@
 ---
-title: "Higher Ed Hot Takes #22 - Higher Ed Needs More Chaos Muppets"
+title: Higher Ed Needs More Chaos Muppets
 description: This week, chaos muppets. That's it. That's the summary.
 issue: 22
 date: 2023-02-07
+cover:
+  image: heht/HEHT-22-Chaos-Muppet_kawvpy.png
+  alt: "A muppet dances around wildly over a gradient background where water is
+    dripping. "
 ---
 
 A Self-Proclaimed Chaos Muppet Writes a Chaotic Hot Take About Procedural Fetishism
