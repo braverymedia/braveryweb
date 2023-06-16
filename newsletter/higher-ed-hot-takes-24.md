@@ -1,8 +1,11 @@
 ---
-title: "Higher Ed Hot Takes #24 - Are You LARPing Your Content Strategy?"
+title: Are You LARPing Your Content Strategy?
 description: This week, are you going through the motions of being a MarComm professional?.
 issue: 24
 date: 2023-02-21
+cover:
+  image: heht/HEHT-24-LARPING_x364pm.png
+  alt: Medieval armor and helmet over a chainmail floor.
 ---
 
 ## Are you live-action role-playing your content strategy?
