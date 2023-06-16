@@ -2,7 +2,7 @@
 title: We Are Responsible for Student Mental Health
 description: How we as Digital Strategists can help!
 issue: 32
-date: 2023-06-16T18:52:20.102Z
+date: 2023-05-09T18:52:20.102Z
 cover:
   image: heht/HEHT-32-Abstract-Student-Well-Being_x0nmsf.png
   alt: Abstract art featuring red, orange, blue, and greenish yellow colors.
