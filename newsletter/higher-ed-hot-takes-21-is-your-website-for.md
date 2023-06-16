@@ -1,8 +1,12 @@
 ---
-title: "Higher Ed Hot Takes #21 - Is Your Website for Marketing or Community Engagement?"
-description: This week, your website can't be everything to everybody and still support your institutional goals.
+title: Is Your Website for Marketing or Community Engagement?
+description: This week, your website can't be everything to everybody and still
+  support your institutional goals.
 issue: 21
 date: 2023-02-01
+cover:
+  image: heht/HEHT-21-Donations_dukimm.png
+  alt: A cardboard box marked for donations.
 ---
 
 Is Your Website for Marketing or Community Engagement?
