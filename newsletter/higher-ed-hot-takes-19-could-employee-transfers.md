@@ -1,8 +1,12 @@
 ---
-title: "Higher Ed Hot Takes #19 - Could employee transfers be the key to retention?"
-description: This week, what if transfer opportunities could solve Higher Ed's retention problem?
+title: Could employee transfers be the key to retention?
+description: This week, what if transfer opportunities could solve Higher Ed's
+  retention problem?
 issue: 19
 date: 2023-01-17
+cover:
+  image: heht/HEHT-19-neuron-transfer_kqydfw.jpg
+  alt: Neurons firing in a dark space.
 ---
 
 Could employee transfers be the key to retention?
