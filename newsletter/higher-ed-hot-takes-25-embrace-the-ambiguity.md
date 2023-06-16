@@ -1,8 +1,11 @@
 ---
-title: "Higher Ed Hot Takes #25 - Embrace the Ambiguity"
+title: Embrace the Ambiguity
 description: This week, not everything in Higher Ed has to be so straightforward.
 issue: 25
 date: 2023-03-07
+cover:
+  image: heht/HEHT-25-ambiguity_fgqh6f.png
+  alt: Triangle patterns of pink and blue arranged in an abstract manner.
 ---
 
 ## How I learned to stop worrying and love the ambiguity
