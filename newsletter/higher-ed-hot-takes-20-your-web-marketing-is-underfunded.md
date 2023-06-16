@@ -1,8 +1,13 @@
 ---
-title: "Higher Ed Hot Takes #20 - Your web marketing is underfunded"
-description: This week, colleges and universities don't spend enough on marketing to be competitive.
+title: Your web marketing is underfunded
+description: This week, colleges and universities don't spend enough on
+  marketing to be competitive.
 issue: 20
 date: 2023-01-24
+cover:
+  image: heht/HEHT-20-web-marketing-is-underfunded_petu9d.png
+  alt: White text that says "why is your web marketing underfunded?" on a gradient
+    background.
 ---
 
 Higher Ed Web Marketing is Underfunded
