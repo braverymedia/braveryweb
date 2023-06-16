@@ -1,8 +1,13 @@
 ---
-title: "Higher Ed Hot Takes #26 - About Your Branded Hashtags..."
-description: This week, if your brand has a resonance problem, no one is gonna use the hashtag.
+title: About Your Branded Hashtags...
+description: This week, if your brand has a resonance problem, no one is gonna
+  use the hashtag.
 issue: 26
 date: 2023-03-14
+cover:
+  image: heht/HEHT-26-Hashtag-Not-Today_h6sd8a.png
+  alt: "A basketball almost falls into a net, but stops just short, and there's
+    white text that says #NotToday."
 ---
 
 ## Why they’ll never use your damn hashtag
