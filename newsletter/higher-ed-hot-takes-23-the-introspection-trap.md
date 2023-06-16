@@ -1,8 +1,11 @@
 ---
-title: "Higher Ed Hot Takes #23 - The Introspection Trap"
+title: The Introspection Trap
 description: This week, mistaking self-reflection for clarity of insight.
 issue: 23
 date: 2023-02-14
+cover:
+  image: heht/HEHT-23-Introspection_qln9mx.png
+  alt: A monkey looks into a mirror at its reflection.
 ---
 
 Higher Education and the Introspection Trap
