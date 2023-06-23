@@ -59,6 +59,7 @@
 		position: relative;
 		.divider-grid {
 			color: var(--color-neon);
+			z-index: -1;
 		}
 		ul {
 			max-width: none;
