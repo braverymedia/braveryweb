@@ -8,8 +8,6 @@ cover:
   image: heht/HEHT-38-funnel-shape_fxyqqs.png
   alt: A yellow funnel rises out a molten pit of colors.
 ---
-# Is the shape of our recruitment model outdated? 
-
 In our industry, concepts and frameworks guide us through the thickets of uncertainty. That’s partly because, well, every industry has its own maps and ideas about how work gets done. And, it’s also partly because of our proximity to new knowledge generators, right? Faculty and students use models and frameworks to predict outcomes and solve problems all the time. Of course, some of that style of thinking would make its way into our own ways of thinking and planning. 
 
 Our work - digital strategy, marketing, enrollment management - requires human action, which positions us squarely in the social sciences nest (though I’d make the argument that marketing might do well with a humanities lens rather than a science lens, but that’s for another hot take). 
