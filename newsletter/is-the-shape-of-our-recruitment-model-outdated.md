@@ -1,6 +1,6 @@
 ---
 title: "Is the shape of our recruitment model outdated? "
-description: Let’s talk about the student recruitment funnel.
+description: Let’s talk about the funnel.
 issue: 38
 date: 2023-06-27T14:55:19.259Z
 canonical: is-the-shape-of-recruitment-model-outdated
