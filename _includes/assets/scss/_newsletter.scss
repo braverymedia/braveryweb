@@ -352,7 +352,7 @@ form.heht-subscribe {
 
 .layout-single-issue {
     body{
-        background: var(--gradient--neon);
+        background: var(--gradient--neon) fixed;
     }
     main {
         width: 96%;
@@ -384,6 +384,9 @@ form.heht-subscribe {
             margin-bottom: calc(8 * var(--grid-unit));
         }
         margin-bottom: calc(5 * var(--grid-unit));
+        & > h1 {
+            margin: 0;
+        }
     }
 }
 
