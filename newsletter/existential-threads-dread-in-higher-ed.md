@@ -3,14 +3,14 @@ title: Existential Threads Dread in Higher Ed
 description: It's all going to be okay.
 issue: 39
 date: 2023-07-12T13:39:47.600Z
-canonical: higher-ed-threads-dread
+canonical: existential-threads-dread-in-higher-ed
 cover:
   image: heht/HEHT-39-threads-dread_vwazem.png
   alt: A man looks scared as he holds a needle, thread, and some yarn.
 ---
 I might’ve overdone it with the puns in the title of this hot take, but just so you know, I feel no shame whatsoever. So let’s recap. In the last week, we’ve gone from knowing next to nothing about Meta’s new “Twitter Killer” to being part of a Threads community with over 100 million users. 
 
-But if the first seven days were spent gleefully basking in the glow of Threads’ newness, these last few days have felt like the Brand Hell version of Frogger, where we’re all trying to cross the interstate without getting struck by corporations sending thirst trap emojis to each other.
+But if the first seven days were spent gleefully basking in the glow of Threads’ newness, these last few have felt like the Brand Hell version of Frogger, where we’re all trying to cross the interstate without getting struck by corporations sending thirst trap emojis to each other.
 
 And rightfully so, social media managers are a little on edge. And for the ones in Higher Ed, where do they even start?
 
@@ -23,3 +23,5 @@ I propose the following.
 5. **Look at what others are doing -** If you’re a social media manager at a smaller school or on a team of one, don’t be ashamed to look at what’s resonating for other institutions. Jot down a few ideas that you enjoyed, and get to work.
 
 Remember, no one has it all figured out yet, and if that’s true, maybe your best course is to **THREAD LIGHTLY.**
+
+\-﻿ [Carl Gratiot](https://linkedin.com/in/carlgratiot)
