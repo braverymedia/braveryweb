@@ -3,7 +3,7 @@ title: Organizational Frames and Advocating for Digital Strategy
 description: "Snippets from Kristin Van Dorn's PSEWEB presentation. "
 issue: 40
 date: 2023-07-19T18:57:32.975Z
-canonical: /organizational-frames
+canonical: /organizational-frames-and-advocating-for-digital-strategy/
 cover:
   image: heht/HEHT-40-Arrows_urj17c.png
   alt: Several differently-colored arrows pointing in all sorts of directions.
