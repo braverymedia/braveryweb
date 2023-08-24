@@ -21,10 +21,8 @@ But I have a bit of an issue with WordPress in higher education. See, colleges a
 A large chunk of the higher ed WordPress sites we come across have these issues:
 
 1. They’re using out of date versions of WordPress 
-
-1. They were built using a page builder like Divi, Elementor, or Beaver Builder
-
-1. They have UX flows that haven’t been touched in years
+2. They were built using a page builder like Divi, Elementor, or Beaver Builder
+3. They have UX flows that haven’t been touched in years
 
 The first two problems tend to rest on how the sites were built. If a local WP agency was brought on to build a site for $20,000, those institutions got exactly what $20k buys: a “premium” theme modified to fit the design spec. They’re not able to update WordPress because the code quality is poor and there’s no one to support it.
 
@@ -35,3 +33,5 @@ Sometimes you need immediate results or help to get back to a point where you ca
 We’ll modernize the web design you have so that it uses the WordPress Block Editor. We’ll make your site accessible and fast. We’ll help you migrate content and SEO data. And we’ll fix key journeys on your site to encourage more applications and inquiries.
 
 If an entire website overhaul isn’t in the budget for this fiscal year, let Bravery help you increase your enrollment revenue by optimizing the website you have now.
+
+\-﻿ [Joel Goodman](https://www.linkedin.com/in/joelgoodman/)
