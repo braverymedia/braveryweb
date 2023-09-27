@@ -10,7 +10,7 @@ cover:
 ---
 This past week, The Daily released a podcast episode titled “[Is College Worth It?](https://open.spotify.com/episode/3iST6D8m5vwIeTf9nU0tGf)” 
 
-To briefly summarize the discussion, Michael Barbaro interviews Paul Tough, author of the book,  *The Inequality Machine: How College Divides Us* and the recent article, “Americans Are Losing Faith in the Value of College. Whose Fault Is That?” for New York Times Magazine. 
+To briefly summarize the discussion, Michael Barbaro interviews Paul Tough, author of the book, *The Inequality Machine: How College Divides Us* and the recent article, “Americans Are Losing Faith in the Value of College. Whose Fault Is That?” for New York Times Magazine. 
 
 You might want to listen to the whole interview. It’s pretty great. But if you’re looking for just a summary, here’s my best attempt:
 
