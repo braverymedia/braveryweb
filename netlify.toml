@@ -18,6 +18,7 @@ from = "/about"
 to = "/services/"
 status = 301
 
+[[redirects]]
 from = "/survey"
 to = "https://www.surveymonkey.com/r/higher-ed-professional-development"
 status = 302
