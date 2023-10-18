@@ -17,7 +17,7 @@ First, let’s understand what psychological safety is. Psychological Safety is 
 
 Within the last 25 years, psychological safety as a construct has taken the world of organizational psychology by storm. According to [McKinsey](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-psychological-safety), a staggering 89 percent of employees across various industries believed that psychological safety in the workplace is necessary for their effectiveness.
 
-![A Google Trends screenshot showing interest in the term "psychological safety" over the last decade.](/assets/uploads/heht-49-interest-over-time.png "Interest in \\\\"psychological safety\\\\" over time")
+![A Google Trends screenshot showing interest in the term "psychological safety" over the last decade.](/assets/uploads/heht-49-interest-over-time.png "Interest in \"psychological safety\" over time")
 
 According to Google Trends, from 2013 to 2021 the term psychological safety had steadily grown in searches. Then in 2021, after many firms broached bringing staff back into offices, the term spiked. Having just faced a pandemic, heightened racism towards Asian Americans, and the murder of George Floyd, American workers were concerned about their mental health in the workplace. And, it is no surprise that the spike in interest coincides directly with a spike in searches and stories about the great resignation. 
 
