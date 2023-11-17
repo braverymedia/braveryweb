@@ -2,7 +2,7 @@
 title: The Truth About Landing Pages in Higher Education
 description: Kristin and Joel chat about the controversial role of landing pages
   in higher ed marketing.
-episode: 39
+episode: 62
 slug: truth-about-landing-pages-in-higher-ed
 date: 2023-11-17T14:59:38.071Z
 record_date: 2023-11-15T14:59:38.080Z
