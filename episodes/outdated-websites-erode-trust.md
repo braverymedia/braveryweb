@@ -8,7 +8,8 @@ date: 2023-12-06T14:53:11.398Z
 record_date: 2023-12-05T14:53:11.492Z
 cover:
   image: ep_040_-_cover_art_rymcb1.png
-  alt: Appendix B - Episode 40 - How Outdated Websites Erode Trust
+  alt: Appendix B Episode 39, text is present that reads, "How Outdated Websites
+    Erode Trust"
 mp3: /assets/appendix-b/appendix-b-episode-040-how-outdated-websites-erode-trust.mp3
 duration: 11:07
 tags:
