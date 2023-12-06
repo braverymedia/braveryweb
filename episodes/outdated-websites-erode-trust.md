@@ -14,8 +14,12 @@ mp3: /assets/appendix-b/appendix-b-episode-040-how-outdated-websites-erode-trust
 duration: 11:07
 tags:
   - podcast
-summary: Joel and Kristin discuss the challenges and issues that universities
-  face when it comes to paid media and having an outdated website.
+summary: >-
+  Joel and Kristin discuss the challenges and issues that universities face when
+  it comes to paid media and having an outdated website.
+
+
+  Subscribe to [Bravery’s Newsletter](https://bravery.co/newsletter) / [Follow Kristin](https://www.linkedin.com/in/kristinvandorn/) / [Follow Joel](https://linkedin.com/in/joelgoodman/)
 ---
 **Joel Goodman**
 From Bravery Media, this is Appendix B, short conversations about the toughest issues in higher education. My name is Joel Goodman. With me is Kristin Van Dorn. Kristin, what are we talking about today?
