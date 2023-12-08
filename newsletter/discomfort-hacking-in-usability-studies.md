@@ -6,11 +6,9 @@ description: Does traditional usability research inflict too much discomfort?
 issue: 51
 date: 2023-12-07T13:56:06.523Z
 cover:
-  image: tengyart-DoqtEEn8SOo-unsplash_kiqhvm.jpg
+  image: /c_crop,w_600,h_338,g_auto/v1702044507/tengyart-DoqtEEn8SOo-unsplash_kiqhvm.jpg
   alt: Some eggs with funny faces drawn on them expressing a wide range of emotion.
 ---
-# Discomfort Hacking in Usability Studies
-
 This is a hot take space, right?  
 
 I am sharing with you a take that goes against many common usability research approaches. 
