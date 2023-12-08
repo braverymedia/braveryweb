@@ -6,7 +6,7 @@ description: Does traditional usability research inflict too much discomfort?
 issue: 51
 date: 2023-12-07T13:56:06.523Z
 cover:
-  image: /c_crop,w_600,h_338,g_auto/v1702044507/tengyart-DoqtEEn8SOo-unsplash_kiqhvm.jpg
+  image: tengyart-DoqtEEn8SOo-unsplash_kiqhvm.jpg
   alt: Some eggs with funny faces drawn on them expressing a wide range of emotion.
 ---
 This is a hot take space, right?  
