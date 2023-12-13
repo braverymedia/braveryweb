@@ -21,7 +21,10 @@ summary: >-
   website content.
 
 
-  Find us on [LinkedIn](https://linkedin.com/company/braverymedia) / [Joel](https://linkedin.com/in/joelgoodman) / [Kristin](https://linkedin.com/in/kristinvandorn>)
+  Find us on [LinkedIn](https://linkedin.com/company/bravery-media) / [Joel](https://linkedin.com/in/joelgoodman) / [Kristin](https://linkedin.com/in/kristinvandorn>)
+
+
+  [S﻿ubscribe to Higher Ed Hot Takes](https://bravery.co/newsletter/)
 ---
 **Joel**
 From Bravery Media, this is Appendix B. Short conversations about the largest challenges facing higher education marketers. 
