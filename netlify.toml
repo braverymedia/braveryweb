@@ -20,7 +20,7 @@ status = 301
 
 [[redirects]]
 from = "/survey"
-to = "https://www.surveymonkey.com/r/higher-ed-professional-development"
+to = "https://www.surveymonkey.com/r/webstrategytrends2024"
 status = 302
 
 [[headers]]
