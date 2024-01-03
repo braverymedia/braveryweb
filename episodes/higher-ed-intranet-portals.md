@@ -18,7 +18,7 @@ summary: >-
   they're generally pretty bad. Joel Goodman has the fix, though.
 
 
-  Find us on LinkedIn — Joel Goodman / Kristin Van Dorn / Bravery Media
+  Find us on LinkedIn — [Joel Goodman](https://linkedin.com/in/joelgoodman/) / [Kristin Van Dorn](https://linkedin.com/in/kristinvandorn/) / [Bravery Media](https://linkedin.com/company/bravery-media/)
 ---
 **Joel Goodman**
 From Bravery Media. This is Appendix B, short conversations about the biggest challenges facing higher ed marketers and marketing. My name is Joel Goodman. 
