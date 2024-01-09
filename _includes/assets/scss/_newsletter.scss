@@ -39,27 +39,29 @@
     gap: calc( var(--grid-unit) * 6);
     h1 {
         display: block;
-        width: 100%;
-        margin: 0;
+        height: auto;
         svg {
-            height: auto;
+            height: 100%;
             width: 100%;
+            object-fit: cover;
         }
     }
     @include mq(md) {
         padding: 10vh calc(var(--grid-unit) * 4) 8vh;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        gap: 3vw;
-        align-items: end;
+        flex-direction: row;
+
         h1 {
-            grid-column: 1 / 6;
-            grid-row: 1;
-            display: flex;
-            align-items: flex-end;
+            width: 72%;
+            max-width: 72%;
+            height: 82vh;
+            max-height: 725px;
+            z-index: 0;
+            position: relative;
             svg {
-                width: calc(100% - 8vw);
-                height: auto;
+                width: auto;
+                height: 100%;
+                max-height: 100%;
+                max-width: 100%;
             }
         }
     }
@@ -73,11 +75,14 @@
         margin-top: 0;
     }
     @include mq(md) {
+        z-index: 1;
+        width: 40%;
+        position: absolute;
+        right: calc(var(--grid-unit) * 2);
+        bottom: 8vh;
         p {
             font-size: var(--type-base) !important;
         }
-        grid-column: 5 / -1;
-        grid-row: 1;
     }
 }
 form.heht-subscribe {
