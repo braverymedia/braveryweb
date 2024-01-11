@@ -6,7 +6,7 @@ description: Joel Goodman talks about why lock-in is inevitable with technology
 issue: 53
 date: 2024-01-11T13:51:14.809Z
 cover:
-  image: hop-ons.webp
+  image: hop-ons-still.jpg
   alt: Michael Bluth telling his sister, You're gonna get some hop ons. From
     Arrested Development
 ---
