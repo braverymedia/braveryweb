@@ -1,6 +1,8 @@
 ---
 title: You're gonna get some lock-in
-description: Joel Goodman talks about why lock-in is inevitable with technology decisions.
+description: Joel Goodman talks about why lock-in is inevitable with technology
+  decisions. Even open source platforms impose some level of lock-in on their
+  users.
 issue: 53
 date: 2024-01-11T13:51:14.809Z
 cover:
