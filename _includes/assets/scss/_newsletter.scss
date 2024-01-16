@@ -342,9 +342,8 @@ form.heht-subscribe {
 
 .heht-mini {
     width: 100%;
-    max-width: 570px;
-    padding: calc(var(--grid-unit) * 6) calc(var(--grid-unit) * 4) 0;
-    margin: 0 auto;
+    padding: calc(var(--grid-unit) * 4);
+    margin: calc(var(--grid-unit) * 4) auto;
     h3 {
         margin-bottom: 0;
         text-align: center;
