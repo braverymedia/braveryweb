@@ -395,14 +395,10 @@ form.heht-subscribe {
     }
 }
 
-.layout-podcast footer.subscribe {
-    padding-bottom: calc(var(--grid-unit) * 4);
-    &:before {
-        content: "";
-        display: block;
-        height: 5px;
-        width: 100%;
-        background: var(--gradient--neon);
-        margin: calc(var(--grid-unit) * 4) 0;
-    }
+.layout-podcast footer.subscribe,
+.layout-single .heht-mini {
+    background-image: var(--gradient--neon);
+    padding: calc(var(--grid-unit) * 4);
+    border-radius: 24px;
+    color: var(--color-white);
 }
