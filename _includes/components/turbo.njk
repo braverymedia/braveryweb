@@ -1,4 +1,4 @@
-<section>
+<section class="constrain">
     <div class="turbo">
         <h2>{% include "assets/img/turbo-logo.svg" %}</h2>
         <div class="decoration">
@@ -14,20 +14,11 @@
         </article>
         <footer>
             <div class="time"><span>7</span>Day Results</div>
-            <a href="{{ metadata.turbolink }}" class="button bright">Get Started</a>
+            {% if page.url == '/services/' or page.url == '/' %}
+                <a href="{{ '/speedyu-turbo/' | url }}" class="button bright">Learn More</a>
+            {% else %}
+                <a href="{{ metadata.turbolink }}" class="button bright">Get Started</a>
+            {% endif %}
         </footer>
     </div>
 </section>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "SpeedyU Turbo",
-  "offers": {
-    "@type": "Offer",
-    "availability": "https://schema.org/InStock",
-    "price": "1500.00",
-    "priceCurrency": "USD"
-  },
-}
-</script>

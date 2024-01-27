@@ -87,13 +87,14 @@
     backdrop-filter: blur(12.5px);
     z-index: 1;
     position: relative;
+    max-width: 750px;
     h3 {
         font-weight: 300;
         font-size: var(--type-lg);
         margin:0;
     }
     p {
-        font-size: var(--type-sm);
+        font-size: var(--type-base);
         margin-top: 0;
     }
     ul {
@@ -110,7 +111,7 @@
             font-size: var(--type-md);
         }
     }
-    a {
+    a:not(.button) {
         color: var(--color-hilite);
         text-decoration-color: currentColor;
     }
@@ -123,8 +124,9 @@
         width: auto;
     }
     @include mq(md) {
-        grid-column: 2;
         padding: calc(var(--grid-unit) * 4) calc(var(--grid-unit) * 4) calc(var(--grid-unit) * 8);
+        width: 50%;
+        margin: 0 auto;
         header {
             display: flex;
             align-items: center;

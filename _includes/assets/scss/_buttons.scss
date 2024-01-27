@@ -11,7 +11,7 @@ button,
 	margin-top: calc(var(--grid-unit) * 5);
 	margin-bottom: calc(var(--grid-unit) * 5);
 	border: 0px;
-	border-radius: calc(var(--grid-unit) * 2);
+	border-radius: 4px;
 	transition: var(--global-transition);
 	font-family: inherit;
 	cursor: pointer;

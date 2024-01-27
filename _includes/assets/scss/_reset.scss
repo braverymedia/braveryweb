@@ -68,7 +68,7 @@ pre {
 
 /* remove default dot (•) sign */
 ::marker {
-    content: "";
+    content: "\203A";
 }
 
 /* fix the feature of 'hidden' attribute.

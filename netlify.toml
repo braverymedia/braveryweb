@@ -23,6 +23,11 @@ from = "/survey"
 to = "https://www.surveymonkey.com/r/webstrategytrends2024"
 status = 302
 
+[[redirects]]
+from= "/services/level-up/"
+to = "https://bravery.co/services/web-aor/"
+status = 301
+
 [[headers]]
 for = "/*"
 

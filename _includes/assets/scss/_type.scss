@@ -30,8 +30,12 @@ h1 {
 
 h2 {
 	font-size: var(--type-xl);
-	margin-bottom: calc(var(--grid-unit) * 5);
+	margin-block-start: calc(var(--grid-unit) * 5);
 	.loud {
+		font-weight: 700;
+	}
+	.layout-services & {
+		font-size: var(--type-lg);
 		font-weight: 700;
 	}
 }
@@ -83,7 +87,7 @@ ol {
 	> li {
 		line-height: 1.65;
 		margin-bottom: 0.8em;
-		padding: 0;
+		padding-left: 0.5em;
 	}
 }
 
@@ -209,7 +213,7 @@ hr {
 span.brand {
 	font-feature-settings: var(--feature-simple-y);
 }
-:not(.layout-home) main ul {
+main ul {
 	li {
 		list-style-type: "\203A"; // for safari
 		margin-bottom: 0.5em;
@@ -223,6 +227,9 @@ span.brand {
 .site-footer li {
 	list-style: none;
 	list-style-type: none;
+	&::marker {
+		content: "";
+	}
 }
 // Article type
 [class^="layout-single"],
@@ -310,24 +317,22 @@ span.brand {
 }
 .hilite,
 .callout blockquote > p,
-.shout,
 .loud {
 	color: var(--color-bright);
-	background: linear-gradient(
-		91.95deg,
-		#ff5c00 -15%,
-		#ff00c7 22%,
-		#6b4de0 55%,
-		#6b4de0 70%,
-		#ff00c7 85%,
-		#ff5c00 105%
-	);
+	background-image: linear-gradient(92deg, #FFF500 0%, #FF006C 40%, #FF006C 80%, #FFF500 100%,);
 	background-size: 200% auto;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	text-fill-color: transparent;
 	animation: gradientMove 25s linear infinite;
+}
+.neon {
+	color: var(--color-hilite);
+}
+.shout {
+	color: #FF005C;
+	font-weight: 700;
 }
 .all-link {
 	font-size: var(--type-sm);

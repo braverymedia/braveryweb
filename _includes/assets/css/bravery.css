@@ -203,7 +203,7 @@ pre {
 
 /* remove default dot (•) sign */
 ::marker {
-  content: "";
+  content: "›";
 }
 
 /* fix the feature of 'hidden' attribute.
@@ -290,9 +290,13 @@ h1.mega {
 
 h2 {
   font-size: var(--type-xl);
-  margin-bottom: calc(var(--grid-unit) * 5);
+  margin-block-start: calc(var(--grid-unit) * 5);
 }
 h2 .loud {
+  font-weight: 700;
+}
+.layout-services h2 {
+  font-size: var(--type-lg);
   font-weight: 700;
 }
 
@@ -345,7 +349,7 @@ ul > li,
 ol > li {
   line-height: 1.65;
   margin-bottom: 0.8em;
-  padding: 0;
+  padding-left: 0.5em;
 }
 
 strong {
@@ -470,18 +474,21 @@ span.brand {
   font-feature-settings: var(--feature-simple-y);
 }
 
-:not(.layout-home) main ul li {
+main ul li {
   list-style-type: "›";
   margin-bottom: 0.5em;
   padding-left: var(--grid-unit);
 }
-:not(.layout-home) main ul li::marker {
+main ul li::marker {
   content: "›";
 }
 
 .site-footer li {
   list-style: none;
   list-style-type: none;
+}
+.site-footer li::marker {
+  content: "";
 }
 
 [class^=layout-single] .article--content p,
@@ -576,16 +583,24 @@ span.brand {
 
 .hilite,
 .callout blockquote > p,
-.shout,
 .loud {
   color: var(--color-bright);
-  background: linear-gradient(91.95deg, #ff5c00 -15%, #ff00c7 22%, #6b4de0 55%, #6b4de0 70%, #ff00c7 85%, #ff5c00 105%);
+  background-image: linear-gradient(92deg, #FFF500 0%, #FF006C 40%, #FF006C 80%, #FFF500 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
   animation: gradientMove 25s linear infinite;
+}
+
+.neon {
+  color: var(--color-hilite);
+}
+
+.shout {
+  color: #FF005C;
+  font-weight: 700;
 }
 
 .all-link {
@@ -790,6 +805,7 @@ figure > img {
   color: var(--color-white);
   position: relative;
   width: auto;
+  display: inline-block;
 }
 .site-footer a:after {
   background: var(--gradient--shout);
@@ -802,8 +818,23 @@ figure > img {
 .site-footer a:hover:after {
   width: 100%;
 }
+.site-footer .legal a:after {
+  background: var(--gradient--shout);
+  content: "";
+  display: block;
+  transition: width 300ms ease;
+  height: 1px;
+  width: 100%;
+}
+.site-footer .legal a:hover:after {
+  width: 0%;
+}
+.site-footer .legal-links {
+  display: flex;
+  gap: calc(var(--grid-unit) * 2);
+}
 .site-footer nav {
-  margin-top: calc(var(--grid-unit) * 8);
+  margin-block-start: calc(var(--grid-unit) * 8);
 }
 .site-footer nav a {
   text-decoration: none;
@@ -913,7 +944,7 @@ button,
   margin-top: calc(var(--grid-unit) * 5);
   margin-bottom: calc(var(--grid-unit) * 5);
   border: 0px;
-  border-radius: calc(var(--grid-unit) * 2);
+  border-radius: 4px;
   transition: var(--global-transition);
   font-family: inherit;
   cursor: pointer;
@@ -1086,9 +1117,8 @@ a.button {
   max-width: 1330px;
   margin-left: auto;
   margin-right: auto;
-}
-.cover .hero .brand {
-  text-shadow: 0px 0px 8px rgba(255, 0, 199, 0.54);
+  font-size: clamp(2.375rem, 0.331rem + 8.721vi, 9.25rem);
+  line-height: 95.513%;
 }
 @media only screen and (min-width: 1600px) {
   .cover .hero.constrain {
@@ -1225,6 +1255,7 @@ a.button {
   backdrop-filter: blur(12.5px);
   z-index: 1;
   position: relative;
+  max-width: 750px;
 }
 .power-packs h3 {
   font-weight: 300;
@@ -1232,7 +1263,7 @@ a.button {
   margin: 0;
 }
 .power-packs p {
-  font-size: var(--type-sm);
+  font-size: var(--type-base);
   margin-top: 0;
 }
 .power-packs ul {
@@ -1251,7 +1282,7 @@ a.button {
     font-size: var(--type-md);
   }
 }
-.power-packs a {
+.power-packs a:not(.button) {
   color: var(--color-hilite);
   text-decoration-color: currentColor;
 }
@@ -1265,8 +1296,9 @@ a.button {
 }
 @media only screen and (min-width: 1024px) {
   .power-packs {
-    grid-column: 2;
     padding: calc(var(--grid-unit) * 4) calc(var(--grid-unit) * 4) calc(var(--grid-unit) * 8);
+    width: 50%;
+    margin: 0 auto;
   }
   .power-packs header {
     display: flex;
@@ -1605,6 +1637,10 @@ figure.synthwave:hover img {
     top: 20vh;
   }
 }
+.panel.about h2 {
+  font-weight: 700;
+  font-size: var(--type-lg);
+}
 .panel.about aside {
   display: flex;
   flex-wrap: wrap;
@@ -1640,43 +1676,46 @@ figure.synthwave:hover img {
 .panel.services ul {
   max-width: none;
   columns: 2;
-  column-gap: 5.5vw;
+  column-gap: 2.5vw;
   font-size: var(--type-sm);
+  margin-block: 2rem;
 }
 .panel.services ul li {
   margin-bottom: 1rem;
 }
 @media only screen and (min-width: 768px) {
   .panel.services .panel--grid {
-    gap: calc(var(--grid-unit) * 5);
+    column-gap: calc(var(--grid-unit) * 5);
+    row-gap: 0;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-auto-rows: max-content auto;
+    align-content: start;
   }
   .panel.services header {
+    grid-column: 1;
     grid-row: 1;
-    grid-column: 1/end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: stretch;
   }
   .panel.services header h2 {
     margin: 0;
   }
   .panel.services .work-list {
+    grid-row: 2;
+    grid-column: 1;
     position: relative;
     top: unset;
-    grid-row: 2;
-    grid-column: 1/end;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-    justify-items: start;
-    gap: 0 5vw;
   }
   .panel.services .work-list p,
   .panel.services .work-list .button {
-    grid-column: 1;
     margin: 0;
   }
-  .panel.services .work-list ul {
-    grid-column: 2;
+  .panel.services section {
     grid-row: 1/span 2;
-    align-items: start;
+    grid-column: 2;
   }
 }
 .panel.company {
@@ -2395,6 +2434,9 @@ figure.synthwave:hover img {
     flex-direction: row;
     gap: calc(var(--grid-unit) * 6);
   }
+}
+#site-nav li::marker {
+  content: "";
 }
 
 .nav-bg {
@@ -3266,7 +3308,7 @@ form.heht-subscribe.error:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+  padding-block: 2em;
 }
 @media (min-width: 1024px) {
   .layout-speedyu main {
@@ -3286,8 +3328,9 @@ form.heht-subscribe.error:before {
 .turbo {
   border: 2px solid rgba(255, 255, 255, 0.9);
   background: var(--bg, #F6F3ED);
+  color: var(--color-black);
   box-shadow: 0px 0px 55px -4px rgba(21, 6, 54, 0.4), 0px 0px 9px 0px rgba(21, 6, 54, 0.2), 0px 0px 16px 0px rgba(21, 6, 54, 0.3);
-  max-width: 95%;
+  max-width: 100%;
   width: 460px;
   height: 750px;
   text-transform: uppercase;
@@ -3295,6 +3338,8 @@ form.heht-subscribe.error:before {
   flex-direction: column;
   justify-content: space-between;
   padding-block-end: 16px;
+  position: relative;
+  z-index: 1;
 }
 .turbo h2 {
   margin-block-start: 0;

@@ -31,6 +31,10 @@
 	}
 	// Sections
 	&.about {
+		h2 {
+			font-weight: 700;
+			font-size: var(--type-lg);
+		}
 		aside {
 			display: flex;
 			flex-wrap: wrap;
@@ -64,43 +68,46 @@
 		ul {
 			max-width: none;
 			columns: 2;
-			column-gap: 5.5vw;
+			column-gap: 2.5vw;
 			font-size: var(--type-sm);
+			margin-block: 2rem;
 			li {
 				margin-bottom: 1rem;
 			}
 		}
 		@include mq(sm) {
 			.panel--grid {
-				gap: calc(var(--grid-unit) * 5);
+				column-gap: calc(var(--grid-unit) * 5);
+				row-gap: 0;
+				display: grid;
+				grid-template-columns: 6fr 4fr;
+				grid-auto-rows: max-content auto;
+				align-content: start;
 			}
 			header {
+				grid-column: 1;
 				grid-row: 1;
-				grid-column: 1 / end;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				align-self: stretch;
 				h2 {
 					margin: 0;
 				}
 			}
 			.work-list {
+				grid-row: 2;
+				grid-column: 1;
 				position: relative;
 				top: unset;
-				grid-row: 2;
-				grid-column: 1 / end;
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				align-items: start;
-				justify-items: start;
-				gap: 0 5vw;
 				p,
 				.button {
-					grid-column: 1;
 					margin: 0;
 				}
-				ul {
-					grid-column: 2;
-					grid-row: 1 / span 2;
-					align-items: start;
-				}
+			}
+			section {
+				grid-row: 1 / span 2;
+				grid-column: 2;
 			}
 		}
 	}

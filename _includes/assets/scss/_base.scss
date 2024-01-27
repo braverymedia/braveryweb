@@ -129,6 +129,7 @@ figure {
 		color: var(--color-white);
 		position: relative;
 		width: auto;
+		display: inline-block;
 		&:after {
 			background: var(--gradient--shout);
 			content: "";
@@ -143,8 +144,26 @@ figure {
 		}
 	}
 
+	.legal a {
+		&:after {
+			background: var(--gradient--shout);
+			content: "";
+			display: block;
+			transition: width 300ms ease;
+			height: 1px;
+			width: 100%;
+		}
+		&:hover:after {
+			width: 0%;
+		}
+	}
+	.legal-links {
+		display: flex;
+		gap: calc(var(--grid-unit) * 2);
+	}
+
 	nav {
-		margin-top: calc(var(--grid-unit) * 8);
+		margin-block-start: calc(var(--grid-unit) * 8);
 
 		a {
 			text-decoration: none;

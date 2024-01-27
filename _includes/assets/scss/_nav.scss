@@ -150,6 +150,9 @@
 			gap: calc(var(--grid-unit) * 6);
 		}
 	}
+	li::marker {
+		content: "";
+	}
 }
 .nav-bg {
 	background: rgba(15, 10, 36, 0.95);

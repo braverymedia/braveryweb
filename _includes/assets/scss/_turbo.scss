@@ -14,7 +14,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 2rem 0;
+            padding-block: 2em;
         }
         @media (min-width: 1024px) {
             display: grid;
@@ -35,8 +35,9 @@
 .turbo {
     border: 2px solid rgba(255, 255, 255, 0.90);
     background: var(--bg, #F6F3ED);
+    color: var(--color-black);
     box-shadow: 0px 0px 55px -4px rgba(21, 6, 54, 0.40), 0px 0px 9px 0px rgba(21, 6, 54, 0.20), 0px 0px 16px 0px rgba(21, 6, 54, 0.30);
-    max-width: 95%;
+    max-width: 100%;
     width: 460px;
     height: 750px;
     text-transform: uppercase;
@@ -44,6 +45,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding-block-end: 16px;
+    position: relative;
+    z-index: 1;
     h2 {
         margin-block-start: 0;
     }
