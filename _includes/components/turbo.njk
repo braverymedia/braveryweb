@@ -1,0 +1,33 @@
+<section>
+    <div class="turbo">
+        <h2>{% include "assets/img/turbo-logo.svg" %}</h2>
+        <div class="decoration">
+            {% include "assets/img/vhs.svg" %}
+            <span>HiFi</span>
+            <span>Stereo</span>
+        </div>
+        <hr class="rainbow" />
+        <article>
+            <h3>Ideal for:</h3>
+            <p>BOARD PRESENTATIONS, BUDGET PLANNING, RESOURCE ALLOTMENT, WEBSITE STRATEGY</p>
+            <span class="price">$1,500</span>
+        </article>
+        <footer>
+            <div class="time"><span>7</span>Day Results</div>
+            <a href="{{ metadata.turbolink }}" class="button bright">Get Started</a>
+        </footer>
+    </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "SpeedyU Turbo",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "price": "1500.00",
+    "priceCurrency": "USD"
+  },
+}
+</script>
