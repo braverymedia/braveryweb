@@ -1,8 +1,6 @@
-@import "helpers";
-
 @font-face {
 	font-family: NameSansVF;
-	src: url("https://f002.backblazeb2.com/file/bravery/webfont/Name_Sans_Variable-subset.woff2")
+	src: url("https://bravery.b-cdn.net/AT-NameSansVariable-Upright-subset.woff2")
 		format("woff2-variations");
 	font-weight: 1 1000;
 	font-display: swap;
@@ -10,19 +8,23 @@
 }
 @font-face {
 	font-family: NameSansVF;
-	src: url("https://f002.backblazeb2.com/file/bravery/webfont/name_sans_italic-variable-subset-0.7.woff2")
+	src: url("https://bravery.b-cdn.net/AT-NameSansVariable-Italic-subset.woff2")
 		format("woff2-variations");
 	font-display: swap;
 	font-weight: 1 1000;
 	font-style: italic;
 }
-
+@font-face {
+	font-family: 'Arial Adjusted';
+	src: local(Arial);
+	size-adjust: 93%;
+}
 @font-face {
 	font-family: EightiesComeback;
 	font-display: swap;
 	font-weight: 500;
 	font-stretch: condensed;
-	src: url("https://bravery.s3.us-west-002.backblazeb2.com/webfont/EightiesComeback-MedCond-subset.woff2");
+	src: url("https://bravery.b-cdn.net/EightiesComeback-MedCond-subset.woff2");
 }
 
 @font-face {
@@ -30,8 +32,13 @@
 	font-display: swap;
 	font-weight: 200;
 	font-stretch: condensed;
-	src: url("https://bravery.s3.us-west-002.backblazeb2.com/webfont/EightiesComeback-LtXCn-subset.woff2");
+	src: url("https://bravery.b-cdn.net/EightiesComeback-LtXCn-subset.woff2");
 }
+
+body {
+	font-family: NameSansVF, 'Arial Adjusted';
+}
+@import "helpers";
 
 // CSS Variables
 :root {
@@ -64,7 +71,7 @@
 	--font-weight-normal: 400;
 	--font-weight-md: 500;
 	--font-weight-bold: 700;
-	--feature-simple-y: "ss08";
+	--feature-simple-y: "ss12";
 
 	--global-transition: all 0.3s ease-in-out;
 
