@@ -1126,7 +1126,7 @@ a.button {
   max-width: 1330px;
   margin-left: auto;
   margin-right: auto;
-  font-size: clamp(2.375rem, 0.331rem + 8.721vi, 9.25rem);
+  font-size: clamp(2.375rem, 0.331rem + 8.721vi, 8.06rem);
   line-height: 95.513%;
 }
 @media only screen and (min-width: 1600px) {
@@ -3342,23 +3342,32 @@ form.heht-subscribe.error:before {
   max-width: 100%;
   width: 460px;
   height: 750px;
-  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-block-end: 16px;
   position: relative;
   z-index: 1;
+  padding-block: 56px 16px;
 }
 .turbo h2 {
-  margin-block-start: 0;
+  color: var(--color-black);
+  font-size: 52px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -1.04px;
+  margin: 0;
 }
-.turbo h2 svg {
-  height: 83px;
-  flex-shrink: 0;
-  margin: calc(var(--grid-unit) * 4) calc(var(--grid-unit) * 2);
+.turbo header {
+  padding-inline: calc(var(--grid-unit) * 2);
+  padding-block-end: 80px;
 }
-.turbo .decoration {
+.turbo header > p {
+  margin: 0;
+  font-size: var(--type-sm);
+  line-height: 1;
+  max-width: 250px;
+}
+.turbo .badges {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -3366,7 +3375,7 @@ form.heht-subscribe.error:before {
   font-weight: 500;
   margin-inline: calc(var(--grid-unit) * 2);
 }
-.turbo .decoration svg {
+.turbo .badges svg {
   height: 22px;
 }
 .turbo hr {
@@ -3378,6 +3387,8 @@ form.heht-subscribe.error:before {
   font-size: 16px;
   font-weight: 700;
   padding-inline: calc(var(--grid-unit) * 2);
+  position: static !important;
+  text-transform: uppercase;
 }
 .turbo article h3 {
   font-style: italic;
@@ -3391,7 +3402,7 @@ form.heht-subscribe.error:before {
 .turbo article .price {
   font-variant-numeric: oldstyle-nums proportional-nums;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 900;
   line-height: normal;
 }
 .turbo footer {
@@ -3399,6 +3410,7 @@ form.heht-subscribe.error:before {
   flex-direction: column;
   gap: calc(var(--grid-unit) * 2);
   padding-inline: calc(var(--grid-unit) * 2);
+  text-transform: uppercase;
 }
 .turbo footer .time {
   display: flex;

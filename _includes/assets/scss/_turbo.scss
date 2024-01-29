@@ -40,22 +40,31 @@
     max-width: 100%;
     width: 460px;
     height: 750px;
-    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-block-end: 16px;
     position: relative;
     z-index: 1;
+    padding-block: 56px 16px;
     h2 {
-        margin-block-start: 0;
+        color: var(--color-black);
+        font-size: 52px;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: -1.04px;
+        margin: 0;
     }
-    h2 svg {
-        height: 83px;
-        flex-shrink: 0;
-        margin: calc( var(--grid-unit) * 4) calc( var(--grid-unit) * 2);
+    header {
+        padding-inline: calc(var(--grid-unit) * 2 );
+        padding-block-end: 80px;
+        > p {
+            margin: 0;
+            font-size: var(--type-sm);
+            line-height: 1;
+            max-width: 250px;
+        }
     }
-    .decoration {
+    .badges {
         display: flex;
         gap: 16px;
         align-items: center;
@@ -76,6 +85,7 @@
         font-weight: 700;
         padding-inline:calc( var(--grid-unit) * 2);
         position: static !important;
+        text-transform: uppercase;
         h3 {
             font-style: italic;
             font-size: inherit;
@@ -88,7 +98,7 @@
         .price {
             font-variant-numeric: oldstyle-nums proportional-nums;
             font-size: 48px;
-            font-weight: 600;
+            font-weight: 900;
             line-height: normal;
         }
     }
@@ -97,6 +107,7 @@
         flex-direction: column;
         gap: calc( var(--grid-unit) * 2);
         padding-inline:calc( var(--grid-unit) * 2);
+        text-transform: uppercase;
         .time {
             display: flex;
             align-items: baseline;
