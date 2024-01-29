@@ -21,7 +21,7 @@ summary: >-
   designing a new university website.
 
 
-  S﻿ubscribe to [Higher Ed Hot Takes](https://bravery.co/newsletter/) / Get your [Benchmark Web Performance](https://bravery.co/benchmark/) report[SpeedyU Turbo](https://bravery.co/speedyu-turbo/)
+  S﻿ubscribe to [Higher Ed Hot Takes](https://bravery.co/newsletter/) / Get your [Benchmark Web Performance](https://bravery.co/benchmark/) report[](https://bravery.co/speedyu-turbo/)
 ---
 **Joel Goodman**
 From Bravery Media, this is Appendix B. I’m Joel Goodman. Kristin Van Dorn is with me in the video studio from afar. Hi, Kristin. Great to see you. 
