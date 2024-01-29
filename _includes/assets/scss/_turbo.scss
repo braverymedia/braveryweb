@@ -45,7 +45,7 @@
     justify-content: space-between;
     position: relative;
     z-index: 1;
-    padding-block: 56px 16px;
+    padding-block: 24px 16px;
     h2 {
         color: var(--color-black);
         font-size: 52px;
@@ -56,12 +56,18 @@
     }
     header {
         padding-inline: calc(var(--grid-unit) * 2 );
-        padding-block-end: 80px;
+        padding-block-end: 40px;
         > p {
             margin: 0;
             font-size: var(--type-sm);
             line-height: 1;
             max-width: 250px;
+        }
+    }
+    @media (min-width: 1024px) {
+        padding-block-start: 56px;
+        header {
+            padding-block-end: 80px;
         }
     }
     .badges {

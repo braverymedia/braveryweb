@@ -3347,7 +3347,7 @@ form.heht-subscribe.error:before {
   justify-content: space-between;
   position: relative;
   z-index: 1;
-  padding-block: 56px 16px;
+  padding-block: 24px 16px;
 }
 .turbo h2 {
   color: var(--color-black);
@@ -3359,13 +3359,21 @@ form.heht-subscribe.error:before {
 }
 .turbo header {
   padding-inline: calc(var(--grid-unit) * 2);
-  padding-block-end: 80px;
+  padding-block-end: 40px;
 }
 .turbo header > p {
   margin: 0;
   font-size: var(--type-sm);
   line-height: 1;
   max-width: 250px;
+}
+@media (min-width: 1024px) {
+  .turbo {
+    padding-block-start: 56px;
+  }
+  .turbo header {
+    padding-block-end: 80px;
+  }
 }
 .turbo .badges {
   display: flex;
