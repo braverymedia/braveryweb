@@ -521,9 +521,8 @@ main ul li::marker {
 }
 [class^=layout-single] .article--content blockquote,
 .layout-jobs .article--content blockquote {
-  margin: calc(var(--grid-unit) * 4) auto;
-  padding-right: 2.5vh;
-  padding-left: 2.5vh;
+  padding-block: calc(var(--grid-unit) * 4);
+  padding-inline: 2.5vh;
 }
 [class^=layout-single] .article--content blockquote p,
 .layout-jobs .article--content blockquote p {
@@ -536,16 +535,14 @@ main ul li::marker {
   text-fill-color: unset;
   margin-top: calc(var(--grid-unit) * 2);
   font-size: var(--type-sm);
-  padding-right: 2.5vh;
-  padding-left: 2.5vh;
+  padding-inline: 2.5vh;
 }
 @media only screen and (min-width: 1024px) {
   [class^=layout-single] .article--content blockquote,
   [class^=layout-single] .article--content blockquote + cite,
   .layout-jobs .article--content blockquote,
   .layout-jobs .article--content blockquote + cite {
-    padding-right: 5vh;
-    padding-left: 5vh;
+    padding-inline: 5vh;
   }
 }
 [class^=layout-single] h2,
@@ -601,6 +598,10 @@ main ul li::marker {
   background-clip: text;
   text-fill-color: transparent;
   animation: gradientMove 25s linear infinite;
+}
+
+.callout blockquote > p {
+  background-image: var(--gradient--neon);
 }
 
 .neon {

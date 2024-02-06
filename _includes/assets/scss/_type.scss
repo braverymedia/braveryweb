@@ -251,9 +251,8 @@ main ul {
 			}
 		}
 		blockquote {
-			margin: calc(var(--grid-unit) * 4) auto;
-			padding-right: 2.5vh;
-			padding-left: 2.5vh;
+			padding-block: calc(var(--grid-unit) * 4);
+			padding-inline: 2.5vh;
 			p {
 				font-size: var(--type-base);
 			}
@@ -264,14 +263,12 @@ main ul {
 			text-fill-color: unset;
 			margin-top: calc(var(--grid-unit) * 2);
 			font-size: var(--type-sm);
-			padding-right: 2.5vh;
-			padding-left: 2.5vh;
+			padding-inline: 2.5vh;
 		}
 		@include mq(md) {
 			blockquote,
 			blockquote + cite {
-				padding-right: 5vh;
-				padding-left: 5vh;
+				padding-inline: 5vh;
 			}
 		}
 	}
@@ -326,6 +323,9 @@ main ul {
 	background-clip: text;
 	text-fill-color: transparent;
 	animation: gradientMove 25s linear infinite;
+}
+.callout blockquote > p {
+	background-image: var(--gradient--neon);
 }
 .neon {
 	color: var(--color-hilite);
