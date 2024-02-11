@@ -5,8 +5,8 @@ description: Web design projects in higher education should never start before
   reasons why in this podcast episode.
 episode: 46
 slug: /046-design-follows-content/
-date: 2024-02-11T22:04:03.903Z
-record_date: 2024-02-11T22:04:03.916Z
+date: 2024-02-12T22:04:03.903Z
+record_date: 2024-02-08T22:04:03.916Z
 cover:
   image: ep046-art_xtnvhq.jpg
   alt: Text reads Appendix B - Design Follows Content
