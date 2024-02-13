@@ -119,12 +119,13 @@ body {
   --grid-unit: 8px;
   --type-mega: clamp(2.5rem, calc(1.125em + 8.15vw), 6.598rem);
   --type-super: clamp(2.25rem, calc(1.125em + 4.15vw), 5.398rem);
-  --type-xl: clamp(2.5rem, calc(1.125rem + 3.3vw), 4rem);
-  --type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 3rem);
-  --type-md: clamp(1.333rem, calc(1.125rem + 2vw), 1.85rem);
-  --type-base: clamp(1.125rem, calc(1.125rem + 5vw), 1.35rem);
-  --type-sm: clamp(0.75rem, calc(1rem + 2vw), 1rem);
-  --type-xs: clamp(0.563rem, calc(1.125rem + 2vw), 0.5rem);
+  --type-2xl: clamp(1.802rem, 0.7275rem + 4.4084vi, 4.144rem);
+  --type-xl: clamp(1.6018rem, 0.9104rem + 2.8367vi, 3.1088rem);
+  --type-lg: clamp(1.4238rem, 1.0071rem + 1.7098vi, 2.3322rem);
+  --type-md: clamp(1.2656rem, 1.0436rem + 0.9109vi, 1.7496rem);
+  --type-base: clamp(1.125rem, 1.039rem + 0.3529vi, 1.3125rem);
+  --type-sm: clamp(0.9846rem, 1.0071rem + -0.0289vi, 1rem);
+  --type-xs: clamp(0.7387rem, 0.9578rem + -0.2828vi, 0.8889rem);
   --font-weight-normal: 400;
   --font-weight-md: 500;
   --font-weight-bold: 700;
@@ -274,17 +275,10 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: normal;
-  line-height: 1.1;
+  font-weight: 650;
+  line-height: 1.05;
   font-variation-settings: "opsz" 96;
-  font-weight: 275;
-}
-h1 > span,
-h2 > span,
-h3 > span,
-h4 > span,
-h5 > span {
-  font-feature-settings: var(--feature-simple-y);
+  letter-spacing: 0.03em;
 }
 
 h1 {
@@ -302,10 +296,6 @@ h2 {
   margin-block-start: calc(var(--grid-unit) * 5);
 }
 h2 .loud {
-  font-weight: 700;
-}
-.layout-services h2 {
-  font-size: var(--type-lg);
   font-weight: 700;
 }
 
@@ -1556,10 +1546,8 @@ section.university-insight .logo--ui {
   line-height: 1.2;
 }
 .next-service h2 {
-  font-weight: 700;
   margin-bottom: 0;
   line-height: 1;
-  font-size: var(--type-xl);
 }
 .next-service .level {
   margin-top: calc(var(--grid-unit) * 4);
@@ -1646,10 +1634,6 @@ figure.synthwave:hover img {
     position: sticky;
     top: 20vh;
   }
-}
-.panel.about h2 {
-  font-weight: 700;
-  font-size: var(--type-lg);
 }
 .panel.about aside {
   display: flex;
@@ -2162,10 +2146,6 @@ figure.synthwave:hover img {
   color: var(--color-white);
   padding-top: calc(var(--grid-unit) * 20);
   position: relative;
-}
-.layout-services .services h2, #needs h2 {
-  font-size: var(--type-lg);
-  font-weight: 700;
 }
 .layout-services .services .intro, #needs .intro {
   padding-bottom: calc(var(--grid-unit) * 12);
@@ -3310,11 +3290,13 @@ form.heht-subscribe.error:before {
 }
 .layout-speedyu main .details {
   padding-inline: calc(var(--grid-unit) * 2);
-  padding-block: calc(var(--grid-unit) * 12) 0;
+  padding-block: calc(var(--grid-unit) * 12);
 }
 .layout-speedyu main > section {
   background: linear-gradient(180deg, rgba(255, 182, 83, 0) 51.18%, rgba(255, 199, 0, 0.22) 77%, rgba(255, 0, 199, 0.23) 87.24%, rgba(107, 77, 224, 0.28) 97.5%), radial-gradient(151.73% 104% at 49.1% 67.96%, rgba(255, 0, 108, 0.8) 0%, rgba(255, 0, 108, 0) 69.03%), #150636;
-  height: 100%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3324,11 +3306,17 @@ form.heht-subscribe.error:before {
   .layout-speedyu main {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    align-items: center;
+    align-items: start;
   }
   .layout-speedyu main .details {
     padding-inline: calc(var(--grid-unit) * 10);
   }
+}
+.layout-speedyu main .rfi-form {
+  width: 85%;
+}
+.layout-speedyu main .rfi-form label {
+  color: var(--color-white);
 }
 .layout-speedyu .button {
   border-radius: 4px;

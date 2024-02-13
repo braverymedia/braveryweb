@@ -61,12 +61,13 @@ body {
 
 	--type-mega: clamp(2.5rem, calc(1.125em + 8.15vw), 6.598rem);
 	--type-super: clamp(2.25rem, calc(1.125em + 4.15vw), 5.398rem);
-	--type-xl: clamp(2.5rem, calc(1.125rem + 3.3vw), 4rem);
-	--type-lg: clamp(1.777rem, calc(1.125rem + 5vw), 3rem);
-	--type-md: clamp(1.333rem, calc(1.125rem + 2vw), 1.85rem);
-	--type-base: clamp(1.125rem, calc(1.125rem + 5vw), 1.35rem);
-	--type-sm: clamp(0.75rem, calc(1rem + 2vw), 1rem);
-	--type-xs: clamp(0.563rem, calc(1.125rem + 2vw), 0.5rem);
+	--type-2xl: clamp(1.802rem, 0.7275rem + 4.4084vi, 4.144rem);
+	--type-xl: clamp(1.6018rem, 0.9104rem + 2.8367vi, 3.1088rem);
+	--type-lg: clamp(1.4238rem, 1.0071rem + 1.7098vi, 2.3322rem);
+	--type-md: clamp(1.2656rem, 1.0436rem + 0.9109vi, 1.7496rem);
+	--type-base: clamp(1.125rem, 1.039rem + 0.3529vi, 1.3125rem);
+	--type-sm: clamp(0.9846rem, 1.0071rem + -0.0289vi, 1rem);
+	--type-xs: clamp(0.7387rem, 0.9578rem + -0.2828vi, 0.8889rem);
 
 	--font-weight-normal: 400;
 	--font-weight-md: 500;

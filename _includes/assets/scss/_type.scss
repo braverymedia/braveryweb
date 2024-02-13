@@ -9,13 +9,10 @@ h2,
 h3,
 h4,
 h5 {
-	font-weight: normal;
-	line-height: 1.1;
+	font-weight: 650;
+	line-height: 1.05;
 	font-variation-settings: "opsz" 96;
-	font-weight: 275;
-	> span {
-		font-feature-settings: var(--feature-simple-y);
-	}
+	letter-spacing: 0.03em;
 }
 
 h1 {
@@ -32,10 +29,6 @@ h2 {
 	font-size: var(--type-xl);
 	margin-block-start: calc(var(--grid-unit) * 5);
 	.loud {
-		font-weight: 700;
-	}
-	.layout-services & {
-		font-size: var(--type-lg);
 		font-weight: 700;
 	}
 }

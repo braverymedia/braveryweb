@@ -31,10 +31,6 @@
 	}
 	// Sections
 	&.about {
-		h2 {
-			font-weight: 700;
-			font-size: var(--type-lg);
-		}
 		aside {
 			display: flex;
 			flex-wrap: wrap;
@@ -542,10 +538,6 @@
 	color: var(--color-white);
 	padding-top: calc(var(--grid-unit) * 20);
 	position: relative;
-	h2 {
-		font-size: var(--type-lg);
-		font-weight: 700;
-	}
 	.intro {
 		padding-bottom: calc(var(--grid-unit) * 12);
 		p {
