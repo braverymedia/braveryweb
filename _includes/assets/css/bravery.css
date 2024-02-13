@@ -275,10 +275,9 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 650;
+  font-weight: 700;
   line-height: 1.05;
   font-variation-settings: "opsz" 96;
-  letter-spacing: 0.03em;
 }
 
 h1 {
@@ -291,18 +290,18 @@ h1.mega {
   text-transform: uppercase;
 }
 
+.super {
+  font-size: var(--type-super);
+}
+
 h2 {
   font-size: var(--type-xl);
   margin-block-start: calc(var(--grid-unit) * 5);
-}
-h2 .loud {
-  font-weight: 700;
 }
 
 h3 {
   font-size: var(--type-md);
   margin-top: 1.5rem;
-  font-weight: 800;
 }
 
 p {
