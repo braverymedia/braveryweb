@@ -15,6 +15,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
 	eleventyConfig.addLayoutAlias("episode", "layouts/episode.njk");
 	eleventyConfig.addLayoutAlias("issue", "layouts/issue.njk");
+	eleventyConfig.addLayoutAlias("case-study", "layouts/case-study.njk");
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(readingTime);
 	eleventyConfig.addPlugin(embedEverything);
@@ -180,6 +181,12 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
+	eleventyConfig.addCollection("case-studies", function (collection) {
+		return collection.getAllSorted().filter(function (item) {
+			return item.inputPath.match(/^\.\/case-studies\//) !== null;
+		});
+	});
+
 	eleventyConfig.setServerOptions({
 		// Default values are shown:
 
@@ -273,7 +280,7 @@ module.exports = function (eleventyConfig) {
 	return {
 		templateFormats: ["md", "njk", "html"],
 		pathPrefix: "/",
-		markdownTemplateEngine: "liquid",
+		markdownTemplateEngine: "njk",
 		htmlTemplateEngine: "njk",
 		dataTemplateEngine: "njk",
 		passthroughFileCopy: true,

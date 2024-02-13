@@ -1,0 +1,6 @@
+<figure data-layout="{%- if layout -%}{{- layout -}}{%- else -%}normal{%- endif -%}">
+    <img
+        srcset="{% srcset image %}"
+        data-src="{% src image %}"
+        alt="{{ alt }}" loading="lazy" width="427" height="596">
+</figure>

@@ -370,7 +370,7 @@
 	}
 }
 
-.layout-single {
+.layout-single{
 	body {
 		background-color: var(--color-white);
 	}
@@ -464,6 +464,39 @@
 			display: block;
 			font-size: var(--type-sm);
 			margin-top: -5vh;
+		}
+	}
+}
+.layout-single-cs {
+	--max: 750px;
+	body {
+		background-color: var(--color-white);
+	}
+	main {
+		padding: 80px calc(var(--grid-unit) * 2) 5vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		> * {
+			width: 100%;
+			max-width: var(--max);
+		}
+
+	}
+	@include mq(sm) {
+		main {
+			padding: 90px 10vw 5vh;
+		}
+	}
+	@include mq(md) {
+		main {
+			padding: calc( var(--grid-unit) * 25) 10vw 5vh;
+		}
+		figure[data-layout="wide"] {
+			width: calc( var(--max) + 20vw );
+			max-width: 100vw;
+			margin-inline: -10vw;
+			margin-block: calc(var(--grid-unit) * 10);
 		}
 	}
 }

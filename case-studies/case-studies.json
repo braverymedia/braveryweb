@@ -1,0 +1,7 @@
+{
+	"layout": "layouts/case-study.njk",
+	"permalink": "insight/case-study/{%- if slug -%}{{- slug -}}{%- else -%}{{- title | slugify-}}{%- endif -%}/",
+	"tags": "case-study",
+	"title": "{- title -} Case Study",
+	"heading": "Case Study"
+}
