@@ -14,9 +14,6 @@ og:
     alt:
 ---
 
-
-
-
 **Client:** University of Saint Francis, Fort Wayne, IN
 **Project Year:** 2020-2023
 **Objective:** A complete website overhaul, starting with research and content strategy.
@@ -35,7 +32,6 @@ Bravery conducted user experience and market research studies before and through
 {% set layout = 'wide' %}
 {% set alt = "Desktop and mobile screenshots of the Univeristy of Saint Francis homepage and program finder." %}
 {% include "components/image.njk" %}
-
 
 ## The Strategy
 
