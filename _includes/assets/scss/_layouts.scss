@@ -684,3 +684,31 @@
 #bravery-cal-inline{
 	width: 100%;
 }
+
+.mini-inquiry {
+	background-color: var(--color-black);
+    background-image: linear-gradient(158deg, rgba(43, 132, 144, 0.20) 39.26%, rgba(79, 187, 227, 0.00) 81.5%);
+    color: var(--color-white);
+	border-radius: 24px;
+	padding: calc(var(--grid-unit) * 5) calc(var(--grid-unit) * 4);
+	margin-block: calc(var(--grid-unit) * 5);
+	h2 {
+		font-weight: 800;
+		margin-block-start: 0;
+		font-size: var(--type-lg);
+	}
+	.button {
+		margin-bottom: 0;
+	}
+	@media ( min-width: 1024px ) {
+		display: flex;
+		align-items: flex-end;
+		gap: calc(var(--grid-unit) * 6);
+		article {
+			flex: 1 70%
+		}
+		.button {
+			flex: 0 1 200px;
+		}
+	}
+}
