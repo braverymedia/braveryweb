@@ -1,21 +1,20 @@
 ---
 title: LMU Future Lions
-description: What higher ed web strategy needs is a little more courage and a lot more action.
+description: Bravery x LMU. Reducing melt through research and human-centered design.
 topics:
     - "Product Design"
     - "Digital Strategy"
     - "Melt Reduction"
     - "Web Technology"
     - "WordPress"
-excerpt: What higher ed web strategy needs is a little more courage and a lot more action.
+excerpt: Bravery x LMU. Reducing melt through research and human-centered design.
 og:
     image:
     alt:
 ---
 
 **Client:** Loyola Marymount University (LMU), Los Angeles
-**Agency:** Bravery Media
-**Project Duration:** 2018
+**Project Year:** 2018
 **Objective:** Reducing melt by reimagining the registration and engagement processes for accepted students.
 
 ## The Challenge
