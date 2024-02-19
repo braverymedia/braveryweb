@@ -294,11 +294,15 @@ main ul {
 	}
 }
 .callout {
+	> p {
+		padding-inline: 5vh;
+		margin-block-start: 0;
+	}
 	blockquote > p {
 		margin: 0;
-		line-height: 1.1;
+		line-height: 1.3;
 		@include mq(sm) {
-			font-size: calc(var(--type-lg) * 0.8);
+			font-size: calc(var(--type-lg) * 0.9);
 		}
 	}
 }

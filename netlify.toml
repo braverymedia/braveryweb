@@ -28,6 +28,11 @@ from= "/services/level-up/"
 to = "https://bravery.co/services/web-aor/"
 status = 301
 
+[[redirects]]
+from= "/speedyu-turbo/"
+to = "https://bravery.co/benchmark/"
+status = 302
+
 [[headers]]
 for = "/*"
 
