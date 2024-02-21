@@ -3,20 +3,15 @@
 	"sitename": "Bravery Media",
 	"url": "https://bravery.co/",
 	"description": "Bravery Media is a world-class higher education digital strategy and design agency. Lead with Bravery.",
-	"social": {
-		"tw": {
-			"title": "Bravery Media",
-			"description": "Bravery provides world-class digital strategy + design services to the global higher education sector.",
-			"image": "https://bravery.co/assets/img/bravery-tw.png",
-			"creator": "@joelgoodman",
-			"site": "@braverymedia"
-		},
-		"fb": {
-			"title": "Bravery Media",
-			"description": "Bravery provides world-class digital strategy + design services to the global higher education sector.",
-			"image": "https://bravery.co/assets/img/bravery-fb_alt.png",
-			"app_id": "223526698653700"
-		}
+	"og": {
+		"title": "Bravery Media",
+		"description": "Bravery provides world-class digital strategy + design services to the global higher education sector.",
+		"url": "https://bravery.co/",
+		"image": "https://bravery.co/assets/img/bravery-fb_alt.png",
+		"type": "website",
+		"creator": "@braverymedia",
+		"author": "Joel Goodman",
+		"app_id": "223526698653700"
 	},
 	"feed": {
 		"subtitle": "Bravery Media is a world-class higher education digital strategy and design agency. Lead with Bravery.",

@@ -8,8 +8,9 @@ topics:
     - "Web Technology"
 excerpt: Bravery designed and built custom dental program finders for ADEA's three major central application systems and their member dental schools.
 og:
-    image:
-    alt:
+    image: https://bravery.co/assets/img/og-case-study-adea.jpg
+    alt: "Screenshot of a phone with the ADEA program finder loaded. Text reads Bravery Case Study. Adea Program Finders"
+    title: "Bravery Case Study: ADEA Program Finders"
 ---
 
 **Client:** American Dental Education Association (ADEA), Washington, DC

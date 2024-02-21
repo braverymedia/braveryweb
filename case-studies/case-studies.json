@@ -3,5 +3,8 @@
 	"permalink": "insight/case-study/{%- if slug -%}{{- slug -}}{%- else -%}{{- title | slugify-}}{%- endif -%}/",
 	"tags": "case-study",
 	"title": "{- title -} Case Study",
-	"heading": "Case Study"
+	"heading": "Case Study",
+	"og": {
+		"type": "article"
+	}
 }
