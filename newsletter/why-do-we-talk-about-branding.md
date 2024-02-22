@@ -7,8 +7,7 @@ issue: 55
 date: 2024-02-21T13:51:14.809Z
 cover:
   image: heht/mj-strategic-ambiguity.jpg
-  alt: Michael Bluth telling his sister, You're gonna get some hop ons. From
-    Arrested Development
+  alt: A Midjourney-generated illustration of a person looking into swirling world of ambiguous business and marketing shapes and artifacts.
 ---
 Since the pandemic, many institutions have been in a state of anxiety. Is a recession on its way or not? Is the enrollment cliff hitting? How are changing narratives about the value of education impacting enrollment?
 
