@@ -6,14 +6,11 @@ issue: 20
 date: 2023-01-24
 cover:
   image: heht/HEHT-20-web-marketing-is-underfunded_petu9d.png
-  alt: White text that says "why is your web marketing underfunded?" on a gradient
-    background.
+  alt: 'White text that reads "why is your web marketing underfunded?" A transparent image of Joel Goodman is also here on a gradient background.'
 ---
 
 Higher Ed Web Marketing is Underfunded
 ======================================
-
-![White text that says "why is your web marketing underfunded?" A transparent image of Joel Goodman is also here on a gradient background.](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/bdb7b328-c257-421c-93e6-00f963e21306.jpg)
 
 _Editor’s Note: Have you subscribed to_ [_Bravery Media’s YouTube Channel_](https://youtube.com/@BraveryMedia) _yet? We’re sharing our Hot Takes in video form, and we’re really proud of them! You can learn_ [_how to avoid website uselessness_](https://www.youtube.com/watch?v=YtdB_Z0CX8w) _and about the time_ [_when social media was still “social.”_](https://www.youtube.com/watch?v=H7C8PQWzOTA)
 

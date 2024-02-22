@@ -12,8 +12,6 @@ cover:
 A Self-Proclaimed Chaos Muppet Writes a Chaotic Hot Take About Procedural Fetishism
 ===================================================================================
 
-![The muppet, Animal, set against a metallic ripple of blue, purple, and pink.](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/6cf4976c-b3a0-445c-9f32-324ed15b3e20.png)
-
 Have you heard of the Muppet Theory:
 
 > _A little-known, poorly understood philosophy that holds that every living human can be classified according to one simple metric: We’re either a Chaos Muppet or an Order Muppet_.

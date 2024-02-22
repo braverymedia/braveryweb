@@ -10,8 +10,6 @@ cover:
 
 ## How I learned to stop worrying and love the ambiguity
 
-![A 3d triangle pattern with multiple blue and pink colors, that is ambiguous in its meaning. ](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/9515f3af-0749-4bfa-9293-f2ec6348d8f9.png)
-
 In a previous career, working in nonprofit arts organizations, I used to bristle any time anyone suggested that nonprofits (or government, for that matter) would be more successful, financially stable, and more impactful if someone in charge would just run things like a business.
 
 The idea is that business management is pretty straightforward. You make decisions based on a combination of efficacy and profit versus loss. If you adopt this worldview lens, you can get quite good at goal attainment and forecasting. Heck, once you’re done with nonprofits and then the government, you can run your life and your family as mini businesses.

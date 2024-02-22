@@ -12,8 +12,6 @@ cover:
 Could employee transfers be the key to retention?
 =================================================
 
-![Several neurons are firing inside a human brain.](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/a5a1000d-18fc-40f1-8244-cfbbb70232b4.jpg)
-
 Last month, _The Chronicle of Higher Education_ published an [article on dead-end jobs](https://www.chronicle.com/article/higher-ed-is-a-land-of-dead-end-jobs) in higher ed. Clearly, the article hit home for readers because a few weeks later, they published a reaction piece featuring anonymous faculty and administrators extolling the coverage of this problem.
 
 To be honest, I was surprised the article didn’t cover a basic solution that seems to evade higher education, at least on the administrative side: employee transfers.

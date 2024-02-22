@@ -6,13 +6,11 @@ issue: 21
 date: 2023-02-01
 cover:
   image: heht/HEHT-21-Donations_dukimm.png
-  alt: A cardboard box marked for donations.
+  alt: 'A man is holding a rectangular cardboard box that says "Donations" on it in black sharpie. He is wearing a blue shirt and khaki pants.'
 ---
 
 Is Your Website for Marketing or Community Engagement?
 ======================================================
-
-![A man is holding a rectangular cardboard box that says "Donations" on it in black sharpie. He is wearing a blue shirt and khaki pants.](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/8c78160f-4ba3-4132-9795-47e6cc0a644c.png)
 
 Engagement is an essential concept in the fields of both marketing and higher education. And they are not wholly unrelated. But marketing’s engagement and higher ed’s engagement mean entirely different things. This week, my hot take is on why these two engagement territories get muddled together and how to rethink them for a clearer content strategy.
 

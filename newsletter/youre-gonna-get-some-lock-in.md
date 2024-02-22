@@ -4,7 +4,7 @@ description: Joel Goodman talks about why lock-in is inevitable with technology
   decisions. Even open source platforms impose some level of lock-in on their
   users.
 issue: 53
-date: 2024-01-11T13:51:14.809Z
+date: 2024-02-07T13:51:14.809Z
 cover:
   image: hop-ons-still.jpg
   alt: Michael Bluth telling his sister, You're gonna get some hop ons. From

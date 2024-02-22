@@ -5,13 +5,11 @@ issue: 23
 date: 2023-02-14
 cover:
   image: heht/HEHT-23-Introspection_qln9mx.png
-  alt: A monkey looks into a mirror at its reflection.
+  alt: A small monkey holds up a mirror and gazes at itself with wonder. In the background is a blurred outdoor setting.
 ---
 
 Higher Education and the Introspection Trap
 ============================================
-
-![A small monkey holds up a mirror and gazes at itself with wonder. In the background is a blurred outdoor setting. ](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/57aca121-3e43-46e6-beec-4edbdfa64570.png)
 
 Over 20 years ago, Grant, Franklin, and Langford (2002) released a fascinating paper updating what we know about self-knowledge and understanding. [“The self-reflection and insight scale: A new measure of private self-consciousness”](https://www.researchgate.net/publication/233563192_The_Self-Reflection_and_Insight_Scale_A_New_Measure_of_Private_Self-Consciousness) identified self-reflection and insight as two different constructs. It turns out that insight is positively correlated with all the good outcomes: higher rates of well-being and self-regulation, and lower rates of anxiety. But, self-reflection alone, as it turns out, just… isn’t.
 

@@ -10,8 +10,6 @@ cover:
 
 ## Are you live-action role-playing your content strategy?
 
-![Medieval armor sitting on top of a stone table. It's unclear if the armor is for LARPing or for a museum.](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/5fa5c91c-81ab-427c-814e-8c2131382a85.png)
-
 Do you remember about a year before the COVID-19 pandemic hit when Anne Helen Peterson dropped the article titled “[How Millennials Became the Burnout Generation](https://www.buzzfeednews.com/article/annehelenpetersen/millennials-burnout-generation-debt-work)”?
 
 Overnight, Peterson transformed into a sort of spokesperson for these new burnout symptoms so characteristic of the time:

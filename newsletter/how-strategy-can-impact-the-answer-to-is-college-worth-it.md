@@ -8,6 +8,7 @@ cover:
   image: heht/HEHT-47-Responding-to-Is-College-Worth-It_teuu5h.png
   alt: A college diploma on a table that's on a beach with stormy skies overhead.
 ---
+
 This past week, The Daily released a podcast episode titled “[Is College Worth It?](https://open.spotify.com/episode/3iST6D8m5vwIeTf9nU0tGf)” 
 
 To briefly summarize the discussion, Michael Barbaro interviews Paul Tough, author of the book, *The Inequality Machine: How College Divides Us* and the recent article, “Americans Are Losing Faith in the Value of College. Whose Fault Is That?” for New York Times Magazine. 

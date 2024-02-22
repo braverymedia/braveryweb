@@ -12,8 +12,6 @@ cover:
 
 ## Why they’ll never use your damn hashtag
 
-![A basketball is hitting the hoop, and it's not quite clear if it's gonna go in or not. White text is centered in the frame that says, "#NotToday."](https://buttondown-attachments.s3.us-west-2.amazonaws.com/images/4098e506-b5e5-4788-9a7e-0653b1e9b214.png)
-
 Great word-of-mouth is in the upper echelon of success in meeting your marketing goals. Word-of-mouth is often how prospective students, staff, and faculty hear about your University and its programs for the first time. And, if your current students, staff, and faculty are reaping the rewards for being a part of your community, you can bet they will say nice things about you to their friends and family.
 
 Great word-of-mouth engenders social trust. Word-of-mouth can confirm the very messages you market, validate the quality of your programs and services, and even speak to the more intangible facets of your brand personality.
