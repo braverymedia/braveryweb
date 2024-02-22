@@ -1,11 +1,5 @@
 {
 	"layout": "layouts/issue.njk",
 	"permalink": "newsletter/{{- title | slugify -}}/index.html",
-	"tags": "newsletter",
-	"og": {
-		"image": "{% src cover.image %}",
-		"title": "Issue #{{issue}}: {{ title }}",
-		"description": "{{ description }} ",
-		"type": "article"
-	}
+	"tags": "newsletter"
 }

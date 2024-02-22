@@ -1,11 +1,5 @@
 {
 	"layout": "layouts/article.njk",
 	"permalink": "insight/{%- if slug -%}{{- slug -}}{%- else -%}{{- title | slugify-}}{%- endif -%}/index.html",
-	"tags": "article",
-	"og": {
-		"image": "{{cover.image}}",
-		"title": "{{ title }}",
-		"description": "{{ description }} ",
-		"type": "article"
-	}
+	"tags": "article"
 }
