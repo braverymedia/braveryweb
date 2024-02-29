@@ -10,8 +10,9 @@ topics:
     - "WordPress"
 excerpt: Redesigning the University of Saint Francis, Fort Wayne, website starting with research and strategy.
 og:
-    image:
-    alt:
+    image: https://bravery.co/assets/img/og-case-study-saint-francis.jpg
+    alt: "Screenshot of a phone with the University of Saint Francis homepage loaded up. Text reads Bravery Case Study. University of Saint Francis, Fort Wayne"
+    title: "Bravery Case Study: University of Saint Francis, Fort Wayne"
 ---
 
 **Client:** University of Saint Francis, Fort Wayne, IN
