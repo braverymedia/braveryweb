@@ -4,7 +4,7 @@ const { DateTime, Duration } = require("luxon");
 const { URL } = require("url");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const markdownItFigures = require("markdown-it-figures");
+const markdownItFigures = require("markdown-it-image-figures");
 const markdownItContainer = require("markdown-it-container");
 const { encode } = require("html-entities");
 const htmlmin = require("html-minifier");
@@ -240,7 +240,7 @@ module.exports = function (eleventyConfig) {
 	);
 
 	/* Transforms */
-	config.addTransform("html-minify", (content, path) => {
+	eleventyConfig.addTransform("html-minify", (content, path) => {
 		if (path && path.endsWith(".html")) {
 			return htmlmin.minify(content, {
 				collapseBooleanAttributes: true,

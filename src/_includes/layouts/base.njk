@@ -1,0 +1,12 @@
+<!doctype html>
+<html {% if section %}class="layout-{{ section }}" {% endif %}lang="en">
+  {% include "components/head.njk" %}
+  <body data-menu="closed"{% if style %} data-style="{{ style }}"{% endif %}>
+    {% include "components/navbar.njk" %}
+    <main>
+    {{ layoutContent | safe }}
+    </main>
+    {% include "components/footer.njk" %}
+    {% include "components/footjs.njk" %}
+  </body>
+</html>

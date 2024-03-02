@@ -28,7 +28,7 @@ postType: article
         {% elif cover.image %}
         <picture class="article--cover">
             <source srcset="{% srcset cover.image, 't_cover_tall_new' %}" media="(min-width: 1024px)" width="410" height="575">
-            <img src="{{ cover.image | cover }}" alt="{{ cover.alt }}" width="340" height="225" decoding="async" />
+            <img src="{{ cover.image }}" alt="{{ cover.alt }}" width="340" height="225" decoding="async" />
         </picture>
         {% endif %}
     </aside>

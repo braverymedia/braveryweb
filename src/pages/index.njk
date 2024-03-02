@@ -1,100 +1,57 @@
 ---
 layout: layouts/base.njk
 section: home
+permalink: /
 ---
-<main>
-<header class="cover">
-    <p class="hero constrain"><span class="loud brand">Bravery</span> propels higher education toward its potential.</p>
-    <div class="bg-grid">
-        {% include "svg/gridplane.svg" %}
-    </div>
+<header>
+    <h1 class="super">
+        <span class="brand">Bravery</span> propels higher education toward its potential.
+    </h1>
 </header>
-<section class="panel about" id="about">
-    <div class="panel--grid">
-    <article>
-        <h2><span class="brand">Bravery</span> is a higher education website strategy + design studio.</h2>
-        <p>We solve the biggest marketing challenges facing institutions of higher learning with research, hospitality, and inclusive design.</p>
-        <a href="/contact/" class="button synthwave" data-umami-event="Contact">Work with Bravery ↘︎</a>
-    </article>
-    <aside class="about--work">
-        <figure> <img
-            srcset="{% srcset 'work-national_hkqggx.jpg' %}"
-            data-src="https://res.cloudinary.com/bravery/image/upload/dpr_auto,f_auto,q_70,w_auto/work-national_hkqggx.jpg"
-            alt="National University mobile" loading="lazy" width="427" height="596"> </figure>
-        <figure> <img
-            srcset="{% srcset 'work-caldwell_ishgtq.jpg' %}"
-            data-src="https://res.cloudinary.com/bravery/image/upload/dpr_auto,f_auto,q_70,w_auto/work-caldwell_ishgtq.jpg"
-            alt="Caldwell University laptop" loading="lazy" width="427" height="640"> </figure>
-    </aside>
-    </div>
-</section>
-<section class="panel services theme--invert" id="services">
-    <div class="panel--grid">
-        <header>
-            <h2>Work that <span class="loud">performs</span></h2>
-            <p><strong>Strategy. Design. Growth.</strong> Bravery turns data into change, design into reputation, and your goals
-                into legacy. Our team's talent runs deep and can benefit your institution at whatever stage of digital strategy you
-                find yourself.</p>
-        </header>
-        <article class="work-list">
-            <ul>
-                <li>Market Research</li>
-                <li>User Experience Research</li>
-                <li>Digital Strategy</li>
-                <li>Content Strategy</li>
-                <li>Operational alignment</li>
-                <li>Conversion Rate Optimization</li>
-                <li>UX/UI Design</li>
-                <li>Melt Prevention</li>
-                <li>Website Planning</li>
-                <li>Website Design</li>
-                <li>Team Recruitment</li>
-                <li>Content Design + Production</li>
-            </ul>
-            <a href="/services/" class="button bright" data-umami-event="Services">See All Services ↘︎</a>
+<section class="about">
+    <div class="stage">
+        <section class="company">
+            <p>Bravery is a higher education website strategy and design studio. We solve the biggest challenges facing institutions of higher learning using data, insight, and humanity.</p>
+            <div class="cta-group">
+                <a href="cta cta-outline">Learn more about us ↘</a>
+            </div>
         </article>
-        <section>
-            {% include "components/turbo.njk" %}
+        <section class="work">
+            <h2>Work that pays for itself, fast.</h2>
+            <p>Strategy. Design. Growth. Bravery turns data into change, design into reputation, and your goals into legacy. Our team's talent runs deep and can benefit your institution at whatever stage of digital strategy you find yourself.</p>
+            <div class="cta-group">
+                <a href="cta cta-outline">Case Studies</a>
+                <a href="cta cta-solid">See all of our services ↘</a>
+            </div>
+        </section>
+        <section class="people">
+            {% include "components/people.njk" %}
         </section>
     </div>
-    <div class="divider-grid">{% include "svg/gridplane.svg" %}</div>
 </section>
-<section class="panel company" id="company">
+<section class="learn">
     <article>
-        <h2><span class="shout">Global</span> impact,<br> Austin roots.</h2>
-        <p>Bravery Media was founded in 2012 as a higher education-focused web design and digital strategy agency in the
-        capital city of Austin, TX. Our proximity to world-class institutions, one of the fastest growing tech hubs
-        in the USA, and a vibrant creative scene provides Bravery with unmatched access to the best technical and
-        design minds in the world.</p>
-        <p>Combined, our team members have worked on hundreds of websites across the higher education, B2B,
-        hospitality, e-commerce, and consumer sectors. Our work is beautiful and performs at the highest levels for
-        millions of web users every day. What other higher ed agency can say the same?</p>
-    </article>
-    <figure class="video-embed">
-        <script src="https://fast.wistia.com/embed/medias/15132b4qmk.jsonp" async></script>
-        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-                <div class="wistia_embed wistia_async_15132b4qmk videoFoam=true"
-                    style="height:100%;position:relative;width:100%">
-                    <div class="wistia_swatch"
-                        style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
-                        <img src="https://fast.wistia.com/embed/medias/15132b4qmk/swatch"
-                            style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true"
-                            onload="this.parentNode.style.opacity=1;" /></div>
-                </div>
-            </div>
+        <h2>Skill-up with <span class="brand">Bravery</span> pros</h2>
+        <p>Even marketing pros working in higher education need to keep learning. Whether your style is podcast listening, newsletter reading, or in-person training, we want to share our experience with you.</p>
+        <div class="cta-group">
+            <a href="cta cta-outline">Dig into our insights ↘</a>
+            <a href="cta cta-solid">Train with us</a>
         </div>
-    </figure>
-</section>
-<section class="panel last-ditch rfi" id="pitch">
-    <div class="panel--grid">
-    <article>
-        <h2>Success demands <span class="shout brand">Bravery</span>.</h2>
-        <p>Higher education is a competitive industry and the pressure to succeed has only increased. You need an agency partner that delivers results. The Bravery approach puts the focus back on your students, past, present, and future. Working with a new agency can be scary, but sticking with the status quo might be the ultimate risk.</p>
-        <p>Why not start with a conversation to see how Bravery can help?</p>
     </article>
-    {% include 'components/contactform.njk' %}
-    </div>
+    <section class="resources">
+
+    </section>
 </section>
-</main>
+<section class="testimonial">
+    <article>
+        <blockquote class="electric">
+            <p>I could not be more proud of the final product we have, the team that developed it, and the results this work drove for our organization. Our university's investment in web strategy and design with Bravery paid for itself in eight days.</p>
+        </blockquote>
+        <div>
+            <cite>Seth Odell</cite>
+            <p>Former Vice Chancellor for Marketing</p>
+        </div>
+    </article>
+    <p>Bravery can help you, too. <a href="{{ '/contact' | url }}">Start the conversation</a>.</p>
+</section>
+{% include "components/heht-bar.njk" %}

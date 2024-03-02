@@ -1,0 +1,17 @@
+.gridlines {
+    background:
+        repeating-linear-gradient(
+            to right,
+            var(--line-color, hsla(198, 100%, 68%, 1)) 0,
+            var(--line-color, hsla(198, 100%, 68%, 1)) 1px,
+            transparent 1px,
+            transparent 200px
+        ),
+        repeating-linear-gradient(
+            to bottom,
+            var(--line-color, hsla(198, 100%, 68%, 1)) 0,
+            var(--line-color, hsla(198, 100%, 68%, 1)) 1px,
+            transparent 1px,
+            transparent 200px
+        );
+}

@@ -2,7 +2,7 @@
     <div class="episode--player">
       <figure class="cover-art">
         <img src="{% src cover.image %}"
-                srcset="{% srcset cover.image %}" alt="{{cover.alt}}" width="500" height="500" loading="lazy" decoding="async" />
+                srcset="{% srcset cover.image %}" alt="{{cover.alt}}" width="500" height="500" decoding="async" />
       </figure>
         <footer class="player-controls">
         <button aria-label="play || pause episode" id="play-pause" class="play-pause button synthwave" data-playing="false" role="switch" aria-checked="false" data-duration="{{duration}}">

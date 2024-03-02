@@ -38,27 +38,27 @@
 body {
 	font-family: NameSansVF, 'Arial Adjusted';
 }
-@import "helpers";
 
 // CSS Variables
 :root {
 	--color-white: #fff;
 	--color-black: #150635;
-	--color-bright: #6b4de0;
-	--color-rich: #5171a5;
+	--color-primary-500: hsla(260, 100%, 56%, 1);
 	--color-neon: #FF00C7;
-	--color-dark-neon: #FF2578;
-	--color-hilite: #FFF500;
+	--color-dark-neon: hsla(335, 100%, 50%, 1);
+	--color-hilite: hsla(58, 100%, 50%, 1);
 	--color-orange: #FF5C00;
-	--color-blue: #5BCEFF;
+	--color-blue: hsla(198, 100%, 68%, 1);
 	--color-nav: #ffffff;
 	--color-grey: #d5d5d5;
-	--gradient--primary:  linear-gradient(91.95deg, #ff5c00 -15%, #ff00c7 22%, #6b4de0 55%, #6b4de0 70%, #ff00c7 85%, #ff5c00 105%);
-	--gradient--shout: linear-gradient(124.97deg, #FFF500 -29.83%, #FF00C7 82.12%, #6B4DE0 142.13%);
-	--gradient--neon: linear-gradient(124.97deg, #FF5C00 -29.83%, #FF00C7 61.51%, #6B4DE0 142.13%);
-	--font-family: NameSansVF, sans-serif;
-	--grid-unit: 8px;
+	--gradient--primary:  linear-gradient(91.95deg, #ff5c00 -15%, #ff00c7 22%, var(--color-primary-500, #691EFF) 55%, var(--color-primary-500, #691EFF) 70%, #ff00c7 85%, #ff5c00 105%);
+	--gradient--shout: linear-gradient(124.97deg, #FFF500 -29.83%, #FF00C7 82.12%, var(--color-primary-500, #691EFF) 142.13%);
+	--gradient--neon: linear-gradient(124.97deg, #FF5C00 -29.83%, #FF00C7 61.51%, var(--color-primary-500, #691EFF) 142.13%);
+	--gradient-dark-blue: linear-gradient(150deg, #252E5B 33.71%, #160736 79.6%);
+	--gradient-sky: linear-gradient(180deg, rgba(255, 182, 83, 0.00) 51.18%, rgba(255, 199, 0, 0.22) 77%, rgba(255, 0, 199, 0.23) 87.24%, rgba(107, 77, 224, 0.28) 97.5%), radial-gradient(151.73% 104% at 49.1% 67.96%, rgba(255, 0, 108, 0.80) 0%, rgba(255, 0, 108, 0.00) 69.03%), #150636;
 
+	--grid-unit: 8px;
+	--font-family: NameSansVF, sans-serif;
 	--type-mega: clamp(2.5rem, calc(1.125em + 8.15vw), 6.598rem);
 	--type-super: clamp(2.25rem, calc(1.125em + 4.15vw), 5.398rem);
 	--type-2xl: clamp(1.802rem, 0.7275rem + 4.4084vi, 4.144rem);
@@ -76,13 +76,6 @@ body {
 
 	--global-transition: all 0.3s ease-in-out;
 
-	--mq--sm: 800px;
-	--mq--md: 1024px;
-	--mq--lg: 1440px;
-	--mq--xl: 1600px;
-	--mq--huge: 1980px;
-	// --break: 300px;
-
 	--wrapper: clamp(800px, 85vw, 96rem);
 }
 
@@ -90,4 +83,24 @@ body {
 	from {
 		background-position: 200% center;
 	}
+}
+
+@keyframes tilt-shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes poweroff {
+    0%, 36%   { transform: scale(1, 1); }
+    46%       { transform: scale(1, 0.02); opacity: 0.8; }
+    50%, 100% { transform: scale(0, 0); opacity: 0.3; }
+}
+
+@keyframes poweron {
+    0%   	{ transform: scale(0.8); opacity: 0; }
+    50%     { transform: scale(0.9); opacity: 1; }
+    100% 	{ transform: scale(1); opacity: 1; }
 }
