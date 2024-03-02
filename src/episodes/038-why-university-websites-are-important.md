@@ -6,6 +6,7 @@ episode: 038
 slug: why-university-websites-are-important
 date: 2023-11-08T17:07:55.653Z
 record_date: 2023-11-07T17:07:55.661Z
+show: appendix-b
 cover:
   image: app_b_ep38_cover_art_uspsks.png
   alt: Appendix B Episode 38, text is present that reads, "Websites are an

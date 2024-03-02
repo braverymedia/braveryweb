@@ -6,6 +6,7 @@ episode: 029
 slug: no-news-is-good-news
 date: 2023-08-23T15:26:49.225Z
 record_date: 2023-08-17T15:26:49.232Z
+show: appendix-b
 cover:
   image: app_b_ep29_cover_art_a4hsxk.png
   alt: Appendix B Episode 29, text is present that reads, "No News is Good News."
@@ -14,9 +15,7 @@ duration: 11:12
 tags:
   - podcast
 summary: >-
-  Sorry, but a homepage feature about someone giving a keynote is not news. It’s
-  just cluttering up your site and making it harder for prospective students to
-  apply.
+  Sorry, but a homepage feature about someone giving a keynote is not news. It’s just cluttering up your site and making it harder for prospective students to apply.
 
   On this episode, Kristin and Joel chat about the misconceptions surrounding news stories on university websites, and share why news content often fails to engage prospective students.
 

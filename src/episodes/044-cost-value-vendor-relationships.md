@@ -6,19 +6,21 @@ episode: 044
 slug: cost-value-vendor-relationships
 date: 2024-01-22T21:38:10.991Z
 record_date: 2024-01-18T21:38:10.999Z
+show: appendix-b
 cover:
   image: ep044_Episode_Art_en5olm.jpg
   alt: "Text reads: Appendix B. Cost, Value, and Vendor Relationships"
 mp3: episode-044-appendix-b-cost-value-and-vendors.mp3
 duration: 11:30
 tags:
-  - podcast
+  - hiring
+  - vendors
+  - stewardship
 summary: >-
   Sometimes working with an agency long term provides better value than hiring
   full time employees to support your website.
 
-
-  C﻿onnect with us on [LinkedIn](https://linkedin.com/company/bravery-media/): [Joel](https://linkedin.com/in/joelgoodman) / [Kristin](https://linkedin.com/in/kristinvandorn)
+  Connect with us on [LinkedIn](https://linkedin.com/company/bravery-media/): [Joel](https://linkedin.com/in/joelgoodman) / [Kristin](https://linkedin.com/in/kristinvandorn)
 ---
 **Joel Goodman**
 From Bravery Media, this is Appendix B. My name is Joel Goodman. I’m joined, as always, by Kristin Van Dorn. Hi Kristin.

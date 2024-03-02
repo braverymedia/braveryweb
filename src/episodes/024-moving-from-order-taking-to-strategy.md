@@ -7,6 +7,7 @@ episode: 024
 slug: moving-from-order-taking-to-strategy
 date: 2023-07-19T15:09:06.255Z
 record_date: 2023-07-18T15:09:06.262Z
+show: appendix-b
 cover:
   image: app_b_ep24_cover_art_nshegg.png
   alt: Appendix B Episode 24, text is present that reads, "Moving from

@@ -7,6 +7,7 @@ episode: 012
 slug: wrong-hiring-decision-whoops
 date: 2023-04-19T13:24:09.938Z
 record_date: 2023-04-04T13:24:09.945Z
+show: appendix-b
 cover:
   image: appxb-ep012_cover-art_qjjzto.png
   alt: Appendix B Episode 12, text is present that reads, "Whoops! Campus leaders

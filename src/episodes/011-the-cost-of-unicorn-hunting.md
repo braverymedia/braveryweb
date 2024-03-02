@@ -7,6 +7,7 @@ episode: 011
 slug: the-cost-of-unicorn-hunting
 date: 2023-04-12T15:23:56.408Z
 record_date: 2023-04-04T15:23:56.415Z
+show: appendix-b
 cover:
   image: appxb-ep011_cover-art_zead8c.png
   alt: Appendix B Episode 11, text is present that reads, "The cost of hunting
@@ -19,7 +20,6 @@ summary: >-
   attracting employees who try to do it all. And that often leads to burnout.
 
   Instead, what if we left it to the potential employees to interpret the roles? What if we let them guide and shape the roles over time? Joel and Kristin think this will happen more and more as folks realize their worth and the value of their time.
-
 
   Subscribe to [Bravery's Newsletter](https://bravery.co/newsletter/) / [Follow Joel](https://www.linkedin.com/in/joelgoodman/) / [Follow Kristin](https://www.linkedin.com/in/kristinvandorn/) / Check out the [Bravery YouTube Channel](https://www.youtube.com/@BraveryMedia)
 ---

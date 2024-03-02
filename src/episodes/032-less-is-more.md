@@ -7,6 +7,7 @@ episode: 032
 slug: less-is-more
 date: 2023-09-13T14:41:36.058Z
 record_date: 2023-09-12T14:41:36.065Z
+show: appendix-b
 cover:
   image: app_b_ep32_cover_art_sfwbke.png
   alt: 'Appendix B Episode 32, text is present that reads, "Avoiding Information

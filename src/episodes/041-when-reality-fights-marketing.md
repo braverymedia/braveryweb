@@ -8,6 +8,7 @@ episode: 041
 slug: when-reality-fights-marketing
 date: 2023-12-13T21:07:10.919Z
 record_date: 2023-12-05T21:07:10.931Z
+show: appendix-b
 cover:
   image: cover-ep041_go0qzw.jpg
   alt: "Text reads Appendix B: When reality fights marketing"

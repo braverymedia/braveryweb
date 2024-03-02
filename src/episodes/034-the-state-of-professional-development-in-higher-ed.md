@@ -6,6 +6,7 @@ episode: 034
 slug: the-state-of-professional-development-in-higher-ed
 date: 2023-09-29T18:04:08.977Z
 record_date: 2023-09-27T18:04:08.984Z
+show: appendix-b
 cover:
   image: app_b_ep34_cover_art_wz1qvy.png
   alt: Appendix B Episode 34, text is present that reads, "The State of

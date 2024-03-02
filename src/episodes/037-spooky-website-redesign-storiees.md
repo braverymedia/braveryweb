@@ -6,6 +6,7 @@ episode: 037
 slug: spooky-website-redesign-storiees
 date: 2023-10-31T16:51:52.561Z
 record_date: 2023-10-31T16:51:52.568Z
+show: appendix-b
 cover:
   image: app_b_ep37_cover_art_kioscp.png
   alt: Appendix B Episode 37, text is present that reads, "Spooky Website Redesign

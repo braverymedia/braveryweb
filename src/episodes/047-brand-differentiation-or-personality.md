@@ -7,6 +7,7 @@ episode: 047
 slug: 047-brand-differentiation-or-personality
 date: 2024-02-19T22:00:05.479Z
 record_date: 2024-02-16T22:00:05.485Z
+show: appendix-b
 cover:
   image: Ep047_Episode_Art_kxxy6e
   alt: Text reads Appendix B - Brand Differentiation vs Personality

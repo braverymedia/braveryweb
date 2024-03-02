@@ -5,6 +5,7 @@ description: The first in a series on the Brand Equity Pyramid and how to
 episode: 048
 slug: brand-equity-brand-salience
 date: 2024-02-27T01:28:34.137Z
+show: appendix-b
 record_date: 2024-02-24T01:28:34.142Z
 cover:
   image: Ep048_Episode_Art_lujgyd.jpg
@@ -13,9 +14,7 @@ mp3: ep048-brand-equity-pyramid-part-1-brand-salience.mp3
 duration: 9:15
 tags:
   - podcast
-summary: The first in a series on the Brand Equity Pyramid and how to approach
-  brand development in Higher Education. Connect with us on
-  [LinkedIn](https://www.linkedin.com/company/bravery-media/).
+summary: Does your college or university brand have a base level of recognizeability? How do you even start developing a brand strategy? This is the first in a series on the Brand Equity Pyramid and how to approach brand development in Higher Education. Connect with us on [LinkedIn](https://www.linkedin.com/company/bravery-media/).
 ---
 **Joel Goodman**
 From Bravery Media, this is Appendix B. My name is Joel Goodman. With me is Kristin Van Dorn. Hi, Kristin.

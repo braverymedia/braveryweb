@@ -6,6 +6,7 @@ episode: 026
 slug: storytelling-versus-world-building
 date: 2023-08-02T09:28:34.664Z
 record_date: 2023-08-01T09:28:34.671Z
+show: appendix-b
 cover:
   alt: Appendix B Episode 26, text is present that reads, "Rethinking Storytelling
     on Higher Ed Websites"

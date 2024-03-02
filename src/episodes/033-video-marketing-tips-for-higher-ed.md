@@ -5,6 +5,7 @@ episode: 33
 slug: video-marketing-tips-for-higher-ed
 date: 2023-09-20T13:53:06.439Z
 record_date: 2023-09-19T13:53:06.447Z
+show: appendix-b
 cover:
   image: app_b_ep33_cover_art_g6zvn6.png
   alt: Appendix B Episode 33, text is present that reads, "Video Marketing Tips

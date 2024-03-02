@@ -7,6 +7,7 @@ episode: 008
 slug: do-you-really-need-a-podcast
 date: 2023-03-22T13:23:11.054Z
 record_date: 2023-03-20T13:23:11.060Z
+show: appendix-b
 cover:
   image: appxb-ep008_cover-art_bskiya.png
   alt: Appendix B Episode 8, text is present that reads, "Just because your

@@ -6,6 +6,7 @@ episode: 006
 slug: responsible-stewardship
 date: 2023-03-08T18:53:40.641Z
 record_date: 2023-03-07T18:53:40.648Z
+show: appendix-b
 cover:
   image: appxb-ep006_cover-art_m5jfxu.png
   alt: Appendix B Episode 6, text is present that reads, "Responsible Website

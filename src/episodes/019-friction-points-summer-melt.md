@@ -7,6 +7,7 @@ episode: 019
 slug: friction-points-summer-melt
 date: 2023-06-07T12:42:18.533Z
 record_date: 2023-06-06T12:42:18.541Z
+show: appendix-b
 cover:
   image: app_b_ep19_social_cover_Art_owt5gm.png
   alt: Appendix B Episode 19, text is present that reads, "Reducing friction

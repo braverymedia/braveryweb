@@ -7,6 +7,7 @@ episode: 004
 slug: avoiding-procurement-blues
 date: 2023-02-22T16:16:50.339Z
 record_date: 2023-02-20T16:16:50.345Z
+show: appendix-b
 cover:
   image: appxb-ep004_cover-art_fehb6u.png
   alt: Appendix B Episode 4, text is present that reads, "Avoiding the Procurement

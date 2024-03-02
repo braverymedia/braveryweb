@@ -7,6 +7,7 @@ episode: 25
 slug: the-trouble-with-icons
 date: 2023-07-26T10:22:33.704Z
 record_date: 2023-07-25T10:22:33.711Z
+show: appendix-b
 cover:
   alt: Appendix B Episode 25, text is present that reads, "The Trouble With Icons"
   image: app_b_ep25_cover_art_p9cefu.png

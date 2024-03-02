@@ -6,6 +6,7 @@ description: So many Higher Ed MarComm offices are stuck in â€œemergency mode.â€
 episode: 007
 date: 2023-03-15T19:56:07.768Z
 record_date: 2023-03-13T19:56:07.775Z
+show: appendix-b
 cover:
   image: appxb-ep007_cover-art_y6sy2n.png
   alt: Appendix B Episode 7, text is present that reads, "Breaking out of

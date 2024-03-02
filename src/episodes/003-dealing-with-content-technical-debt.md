@@ -7,6 +7,7 @@ episode: 003
 slug: dealing-with-content-technical-debt
 date: 2023-02-15T12:06:14.677Z
 record_date: 2023-02-13T12:06:14.682Z
+show: appendix-b
 cover:
   image: appx-b-003_cover-art_rwoaex.png
   alt: Appendix B Episode 3, text is present that reads, "Dealing with Content and

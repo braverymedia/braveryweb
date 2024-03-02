@@ -7,6 +7,7 @@ episode: 028
 slug: how-campuses-can-win-on-organic-social
 date: 2023-08-16T15:19:54.177Z
 record_date: 2023-08-10T15:19:54.185Z
+show: appendix-b
 cover:
   image: app_b_ep28_cover_art_efvpgh.png
   alt: 'Appendix B Episode 28, text is present that reads, "How Campuses Can Win

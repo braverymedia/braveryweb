@@ -6,6 +6,7 @@ episode: 035
 slug: maximizing-career-potential
 date: 2023-10-19T12:19:19.977Z
 record_date: 2023-10-16T12:19:19.986Z
+show: appendix-b
 cover:
   image: app_b_ep35_cover_art_afou90.png
   alt: Appendix B Episode 35, text is present that reads, "Maximizing Career

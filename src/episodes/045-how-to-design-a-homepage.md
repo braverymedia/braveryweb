@@ -6,6 +6,7 @@ episode: 045
 slug: how-to-design-a-homepage
 date: 2024-01-30T00:58:22.133Z
 record_date: 2024-01-26T00:58:22.140Z
+show: appendix-b
 cover:
   image: ep45-art_bguvna.jpg
   alt: "Text reads: Appendix B How to design a higher ed homepage. From bravery
