@@ -1,29 +1,112 @@
+const fs = require("node:fs");
+const path = require("node:path");
 const { DateTime, Duration } = require("luxon");
-const { minify } = require("terser");
-const { PurgeCSS } = require("purgecss");
-const { srcset, src } = require("./_11ty/images");
-const CleanCSS = require("clean-css");
+const { URL } = require("url");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFigures = require("markdown-it-figures");
+const markdownItContainer = require("markdown-it-container");
+const { encode } = require("html-entities");
 const htmlmin = require("html-minifier");
+
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require("eleventy-plugin-reading-time");
 const embedEverything = require("eleventy-plugin-embed-everything");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+
+const pkg = require("./package.json");
 const metadata = require("./_data/metadata.json");
 
+const { srcset, src } = require("./_11ty/images");
+const pluginSass = require("./_11ty/sass.js");
+const processJs = require("./_11ty/process-js.js");
+
 module.exports = function (eleventyConfig) {
+	eleventyConfig.setUseGitIgnore(false);
+	eleventyConfig.setDataDeepMerge(true);
+	eleventyConfig.setQuietMode(true);
+
+	eleventyConfig.setServerOptions({
+		domdiff: false,
+		showVersion: false,
+	});
+
+	/* Plugins */
+	eleventyConfig.addPlugin(pluginSass);
+	eleventyConfig.addPlugin(processJs);
+	eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(eleventyNavigationPlugin);
+	eleventyConfig.addPlugin(readingTime);
+	eleventyConfig.addPlugin(embedEverything);
+	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
+
+	// Copy these
+	eleventyConfig.addPassthroughCopy({
+		"_includes/assets/uploads": "assets/uploads",
+		"_includes/assets/appendix-b": "assets/appendix-b",
+		"_includes/assets/**/*.css": "assets/css",
+		"_includes/assets/**/*.js": "assets/js",
+		"_includes/assets/icons": "assets/icons",
+		"_includes/svg": "assets/svg",
+		"_includes/assets/img": "assets/img"
+	})
+	.addPassthroughCopy("manifest.json")
+	.addPassthroughCopy("site.webmanifest")
+	.addPassthroughCopy("browserconfig.xml")
+	.addPassthroughCopy("robots.txt")
+	.addPassthroughCopy("sw.js");
+
 	eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
 	eleventyConfig.addLayoutAlias("episode", "layouts/episode.njk");
 	eleventyConfig.addLayoutAlias("issue", "layouts/issue.njk");
 	eleventyConfig.addLayoutAlias("case-study", "layouts/case-study.njk");
-	eleventyConfig.addPlugin(eleventyNavigationPlugin);
-	eleventyConfig.addPlugin(readingTime);
-	eleventyConfig.addPlugin(embedEverything);
-	eleventyConfig.addPlugin(pluginRss);
-	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
 	eleventyConfig.addShortcode("src", src);
 	eleventyConfig.addShortcode("srcset", srcset);
+
+	// Absolute URL
+	eleventyConfig.addFilter("absoluteUrl", (url, base) => {
+		if (!base) {
+			base = siteData.url;
+		}
+		try {
+			return new URL(url, base).toString();
+		} catch (e) {
+			console.log(
+				`Trying to convert ${url} to be an absolute url with base ${base} and failed.`
+			);
+			return url;
+		}
+	});
+
+	// Time and Date
+	eleventyConfig.addLiquidFilter(
+		"timePosted",
+		(startDate, endDate = Date.now()) => {
+			if (typeof startDate === "string") {
+				startDate = Date.parse(startDate);
+			}
+			if (typeof endDate === "string") {
+				endDate = Date.parse(endDate);
+			}
+			let numDays = (endDate - startDate) / (1000 * 60 * 60 * 24);
+			let prefix = "";
+			if (numDays < 0) {
+				prefix = "in ";
+				numDays = Math.abs(numDays);
+			}
+
+			let daysPosted = Math.round(parseFloat(numDays));
+			let yearsPosted = parseFloat((numDays / 365).toFixed(1));
+
+			if (daysPosted < 365) {
+				return prefix + daysPosted + " day" + (daysPosted !== 1 ? "s" : "");
+			} else {
+				return prefix + yearsPosted + " year" + (yearsPosted !== 1 ? "s" : "");
+			}
+		}
+	);
 
 	// Date formatting (human readable)
 	eleventyConfig.addFilter("readableDate", (dateObj) => {
@@ -50,33 +133,6 @@ module.exports = function (eleventyConfig) {
 	// Simple year shortcode
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-	eleventyConfig.addShortcode("youtube", (videoURL, title) => {
-		const url = new URL(videoURL);
-		const id = url.searchParams.get("v");
-		return `<iframe class="yt-embed" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player${
-			title ? ` for ${title}` : ""
-		}" frameborder="0" allowfullscreen></iframe>`;
-	});
-
-	// Cloudinary presets
-	eleventyConfig.addFilter("coverTall", (cover) => {
-		const cloudinaryRoot =
-			"https://res.cloudinary.com/bravery/image/upload/t_cover_tall_new/";
-		return cloudinaryRoot + cover;
-	});
-
-	eleventyConfig.addFilter("cover", (cover) => {
-		const cloudinaryRoot =
-			"https://res.cloudinary.com/bravery/image/upload/ar_68:45,f_auto,q_80,w_340,h_225,dpr_2.0/";
-		return cloudinaryRoot + cover;
-	});
-
-	eleventyConfig.addFilter("coverSquare", (cover) => {
-		const cloudinaryRoot =
-			"https://res.cloudinary.com/bravery/image/upload/ar_1:1,f_auto,q_80,w_500,h_500,dpr_2.0/";
-		return cloudinaryRoot + cover;
-	});
-
 	eleventyConfig.addFilter("toMinutes", (epDuration) => {
 		return Duration.fromObject({ seconds: epDuration }).toFormat("mm:ss");
 	});
@@ -97,62 +153,18 @@ module.exports = function (eleventyConfig) {
 		return chartable + audioURL;
 	});
 
-	// Minify CSS
-	eleventyConfig.addFilter("cssmin", (code) => {
-		return new CleanCSS({}).minify(code).styles;
+	/* End Filters */
+
+	/* Shortcodes */
+	eleventyConfig.addShortcode("youtube", (videoURL, title) => {
+		const url = new URL(videoURL);
+		const id = url.searchParams.get("v");
+		return `<iframe class="yt-embed" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player${
+			title ? ` for ${title}` : ""
+		}" frameborder="0" allowfullscreen></iframe>`;
 	});
 
-	// Minify JS
-	eleventyConfig.addNunjucksAsyncFilter(
-		"jsmin",
-		async function (code, callback) {
-			try {
-				const minified = await minify(code);
-				callback(null, minified.code);
-			} catch (err) {
-				console.error("Terser error: ", err);
-				// Fail gracefully.
-				callback(null, code);
-			}
-		}
-	);
-
-	/**
-	 * Remove any CSS not used on the page and inline the remaining CSS in the
-	 * <head>.
-	 *
-	 * @see {@link https://github.com/FullHuman/purgecss}
-	 */
-	eleventyConfig.addTransform("purge-and-inline-css", async function (content) {
-		if ( !this.page.outputPath.endsWith(".html") ) {
-			return content;
-		}
-
-		const purgeCSSResults = await new PurgeCSS().purge({
-			content: [{ raw: content }],
-			css: ["_includes/assets/css/bravery.css"],
-			dynamicAttributes: ["aria-selected", "value"],
-			keyframes: true,
-		});
-
-		return content.replace(
-			"<!-- STYLES -->",
-			"<style>" + purgeCSSResults[0].css + "</style>"
-		);
-	});
-
-	eleventyConfig.addTransform("htmlmin", function (content) {
-		if (this.page.outputPath.endsWith(".html")) {
-			let minified = htmlmin.minify(content, {
-				useShortDoctype: true,
-				removeComments: true,
-				collapseWhitespace: true,
-			});
-			return minified;
-		}
-
-		return content;
-	});
+	/* Collections */
 
 	// only content in the `articles/` directory
 	eleventyConfig.addCollection("articles", function (collection) {
@@ -175,8 +187,8 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
-	eleventyConfig.addCollection( "issues", function(collection) {
-		return collection.getAllSorted().filter( function (item) {
+	eleventyConfig.addCollection("issues", function (collection) {
+		return collection.getAllSorted().filter(function (item) {
 			return item.inputPath.match(/^\.\/newsletter\//) !== null;
 		});
 	});
@@ -187,68 +199,7 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
-	eleventyConfig.setServerOptions({
-		// Default values are shown:
-
-		// Whether the live reload snippet is used
-		liveReload: true,
-
-		// Whether DOM diffing updates are applied where possible instead of page reloads
-		domDiff: true,
-
-		// The starting port number
-		// Will increment up to (configurable) 10 times if a port is already in use.
-		port: 8080,
-
-		// Additional files to watch that will trigger server updates
-		// Accepts an Array of file paths or globs (passed to `chokidar.watch`).
-		// Works great with a separate bundler writing files to your output folder.
-		// e.g. `watch: ["_site/**/*.css"]`
-		watch: ["_site/assets/**/*.css"],
-
-		// Show local network IP addresses for device testing
-		showAllHosts: false,
-
-		// Use a local key/certificate to opt-in to local HTTP/2 with https
-		https: {
-			// key: "./localhost.key",
-			// cert: "./localhost.cert",
-		},
-
-		// Change the default file encoding for reading/serving files
-		encoding: "utf-8",
-	});
-
-	// Sass
-	eleventyConfig.addWatchTarget("_includes/assets/scss");
-
-	// Don't process files and folders with static assets e.g. images
-	eleventyConfig.addPassthroughCopy("control");
-	eleventyConfig.addPassthroughCopy({
-		"_includes/assets/uploads": "assets/uploads",
-	});
-	eleventyConfig.addPassthroughCopy({
-		"_includes/assets/appendix-b": "assets/appendix-b",
-	});
-	eleventyConfig.addPassthroughCopy({ "_includes/assets/css": "assets/css" });
-	eleventyConfig.addPassthroughCopy({
-		"_includes/assets/icons": "assets/icons",
-	});
-	eleventyConfig.addPassthroughCopy({
-		"_includes/svg": "assets/svg",
-	});
-	eleventyConfig.addPassthroughCopy({ "_includes/assets/img": "assets/img" });
-	eleventyConfig.addPassthroughCopy({ "_includes/assets/js": "assets/js" });
-	eleventyConfig.addPassthroughCopy("manifest.json");
-	eleventyConfig.addPassthroughCopy("site.webmanifest");
-	eleventyConfig.addPassthroughCopy("browserconfig.xml");
-	eleventyConfig.addPassthroughCopy("robots.txt");
-	eleventyConfig.addPassthroughCopy("sw.js");
-
-	/* Markdown Plugins */
-	let markdownIt = require("markdown-it");
-	let markdownItContainer = require("markdown-it-container");
-	let implicitFigures = require("markdown-it-image-figures");
+	/* Markdown Config */
 
 	let options = {
 		html: true,
@@ -257,35 +208,60 @@ module.exports = function (eleventyConfig) {
 		typographer: true,
 	};
 
-	let md = markdownIt(options).use(markdownItContainer, "callout").use(implicitFigures, {
+	let md = markdownIt(options)
+		.use(markdownItAnchor, {
+			permalink: markdownItAnchor.permalink.ariaHidden({
+				placement: "after",
+				class: "direct-link",
+				symbol: "#",
+				level: [1, 2, 3, 4],
+			}),
+			slugify: eleventyConfig.getFilter("slug"),
+		})
+		.use(markdownItContainer, "callout")
+		.use(markdownItFigures, {
 			lazy: true,
 			removeSrc: true,
 			async: true,
 			classes: "lazy",
-			dataType: true
+			dataType: true,
 		});
 
 	eleventyConfig.setLibrary("md", md);
 
-	eleventyConfig.addFilter("markdown", (content) => {
-		return md.render(content);
+	eleventyConfig.addPairedShortcode(
+		"markdown",
+		function (content, inline = false) {
+			if (inline) {
+				return md.renderInline(content);
+			}
+			return md.render(content);
+		}
+	);
+
+	/* Transforms */
+	config.addTransform("html-minify", (content, path) => {
+		if (path && path.endsWith(".html")) {
+			return htmlmin.minify(content, {
+				collapseBooleanAttributes: true,
+				collapseWhitespace: true,
+				decodeEntities: true,
+				includeAutoGeneratedTags: false,
+				removeComments: true,
+			});
+		}
+
+		return content;
 	});
 
-	let opts = {
-		permalink: true,
-		permalinkClass: "direct-link",
-		permalinkSymbol: "#",
-	};
 
 	return {
-		templateFormats: ["md", "njk", "html"],
-		pathPrefix: "/",
+		templateFormats: ["liquid", "md", "njk", "html", "11ty.js"],
 		markdownTemplateEngine: "njk",
 		htmlTemplateEngine: "njk",
 		dataTemplateEngine: "njk",
-		passthroughFileCopy: true,
 		dir: {
-			input: ".",
+			input: "src",
 			includes: "_includes",
 			data: "_data",
 			output: "_site",
