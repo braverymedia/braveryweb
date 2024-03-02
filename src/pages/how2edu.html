@@ -1,0 +1,12 @@
+---
+layout: layouts/podcast.njk
+title: How 2 EDU
+heading:
+description: "The podcast that teaches you how to make your higher ed website perform better."
+section: podcast
+permalink: /podcast/how2edu
+---
+<section class="episode-list">
+  {% set episodeList = collections.episodes %}
+  {% include "components/episodelist.njk" %}
+</section>
