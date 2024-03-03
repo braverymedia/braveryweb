@@ -1,0 +1,33 @@
+button,
+.cta {
+    appearance: none;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: var(--grid-unit);
+	padding: var(--grid-unit) calc(var(--grid-unit) * 2);
+	color: var(--color-white);
+	width: 100%;
+	border: 1px solid transparent;
+	border-radius: var(--grid-unit);
+	transition: var(--global-transition);
+	font-family: inherit;
+	cursor: pointer;
+	font-variation-settings: "opsz" 24;
+	font-weight: 600;
+	position: relative;
+    font-size: var(--type-sm);
+}
+.cta-icon {
+    svg {
+        height: 16px;
+        color: var(--accent, hsla(335, 100%, 50%, 1));
+        transition: var(--global-transition);
+    }
+    &:hover {
+		border-color: var(--accent-hover, hsla(58, 100%, 50%, 1));
+        svg {
+            color: var(--accent-hover, hsla(58, 100%, 50%, 1));
+        }
+    }
+}

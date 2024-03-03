@@ -68,7 +68,7 @@ strong,
 b {
     font-weight: var(--font-weight-bold);
 }
-.loud {
+.shout {
 	color: var(--color-bright);
 	background-image: linear-gradient(92deg, #FFF500 0%, #FF006C 40%, #FF006C 80%, #FFF500 100%,);
 	background-size: 200% auto;
@@ -76,5 +76,12 @@ b {
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	text-fill-color: transparent;
-	animation: gradientMove 25s linear infinite;
+	animation: gradientMove 30s linear infinite;
+}
+.hero {
+	font-size: var(--type-hero);
+	line-height: 95.513%;
+}
+.brand {
+	font-feature-settings: var(--feature-simple-y);
 }

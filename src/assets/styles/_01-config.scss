@@ -35,7 +35,7 @@
 	src: url("https://bravery.b-cdn.net/EightiesComeback-LtXCn-subset.woff2");
 }
 
-body {
+* {
 	font-family: NameSansVF, 'Arial Adjusted';
 }
 
@@ -59,6 +59,7 @@ body {
 
 	--grid-unit: 8px;
 	--font-family: NameSansVF, sans-serif;
+	--type-hero: clamp(2.375rem, .331rem + 8.721vi, 8.06rem);
 	--type-mega: clamp(2.5rem, calc(1.125em + 8.15vw), 6.598rem);
 	--type-super: clamp(2.25rem, calc(1.125em + 4.15vw), 5.398rem);
 	--type-2xl: clamp(1.802rem, 0.7275rem + 4.4084vi, 4.144rem);
@@ -77,6 +78,12 @@ body {
 	--global-transition: all 0.3s ease-in-out;
 
 	--wrapper: clamp(800px, 85vw, 96rem);
+	--margin: 24px;
+}
+@media (min-width: 1024px) {
+	:root {
+		--margin: 48px;
+	}
 }
 
 @keyframes gradientMove {

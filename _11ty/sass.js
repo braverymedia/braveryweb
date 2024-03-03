@@ -18,20 +18,21 @@ module.exports = function (eleventyConfig) {
 
 			// Run file content through Sass
 			let result = sass.compileString(inputContent, {
-				loadPaths: [parsed.dir || "."],
-				sourceMap: true,
+				loadPaths: [parsed.dir || ".", this.config.dir.includes],
+				sourceMap: false,
 			});
 
 			// Allow included files from @use or @import to
 			// trigger rebuilds when using --incremental
 			this.addDependencies(inputPath, result.loadedUrls);
 
-			let targets = browserslistToTargets(browserslist("> 5% and not dead"));
+			let targets = browserslistToTargets(browserslist("> 2% and not dead"));
 
 			return async () => {
-				let { code } = transform({
+				let { code } = await transform({
 					code: Buffer.from(result.css),
 					minify: true,
+					sourcemap: false,
 					targets,
 				});
 				return code;

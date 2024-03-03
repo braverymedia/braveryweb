@@ -1,13 +1,13 @@
-{% set js %}
-    {% include "assets/js/bravery.js" %}
+{# {% set js %}
+    {% include "./assets/js/bravery.js" %}
 {% endset %}
 {% set audiojs %}
-	{% include "assets/js/bravery-player.js" %}
+	{% include "./assets/js/bravery-player.js" %}
 {% endset %}
 <script>{{ js | safe }}</script>
 {% if '/podcast' in page.url and page.url != '/podcast/' %}
 	<script>{{ audiojs | safe }}</script>
-{% endif %}
+{% endif %} #}
 {% if section == "legal" %}
     <script src="https://app.termageddon.com/js/termageddon.js" async></script>
 {% endif %}

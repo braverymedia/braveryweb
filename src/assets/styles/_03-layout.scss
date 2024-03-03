@@ -1,0 +1,50 @@
+.page-cover {
+    height: 60dvh;
+    display: flex;
+    flex-direction: column;
+    .layout-home & {
+        background: linear-gradient(150deg, #252E5B 33.71%, #160736 79.6%);
+        color: var(--color-white);
+        height: 95dvh;
+        justify-content: flex-end;
+        padding: 0 calc( var(--margin) * 2 ) 20vh;
+        position: relative;
+        perspective: 100vw;
+        overflow-y: hidden;
+        align-items: center;
+        h1 {
+            z-index: 2;
+            width: 100%;
+            max-width: 1400px;
+        }
+        &:after,
+        &:before {
+            content: "";
+            width: calc(100vw + 1px);
+            height: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background:
+                repeating-linear-gradient(
+                    to right,
+                    var(--line-color, hsla(198, 100%, 68%, 1)) 0,
+                    var(--line-color, hsla(198, 100%, 68%, 1)) 1px,
+                    transparent 1px,
+                    transparent 5%
+                ),
+                repeating-linear-gradient(
+                    to bottom,
+                    var(--line-color, hsla(198, 100%, 68%, 1)) 0,
+                    var(--line-color, hsla(198, 100%, 68%, 1)) 1px,
+                    transparent 1px,
+                    transparent 4%
+                );
+            transform: rotateX(84deg) scale(2);
+            transform-style: preserve-3d;
+        }
+        &:before {
+            filter: blur(14px);
+        }
+    }
+}

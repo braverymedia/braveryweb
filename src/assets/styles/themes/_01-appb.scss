@@ -24,7 +24,7 @@
         width: 100%;
         margin-top: calc(var(--grid-unit) * 6);
         padding: 0 calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 6);
-        @include mq(sm) {
+        @media ( min-width: 760px ) {
 		    margin-top: calc(var(--grid-unit) * 9);
             padding: 0 calc(var(--grid-unit) * 4) calc(var(--grid-unit) * 9);
         }
@@ -35,7 +35,7 @@
                 text-align: left;
                 padding: 0;
             }
-            @include mq(sm) {
+            @media ( min-width: 760px ) {
                 padding: calc(var(--grid-unit) * 6) 0 calc(var(--grid-unit) * 10);
             }
         }
@@ -71,7 +71,7 @@
     gap: calc(var(--grid-unit) * 4);
     max-width: 1100px;
     margin: calc(var(--grid-unit) * 3) auto calc(var(--grid-unit) * 11);
-    @include mq(sm) {
+    @media ( min-width: 760px ) {
         gap: calc(var(--grid-unit) * 8);
     }
 }
@@ -83,7 +83,7 @@
     gap: calc(var(--grid-unit) * 2);
     border-radius: calc(var(--grid-unit) * 4);
     box-shadow: 0px 4px 24px -8px rgba(0, 0, 0, 0.25);
-    @include mq(sm) {
+    @media ( min-width: 760px ) {
         display: flex;
         flex-wrap: wrap;
         padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 6) calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 2);
@@ -92,7 +92,7 @@
 }
 .episode {
     &.full {
-        @include mq(sm) {
+        @media ( min-width: 760px ) {
             display: grid;
             grid-template-columns: minmax(532px, 4fr) minmax(auto, 6fr);
             gap: calc( var(--grid-unit) * 2 ) calc(var(--grid-unit) * 12);
@@ -118,7 +118,7 @@
         grid-template-rows: auto auto;
         .cover-art {
             display: none;
-            @include mq(sm) {
+            @media ( min-width: 760px ) {
                 display: flex;
                 height: 315px;
                 width: 315px;
@@ -160,7 +160,7 @@
     font-size: var(--type-sm);
     margin-top: 0;
     line-height: 1.26;
-    @include mq(sm) {
+    @media ( min-width: 760px ) {
         font-size: var(--type-base);
     }
 }
@@ -181,12 +181,12 @@
         display: flex;
         flex-direction: column;
         gap: var(--grid-unit);
-        @include mq(sm) {
+        @media ( min-width: 760px ) {
             gap: inherit;
             flex-direction: row;
         }
     }
-    @include mq(sm) {
+    @media ( min-width: 760px ) {
         position: sticky;
         top: calc(var(--grid-unit) * 15);
         .cover-art {

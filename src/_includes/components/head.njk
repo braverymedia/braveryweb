@@ -34,5 +34,9 @@
     <meta name="twitter:creator" content="{{ og.creator or metadata.og.creator }}">
     <meta name="twitter:image" content="{{ og.image or metadata.og.image }}">
     {%- endblock -%}
-    <!-- STYLES -->
+    {% if site.environment === 'production' %}
+        <!-- INLINE CSS -->
+    {% else %}
+        <link rel="stylesheet" href="/assets/styles/bravery.css">
+    {% endif %}
 </head>

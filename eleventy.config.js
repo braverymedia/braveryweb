@@ -8,6 +8,7 @@ const markdownItFigures = require("markdown-it-image-figures");
 const markdownItContainer = require("markdown-it-container");
 const { encode } = require("html-entities");
 const htmlmin = require("html-minifier");
+const { PurgeCSS } = require("purgecss");
 
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const readingTime = require("eleventy-plugin-reading-time");
@@ -19,7 +20,7 @@ const pkg = require("./package.json");
 const metadata = require("./_data/metadata.json");
 
 const { srcset, src } = require("./_11ty/images");
-const pluginSass = require("./_11ty/sass.js");
+const processSass = require("./_11ty/sass.js");
 const processJs = require("./_11ty/process-js.js");
 
 module.exports = function (eleventyConfig) {
@@ -31,9 +32,10 @@ module.exports = function (eleventyConfig) {
 		domdiff: false,
 		showVersion: false,
 	});
+	eleventyConfig.addWatchTarget("./assets/js/");
 
 	/* Plugins */
-	eleventyConfig.addPlugin(pluginSass);
+	eleventyConfig.addPlugin(processSass);
 	eleventyConfig.addPlugin(processJs);
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -42,20 +44,19 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
 	// Copy these
-	eleventyConfig.addPassthroughCopy({
-		"_includes/assets/uploads": "assets/uploads",
-		"_includes/assets/appendix-b": "assets/appendix-b",
-		"_includes/assets/**/*.css": "assets/css",
-		"_includes/assets/**/*.js": "assets/js",
-		"_includes/assets/icons": "assets/icons",
-		"_includes/svg": "assets/svg",
-		"_includes/assets/img": "assets/img"
-	})
-	.addPassthroughCopy("manifest.json")
-	.addPassthroughCopy("site.webmanifest")
-	.addPassthroughCopy("browserconfig.xml")
-	.addPassthroughCopy("robots.txt")
-	.addPassthroughCopy("sw.js");
+	eleventyConfig
+		.addPassthroughCopy({
+			"assets/uploads": "assets/uploads",
+			"assets/appendix-b": "assets/appendix-b",
+			"assets/scss/bravery.css": "assets/css",
+			"assets/js/bravery.js": "assets/js/bravery.js",
+			"assets/icons": "assets/icons",
+			"assets/img": "assets/img",
+		})
+		.addPassthroughCopy("manifest.json")
+		.addPassthroughCopy("site.webmanifest")
+		.addPassthroughCopy("browserconfig.xml")
+		.addPassthroughCopy("robots.txt");
 
 	eleventyConfig.addLayoutAlias("article", "layouts/article.njk");
 	eleventyConfig.addLayoutAlias("episode", "layouts/episode.njk");
@@ -240,6 +241,33 @@ module.exports = function (eleventyConfig) {
 	);
 
 	/* Transforms */
+	/**
+	 * Remove any CSS not used on the page and inline the remaining CSS in the
+	 * <head>.
+	 *
+	 * @see {@link https://github.com/FullHuman/purgecss}
+	 */
+	eleventyConfig.addTransform(
+		"purge-and-inline-css",
+		async (content, outputPath) => {
+			if (
+				process.env.ELEVENTY_ENV !== "production" ||
+				!outputPath.endsWith(".html")
+			) {
+				return content;
+			}
+			const purgeCSSResults = await new PurgeCSS().purge({
+				content: [{ raw: content }],
+				css: ["assets/styles/bravery.css"],
+				keyframes: true,
+			});
+			return content.replace(
+				"<!-- INLINE CSS -->",
+				"<style>" + purgeCSSResults[0].css + "</style>"
+			);
+		}
+	);
+
 	eleventyConfig.addTransform("html-minify", (content, path) => {
 		if (path && path.endsWith(".html")) {
 			return htmlmin.minify(content, {
@@ -253,7 +281,6 @@ module.exports = function (eleventyConfig) {
 
 		return content;
 	});
-
 
 	return {
 		templateFormats: ["liquid", "md", "njk", "html", "11ty.js"],
