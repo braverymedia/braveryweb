@@ -14,6 +14,7 @@ mp3: ep048-brand-equity-pyramid-part-1-brand-salience.mp3
 duration: 9:15
 tags:
   - podcast
+  - branding
 summary: Does your college or university brand have a base level of recognizeability? How do you even start developing a brand strategy? This is the first in a series on the Brand Equity Pyramid and how to approach brand development in Higher Education. Connect with us on [LinkedIn](https://www.linkedin.com/company/bravery-media/).
 ---
 **Joel Goodman**
