@@ -9,8 +9,9 @@ topics:
     - "WordPress"
 excerpt: Bravery x LMU. Reducing melt through research and human-centered design.
 og:
-    image:
-    alt:
+    image: https://bravery.co/assets/img/og-case-study-lmu.jpg
+    alt: "Screenshot of a phone with the LMU Future Lions Taskboard view. Text reads Bravery Case Study. Loyola Marymount University - Future Lions"
+    title: "Bravery Case Study: LMU Accepted Student Engagement"
 ---
 
 **Client:** Loyola Marymount University (LMU), Los Angeles
