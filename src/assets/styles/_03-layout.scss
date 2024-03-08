@@ -1,3 +1,19 @@
+.layout-home {
+    background: var(--color-black);
+    color: var(--color-white);
+    body {
+        &:before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: var(--grid-unit);
+            background-color: var(--color-dark-neon);
+            z-index: 100;
+        }
+    }
+}
 .page-cover {
     height: 60dvh;
     display: flex;
@@ -7,7 +23,7 @@
         color: var(--color-white);
         height: 95dvh;
         justify-content: flex-end;
-        padding: 0 calc( var(--margin) * 2 ) 20vh;
+        padding: 0 calc( var(--margin) * 2 ) 15vh;
         position: relative;
         perspective: 100vw;
         overflow-y: hidden;
@@ -47,4 +63,14 @@
             filter: blur(14px);
         }
     }
+}
+
+.layout-home #about {
+    background: linear-gradient(180deg, rgba(255, 182, 83, 0.00) 51.18%, rgba(255, 199, 0, 0.22) 77%, rgba(255, 0, 199, 0.23) 87.24%, rgba(107, 77, 224, 0.28) 97.5%), radial-gradient(151.73% 104% at 49.1% 67.96%, rgba(255, 0, 108, 0.80) 0%, rgba(255, 0, 108, 0.00) 69.03%), #150636;
+    position: relative;
+    @media ( min-width: 1024px) {
+        padding-top: 15vh;
+        height: 100dvh;
+    }
+
 }

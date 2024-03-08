@@ -59,11 +59,11 @@
 
 	--grid-unit: 8px;
 	--font-family: NameSansVF, sans-serif;
-	--type-hero: clamp(2.375rem, .331rem + 8.721vi, 8.06rem);
+	--type-hero: clamp(2.375rem, .331rem + 8.621vi, 10.06rem);
 	--type-mega: clamp(2.5rem, calc(1.125em + 8.15vw), 6.598rem);
 	--type-super: clamp(2.25rem, calc(1.125em + 4.15vw), 5.398rem);
 	--type-2xl: clamp(1.802rem, 0.7275rem + 4.4084vi, 4.144rem);
-	--type-xl: clamp(1.6018rem, 0.9104rem + 2.8367vi, 3.1088rem);
+	--type-xl: clamp(1.625rem, 1.0694rem + 2.7778vi, 3.5rem);
 	--type-lg: clamp(1.4238rem, 1.0071rem + 1.7098vi, 2.3322rem);
 	--type-md: clamp(1.2656rem, 1.0436rem + 0.9109vi, 1.7496rem);
 	--type-base: clamp(1.125rem, 1.039rem + 0.3529vi, 1.3125rem);
@@ -74,6 +74,7 @@
 	--font-weight-md: 500;
 	--font-weight-bold: 700;
 	--feature-simple-y: "ss12";
+	--style-display: "opsz" 96;
 
 	--global-transition: all 0.3s ease-in-out;
 
@@ -110,4 +111,14 @@
     0%   	{ transform: scale(0.8); opacity: 0; }
     50%     { transform: scale(0.9); opacity: 1; }
     100% 	{ transform: scale(1); opacity: 1; }
+}
+
+@keyframes twinkle {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+        box-shadow: 0 0 5px 0.5px rgba(150, 150, 150, 0.6);
+    }
 }
