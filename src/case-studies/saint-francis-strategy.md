@@ -8,7 +8,13 @@ topics:
     - "Content Production"
     - "UX Design"
     - "WordPress"
+tags:
+    - casestudy
+    - design
 excerpt: Redesigning the University of Saint Francis, Fort Wayne, website starting with research and strategy.
+cover:
+    image: case-study-cover-usf_mxjqfx
+    alt: Two phone-sized screenshots of the Saint Francis website, overlapping each other. Text reads, Case Study. University of Saint Francis.
 og:
     image: https://bravery.co/assets/img/og-case-study-saint-francis.jpg
     alt: "Screenshot of a phone with the University of Saint Francis homepage loaded up. Text reads Bravery Case Study. University of Saint Francis, Fort Wayne"

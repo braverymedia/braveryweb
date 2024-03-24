@@ -7,7 +7,13 @@ topics:
     - "Melt Reduction"
     - "Web Technology"
     - "WordPress"
+tags:
+    - casestudy
+    - design
 excerpt: Bravery x LMU. Reducing melt through research and human-centered design.
+cover:
+    image: case-study-cover-lmu_livpu5
+    alt: iPhone mockup of LMU Future Lions accepted students portal. Text reads, Case Study. Loyola Marymount University.
 og:
     image: https://bravery.co/assets/img/og-case-study-lmu.jpg
     alt: "Screenshot of a phone with the LMU Future Lions Taskboard view. Text reads Bravery Case Study. Loyola Marymount University - Future Lions"

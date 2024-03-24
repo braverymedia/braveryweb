@@ -1,0 +1,50 @@
+blockquote {
+    --block-pad: calc(1 * var(--grid-unit));
+    --inline-pad: 0;
+    font-size: var(--type-md);
+    font-style: italic;
+    font-weight: 500;
+    padding: var(--block-pad) var(--inline-pad);
+    > p {
+        line-height: 1.2;
+    }
+    @media (min-width: 1024px) {
+        --inline-pad: calc(10 * var(--grid-unit));
+        --block-pad: calc(7 * var(--grid-unit));
+    }
+}
+cite {
+    font-size: var(--type-md);
+    font-style: normal;
+    font-weight: 700;
+}
+cite + p {
+    font-size: var(--type-base);
+}
+.electric-quote {
+    > svg {
+        display: none;
+    }
+    @media (min-width: 1024px) {
+
+        position: relative;
+        aspect-ratio: 331 / 130;
+        width: 100%;
+        max-width: 900px;
+        z-index: 0;
+        > svg {
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            color: var(--color-hilite);
+            top: 0;
+            left: 0;
+        }
+        footer {
+            margin-inline-start: 28.5%;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    }
+}

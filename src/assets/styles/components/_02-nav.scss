@@ -1,71 +1,110 @@
-.navbar {
-    --accent: var(--color-dark-neon);
-    --accent-hover: var(--color-hilite);
-    display: flex;
-    width: 100%;
-    height: 64px;
-    gap: 24px;
-    justify-content: space-between;
-    border-radius: 16px;
-    border: 1px solid var(--color-primary-500, #691EFF);
-    background: rgba(21, 6, 54, 0.75);
-    box-shadow: 0px 0px 35px -12px rgba(255, 0, 108, 0.50);
-    backdrop-filter: blur(7.5px);
+.menu-toggle {
+    background: var(--accent);
+    color: var(--color-white);
+    height: calc(9 * var(--grid-unit));
+    width: calc(9 * var(--grid-unit));
+    aspect-ratio: 1;
     position: fixed;
-    top: calc(var(--grid-unit) * 7);
-    left: var(--margin);
-    max-width: calc(100vw - (var(--margin) * 2));
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    svg {
+        width: calc(3 * var(--grid-unit));
+        color: inherit;
+    }
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}
+.navbar {
+    --nav-bg: var(--color-white);
+    --outer-margin: calc(2 * var(--grid-unit));
+    --top: var(--grid-unit);
+    background-color: var(--nav-bg);
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    position: sticky;
+    top: var(--top);
+    padding: var(--outer-margin);
+    margin-inline: calc( -2 * var(--grid-unit));
+    height: calc(8 * var(--grid-unit));
     z-index: 10;
-    .brand {
-        width: 15%;
-        padding: 8px 0 8px 16px;
-        flex: 0 1 15%;
-        min-width: 128px;
-        color: var(--accent, hsla(335, 100%, 50%, 1));
-        &:hover {
-            color: var(--accent-hover, hsla(58, 100%, 50%, 1));
-        }
-        svg {
-            height: 32px;
+    @media ( min-width: 1024px) {
+        --outer-margin: calc(4 * var(--grid-unit));
+        --top: calc( 2 * var(--grid-unit));
+        margin-inline: calc( -6 * var(--grid-unit));
+        justify-content: space-between;
+        height: unset;
+    }
+}
+.site-links {
+    display: flex;
+    flex-direction: column;
+    gap: calc(3 * var(--grid-unit));
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100vw - ( 2 * var(--grid-unit)));
+    background: var(--nav-bg);
+    padding: var(--outer-margin);
+    font-size: var(--type-xl);
+    font-weight: 700;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3 ease-in-out;
+    .cta {
+        border: 2px solid var(--color-primary-500);
+        font-size: var(--type-base);
+    }
+    @media (min-width: 960px) {
+        flex-direction: row;
+        align-items: center;
+        font-weight: 550;
+        font-size: var(--type-sm);
+        opacity: 1;
+        visibility: visible;
+        position: static;
+        width: auto;
+        padding: unset;
+        .cta {
+            font-size: var(--type-sm);
         }
     }
-    .site-links {
+}
+[data-menu='open'] {
+    .navbar {
+        --nav-bg: var(--accent);
         color: var(--color-white);
     }
-    .cta-icon {
-        background-color: var(--color-black);
-    }
-    a {
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-    }
-    @media ( min-width: 1024px ) {
-        font-size: var(--type-sm);
-        .menu-toggle {
-            display: none;
-        }
-        .navbar-action {
-            width: 15%;
-            padding: 8px;
-            flex: 0 1 15%;
-            justify-content: flex-end;
-            display: flex;
-            min-width: 128px;
-            > .cta {
-                flex: 0 1 auto;
-                width: auto;
+    .site-links {
+        opacity: 1;
+        visibility: visible;
+        .cta {
+            border-color: var(--color-hilite);
+            > svg {
+                color: var(--color-hilite);
             }
         }
-        .site-links {
-            flex: 1 auto;
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            gap: 32px;
-            > .cta {
-                display: none;
-            }
-        }
+    }
+}
+
+.profiles {
+    --gap: var(--grid-unit);
+    display: flex;
+    gap: var(--gap);
+    svg {
+        height: 24px;
+    }
+    a:hover {
+        color: var(--color-neon);
+    }
+    @media (min-width: 1024px) {
+        --gap: calc(2 * var(--grid-unit));
     }
 }

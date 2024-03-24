@@ -73,7 +73,8 @@ textarea:not([rows]) {
 }
 
 /* Text meant only for screen readers. */
-.sr-only {
+.sr-only,
+.sr {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);

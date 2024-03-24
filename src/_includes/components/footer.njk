@@ -1,20 +1,19 @@
  <footer class="site-footer">
-    <div class="panel--grid">
       <article class="legal">
         <p class="copyright">&copy; {% year %} Bravery Media. All Rights Reserved.</p>
         <p class="legal-links"><a href="/privacy-policy/">Privacy Policy</a> <a href="/terms/">Terms of Service</a></p>
+        {% include "components/social-links.njk" %}
         <p class="disclaimer">Bravery does not submit blind RFP responses. If you would like us to submit a proposal for an RFP, please <a href="/contact/?utm_source=disclaimer">contact us</a> to discuss the project, first.</p>
       </article>
       <nav>
         <ul>
           <li><a href="/contact/" class="contact-link">Contact Us</a></li>
           <li><a href="/services/">Services</a></li>
+          <li><a href="{{ 'case-studies' | url }}"/>Work</li>
           <li><a href="/insight/">Insight</a></li>
           <li><a href="/podcast/">Podcast</a></li>
           <li><a href="/newsletter/">Hot Takes</a></li>
           <li><a href="https://civic.bravery.co/?utm_source=braveryco">Government Training</a></li>
-          <li><a href="/jobs/">Jobs</a></li>
         </ul>
       </nav>
-    </div>
   </footer>

@@ -10,7 +10,7 @@
             <div class="meta">Episode {{ ep.data.episode }} &mdash; <time datetime="{{ ep.data.date | machineDate}}">{{ ep.data.date | readableDate }}</time></div>
             <h2 class="episode--title"><a href="{{ ep.url | url }}" title="Read the full transcript">{{ ep.data.title | typography | safe }}</a></h2>
             <div class="episode--summary">
-                {{ ep.data.summary | markdown | safe }}
+                {{ ep.data.summary | md | safe }}
             </div>
             {% set mp3Link -%}{{ ep.data.mp3 | htmlBaseUrl("https://bravery.co") }}{%- endset %}
         </section>

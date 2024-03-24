@@ -1,0 +1,27 @@
+.callout {
+    display: flex;
+    flex-direction: column;
+    gap: calc(5 * var(--grid-unit));
+    background-color: var(--theme-bg);
+    border: 3px solid var(--color-blue);
+    box-shadow: 0px 0px 55px -4px hsla(198, 100%, 68%, 0.4), 0px 0px 9px 0px hsla(198, 100%, 68%, 0.2), 0px 0px 16px 0px hsla(198, 100%, 68%, 0.3);
+    padding: calc(3 * var(--grid-unit));
+    font-size: var(--type-sm);
+    margin-bottom: var(--v-2xl);
+    img {
+        aspect-ratio: 1;
+        height: auto;
+        width: 100%;
+    }
+    @media ( width >= 1024px) {
+        flex-direction: row;
+        align-items: center;
+        img {
+            height: auto;
+            width: 250px;
+        }
+        h2 {
+            font-size: var(--type-md);
+        }
+    }
+}

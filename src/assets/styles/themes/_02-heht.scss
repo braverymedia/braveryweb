@@ -1,3 +1,10 @@
+[data-theme="heht"] {
+    --theme-bg: linear-gradient(125deg, #6B4DE0 -29.83%, #FF00C7 40.92%, #FFF500 110.78%);
+    --color: var(--color-white);
+    --button-bg: var(--color-neon);
+    --title-weight: 1000;
+}
+
 .newsletter {
     &--subscribe {
         background-color: var(--color--neon);
@@ -106,16 +113,22 @@ form.heht-subscribe {
     }
     button {
         aspect-ratio: 1 / 1;
+        background: var(--button-bg);
+        color: var(--color);
         margin: 0;
         padding: 0;
         height: 60px;
         width: 60px;
         border-radius: 4px;
-        box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
         svg {
             width: 32px;
             height: 32px;
             transform: rotate(18deg);
+            color: currentColor;
         }
         &:hover {
             svg {
@@ -260,7 +273,7 @@ form.heht-subscribe {
 }
 .heht-archives {
     color: var(--color-white);
-    background: var(--color-dark-neon);
+    background: var(--color-neon);
     padding: calc(var(--grid-unit) * 12) var(--grid-unit);
     .icon-lg {
         display: none;

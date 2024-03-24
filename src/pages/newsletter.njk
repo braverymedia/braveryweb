@@ -38,8 +38,7 @@ eleventyNavigation:
     <cite>Chris Lastovicka, Cornell University</cite>
   </blockquote>
   <blockquote>
-    <p>“Things seem to be changing really fast in higher ed right now, and I don’t always have the time to research the issues
-    or upcoming trends, and this newsletter helps me feel better prepared for what’s coming next.”</p>
+    <p>“Things seem to be changing really fast in higher ed right now, and I don’t always have the time to research the issues or upcoming trends, and this newsletter helps me feel better prepared for what’s coming next.”</p>
     <cite>Sarah Cummings, University of Delaware</cite>
   </blockquote>
   </div>
@@ -50,8 +49,7 @@ eleventyNavigation:
     <h2><span class="sr">What People Are Saying</span>{% include "svg/heht-archives-title.svg" %}</h2>
   </header>
   <section class="heht-grid">
-    {% set issueList = collections.newsletter %}
-    {% for issue in issueList | reverse %}
+    {% for issue in collections.newsletter | reverse %}
       {% include "components/card-issue.njk" %}
     {% endfor %}
   </section>

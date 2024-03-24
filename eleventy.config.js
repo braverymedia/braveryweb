@@ -46,12 +46,12 @@ module.exports = function (eleventyConfig) {
 	// Copy these
 	eleventyConfig
 		.addPassthroughCopy({
-			"assets/uploads": "assets/uploads",
-			"assets/appendix-b": "assets/appendix-b",
-			"assets/scss/bravery.css": "assets/css",
-			"assets/js/bravery.js": "assets/js/bravery.js",
-			"assets/icons": "assets/icons",
-			"assets/img": "assets/img",
+			"src/assets/uploads": "assets/uploads",
+			"src/assets/appendix-b": "assets/appendix-b",
+			"src/assets/scss/bravery.css": "assets/css",
+			"src/assets/js/bravery.js": "assets/js/bravery.js",
+			"src/assets/icons": "assets/icons",
+			"src/assets/img": "assets/img",
 		})
 		.addPassthroughCopy("manifest.json")
 		.addPassthroughCopy("site.webmanifest")
@@ -194,7 +194,7 @@ module.exports = function (eleventyConfig) {
 		});
 	});
 
-	eleventyConfig.addCollection("case-studies", function (collection) {
+	eleventyConfig.addCollection("caseStudies", function (collection) {
 		return collection.getAllSorted().filter(function (item) {
 			return item.inputPath.match(/^\.\/case-studies\//) !== null;
 		});
@@ -239,6 +239,10 @@ module.exports = function (eleventyConfig) {
 			return md.render(content);
 		}
 	);
+
+	eleventyConfig.addFilter("md", (content) => {
+		return md.render(content);
+	});
 
 	/* Transforms */
 	/**

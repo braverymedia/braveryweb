@@ -1,33 +1,35 @@
-button,
-.cta {
+.cta,
+button {
     appearance: none;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	gap: var(--grid-unit);
-	padding: var(--grid-unit) calc(var(--grid-unit) * 2);
-	color: var(--color-white);
-	width: 100%;
-	border: 1px solid transparent;
-	border-radius: var(--grid-unit);
-	transition: var(--global-transition);
-	font-family: inherit;
-	cursor: pointer;
-	font-variation-settings: "opsz" 24;
-	font-weight: 600;
-	position: relative;
-    font-size: var(--type-sm);
-}
-.cta-icon {
-    svg {
-        height: 16px;
-        color: var(--accent, hsla(335, 100%, 50%, 1));
-        transition: var(--global-transition);
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    display: flex;
+    gap: var(--grid-unit);
+    text-decoration: none;
+    padding: var(--grid-unit) calc(2 * var(--grid-unit));
+    > svg {
+        width: calc(2 * var(--grid-unit));
+        color: var(--accent);
     }
-    &:hover {
-		border-color: var(--accent-hover, hsla(58, 100%, 50%, 1));
-        svg {
-            color: var(--accent-hover, hsla(58, 100%, 50%, 1));
-        }
+}
+.cta-group {
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc( 4 * var(--grid-unit) );
+    margin-top: calc(2 * var(--grid-unit));
+    .intro & {
+        margin-block-start: var(--outer-margin);
+    }
+}
+.cta-inline {
+    font-size: inherit;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    transform: translateY(-8px);
+    font-weight: 550;
+    > svg {
+        width: calc(3 * var(--grid-unit));
     }
 }

@@ -5,6 +5,7 @@ heading: Higher ed website strategy + design services
 description: Bravery Media is the best value for world-class higher education website strategy + design.
 section: services
 permalink: /services/
+wistias: ['y5o31k57aj']
 og:
   image: https://bravery.co/assets/img/bravery-services-share.jpg
   alt: "Text reads: Digital Strategy and Design proven for success."
@@ -15,36 +16,44 @@ eleventyNavigation:
   order: 1
   title: Services
 ---
-<main>
-<header class="cover constrain">
-    <h1>Say goodbye to guesswork. <span class="brand loud">Bravery leads the way.</span></h1>
-</header>
-<section class="services has-divider-top">
+<article class="layout services-intro">
+  <header>
+    <h1>Website strategy + design that make a difference.</h1>
+    <p>Bravery's unique research-forward strategies help colleges and universities save money, connect with their audiences, and grow their reputations in a crowded market. Whether you're early in the planning process, looking for quick wins, or deep in a rebanding effort, Bravery will see you through.</p>
+    <div class="cta-group">
+        <a href="{{ '/contact' | url }}">Ready to talk? ↘</a>
+    </div>
+  </header>
+  <div class="wistia_responsive_padding" style="aspect-ratio:4/3;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_y5o31k57aj seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/y5o31k57aj/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+</article>
+{% include "components/service-grid.njk" %}
+<section id="benchmark" class="layout">
   <article>
-    <header class="intro panel--grid">
-      <h2>Website strategy + design proven for success.</h2>
-      <p>Bravery's unique research-forward strategies help colleges and universities improve their web marketing at every stage. Our offerings deliver the biggest return on investment in higher ed marketing and are designed to address your institution's specific needs. No padding, no filler, no side quests.</p>
-    </header>
-    <section class="offerings constrain">
-      <div class="divider-grid invert">{% include "svg/gridplane.svg" %}</div>
-      <section class="core-offerings">
-        <article class="level web-strategy">
-          <h3 itemprop="name"><a href="{{ '/services/website-strategy/' | url }}">Website Strategy Guide ↘︎</a></h3>
-          <p>Our signature deep-dive audit into your site's UX, performance, and SEO with prioritized recommendations. <a href="{{ '/services/website-strategy/' | url }}" title="Learn about Bravery's Website Strategy Guide">Get the details</a>.</p>
-        </article>
-        <article class="level level-up">
-          <h3 itemprop="name"><a href="{{ '/services/web-aor/' | url }}">Web Agency of Record ↘︎</a></h3>
-          <p>Next-gen marketing results with a dedicated partner to manage your entire marketing tech stack. <a href="{{ '/services/web-aor/' | url }}" title="Learn about Bravery's Web Agency of Record services">Time to level up</a>.</p>
-        </article>
-        <article class="level custom-reports">
-          <h3 itemprop="name"><a href="{{ '/services/custom-insights/' | url }}">Custom Insights Reports ↘︎</a></h3>
-          <p>Small scope, targeted insights to bolster the strategy you already have in place. <a href="{{ '/services/custom-insights/' | url }}" title="Learn about Bravery's Custom Insight Reports">Bravery can help</a>.</p>
-        </article>
-      </section>
-      {% include 'components/turbo.njk' %}
-      <div class="divider-grid">{% include "svg/gridplane.svg" %}</div>
-    </section>
+      <h2>Benchmark from <span class="brand">Bravery</span></h2>
+      <p>Get a handle on your marketing reality. Whether you're new to your role, need to make a case to leadership, or are doing pre-RFP planning, Benchmark reports are fast, affordable, and hands-off. And they're built with the same principles that have generated millions in new revenue for other institutions.</p>
+      <div class="cta-group">
+          <a href="{{ 'benchmark' | url }}">All of the details ↘</a>
+      </div>
   </article>
-  {% include 'components/powerpacks.njk' %}
+  <div class="mini-vhs">
+      {% include "components/vhs-spine.njk" %}
+  </div>
 </section>
-</main>
+<section class="core-offerings constrain">
+      <header>
+        <h2>Signature Offerings</h2>
+        <p>Our value-packed signature offerings have been proven time and again to reduce costs, increase enrollment and gifts, and enable higher ed marketing teams to focus on what they do best.</p>
+      </header>
+      <section class="level web-strategy">
+        <h3 itemprop="name"><a href="{{ '/services/website-strategy/' | url }}">Website Strategy Guide ↘︎</a></h3>
+        <p>Our signature deep-dive audit into your site's UX, performance, and SEO with prioritized recommendations. <a href="{{ '/services/website-strategy/' | url }}" title="Learn about Bravery's Website Strategy Guide">Get the details</a>.</p>
+      </section>
+      <section class="level level-up">
+        <h3 itemprop="name"><a href="{{ '/services/web-aor/' | url }}">Web Agency of Record ↘︎</a></h3>
+        <p>Next-gen marketing results with a dedicated partner to manage your entire marketing tech stack. <a href="{{ '/services/web-aor/' | url }}" title="Learn about Bravery's Web Agency of Record services">Time to level up</a>.</p>
+      </section>
+      <section class="level custom-reports">
+        <h3 itemprop="name"><a href="{{ '/services/custom-insights/' | url }}">Custom Insights Reports ↘︎</a></h3>
+        <p>Small scope, targeted insights to bolster the strategy you already have in place. <a href="{{ '/services/custom-insights/' | url }}" title="Learn about Bravery's Custom Insight Reports">Bravery can help</a>.</p>
+      </section>
+</section>

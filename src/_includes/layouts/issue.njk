@@ -2,7 +2,6 @@
 layout: layouts/base.njk
 section: single-issue
 heading: Higher Ed Hot Takes
-postType: article
 ---
 <main>
     <article>
@@ -17,7 +16,7 @@ postType: article
             <figure class="issue--cover">
                 <img
                     src="{% src cover.image %}"
-                    srcset="{% srcset cover.image %}" alt="{{cover.alt}}" width="388" height="216" loading="lazy" decoding="async"
+                    srcset="{% srcset cover.image %}" alt="{{cover.alt}}" width="388" height="216"
                 />
             </figure>
             {{ layoutContent | safe }}

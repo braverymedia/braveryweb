@@ -20,13 +20,13 @@
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ metadata.feed.url }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.articles | rssLastUpdatedDate }}</updated>
+  <updated>{{ collections.article | rssLastUpdatedDate }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
   </author>
-  {%- for article in collections.articles %}
+  {%- for article in collections.article %}
   {% set absoluteArticleUrl %}{{ article.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
     <title>{{ article.data.title }}</title>
@@ -34,7 +34,7 @@
     <updated>{{ article.date | rssDate }}</updated>
     <id>{{ absoluteArticleUrl }}</id>
     <content type="html">{{ article.templateContent | htmlToAbsoluteUrls(absoluteArticleUrl) }}</content>
-    <summary>{{ article.data.description }}</summary>
+    <summary>{{ article.data.description | md | safe }}</summary>
   </entry>
   {%- endfor %}
 </feed>

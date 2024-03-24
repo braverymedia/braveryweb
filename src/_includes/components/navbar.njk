@@ -1,13 +1,10 @@
+<button class="menu-toggle" data-toggle="menu" aria-expanded="false">{% include "svg/menu-alt.svg" %} <span class="sr-only">Site Menu</span></button>
 <header class="navbar">
-  <a href="/" title="Home link" class="brand">{% include "svg/bravery-logo.svg" %}</a>
-  <button class="menu-toggle" data-toggle="menu" aria-expanded="false">{% include "svg/menu-alt.svg" %} <span class="sr-only">Site Menu</span></button>
+  <a href="/" title="Home link" class="brand logo">Bravery</a>
   <nav class="site-links" role="navigation" id="site-nav" aria-label="Site Menu">
       {% set navPages = collections.all | eleventyNavigation %}
       {%- for entry in navPages %}<a href="{{ entry.url | url }}" class="nav-link" {% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
       {%- endfor -%}
       {% include "components/button-contact.njk" %}
   </nav>
-  <div class="navbar-action">
-    {% include "components/button-contact.njk" %}
-  </div>
 </header>

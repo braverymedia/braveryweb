@@ -97,8 +97,7 @@
             grid-template-columns: minmax(532px, 4fr) minmax(auto, 6fr);
             gap: calc( var(--grid-unit) * 2 ) calc(var(--grid-unit) * 12);
             max-width: 1400px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-inline: auto;
         }
         .meta {
             display: flex;

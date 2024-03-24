@@ -3,57 +3,99 @@ layout: layouts/base.njk
 section: home
 permalink: /
 ---
-<header class="page-cover">
+<header>
     <h1 class="hero">
         <span class="brand shout">Bravery</span> propels higher education toward its potential.
     </h1>
+    <div class="layout">
+        <section class="intro">
+            <p><span class="brand">Bravery</span> Media is a higher education website strategy and design studio. We solve the biggest challenges facing institutions of higher learning using data, insight, and humanity.</p>
+            <div class="cta-group">
+                <a href="#">Learn more about us ↘</a>
+            </div>
+        </section>
+        <section class="team">
+            <div class="people">
+                {% include 'components/people.njk' %}
+            </div>
+        </section>
+    </div>
 </header>
-<section id="about">
-    <article class="company">
-        <p><span class="brand">Bravery</span> is a higher education website strategy and design studio. We solve the biggest challenges facing institutions of higher learning using data, insight, and humanity.</p>
-        <div class="cta-group">
-            <a href="cta cta-outline">Learn more about us ↘</a>
-        </div>
-    </article>
+<section id="about" class="layout">
     <article class="work">
         <h2>Work that pays for itself, fast.</h2>
-        <p>Strategy. Design. Growth. Bravery turns data into change, design into reputation, and your goals into legacy. Our team's talent runs deep and can benefit your institution at whatever stage of digital strategy you find yourself.</p>
+        <p><strong>Strategy. Design. Growth.</strong> Bravery turns data into change, design into reputation, and your goals into legacy. Our team's talent runs deep and can benefit your institution at whatever stage of digital strategy you find yourself.</p>
         <div class="cta-group">
-            <a href="cta cta-outline">Case Studies</a>
-            <a href="cta cta-solid">See all of our services ↘</a>
+            <a href="{{ 'insight/case-studies/' | url }}">Case Studies</a>
+            <a href="{{ 'services' | url }}">See all of our services ↘</a>
         </div>
     </article>
-    <article class="people">
-        {% include "components/people.njk" %}
-    </article>
-    <div class="landscape">
-        <span class="orb"></span>
-        <span class="mountains">{% include "svg/mountains.svg" %}</span>
+    <div class="work-swiper" data-bravery-carousel>
+        <div class="track">
+            {% set csList = collections.design %}
+            {% for cs in csList %}
+                {% include "components/cs-card.njk" %}
+            {% endfor %}
+        </div>
     </div>
 </section>
-<section class="learn">
+<section id="services" class="billboard">
+    <ul>
+    <li><a href="#">Research + Strategy</a></li>
+    <li><a href="#">Web Optimization + SEO</a></li>
+    <li><a href="#">Design + Development</a></li>
+    <li><a href="#">Content Direction + Production</a></li>
+    <li><a href="#">Training + Professional Development</a></li>
+    <li><a href="#">Web Agency of Record</a></li>
+    </ul>
+</section>
+<section id="benchmark">
+    <div class="layout layout-three">
+        {% include "components/benchmark.njk" %}
+    </div>
+    <article class="constrain">
+        <h2>Benchmark from <span class="brand">Bravery</span></h2>
+        <p>Get a handle on your marketing reality. Whether you're new to your role, need to make a case to leadership, or are doing pre-RFP planning, Benchmark reports are fast, affordable, and hands-off. And they're built with the same principles that have generated millions in new revenue for other institutions.</p>
+        <div class="cta-group">
+            <a href="{{ 'benchmark' | url }}">All of the details ↘</a>
+            <a href="{%- if uri %}{{ uri | url }}{%- else -%}{{ "contact" | url }}{% endif -%}" class="cta cta-inline">{%- include "svg/message.svg" %} <span>{%- if label %}{{ label }}{%- else -%}Talk to us{%- endif -%}</span></a>
+        </div>
+    </article>
+</section>
+<section class="testimonial" data-theme="electric">
     <article>
+        <div class="electric-quote">
+            <blockquote>
+                <p>I could not be more proud of the final product we have, the team that developed it, and the results this work drove for our organization. The university's investment in web strategy and design with Bravery paid for itself in eight days.</p>
+            </blockquote>
+            <footer>
+                <cite>Seth Odell</cite>
+                <p>Former Vice Chancellor for Marketing</p>
+            </footer>
+            {% include "svg/electric-quote.svg" %}
+        </div>
+    </article>
+    <p class="cta-text huge"><span class="brand">Bravery</span> can help you, too. <a href="{{ '/contact' | url }}">Start the conversation</a>.</p>
+</section>
+<section class="learn">
+    <article class="constrain">
         <h2>Skill-up with <span class="brand">Bravery</span> pros</h2>
         <p>Even marketing pros working in higher education need to keep learning. Whether your style is podcast listening, newsletter reading, or in-person training, we want to share our experience with you.</p>
         <div class="cta-group">
-            <a href="cta cta-outline">Dig into our insights ↘</a>
-            <a href="cta cta-solid">Train with us</a>
+            <a href="{{ 'insight' | url }}">Dig into our insights ↘</a>
+            <a href="{{ 'services/training' | url }}">Professional development ↘</a>
         </div>
     </article>
-    <section class="resources">
+    <section class="resources layout layout-three">
+        <a href="#" class="appb">
 
+        </a>
+        <a href="#" class="how2">
+
+        </a>
+        <a href="#" class="heht">
+
+        </a>
     </section>
-</section>
-<section class="testimonial">
-    <article>
-        <blockquote class="electric">
-            <p>I could not be more proud of the final product we have, the team that developed it, and the results this work drove for our organization. Our university's investment in web strategy and design with Bravery paid for itself in eight days.</p>
-        </blockquote>
-        <div>
-            <cite>Seth Odell</cite>
-            <p>Former Vice Chancellor for Marketing</p>
-        </div>
-    </article>
-    <p>Bravery can help you, too. <a href="{{ '/contact' | url }}">Start the conversation</a>.</p>
 </section>
 {% include "components/heht-bar.njk" %}

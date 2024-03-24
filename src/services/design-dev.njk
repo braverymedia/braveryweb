@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+title: Higher Ed Web Design + Development from Bravery
+description: Give your college or university website accessible and performant design with clean, lean, blazing fast code.
+section: services
+permalink: /services/web-design/
+---
+<main>
+  <header class="constrain">
+      <h1>Design with <span class="brand">Bravery</span></h1>
+      <p>Higher ed websites have a lot in common with each other and that makes it hard to stand out in a crowded market. Coupled with thorough research and sound strategy, Bravery’s design services provide your institution with a website that looks beautiful AND increases your inquiries, applications, and revenue.</p>
+      <p>Bravery’s web design work pays for itself almost immediately after launch. Past Bravery clients have seen applications double and inquiries increase by 128%. Some have realized over $8 million in new revenue in the first year.</p>
+      <div class="cta-group">
+          <a href="{{ '/contact' | url }}">Let's talk in-depth ↘</a>
+      </div>
+  </header>
+  <section class="service-description layout">
+    <div>
+      <h2>Our secret is UX</h2>
+      <p>There’s so much more to a website that converts than drawing pixels. Bravery’s focus on hospitable design practices means user experiences (that’s UX for short) that keep your prospects thinking about your institution all day. Great UX means big return on investment. Doesn’t that sound better than just copying someone else’s drone video?</p>
+      <h3>The winning web combo</h3>
+      <p>Great UX, beautiful design, and modern code mean a website that produces meaningful impact for your institution. We want your website to be fast so that it converts better and ranks higher on search engine results pages. Lean code, hospitable design, and a focus on inclusive usability is what gives you an edge.</p>
+    </div>
+    <div class="work-swiper" data-bravery-carousel>
+        <div class="track">
+            {% set csList = collections.casestudy %}
+            {% for cs in csList %}
+                {% include "components/cs-card.njk" %}
+            {% endfor %}
+        </div>
+    </div>
+  </section>
+  {# SpeedyU here #}
+  <section class="code constrain">
+    <h2>Code options</h2>
+    <p><strong>WordPress Modernization</strong> — modernize your WordPress website with Bravery. We keep your existing design and adapt it to the WordPress Block Editor. You’ll see immediate speed increases, easier content management, and safer updates, all for significantly less than a total redesign and build. Bonus: your next website redesign project will be so much easier. Price starts at $40,000</p>
+    <p><strong>Design to WordPress</strong> — take advantage of Bravery’s suite of WordPress Block Editor tools, blocks, and plugins integrated into a lightning-fast custom theme. There is no Divi hacking here. Bravery has always built 100% WordPress standards-focused themes. Seriously, our WordPress Block Themes with Full Site Editing blow our competitors out of the water when it comes to site speed, accessibility, and conversion rate optimization. Price starts at $150,000</p>
+    <p><strong>Design to Static Prototype</strong> — There are some Content Management Systems we just won’t work on due to accessibility concerns, outdated development practices, and limited means to optimize your website (sorry not sorry). If you're stuck in a contract with one of those vendors, we can produce static, clean, fast, HTML, CSS, and JavaScript ready for integration by your own dev team or support contacts. Price starts at $65,000</p>
+    <p><strong>Full Website Hosting and Management</strong> — our <a href="{{ '/services/web-aor/' |url }}">Web Agency of Record</a> services ensure that the website we’ve worked on together stays operating at its peak. Save IT and developer resources and time by letting us handle everything technical, from hosting to speed optimization and accessibility to conversion tracking. The only thing we can’t do is manage your paid advertising (but we can recommend a couple of folks). This is the future of higher ed web strategy. Price starts at $150,000 per year</p>
+    <div class="cta-group">
+        <a href="{{ '/services/web-aor/' | url }}">Learn more about Web AOR ↘</a>
+    </div>
+  </section>
+  <aside class="callout constrain">
+    {% set image = 'neon-tree.jpg' %}
+    <img
+        srcset="{% srcset image %}"
+        data-src="{% src image %}"
+        alt="A neon tree growing up out of the ground. It's night time and a single line, glowing crescent moon is to the left of the tree." loading="lazy" width="500" height="500">
+    <div>
+      <h2>Sustainable UX</h2>
+      <p>Your prospective students are more aware than ever of the impact they have on the environment. Bravery is the first higher ed web design agency in the US publicly committed to reducing the carbon footprint of your website through lean code, fast-loading sites, and green hosting architecture powered by renewable energy.</p>
+    </div>
+  </aside>
+  {% include "components/service-grid.njk" %}
+</main>

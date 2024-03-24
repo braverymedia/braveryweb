@@ -11,6 +11,12 @@
 {% if '/podcast' in page.url and page.url != '/podcast/' %}
 	<script>{{ audiojs | safe }}</script>
 {% endif %}
+{% if wistias %}
+    {% for wistia in wistias %}
+    <script src="https://fast.wistia.com/embed/medias/{{wistia}}.jsonp" async></script>
+    {% endfor %}
+{% endif %}
+<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
 {% if section == "legal" %}
     <script src="https://app.termageddon.com/js/termageddon.js" async></script>
 {% endif %}

@@ -92,20 +92,18 @@ function preloadImage(img) {
 }
 
 // Mobile nav
-const triggerMenu = document.querySelector('.menu-trigger');
+const menuTrigger = document.querySelector('.menu-toggle');
 
-triggerMenu.addEventListener('click', e => {
-    if ( document.body.dataset.menu === 'closed' ) {
-        document.body.dataset.menu = 'open';
-        e.currentTarget.setAttribute('aria-expanded', true);
-    } else {
-        document.body.dataset.menu = 'closed';
-        e.currentTarget.setAttribute('aria-expanded', false);
+const toggleMenu = () => {
+	if (menuTrigger.getAttribute("aria-expanded") === "false") {
+		menuTrigger.setAttribute("aria-expanded", "true");
+        document.body.dataset.menu = "open";
+	} else {
+        menuTrigger.setAttribute("aria-expanded", "false");
+        document.body.dataset.menu = "closed";
     }
-});
+};
 
-// scroll faux browser image
-const fakeBrowser = document.querySelector('.faux-browser');
 // Intersection Observer Configuration
 const observerOptions = {
     root: null,
@@ -128,19 +126,7 @@ function handleIntersect(entry) {
         fakeBrowser.classList.remove('in-view');
     }
 };
-if ( fakeBrowser ) {
-    fbObserver.observe(fakeBrowser);
-}
 
-
-const articles = document.querySelectorAll('.article-list article');
-if ( articles ) {
-    articles.forEach( article => {
-        const id = article.getAttribute('data-cover');
-        if (!src) { return; }
-        article.addEventListener('mouseover', (e) => {
-            article.classList.add('active');
-            document.querySelector("#" + id).classList.add('active');
-        });
-    });
-}
+window.addEventListener("DOMContentLoaded", (event) => {
+    menuTrigger?.addEventListener("click", toggleMenu);
+});

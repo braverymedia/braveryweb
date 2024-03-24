@@ -1,0 +1,9 @@
+.people {
+    display: flex;
+    align-items: flex-start;
+    gap: calc(4 * var(--grid-unit));
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

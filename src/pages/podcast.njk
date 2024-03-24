@@ -10,3 +10,7 @@ eleventyNavigation:
   order: 4
   title: Podcasts
 ---
+<section class="episode-list">
+  {% set episodeList = collections.episodes %}
+  {% include "components/episodelist.njk" %}
+</section>

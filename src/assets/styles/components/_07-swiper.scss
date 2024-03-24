@@ -1,0 +1,39 @@
+[data-bravery-carousel] {
+    overflow: auto;
+    max-width: 100%;
+    margin-inline-end: calc(-1 * var(--outer-margin));
+    .track {
+     	--gap: 16px;
+        --min-width: 75vw;
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        gap: var(--gap);
+        padding-block-end: 2rem;
+        align-items: flex-start;
+        @media (min-width: 1024px) {
+            --gap: 32px;
+            --min-width: 33vw;
+        }
+        > * {
+            scroll-snap-align: center;
+            min-width: var(--min-width);
+            width: auto;
+            flex: 1 62%;
+            height: auto;
+            overflow: hidden;
+            border-radius: 4px;
+            @media (min-width: 1024px) {
+                min-width: 25vw;
+                height: auto;
+            }
+        }
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

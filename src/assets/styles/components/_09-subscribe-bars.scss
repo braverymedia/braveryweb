@@ -1,0 +1,30 @@
+.subscribe-callout {
+    --padding: calc(4 * var(--grid-unit));
+    background: var(--theme-bg);
+    display: flex;
+    padding: var(--padding);
+    align-items: center;
+    gap: calc(3 * var(--grid-unit));
+    align-self: stretch;
+    border-radius: calc(4 * var(--grid-unit));
+    color: var(--color);
+    flex-direction: column;
+    @media ( min-width: 1024px ) {
+        --padding: calc(8 * var(--grid-unit));
+        flex-direction: row;
+    }
+    h2 {
+        font-weight: var(--title-weight, 700);
+    }
+    &[data-theme="heht"] {
+        h2 {
+            text-transform: uppercase;
+            flex:0 1 50%;
+            font-size: var(--type-mega);
+            line-height: 0.8;
+        }
+        div {
+            flex: 1 50%;
+        }
+    }
+}

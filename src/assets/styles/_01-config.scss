@@ -19,20 +19,14 @@
 	src: local(Arial);
 	size-adjust: 93%;
 }
-@font-face {
-	font-family: EightiesComeback;
-	font-display: swap;
-	font-weight: 500;
-	font-stretch: condensed;
-	src: url("https://bravery.b-cdn.net/EightiesComeback-MedCond-subset.woff2");
-}
 
 @font-face {
-	font-family: EightiesComeback;
+	font-family: MondayVacation;
 	font-display: swap;
 	font-weight: 200;
-	font-stretch: condensed;
-	src: url("https://bravery.b-cdn.net/EightiesComeback-LtXCn-subset.woff2");
+	font-stretch: normal;
+	font-style: italic;
+	src: url("https://bravery.b-cdn.net/Monday-Vacation-Script-Italic-subset.woff2");
 }
 
 * {
@@ -44,21 +38,23 @@
 	--color-white: #fff;
 	--color-black: #150635;
 	--color-primary-500: hsla(260, 100%, 56%, 1);
-	--color-neon: #FF00C7;
-	--color-dark-neon: hsla(335, 100%, 50%, 1);
+	--color-primary-600: hsla(260, 100%, 40%, 1);
+	--color-cyan-700: hsla(198, 100%, 30%, 1);
+	--color-success-800: hsla(104, 71%, 20%, 1);
+	--color-neon: hsla(335, 100%, 50%, 1);
 	--color-hilite: hsla(58, 100%, 50%, 1);
 	--color-orange: #FF5C00;
 	--color-blue: hsla(198, 100%, 68%, 1);
 	--color-nav: #ffffff;
 	--color-grey: #d5d5d5;
-	--gradient--primary:  linear-gradient(91.95deg, #ff5c00 -15%, #ff00c7 22%, var(--color-primary-500, #691EFF) 55%, var(--color-primary-500, #691EFF) 70%, #ff00c7 85%, #ff5c00 105%);
-	--gradient--shout: linear-gradient(124.97deg, #FFF500 -29.83%, #FF00C7 82.12%, var(--color-primary-500, #691EFF) 142.13%);
-	--gradient--neon: linear-gradient(124.97deg, #FF5C00 -29.83%, #FF00C7 61.51%, var(--color-primary-500, #691EFF) 142.13%);
-	--gradient-dark-blue: linear-gradient(150deg, #252E5B 33.71%, #160736 79.6%);
-	--gradient-sky: linear-gradient(180deg, rgba(255, 182, 83, 0.00) 51.18%, rgba(255, 199, 0, 0.22) 77%, rgba(255, 0, 199, 0.23) 87.24%, rgba(107, 77, 224, 0.28) 97.5%), radial-gradient(151.73% 104% at 49.1% 67.96%, rgba(255, 0, 108, 0.80) 0%, rgba(255, 0, 108, 0.00) 69.03%), #150636;
+
+	--gradient-brand: linear-gradient( 35deg, var(--color-neon), var(--color-hilite) );
+	--bars-block: linear-gradient(to bottom, hsl(35, 75%, 65%) 0%, hsl(35, 75%, 65%) 20%, hsl(6, 61%, 66%) 20%, hsl(6, 61%, 66%) 40%, hsl(338, 62%, 61%) 40%, hsl(338, 62%, 61%) 60%, hsl(295, 52%, 50%) 60%, hsl(295, 52%, 50%) 80%, hsl(266, 63%, 58%) 80%, hsl(266, 63%, 58%) 100%);
+	--bars-inline: linear-gradient(to right, hsl(35, 75%, 65%) 0%, hsl(35, 75%, 65%) 20%, hsl(6, 61%, 66%) 20%, hsl(6, 61%, 66%) 40%, hsl(338, 62%, 61%) 40%, hsl(338, 62%, 61%) 60%, hsl(295, 52%, 50%) 60%, hsl(295, 52%, 50%) 80%, hsl(266, 63%, 58%) 80%, hsl(266, 63%, 58%) 100%);
 
 	--grid-unit: 8px;
 	--font-family: NameSansVF, sans-serif;
+	--font-script: MondayVacation, script;
 	--type-hero: clamp(2.375rem, .331rem + 8.621vi, 10.06rem);
 	--type-mega: clamp(2.5rem, calc(1.125em + 8.15vw), 6.598rem);
 	--type-super: clamp(2.25rem, calc(1.125em + 4.15vw), 5.398rem);
@@ -121,4 +117,18 @@
         transform: scale(1);
         box-shadow: 0 0 5px 0.5px rgba(150, 150, 150, 0.6);
     }
+}
+[data-ar] > * {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+[data-ar="1:1"] {
+	aspect-ratio: 1;
+}
+[data-ar="9:16"] {
+	aspect-ratio: 9/16;
+}
+[data-ar="2:3"] {
+	aspect-ratio: 2/3;
 }
