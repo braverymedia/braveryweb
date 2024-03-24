@@ -43,17 +43,19 @@ main {
     > header {
         display: flex;
         flex-direction: column;
-        min-height: calc(100dvh - 121px);
         justify-content: flex-start;
         align-items: flex-start;
         gap: var(--v-xl);
-
-    }
-    > header {
         padding-block: var(--v-xl);
+        &.constrain {
+            margin-block-start: unset;
+        }
     }
     > section {
         padding-block: var(--v-2xl);
+    }
+    .layout-home & > header {
+        min-height: calc(100dvh - 121px);
     }
 }
 .intro > p {
@@ -232,6 +234,18 @@ main {
         justify-content: space-between;
         .legal {
             flex: 0 1 40%;
+        }
+    }
+}
+@media ( width >= 1024px ) {
+    .service-description {
+        align-items: center;
+        &.sticky {
+            align-items: flex-start;
+            > *:last-child {
+                position: sticky;
+                top: calc(20 * var(--grid-unit));
+            }
         }
     }
 }

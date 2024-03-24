@@ -106,3 +106,17 @@ b {
 		}
 	}
 }
+main {
+	ul, ol {
+		margin-block-start: calc(2 * var(--grid-unit));
+		padding-inline: var(--grid-unit);
+	}
+	ul li {
+		list-style-type: "\203A"; // for safari
+		margin-bottom: 0.5em;
+		padding-left: var(--grid-unit);
+		&::marker {
+			content: "\203A";
+		}
+	}
+}

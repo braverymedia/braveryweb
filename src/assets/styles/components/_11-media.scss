@@ -1,0 +1,10 @@
+figure {
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    img, video {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
