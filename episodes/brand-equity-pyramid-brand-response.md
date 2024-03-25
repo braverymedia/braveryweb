@@ -12,7 +12,7 @@ cover:
   alt: "Text reads: Appendix B. Brand Equity Pyramid Part III Brand response. A
     Bravery Podcast"
 mp3: /assets/appendix-b/episode-050-brand-equity-pyramid-part-3-brand-response.mp3
-duration: 9?35
+duration: 9:35
 tags:
   - podcast
 summary: Joel Goodman and Kristin Van Dorn discuss the Customer Based Brand
@@ -33,7 +33,7 @@ summary: Joel Goodman and Kristin Van Dorn discuss the Customer Based Brand
  yay. We have already covered the first two levels of the pyramid.
 
 **Kristin**
- So, in the first two levels, we have salience, which is basically brand awareness. Do your customers know who you are? Are you in their minds when they think, where do I want to apply to college? The second level is performance and imagery, otherwise known as brand meaning. So what sort of abstract space does your brand take up in your customers' minds? So it’s not only like I know that it’s a university, but that I know it’s a university that has these features, these benefits, this is what the logo looks like, this is what I associate it with. That’s the brand meaning side of it. 
+ So, in the first two levels, we have salience, which is basically brand awareness. Do your customers know who you are? Are you in their minds when they think, where do I want to apply to college? The second level is performance and imagery, otherwise known as brand meaning. So what sort of abstract space does your brand take up in your customers' minds? So it’s not only like I know that it’s a university, but that I know it’s a university that has these features, these benefits, this is what the logo looks like, this is what I associate it with. That’s the brand meaning side of it.
 
 So, the next level is Brand Response. Brand Response is basically how your customers feel about you. This gets into judgments and feelings. What are you evoking inside the minds of your customers? So once they know that you exist, and then they know that this is the value you're pitching, Do they have positive, warm, fuzzy feelings about you? Do they have some severe judgements about the quality, honesty, or integrity of your brand? This is where that brand story aspect comes into play.
 
@@ -41,25 +41,25 @@ So, the next level is Brand Response. Brand Response is basically how your custo
  So how do we figure out what that sentiment is? You know, how do we figure it out? How do we research and find out what they think of us?
 
 **Kristin**
- Well, so. You said one example of a research method is sentiment analysis. That will pull out positive, negative, and neutral feelings about certain aspects of your brand. But then, I think a lot of brand research will be deeply qualitative. So what you’re going to be digging into is focus groups or interviews, like really teasing apart, like, what do you think about me? What do you think about me regarding other universities and colleges that you could potentially attend? What does this make you feel inside? 
+ Well, so. You said one example of a research method is sentiment analysis. That will pull out positive, negative, and neutral feelings about certain aspects of your brand. But then, I think a lot of brand research will be deeply qualitative. So what you’re going to be digging into is focus groups or interviews, like really teasing apart, like, what do you think about me? What do you think about me regarding other universities and colleges that you could potentially attend? What does this make you feel inside?
 
-Here’s an example that I love to use, okay. Imagine that I offer you two glasses of water. So one glass of water, I say, is the purest spring water in the United States. I paint this beautiful picture of going through a magical forest and finding this very pure spring. I say, well, but there are minerals and all these things that come from spring that will have these positive health benefits for you. Okay, so that’s one glass of water. 
+Here’s an example that I love to use, okay. Imagine that I offer you two glasses of water. So one glass of water, I say, is the purest spring water in the United States. I paint this beautiful picture of going through a magical forest and finding this very pure spring. I say, well, but there are minerals and all these things that come from spring that will have these positive health benefits for you. Okay, so that’s one glass of water.
 
 The other glass of water. I say, okay, this is a glass that is ceramics. It’s broken down, and it’s reconstructed from formerly used toilets.
 
 **Joel**
- go. 
+ go.
 
 **Kristin**
  Okay, which glass of water sounds attractive to you? Do you want to drink from the spring water glass or the toilet glass?
 
 **Joel**
- Definitely the spring water glass. Uh. 
+ Definitely the spring water glass. Uh.
 
 **Kristin**
- Yeah. It doesn’t matter how much you’ve hyper-cleaned the toilet glass; no one wants a toilet glass. Right. Okay. 
+ Yeah. It doesn’t matter how much you’ve hyper-cleaned the toilet glass; no one wants a toilet glass. Right. Okay.
 
-So that’s where you move your customers into decisions about brand response, like how they feel and what kind of judgments they make. That’s where your story strategy is going to hit the road. And what you want to do is create a memorable, compelling story, not just a, one student came here one time, and they got this degree, and then they went through a whole bunch of life changes, and then they ended up with this profession. 
+So that’s where you move your customers into decisions about brand response, like how they feel and what kind of judgments they make. That’s where your story strategy is going to hit the road. And what you want to do is create a memorable, compelling story, not just a, one student came here one time, and they got this degree, and then they went through a whole bunch of life changes, and then they ended up with this profession.
 
 You know, those stories may or may not be compelling. You’re looking for a story that describes your university and people’s experiences there.
 
@@ -67,7 +67,7 @@ You know, those stories may or may not be compelling. You’re looking for a sto
  I have a question.
 
 **Kristin**
- What’s that? 
+ What’s that?
 
 **Joel**
  Well, so, what’s the interplay between these different levels? Because in this case, it seems that, like, when you’re building the narrative, you will also want to go back to the dynamics from the previous level and make sure that this stands out, right?
@@ -80,13 +80,13 @@ And so that goes back to what you were talking about last time, where you’re n
  Right. Okay. So, the way to think about the Customer Brand Equity Pyramid is that you cannot do anything at the second level until you’ve established the first level.
 
 **Joel**
- Right. 
+ Right.
 
 **Kristin**
- You cannot do anything at the third level until you establish the second one. So, part of it is knowing well who your customers are and where they are in that decision-making journey. And that’s a lot about testing the salience in the marketplace for who you’re targeting. Like, do you know about us? Do you know who we are? You know, it’s not just about talking to them, but it’s also about getting that feedback of, 
+ You cannot do anything at the third level until you establish the second one. So, part of it is knowing well who your customers are and where they are in that decision-making journey. And that’s a lot about testing the salience in the marketplace for who you’re targeting. Like, do you know about us? Do you know who we are? You know, it’s not just about talking to them, but it’s also about getting that feedback of,
 
 **Joel**
- Yeah. 
+ Yeah.
 
 **Kristin**
  Do you remember me? Do you remember seeing an ad about the school two weeks ago?
@@ -94,7 +94,7 @@ And so that goes back to what you were talking about last time, where you’re n
 That kind of thing. And then, do they understand what you’re offering? Then, you can get into that storytelling. But to hit them with a story about who you are before they have any idea that you’re a university that exists that they could apply to, that offers these features and benefits, that will make their lives better in these ways, the story’s not going to have an impact.
 
 **Joel**
- Yeah, it won’t matter in that instance, 
+ Yeah, it won’t matter in that instance,
 
 **Kristin**
  right.
@@ -107,10 +107,10 @@ That kind of thing. And then, do they understand what you’re offering? Then, y
 
 So surveying can be expensive because you usually have to work with a paneling group to identify who those users are. The more specific you are about who those users will be and who those survey participants will be, the more expensive it gets.
 
-So, this is a paid process. Like you have to go about doing this, I mean, you can send your marketing assistant out to a shopping mall and have them ask everyone who looks about 20ish, have you heard of this place? 
+So, this is a paid process. Like you have to go about doing this, I mean, you can send your marketing assistant out to a shopping mall and have them ask everyone who looks about 20ish, have you heard of this place?
 
 **Joel**
- If there aren’t going to be many of them at a shopping mall, we’ll just 
+ If there aren’t going to be many of them at a shopping mall, we’ll just
 
 **Kristin**
  anymore. Um, but the goal is to collect that data. Now, one way you might go about collecting that data without having to do a giant campaign, like I know every university wants to be nationally recognized but start with locally recognized.
@@ -123,5 +123,5 @@ Pick a couple of hotspots where, for whatever reason, you think you might have p
  Own what you can own initially so that when you have that, it gives you the momentum to start moving forward and expanding and own other regions as you get your feet under you.
 
 **Kristin**
- Right. 
+ Right.
 
