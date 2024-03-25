@@ -100,11 +100,13 @@ main {
             }
         }
         &.layout-split {
-            > *:first-child {
-                flex: 1 50%;
-            }
-            > *:last-child {
-                flex: 1 50%;
+            justify-content: space-between;
+            gap: var(--v-xl) calc( 3 * var(--grid-unit));
+            > * {
+                flex: 1 25%;
+                font-size: var(--type-sm);
+                display: flex;
+                flex-direction: column;
             }
         }
     }

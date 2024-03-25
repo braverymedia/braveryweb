@@ -52,8 +52,12 @@ cite + p {
 .plain-quote {
     background-color: var(--color-hilite);
     position: relative;
-    --block-pad: calc(1 * var(--grid-unit));
-    --inline-pad: 0;
+    --block-pad: calc(2 * var(--grid-unit));
+    --inline-pad: calc(5 * var(--grid-unit));
+    blockquote {
+        --block-pad: calc(2 * var(--grid-unit));
+        --inline-pad: calc(5 * var(--grid-unit));
+    }
     &.constrain {
         margin-block: var(--v-xl);
     }
