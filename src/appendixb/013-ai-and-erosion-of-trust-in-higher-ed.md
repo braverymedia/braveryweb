@@ -9,6 +9,9 @@ slug: ai-and-erosion-of-trust-in-higher-ed
 date: 2023-04-26T18:05:36.372Z
 record_date: 2023-04-24T18:05:36.379Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: appxb-ep013_cover-art_w4tbx1.png
   alt: Appendix B Episode 13, text is present that reads, "AI and the erosion of
@@ -21,7 +24,6 @@ summary: >-
   In a world where Higher Ed MarComm professionals are always seeking out more efficient workflows, large language models like ChatGPT have been touted as the modern marketer’s “ultimate weapon.”
 
   However, Higher Ed has a trust problem, and because of that, we need to transparent with our audiences about when and where we’re using AI. Especially in situations where they expect to interact with actual humans.
-
 
   Subscribe to [Bravery's Newsletter](https://bravery.co/newsletter/) / [Follow Joel](https://www.linkedin.com/in/joelgoodman/) / [Follow Kristin](https://www.linkedin.com/in/kristinvandorn/) / Check out the [Bravery YouTube Channel](https://www.youtube.com/@BraveryMedia)
 ---

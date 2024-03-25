@@ -13,6 +13,9 @@ cover:
     Pages in Higher Education"
 mp3: appendix-b-episode-39-the-truth-about-landing-pages-in-higher-education.mp3
 duration: 10:45
+tags:
+  - podcast
+  - appendix-b
 topics:
   - CRO
   - advertising

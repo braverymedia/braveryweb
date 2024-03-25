@@ -13,6 +13,9 @@ cover:
     media."
 mp3: episode-045-how-to-design-a-homepage.mp3
 duration: 12:02
+tags:
+  - podcast
+  - appendix-b
 topics:
   - podcast
   - higher education

@@ -7,6 +7,9 @@ slug: impact-of-turnover-on-university-agency-partnerships
 date: 2023-08-09T16:54:00.662Z
 record_date: 2023-08-08T16:54:00.669Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: app_b_ep27_cover_art_nkbpei.png
   alt: Appendix B Episode 27, text is present that reads, "The Impact of Turnover

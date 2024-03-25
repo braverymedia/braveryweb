@@ -7,6 +7,9 @@ slug: breakin-up-web-projects-is-hard-to-do
 date: 2023-05-24T16:07:14.391Z
 record_date: 2023-05-23T16:07:14.399Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: app_b_ep17_reg_cover_Art_clygve.png
   alt: Appendix B Episode 17, text is present that reads, "Breakin' up (web

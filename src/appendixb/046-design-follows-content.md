@@ -13,6 +13,9 @@ cover:
   alt: Text reads Appendix B - Design Follows Content
 mp3: episode-046-design-follows-content.mp3
 duration: 8:48
+tags:
+  - podcast
+  - appendix-b
 topics:
   - web design
   - content strategy

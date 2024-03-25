@@ -8,6 +8,9 @@ slug: you-are-not-doing-swot-right
 date: 2023-03-29T12:58:00.482Z
 record_date: 2023-03-27T12:58:00.489Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: appxb-ep009_cover-art_tyuysp.png
   alt: Appendix B Episode 9, text is present that reads, "You're not doing swot

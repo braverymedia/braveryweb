@@ -7,6 +7,9 @@ slug: what-good-is-threads-for-higher-ed
 date: 2023-07-12T11:52:38.557Z
 record_date: 2023-07-11T11:52:38.565Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: app_b_ep23_cover_art_kffo3t.png
   alt: Appendix B Episode 23, text is present that reads, "What good is Threads to

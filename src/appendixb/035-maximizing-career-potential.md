@@ -13,6 +13,9 @@ cover:
     Potential in Higher Ed Marketing"
 mp3: appendix-b-episode-35-maximizing-career-potential-in-higher-ed-marketing.mp3
 duration: 10:22
+tags:
+  - podcast
+  - appendix-b
 topics:
   - podcast
 summary: >-

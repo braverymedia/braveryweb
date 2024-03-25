@@ -8,6 +8,9 @@ slug: no-more-unicorns
 date: 2023-04-05T14:48:11.529Z
 record_date: 2023-04-04T14:48:11.536Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: appxb-ep010_cover-art_v0hw5p.png
   alt: Appendix B Episode 10, text is present that reads, "No more unicorns."

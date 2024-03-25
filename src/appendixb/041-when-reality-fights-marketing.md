@@ -14,6 +14,9 @@ cover:
   alt: "Text reads Appendix B: When reality fights marketing"
 mp3: appendix-b-041-when-reality-fights-marketing.mp3
 duration: 8:10
+tags:
+  - podcast
+  - appendix-b
 topics:
   - branding
   - marketing

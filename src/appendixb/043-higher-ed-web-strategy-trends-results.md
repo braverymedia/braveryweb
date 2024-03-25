@@ -14,6 +14,9 @@ cover:
     Results. Bravery."
 mp3: episode-043-appendix-b-higher-ed-marketing-trends-2024.mp3
 duration: 11:48
+tags:
+  - podcast
+  - appendix-b
 topics:
   - podcast
 summary: >-

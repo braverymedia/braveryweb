@@ -8,6 +8,9 @@ slug: ux-principles-cognitive-load-and-effective-communication
 date: 2023-06-28T10:07:41.176Z
 record_date: 2023-06-13T10:07:41.184Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: app_b_ep22_cover_art_uaxnqi.png
   alt: 'Appendix B Episode 22, text is present that reads, "UX Principles:

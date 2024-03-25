@@ -12,10 +12,13 @@ cover:
   alt: "Contains text: Appendix B - The Trouble with Intranets"
 mp3: app-b-episode-042-the-trouble-with-intranets.mp3
 duration: 15:41
+tags:
+  - podcast
+  - appendix-b
 topics:
   - podcast
 summary: >-
-  I﻿ntranets and portals are a constant point of discussion in higher ed, but
+  Intranets and portals are a constant point of discussion in higher ed, but
   they're generally pretty bad. Joel Goodman has the fix, though.
 
 

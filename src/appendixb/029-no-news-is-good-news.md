@@ -7,6 +7,9 @@ slug: no-news-is-good-news
 date: 2023-08-23T15:26:49.225Z
 record_date: 2023-08-17T15:26:49.232Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: app_b_ep29_cover_art_a4hsxk.png
   alt: Appendix B Episode 29, text is present that reads, "No News is Good News."

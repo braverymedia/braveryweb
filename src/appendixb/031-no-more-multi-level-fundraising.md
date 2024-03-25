@@ -7,6 +7,9 @@ slug: no-more-multi-level-fundraising
 date: 2023-09-06T12:24:19.069Z
 record_date: 2023-09-05T12:24:19.076Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: app_b_ep31_cover_art_bebzax.png
   alt: Appendix B Episode 31, text is present that reads, "No More Multi-Level

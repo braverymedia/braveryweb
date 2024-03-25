@@ -7,6 +7,9 @@ slug: early-strategies-for-student-retention
 date: 2023-08-30T12:54:26.647Z
 record_date: 2023-08-29T12:54:26.654Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   alt: Appendix B Episode 30, text is present that reads, "Early Strategies for
     Student Retention"

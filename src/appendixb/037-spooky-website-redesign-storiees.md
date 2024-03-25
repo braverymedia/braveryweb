@@ -13,6 +13,9 @@ cover:
     Stories."
 mp3: appendix-b-episode-37-spooky-website-redesign-stories.mp3
 duration: 11:55
+tags:
+  - podcast
+  - appendix-b
 topics:
   - podcast
 summary: >-

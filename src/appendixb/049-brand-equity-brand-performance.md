@@ -16,11 +16,14 @@ cover:
   image: episode049-cover_jb0l2z.jpg
   alt: "Text reads: Appendix B, Brand Equity Pyramid Part 2: Brand Performance. A
     Bravery Podcast"
-mp3: episode-049-brand-equity-pyramid-part-2-brand-performance.mp3
+mp3: Episode%20049%20-%20Brand%20Equity%20Pyramid%20Part%202%20-%20Brand%20Performance.mp3
 duration: 7:41
 topics:
   - podcast
   - branding
+tags:
+  - podcast
+  - appendix-b
 summary: In the latest episode of Appendix B, Joel Goodman and Kristin Van Dorn
   from [Bravery Media](https://bravery.co/) delve into the second level of the
   customer-based brand equity pyramid, focusing on brand performance and imagery

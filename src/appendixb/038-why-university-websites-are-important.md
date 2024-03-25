@@ -13,6 +13,9 @@ cover:
     institution's best friend"
 mp3: appendix-b-episode-38-websites-are-an-institution-s-best-friend.mp3
 duration: 11:01
+tags:
+  - podcast
+  - appendix-b
 topics:
   - websites
   - marketing

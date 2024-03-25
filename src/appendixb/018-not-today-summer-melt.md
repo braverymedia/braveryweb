@@ -7,6 +7,9 @@ slug: not-today-summer-melt
 date: 2023-06-01T16:35:15.360Z
 record_date: 2023-05-31T16:35:15.369Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: app_b_ep18_reg_cover_Art_wi1jcj.png
   alt: Appendix B Episode 18, text is present that reads, "Not today, Summer Melt"

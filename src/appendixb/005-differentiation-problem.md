@@ -7,6 +7,9 @@ slug: differentiation-problem
 date: 2023-03-01T18:04:08.780Z
 record_date: 2023-02-28T18:04:08.785Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: appxb-ep005_cover-art_lamukg.png
   alt: Appendix B Episode 5, text is present that reads, "Higher Ed's

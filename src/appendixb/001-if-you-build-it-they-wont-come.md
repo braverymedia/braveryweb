@@ -6,6 +6,9 @@ description: Why do so many institutions want website features that don’t
 episode: 001
 slug: if-you-build-it-they-wont-come
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 date: 2023-02-15
 record_date: 2023-01-30
 cover:

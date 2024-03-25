@@ -7,6 +7,9 @@ slug: mental-health-and-wellbeing
 date: 2023-05-17T16:18:38.246Z
 record_date: 2023-05-15T16:18:38.254Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: appxb-ep016_cover-art_lf5za6.png
   alt: Appendix B Episode 16, text is present that reads, "Prioritizing Mental

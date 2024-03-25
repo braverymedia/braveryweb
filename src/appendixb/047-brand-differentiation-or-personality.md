@@ -13,9 +13,13 @@ cover:
   alt: Text reads Appendix B - Brand Differentiation vs Personality
 mp3: episode-047-brand-differentiation-vs-personality.mp3
 duration: 10:18
+tags:
+  - podcast
+  - appendix-b
 topics:
   - branding
   - higher education
+  - appendix-b
 summary: When we talk about branding in higher ed, are we considering the
   differences between brand differentiation and personality? Kristin Van Dorn
   has studied branding in higher ed for years and has a few thoughts. Bravery

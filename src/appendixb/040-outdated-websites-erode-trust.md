@@ -13,6 +13,9 @@ cover:
     Erode Trust"
 mp3: appendix-b-episode-040-how-outdated-websites-erode-trust.mp3
 duration: 11:07
+tags:
+  - podcast
+  - appendix-b
 topics:
   - podcast
 summary: >-

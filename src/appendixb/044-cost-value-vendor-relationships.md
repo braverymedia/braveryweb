@@ -12,6 +12,9 @@ cover:
   alt: "Text reads: Appendix B. Cost, Value, and Vendor Relationships"
 mp3: episode-044-appendix-b-cost-value-and-vendors.mp3
 duration: 11:30
+tags:
+  - podcast
+  - appendix-b
 topics:
   - hiring
   - vendors

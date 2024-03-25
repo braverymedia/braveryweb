@@ -7,6 +7,9 @@ slug: time-horizons
 date: 2023-05-10T14:32:37.853Z
 record_date: 2023-05-08T14:32:37.861Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: appxb-ep015_cover-art_reersy.png
   alt: Appendix B Episode 15, text is present that reads, "Time Horizons in Higher

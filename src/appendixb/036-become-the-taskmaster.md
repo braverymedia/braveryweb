@@ -12,6 +12,9 @@ cover:
   alt: Appendix B Episode 36, text is present that reads, "Become the Taskmaster."
 mp3: appendix-b-episode-36-become-the-taskmaster.mp3
 duration: 10:22
+tags:
+  - podcast
+  - appendix-b
 topics:
   - podcast
 summary: >-

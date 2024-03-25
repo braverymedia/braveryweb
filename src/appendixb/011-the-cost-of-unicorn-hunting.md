@@ -8,6 +8,9 @@ slug: the-cost-of-unicorn-hunting
 date: 2023-04-12T15:23:56.408Z
 record_date: 2023-04-04T15:23:56.415Z
 show: appendix-b
+tags:
+  - podcast
+  - appendix-b
 cover:
   image: appxb-ep011_cover-art_zead8c.png
   alt: Appendix B Episode 11, text is present that reads, "The cost of hunting
