@@ -1,7 +1,7 @@
 <!doctype html>
 <html {% if section %}class="layout-{{ section }}" {% endif %}lang="en">
   {% include "components/head.njk" %}
-  <body data-menu="closed"{% if style %} data-style="{{ style }}"{% endif %}>
+  <body data-menu="closed"{% if style or theme %} data-style="{{ style or theme }}"{% endif %}{% if show %} data-theme="{{ show }}"{%endif%}>
     {% include "components/navbar.njk" %}
     <main>
     {{ layoutContent | safe }}

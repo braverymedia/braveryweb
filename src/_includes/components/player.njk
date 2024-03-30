@@ -1,25 +1,8 @@
-<section class="episode--media">
-    <div class="episode--player">
+<section class="episode mini">
       <figure class="cover-art">
         <img src="{% src cover.image %}"
                 srcset="{% srcset cover.image %}" alt="{{cover.alt}}" width="500" height="500" decoding="async" />
       </figure>
-        <footer class="player-controls">
-        <button aria-label="play || pause episode" id="play-pause" class="play-pause button synthwave" data-playing="false" role="switch" aria-checked="false" data-duration="{{duration}}">
-          <span class="play">{% include "svg/play.svg" %} Play Episode</span>
-          <span class="pause">
-            {% include "svg/pause.svg" %}
-            <span class="audio-time">
-              <span class="audio-current-time">0:00</span>/
-              <span class="audio-duration">{{ duration | toMinutes }}</span>
-            </span>
-          </span>
-          <progress class="audio-song-played-progress" id="song-played-progress" aria-label="Episode progress" max="100"></progress>
-        </button>
-
-        <a href="{{ metadata.podcast.subscribe.apple }}" class="button bright subscribe">Subscribe ↗</a>
-        </footer>
-        {% set mp3Link -%}{{ mp3 | htmlBaseUrl("https://bravery.co") }}{%- endset %}
-        <audio src="{{ mp3Link | chartable }}" crossorigin preload="none"></audio>
-    </div>
+      {% set mp3Link -%}{{metadata.cdn}}{{ ep.data.mp3 }}{%- endset %}
+        <audio src="{{ mp3Link }}" crossorigin preload="none"></audio>
 </section>

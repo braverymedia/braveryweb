@@ -7,7 +7,7 @@ episode: 003
 slug: dealing-with-content-technical-debt
 date: 2023-02-15T12:06:14.677Z
 record_date: 2023-02-13T12:06:14.682Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -15,7 +15,7 @@ cover:
   image: appx-b-003_cover-art_rwoaex.png
   alt: Appendix B Episode 3, text is present that reads, "Dealing with Content and
     Technical Debt."
-mp3: appendix-b-episode-3-dealing-with-content-and-technical-debt.mp3
+mp3: appendixb/appendix-b-episode-3-dealing-with-content-and-technical-debt.mp3
 duration: 9:40
 summary: >-
   J﻿oel's most terrifying recurring dream isn't about zombies or falling, it's

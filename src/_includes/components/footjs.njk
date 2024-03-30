@@ -1,15 +1,9 @@
 {% set js %}
     {% include "src/assets/js/bravery.js" %}
 {% endset %}
-{% set audiojs %}
-	{% include "src/assets/js/bravery-player.js" %}
-{% endset %}
 <script>{{ js | safe }}</script>
 {% if '/' === page.url %}
     <script>{{ starscape | safe }}</script>
-{% endif %}
-{% if '/podcast' in page.url and page.url != '/podcast/' %}
-	<script>{{ audiojs | safe }}</script>
 {% endif %}
 {% if wistias %}
     {% for wistia in wistias %}

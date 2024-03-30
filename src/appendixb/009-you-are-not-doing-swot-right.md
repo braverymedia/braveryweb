@@ -7,7 +7,7 @@ episode: 009
 slug: you-are-not-doing-swot-right
 date: 2023-03-29T12:58:00.482Z
 record_date: 2023-03-27T12:58:00.489Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -15,7 +15,7 @@ cover:
   image: appxb-ep009_cover-art_tyuysp.png
   alt: Appendix B Episode 9, text is present that reads, "You're not doing swot
     analyses correctly."
-mp3: appendix-b-episode-9-you-re-not-doing-swot-analyses-correctly.mp3
+mp3: appendixb/appendix-b-episode-9-you-re-not-doing-swot-analyses-correctly.mp3
 duration: 11:07
 summary: >-
   What does Kristin have against SWOT analyses? Just the way that they’re typically done. 

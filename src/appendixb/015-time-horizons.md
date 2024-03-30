@@ -6,7 +6,7 @@ episode: 015
 slug: time-horizons
 date: 2023-05-10T14:32:37.853Z
 record_date: 2023-05-08T14:32:37.861Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -14,7 +14,7 @@ cover:
   image: appxb-ep015_cover-art_reersy.png
   alt: Appendix B Episode 15, text is present that reads, "Time Horizons in Higher
     Ed"
-mp3: appendix-b-episode-15-time-horizons-in-higher-ed.mp3
+mp3: appendixb/appendix-b-episode-15-time-horizons-in-higher-ed.mp3
 duration: 9:49
 topics:
   - project management

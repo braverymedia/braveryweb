@@ -1,0 +1,27 @@
+---
+layout: layouts/podcast.njk
+title: Appendix B
+showTitle: Appendix B
+description: "Candid conversations about higher ed in about 10 minutes."
+permalink: /podcast-series/appendix-b/
+section: podcast
+show: appb
+chartable: 6E943F
+subscribe:
+  amazon: https://music.amazon.com/podcasts/b826f2ec-ce5a-4280-b8d6-e26134217992/appendix-b
+  apple: https://podcasts.apple.com/us/podcast/appendix-b/id1672064420
+  youtube: https://www.youtube.com/playlist?list=PLreHkBoVduXrL1IVfnRxrxe8TRj2-a01_
+  iheartradio: https://iheart.com/podcast/109394033/
+  overcast: https://overcast.fm/itunes1672064420
+  pandora: https://www.pandora.com/podcast/appendix-b/PC:1001058767
+  podchaser: https://www.podchaser.com/AppendixB
+  spotify: https://open.spotify.com/show/65VUFm5sPGx81fmEltCsrr
+  stitcher: https://www.stitcher.com/show/1058767
+  tunein: https://tunein.com/radio/Appendix-B-p3508994/
+---
+<section class="episode-list">
+  {% set episodeList = collections.appendixb %}
+  {% for ep in episodeList | reverse %}
+  {% include "components/mini-player.njk" %}
+  {% endfor %}
+</section>

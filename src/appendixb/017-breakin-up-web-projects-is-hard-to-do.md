@@ -6,7 +6,7 @@ episode: 017
 slug: breakin-up-web-projects-is-hard-to-do
 date: 2023-05-24T16:07:14.391Z
 record_date: 2023-05-23T16:07:14.399Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -14,7 +14,7 @@ cover:
   image: app_b_ep17_reg_cover_Art_clygve.png
   alt: Appendix B Episode 17, text is present that reads, "Breakin' up (web
     projects) is hard to do"
-mp3: appendix-b-episode-17-breakin-up-web-projects-is-hard-to-do.mp3
+mp3: appendixb/appendix-b-episode-17-breakin-up-web-projects-is-hard-to-do.mp3
 duration: 10:36
 summary: >-
   What are the negative effects of universities trying to manage large-scale

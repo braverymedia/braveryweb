@@ -6,7 +6,7 @@ episode: 027
 slug: impact-of-turnover-on-university-agency-partnerships
 date: 2023-08-09T16:54:00.662Z
 record_date: 2023-08-08T16:54:00.669Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -14,7 +14,7 @@ cover:
   image: app_b_ep27_cover_art_nkbpei.png
   alt: Appendix B Episode 27, text is present that reads, "The Impact of Turnover
     on University-Agency Partnerships"
-mp3: appendix-b-episode-27-the-impact-of-turnover-on-university-agency-partnerships.mp3
+mp3: appendixb/appendix-b-episode-27-the-impact-of-turnover-on-university-agency-partnerships.mp3
 duration: 10:22
 topics:
   - podcast

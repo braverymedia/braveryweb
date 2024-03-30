@@ -7,7 +7,7 @@ episode: 012
 slug: wrong-hiring-decision-whoops
 date: 2023-04-19T13:24:09.938Z
 record_date: 2023-04-04T13:24:09.945Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -15,7 +15,7 @@ cover:
   image: appxb-ep012_cover-art_qjjzto.png
   alt: Appendix B Episode 12, text is present that reads, "Whoops! Campus leaders
     made the wrong hiring decision. Now what?"
-mp3: appendix-b-episode-12-whoops-campus-leaders-made-the-wrong-hiring-decision-now-what-.mp3
+mp3: appendixb/appendix-b-episode-12-whoops-campus-leaders-made-the-wrong-hiring-decision-now-what-.mp3
 duration: 9:53
 summary: >-
   Campus leadership doesn’t always know how to hire the right people for

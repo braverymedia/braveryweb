@@ -1,0 +1,45 @@
+.case-study-grid {
+    --gap: 16px;
+    --flex-basis: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    > * {
+        flex: 1 var(--flex-basis);
+    }
+    @media ( width >= 1024px ) {
+        --flex-basis: 30%;
+    }
+    @media ( width >= 1700px ) {
+        --flex-basis: auto;
+        flex-wrap: nowrap;
+    }
+}
+@media ( width <= 1023px) {
+    .work-intro:has(+ .case-study-grid) {
+        padding-block-end: unset;
+    }
+}
+
+.work-intro + .case-study-grid {
+    padding-block-start: unset;
+}
+
+.layout-single-cs {
+    font-size: var(--type-sm);
+    h2 {
+        font-size: var(--type-md);
+    }
+    h3 {
+        font-size: var(--type-base);
+    }
+}
+.layout-work,
+.layout-single-cs {
+    --accent: var(--color-blue);
+}
+.article--title {
+    display: flex;
+    flex-direction: column;
+    gap: calc(4 * var(--grid-unit))
+}

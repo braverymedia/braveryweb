@@ -7,12 +7,12 @@ episode: 043
 slug: higher-ed-web-strategy-trends-results
 date: 2024-01-10T19:14:56.742Z
 record_date: 2024-01-09T19:14:56.750Z
-show: appendix-b
+show: appb
 cover:
   image: App_B_043_Episode_Art_kbkjmv.jpg
   alt: "Contains text that reads: Appendix B. Higher Ed Web Strategy Trends Survey
     Results. Bravery."
-mp3: episode-043-appendix-b-higher-ed-marketing-trends-2024.mp3
+mp3: appendixb/episode-043-appendix-b-higher-ed-marketing-trends-2024.mp3
 duration: 11:48
 tags:
   - podcast

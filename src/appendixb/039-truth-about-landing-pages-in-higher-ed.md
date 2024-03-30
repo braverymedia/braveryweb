@@ -6,12 +6,12 @@ episode: 039
 slug: truth-about-landing-pages-in-higher-ed
 date: 2023-11-17T14:59:38.071Z
 record_date: 2023-11-15T14:59:38.080Z
-show: appendix-b
+show: appb
 cover:
   image: app_b_ep39_cover_art_rn5pyj.png
   alt: Appendix B Episode 39, text is present that reads, "The Truth About Landing
     Pages in Higher Education"
-mp3: appendix-b-episode-39-the-truth-about-landing-pages-in-higher-education.mp3
+mp3: appendixb/appendix-b-episode-39-the-truth-about-landing-pages-in-higher-education.mp3
 duration: 10:45
 tags:
   - podcast

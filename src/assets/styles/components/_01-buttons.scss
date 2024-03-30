@@ -10,7 +10,7 @@ button {
     padding: var(--grid-unit) calc(2 * var(--grid-unit));
     > svg {
         width: calc(2 * var(--grid-unit));
-        color: var(--accent);
+        color: var(--color-neon);
     }
 }
 .cta-group {
@@ -31,5 +31,12 @@ button {
     font-weight: 550;
     > svg {
         width: calc(3 * var(--grid-unit));
+    }
+}
+
+.cta-icon {
+    border: 2px solid var(--accent);
+    &:hover {
+        background-color: var(--accent);
     }
 }

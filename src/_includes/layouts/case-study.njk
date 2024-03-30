@@ -2,14 +2,15 @@
 layout: layouts/base.njk
 section: single-cs
 ---
-<main>
+<article class="constrain">
     <header class="article--title">
+        <a href="{{ '/work/' | url}}" class="back">{% include "svg/arrow-left.svg" %} All Case Studies</a>
         <h1>{{title}}</h1>
     </header>
     <section class="article--content">
         {{ layoutContent | safe }}
     </section>
-    <footer>
+    <footer data-layout="wide">
         {% include "components/cta-inquire.njk" %}
     </footer>
-</main>
+</article>

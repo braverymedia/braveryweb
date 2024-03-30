@@ -7,7 +7,7 @@ episode: 021
 slug: ux-principles-creating-breathing-room
 date: 2023-06-21T14:15:35.637Z
 record_date: 2023-06-13T14:15:35.645Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -15,7 +15,7 @@ cover:
   image: app_b_ep21_cover_art_yuhire.png
   alt: 'Appendix B Episode 21, text is present that reads, "UX Principles: The Art
     of Creating Breathing Room"'
-mp3: appendix-b-episode-21-ux-principles-the-art-of-creating-breathing-room.mp3
+mp3: appendixb/appendix-b-episode-21-ux-principles-the-art-of-creating-breathing-room.mp3
 duration: 10:03
 topics:
   - ux

@@ -3,15 +3,15 @@ title: Brand Differentiation vs Personality
 description: When we talk about branding in higher ed, are we considering the
   differences between brand differentiation and personality? Kristin Van Dorn
   has studied branding in higher ed for years and has a few thoughts.
-episode: 047
+episode: "047"
 slug: 047-brand-differentiation-or-personality
 date: 2024-02-19T22:00:05.479Z
 record_date: 2024-02-16T22:00:05.485Z
-show: appendix-b
+show: appb
 cover:
   image: Ep047_Episode_Art_kxxy6e
   alt: Text reads Appendix B - Brand Differentiation vs Personality
-mp3: episode-047-brand-differentiation-vs-personality.mp3
+mp3: appendixb/episode-047-brand-differentiation-vs-personality.mp3
 duration: 10:18
 tags:
   - podcast

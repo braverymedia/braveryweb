@@ -3,15 +3,15 @@ title: Design Should Follow Content
 description: Web design projects in higher education should never start before
   content has been firmed up. Joel and Kristin from Bravery dive into the
   reasons why in this podcast episode.
-episode: 046
+episode: "046"
 slug: /046-design-follows-content/
 date: 2024-02-12T22:04:03.903Z
 record_date: 2024-02-08T22:04:03.916Z
-show: appendix-b
+show: appb
 cover:
   image: ep046-art_xtnvhq.jpg
   alt: Text reads Appendix B - Design Follows Content
-mp3: episode-046-design-follows-content.mp3
+mp3: appendixb/episode-046-design-follows-content.mp3
 duration: 8:48
 tags:
   - podcast

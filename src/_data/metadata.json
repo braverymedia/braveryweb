@@ -27,26 +27,13 @@
 			"description": "The team at Bravery Media tackle the biggest topics in higher ed marketing, offering original insight based on Bravery's research and experience. All in ten minutes or less.",
 			"filename": "podcast.xml",
 			"path": "/feed/podcast.xml",
-			"id": "https://bravery.co/podcast/",
+			"id": "https://bravery.co/podcast-series/",
 			"feed": "https://bravery.co/podcast/appendixb.xml",
 			"author": "Joel Goodman and Kristin Van Dorn",
 			"owner": "Bravery Media",
 			"explicit": "clean",
 			"cover": {
 				"large": "https://bravery.co/assets/img/appendix-b-cover.png"
-			},
-			"chartable": "6E943F",
-			"subscribe": {
-				"amazon": "https://music.amazon.com/podcasts/b826f2ec-ce5a-4280-b8d6-e26134217992/appendix-b",
-				"apple": "https://podcasts.apple.com/us/podcast/appendix-b/id1672064420",
-				"google": "https://podcasts.google.com/feed/aHR0cHM6Ly9icmF2ZXJ5LmNvL3BvZGNhc3QvZmVlZC54bWw?sa=X&ved=0CAcQrrcFahcKEwiw-qDYo6n9AhUAAAAAHQAAAAAQLA",
-				"iheartradio": "https://iheart.com/podcast/109394033/",
-				"overcast": "https://overcast.fm/itunes1672064420",
-				"pandora": "https://www.pandora.com/podcast/appendix-b/PC:1001058767",
-				"podchaser": "https://www.podchaser.com/AppendixB",
-				"spotify": "https://open.spotify.com/show/65VUFm5sPGx81fmEltCsrr",
-				"stitcher": "https://www.stitcher.com/show/1058767",
-				"tunein": "https://tunein.com/radio/Appendix-B-p3508994/"
 			}
 		},
 		"how2edu": {
@@ -55,26 +42,13 @@
 			"description": "Web strategy, research, and recommendations for making higher ed websites work harder for their institutions. From the web strategy experts at Bravery Media.",
 			"filename": "podcast.xml",
 			"path": "/feed/podcast.xml",
-			"id": "https://bravery.co/podcast/how2edu/",
+			"id": "https://bravery.co/podcast-series/how2edu/",
 			"feed": "https://bravery.co/podcast/how2edu.xml",
 			"author": "Joel Goodman and Kristin Van Dorn",
 			"owner": "Bravery Media",
 			"explicit": "clean",
 			"cover": {
 				"large": ""
-			},
-			"chartable": "",
-			"subscribe": {
-				"amazon": "",
-				"apple": "",
-				"google": "",
-				"iheartradio": "",
-				"overcast": "",
-				"pandora": "",
-				"podchaser": "",
-				"spotify": "",
-				"stitcher": "",
-				"tunein": ""
 			}
 		}
 

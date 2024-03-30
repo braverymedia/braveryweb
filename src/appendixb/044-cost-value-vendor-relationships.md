@@ -6,11 +6,11 @@ episode: 044
 slug: cost-value-vendor-relationships
 date: 2024-01-22T21:38:10.991Z
 record_date: 2024-01-18T21:38:10.999Z
-show: appendix-b
+show: appb
 cover:
   image: ep044_Episode_Art_en5olm.jpg
   alt: "Text reads: Appendix B. Cost, Value, and Vendor Relationships"
-mp3: episode-044-appendix-b-cost-value-and-vendors.mp3
+mp3: appendixb/episode-044-appendix-b-cost-value-and-vendors.mp3
 duration: 11:30
 tags:
   - podcast

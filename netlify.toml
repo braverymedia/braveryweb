@@ -24,12 +24,17 @@ to = "https://www.surveymonkey.com/r/webstrategytrends2024"
 status = 302
 
 [[redirects]]
-from= "/services/level-up/"
+from = "/services/level-up/"
 to = "https://bravery.co/services/web-aor/"
 status = 301
 
 [[redirects]]
-from= "/speedyu-turbo/"
+from= "/services/custom-insights/"
+to = "https://bravery.co/services/website-strategy/"
+status = 301
+
+[[redirects]]
+from = "/speedyu-turbo/"
 to = "https://bravery.co/benchmark/"
 status = 302
 

@@ -5,12 +5,12 @@ description: The first in a series on the Brand Equity Pyramid and how to
 episode: 048
 slug: brand-equity-brand-salience
 date: 2024-02-27T01:28:34.137Z
-show: appendix-b
+show: appb
 record_date: 2024-02-24T01:28:34.142Z
 cover:
   image: Ep048_Episode_Art_lujgyd.jpg
   alt: "Text reads: Appendix B. Brand Equity Pyramid Part One - Brand Salience"
-mp3: ep048-brand-equity-pyramid-part-1-brand-salience.mp3
+mp3: appendixb/ep048-brand-equity-pyramid-part-1-brand-salience.mp3
 duration: 9:15
 topics:
   - podcast

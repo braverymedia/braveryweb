@@ -2,13 +2,17 @@
 layout: layouts/base.njk
 section: podcast
 ---
-<main>
 <header>
-    {% if page.url == "/podcast/appendix-b/" %}
-        <h1 class="pod-title">Appendix B</h1>
-        <p class="pod-description">Candid conversations about higher ed in 10 minutes or less.</p>
+        {% if section == "podcast" %}
+        <h1 class="hero">{{ showTitle or "Podcasts" }}</h1>
+        {% else %}
+        <div class="hero">{{ showTitle }}</div>
+        {% endif %}
+    {% if show == 'appb' or show == 'how2edu' %}
+        {% if section == "podcast" %}
+        <p class="show-summary">{{description}}</p>
+        {% endif %}
         {% include "components/subscribe-bar.njk" %}
     {% endif %}
 </header>
 {{ layoutContent | safe}}
-</main>

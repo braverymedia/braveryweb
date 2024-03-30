@@ -6,7 +6,7 @@ description: So many Higher Ed MarComm offices are stuck in “emergency mode.�
 episode: 007
 date: 2023-03-15T19:56:07.768Z
 record_date: 2023-03-13T19:56:07.775Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -14,7 +14,7 @@ cover:
   image: appxb-ep007_cover-art_y6sy2n.png
   alt: Appendix B Episode 7, text is present that reads, "Breaking out of
     Emergency Mode."
-mp3: appendix-b-episode-7-breaking-out-of-emergency-mode.mp3
+mp3: appendixb/appendix-b-episode-7-breaking-out-of-emergency-mode.mp3
 duration: 10:08
 summary: >-
   How many times have you heard, “you know, not everything is an emergency,” in

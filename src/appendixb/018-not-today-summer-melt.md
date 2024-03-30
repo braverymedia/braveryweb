@@ -6,14 +6,14 @@ episode: 018
 slug: not-today-summer-melt
 date: 2023-06-01T16:35:15.360Z
 record_date: 2023-05-31T16:35:15.369Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
 cover:
   image: app_b_ep18_reg_cover_Art_wi1jcj.png
   alt: Appendix B Episode 18, text is present that reads, "Not today, Summer Melt"
-mp3: appendix-b-episode-18-not-today-summer-melt.mp3
+mp3: appendixb/appendix-b-episode-18-not-today-summer-melt.mp3
 duration: 12:20
 summary: >-
   How can Higher Ed marketers deal more effectively with summer melt? It starts by maintaining some continuity in content strategy during the summer months. Marketing materials that incoming students are receiving should be similar in tone to what they’ve been used to. If we treat the new student experience as “onboarding,” we can create a strong foundation for the incoming class.

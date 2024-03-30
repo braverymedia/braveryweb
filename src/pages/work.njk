@@ -1,22 +1,54 @@
 ---
 layout: layouts/base.njk
-title: Select case studies
+title: Higher Ed Web Design Case Studies
 description: Some of Bravery's favorite higher ed website strategy and design projects.
 section: work
-permalink: /case-studies/
+permalink: /work/
 eleventyNavigation:
   key: Work
   order: 2
   title: Work
 ---
-<main>
-<article class="panel--grid">
-    <header>
-        <h1>Choose <span class="brand loud">Bravery</span>.</h1>
-        <p>Send us your questions, your hopes, your dreams. But mostly, send us your biggest goals for the immediate future. Our work screams loud ROI and we'd love to show you how.</p>
-        <p>Call <a href="tel:+15125938094">+1 512 593 8094</a><br> Email <a
-            href="mailto:inquiries@bravery.co">inquiries@bravery.co</a> </p>
-    </header>
-    {% include 'components/contactform.njk' %}
-</article>
-</main>
+
+<header class="work-intro">
+  <h1 class="hero">Propelling higher education toward its potential since 2012.</h1>
+  <section class="layout sticky">
+    <div>
+      <p>We've planned, written, designed, and built dozens of websites, portals, emails, landing pages, and custom web applications for colleges and universities around the world. We've made sites faster, revamped information architectures, rewritten pages for SEO, researched keywords, and implemented strategies with presidents, chancellors, CMOs, and... just about everyone else.</p>
+      <p><strong>These are some of our favorites:</strong></p>
+    </div>
+    <div></div>
+  </section>
+</header>
+<section id="studies" class="case-study-grid">
+  {% set csList = collections.design %}
+  {% for cs in csList %}
+      {% include "components/cs-card.njk" %}
+  {% endfor %}
+</section>
+<section id="clientlist">
+  <h2>Select clients</h2>
+  <ul class="three">
+    <li>Cornell SC Johnson College of Business</li>
+    <li>Cornell Alumni Affairs</li>
+    <li>Loyola Marymount University</li>
+    <li>Wheaton College (Illinois)</li>
+    <li>University of Saint Francis, Fort Wayne</li>
+    <li>American Dental Education Association</li>
+    <li>Harrisburg Area Community College (HACC)</li>
+    <li>Passaic County Community College</li>
+    <li>Thaddeus Stevens College of Technology</li>
+    <li>Johnson University</li>
+    <li>Delaware College of Art and Design</li>
+    <li>National University</li>
+    <li>University of Toronto Arts and Science Co-op</li>
+    <li>Caldwell University</li>
+    <li>Greenville University</li>
+    <li>Louisiana State University Student Affairs</li>
+    <li>Northeastern University ITS</li>
+    <li>Northeastern University College of Science</li>
+    <li>TVP Communications</li>
+    <li>Campus Sonar</li>
+    <li>Kanahoma</li>
+  </ul>
+</section>

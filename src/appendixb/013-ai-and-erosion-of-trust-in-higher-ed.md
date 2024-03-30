@@ -8,7 +8,7 @@ episode: 013
 slug: ai-and-erosion-of-trust-in-higher-ed
 date: 2023-04-26T18:05:36.372Z
 record_date: 2023-04-24T18:05:36.379Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -16,7 +16,7 @@ cover:
   image: appxb-ep013_cover-art_w4tbx1.png
   alt: Appendix B Episode 13, text is present that reads, "AI and the erosion of
     trust in Higher Ed"
-mp3: appendix-b-episode-13-ai-and-the-erosion-of-trust-in-higher-ed.mp3
+mp3: appendixb/appendix-b-episode-13-ai-and-the-erosion-of-trust-in-higher-ed.mp3
 duration: 11:06
 summary: >-
   That AI. So hot right now.

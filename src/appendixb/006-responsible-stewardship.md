@@ -6,7 +6,7 @@ episode: 006
 slug: responsible-stewardship
 date: 2023-03-08T18:53:40.641Z
 record_date: 2023-03-07T18:53:40.648Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -14,7 +14,7 @@ cover:
   image: appxb-ep006_cover-art_m5jfxu.png
   alt: Appendix B Episode 6, text is present that reads, "Responsible Website
     Stewardship."
-mp3: appendix-b-episode-6-responsible-website-stewardship.mp3
+mp3: appendixb/appendix-b-episode-6-responsible-website-stewardship.mp3
 duration: 9:03
 summary: >-
   College and University websites need responsible stewardship in order to be

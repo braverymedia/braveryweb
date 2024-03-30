@@ -6,11 +6,11 @@ episode: 042
 slug: higher-ed-intranet-portals
 date: 2024-01-03T19:12:09.710Z
 record_date: 2024-01-03T19:12:09.715Z
-show: appendix-b
+show: appb
 cover:
   image: Production_Episode_042_Art_vy5ici.jpg
   alt: "Contains text: Appendix B - The Trouble with Intranets"
-mp3: app-b-episode-042-the-trouble-with-intranets.mp3
+mp3: appendixb/app-b-episode-042-the-trouble-with-intranets.mp3
 duration: 15:41
 tags:
   - podcast

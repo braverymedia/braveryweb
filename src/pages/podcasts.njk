@@ -1,0 +1,33 @@
+---
+layout: layouts/podcast.njk
+title: Podcasts
+description: "Listen to Appendix B and How 2 EDU from Bravery."
+section: podcast
+permalink: /podcast/
+eleventyNavigation:
+  key: Podcasts
+  order: 4
+  title: Podcasts
+---
+<section class="pod-series">
+  <a href="{{'/podcast-series/appendix-b/' | url}}" title="Appendix B Series Page">
+    <figure class="series-card" data-theme="appb">
+        <img src="{% src 'appendix-b-series-cover_vdwkqe.jpg' %}"
+          srcset="{% srcset 'appendix-b-series-cover_vdwkqe.jpg' %}" alt="Text reads: Appendix B. A Bravery Podcast." width="500" height="500" decoding="async" />
+        <footer>
+          <h2>Appendix B</h2>
+          <p>The first short-form podcast for higher ed marketers. Candid conversations about the biggest challeges facing our industry.</p>
+          <p><strong>{{ collections.appendixb.length }} Episodes</strong></p>
+        </footer>
+    </figure>
+  </a>
+  <figure class="series-card" data-theme="how2edu">
+        <img src="{% src 'how2edu-cover_mii4me.jpg' %}"
+          srcset="{% srcset 'how2edu-cover_mii4me.jpg' %}" alt="A glowing speech bubble outline surrounding the text: How 2 EDU. Below that, text reads: A Bravery Podcast" width="500" height="500" decoding="async" />
+        <footer>
+          <h2 class="theme-title">How 2 EDU</h2>
+          <p>The podcast that breaks down each section of your college or university website so you can make it load faster, rank higher, and perform better.</p>
+          <p><strong>Coming Soon</strong></p>
+        </footer>
+  </figure>
+</section>

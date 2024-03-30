@@ -5,16 +5,15 @@ description: Why do so many institutions want website features that don’t
   professionals, just all agree to do better?
 episode: 001
 slug: if-you-build-it-they-wont-come
-show: appendix-b
+show: appb
 tags:
   - podcast
-  - appendix-b
 date: 2023-02-15
 record_date: 2023-01-30
 cover:
   image: appxb-ep001-cover_pjztny.png
   alt: Appendix B - If you build it, they won't come. From Bravery Media.
-mp3: appendix-b-episode-1-if-you-build-it-they-won-t-come.mp3
+mp3: appendixb/appendix-b-episode-1-if-you-build-it-they-won-t-come.mp3
 duration: 11:57
 summary: >-
   Welcome to Appendix B from Bravery Media!

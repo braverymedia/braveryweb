@@ -6,12 +6,12 @@ episode: 035
 slug: maximizing-career-potential
 date: 2023-10-19T12:19:19.977Z
 record_date: 2023-10-16T12:19:19.986Z
-show: appendix-b
+show: appb
 cover:
   image: app_b_ep35_cover_art_afou90.png
   alt: Appendix B Episode 35, text is present that reads, "Maximizing Career
     Potential in Higher Ed Marketing"
-mp3: appendix-b-episode-35-maximizing-career-potential-in-higher-ed-marketing.mp3
+mp3: appendixb/appendix-b-episode-35-maximizing-career-potential-in-higher-ed-marketing.mp3
 duration: 10:22
 tags:
   - podcast

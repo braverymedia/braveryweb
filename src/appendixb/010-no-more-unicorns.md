@@ -7,14 +7,14 @@ episode: 010
 slug: no-more-unicorns
 date: 2023-04-05T14:48:11.529Z
 record_date: 2023-04-04T14:48:11.536Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
 cover:
   image: appxb-ep010_cover-art_v0hw5p.png
   alt: Appendix B Episode 10, text is present that reads, "No more unicorns."
-mp3: appendix-b-episode-10-no-more-unicorns.mp3
+mp3: appendixb/appendix-b-episode-10-no-more-unicorns.mp3
 duration: 10:12
 summary: >-
   If you work in Higher Ed, you’ve likely either worked with a Unicorn or, you’d describe *yourself* as one. Either way, you probably know that they typically have a wide range of skills and can do many different things well. It’s not all sunshine and rainbows, though. Unicorns typically experience burnout, high turnover rates, frustration with slower-moving colleagues, and being underemployed. 

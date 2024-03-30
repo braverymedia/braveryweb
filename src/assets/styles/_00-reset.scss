@@ -20,9 +20,12 @@ figure, blockquote, dl, dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role='list'] li,
+ol[role='list'] li {
   list-style: none;
+  &::marker {
+    content: "";
+  }
 }
 
 /* Set core body defaults */
@@ -74,7 +77,8 @@ textarea:not([rows]) {
 
 /* Text meant only for screen readers. */
 .sr-only,
-.sr {
+.sr,
+[aria-hidden="true"] {
 	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);

@@ -7,16 +7,15 @@ episode: 25
 slug: the-trouble-with-icons
 date: 2023-07-26T10:22:33.704Z
 record_date: 2023-07-25T10:22:33.711Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
-  - design
   - ux
 cover:
   alt: Appendix B Episode 25, text is present that reads, "The Trouble With Icons"
   image: app_b_ep25_cover_art_p9cefu.png
-mp3: appendix-b-episode-25-the-trouble-with-icons.mp3
+mp3: appendixb/appendix-b-episode-25-the-trouble-with-icons.mp3
 duration: 10:18
 topics:
   - podcast

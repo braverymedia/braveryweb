@@ -11,12 +11,12 @@ episode: 049
 slug: brand-equity-pyramid-brand-performance
 date: 2024-03-04T14:15:44.427Z
 record_date: 2024-02-23T14:15:44.435Z
-show: appendix-b
+show: appb
 cover:
   image: episode049-cover_jb0l2z.jpg
   alt: "Text reads: Appendix B, Brand Equity Pyramid Part 2: Brand Performance. A
     Bravery Podcast"
-mp3: Episode%20049%20-%20Brand%20Equity%20Pyramid%20Part%202%20-%20Brand%20Performance.mp3
+mp3: appendixb/Episode%20049%20-%20Brand%20Equity%20Pyramid%20Part%202%20-%20Brand%20Performance.mp3
 duration: 7:41
 topics:
   - podcast

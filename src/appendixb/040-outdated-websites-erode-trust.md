@@ -6,12 +6,12 @@ episode: 040
 slug: outdated-websites-erode-trust
 date: 2023-12-06T14:53:11.398Z
 record_date: 2023-12-05T14:53:11.492Z
-show: appendix-b
+show: appb
 cover:
   image: ep_040_-_cover_art_rymcb1.png
   alt: Appendix B Episode 39, text is present that reads, "How Outdated Websites
     Erode Trust"
-mp3: appendix-b-episode-040-how-outdated-websites-erode-trust.mp3
+mp3: appendixb/appendix-b-episode-040-how-outdated-websites-erode-trust.mp3
 duration: 11:07
 tags:
   - podcast

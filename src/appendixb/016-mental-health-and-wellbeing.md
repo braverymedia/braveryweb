@@ -6,7 +6,7 @@ episode: 016
 slug: mental-health-and-wellbeing
 date: 2023-05-17T16:18:38.246Z
 record_date: 2023-05-15T16:18:38.254Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -14,7 +14,7 @@ cover:
   image: appxb-ep016_cover-art_lf5za6.png
   alt: Appendix B Episode 16, text is present that reads, "Prioritizing Mental
     Health and Wellbeing in Higher Ed"
-mp3: appendix-b-episode-16-prioritizing-mental-health-and-wellbeing.mp3
+mp3: appendixb/appendix-b-episode-16-prioritizing-mental-health-and-wellbeing.mp3
 duration: 10:53
 summary: >-
   Kristin and Carl explore the differences between mental wellbeing and mental

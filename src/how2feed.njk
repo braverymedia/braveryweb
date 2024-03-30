@@ -49,7 +49,7 @@ permalink: podcast/how2edu.xml
         <generator>Eleventy</generator>
     {%- for ep in collections.episodes -%}
         {%- set permalink -%}{{ ep.url | htmlBaseUrl("https://bravery.co") }}{%- endset -%}
-        {%- set audioURL -%}{{ metadata.cdn -}}how2edu/{{- ep.data.mp3 }}{%- endset -%}
+        {%- set audioURL -%}{{metadata.cdn }}{{ep.data.mp3}}{%- endset -%}
         {%- set content -%}{{ ep.data.summary | markdown | safe }}{%- endset -%}
         {% set comma = joiner(",") %}
         <item>
@@ -63,7 +63,7 @@ permalink: podcast/how2edu.xml
             <itunes:episode>{{ep.data.episode}}</itunes:episode>
             <itunes:keywords>{% for tag in ep.data.tags -%}{{ comma() }}{{- tag -}}{%- endfor %}</itunes:keywords>
             <content:encoded><![CDATA[{{ content | markdown | safe }}]]></content:encoded>
-            <enclosure url="{{ audioURL | chartable }}" length="{{ ep.data.duration }}" type="audio/mpeg"></enclosure>
+            <enclosure url="{{ audioURL }}" length="{{ ep.data.duration }}" type="audio/mpeg"></enclosure>
             <itunes:summary><![CDATA[{{ ep.data.summary | markdown | safe }}]]></itunes:summary>
             <itunes:image href="https://res.cloudinary.com/bravery/image/upload/{{ep.data.cover.image}}"></itunes:image>
             <image>

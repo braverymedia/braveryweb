@@ -6,7 +6,7 @@ episode: 005
 slug: differentiation-problem
 date: 2023-03-01T18:04:08.780Z
 record_date: 2023-02-28T18:04:08.785Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -14,7 +14,7 @@ cover:
   image: appxb-ep005_cover-art_lamukg.png
   alt: Appendix B Episode 5, text is present that reads, "Higher Ed's
     Differentiation Problem."
-mp3: appendix-b-episode-5-higher-ed-s-differentiation-problem.mp3
+mp3: appendixb/appendix-b-episode-5-higher-ed-s-differentiation-problem.mp3
 duration: 11:00
 summary: >-
   Why is it so difficult for Higher Education institutions to differentiate

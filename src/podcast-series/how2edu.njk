@@ -1,0 +1,27 @@
+---
+layout: layouts/podcast.njk
+title: How 2 EDU Podcast
+description: "The podcast that teaches you how to make your higher ed website perform better."
+section: podcast
+show: how2edu
+permalink: /podcast-series/how2edu/
+slug: how2edu
+chartable:
+subscribe:
+  amazon:
+  apple:
+  youtube:
+  iheartradio:
+  overcast:
+  pandora:
+  podchaser:
+  spotify:
+  stitcher:
+  tunein:
+---
+<section class="episode-list">
+  {% set episodeList = collections.how2edu %}
+  {% for ep in episodeList | reverse %}
+    {% include "components/mini-player.njk" %}
+  {% endfor %}
+</section>

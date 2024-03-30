@@ -7,7 +7,7 @@ episode: 032
 slug: less-is-more
 date: 2023-09-13T14:41:36.058Z
 record_date: 2023-09-12T14:41:36.065Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -15,7 +15,7 @@ cover:
   image: app_b_ep32_cover_art_sfwbke.png
   alt: 'Appendix B Episode 32, text is present that reads, "Avoiding Information
     Overload: Less is More"'
-mp3: appendix-b-episode-32-avoiding-information-overload-less-is-more.mp3
+mp3: appendixb/appendix-b-episode-32-avoiding-information-overload-less-is-more.mp3
 duration: 10:50
 topics:
   - podcast

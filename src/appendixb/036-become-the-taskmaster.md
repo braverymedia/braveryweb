@@ -6,11 +6,11 @@ episode: 036
 slug: become-the-taskmaster
 date: 2023-10-26T14:02:35.517Z
 record_date: 2023-10-25T14:02:35.524Z
-show: appendix-b
+show: appb
 cover:
   image: app_b_ep36_cover_art_kspo3z.png
   alt: Appendix B Episode 36, text is present that reads, "Become the Taskmaster."
-mp3: appendix-b-episode-36-become-the-taskmaster.mp3
+mp3: appendixb/appendix-b-episode-36-become-the-taskmaster.mp3
 duration: 10:22
 tags:
   - podcast

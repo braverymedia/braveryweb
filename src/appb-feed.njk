@@ -49,7 +49,7 @@ permalink: podcast/appendixb.xml
         <generator>Eleventy</generator>
     {%- for ep in collections.appendixb -%}
         {%- set permalink -%}{{ ep.url | htmlBaseUrl("https://bravery.co") }}{%- endset -%}
-        {%- set audioURL -%}{{ metadata.cdn -}}appendixb/{{- ep.data.mp3 }}{%- endset -%}
+        {%- set audioURL -%}{{metadata.cdn}}{{ep.data.mp3}}{%- endset -%}
         {%- set content -%}{{ ep.data.summary | md | safe }}{%- endset -%}
         {% set comma = joiner(",") %}
         <item>
@@ -62,7 +62,7 @@ permalink: podcast/appendixb.xml
             <itunes:subtitle><![CDATA[{{ ep.data.description }}]]></itunes:subtitle>
             <itunes:keywords>{% for tag in ep.data.tags -%} {{ comma() }} {{- tag -}} {%- endfor %}</itunes:keywords>
             <content:encoded><![CDATA[{{ content | md | safe }}]]></content:encoded>
-            <enclosure url="{{ audioURL | chartable }}" length="{{ ep.data.duration }}" type="audio/mpeg"></enclosure>
+            <enclosure url="{{ audioURL }}" length="{{ ep.data.duration }}" type="audio/mpeg"></enclosure>
             <itunes:summary><![CDATA[{{ ep.data.summary | md | safe }}]]></itunes:summary>
             <itunes:image href="https://res.cloudinary.com/bravery/image/upload/{{ep.data.cover.image}}"></itunes:image>
             <image>

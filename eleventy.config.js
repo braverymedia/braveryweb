@@ -17,7 +17,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 const pkg = require("./package.json");
-const metadata = require("./_data/metadata.json");
+const metadata = require("./src/_data/metadata.json");
 
 const { srcset, src } = require("./_11ty/images");
 const processSass = require("./_11ty/sass.js");
@@ -80,6 +80,9 @@ module.exports = function (eleventyConfig) {
 			return url;
 		}
 	});
+	eleventyConfig.addFilter("format", (str) => {
+		return new Function("with (this) { return `" + str + "` }").call(context);
+	});
 
 	// Time and Date
 	eleventyConfig.addLiquidFilter(
@@ -138,6 +141,15 @@ module.exports = function (eleventyConfig) {
 		return Duration.fromObject({ seconds: epDuration }).toFormat("mm:ss");
 	});
 
+	// Strip https
+	eleventyConfig.addFilter("noProtocol", (url) => {
+		if (url.startsWith("https://")) {
+			return url.substring("https://".length);
+		}
+		return url;
+	});
+
+	// Typography
 	eleventyConfig.addFilter("typography", (content) => {
 		content = content.replace(/"(?=\w|$)/g, "&#8220;");
 		content = content.replace(/(?<=\w|^)"/g, "&#8221;");
@@ -166,13 +178,16 @@ module.exports = function (eleventyConfig) {
 	});
 
 	/* Collections */
-
+	function getPosts(collectionApi) {
+		return collectionApi.getFilteredByGlob("./articles/*").reverse().filter(function(item) {
+			return !!item.data.permalink;
+		});
+	}
 	// only content in the `articles/` directory
 	eleventyConfig.addCollection("articles", function (collection) {
-		return collection.getAllSorted().filter(function (item) {
-			return item.inputPath.match(/^\.\/articles\//) !== null;
-		});
+		return getPosts(collection);
 	});
+
 
 	// only content in the `articles/` directory
 	eleventyConfig.addCollection("episodes", function (collection) {
@@ -198,6 +213,10 @@ module.exports = function (eleventyConfig) {
 		return collection.getAllSorted().filter(function (item) {
 			return item.inputPath.match(/^\.\/case-studies\//) !== null;
 		});
+	});
+
+	eleventyConfig.addCollection("pinnedPosts", function (collection) {
+		return getPosts(collection).filter(({ data }) => data.pinned === true);
 	});
 
 	/* Markdown Config */

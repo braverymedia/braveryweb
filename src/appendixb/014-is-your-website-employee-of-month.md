@@ -8,7 +8,7 @@ episode: 014
 slug: is-your-website-employee-of-month
 date: 2023-05-03T14:47:03.256Z
 record_date: 2023-05-01T14:47:03.264Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -16,7 +16,7 @@ cover:
   image: appxb-ep014_cover-art_ups1tl.png
   alt: Appendix B Episode 14, text is present that reads, "Is your website your
     employee of the month?"
-mp3: appendix-b-episode-14-is-your-website-your-employee-of-the-month-.mp3
+mp3: appendixb/appendix-b-episode-14-is-your-website-your-employee-of-the-month-.mp3
 duration: 11:02
 summary: >-
   A college or university website should reflect the organization behind it, and

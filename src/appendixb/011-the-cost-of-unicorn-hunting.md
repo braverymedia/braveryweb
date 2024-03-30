@@ -7,7 +7,7 @@ episode: 011
 slug: the-cost-of-unicorn-hunting
 date: 2023-04-12T15:23:56.408Z
 record_date: 2023-04-04T15:23:56.415Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -15,7 +15,7 @@ cover:
   image: appxb-ep011_cover-art_zead8c.png
   alt: Appendix B Episode 11, text is present that reads, "The cost of hunting
     unicorns."
-mp3: appendix-b-episode-11-the-cost-of-unicorn-hunting.mp3
+mp3: appendixb/appendix-b-episode-11-the-cost-of-unicorn-hunting.mp3
 duration: 10:15
 summary: >-
   In Higher Ed, when job descriptions are too broad, and there’s not enough

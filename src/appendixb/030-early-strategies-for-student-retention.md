@@ -6,7 +6,7 @@ episode: 030
 slug: early-strategies-for-student-retention
 date: 2023-08-30T12:54:26.647Z
 record_date: 2023-08-29T12:54:26.654Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -14,7 +14,7 @@ cover:
   alt: Appendix B Episode 30, text is present that reads, "Early Strategies for
     Student Retention"
   image: app_b_ep30_cover_art_dhbzvo.png
-mp3: appendix-b-episode-30-early-strategies-for-student-retention.mp3
+mp3: appendixb/appendix-b-episode-30-early-strategies-for-student-retention.mp3
 duration: 10:27
 topics:
   - retention

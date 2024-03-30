@@ -2,13 +2,24 @@
 layout: layouts/podcast.njk
 section: podcast-episode
 ---
-<article class="episode full">
-    {% include "components/player.njk" %}
+{% set mp3Link -%}{{metadata.cdn}}{{ mp3 }}{%- endset %}
+<article class="episode full constrain">
     <header class="episode--title">
         <div class="meta"><span class="episode-number">Episode {{ episode }} - <time datetime="{{ date | machineDate}}">{{ date | readableDate }}</time></span></div>
         <h1>{{title | typography | safe}}</h1>
     </header>
+    <section class="episode summary">
+        <figure class="cover-art">
+            <img src="{% src cover.image %}"
+            srcset="{% srcset cover.image %}" alt="{{cover.alt}}" width="250" height="250" loading="lazy" decoding="async" />
+        </figure>
+        <div class="episode--detail">
+        {{ summary | md | safe }}
+        </div>
+        <audio controls src="{{ mp3Link }}" crossorigin preload="none"></audio>
+    </section>
     <section class="episode--transcript">
+        <h2>Transcript</h2>
         {{ layoutContent | safe }}
         <footer class="subscribe">{% include "components/newsletter-subscribe.njk" %}</footer>
     </section>

@@ -1,16 +1,16 @@
 ---
 title: "Brand Equity Pyramid Part III: Brand Response"
 description: Joel Goodman and Kristin Van Dorn discuss the Brand Response level of the Customer Based Brand Equity Pyramid and practical approaches for higher education marketing professionals to enhance brand awareness and engagement.
-episode: 050
+episode: "050"
 slug: brand-equity-pyramid-brand-response
 date: 2024-03-25T00:09:24.117Z
 record_date: 2024-02-23T14:15:44.435Z
-show: appendix-b
+show: appb
 cover:
   image: ep50-cover_uos91i.jpg
   alt: "Text reads: Appendix B. Brand Equity Pyramid Part III Brand response. A
     Bravery Podcast"
-mp3: Episode%20050%20-%20Brand%20Equity%20Pyramid%20Part%203%20-%20Brand%20Response.mp3
+mp3: appendixb/Episode%20050%20-%20Brand%20Equity%20Pyramid%20Part%203%20-%20Brand%20Response.mp3
 duration: 9:35
 tags:
   - podcast

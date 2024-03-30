@@ -1,7 +1,7 @@
 html {
     --accent: var(--color-neon);
     --theme-bg: var(--color-white);
-    background-color: var(--accent);
+    background-color: var(--theme-bg);
     &.layout-services {
         --accent: var(--color-primary-600);
     }
@@ -108,6 +108,16 @@ main {
                 display: flex;
                 flex-direction: column;
             }
+            &.service-description {
+                column-gap: calc(8 * var(--grid-unit));
+            }
+        }
+        &.sticky {
+            align-items: flex-start;
+            > * {
+                position: sticky;
+                top: calc(20 * var(--grid-unit));
+            }
         }
     }
 }
@@ -196,7 +206,8 @@ main {
     flex-direction: column;
     gap: calc(3* var(--grid-unit));
 }
-.wide {
+.wide,
+[data-layout=wide] {
     margin-inline: auto;
     margin-block-start: var(--v-xl);
     width: 100%;
@@ -205,6 +216,9 @@ main {
     gap: calc(3* var(--grid-unit));
     @media ( width >= 1024px ) {
         width: 75vw;
+        .constrain & {
+            margin-inline: calc( -1 * var(--v-2xl) );
+        }
     }
 }
 
@@ -242,13 +256,6 @@ main {
 @media ( width >= 1024px ) {
     .service-description {
         align-items: center;
-        &.sticky {
-            align-items: flex-start;
-            > *:last-child {
-                position: sticky;
-                top: calc(20 * var(--grid-unit));
-            }
-        }
     }
 }
 
@@ -330,5 +337,12 @@ main {
     }
     @media( width >= 1024px ) {
         max-width: calc(820px + 6vw);
+    }
+}
+
+@media (width >= 1024px) {
+    .three {
+        columns: 3;
+        column-gap: calc(8 * var(--grid-unit));
     }
 }

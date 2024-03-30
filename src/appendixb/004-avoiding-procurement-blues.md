@@ -7,7 +7,7 @@ episode: 004
 slug: avoiding-procurement-blues
 date: 2023-02-22T16:16:50.339Z
 record_date: 2023-02-20T16:16:50.345Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -15,7 +15,7 @@ cover:
   image: appxb-ep004_cover-art_fehb6u.png
   alt: Appendix B Episode 4, text is present that reads, "Avoiding the Procurement
     Blues."
-mp3: appendix-b-episode-4-avoiding-the-procurement-blues.mp3
+mp3: appendixb/appendix-b-episode-4-avoiding-the-procurement-blues.mp3
 duration: 9:46
 summary: >-
   When your department is purchasing new software, tools, or maybe even a CMS,

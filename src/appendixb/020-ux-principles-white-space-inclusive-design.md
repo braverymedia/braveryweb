@@ -7,7 +7,7 @@ episode: 020
 slug: ux-principles-white-space-inclusive-design
 date: 2023-06-14T17:18:03.816Z
 record_date: 2023-06-13T17:18:03.822Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -15,7 +15,7 @@ cover:
   alt: 'Appendix B Episode 20, text is present that reads, "UX Principles: White
     Space for Inclusive Design""'
   image: app_b_ep20_cover_Art_vbrrsk.png
-mp3: appendix-b-episode-20-ux-principles-white-space-for-inclusive-design.mp3
+mp3: appendixb/appendix-b-episode-20-ux-principles-white-space-for-inclusive-design.mp3
 duration: 11:40
 topics:
   - ux

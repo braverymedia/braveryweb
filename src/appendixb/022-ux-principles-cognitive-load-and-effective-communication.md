@@ -7,7 +7,7 @@ episode: 022
 slug: ux-principles-cognitive-load-and-effective-communication
 date: 2023-06-28T10:07:41.176Z
 record_date: 2023-06-13T10:07:41.184Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -15,7 +15,7 @@ cover:
   image: app_b_ep22_cover_art_uaxnqi.png
   alt: 'Appendix B Episode 22, text is present that reads, "UX Principles:
     Cognitive Load and Effective Communication"'
-mp3: appendix-b-episode-22-ux-principles-cognitive-load-and-effective-communication.mp3
+mp3: appendixb/appendix-b-episode-22-ux-principles-cognitive-load-and-effective-communication.mp3
 duration: 10:10
 topics:
   - ux

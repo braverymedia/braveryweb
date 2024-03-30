@@ -8,11 +8,11 @@ episode: 041
 slug: when-reality-fights-marketing
 date: 2023-12-13T21:07:10.919Z
 record_date: 2023-12-05T21:07:10.931Z
-show: appendix-b
+show: appb
 cover:
   image: cover-ep041_go0qzw.jpg
   alt: "Text reads Appendix B: When reality fights marketing"
-mp3: appendix-b-041-when-reality-fights-marketing.mp3
+mp3: appendixb/appendix-b-041-when-reality-fights-marketing.mp3
 duration: 8:10
 tags:
   - podcast

@@ -10,6 +10,8 @@ tags:
     - casestudy
     - design
 excerpt: Bravery designed and built custom dental program finders for ADEA's three major central application systems and their member dental schools.
+wistias:
+    - bb5rhcstp0
 cover:
     image: case-study-cover-adea_mgiiqu
     alt: Screenshot of ADEA program finder webpage. Above that text reads, Case Study American Dental Education Association
@@ -44,7 +46,7 @@ Building off of Bravery’s program finder UX, we knew we needed to talk to dent
 6. **Increase Applications:** ADEA’s Centralized Application Service (CAS) is the primary way students apply to dental schools. We built logical pathways and calls to action to apply within ADEA’s ecosystem.
 
 <figure data-layout="wide">
-    <script src="https://fast.wistia.com/embed/medias/bb5rhcstp0.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:70.63% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_bb5rhcstp0 seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/bb5rhcstp0/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+    <div class="wistia_responsive_padding" style="padding:70.63% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_bb5rhcstp0 seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/bb5rhcstp0/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
 </figure>
 
 ## The Outcome

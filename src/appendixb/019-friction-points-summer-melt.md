@@ -7,7 +7,7 @@ episode: 019
 slug: friction-points-summer-melt
 date: 2023-06-07T12:42:18.533Z
 record_date: 2023-06-06T12:42:18.541Z
-show: appendix-b
+show: appb
 tags:
   - podcast
   - appendix-b
@@ -15,7 +15,7 @@ cover:
   image: app_b_ep19_social_cover_Art_owt5gm.png
   alt: Appendix B Episode 19, text is present that reads, "Reducing friction
     points and impacting Summer Melt"
-mp3: appendix-b-episode-19-friction-points-and-their-impact-on-summer-melt.mp3
+mp3: appendixb/appendix-b-episode-19-friction-points-and-their-impact-on-summer-melt.mp3
 duration: 13:36
 summary: >-
   It’s cruel (cruel) cruel Summer (Melt).
