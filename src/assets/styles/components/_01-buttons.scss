@@ -18,7 +18,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: calc( 4 * var(--grid-unit) );
-    margin-top: calc(2 * var(--grid-unit));
+    margin-block-start: calc(2 * var(--grid-unit));
     .intro & {
         margin-block-start: var(--outer-margin);
     }

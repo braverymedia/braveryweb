@@ -2,26 +2,30 @@ const CLOUDNAME = "bravery";
 const FOLDER = "";
 const BASE_URL = `https://res.cloudinary.com/${CLOUDNAME}/image/upload`;
 const TRANSFORMS = `f_auto,q_80,dpr_2.0`;
-const FALLBACK_WIDTHS = [320, 768, 1024, 1360, 1600, 1980];
+const ASPECT_RATIO= `3:2`;
+const FALLBACK_WIDTHS = [320, 768, 1024, 1360, 1600, 1980, 2400];
 const FALLBACK_WIDTH = 680;
 
-function getSrcset(file, preset, widths) {
+function getSrcset(file, ar, widths, preset) {
 	const widthSet = widths ? widths : FALLBACK_WIDTHS;
+	const aspect = `${ar ? ar : ASPECT_RATIO}`;
 	return widthSet
 		.map((width) => {
-			return `${getSrc(file, preset, width)} ${width}w`;
+			return `${getSrc(file, aspect, width, preset)} ${width}w`;
 		})
 		.join(", ");
 }
 
 // Generate the src attribute using the fallback width or a width supplied
 // by the shortcode params
-function getSrc(file, preset, width) {
-  return `${BASE_URL}/${preset ? preset + '/' : ''}${TRANSFORMS},w_${width ? width : FALLBACK_WIDTH}/${FOLDER}${file}`
+function getSrc(file, ar, width, preset) {
+	return `${BASE_URL}/${preset ? preset + "/" : ""}${TRANSFORMS},ar_${
+		ar ? ar : ASPECT_RATIO
+	},w_${width ? width : FALLBACK_WIDTH},c_crop/${FOLDER}${file}`;
 }
 
 // Export the two shortcodes to be able to access them in our Eleventy config
 module.exports = {
-  srcset: (file, preset, widths) => getSrcset(file, preset, widths),
-  src: (file, preset, width) => getSrc(file, preset, width),
-}
+	srcset: (file, ar, widths, preset) => getSrcset(file, ar, widths, preset),
+	src: (file, ar, width, preset) => getSrc(file, ar, width, preset),
+};

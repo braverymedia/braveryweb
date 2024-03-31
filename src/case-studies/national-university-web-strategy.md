@@ -50,7 +50,7 @@ With a lean team of five, Bravery executed the design process within a tight two
 
 The redesigned website by Bravery resulted in a significant performance boost for National University. The small team's focused efforts led to a final product that not only met but exceeded expectations. Seth Odell, at the time, vice chancellor for marketing, expressed pride in the results and the positive impact the new site had on the organization.
 
-::: callout
+
 > "I could not be more proud of the final product we have, the team that developed it, and the results this new site is driving for our organization. With Bravery’s help – and Joel’s leadership specifically – we built a lean, nimble, highly talented team that delivered a first class website, with the results to back it up."
 
 **Seth Odell**

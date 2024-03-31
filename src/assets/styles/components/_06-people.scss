@@ -2,6 +2,9 @@
     display: flex;
     align-items: flex-start;
     gap: calc(4 * var(--grid-unit));
+    > * {
+        flex: 0 1 50%
+    }
     img {
         width: 100%;
         height: auto;

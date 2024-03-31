@@ -3,8 +3,8 @@ title: You may not need to redesign your university website
 slug: no-you-dont-need-to-redesign-your-university-website
 description: Think your higher ed website needs a redesign? Bravery recommends a different approach, first.
 cover:
-    image: hype.jpg
-    alt: lights that spell the word hype.
+    image: posts/silo-glitch_fvbwx9.jpg
+    alt: An old grain silo in central texas. Big, billowy clouds float in a blue sky behind the silo.
 date_published: 2017-08-01T19:55:00.000Z
 date: 2019-06-27T20:37:49.000Z
 topics:
@@ -26,7 +26,7 @@ Your redesign will probably [fail to live up to expectations](/insight/your-univ
 
 When an institution hires an agency to do a redesign, there are invariably too many people involved in the process. Your “stakeholders” are nothing more than liabilities. The very reason you think you need to redesign is due to those folks and the fact that they don’t work in web marketing.
 
-::: callout
+
 > You know how every university website looks the same? This is why.
 :::
 
@@ -57,7 +57,7 @@ Otherwise? There’s no hard-and-fast rule. If you have design and development s
 
 But if your institution is spending dozens of thousands of dollars with an agency on a web redesign, you should milk it for all it’s worth. If *“your academic program pages aren’t clearly communicating the value and outcomes of a major or a degree”* ([source](https://www.insidehighered.com/blogs/call-action-marketing-and-communications-higher-education/it-time-redesign-your-website)), then rewrite them, don’t redesign your whole website. That’s crazy talk.
 
-::: callout
+
 > Redesign that one page template, or make better use of the content that’s there.
 :::
 

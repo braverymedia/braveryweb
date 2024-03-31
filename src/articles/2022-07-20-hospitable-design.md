@@ -3,7 +3,7 @@ title: "Hospitable Design"
 slug: hospitable-design-framework
 description: A framework for user case by designing hospitable experiences."
 cover:
-    image: hotel-room.jpg
+    image: posts/window-glitch_ks5zob.jpg
     alt: View of a hotel window
 social:
     tw:
@@ -48,9 +48,8 @@ Take a moment and sit with that. Every decision we make from the language we use
 
 From software (no one thinks Blackboard is intuitively designed, yet how many millions of dollars does higher ed dump into it?) to meal plan management to disjointed branding. All of these friction points add up to an overall experience. The consequences of these design decisions are felt far and wide beyond your marketing efforts.
 
-::: callout
+
 > Where Consequence Design is a way for us to notice the anti-patterns we encounter every day, Hospitable Design is a framework for doing something about it.
-:::
 
 ---
 

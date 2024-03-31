@@ -6,8 +6,8 @@ video:
     video_url: https://www.youtube.com/watch?v=YtdB_Z0CX8w
     video_title: Your University's website might be useless
 cover:
-    image: 02---HEHT-Thumbnail--Is-Your-University-Website-Useless--Bravery-Media-Joel-Goodman_eimtdz.jpg
-    alt: Is your university website useless?
+    image: posts/curb-glitch_ckoh5q.jpg
+    alt: glitchy photo of a street curb
 social:
     tw:
         image: https://bravery.co/assets/img/heht-02.jpg
@@ -44,9 +44,9 @@ Now, the metrics that matter just aren’t performing.
 
 On the agency side, what we often see is a lack of formalized organizational ownership when it comes to the website. You've probably heard this called **governance** in other circles, and really, it's still a problem today in higher education. The fact of the matter is competing priorities always — _and I mean every time_ — produce a website that doesn't live up to its potential.
 
-::: callout
+
 > So what do you do about it?
-:::
+
 ## Who is your primary audience?
 
 Your first step is to define your primary audience, and no it's not everyone, as much as you want it to be. Any website that tries to cater to everyone ends up catering to all of them poorly.

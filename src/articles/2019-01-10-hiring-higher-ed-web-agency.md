@@ -3,8 +3,8 @@ title: Hiring a new web agency? Ignore their client list.
 slug: hiring-higher-ed-web-agency
 description: Look at a higher ed design agency's results before their client list.
 cover:
-    image: DSCF1434_lqvazo.jpg
-    alt: Black cobblestone streets with road paint.
+    image: posts/cherry-blossoms-glitch_cjumgu.jpg
+    alt: Glitchy close up of cherry blossoms.
 date_published: 2019-01-10T18:43:00.000Z
 date: 2023-01-12T13:37:00.000Z
 topics:
@@ -20,9 +20,9 @@ A few years ago, I took a call with a vice president for marketing at a universi
 
 This VP pointed something out that got me thinking. As the group was looking over the finalists, a majority went toward the agency that had done work for institutions they were familiar with.
 
-::: callout
+
 > Doesn't that sound familiar?
-:::
+
 
 I've seen this approach so many times in higher ed. Bravery has even been a victim of it in the past. I think it's kind of a hallmark of higher education marketing. And we can see the results in the myriad university websites that look the same, the messaging that's a rehash of somebody else's, and the small set of "elite" agencies that operate in this space.
 
@@ -42,15 +42,15 @@ As our call was wrapping up, this VP was faced with a conundrum. Most of their t
 
 I realized there was only one piece of advice to give.
 
-::: callout
+
 > Ignore the client list; pay attention to the work.
-:::
+
 
 That's it. When someone doesn't know digital (or food, or drinks, or cars, or... anything really), they're naturally going to be drawn to what's familiar. If all you've known is Domino's pizza, that's going to be your default delivery instead of that great local pizza place a few blocks away. If you're uninformed about politics you're most likely going to vote for whatever party you've voted for in the past—the familiar issues and faces.
 
-::: callout
+
 > This mentality not only perpetuates stagnation in our industry, it all but guarantees disappointment with your final product.
-:::
+
 
 The size of the agency doesn't matter. It doesn't matter if they claim to be full-service (they're probably not). If they're bad at (or farm out) the technical side, don't hire them for that piece of your project. If branding isn't an agency's strongsuit, pay them to design your website after you work with a real branding agency.
 

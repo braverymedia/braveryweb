@@ -134,6 +134,15 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat("yyyy");
 	});
 
+	eleventyConfig.addFilter( "noFeatures",
+		function (collection = [], frontMatterItem = "") {
+			if (!frontMatterItem) {
+				return collection;
+			}
+			return collection.filter((item) => !item.data[frontMatterItem]);
+		}
+	);
+
 	// Simple year shortcode
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
@@ -179,7 +188,7 @@ module.exports = function (eleventyConfig) {
 
 	/* Collections */
 	function getPosts(collectionApi) {
-		return collectionApi.getFilteredByGlob("./articles/*").reverse().filter(function(item) {
+		return collectionApi.getFilteredByGlob("./src/articles/*").reverse().filter(function(item) {
 			return !!item.data.permalink;
 		});
 	}
@@ -189,7 +198,7 @@ module.exports = function (eleventyConfig) {
 	});
 
 
-	// only content in the `articles/` directory
+	// only content in the `episodes/` directory
 	eleventyConfig.addCollection("episodes", function (collection) {
 		return collection.getAllSorted().filter(function (item) {
 			return item.inputPath.match(/^\.\/episodes\//) !== null;
@@ -217,6 +226,10 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addCollection("pinnedPosts", function (collection) {
 		return getPosts(collection).filter(({ data }) => data.pinned === true);
+	});
+
+	eleventyConfig.addCollection("featuredArticle", function (collection) {
+		return getPosts(collection).filter(({ data }) => data.pinned === true).slice(0,1);
 	});
 
 	/* Markdown Config */

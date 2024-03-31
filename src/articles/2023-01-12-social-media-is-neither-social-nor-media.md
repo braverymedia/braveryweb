@@ -6,8 +6,8 @@ video:
     video_url: https://www.youtube.com/watch?v=H7C8PQWzOTA
     video_title: Social Media is Neither Social Nor Media
 cover:
-    image: heht-01_f5evt4.jpg
-    alt: Social Media is Neither Social Nor Media
+    image: posts/curb-glitch_ckoh5q.jpg
+    alt: glitchy street curb.
 social:
     tw:
         image: https://bravery.co/assets/img/heht-01.jpg
@@ -36,9 +36,8 @@ Today we're going to talk about social media, its place in higher education, how
 
 Every day it seems like we see new things happening with Twitter and not things for the best. And the thing is that we've come to rely on social media as our primary means of marketing, and that's okay. Marketing has to happen.
 
-::: callout
+
 > One of the issues that I see, though, is that social media did not originally start as a marketing practice.
-:::
 
 The thing that we know is social media today was not the thing that started up back in the early aughts. And when we think back to MySpace, to Friendster, to even the forums that we had before, all of these new apps and platforms came around. The thing that we focused on the most was 1 to 1 communication with other people who we wanted to interact with.
 
@@ -54,9 +53,8 @@ Look at any number of stories that have come out over the last several years sho
 
 All the way to the effects on political discourse that we have seen disrupt our democracies all over the world. Social media, marketing capitalism on top of that has not done us many favors. And now at this point, with Twitter going in, who knows what direction and a whole slew of other social media platforms out there?
 
-::: callout
+
 > What do we actually do?
-:::
 
 Where do we actually go? There are plenty of other places that we might be able to look, but what we can do is refocus. If we slow down, look at the platforms that our brands actually do participate on. Look at the places and platforms where our users are and maybe trim the ones that we don't really need to be on.
 

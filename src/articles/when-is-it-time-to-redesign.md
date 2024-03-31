@@ -7,8 +7,8 @@ slug: when-is-it-time-to-redesign
 date_published: 2023-04-26T19:18:37.995Z
 date: 2023-04-26T19:18:38.006Z
 cover:
-  image: London-eye.jpg
-  alt: The London Eye captured in the right third of the frame, a clear sky behind
+  image: posts/london-eye-glitch_gjyanb.jpg
+  alt: The London Eye captured in the left third of the frame, a clear sky behind
     it.
 social:
   tw: https://bravery.co/assets/uploads/social-time-to-redesign.jpg

@@ -3,7 +3,7 @@ title: The illusion of safety
 slug: death-by-safety
 description: What higher ed web strategy needs is a little more courage and a lot more action.
 cover:
-    image: alamo.jpg
+    image: posts/alamo-glitch-alt_jy1knw.jpg
     alt: The top of the Alamo in the sunlight
 date_published: 2015-02-05T18:34:00.000Z
 date: 2018-10-04T16:54:09.000Z
@@ -23,9 +23,8 @@ We see the overarching mentality going something like this:
 
 While the rest of us digital hustlers are creating, using, and refining tools that speed up our processes, these quasi-luddites ignore or, worse, relegate our bespoke methods to even less-meaningful categories like *hipster.*
 
-::: callout
+
 > It’s 2015. CSS preprocessors are not new technology. Things like package managers and task runners aren’t new either. The darling technologies of two years ago are already being supplanted. You’re still using Node? Psh. Check out Angular.js.
-:::
 
 Higher education’s failure to recognize the speed at which web technologies progress is what scares me the most. When a higher ed web generalist refuses to look forward at new methods, they have already committed their work to irrelevance. In any industry or field, if you are not interested in the new methods, tools, and skills your colleagues are developing, you don’t deserve whatever job you have.
 
@@ -43,7 +42,7 @@ Small teams can do amazing things when not bogged down with the political BS tha
 - The school’s homepage wouldn’t be bogged down with minutiae. The site’s IA would be streamlined and simplified. Applications and other crucial flows would be dead-simple and lightning fast. They’d design these things for acquisition, not for decreasing bounce rates.
 - The internal student experience would be given just as much, if not more, attention and care as the acquisition experience.
 
-::: callout
+
 > A web team that’s given responsibility is one that can do amazing things. An interested, devoted, and talented team coupled with the freedom to meet goals however they want to can yield incredible results.
 :::
 
@@ -55,7 +54,7 @@ You see, the university was always where the rest of the world found exciting id
 
 It’s our own fault. The ones who choose to stick with higher ed are brave. But bravery is just a starting point. The follow through is what matters. As Winston Churchill once said,
 
-::: callout
+
 > Doubt can be swept away only by deeds.
 :::
 

@@ -146,13 +146,13 @@ body[data-theme] {
         .episode--summary {
             font-size: var(--type-sm);
             p {
-                margin-top: 1em;
+                margin-block-start: 1em;
             }
         }
         h2 {
             font-size: var(--type-md);
             margin-bottom: 0;
-            margin-top: calc(var(--grid-unit) * 2);
+            margin-block-start: calc(var(--grid-unit) * 2);
         }
         audio {
             width: 100%;
@@ -184,7 +184,7 @@ body[data-theme] {
 }
 .pod-description {
     font-size: var(--type-sm);
-    margin-top: 0;
+    margin-block-start: 0;
     line-height: 1.26;
     @media ( min-width: 760px ) {
         font-size: var(--type-base);
@@ -197,7 +197,7 @@ body[data-theme] {
     align-items: center;
     gap: calc(var(--grid-unit) * 2);
     color: var(--color-black);
-    // margin-top: calc(var(--grid-unit) * 4);
+    // margin-block-start: calc(var(--grid-unit) * 4);
     // margin-bottom: calc(var(--grid-unit) * 4);
     .subscribe-icon {
         height: calc(var(--grid-unit) * 3);

@@ -19,9 +19,8 @@ In the course of our work, we nearly always do a competitor audit. Analyzing how
 
 Now, calling out places by name or badmouthing people isn't a good look. Bravery would probably never work in higher education again if I did those things. But blunt honesty is also something severely lacking in our discourse around these topics. And, in the immortal words of The Doors, "the time to hesitate is through." Because when we take what is happening in higher education at face-value, just like [I tweeted on April 17, 2020](https://twitter.com/joelgoodman/status/1251244264664600576?s=20),
 
-::: callout
+
 > "The digital strategy (UX, Content, Social) decisions made in #HigherEd this year will be the deciding factor in which institutions stay open for another 50 years and which are forced to quietly fade away."
-:::
 
 After analyzing three competitors to the university we were helping, I kind of fell into looking at close to 160 different small-to-medium-sized institutions across the country. I started in Pennsylvania and worked my way west and north. I covered a lot of ground, but there are still over 5,000 institutions in the U.S. alone.
 
@@ -45,9 +44,8 @@ If we take an objective look at the industry, our stagnation is due to ***digita
 
 The writing has not only been on the wall, but university marketing staff everywhere have been waving their arms and screaming as loud as they can for years about what needs to happen. For those of you in this position and reading this post, let me commiserate. If you are in leadership at a university, I cannot emphasize this enough:
 
-::: callout
+
 > LISTEN TO YOUR MARKETING STAFF.
-:::
 
 Furthermore, while every institution is figuring out staffing reductions, furloughs, and where to save money, you have an opportunity to pull ahead of your competitors. Every school is scared, every school is reducing marketing spend, every school is confused about what to do for some reason.
 

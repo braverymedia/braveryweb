@@ -1,7 +1,7 @@
 <a href="{{ cs.url | url}}" title="Read the {{ cs.title }} case study" data-ar="2:3">
     <img
-        src="{% src cs.data.cover.image %}"
-        srcset="{% srcset cs.data.cover.image %}"
+        src="{% src cs.data.cover.image, '2:3' %}"
+        srcset="{% srcset cs.data.cover.image, '2:3' %}"
         alt="{{ cs.data.cover.alt }}"
         width="451"
         height="676"

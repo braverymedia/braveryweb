@@ -15,7 +15,7 @@ h5 {
 }
 
 h1 {
-	font-size: var(--type-xl);
+	font-size: var(--type-2xl);
 	font-variation-settings: "opsz" 96;
 	font-weight: 800;
 	&.mega {
@@ -35,12 +35,12 @@ h2 {
 
 h3 {
 	font-size: var(--type-md);
-	margin-top: 1.5rem;
+	margin-block-start: 1.5rem;
 }
 
 p {
 	line-height: 1.65;
-	margin-top: 0.6em;
+	margin-block-start: 0.6em;
 	&.hero {
 		font-size: var(--type-super);
 		font-variation-settings: "opsz" 96;

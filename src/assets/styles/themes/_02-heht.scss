@@ -6,8 +6,7 @@
     --title-weight: 1000;
 }
 
-.layout-podcast footer.subscribe,
-.layout-single .heht-mini {
+.layout-podcast footer.subscribe{
     background-image: var(--gradient--neon);
     padding: calc(var(--grid-unit) * 4);
     border-radius: 24px;

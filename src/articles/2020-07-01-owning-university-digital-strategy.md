@@ -3,8 +3,8 @@ title: Owning your university's digital strategy
 slug: owning-university-digital-strategy
 description: Proper governance and ownership is vital to successful higher ed digital strategy. Who owns your process?
 cover:
-    image: DSCF0665_gcp7qr.jpg
-    alt: A bird flying above cathedral spires
+    image: posts/chess-glitch_pfbhpg.jpg
+    alt: Close up shot from above of one side of a chess set. The King is centered in the middle.
 date_published: 2020-07-01T20:28:26.000Z
 date: 2020-07-01T20:31:02.000Z
 topics: ['Digital Strategy', 'Governance']
@@ -27,7 +27,7 @@ There are so many features, stories, videos, calls to action, social grids, and 
 
 [Jon-Stephen Stansel](https://jsstansel.com/?utm_source=bravery) said it like this:
 
-::: callout
+
 > Higher ed websites: it’s ALL junk drawer.
 :::
 

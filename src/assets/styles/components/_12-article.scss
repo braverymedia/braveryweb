@@ -1,0 +1,63 @@
+.article-list {
+    font-size: var(--type-base);
+    font-weight: 600;
+    padding-inline: unset;
+    margin-block-start: calc( 4 * var(--grid-unit) );
+    li {
+        margin-block-end: calc( 2 * var(--grid-unit) );
+        line-height: 1.2;
+    }
+}
+.latest-posts {
+    @media (width >= 1200px) {
+        gap: var(--v-xl) !important;
+    }
+}
+.layout-insight {
+    #podcasts > header {
+        padding-block-end: calc(5 * var(--grid-unit));
+    }
+}
+.layout-single {
+    main > section > article {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: calc(3 * var(--grid-unit));
+    }
+    main {
+        padding-block-start: var(--v-xl);
+        h2 {
+            font-size: var(--type-lg);
+        }
+        .layout.layout-split {
+            gap: var(--v-xl);
+        }
+        > section {
+            padding-block-start: unset;
+        }
+    }
+    @media (width >= 1024px) {
+        main {
+            position: relative;
+        }
+        .article-cover {
+            position: fixed;
+            bottom: var(--border-width);
+            left: var(--border-width);
+            width: calc( 58vw - (2 * var(--border-width)));
+            height: 90dvh;
+            border-radius: 0;
+            z-index: 0;
+            &:after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background: linear-gradient( to left, #fff 3%, rgba(#fff, 0) 60%);
+            }
+        }
+    }
+}

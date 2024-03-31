@@ -3,8 +3,8 @@ title: Smart design thinking
 slug: smart-design-thinking
 description: The best higher education web designs put real people at the foundation.
 cover:
-    image: carbide-and-carbon.jpg
-    alt: Tops of skyscrapers in downtown Chicago.
+    image: posts/arch-glitch_hep2dv.jpg
+    alt: Shot of the Gateway Arch spanning the photo frame. Shot from below with a cloudy sky behind it, and a glitch effect put on top of the photo.
 date_published: 2015-09-02T17:43:00.000Z
 date: 2018-09-10T18:15:38.000Z
 topics:

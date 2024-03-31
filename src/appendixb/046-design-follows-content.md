@@ -53,7 +53,7 @@ And instead, users end up getting lost. They don’t really know what they’re 
 **Joel**
 One of the hard things for designers coming into a project where there isn’t fresh content, where they’re disconnected from where the content has come from, is there’s usually this expectation that there’s going to be new stuff on the page, right?
 
-Oh, we need to have new callouts and new calls to action and new whatever. But the designers aren’t, in most cases, content designers, content strategists, or content writers. And so, if they’re not given that direction for what sorts of callouts need to be there, or what sorts of calls to action, or what sorts of components need to go onto a page, it becomes a lot more difficult for them to develop something new and something that’s really nice.
+Oh, we need to have new pulls and new calls to action and new whatever. But the designers aren’t, in most cases, content designers, content strategists, or content writers. And so, if they’re not given that direction for what sorts of pulls need to be there, or what sorts of calls to action, or what sorts of components need to go onto a page, it becomes a lot more difficult for them to develop something new and something that’s really nice.
 
 And, you know, a lot of times what we see in higher ed is we come into these projects where, it’s pages with just tons of paragraphs, you know, it’s like 15 paragraphs of text, just really dense writing. And, Is it the best choice to just leave it like that? Probably not, but someone needs to go through and pay attention to what text is on that page and figure out what can be distilled, what can be chunked, and what can be pulled out.
 

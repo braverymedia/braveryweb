@@ -6,16 +6,13 @@ slug: low-hanging-fruit-in-highedweb
 date_published: 2019-07-17T15:32:14.000Z
 date: 2020-06-10T16:27:57.000Z
 cover:
-  image: apple-tree.jpg
-  alt: Apples growing in a tree with blue skies above
+  image: posts/contigo-glitch_wad1x8.jpg
+  alt: Photo of a fan mounted on a pole. It's outside on a patio with string lights crossing the pavilion.
 topics:
   - Content Design
 excerpt: Check these three things to improve your prospective students' web experience.
+cta: contact
 ---
-
-My pal [Steve App](https://twitter.com/stephenapp) over at [Campus Sonar](https://campussonar.com) shared a gem of a subreddit thread this morning with the #highered crowd:
-
-https://twitter.com/StephenApp/status/1151149970483023873
 
 Working on university websites and digital strategy day-in and day-out, I sometimes forget that the common things we address may not seem very common. Web marketing can be super-complex and challenging, but there are simple things any institution can do to improve their website immediately. Today I'll share some of that not-so-secret sauce.
 
@@ -25,10 +22,9 @@ When [Bravery](https://bravery.co) does web work for an institution, we usually 
 
 How about another example? In a recent RFP we were working through, a third-party agency made a strategy recommendation to "tell more student stories" on the university website. They were right. This particular school does need to represent their students more, but this recommendation went on to suggest telling stories and selling the institution were mutually exclusive endeavors.
 
-::: callout
+
 
 > What good are stories if they don't lead to the content and actions your prospective students expect to find?
-> :::
 
 I know, I know. Content strategy has been the big buzzword in this industry for the past seven years. However, no content strategist I know will tell you storytelling comes at the expense of providing your website visitors the information they need. Institutions saying they need to tell more stories is a cop-out. Rather than provide content design training for staff or hire a professional content designer, they think writing more student stories will fix everything.
 
@@ -63,11 +59,3 @@ Be creative.
 
 - to get lost in your website
 - to feel abandoned by your content and navigation
-
----
-
-### Need a helping hand to get started?
-
-This is work Bravery Media's team members have been doing for over a decade. We've implemented these very changes for our clients and seen massive growth take off immediately. We would love to talk to you to help identify these and other opportunities to improve your users' experience. Get in touch below or message us on [LinkedIn](https://www.linkedin.com/company/bravery-media).
-
-Call: [(512) 593-8094](tel:+15125938094) / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)

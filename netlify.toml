@@ -34,6 +34,11 @@ to = "https://bravery.co/services/website-strategy/"
 status = 301
 
 [[redirects]]
+from = "/insight/higher-ed-website-redesign-small-team/"
+to = "https://bravery.co/insight/case-study/national-university-web-strategy/"
+status = 301
+
+[[redirects]]
 from = "/speedyu-turbo/"
 to = "https://bravery.co/benchmark/"
 status = 302

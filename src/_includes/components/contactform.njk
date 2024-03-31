@@ -1,15 +1,49 @@
 <div class="rfi-form">
     <form name="contact" method="POST" netlify-honeypot="bot-field"  data-netlify="true" id="bravery-contact">
         <p class="honey"> <label>Don’t fill this out if you're human: <input name="bot-field" /></label> </p>
-        <p> <label> <span>Name*</span> <input name="name" class="name" required> </label> </p>
-        <p> <label> <span>Work Title</span> <input name="title" class="title"> </label> </p>
-        <p> <label> <span>Email*</span> <input type="email" name="email" class="email" required> </label> </p>
-        <p> <label> <span>Institution*</span> <input name="institution" class="institution" required> </label> </p>
-        <p> <label> <span>Institution Website URL</span> <input type="url" name="url" class="institution-url"
-                value="https://"> </label> </p>
-        <p> <label> <span>Tell us about your project.*</span> <textarea name="message" class="email" rows="6" cols="33"
-                required></textarea> </label> </p>
-        <p class="checkbox"><label> <input type="checkbox" name="newsletter" /> <span>Get Bravery's weekly Higher Ed Hot Takes</span> </label></p>
-        <p> <button type="submit" class="button bright">Send</button> </p>
+        <div class="field is-required">
+            <label for="contact-name">Name</label>
+            <input name="name" class="name" id="contact-name" required>
+            <span>*</span>
+        </div>
+        <div class="field">
+            <label for="contact-title">Work title</label>
+            <input name="title" id="contact-title" class="title">
+        </div>
+        <div class="field is-required">
+            <label for="contact-email">Email</label>
+            <input type="email" name="email" class="email" id="contact-email" required>
+            <span>*</span>
+        </div>
+        <div class="field is-required">
+            <label for="contact-org">Organization</label>
+            <input name="institution" class="institution" id="contact-org" required>
+            <span>*</span>
+        </div>
+        <div class="field">
+            <label for="contact-url">Website URL</label>
+            <input type="url" name="url" id="contact-url" class="institution-url"
+                value="https://">
+        </div>
+        <div class="field textarea is-required">
+            <label>Talk to us</label><span>*</span>
+            <textarea name="message" class="email" rows="3" cols="33"
+                required></textarea>
+        </div>
+        <div class="field select">
+            <label for="contact-budget">Budget range</label>
+            <select name="budget" id="contact-budget">
+                <option value="">Select your budget range</option>
+                <option value="500000">$500,000+</option>
+                <option value="250000">$250,000+</option>
+                <option value="100000">$100,000+</option>
+                <option value="50000">$50,000+</option>
+                <option value="unsure">Not sure</option>
+            </select>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="newsletter" id="contact-subscribe" /> <label for="contact-subscribe">Get updates and insight from <span class="brand">Bravery</span></label>
+        </div>
+        <button type="submit" class="button has-icon">Send {% include "svg/paper-plane.svg" %}</button>
     </form>
 </div>

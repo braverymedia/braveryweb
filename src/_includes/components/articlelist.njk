@@ -1,5 +1,0 @@
-{% for article in articlesList | reverse %}
-    <a href="{{ article.url | url }}" class="article" title="{{ article.data.title }}">
-        <div class="article-title">{{ article.data.title }}</div>
-    </a>
-{% endfor %}

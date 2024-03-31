@@ -2,9 +2,13 @@ figure {
     border-radius: 4px;
     overflow: hidden;
     display: flex;
-    img, video {
+    img, video, iframe {
         object-fit: cover;
         height: 100%;
+        width: 100%;
+    }
+    &.video-embed{
+        aspect-ratio: 16/9;
         width: 100%;
     }
 }

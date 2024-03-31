@@ -1,0 +1,13 @@
+.layout-contact {
+    --accent: var(--color-primary-700);
+}
+.direct {
+    font-size: var(--type-sm);
+    font-weight: 700;
+    padding-block-start: calc( 4 * var(--grid-unit));
+    border-block-start: 1px solid var(--accent);
+    > a {
+        font-weight: 500;
+        padding-inline-start: var(--grid-unit);
+    }
+}

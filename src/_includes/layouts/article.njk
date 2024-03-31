@@ -3,8 +3,22 @@ layout: layouts/base.njk
 section: single
 postType: article
 ---
-<main>
+
+<figure class="article-cover">
+    <img
+        srcset="{% srcset cover.image, '4:3' %}"
+        src="{% src cover.image, '4:3' %}" alt="{{ cover.alt }}" width="340" height="225" decoding="async" />
+</figure>
+<section class="layout layout-split sticky">
+    <aside>
+        {% if video %}
+        <figure class="video-embed article--cover">
+            {% youtube video.video_url, video.video_title %}
+        </figure>
+        {% endif %}
+    </aside>
     <article>
+        <a href="{{ '/insight/#latest' | url }}" class="all-articles">&larr; All Articles</a>
         <header class="article--title">
             <h1>{{title}}</h1>
             <p><span class="author">{{ name or metadata.author.name }}</span><br/>
@@ -14,22 +28,15 @@ postType: article
         <section class="article--content">
             {{ layoutContent | safe }}
         </section>
-        <footer class="heht-mini">
-            <h3>Get our weekly hot takes and early access to research results.</h3>
-            {% include "components/newsletter-form.njk" %}
+        <footer class="cta-bar">
+            {% if cta == 'contact' %}
+                {% include "components/cta-inquire.njk" %}
+            {% else %}
+                <div class="heht-mini">
+                    <h3>Get our weekly hot takes and early access to research results.</h3>
+                    {% include "components/newsletter-form.njk" %}
+                </div>
+            {% endif %}
         </footer>
     </article>
-    <aside>
-        <a href="{{ '/insight/' | url }}" class="all-articles">&larr; All Articles</a>
-        {% if video %}
-        <figure class="video-embed article--cover">
-            {% youtube video.video_url, video.video_title %}
-        </figure>
-        {% elif cover.image %}
-        <picture class="article--cover">
-            <source srcset="{% srcset cover.image, 't_cover_tall_new' %}" media="(min-width: 1024px)" width="410" height="575">
-            <img src="{{ cover.image }}" alt="{{ cover.alt }}" width="340" height="225" decoding="async" />
-        </picture>
-        {% endif %}
-    </aside>
-</main>
+</section>

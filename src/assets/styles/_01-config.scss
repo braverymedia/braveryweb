@@ -57,12 +57,14 @@
 	--color-primary-600: hsla(260, 100%, 40%, 1);
 	--color-primary-700: hsla(260, 100%, 30%, 1);
 	--color-cyan-700: hsla(198, 100%, 30%, 1);
+	--color-cyan-600: hsla(198, 100%, 40%, 1);
 	--color-success-800: hsla(104, 71%, 20%, 1);
 	--color-neon: hsla(335, 100%, 50%, 1);
 	--color-hilite: hsla(58, 100%, 50%, 1);
 	--color-yellow-200: hsla(58, 100%, 80%, 1);
 	--color-orange: #FF5C00;
-	--color-blue: hsla(198, 100%, 68%, 1);
+	--color-blue: hsla(198, 100%, 60%, 1);
+	--color-blue-500: hsla(232, 54%, 48%, 1);
 	--color-grey: #d5d5d5;
 
 	--gradient-brand: linear-gradient( 35deg, var(--color-neon), var(--color-hilite) );
@@ -154,4 +156,7 @@
 }
 [data-ar="2:3"] {
 	aspect-ratio: 2/3;
+}
+[data-ar="3:2"] {
+	aspect-ratio: 3/2;
 }

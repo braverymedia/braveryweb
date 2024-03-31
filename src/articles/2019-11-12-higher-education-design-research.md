@@ -3,8 +3,8 @@ title: Design research? In higher ed? Yeah, you should be doing that.
 slug: higher-education-design-research
 description: Higher ed's best chance of illuminating what their web visitors expect is design research.
 cover:
-    image: lightbulbs.jpg
-    alt: Lightbulbs hanging in a room.
+    image: posts/midjourney-bulbs_vtbnek.jpg
+    alt: Lightbulbs hanging in a room with neon lights and fog around it. Midjourney render.
 date_published: 2019-11-12T16:46:48.000Z
 date: 2020-06-10T16:24:56.000Z
 topics:
@@ -20,9 +20,7 @@ Let's start with the obvious. Redesigning a university website, or any website f
 
 Where I've seen many organizations go wrong, though, is where they start. We've all heard the familiar refrain, "Goals before tools," but how do we formulate attainable goals? In many institutions, goals are dreamt up by an eager president or chancellor. Maybe a vice president or director-level staff member throws in their two cents. But here's a little secret:
 
-::: callout
 > Organizations that are thriving do lots of research before they do anything else.
-:::
 
 If you've ever looked at hiring a consultant to help with ... well, anything really... you've no doubt been presented with a proposal that includes a "discovery" phase of work. That's marketing-speak for *research*. Consultants know research is the first step, but have you ever wondered why that's the case?
 
@@ -45,9 +43,7 @@ And why is that? Well, starting up a new program is expensive. If they want a ne
 
 That's just a start, but the same applies to a web redesign. The institutions that see little to no result from a web project do so because they don't start with data-driven, business-centric goals. Data should always come first. So it's more like goals before tools, but data before goals. Or at least data alongside goals.
 
-::: callout
 > Goals before tools, but data before goals.
-:::
 
 If you redesign and then research, you will end up either doubling work (which is expensive) or sitting on a redesigned website that doesn't reach its potential. Even more horrifying, your new site could perform worse than your current site does. And fixing that is even more expensive.
 
