@@ -49,7 +49,7 @@ permalink: podcast/how2edu.xml
         <generator>Eleventy</generator>
     {%- for ep in collections.episodes -%}
         {%- set permalink -%}{{ ep.url | htmlBaseUrl("https://bravery.co") }}{%- endset -%}
-        {%- set audioURL -%}{{metadata.cdn }}{{ep.data.mp3}}{%- endset -%}
+        {%- set audioURL -%}{{metadata.podcdn }}{{ep.data.mp3}}{%- endset -%}
         {%- set content -%}{{ ep.data.summary | markdown | safe }}{%- endset -%}
         {% set comma = joiner(",") %}
         <item>

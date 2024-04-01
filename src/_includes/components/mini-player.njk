@@ -11,7 +11,7 @@
         <div class="episode--summary">
             {{ ep.data.summary | md | safe }}
         </div>
-        {% set mp3Link -%}https://chrt.fm/track/{{metadata.cdn}}{{slug}}/{{ ep.data.mp3 }}{%- endset %}
+        {% set mp3Link -%}{{metadata.podcdn}}{{slug}}/{{ ep.data.mp3 }}{%- endset %}
     </section>
     <audio controls src="{{ mp3Link }}" crossorigin preload="none"></audio>
 </article>

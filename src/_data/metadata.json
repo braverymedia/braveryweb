@@ -33,7 +33,7 @@
 			"owner": "Bravery Media",
 			"explicit": "clean",
 			"cover": {
-				"large": "https://bravery.b-cdn.net/appendixb/appendix-b-series-cover.jpg"
+				"large": "https://pod-cd.bravery.co/appendixb/appendix-b-series-cover.jpg"
 			}
 		},
 		"how2edu": {
@@ -64,5 +64,6 @@
 	},
 	"copyright": "Bravery Media",
 	"turbolink": "https://buy.stripe.com/3cs5n77ds4yHb8AfYY",
-	"cdn": "https://cdn.bravery.co/"
+	"cdn": "https://cdn.bravery.co/",
+	"podcdn": "https://pod-cdn.bravery.co/"
 }

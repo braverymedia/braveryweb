@@ -2,7 +2,7 @@
 layout: layouts/podcast.njk
 section: podcast-episode
 ---
-{% set mp3Link -%}{{metadata.cdn}}{{ mp3 }}{%- endset %}
+{% set mp3Link -%}{{metadata.podcdn}}{{ mp3 }}{%- endset %}
 <article class="episode full constrain">
     <header class="episode--title">
         <div class="meta"><span class="episode-number">Episode {{ episode }} - <time datetime="{{ date | machineDate}}">{{ date | readableDate }}</time></span></div>
