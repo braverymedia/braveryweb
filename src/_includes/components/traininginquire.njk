@@ -1,13 +1,31 @@
 <div class="rfi-form">
     <form name="training" method="POST" netlify-honeypot="bot-field" netlify id="bravery-training">
-        <p> <label> <span>Name*</span> <input name="name" class="name" autocomplete="name" required> </label> </p>
-        <p> <label> <span>Work Title</span> <input name="title" class="title" autocomplete="title"> </label> </p>
-        <p> <label> <span>Email*</span> <input type="email" name="email" class="email" autocomplete="email" required> </label> </p>
-        <p> <label> <span>Institution*</span> <input name="institution" class="institution" autocomplete="organization" required> </label> </p>
-        <p> <label> <span>Message*</span> <textarea name="message" class="email" rows="6" cols="33"
-                required></textarea> </label> </p>
+        <div class="field is-required">
+            <label for="inquire-name">Name</label>
+            <input name="name" class="name" id="inquire-name" required>
+            <span>*</span>
+        </div>
+        <div class="field">
+            <label for="inquire-title">Work title</label>
+            <input name="title" id="inquire-title" class="title">
+        </div>
+        <div class="field is-required">
+            <label for="inquire-email">Email</label>
+            <input type="email" name="email" class="email" id="inquire-email" required>
+            <span>*</span>
+        </div>
+        <div class="field is-required">
+            <label for="inquire-org">Organization</label>
+            <input name="institution" class="institution" id="inquire-org" required>
+            <span>*</span>
+        </div>
+        <div class="field textarea is-required">
+            <label for="inquire-message">Message</label><span>*</span>
+            <textarea name="message" class="email" id="inquire-message" rows="3" cols="33"
+                required></textarea>
+        </div>
         <p class="honey"> <label>Don’t fill this out if you're human: <input name="bot-field" /></label> </p>
-        <p> <button type="submit" class="button bright">Inquire</button> </p>
+        <button type="submit" class="button has-icon">Inquire {% include "svg/paper-plane.svg" %}</button>
 
     </form>
 </div>

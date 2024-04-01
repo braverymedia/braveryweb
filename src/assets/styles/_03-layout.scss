@@ -137,11 +137,12 @@ main {
     }
 }
 #benchmark .layout.layout-three {
+    --width: calc(100vw - (var(--border-width) * 2));
     justify-content: center;
     overflow-x: hidden;
     position: relative;
     height: 70dvh;
-    width: calc(100vw - (var(--border-width) * 2));
+    width: var(--width);
     margin-left: calc( -1 * var(--outer-margin));
     [data-style=vhs] {
         position: absolute;
@@ -158,6 +159,11 @@ main {
             transform: rotate(8deg) translateX(50%);
         }
     }
+    @media ( min-width: 850px) {
+        [data-style=vhs] {
+            left: 25%;
+        }
+    }
     @media( min-width: 1024px) {
         height: unset;
         overflow: visible;
@@ -166,6 +172,7 @@ main {
         [data-style=vhs] {
             position: relative;
             scale: unset;
+            left: auto;
             &:first-child {
                 transform: rotate(-8deg) translateX(50%);
             }
