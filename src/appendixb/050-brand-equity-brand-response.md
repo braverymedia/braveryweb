@@ -10,7 +10,7 @@ cover:
   image: ep50-cover_uos91i.jpg
   alt: "Text reads: Appendix B. Brand Equity Pyramid Part III Brand response. A
     Bravery Podcast"
-mp3: appendixb/Episode%20050%20-%20Brand%20Equity%20Pyramid%20Part%203%20-%20Brand%20Response.mp3
+mp3: appendixb/episode-050-brand-equity-pyramid-part-3-brand-response.mp3
 duration: 9:35
 tags:
   - podcast
