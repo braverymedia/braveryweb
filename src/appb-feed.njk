@@ -60,7 +60,6 @@ permalink: podcast/appendixb.xml
             <guid>braveryco-appxb-{{ep.data.episode}}</guid>
             <description><![CDATA[{{ ep.data.summary | md | safe }}]]></description>
             <itunes:subtitle><![CDATA[{{ ep.data.description }}]]></itunes:subtitle>
-            <itunes:keywords>{% for tag in ep.data.tags -%} {{ comma() }} {{- tag -}} {%- endfor %}</itunes:keywords>
             <content:encoded><![CDATA[{{ content | md | safe }}]]></content:encoded>
             <enclosure url="{{ audioURL }}" length="{{ ep.data.duration | toMinutes }}" type="audio/mpeg"></enclosure>
             <itunes:summary><![CDATA[{{ ep.data.summary | md | safe }}]]></itunes:summary>

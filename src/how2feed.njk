@@ -61,7 +61,6 @@ permalink: podcast/how2edu.xml
             <description><![CDATA[{{ ep.data.summary | markdown | safe }}]]></description>
             <itunes:subtitle><![CDATA[{{ ep.data.description }}]]></itunes:subtitle>
             <itunes:episode>{{ep.data.episode}}</itunes:episode>
-            <itunes:keywords>{% for tag in ep.data.tags -%}{{ comma() }}{{- tag -}}{%- endfor %}</itunes:keywords>
             <content:encoded><![CDATA[{{ content | markdown | safe }}]]></content:encoded>
             <enclosure url="{{ audioURL }}" length="{{ ep.data.duration }}" type="audio/mpeg"></enclosure>
             <itunes:summary><![CDATA[{{ ep.data.summary | markdown | safe }}]]></itunes:summary>
