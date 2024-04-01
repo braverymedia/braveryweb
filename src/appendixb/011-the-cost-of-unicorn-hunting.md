@@ -3,7 +3,7 @@ title: The Cost of Unicorn Hunting
 description: When hiring managers hunt for unicorn employees, what they’re
   really seeking is someone who can do multiple jobs in one role. How can we
   instead start to value specialization over someone who does everything?
-episode: 011
+episode: "011"
 slug: the-cost-of-unicorn-hunting
 date: 2023-04-12T15:23:56.408Z
 record_date: 2023-04-04T15:23:56.415Z

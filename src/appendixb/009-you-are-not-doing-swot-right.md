@@ -3,7 +3,7 @@ title: You're NOT doing SWOT analyses correctly
 description: Are you sure you’re doing SWOT analyses right? Sometimes when we
   sit down and think about our strengths, we’re really just describing things
   we’re focused on. Let’s dig in.
-episode: 009
+episode: "009"
 slug: you-are-not-doing-swot-right
 date: 2023-03-29T12:58:00.482Z
 record_date: 2023-03-27T12:58:00.489Z

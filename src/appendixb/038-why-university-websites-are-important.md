@@ -2,7 +2,7 @@
 title: Websites are an institution's best friend
 description: Kristin and Joel explore the often underestimated significance of
   college and university websites and their impact on student recruitment.
-episode: 038
+episode: "038"
 slug: why-university-websites-are-important
 date: 2023-11-08T17:07:55.653Z
 record_date: 2023-11-07T17:07:55.661Z

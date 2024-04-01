@@ -3,7 +3,7 @@ title: The Trouble with Icons
 description: Kristin and Joel enthusiastically discuss the use of icons in web
   design and highlight the potential pitfalls of using them in generic and
   inconsistent ways.
-episode: 25
+episode: "025"
 slug: the-trouble-with-icons
 date: 2023-07-26T10:22:33.704Z
 record_date: 2023-07-25T10:22:33.711Z

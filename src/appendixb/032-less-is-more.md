@@ -3,7 +3,7 @@ title: "Avoiding Information Overload: Less is More"
 description: "Kristin and Joel dive into the critical challenge of balancing
   content between university websites and email communications in higher
   education."
-episode: 032
+episode: "032"
 slug: less-is-more
 date: 2023-09-13T14:41:36.058Z
 record_date: 2023-09-12T14:41:36.065Z

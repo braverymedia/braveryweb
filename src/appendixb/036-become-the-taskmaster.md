@@ -2,7 +2,7 @@
 title: Become the Taskmaster
 description: Kristin and Joel discuss the concept of speed in decision-making
   and project execution at Higher Ed institutions.
-episode: 036
+episode: "036"
 slug: become-the-taskmaster
 date: 2023-10-26T14:02:35.517Z
 record_date: 2023-10-25T14:02:35.524Z

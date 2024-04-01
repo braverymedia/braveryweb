@@ -3,7 +3,7 @@ title: No More Unicorns
 description: Unicorns are individuals who have a wide range of skills and are
   able to do many different things well. But in Higher Ed, does being one help
   or hurt your career?
-episode: 010
+episode: "010"
 slug: no-more-unicorns
 date: 2023-04-05T14:48:11.529Z
 record_date: 2023-04-04T14:48:11.536Z

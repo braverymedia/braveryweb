@@ -7,7 +7,7 @@ description: Episode 049 - Brand Performance with Bravery Media's Joel Goodman
   leveraging quality, services, and unique offerings. This episode offers
   valuable insights for higher ed marketers aiming to improve brand perception
   and positioning in a competitive landscape.
-episode: 049
+episode: "049"
 slug: brand-equity-pyramid-brand-performance
 date: 2024-03-04T14:15:44.427Z
 record_date: 2024-02-23T14:15:44.435Z

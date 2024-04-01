@@ -2,7 +2,7 @@
 title: How Outdated College Websites Erode Trust
 description: Kristin and Joel from Bravery Media discuss the relationship
   between effective marketing and an up-to-date institutional website.
-episode: 040
+episode: "040"
 slug: outdated-websites-erode-trust
 date: 2023-12-06T14:53:11.398Z
 record_date: 2023-12-05T14:53:11.492Z

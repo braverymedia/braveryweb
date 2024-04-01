@@ -3,7 +3,7 @@ title: Friction points and their impact on Summer Melt
 description: Joel and Kristin dive deeper into the topic of summer melt and its
   practical implications for universities. They specifically focus on the role
   of friction in the acceptance-to-enrollment journey for students.
-episode: 019
+episode: "019"
 slug: friction-points-summer-melt
 date: 2023-06-07T12:42:18.533Z
 record_date: 2023-06-06T12:42:18.541Z

@@ -2,7 +2,7 @@
 title: No More Multi-Level Fundraising!
 description: Kristin and Joel dive into the world of alumni fundraising and the
   challenges it presents for both universities and their graduates.
-episode: 031
+episode: "031"
 slug: no-more-multi-level-fundraising
 date: 2023-09-06T12:24:19.069Z
 record_date: 2023-09-05T12:24:19.076Z

@@ -2,7 +2,7 @@
 title: Maximizing Career Potential in Higher Ed Marketing
 description: Joel and Kristin discuss the different types of professional
   development available to Higher Ed Marketers.
-episode: 035
+episode: "035"
 slug: maximizing-career-potential
 date: 2023-10-19T12:19:19.977Z
 record_date: 2023-10-16T12:19:19.986Z

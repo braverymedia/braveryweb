@@ -2,7 +2,7 @@
 title: Cost, Value, and Vendor Relationships
 description: Sometimes working with an agency long term provides better value
   than hiring full time employees to support your website.
-episode: 044
+episode: "044"
 slug: cost-value-vendor-relationships
 date: 2024-01-22T21:38:10.991Z
 record_date: 2024-01-18T21:38:10.999Z

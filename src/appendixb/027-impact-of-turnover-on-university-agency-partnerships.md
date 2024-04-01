@@ -2,7 +2,7 @@
 title: The Impact of Turnover on University-Agency Partnerships
 description: Kristin and Joel dive into the effects of turnover within higher
   education institutions on agency collaborations.
-episode: 027
+episode: "027"
 slug: impact-of-turnover-on-university-agency-partnerships
 date: 2023-08-09T16:54:00.662Z
 record_date: 2023-08-08T16:54:00.669Z

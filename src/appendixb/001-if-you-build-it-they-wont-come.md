@@ -3,7 +3,7 @@ title: If you build it, they won't come
 description: Why do so many institutions want website features that don’t
   actually provide value to prospective students? Can we, as higher ed
   professionals, just all agree to do better?
-episode: 001
+episode: "001"
 slug: if-you-build-it-they-wont-come
 show: appb
 tags:

@@ -3,7 +3,7 @@ title: "UX Principles: Cognitive Load and Effective Communication"
 description: In Part Three of our series on UX Principles, Joel and Kristin chat
   about how excessive complexity and cognitive load can hinder user experience
   on Higher Ed websites.
-episode: 022
+episode: "022"
 slug: ux-principles-cognitive-load-and-effective-communication
 date: 2023-06-28T10:07:41.176Z
 record_date: 2023-06-13T10:07:41.184Z

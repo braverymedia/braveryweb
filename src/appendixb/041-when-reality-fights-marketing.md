@@ -4,7 +4,7 @@ description: Joel Goodman and Kristin Van Dorn discuss what happens when a
   university's marketing messages conflict with the reality of their campus,
   operations, and website content on this higher education marketing podcast
   episode.
-episode: 041
+episode: "041"
 slug: when-reality-fights-marketing
 date: 2023-12-13T21:07:10.919Z
 record_date: 2023-12-05T21:07:10.931Z

@@ -3,7 +3,7 @@ title: Whoops! Campus leaders made the wrong hiring decision. Now what?
 description: What is the cost of hiring the wrong person in Higher Ed? Campus
   leadership and hiring committees need to do a better job of understanding
   critical knowledge gaps and how to fill them with the right people and tools.
-episode: 012
+episode: "012"
 slug: wrong-hiring-decision-whoops
 date: 2023-04-19T13:24:09.938Z
 record_date: 2023-04-04T13:24:09.945Z

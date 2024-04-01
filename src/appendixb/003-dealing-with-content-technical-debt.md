@@ -3,7 +3,7 @@ title: Dealing with Content and Technical Debt
 description: "What keeps Joel and Kristin up at night? Answer: Mountains of
   technical and content debt that have yet to be addressed by MarComm offices
   everywhere!"
-episode: 003
+episode: "003"
 slug: dealing-with-content-technical-debt
 date: 2023-02-15T12:06:14.677Z
 record_date: 2023-02-13T12:06:14.682Z

@@ -2,7 +2,7 @@
 title: "Brand Equity Pyramid Part I: Brand Salience"
 description: The first in a series on the Brand Equity Pyramid and how to
   approach brand development in Higher Education.
-episode: 048
+episode: "048"
 slug: brand-equity-brand-salience
 date: 2024-02-27T01:28:34.137Z
 show: appb

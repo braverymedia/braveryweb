@@ -3,7 +3,7 @@ title: Just because your institution can have a podcast, doesn’t mean it shoul
 description: YouTube recently released a new podcasting feature that has a lot
   of people excited. But does that mean colleges and universities need to have a
   podcast? We have thoughts.
-episode: 008
+episode: "008"
 slug: do-you-really-need-a-podcast
 date: 2023-03-22T13:23:11.054Z
 record_date: 2023-03-20T13:23:11.060Z

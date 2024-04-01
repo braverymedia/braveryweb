@@ -2,7 +2,7 @@
 title: Early Strategies for Student Retention
 description: Kristin and Joel talk about the critical factors that shape student
   retention after they arrive on campus.
-episode: 030
+episode: "030"
 slug: early-strategies-for-student-retention
 date: 2023-08-30T12:54:26.647Z
 record_date: 2023-08-29T12:54:26.654Z

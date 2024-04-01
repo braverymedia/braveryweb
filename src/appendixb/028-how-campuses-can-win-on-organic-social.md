@@ -3,7 +3,7 @@ title: How Campuses Can Win on Organic Social Media
 description: MIT’s Director of Social Media Strategy, Jenny Li Fowler, joins the
   show to chat with Joel about the different ways campuses should be thinking
   about organic social media.
-episode: 028
+episode: "028"
 slug: how-campuses-can-win-on-organic-social
 date: 2023-08-16T15:19:54.177Z
 record_date: 2023-08-10T15:19:54.185Z

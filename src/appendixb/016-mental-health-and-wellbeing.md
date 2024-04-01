@@ -2,7 +2,7 @@
 title: Prioritizing Mental Health and Wellbeing in Higher Ed
 description: Carl and Kristin discuss the importance of mental wellbeing and
   mental health for communication professionals in higher education.
-episode: 016
+episode: "016"
 slug: mental-health-and-wellbeing
 date: 2023-05-17T16:18:38.246Z
 record_date: 2023-05-15T16:18:38.254Z

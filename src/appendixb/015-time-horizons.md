@@ -2,7 +2,7 @@
 title: Time Horizons in Higher Ed
 description: What is the relationship between quality and time in Higher Ed
   project management?
-episode: 015
+episode: "015"
 slug: time-horizons
 date: 2023-05-10T14:32:37.853Z
 record_date: 2023-05-08T14:32:37.861Z

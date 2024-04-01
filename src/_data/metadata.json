@@ -27,13 +27,13 @@
 			"description": "The team at Bravery Media tackle the biggest topics in higher ed marketing, offering original insight based on Bravery's research and experience. All in ten minutes or less.",
 			"filename": "podcast.xml",
 			"path": "/feed/podcast.xml",
-			"id": "https://bravery.co/podcast-series/",
+			"id": "https://bravery.co/podcast-series/appendix-b/",
 			"feed": "https://bravery.co/podcast/appendixb.xml",
 			"author": "Joel Goodman and Kristin Van Dorn",
 			"owner": "Bravery Media",
 			"explicit": "clean",
 			"cover": {
-				"large": "https://pod-cd.bravery.co/appendixb/appendix-b-series-cover.jpg"
+				"large": "https://pod-cdn.bravery.co/appendixb/appendix-b-series-cover.jpg"
 			}
 		},
 		"how2edu": {

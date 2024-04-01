@@ -3,7 +3,7 @@ title: Breaking out of Emergency Mode
 description: So many Higher Ed MarComm offices are stuck in “emergency mode.”
   Reacting to things, putting out fires, and moving a mile-per-minute. What's
   the solution?
-episode: 007
+episode: "007"
 date: 2023-03-15T19:56:07.768Z
 record_date: 2023-03-13T19:56:07.775Z
 show: appb

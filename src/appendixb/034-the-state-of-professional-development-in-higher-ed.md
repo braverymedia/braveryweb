@@ -2,7 +2,7 @@
 title: The State of Professional Development in Higher Education
 description: Kristin and Carl talk about their experiences pursuing professional
   development opportunities in their previous institutional roles.
-episode: 034
+episode: "034"
 slug: the-state-of-professional-development-in-higher-ed
 date: 2023-09-29T18:04:08.977Z
 record_date: 2023-09-27T18:04:08.984Z

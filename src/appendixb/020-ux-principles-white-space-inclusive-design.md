@@ -3,7 +3,7 @@ title: "UX Principles: White Space for Inclusive Design"
 description: In Part One of our series on UX Principles, Joel and Kristin chat
   about the importance of white space in website design, and its impact on user
   experience.
-episode: 020
+episode: "020"
 slug: ux-principles-white-space-inclusive-design
 date: 2023-06-14T17:18:03.816Z
 record_date: 2023-06-13T17:18:03.822Z

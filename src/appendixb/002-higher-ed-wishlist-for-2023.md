@@ -3,7 +3,7 @@ title: Higher Ed Wishlist for 2023
 description: What needs to change for Higher Ed in 2023? What about content
   strategy, page speed optimization, and a renewed attention to quality? Joel
   and Kristin have thoughts.
-episode: 002
+episode: "002"
 slug: higher-ed-wishlist-for-2023
 date: 2023-02-15T12:00:21.379Z
 record_date: 2023-02-06T12:00:21.385Z

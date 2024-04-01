@@ -2,7 +2,7 @@
 title: Rethinking Storytelling on Higher Ed Websites
 description: What role should storytelling play on higher education websites,
   and is it really as effective as people think?
-episode: 026
+episode: "026"
 slug: storytelling-versus-world-building
 date: 2023-08-02T09:28:34.664Z
 record_date: 2023-08-01T09:28:34.671Z

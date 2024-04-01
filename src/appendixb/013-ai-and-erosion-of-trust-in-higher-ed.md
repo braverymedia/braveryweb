@@ -4,7 +4,7 @@ description: "Sure, AI can make the lives of Higher Ed professionals easier, but
   at what cost? In an industry that already has a trust problem, it’s more
   important than ever for us to be honest about the ways in which we’re
   utilizing it."
-episode: 013
+episode: "013"
 slug: ai-and-erosion-of-trust-in-higher-ed
 date: 2023-04-26T18:05:36.372Z
 record_date: 2023-04-24T18:05:36.379Z

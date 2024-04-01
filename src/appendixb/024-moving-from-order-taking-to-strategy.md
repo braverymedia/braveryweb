@@ -3,7 +3,7 @@ title: Moving from Order-Taking to Strategic Frameworks
 description: Kristin Van Dorn discusses the presentation she recently gave at
   PSEWEB on transitioning from order-taking to strategy in Higher Ed digital
   roles.
-episode: 024
+episode: "024"
 slug: moving-from-order-taking-to-strategy
 date: 2023-07-19T15:09:06.255Z
 record_date: 2023-07-18T15:09:06.262Z

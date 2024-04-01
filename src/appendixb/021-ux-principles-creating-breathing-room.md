@@ -3,7 +3,7 @@ title: "UX Principles: The Art of Creating Breathing Room"
 description: In Part Two of our series on UX Principles, Joel and Kristin chat
   about white space in web design, its correlation with quality, and how clutter
   erodes trust.
-episode: 021
+episode: "021"
 slug: ux-principles-creating-breathing-room
 date: 2023-06-21T14:15:35.637Z
 record_date: 2023-06-13T14:15:35.645Z

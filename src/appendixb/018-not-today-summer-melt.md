@@ -2,7 +2,7 @@
 title: Not today, Summer Melt
 description: Joel and Kristin dive into the exciting world of summer melt in
   Higher Education, and chat through different ways to address it.
-episode: 018
+episode: "018"
 slug: not-today-summer-melt
 date: 2023-06-01T16:35:15.360Z
 record_date: 2023-05-31T16:35:15.369Z

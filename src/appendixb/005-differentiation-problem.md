@@ -2,7 +2,7 @@
 title: Higher Ed's Differentiation Problem
 description: A lot of Higher Ed marketing, communications, and even offerings,
   tend to look the same. What can institutions do to differentiate themselves?
-episode: 005
+episode: "005"
 slug: differentiation-problem
 date: 2023-03-01T18:04:08.780Z
 record_date: 2023-02-28T18:04:08.785Z

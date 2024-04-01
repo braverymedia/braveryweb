@@ -71,7 +71,7 @@ permalink: podcast/feed.xml
             </image>
             <itunes:explicit>{{ ep.data.explicit }}</itunes:explicit>
             <itunes:block>no</itunes:block>
-            <itunes:duration>{{ ep.data.duration }}</itunes:duration>
+            <itunes:duration>{{ ep.data.duration | toMinutes }}</itunes:duration>
             <itunes:author>{{ metadata.podcast.appb.author }}</itunes:author>
         </item>
     {%- endfor -%}

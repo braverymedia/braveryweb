@@ -2,7 +2,7 @@
 title: Spooky Website Redesign Stories
 description: It’s Halloween, so Joel and Kristin are chatting about the scariest
   website redesign projects they’ve ever participated in.
-episode: 037
+episode: "037"
 slug: spooky-website-redesign-storiees
 date: 2023-10-31T16:51:52.561Z
 record_date: 2023-10-31T16:51:52.568Z

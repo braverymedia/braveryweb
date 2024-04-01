@@ -2,7 +2,7 @@
 title: Breakin' up (web projects) is hard to do
 description: Kristin and Joel chat about the drawbacks of universities
   undertaking large-scale website redesign projects all at once.
-episode: 017
+episode: "017"
 slug: breakin-up-web-projects-is-hard-to-do
 date: 2023-05-24T16:07:14.391Z
 record_date: 2023-05-23T16:07:14.399Z

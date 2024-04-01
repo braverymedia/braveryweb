@@ -4,7 +4,7 @@ description: Is it possible for an institution’s website to act as an employee
   Yes, but if there’s disorganization at an operational level, it can lead to a
   confusing web environment that impacts content, design, and information
   architecture.
-episode: 014
+episode: "014"
 slug: is-your-website-employee-of-month
 date: 2023-05-03T14:47:03.256Z
 record_date: 2023-05-01T14:47:03.264Z

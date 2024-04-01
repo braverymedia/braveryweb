@@ -2,7 +2,7 @@
 title: No News is Good News
 description: Kristin and Joel dive into the misconceptions surrounding news
   stories on university websites.
-episode: 029
+episode: "029"
 slug: no-news-is-good-news
 date: 2023-08-23T15:26:49.225Z
 record_date: 2023-08-17T15:26:49.232Z

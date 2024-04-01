@@ -3,7 +3,7 @@ title: Higher Ed Web Strategy Trends Survey Results
 description: This episode discusses Bravery Media's research findings from the
   Higher Ed Web Strategy Trends 2024 Survey. Joel and Kristin discuss what these
   findings mean for the industry.
-episode: 043
+episode: "043"
 slug: higher-ed-web-strategy-trends-results
 date: 2024-01-10T19:14:56.742Z
 record_date: 2024-01-09T19:14:56.750Z

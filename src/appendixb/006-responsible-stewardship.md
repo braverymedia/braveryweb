@@ -2,7 +2,7 @@
 title: Responsible Website Stewardship
 description: Why do so many universities spend upwards of a quarter of a million
   dollars on a website only to let it sit without any critical analysis?
-episode: 006
+episode: "006"
 slug: responsible-stewardship
 date: 2023-03-08T18:53:40.641Z
 record_date: 2023-03-07T18:53:40.648Z

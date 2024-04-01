@@ -2,7 +2,7 @@
 title: What good is Threads to University Marketing?
 description: Joel and Carl discuss the emergence of Threads and what its
   potential impact on higher education marketing might be.
-episode: 023
+episode: "023"
 slug: what-good-is-threads-for-higher-ed
 date: 2023-07-12T11:52:38.557Z
 record_date: 2023-07-11T11:52:38.565Z
