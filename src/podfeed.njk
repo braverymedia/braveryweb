@@ -17,26 +17,26 @@ permalink: podcast/feed.xml
     >
     <channel>
         <title>Appendix B</title>
-        <atom:link href="{{ metadata.podcast.feed}}" rel="self" type="application/rss+xml" />
-        <link>{{ metadata.podcast.id }}</link>
-        <description>{{ metadata.podcast.description }}</description>
+        <atom:link href="{{ metadata.podcast.appb.feed}}" rel="self" type="application/rss+xml" />
+        <link>{{ metadata.podcast.appb.id }}</link>
+        <description>{{ metadata.podcast.appb.description }}</description>
         <lastBuildDate>{{ collections.episodes | getNewestCollectionItemDate | podPublishDate }}</lastBuildDate>
         <language>en-US</language>
         <copyright>© {{ collections.episodes | getNewestCollectionItemDate | copyright }} {{ metadata.copyright }}</copyright>
-        <itunes:subtitle>{{ metadata.podcast.subtitle }}</itunes:subtitle>
-		<itunes:author>{{ metadata.podcast.author }}</itunes:author>
+        <itunes:subtitle>{{ metadata.podcast.appb.subtitle }}</itunes:subtitle>
+		<itunes:author>{{ metadata.podcast.appb.author }}</itunes:author>
         <itunes:type>episodic</itunes:type>
-        <itunes:summary><![CDATA[{{ metadata.podcast.description }}]]></itunes:summary>
+        <itunes:summary><![CDATA[{{ metadata.podcast.appb.description }}]]></itunes:summary>
 		<itunes:owner>
-			<itunes:name>{{ metadata.podcast.owner }}</itunes:name>
+			<itunes:name>{{ metadata.podcast.appb.owner }}</itunes:name>
 			<itunes:email>{{ metadata.author.email }}</itunes:email>
 		</itunes:owner>
-        <itunes:explicit>{{ metadata.podcast.explicit }}</itunes:explicit>
-        <itunes:image href="{{ metadata.podcast.cover.large }}"></itunes:image>
+        <itunes:explicit>{{ metadata.podcast.appb.explicit }}</itunes:explicit>
+        <itunes:image href="{{ metadata.podcast.appb.cover.large }}"></itunes:image>
         <image>
-            <url>{{ metadata.podcast.cover.large }}</url>
-            <title>{{ metadata.podcast.title }}</title>
-            <link>{{metadata.podcast.id}}</link>
+            <url>{{ metadata.podcast.appb.cover.large }}</url>
+            <title>{{ metadata.podcast.appb.title }}</title>
+            <link>{{metadata.podcast.appb.id}}</link>
         </image>
         <itunes:category text="Business">
             <itunes:category text="Marketing"></itunes:category>
@@ -47,9 +47,9 @@ permalink: podcast/feed.xml
         <sy:updatePeriod>weekly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
         <generator>Eleventy</generator>
-    {%- for ep in collections.episodes -%}
+    {%- for ep in collections.appendixb -%}
         {%- set permalink -%}{{ ep.url | htmlBaseUrl("https://bravery.co") }}{%- endset -%}
-        {%- set audioURL -%}{{ metadata.cdn -}}appendixb/{{- ep.data.mp3 }}{%- endset -%}
+        {%- set audioURL -%}{{metadata.cdn}}{{ep.data.mp3}}{%- endset -%}
         {%- set content -%}{{ ep.data.summary | md | safe }}{%- endset -%}
         {% set comma = joiner(",") %}
         <item>
@@ -60,9 +60,9 @@ permalink: podcast/feed.xml
             <guid>braveryco-appxb-{{ep.data.episode}}</guid>
             <description><![CDATA[{{ ep.data.summary | md | safe }}]]></description>
             <itunes:subtitle><![CDATA[{{ ep.data.description }}]]></itunes:subtitle>
-            <itunes:keywords>{% for tag in ep.data.tags -%}{{ comma() }}{{- tag -}}{%- endfor %}</itunes:keywords>
+            <itunes:keywords>{% for tag in ep.data.tags -%} {{ comma() }} {{- tag -}} {%- endfor %}</itunes:keywords>
             <content:encoded><![CDATA[{{ content | md | safe }}]]></content:encoded>
-            <enclosure url="{{ audioURL | chartable }}" length="{{ ep.data.duration }}" type="audio/mpeg"></enclosure>
+            <enclosure url="{{ audioURL }}" length="{{ ep.data.duration }}" type="audio/mpeg"></enclosure>
             <itunes:summary><![CDATA[{{ ep.data.summary | md | safe }}]]></itunes:summary>
             <itunes:image href="https://res.cloudinary.com/bravery/image/upload/{{ep.data.cover.image}}"></itunes:image>
             <image>
@@ -72,7 +72,7 @@ permalink: podcast/feed.xml
             <itunes:explicit>{{ ep.data.explicit }}</itunes:explicit>
             <itunes:block>no</itunes:block>
             <itunes:duration>{{ ep.data.duration }}</itunes:duration>
-            <itunes:author>{{ metadata.podcast.author }}</itunes:author>
+            <itunes:author>{{ metadata.podcast.appb.author }}</itunes:author>
         </item>
     {%- endfor -%}
     </channel>

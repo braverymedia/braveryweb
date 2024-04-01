@@ -74,6 +74,16 @@ main {
     &.value {
         row-gap: calc(2 * var(--grid-unit));
     }
+    &.sm-reverse {
+        @media ( width <= 1023px ) {
+            > *:first-child {
+                order: 2;
+            }
+            > *:last-child {
+                order: 1;
+            }
+        }
+    }
 }
 @media (min-width: 1024px ) {
     #about {
@@ -427,4 +437,16 @@ main {
 #values.constrain {
     margin-block: unset;
     padding-block: unset;
+}
+
+.layout-speedyu {
+    [data-style=vhs] {
+        scale: 0.9;
+    }
+    .layout.details {
+        gap: var(--v-xl);
+        @media ( width >= 1024px ) {
+            align-items: center;
+        }
+    }
 }

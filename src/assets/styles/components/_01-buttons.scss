@@ -8,10 +8,6 @@ button {
     gap: var(--grid-unit);
     text-decoration: none;
     padding: var(--grid-unit) calc(2 * var(--grid-unit));
-    > svg {
-        width: calc(2 * var(--grid-unit));
-        color: var(--color-neon);
-    }
 }
 .cta-group {
     font-weight: 700;
@@ -31,12 +27,20 @@ button {
     font-weight: 550;
     > svg {
         width: calc(3 * var(--grid-unit));
+        color: var(--accent);
+    }
+    &:hover {
+        background-color: var(--color-blue);
     }
 }
 
 .cta-icon {
     border: 2px solid var(--accent);
+    > svg {
+        width: calc(2 * var(--grid-unit));
+        color: var(--accent);
+    }
     &:hover {
-        background-color: var(--accent);
+        background-color: var(--color-hilite);
     }
 }
