@@ -22,27 +22,27 @@
 
 @font-face {
 	font-family: MondayVacation;
+	src: url("https://bravery.b-cdn.net/Monday-Vacation-Script-Italic-subset.woff2") format(woff2);
 	font-display: swap;
-	font-weight: 200;
+	font-weight: normal;
 	font-stretch: normal;
-	font-style: italic;
-	src: url("https://bravery.b-cdn.net/Monday-Vacation-Script-Italic-subset.woff2");
+	font-style: normal;
 }
 
 @font-face {
 	font-family: EightiesComeback;
+	src: url("https://bravery.b-cdn.net/EightiesComeback-MedCond-subset.woff2") format(woff2);
 	font-display: swap;
 	font-weight: 500;
 	font-stretch: condensed;
-	src: url("https://bravery.b-cdn.net/EightiesComeback-MedCond-subset.woff2");
 }
 
 @font-face {
 	font-family: EightiesComeback;
+	src: url("https://bravery.b-cdn.net/EightiesComeback-LtXCn-subset.woff2") format(woff2);
 	font-display: swap;
 	font-weight: 200;
 	font-stretch: condensed;
-	src: url("https://bravery.b-cdn.net/EightiesComeback-LtXCn-subset.woff2");
 }
 
 * {
@@ -74,7 +74,7 @@
 
 	--grid-unit: 8px;
 	--font-family: NameSansVF, sans-serif;
-	--font-script: MondayVacation, script;
+	--font-script: MondayVacation, sans-serif;
 	--font-appb: EightiesComeback, serif;
 	--type-hero: clamp(2.375rem, .331rem + 8.621vi, 10.06rem);
 	--type-mega: clamp(2.5rem, calc(1.125em + 8.15vw), 6.598rem);
