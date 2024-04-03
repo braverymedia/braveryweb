@@ -109,7 +109,7 @@ b {
 main {
 	ul, ol {
 		margin-block-start: calc(2 * var(--grid-unit));
-		padding-inline: var(--grid-unit);
+		padding-inline: 1.5rem;
 	}
 	ul li {
 		list-style-type: "\203A"; // for safari

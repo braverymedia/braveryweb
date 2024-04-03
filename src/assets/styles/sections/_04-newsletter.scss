@@ -204,7 +204,7 @@ form.heht-subscribe {
         max-width: 896px;
         background: #FFFFFF;
         box-shadow: 0px 8px 24px 1px rgba(0, 0, 0, 0.25);
-        margin: 80px auto;
+        margin: 40px auto;
         padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 2);
         h2 {
             font-size: var(--type-md);
@@ -214,9 +214,15 @@ form.heht-subscribe {
         @media ( min-width: 760px ) {
             padding: calc(var(--grid-unit) * 6) calc(var(--grid-unit) * 9);
         }
+        > article {
+            padding-block-start: unset;
+            gap: calc(3 * var(--grid-unit));
+
+        }
     }
     .issue--cover {
         max-width: 500px;
+        margin-block-end: calc(5 * var(--grid-unit));
     }
     .issue--title {
         display: flex;
@@ -226,11 +232,12 @@ form.heht-subscribe {
             font-size: var(--type-sm);
         }
         nav {
-            margin-bottom: calc(8 * var(--grid-unit));
+            margin-bottom: calc(4 * var(--grid-unit));
         }
-        margin-bottom: calc(5 * var(--grid-unit));
+        margin-bottom: calc(2 * var(--grid-unit));
         & > h1 {
             margin: 0;
+            font-size: var(--type-xl);
         }
     }
 }
