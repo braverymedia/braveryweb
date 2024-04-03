@@ -42,7 +42,7 @@ Iron triangles get their name because they are incredibly hard to remove once th
 Here’s my best take on an illustration for this iron triangle:
 
 {% set image = 'heht/iron-triangle_vkcqnw.jpg' %}
-{% set layout = 'wide' %}
+{% set layout = '' %}
 {% set alt = "A triangle chart. The top point is Public Value. The bottom right is New Public Management. The bottom left is Professional Bureaucracy. Along the inner sides labeled Beneft we have, Left: Quality Innovation, right: Resource Integrity, and bottom: Protection of Process Integrity." %}
 {% include "components/image.njk" %}
 
