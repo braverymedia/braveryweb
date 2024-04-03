@@ -24,6 +24,7 @@ permalink: podcast/feed.xml
         <lastBuildDate>{{ collections.episodes | getNewestCollectionItemDate | podPublishDate }}</lastBuildDate>
         <language>en-US</language>
         <copyright>© {{ collections.episodes | getNewestCollectionItemDate | copyright }} {{ metadata.copyright }}</copyright>
+        <itunes:new-feed-url>{{ metadata.podcast.appb.feed}}</itunes:new-feed-url>
         <itunes:subtitle>{{ metadata.podcast.appb.subtitle }}</itunes:subtitle>
 		<itunes:author>{{ metadata.podcast.appb.author }}</itunes:author>
         <itunes:type>episodic</itunes:type>
