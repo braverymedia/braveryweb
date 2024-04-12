@@ -14,4 +14,4 @@
     <meta name="twitter:description" content="{{ og.description or description or metadata.og.description }}">
     <meta name="twitter:site" content="{{ metadata.og.site }}">
     <meta name="twitter:creator" content="{{ og.creator or metadata.og.creator }}">
-    <meta name="twitter:image" content="{{ og.image or metadata.og.image }}">
+    <meta name="twitter:image" content="{% if postType == 'article' or postType == 'issue' %}{% src cover.image %}{% else %}{{ og.image or metadata.og.image }}{% endif %}">
