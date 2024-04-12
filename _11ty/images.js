@@ -21,7 +21,7 @@ function getSrcset(file, ar, widths, preset) {
 function getSrc(file, ar, width, preset) {
 	return `${BASE_URL}/${preset ? preset + "/" : ""}${TRANSFORMS},ar_${
 		ar ? ar : ASPECT_RATIO
-	},w_${width ? width : FALLBACK_WIDTH},c_crop/${FOLDER}${file}`;
+	},w_${width ? width : FALLBACK_WIDTH},c_fill/${FOLDER}${file}`;
 }
 
 // Export the two shortcodes to be able to access them in our Eleventy config

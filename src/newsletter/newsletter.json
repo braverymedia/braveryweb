@@ -1,5 +1,6 @@
 {
 	"layout": "layouts/issue.njk",
 	"permalink": "newsletter/{{- title | slugify -}}/",
-	"tags": "newsletter"
+	"tags": "newsletter",
+	"postType": "issue"
 }
