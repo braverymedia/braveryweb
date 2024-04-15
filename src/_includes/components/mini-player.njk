@@ -1,8 +1,8 @@
 <article class="episode mini" data-audio="{{ ep.data.mp3 }}">
     <a href="{{ ep.url | url }}" title="Read the full transcript">
         <figure class="cover-art">
-            <img src="{% src ep.data.cover.image %}"
-            srcset="{% srcset ep.data.cover.image %}" alt="{{ep.data.cover.alt}}" width="315" height="315" loading="lazy" decoding="async" />
+            <img src="{% src ep.data.cover.image, '1:1' %}"
+            srcset="{% srcset ep.data.cover.image, '1:1' %}" alt="{{ep.data.cover.alt}}" width="315" height="315" loading="lazy" decoding="async" />
         </figure>
     </a>
     <section class="episode--detail">

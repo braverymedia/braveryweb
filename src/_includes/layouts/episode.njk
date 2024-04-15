@@ -10,8 +10,8 @@ section: podcast-episode
     </header>
     <section class="episode summary">
         <figure class="cover-art">
-            <img src="{% src cover.image %}"
-            srcset="{% srcset cover.image %}" alt="{{cover.alt}}" width="250" height="250" loading="lazy" decoding="async" />
+            <img src="{% src cover.image, '1:1' %}"
+            srcset="{% srcset cover.image, '1:1' %}" alt="{{cover.alt}}" width="250" height="250" loading="lazy" decoding="async" />
         </figure>
         <div class="episode--detail">
         {{ summary | md | safe }}
