@@ -3,7 +3,7 @@ const FOLDER = "";
 const BASE_URL = `https://res.cloudinary.com/${CLOUDNAME}/image/upload`;
 const TRANSFORMS = `f_auto,q_80,dpr_2.0`;
 const ASPECT_RATIO= `3:2`;
-const FALLBACK_WIDTHS = [320, 768, 1024, 1360, 1600, 1980, 2400];
+const FALLBACK_WIDTHS = [320, 768, 1024, 1360, 1600, 1980, 2000];
 const FALLBACK_WIDTH = 680;
 
 function getSrcset(file, ar, widths, preset) {

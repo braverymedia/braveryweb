@@ -239,7 +239,7 @@ main {
     @media ( width >= 1024px ) {
         width: 75vw;
         .constrain & {
-            margin-inline: calc( -1 * var(--v-2xl) );
+            margin-inline: -12.5vw;
         }
     }
 }
