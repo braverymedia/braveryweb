@@ -13,7 +13,7 @@ excerpt: Bravery designed and built custom dental program finders for ADEA's thr
 wistias:
     - bb5rhcstp0
 cover:
-    image: case-study-cover-adea_mgiiqu
+    image: case-study-cover-adea_mgiiqu.jpg
     alt: Screenshot of ADEA program finder webpage. Above that text reads, Case Study American Dental Education Association
 og:
     image: https://bravery.co/assets/img/og-case-study-adea.jpg

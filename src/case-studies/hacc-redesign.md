@@ -10,7 +10,7 @@ tags:
     - design
 excerpt: What higher ed web strategy needs is a little more courage and a lot more action.
 cover:
-    image: case-study-cover-hacc_vr0jmh
+    image: case-study-cover-hacc_vr0jmh.jpg
     alt: Circle masked screenshot of HACC website in a phone mockup. Text reads, Case Study. Harrisburg Area Community College
 og:
     image:

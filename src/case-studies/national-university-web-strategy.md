@@ -11,7 +11,7 @@ tags:
     - design
 excerpt: Smart strategy and performance-centric UX generated millions in new revenue for NU. Their ROI in Bravery started eight days after launch.
 cover:
-    image: case-study-cover-nus_ld82tx
+    image: case-study-cover-nus_ld82tx.jpg
     alt: Phone-sized mockup of the 2018 National University homepage. Text reads, Case Study. National University.
 og:
     image:

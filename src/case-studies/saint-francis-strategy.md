@@ -13,7 +13,7 @@ tags:
     - design
 excerpt: Redesigning the University of Saint Francis, Fort Wayne, website starting with research and strategy.
 cover:
-    image: case-study-cover-usf_mxjqfx
+    image: case-study-cover-usf_mxjqfx.jpg
     alt: Two phone-sized screenshots of the Saint Francis website, overlapping each other. Text reads, Case Study. University of Saint Francis.
 og:
     image: https://bravery.co/assets/img/og-case-study-saint-francis.jpg

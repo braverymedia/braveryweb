@@ -12,7 +12,7 @@ tags:
     - design
 excerpt: Bravery x LMU. Reducing melt through research and human-centered design.
 cover:
-    image: case-study-cover-lmu_livpu5
+    image: case-study-cover-lmu_livpu5.jpg
     alt: iPhone mockup of LMU Future Lions accepted students portal. Text reads, Case Study. Loyola Marymount University.
 og:
     image: https://bravery.co/assets/img/og-case-study-lmu.jpg
