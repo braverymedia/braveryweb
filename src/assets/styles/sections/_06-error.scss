@@ -1,0 +1,125 @@
+.layout-error {
+
+    > body {
+        background-image: none;
+        padding: 0 !important;
+        border: 0;
+        justify-content: flex-start;
+        margin: 0;
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+	main{
+		padding: 0 !important;
+		margin: 0 !important;
+        border: 0 !important;
+        > section {
+            padding: 0;
+        }
+	}
+	h1 {
+		text-align: center;
+		font-size: clamp(4.75rem, 2.027rem + 11.1712vw, 12.5rem);
+		transform: translateY(-14%);
+        text-transform: uppercase;
+        font-weight: 1000;
+		text-shadow:
+			2px 2px 0 #fff,
+			-2px 2px 0 #fff,
+			-2px -2px 0 #fff,
+			2px -2px 0 #fff;
+        a {
+            text-decoration: none;
+            &:hover {
+                color: var(--color-hilite)
+            }
+        }
+	}
+	.smpte-bars {
+		background-image: linear-gradient(
+			to right,
+			#fff 0%,
+			#fff 14.28%,
+			#edd971 14.28%,
+			#edd971 28.56%,
+			#55ebeb 28.56%,
+			#55ebeb 42.84%,
+			#72c730 42.84%,
+			#72c730 57.12%,
+			#c430c7 57.12%,
+			#c430c7 71.4%,
+			#c73030 71.4%,
+			#c73030 85.68%,
+			#504de0 85.68%,
+			#504de0 100%
+		);
+		height: 60dvh;
+		background-size: 100% 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		@media (min-width: 1024px) {
+			height: 75dvh;
+		}
+		&:before {
+			content: '';
+			background-image: linear-gradient(
+				to left,
+				#fff 0%,
+				#fff 14.28%,
+				#000 14.28%,
+				#000 28.56%,
+				#55ebeb 28.56%,
+				#55ebeb 42.84%,
+				#000 42.84%,
+				#000 57.12%,
+				#c430c7 57.12%,
+				#c430c7 71.4%,
+				#000 71.4%,
+				#000 85.68%,
+				#504de0 85.68%,
+				#504de0 100%
+			);
+			height: 6%;
+			width: 100%;
+			position: absolute;
+			bottom: 16%;
+		}
+		&:after {
+			content: '';
+			background-image: linear-gradient(
+				to right,
+				#150636 0%,
+				#150636 16.67%,
+				#fff 16.67%,
+				#fff 33.34%,
+				#271354 33.34%,
+				#271354 50%,
+				#212121 50%,
+				#212121 66.67%,
+				#272727 66.67%,
+				#272727 83.34%,
+				#000 83.34%,
+				#000 100%
+			);
+			height: 16%;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+	}
+	article {
+		padding: calc(var(--grid-unit) * 2);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: calc(var(--grid-unit) * 2);
+		text-align: center;
+		.logo {
+			width: 160px;
+		}
+	}
+}

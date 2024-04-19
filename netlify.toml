@@ -3,6 +3,11 @@
   command = "npm run build"
 
 [[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+[[redirects]]
   from = "https://insight.bravery.co/*"
   to = "https://bravery.co/insight/:splat"
   status = 301
