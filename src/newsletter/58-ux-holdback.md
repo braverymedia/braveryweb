@@ -1,7 +1,7 @@
 ---
 title: "Great UX isn't about you."
 description: Poor UX and big egos have gotten in the way of great user and students experiences at colleges and universities. Joel Goodman brings an ego check to higher ed marketers.
-issue: 58
+issue: "58"
 date: 2024-04-24T08:51:14.809Z
 slug: 058-great-ux-ruined-by-ego
 cover:
