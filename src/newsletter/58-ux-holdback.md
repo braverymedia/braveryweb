@@ -8,69 +8,54 @@ cover:
   image: heht/heht58-cover_azvmcx.jpg
   alt: Three cool students with sunglasses looking frustrated at what they see on a laptop screen. Theyr'e standing in a busy quad area on a college campus.
 ---
-There are a lot of different definitions of branding out there. Here are some common ones:
+Web design is hard. Web design that serves a business function is even harder. The hardest is working on web designs with other people who consider themselves creative.
 
-- a product or service that has a unique and immediately recognizable identity that distinguishes itself from others in its industry.
-- the process of creating a distinct identity for a business in the minds of your target audience and the general population.
-- your customers' emotional and psychological connection with your company, product, or service.
+That might sound harsh, but in my experience, self-proclaimed creatives are the most difficult people to work with. It isn’t because their idea is bad or they have poor taste (well, sometimes it is); they often approach web design as an artistic endeavor, a way to express their creative preferences, usually ignoring that they won't even be interacting with the product.
 
-Personally, I don't disagree with any of them. A distinct and recognizable identity and the connection your customers feel towards you -- I can get on board with those sentiments.
+## Ego is the opposite of good UX
 
-But there are problems, right?
+Want to know the secret to great UX, though? It’s not about you as the designer the business owner, or the client. It's not about _you_ at all.
 
-1. Your collaborators in building brand recognition might carry a different definition than you.
-2. A far more helpful way of understanding what brands are is by understanding what they do.
+That "U" in UX and the "C" in CX — those letters stand for people who are not you. And the only way to get good design results is to ignore yourself and listen to them.
 
-Let's start with the second one and circle back to the first.
+I was talking with my friend [Ron Bronson](https://www.ronbronson.design/) about this on a design podcast we are working on together. And, as usual, he distilled it down perfectly:
 
-Brands represent shortcuts. A brand cuts right to the chase about the value the product or service offers the purchaser without that value being overtly stated.
+> We have to think beyond human-centered design or this idea that we can empathize; instead, we need to decenter ourselves and listen to the people we're building for. By better understanding, we can build selfless products that respond to actual user needs.
 
-When you think of the brand YETI, what attributes come to mind? Probably something like durable tumblers and coolers that hold their temperatures effectively for people who enjoy outdoor activities (or something like that).  
+The sheer audacity to think the things we like are the same things our users, clients, and customers like would be seen as a major ego trip anywhere else. Why do we think it's excusable in our own work?
 
-When you think of brands like Gucci, Burberry, or Louis Vuitton, you might think of expensive luxury items that signal the purchaser cares about chic style.
+This is evidence of a severe character flaw, and we've seen it play out across higher education for decades. Carousels, homepage videos, audience navigation, news on homepages, and non-contextual giving appeals. The data says these things hamstring an excellent user experience, yet they are still the most prevalent trends in higher ed web design.
 
-YETI can run advertisements without saying, "This tumbler is for someone who likes to pour a giant cup of coffee and have it stay warm for most of the day while they do outdoor activities."
+## Reverberations
 
-Gucci can place nearly wordless advertisements in magazines. Gucci doesn't need to say, "Do you want to make your friends jealous?" For their market, this value is communicated through their brand. 
+Believe it or not, UX design is not a subjective practice. We aren't out here just thinking up cool-looking things to make on the web. In fact, most UX designers have spent years disentangling their own biases from the reality of user feedback. We put checks in place to ensure we aren't projecting our own assumptions on design but are growing our understanding of what "good" design actually is.
 
-That's why if you were to ask me:
+**My hot take is this: degraded experience design has held higher education back from explosive growth.**
 
-- Is branding all about visual identifiers like wordmarks and colors?
-- Is branding all about occupying a unique place in the minds of your customers? 
-- Is branding all about the connections your customers feel towards you? 
+A lot of the digital problems that plague our higher ed websites stem from degraded user experience design:
 
-I would say yes, and somehow, I'd still feel like those definitions are missing something. Because it's about communicating value.
+- Want better search rankings? Speed up your website and fix your content
+- Want higher conversion rates? Improve your user journey and speed up your website
+- Want your content to perform better? Put a thorough content strategy in place.
 
-## What is your value?
+Notice none of those solutions include adding more videos or pop-up discount offers.
 
-Value can be tricky, especially in higher education. Here's why. When you're buying something like a handbag or a tumbler, you have the memories of previous handbags and tumblers to work from. And you have a likely future ahead of you purchasing new handbags and tumblers. Handbags and tumblers don't last forever. So, Burberry and YETI know from market research how they are doing. They can tell when they are gaining and losing market share. They can even quantify the estimated value of their brand. Their brands are literally treated as assets. 
+If you think about the mega universities — those top-performing institutions everyone thinks of — none of them have a homepage video that automatically loads. They all follow a content hierarchy based on research and data that Bravery and other design agencies have proven time and again.
 
-This helps them position their products. Positioning is the method of establishing and communicating value. A brand position is having the features and capabilities that a customer is looking for at the price they can pay. When they buy your product or service, it's because they think they are getting the best value from the benefits you provide in exchange for what it costs compared to your competitors. Brand positioning helps to clarify the features and capabilities that are the most important to your customers. 
+## The proof is in the people
 
-The trick with higher education is that repeat purchases or moves from one brand to another are rare. Choosing where you will receive your education is a high-stakes decision. Most people only get one bachelor's degree. Transferring is possible, but it comes with sets of costs (having to retake classes that aren't accepted, facing different requirements, etc.) that make it a financially painful option. So getting comparative data on who is fulfilling their brand promises better is nearly impossible.
+Do mega universities have something the rest of us don't? Well, huge budgets... but apart from that? They conduct research and act on it. There are no gut feelings there.
 
-This makes brand positioning really difficult. If you don't know how you do against your competitors in certain dimensions of performance, it's harder to know who needs you and why. It's also harder to get that proof of value. Your opinion of your value doesn't count. Only the opinions of your customers do. But their opinions are so rarely comparative! ARGH!
+The point here is, again, UX is not about you. It's not about the college president. It's not about your faculty. It's not about saving political capital.
 
-## This is where how you define what branding means comes into play
+UX is about other people. Your UX will improve if you take them seriously and listen to their needs. And when your UX gets better your enrollment increases. And when your enrollment increases, you make more money, which increases budgets, which can then be reinvested in improving that UX even more.
 
-If you are someone who sees brands as a series of visual design and content rules, i.e., fonts, colors, wordmarks, and campaigns, then you will focus on consistency. 
+## _[Insert excuses here]_
 
-If you see brands as distinct identities, your approach to brand conversations will focus on how much you stand out, a.k.a. differentiation. 
+I get the political struggles. I really do. When I worked at Trinity International University and Greenville [College] University before that, I had to fight tooth and nail to do good work. It's exhausting.
 
-If you see brands as your customers' emotional and psychological connection to you, then you will focus on storytelling. 
+Don't try to do that on your own! Introduce me to your boss and your president or chancellor. I'll tell them the truth and sing your praises to them.
 
-None of these are wrong. In fact, each one of them is right. But, each one is only a piece of branding. It's like that parable with the blindfolded men and the elephant. One man feels the tusk, another feels the ears, and a third man feels the trunk. And they all come away with a different idea of what an elephant is, each both right and wrong. I feel like I need to write about branding love languages or something. 
+If you're already in leadership — check your mirrors. Once your competitors catch on, it might be too late to try and fix things.
 
-## Where do we go from here?
-
-There are two problems here. There's the problem of agreement about what brands represent. And there's the challenge of including what brands are meant to do in an institutional understanding. 
-
-As hard as it is, when you're launching a serious branding effort, you need to consider:
-
-1. how you will position yourself (and what you are basing that positioning strategy on),
-2. how you can present reliable data to convey your value, and 
-3. how you will measure your brand's performance. 
-
-If you do this, the consistency, the differentiation, and the storytelling will fall into place. 
-
-Bravery Media has research methods to help you develop your position and assess how well you are doing at conveying your brand identity. Reach out to discuss a project like this.
+Great UX and CX have to be selfless. I guarantee that shifting focus from "the institution" to the user will change your business and support your mission for the better.
