@@ -31,6 +31,9 @@
             <legend>Which Benchmark are you interested in?</legend>
             <section>
                 <div class="checkbox">
+                    <input type="checkbox" name="analytics" id="contact-analytics" /> <label for="contact-analytics">Analytics ($750)</label>
+                </div>
+                <div class="checkbox">
                     <input type="checkbox" name="webperf" id="contact-webperf" /> <label for="contact-webperf">Web Performance ($1,500)</label>
                 </div>
                 <div class="checkbox">
@@ -42,8 +45,8 @@
             </section>
         </fieldset>
         <div class="field textarea is-required">
-            <label>Talk to us</label><span>*</span>
-            <textarea name="message" class="email" rows="3" cols="33"
+            <label>Leave a message</label><span>*</span>
+            <textarea name="message" class="contact-message" rows="3" cols="33"
                 required></textarea>
         </div>
         <button type="submit" class="button has-icon">Send {% include "svg/paper-plane.svg" %}</button>

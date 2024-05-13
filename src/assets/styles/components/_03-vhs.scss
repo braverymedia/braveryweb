@@ -50,6 +50,9 @@
     &.search {
         --marker: var(--color-primary-600);
     }
+    &.analytics {
+        --marker: var(--color-success-800);
+    }
 }
 
 [data-style="vhs"] {
