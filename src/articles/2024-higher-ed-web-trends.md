@@ -5,7 +5,7 @@ description: Higher education marketing's trending web strategies for 2024.
 slug: 2024-higher-ed-web-trends
 date_published: 2024-01-03T23:07:34.446Z
 date: 2024-01-03T23:07:34.453Z
-pinned: true
+pinned: false
 cover:
   image: posts/midjourney-palms-glitch_fynclu.jpg
   alt: Two palm trees against a blue sky.
