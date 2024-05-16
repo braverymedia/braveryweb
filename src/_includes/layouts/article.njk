@@ -21,7 +21,7 @@ postType: article
         <a href="{{ '/insight/#latest' | url }}" class="all-articles">&larr; All Articles</a>
         <header class="article--title">
             <h1>{{title}}</h1>
-            <p><span class="author">{{ name or metadata.author.name }}</span><br/>
+            <p><span class="author">{{ author.name or metadata.author.name }}</span><br/>
             <span class="time"><time datetime="{{ date_published | machineDate }}">{{ date | readableDate }}</time>
                     / {{ content | readingTime }} read</span></p>
         </header>
