@@ -5,7 +5,7 @@ issue: "59"
 date: 2024-05-23T10:51:14.809Z
 slug: 059-is-public-trust-impacted-by-institution-size
 cover:
-  image: heht/heht59-og_fnvh04.jpg
+  image: heht/heht59-og_gsix51.jpg
   alt: Illustration of a very large college campus from overhead. Thousands of students mill about on the grounds outside. The ocean is in the background. Created with generative AI.
 ---
 Reports about the public’s trust in higher education indicate that our industry faces intense public skepticism and scrutiny. For example, [Campus Sonar](https://info.campussonar.com/rebuilding-public-trust-in-higher-ed) released a report on trust in higher education after analyzing over 13,000 unique online mentions of higher education from June to December 2023. They found that 38% of mentions were negative and 55% of mentions were neutral. This leaves only 7% for positive mentions. Additionally, they found that 44% of conversations included cautionary advice for prospective students. According to [Gallup](https://news.gallup.com/poll/508352/americans-confidence-higher-education-down-sharply.aspx) research, 36% of survey participants in 2023 had “a great deal” or “quite a lot” of confidence in higher education. This represents a sharp decline in confidence, down from 48% in 2018 and 57% in 2015.
