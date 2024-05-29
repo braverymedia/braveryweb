@@ -26,7 +26,7 @@ The Education Marketer himself, Kyle Campbell, [recently posted](https://www.lin
 
 On top of that, we've seen a shift in the past year in how we discover new things and get our questions answered. It started with ChatGPT and progressed to half a dozen similar chat-based LLMs (that's Large Language Models, the tech powering your favorite AI bots) and my personal favorite, Perplexity. And here, in the middle of 2024, we've seen substantial changes to the web products we use every day.
 
-Google rolled out AI summaries at the top of most search result pages. Meta put that annoying little AI search assistant in Instagram. Microsoft put Copilot front and 5center in Bing last year. LinkedIn offers really bad AI prompts if you're a paid subscriber. And these are the obvious ones.
+Google rolled out AI summaries at the top of most search result pages. Meta put that annoying little AI search assistant in Instagram. Microsoft put Copilot front and center in Bing last year. LinkedIn offers really bad AI prompts if you're a paid subscriber. And these are the obvious ones.
 
 But let's back up to those AI summaries in Google (and soon TikTok!?). Nilay Patel, the editor at The Verge, has been talking about this shift for at least a year now. [He calls this Google Zero](https://www.threads.net/@reckless1280/post/C69ymgIPBC3?hl=en), the phenomenon where Google will summarize the content of your search results to give you zero-click answers right on the results page. There's a great interview Nilay does with Google's CEO, Sundar PIchai, and [you should definitley check it out](https://www.theverge.com/24158374/google-ceo-sundar-pichai-ai-search-gemini-future-of-the-internet-web-openai-decoder-interview).
 
