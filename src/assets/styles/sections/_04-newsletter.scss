@@ -241,3 +241,7 @@ form.heht-subscribe {
         }
     }
 }
+
+main p + figure {
+    margin-block: calc(4 * var(--grid-unit))
+}
