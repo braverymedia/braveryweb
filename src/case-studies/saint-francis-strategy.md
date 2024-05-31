@@ -1,5 +1,5 @@
 ---
-title: University of Saint Francis Web Strategy
+title: "Case Study: University of Saint Francis Web Strategy"
 description: Redesigning the University of Saint Francis, Fort Wayne, website starting with research and strategy.
 slug: saint-francis-web-strategy
 topics:

@@ -1,5 +1,5 @@
 ---
-title: National University Web Strategy
+title: "Case Study: National University Web Strategy"
 description: Smart strategy and performance-centric UX generated millions in new revenue for NU. Their ROI in Bravery started eight days after launch.
 topics:
     - "Digital Strategy"

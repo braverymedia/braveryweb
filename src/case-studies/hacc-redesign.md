@@ -1,5 +1,5 @@
 ---
-title: HACC Website Redesign
+title: "Case Study: HACC Website Redesign"
 description: What higher ed web strategy needs is a little more courage and a lot more action.
 topics:
     - "Web Design"
