@@ -39,7 +39,7 @@
   status = 301
 
 [[redirects]]
-  from = "/insight/higher-ed-website-redesign-small-team/"
+  from = "/insight/higher-ed-website-redesign-small-team"
   to = "/insight/case-study/national-university-web-strategy/"
   status = 301
 
