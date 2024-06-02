@@ -1,6 +1,7 @@
 ---
 title: "Case Study: LMU Future Lions"
 description: Bravery x LMU. Reducing melt through research and human-centered design.
+slug: "lmu-future-lions"
 topics:
     - "Product Design"
     - "Digital Strategy"

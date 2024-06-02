@@ -1,6 +1,7 @@
 ---
 title: "Case Study: ADEA Program Finders"
 description: Bravery designed and built custom dental program finders for ADEA's three major central application systems and their member dental schools.
+slug: adea-program-finders
 topics:
     - "Product Design"
     - "Digital Strategy"
