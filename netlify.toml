@@ -30,27 +30,27 @@
 
 [[redirects]]
   from = "/services/level-up/"
-  to = "/services/web-aor/"
+  to = "https://bravery.co/services/web-aor/"
   status = 301
 
 [[redirects]]
   from= "/services/custom-insights/"
-  to = "/services/website-strategy/"
+  to = "https://bravery.co/services/website-strategy/"
   status = 301
 
 [[redirects]]
   from = "/insight/higher-ed-website-redesign-small-team"
-  to = "/insight/case-study/national-university-web-strategy/"
+  to = "https://bravery.co/insight/case-study/national-university-web-strategy/"
   status = 301
 
 [[redirects]]
   from = "/insight/higher-ed-website-redesign-small-team/"
-  to = "/insight/case-study/national-university-web-strategy/"
+  to = "https://bravery.co/insight/case-study/national-university-web-strategy/"
   status = 301
 
 [[redirects]]
   from = "/speedyu-turbo/"
-  to = "/benchmark/"
+  to = "https://bravery.co/benchmark/"
   status = 302
 
 [[headers]]
