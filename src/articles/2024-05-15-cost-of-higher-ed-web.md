@@ -7,7 +7,7 @@ author:
   name: "Joel Goodman + Kristin Van Dorn"
 date_published: 2024-05-15T10:07:34.446Z
 date: 2024-05-15T14:07:34.453Z
-pinned: true
+pinned: false
 cover:
   image: posts/buggy-glitch_uoodcc.jpg
   alt: A buggy parked on road in a small Texas town. Clouds overhead and old buildings on either side. Glitched out.

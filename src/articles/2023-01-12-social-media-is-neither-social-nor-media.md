@@ -68,4 +68,4 @@ Consider how to support your people, where they're actually at with content that
 
 We're investing a lot of time in the future on creating content for our new [YouTube channel](https://youtube.com/@BraveryMedia). We'll be sharing our hot takes there each week. Get in touch below or message us on [LinkedIn](https://www.linkedin.com/company/bravery-media) or [Instagram](https://www.instagram.com/braverymedia/).
 
-Call: [(512) 593-8094](tel:+15125938094) / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
+Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)

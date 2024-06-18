@@ -58,5 +58,6 @@ Bravery takes that exact approach to its design work. Whether we are developing 
 
 We'd love to have a conversation with you about your institutional goals. Perhaps [Bravery's research-driven approach can help you](/services/?utm_source=insight). Get in touch below or message us on [Twitter](https://twitter.com/braverymedia), [LinkedIn](https://www.linkedin.com/company/bravery-media), or [Facebook](https://www.facebook.com/braverymedia/).
 
-Call: [(512) 593-8094](tel:+15125938094)‬ / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
+Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
+
 Sound like an approach that would work for your project? [Get in touch](https://bravery.co).

@@ -155,4 +155,4 @@ What other areas of your institution could be looked at through the lens of Hosp
 
 The best place to start is with a [research project](/services/?utm_source=insight) with Bravery Media. Get in touch below or message us on [Twitter](https://twitter.com/braverymedia) or [LinkedIn](https://www.linkedin.com/company/bravery-media).
 
-Call: [(512) 593-8094](tel:+15125938094) / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
+Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)

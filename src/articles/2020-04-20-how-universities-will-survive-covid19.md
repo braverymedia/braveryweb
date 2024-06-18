@@ -75,4 +75,4 @@ As we've started saying around here, it's time to [#LeadWithBravery](/services/?
 
 We'd love to have a conversation with you about what's coming, where you might need a few extra hands, and how Bravery can help you. Get in touch below or message us on [Twitter](https://twitter.com/braverymedia), [LinkedIn](https://www.linkedin.com/company/bravery-media), or [Facebook](https://www.facebook.com/braverymedia/).
 
-Call: [(512) 593-8094](tel:+15125938094) / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
+Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)

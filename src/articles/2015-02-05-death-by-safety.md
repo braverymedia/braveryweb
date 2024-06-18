@@ -66,4 +66,4 @@ When we give up on ourselves we are giving up on our students, our faculty, and 
 
 Bravery uses research to help drive the right decisions at the right time. While change can feel risky, [Bravery specializes in making](/services/?utm_source=insight) low-risk, high-reward improvements. Get in touch below or message us on [Twitter](https://twitter.com/braverymedia), [LinkedIn](https://www.linkedin.com/company/bravery-media), or [Facebook](https://www.facebook.com/braverymedia/).
 
-Call: [(512) 593-8094](tel:+15125938094)‬ / Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
+Email: [inquiries@bravery.co](mailto:inquiries@bravery.co)
