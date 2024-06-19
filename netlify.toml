@@ -53,6 +53,11 @@
   to = "https://bravery.co/benchmark/"
   status = 302
 
+[[redirects]]
+  from = "/insight/case-studies/"
+  to = "https://bravery.co/work/"
+  status = 301
+
 [[headers]]
   for = "/*"
 
