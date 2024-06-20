@@ -11,7 +11,7 @@ cover:
   image: posts/neon-speed_gratwc.jpg
   alt: Midjourney generated image of cars racing along a beach. Big houses on cliffs in the background and a dreamy neon sky hangs over the scene.
 og:
-  image: /assets/uploads/post-fast-sites.jpg
+  image: posts/post-fast-sites.jpg
 topics:
   - performance
 excerpt: Forget anthem videos, student stories, and animation. A site that loads fast is your secret edge.
