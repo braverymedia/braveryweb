@@ -5,15 +5,10 @@ description: A framework for user case by designing hospitable experiences."
 cover:
     image: posts/window-glitch_ks5zob.jpg
     alt: View of a hotel window
-social:
-    tw:
-        title: "Hospitable Design / Bravery Insight"
-        description: "Empathy without action — empathy devoid of kindness — isn't worth much at all."
-        image: https://bravery.co/assets/img/hosp-design-twitter.jpg
-    fb:
-        title: "Hospitable Design / Bravery Insight"
-        description: "Empathy without action — empathy devoid of kindness — isn't worth much at all."
-        image: https://bravery.co/assets/img/hosp-design-twitter.jpg
+og:
+    title: "Hospitable Design / Bravery Insight"
+    description: "Empathy without action — empathy devoid of kindness — isn't worth much at all."
+    image: https://bravery.co/assets/img/hosp-design-twitter.jpg
 date_published: 2022-07-19
 date: 2022-07-19
 topics: ['Digital Strategy', 'Experience Design']

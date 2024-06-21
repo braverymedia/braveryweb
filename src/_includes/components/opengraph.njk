@@ -1,10 +1,21 @@
+{% set ogImage %}
+    {%- if postType == 'article' or postType == 'issue' -%}
+        {% if og.image %}
+            {{- og.image -}}
+        {% else %}
+            {% src cover.image, '1200:657' %}
+        {% endif %}
+    {%- else -%}
+        {{- og.image or metadata.og.image -}}
+    {%- endif -%}
+{% endset %}
     <meta property="og:type" content="{{ postType or og.type or metadata.og.type }}">
     <meta property="og:image:height" content="1257">
     <meta property="og:image:width" content="2400">
     <meta property="og:title" content="{{ og.title or title or metadata.og.title }}">
     <meta property="og:description" content="{{ og.description or description or metadata.og.description }}">
     <meta property="og:url" content="{{ page.url | htmlBaseUrl("https://bravery.co") }}">
-    <meta property="og:image" content="{% if postType == 'article' or postType == 'issue' %}{% src cover.image %}{% else %}{{ og.image or metadata.og.image }}{% endif %}">
+    <meta property="og:image" content="{{ ogImage }}">
     <meta property="og:site_name" content="{{ metadata.og.title }}">
     {% if metadata.og.app_id %}
     <meta property="fb:app_id" content="{{ metadata.og.app_id }}">
@@ -14,4 +25,4 @@
     <meta name="twitter:description" content="{{ og.description or description or metadata.og.description }}">
     <meta name="twitter:site" content="{{ metadata.og.site }}">
     <meta name="twitter:creator" content="{{ og.creator or metadata.og.creator }}">
-    <meta name="twitter:image" content="{% if postType == 'article' or postType == 'issue' %}{% src cover.image %}{% else %}{{ og.image or metadata.og.image }}{% endif %}">
+    <meta name="twitter:image" content="{{ ogImage }}">

@@ -8,11 +8,8 @@ video:
 cover:
     image: posts/curb-glitch_ckoh5q.jpg
     alt: glitchy street curb.
-social:
-    tw:
-        image: https://bravery.co/assets/img/heht-01.jpg
-    fb:
-        image: https://bravery.co/assets/img/heht-01.jpg
+og:
+    image: https://bravery.co/assets/img/heht-01.jpg
 date_published: 2023-01-12
 date: 2023-01-12
 topics:

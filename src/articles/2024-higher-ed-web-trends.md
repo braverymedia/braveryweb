@@ -9,9 +9,8 @@ pinned: false
 cover:
   image: posts/midjourney-palms-glitch_fynclu.jpg
   alt: Two palm trees against a blue sky.
-social:
-  tw: /assets/uploads/post-highered-trends-2024.jpg
-  fb: /assets/uploads/post-highered-trends-2024.jpg
+og:
+  image: https://bravery.co/assets/uploads/post-highered-trends-2024.jpg
 topics:
   - strategy
 excerpt: We asked. You Answered. These are higher ed's most pressing web

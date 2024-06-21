@@ -12,7 +12,7 @@ cover:
   image: posts/buggy-glitch_uoodcc.jpg
   alt: A buggy parked on road in a small Texas town. Clouds overhead and old buildings on either side. Glitched out.
 og:
-  image: /assets/uploads/post-buggy-glitch.jpg
+  image: https://bravery.co/assets/uploads/post-buggy-glitch.jpg
 topics:
   - strategy
 excerpt: Higher ed almost universally underinvests in its digital marketing team.

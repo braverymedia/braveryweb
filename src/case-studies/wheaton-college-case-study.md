@@ -17,7 +17,7 @@ cover:
 og:
     image:
     alt:
-    title: "Bravery Case Study: University of Saint Francis, Fort Wayne"
+    title: "Bravery Case Study: Wheaton College Redesign"
 wistias:
   - 2nurxvq1r1
 ---
