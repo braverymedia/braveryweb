@@ -7,7 +7,7 @@ date: 2024-06-24T00:09:24.117Z
 record_date: 2024-06-24T14:15:44.435Z
 show: appb
 cover:
-  image: ep057-cover-art_y6evqel.jpg
+  image: ep057-cover-art_y6evqe.jpg
   alt: "Text reads: Appendix B. A Bravery Podcast. It's on top of a generative AI render of a room with a desk in the corner. The tall ceilings have hundreds of written pages hanging from them."
 mp3: appendixb/appendix-b-ep057-content-first-design.mp3
 duration: 12:35
