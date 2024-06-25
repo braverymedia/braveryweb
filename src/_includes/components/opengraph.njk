@@ -15,7 +15,7 @@
     <meta property="og:title" content="{{ og.title or title or metadata.og.title }}">
     <meta property="og:description" content="{{ og.description or description or metadata.og.description }}">
     <meta property="og:url" content="{{ page.url | htmlBaseUrl("https://bravery.co") }}">
-    <meta property="og:image" content="{{ ogImage }}">
+    <meta property="og:image" content="{{ ogImage or og.image or metadata.og.image }}">
     <meta property="og:site_name" content="{{ metadata.og.title }}">
     {% if metadata.og.app_id %}
     <meta property="fb:app_id" content="{{ metadata.og.app_id }}">
@@ -25,4 +25,4 @@
     <meta name="twitter:description" content="{{ og.description or description or metadata.og.description }}">
     <meta name="twitter:site" content="{{ metadata.og.site }}">
     <meta name="twitter:creator" content="{{ og.creator or metadata.og.creator }}">
-    <meta name="twitter:image" content="{{ ogImage }}">
+    <meta name="twitter:image" content="{{ ogImage or og.image or metadata.og.image }}">

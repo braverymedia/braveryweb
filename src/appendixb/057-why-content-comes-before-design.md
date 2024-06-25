@@ -9,6 +9,9 @@ show: appb
 cover:
   image: ep057-cover-art_y6evqe.jpg
   alt: "Text reads: Appendix B. A Bravery Podcast. It's on top of a generative AI render of a room with a desk in the corner. The tall ceilings have hundreds of written pages hanging from them."
+og:
+  image: https:/bravery.co/assets/img/og-appb-episode-057.jpg
+  title: "Episode 057: Why Content Comes Before Design"
 mp3: appendixb/appendix-b-ep057-content-first-design.mp3
 duration: 12:35
 tags:
