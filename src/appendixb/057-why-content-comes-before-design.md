@@ -20,7 +20,6 @@ tags:
   - ai
 summary: '[Joel Goodman](https://linkedin.com/in/joelgoodman) and [Kristin Van Dorn](https://linkedin.com/in/kristinvandorn) discuss key insights into content-first design, especially within the context of higher education websites. They delve into the importance of designing around content needs rather than trying to fit content into pre-made designs. Kristin emphasizes the necessity of creating a design system that accommodates varied content types and structures to ensure consistent user experience. The conversation sheds light on how using a content-focused approach can lead to more functional, effective websites that meet both user and business goals.'
 ---
-## Transcript
 
 **Joel Goodman**
 From Bravery Media, this is Appendix B. My name is Joel Goodman. With me is Kristin Van Dorn. Hi, Kristin.
