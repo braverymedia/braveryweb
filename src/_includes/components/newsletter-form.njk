@@ -1,7 +1,8 @@
-<form name="newsletter" method="POST" data-netlify="true" class="heht-subscribe">
+<form name="newsletter" method="POST" data-netlify="true" class="heht-subscribe" netlify-honeypot="bot-field">
     <div class="field heht">
         <label for="email" class="sr">Email Address</label>
         <input type="email" name="email" placeholder="Your best email" required />
+        <p class="honey"> <label>Don’t fill this out if you're human: <input name="bot-field" /></label> </p>
         <button type="submit" class="button primary">{% include "svg/fire-letter.svg"%}<span class="sr">Subscribe</span></button>
     </div>
 </form>
