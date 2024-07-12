@@ -8,13 +8,19 @@
   status = 404
 
 [[redirects]]
+  from = "https://insight.bravery.co"
+  to = "https://bravery.co/insight"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://insight.bravery.co/*"
   to = "https://bravery.co/insight/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://speedy.bravery.co/*"
+  from = "https://speedy.bravery.co"
   to = "https://speedyu.bravery.co/"
   force = true
 
