@@ -1,0 +1,47 @@
+---
+title: "Case Study: Thaddeus Steven College of Technology WordPress Build"
+description: Building a technical college's website on modern WordPress with Full Site Editing.
+slug: tsct-wordpress-build
+topics:
+    - "WordPress"
+    - "Development"
+tags:
+    - casestudy
+    - development
+excerpt: Building a technical college's website on modern WordPress with Full Site Editing.
+cover:
+    image: case-study-cover-wheaton_jxcgpt.jpg
+    alt: Screenshot of Wheaton College's homepage. Text reads, Case Study, Wheaton College (IL).
+og:
+    image:
+    alt:
+    title: "Bravery Case Study: TSCT WordPress Build"
+wistias:
+  - 3o686k5imx
+---
+**Client:** Thaddeus Stevens College of Technology, Lancaster, PA
+**Project Year:** 2024
+**Objective:** Build and populate the College’s long-stalled web redesign.
+
+## The Challenge
+
+* TSCT had designs and static HTML created by another agency years prior, and lots of money sunk into false starts and a proprietary CMS.
+* Budget was tight, and so was the timeline. TSCT needed help building the existing designs and populating content.
+* With a team of two, TSCT needed Bravery to manage the heavy-lifting.
+
+## The Strategy
+
+Bravery knew that a custom WordPress theme was the most cost-effective way to get this website built. We partnered with Daniel Post to build an accessible, fast, and completely modern WordPress theme using the Block Editor and Full Site Editing. The Bravery team made minor UX and compatibility updates to the web design and managed the whole process.
+
+1. **Patternizing the design:** Old-school static templates needed to be transformed into a flexible design system that could work well with the WordPress Block Editor. We brought the whole existing design into Figma and made some updates.
+2. **Modernizing the UX:** We extended our Program Finder WordPress plugin to include a filterable stacked list of programs. We also streamlined the search and main nav to make them clearer.
+3. **Provided edits to the content and user flow:** Many old pages were written either for old patterns or for no patterns. The new patterns provided more opportunities to create visual variation for emphasis, scannability, and reduced cognitive load. We made subtle changes to the content in key places to take full advantage of the new patterns for a better experience.
+
+
+<figure data-layout="wide">
+      <div class="wistia_responsive_padding" style="aspect-ratio: 16/9;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_3o686k5imx seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/3o686k5imx/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+</figure>
+
+## The Outcome
+
+We were able to launch the website on time with improvements to the original design. We’re all hoping that getting the College’s website to this milestone will encourage leadership to fund content strategy and a full redesign in the future. But in the meantime, TSCT has a functional, search-optimized website ready to serve its future students.
