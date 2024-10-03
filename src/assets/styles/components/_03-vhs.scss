@@ -159,6 +159,7 @@
     justify-content: space-between;
     gap: var(--grid-unit);
     padding-block: calc(2 * var(--grid-unit));
+    max-height: 105vh;
     header {
         display: flex;
         justify-content: center;
