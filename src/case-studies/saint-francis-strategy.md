@@ -60,8 +60,8 @@ In the redesign, we knew we’d need to implement a user-friendly content manage
 
 The [www.sf.edu](https://www.sf.edu) website is fast and optimized for better SEO and conversion rates. After reconfiguring the program pages and developing a new on-page content hierarchy, Saint Francis saw 100% increases in applications for focus programs.
 
-<figure data-layout="wide">
-    <script src="https://fast.wistia.com/embed/medias/cn2u4kbjmt.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:65.42% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_cn2u4kbjmt seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/cn2u4kbjmt/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+<figure data-layout="wide" style="aspect-ratio:1.53/1" class="video-embed">
+    <iframe src="https://iframe.mediadelivery.net/embed/350896/da4ad0cf-7c35-48cd-8858-ae0464480f41?autoplay=true&loop=true&muted=true&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe>
 </figure>
 
 ## Lessons Learned
@@ -69,7 +69,7 @@ The [www.sf.edu](https://www.sf.edu) website is fast and optimized for better SE
 We were fortunate to work on this project over multiple years with plenty of effort put into getting things right. During this time it became evident that small teams need an intuitive CMS editing experience to maximize their effectiveness.
 
 As we spoke with students and parents we realized that not everyone understands what the FAFSA is or how it works. Prospective students often saw it as all grants and aid, while parents saw it as a loan application. Neither are accurate and this highlights the need to more clearly explain financial information to our audiences.
-
+w
 ## Wrapping Up
 
 This case study exemplifies how Bravery's long term partnerships with institutions can lead to the best performing websites in the industry. Our team cares deeply about producing work that makes a positive impact on higher education and its students. Flexibility was key in navigating an institution in transition, but the final website will provide meaningful change for the University of Saint Francis.

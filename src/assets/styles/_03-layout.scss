@@ -238,9 +238,7 @@ main {
     gap: calc(3* var(--grid-unit));
     @media ( width >= 1024px ) {
         width: 75vw;
-        .constrain & {
-            margin-inline: -12.5vw;
-        }
+        margin-inline: -12.5vw;
     }
 }
 

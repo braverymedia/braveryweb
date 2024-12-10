@@ -7,8 +7,16 @@ figure {
         height: 100%;
         width: 100%;
     }
-    &.video-embed{
-        aspect-ratio: 16/9;
-        width: 100%;
+    &.video-embed {
+        animation: pulse 3s ease-out infinite;
+        position: relative;
+        box-shadow: var(--elevation);
     }
 }
+[data-ar='16:9'] {
+    aspect-ratio: 16/9;
+}
+[data-ar='4:3'] {
+    aspect-ratio: 4/3;
+}
+

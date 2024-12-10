@@ -56,8 +56,8 @@ To provide maximum flexibility integrating with their existing CMS, we knew a de
 4. **Sentiment Analysis testing.** We ran sentiment analysis tests to ensure our new program pages performed for our users. We had over 120 participants identifying as prospective students from the Chicago area. Overall, the participants found the new site clean and engaging. When asked how they would describe the site (given a list of positive and negative terms), the most selected descriptors were: “Welcoming,” “Easy to use,” “Organized,” “Premium,” and “Caring.”
 5. **Program Finder.** Building a custom Program Finder on top of their existing CMS was the key to improving conversion rates. The Program Finder widget can be used anywhere on the site and provides a convenient, fast way to find any academic program the college offers.
 
-<figure data-layout="wide">
-      <div class="wistia_responsive_padding" style="aspect-ratio: 16/9;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_2nurxvq1r1 seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/2nurxvq1r1/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+<figure data-layout="wide" style="aspect-ratio:1.43/1;" class="video-embed">
+    <iframe src="https://iframe.mediadelivery.net/embed/350896/94ce9531-0967-455d-8935-6a85dd443f0e?autoplay=true&loop=true&muted=true&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe>
 </figure>
 
 ## The Outcome

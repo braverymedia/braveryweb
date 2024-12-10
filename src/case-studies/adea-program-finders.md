@@ -46,8 +46,8 @@ Building off of Bravery’s program finder UX, we knew we needed to talk to dent
 
 6. **Increase Applications:** ADEA’s Centralized Application Service (CAS) is the primary way students apply to dental schools. We built logical pathways and calls to action to apply within ADEA’s ecosystem.
 
-<figure data-layout="wide">
-    <div class="wistia_responsive_padding" style="padding:70.63% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_bb5rhcstp0 seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/bb5rhcstp0/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+<figure data-layout="wide" class="video-embed" style="aspect-ratio:1.41/1;">
+    <iframe src="https://iframe.mediadelivery.net/embed/350896/e0e13549-85be-4b0e-af68-721abba99115?autoplay=true&loop=true&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe>
 </figure>
 
 ## The Outcome
