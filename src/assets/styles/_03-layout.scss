@@ -238,6 +238,11 @@ main {
     gap: calc(3* var(--grid-unit));
     @media ( width >= 1024px ) {
         width: 75vw;
+    }
+}
+.constrain .wide,
+.constrain [data-layout=wide] {
+    @media ( width >= 1024px ) {
         margin-inline: -12.5vw;
     }
 }
