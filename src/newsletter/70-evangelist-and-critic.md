@@ -5,8 +5,8 @@ issue: "70"
 date: 2025-02-24T07:51:14.809Z
 slug: 070-ai-evangelist-and-critic
 cover:
-  image: genie_rckefl
-  alt: Photo of a vintage, beat-up pickup truck parked at the side of the road. In the bed is a sign with a cartoon character wearing a Persian-style head wrap and the brand name Genie next to it.
+  image: heht-70-web_jmz5kt
+  alt: Pier binoculars with a knob that reads Turn to Clear Vision, slightly askew.
 ---
 
 _This Hot Take was written by [Joel Goodman](https://linkedin.com/in/joelgoodman/)_
