@@ -61,4 +61,4 @@ There are other ways. Smarter ways. More effective ways.
 
 And right now, can you really afford to be betting the house on someone else's failing business?
 
-[Let's talk shop]("/contact/").
+[Let's talk shop](https://bravery.co/contact/).

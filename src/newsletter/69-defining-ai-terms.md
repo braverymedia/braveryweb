@@ -49,4 +49,4 @@ If you're putting AI in place of admissions counselors or using it to write your
 
 New technology demands a strategy. Goals before tools, like we always say. If you need help figuring out what that strategy is, let's talk. Put me in touch with your CFO and CIO. Let's talk about what's possible. Maybe your team needs some training on how to put these tools to use (or even what tools are out there) --- I've used a lot of them and we can get you some time back to do really great work.
 
-[Let's talk]("/contact/").
+[Let's talk](https://bravery.co/contact/)
