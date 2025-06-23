@@ -8,6 +8,8 @@ button {
     gap: var(--grid-unit);
     text-decoration: none;
     padding: var(--grid-unit) calc(2 * var(--grid-unit));
+    cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 .cta-group {
     font-weight: 700;
