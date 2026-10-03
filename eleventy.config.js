@@ -52,6 +52,10 @@ module.exports = function (eleventyConfig) {
 			"src/assets/js/bravery.js": "assets/js/bravery.js",
 			"src/assets/icons": "assets/icons",
 			"src/assets/img": "assets/img",
+			// Coming-soon homepage (built on the `teaser` branch). Remove with the
+			// teaser: restore `permalink: /` in src/pages/homepage.njk.
+			"teaser/index.html": "index.html",
+			"teaser/sun-light.js": "assets/js/sun-light.js",
 		})
 		.addPassthroughCopy("manifest.json")
 		.addPassthroughCopy("site.webmanifest")
